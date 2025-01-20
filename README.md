@@ -1,39 +1,22 @@
 # Hi there, I'm David Mottet 👋
 
-## About Me
-I am a passionate software developer with a keen interest in building innovative solutions. I have experience in various programming languages and frameworks, and I love to explore new technologies.
+# 🌟 About Me  
+Hi, I’m **David**, a passionate software developer with a knack for creating efficient, scalable, and user-friendly applications. With a strong foundation in backend development, particularly in **NodeJS** and **MongoDB**, I thrive on building robust APIs and systems that solve real-world problems.
 
-## Skills
-- **Languages:** JavaScript, TypeScript, Python, C++, Java
-- **Frameworks:** React, Node.js, Django, Flask
-- **Tools:** Git, Docker, Kubernetes, AWS, Azure
-- **Databases:** MongoDB, MySQL, PostgreSQL
+## 🛠️ What I Do  
+- **Multi-Platform Applications**: Developing tools for both desktop and mobile using modern frameworks like **Flutter**, **ReactNative** or **Electron**.
+- **API Design**: Crafting APIs that connect seamlessly to databases, ensuring high performance and reliability.
+- **DevOps Practices**: Managing deployments and maintaining environments with tools like **Docker** and custom workflows for streamlined operations.
+- **Feeding the World with Technology**: Building an AI-powered app in **Flutter** with **Parse Server** to help users plan meals, create menus, and manage their nutrition effectively. My mission is to make healthy eating accessible and sustainable for everyone.
 
-## Projects
-### [Project 1](https://github.com/davidmottet/project1)
-A brief description of Project 1. Highlight the technologies used and the main features.
+## 🚀 My Philosophy  
+I believe in balancing cutting-edge technology with practical solutions. My work focuses on creating intuitive experiences for end users while maintaining a clean and maintainable codebase.
 
-### [Project 2](https://github.com/davidmottet/project2)
-A brief description of Project 2. Highlight the technologies used and the main features.
+## 🐾 Fun Fact  
+When I’m not coding, I’m hanging out with my loyal American Bully, **Junior**, who ensures I never forget the importance of a good walk and a moment of relaxation. 🐶
 
-### [Project 3](https://github.com/davidmottet/project3)
-A brief description of Project 3. Highlight the technologies used and the main features.
-
-## Blog Posts
-- [How to Build a REST API with Flask](https://medium.com/@davidmottet/how-to-build-a-rest-api-with-flask-123456)
-- [Understanding JavaScript Closures](https://medium.com/@davidmottet/understanding-javascript-closures-123456)
-- [Getting Started with Docker](https://medium.com/@davidmottet/getting-started-with-docker-123456)
-
-## Contact Me
-- [LinkedIn](https://www.linkedin.com/in/davidmottet)
-- [Twitter](https://twitter.com/davidmottet)
-- [Email](mailto:davidmottet@example.com)
-
-## GitHub Stats
-![David Mottet's GitHub stats](https://github-readme-stats.vercel.app/api?username=davidmottet&show_icons=true&theme=radical)
-
-## Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=davidmottet&layout=compact&theme=radical)
-
-## Fun Fact
-I love to travel and explore new places. 🌍✈️
+## 📬 Get in Touch  
+Feel free to connect with me for collaboration or just to share ideas:
+- **Email**: [contact@davidmottet.com](contact@davidmottet.com)
+- **LinkedIn**: [davidmottet](https://fr.linkedin.com/in/davidmottet)
+- **Website/Portfolio**: [davidmottet.com](davidmottet.com)
