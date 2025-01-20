@@ -18,5 +18,5 @@ When I’m not coding, I’m hanging out with my loyal American Bully, **Junior*
 ## 📬 Get in Touch  
 Feel free to connect with me for collaboration or just to share ideas:
 - **Email**: [contact@davidmottet.com](contact@davidmottet.com)
-- **LinkedIn**: [davidmottet](https://fr.linkedin.com/in/davidmottet)
+- **LinkedIn**: [in/davidmottet](https://fr.linkedin.com/in/davidmottet)
 - **Website/Portfolio**: [davidmottet.com](davidmottet.com)
