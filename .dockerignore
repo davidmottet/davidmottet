@@ -1,0 +1,13 @@
+# Dev / VCS noise — never needed in the image
+.git
+.gitignore
+.dockerignore
+.DS_Store
+**/.DS_Store
+README.md
+Dockerfile
+docker-compose.yml
+
+# Original CVs that contain personal data (address, age, marital status).
+# Only the polished CV_David_Mottet_*.pdf versions go into the image.
+David MOTTET cv *.pdf

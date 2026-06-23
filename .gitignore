@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# CV PDFs — kept OUT of version control (personal documents).
+# They still exist locally and are baked into the Docker image at build time
+# (see Dockerfile + .dockerignore), they are just never committed to Git.
+*.pdf
