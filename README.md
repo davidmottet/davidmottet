@@ -27,9 +27,16 @@ Tech Lead and full-stack developer with **12 years of experience**, specialised 
 Beyond serving as my GitHub profile, this repo **is the source of [davidmottet.com](https://davidmottet.com)** — a single-page, bilingual (FR/EN) promo site built as plain HTML/CSS/JS and shipped as a Docker container (nginx) onto my own server.
 
 ```bash
-# Run it locally
-docker compose up --build       # → http://localhost:8080
+# Local preview (no Docker needed)
+python3 -m http.server 8765                 # → http://localhost:8765
+
+# Or build & run the image directly
+docker build -t davidmottet-web .
+docker run --rm -p 8080:80 davidmottet-web  # → http://localhost:8080
 ```
+
+> In production the container is deployed via `docker-compose.yml`, which attaches
+> to the server's Traefik network and routes `davidmottet.com` (+ `www`) over HTTPS.
 
 | File | Purpose |
 | --- | --- |
