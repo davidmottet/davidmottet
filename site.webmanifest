@@ -1,0 +1,16 @@
+{
+  "name": "David Mottet — Tech Lead & Développeur Full-Stack",
+  "short_name": "David Mottet",
+  "description": "Tech Lead et développeur full-stack, 12 ans d'expérience. Disponible en freelance dès le 19 juillet 2026.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#f4f1ea",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
