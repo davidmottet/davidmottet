@@ -1,27 +1,95 @@
 {
   "date": "2026-07-26",
-  "title": "Exemple — premier jour de veille",
-  "intro": "Entrée d'exemple pour valider la section news. Elle sera remplacée par le premier vrai résumé quotidien de Hacker News généré par la tâche programmée.",
+  "title": "IA à tous les étages, micro-hardware qui impressionne et vie privée européenne",
+  "intro": "Journée dominée par l'IA sous toutes ses formes : Anthropic théorise l'ingénierie de contexte pour la génération Claude 5, DeepSeek fait parler d'une réunion investisseurs fuitée, et Stanford tente de séparer le battage médiatique de la réalité sur l'emploi. En contrepoint, la communauté hardware s'amuse avec des ESP32 à 8 dollars qui font tourner des LLM ou affichent le trafic aérien, pendant que l'Europe s'attaque aux bannières de cookies.",
   "items": [
     {
-      "title": "Show HN: un exemple d'entrée",
-      "url": "https://news.ycombinator.com/",
-      "hn": "https://news.ycombinator.com/",
-      "points": 128,
-      "comments": 64,
-      "summary": "Deux ou trois phrases de résumé de l'article, rédigées par la tâche quotidienne. C'est ce texte qui apparaît sous le titre."
+      "title": "Les nouvelles règles du context engineering pour les modèles Claude 5",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "hn": "https://news.ycombinator.com/item?id=49051361",
+      "points": 422,
+      "comments": 321,
+      "summary": "Anthropic publie un guide sur la façon dont l'ingénierie de contexte évolue avec la génération Claude 5 : quoi mettre (et ne plus mettre) dans le contexte d'un agent quand les modèles gèrent des fenêtres longues et des sessions persistantes. Gros débat dans les commentaires sur ce qui relève de la vraie discipline d'ingénierie ou du simple prompt bricolé."
     },
     {
-      "title": "Un deuxième sujet du jour",
-      "url": "https://example.com/",
-      "points": 342,
-      "comments": 210,
-      "summary": "Le lien « HN » est optionnel : s'il est absent, seul le lien vers l'article est affiché."
+      "title": "Les deux-points en shell ne font rien. Utilisez-les quand même",
+      "url": "https://refp.se/articles/your-shell-and-the-magic-colon",
+      "hn": "https://news.ycombinator.com/item?id=49047453",
+      "points": 334,
+      "comments": 140,
+      "summary": "Filip Roséen explore la commande nulle « : » de POSIX et ses usages étonnamment pratiques : déclencher les expansions de paramètres sans exécuter quoi que ce soit, valeurs par défaut via ${VAR:=défaut}, vérification d'arguments requis avec ${VAR:?message}. Un classique du shell que beaucoup redécouvrent, FAQ sur la lisibilité incluse."
     },
     {
-      "title": "Un troisième sujet, minimal",
-      "url": "https://example.org/",
-      "summary": "Points et commentaires sont optionnels aussi — le rendu s'adapte."
+      "title": "GrapheneOS détaille ses protections contre l'extraction de données sur téléphone verrouillé",
+      "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
+      "hn": "https://news.ycombinator.com/item?id=49055169",
+      "points": 268,
+      "comments": 157,
+      "summary": "L'équipe GrapheneOS explique comment l'OS résiste aux outils d'extraction forensique utilisés sur les appareils saisis : redémarrage automatique, désactivation de l'USB en mode verrouillé, durcissement mémoire. Les commentaires comparent avec les protections d'iOS et des Pixel stock."
+    },
+    {
+      "title": "Ruff v0.16.0 : 413 règles activées par défaut, contre 59 auparavant",
+      "url": "https://astral.sh/blog/ruff-v0.16.0",
+      "hn": "https://news.ycombinator.com/item?id=49056112",
+      "points": 264,
+      "comments": 158,
+      "summary": "Grosse version pour le linter/formateur Python d'Astral : le jeu de règles par défaut passe de 59 à 413 règles (sur 968 disponibles), incluant désormais la détection d'erreurs de syntaxe et d'erreurs d'exécution immédiates sans aucune configuration. Peu de breaking changes annoncés, mais les commentaires discutent du bruit que ça va générer sur les bases de code existantes."
+    },
+    {
+      "title": "Faire tourner un LLM de 28,9M de paramètres sur un microcontrôleur à 8 $",
+      "url": "https://github.com/slvDev/esp32-ai",
+      "hn": "https://news.ycombinator.com/item?id=49050512",
+      "points": 257,
+      "comments": 65,
+      "summary": "Un modèle de langage de 28,9 millions de paramètres qui génère du texte à ~9,5 tokens/seconde sur un ESP32-S3, entièrement en local. L'astuce : stocker 25M de paramètres dans la flash plutôt qu'en RAM grâce aux Per-Layer Embeddings inspirés des modèles Gemma de Google. Le précédent record sur ce type de puce était 100 fois plus petit."
+    },
+    {
+      "title": "Un radar d'avions de bureau à base d'ESP32",
+      "url": "https://blog.ktz.me/esp32-plane-radar/",
+      "hn": "https://news.ycombinator.com/item?id=49054107",
+      "points": 227,
+      "comments": 45,
+      "summary": "Alex Kretzschmar assemble un petit radar sonar-style : un ESP32-C3 et un écran rond de 1,28 pouce qui affichent en temps réel les avions alentour via leurs signaux ADS-B, distance et cap compris. Firmware open source (C++, MIT), montage en 15 minutes avec un peu de soudure."
+    },
+    {
+      "title": "DeepSeek met sa levée de fonds en pause après la fuite de propos sur le retard de compute",
+      "url": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49052912",
+      "points": 217,
+      "comments": 173,
+      "summary": "Le transcript traduit d'une réunion investisseurs de Liang Wenfeng (22 juillet) circule sur GitHub : le fondateur de DeepSeek y évoquerait l'écart de puissance de calcul avec les laboratoires américains, et la levée de fonds serait suspendue depuis la fuite. Les commentaires débattent de l'authenticité du document et de l'état réel de la course Chine–États-Unis."
+    },
+    {
+      "title": "Google révèle détenir 94,1 milliards de dollars d'actions SpaceX, soit 6 % du capital",
+      "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
+      "hn": "https://news.ycombinator.com/item?id=49057574",
+      "points": 207,
+      "comments": 137,
+      "summary": "Selon le Wall Street Journal, un dépôt réglementaire de Google chiffre pour la première fois sa participation dans SpaceX : 6 % du capital, valorisés 94,1 milliards de dollars — ce qui situe la valorisation implicite de SpaceX autour de 1 500 milliards. La participation remonte à l'investissement de 2015 dans le projet Starlink."
+    },
+    {
+      "title": "Que se passe-t-il vraiment sur l'emploi ? Démêler le battage IA de la réalité",
+      "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+      "hn": "https://news.ycombinator.com/item?id=49052570",
+      "points": 192,
+      "comments": 261,
+      "summary": "Un policy brief du SIEPR (Stanford) examine les données d'emploi pour distinguer les effets réels de l'IA des discours ambiants. C'est le sujet le plus commenté du jour : témoignages contradictoires de développeurs, débats sur les jeunes diplômés et sur ce que mesurent vraiment les statistiques."
+    },
+    {
+      "title": "Cloudflare lance de nouvelles options de contrôle du trafic IA",
+      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "hn": "https://news.ycombinator.com/item?id=49052564",
+      "points": 166,
+      "comments": 133,
+      "summary": "Cloudflare étend sa panoplie « Content Independence Day » : de nouvelles options permettent aux sites de choisir finement ce que les crawlers et agents IA peuvent faire de leur contenu — bloquer, autoriser ou monétiser. Les commentaires opposent la protection des éditeurs au risque de fragmenter le web ouvert."
+    },
+    {
+      "title": "Kill the Cookie Banner : campagne européenne pour des préférences de vie privée dans le navigateur",
+      "url": "https://killthecookiebanner.eu/",
+      "hn": "https://news.ycombinator.com/item?id=49057175",
+      "points": 160,
+      "comments": 87,
+      "summary": "Une campagne soutient la proposition de la Commission européenne (automne 2025) de remplacer les bannières de cookies par un signal automatique de préférences envoyé par le navigateur, opposable par défaut. Le site rappelle que jusqu'à 90 % des gens cliquent « oui » alors qu'environ 3 % veulent réellement être suivis — et que l'industrie du tracking freine la réforme."
     }
   ]
 }
