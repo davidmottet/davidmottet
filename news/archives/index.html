@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Veille — David Mottet</title>
-<meta name="description" content="Veille tech quotidienne de David Mottet — résumé en français des sujets marquants de Hacker News, publié chaque jour automatiquement." />
+<title>Archives de la veille — David Mottet</title>
+<meta name="description" content="Archives de la veille tech quotidienne de David Mottet — tous les résumés Hacker News des jours précédents." />
 <meta name="author" content="David Mottet" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://davidmottet.com/news/" />
+<link rel="canonical" href="https://davidmottet.com/news/archives/" />
 
 <!-- Open Graph -->
-<meta property="og:title" content="Veille — David Mottet" />
-<meta property="og:description" content="Résumé quotidien en français des sujets marquants de Hacker News." />
+<meta property="og:title" content="Archives de la veille — David Mottet" />
+<meta property="og:description" content="Tous les résumés quotidiens Hacker News des jours précédents." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://davidmottet.com/news/" />
+<meta property="og:url" content="https://davidmottet.com/news/archives/" />
 <meta property="og:site_name" content="David Mottet" />
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:image" content="https://davidmottet.com/og-image.png" />
@@ -116,7 +116,7 @@
     <nav class="nav" aria-label="Principale">
       <a href="/" class="logo"><span class="dot"></span>David Mottet</a>
       <div class="nav-links">
-        <a href="/#about">À propos</a>
+        <a href="/news/">Édition du jour</a>
         <a href="/#contact">Contact</a>
       </div>
     </nav>
@@ -125,9 +125,9 @@
   <main>
     <div class="wrap">
       <div class="page-head">
-        <div class="page-kicker">Veille · Hacker News</div>
-        <h1>La <span class="it">veille</span></h1>
-        <p class="page-lead">Chaque jour, un résumé en français des sujets qui ont retenu mon attention sur Hacker News. Généré automatiquement, versionné dans Git, publié ici.</p>
+        <div class="page-kicker">Veille · Archives</div>
+        <h1>Les <span class="it">archives</span></h1>
+        <p class="page-lead">Toutes les éditions précédentes de la veille quotidienne Hacker News. L'édition du jour, elle, vit sur <a href="/news/">la page principale</a>.</p>
       </div>
 
       <div id="days" aria-live="polite">
@@ -135,7 +135,7 @@
       </div>
 
       <div class="more-row">
-        <a class="btn" id="archives" href="/news/archives/" hidden>Voir les archives <span id="archives-count"></span> →</a>
+        <button class="btn" id="more" hidden>Jours précédents ↓</button>
       </div>
     </div>
   </main>
@@ -144,7 +144,7 @@
     <div class="wrap">
       <div class="foot">
         <span>© 2026 David Mottet — Cerbère (66), France</span>
-        <span><a href="/">← Retour au site</a></span>
+        <span><a href="/news/">← Édition du jour</a></span>
       </div>
     </div>
   </footer>
@@ -155,10 +155,13 @@
   const onScroll = ()=>hdr.classList.toggle('scrolled', window.scrollY>10);
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-  /* ---------- news rendering: latest edition only, the rest lives in /news/archives/ ---------- */
+  /* ---------- archives rendering: every edition EXCEPT the latest ---------- */
+  const PAGE = 10; // days per batch
   const daysEl = document.getElementById('days');
   const stateEl = document.getElementById('state');
-  const archivesLink = document.getElementById('archives');
+  const moreBtn = document.getElementById('more');
+  let manifest = [];
+  let cursor = 0;
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -192,24 +195,33 @@
     </section>`;
   }
 
+  async function loadBatch(){
+    const batch = manifest.slice(cursor, cursor + PAGE);
+    cursor += batch.length;
+    moreBtn.disabled = true;
+    const days = await Promise.all(batch.map(d =>
+      fetch(`/news/data/${encodeURIComponent(d.date)}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
+    ));
+    daysEl.insertAdjacentHTML('beforeend', days.filter(Boolean).map(renderDay).join(''));
+    moreBtn.disabled = false;
+    moreBtn.hidden = cursor >= manifest.length;
+  }
+
+  moreBtn.addEventListener('click', loadBatch);
+
   fetch('/news/data/index.json')
     .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
     .then(async idx => {
-      const manifest = (idx.days || []).slice().sort((a,b) => b.date.localeCompare(a.date));
+      // Skip the most recent edition: it lives on /news/.
+      manifest = (idx.days || []).slice().sort((a,b) => b.date.localeCompare(a.date)).slice(1);
+      stateEl.remove();
       if (!manifest.length){
-        stateEl.textContent = 'Rien à lire pour l’instant — la première édition arrive bientôt.';
+        daysEl.innerHTML = '<p class="state">Pas encore d’archives — seule l’édition du jour existe pour l’instant.</p>';
         return;
       }
-      const day = await fetch(`/news/data/${encodeURIComponent(manifest[0].date)}.json`).then(r => r.ok ? r.json() : null);
-      if (!day) throw new Error('day fetch failed');
-      stateEl.remove();
-      daysEl.innerHTML = renderDay(day);
-      if (manifest.length > 1){
-        document.getElementById('archives-count').textContent = `(${manifest.length - 1})`;
-        archivesLink.hidden = false;
-      }
+      await loadBatch();
     })
-    .catch(() => { stateEl.textContent = 'Impossible de charger la veille pour le moment.'; });
+    .catch(() => { stateEl.textContent = 'Impossible de charger les archives pour le moment.'; });
 </script>
 </body>
 </html>
