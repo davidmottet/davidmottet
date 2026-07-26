@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veille — David Mottet</title>
+<meta name="description" content="Veille tech quotidienne de David Mottet — résumé en français des sujets marquants de Hacker News, publié chaque jour automatiquement." />
+<meta name="author" content="David Mottet" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://davidmottet.com/news/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Veille — David Mottet" />
+<meta property="og:description" content="Résumé quotidien en français des sujets marquants de Hacker News." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://davidmottet.com/news/" />
+<meta property="og:site_name" content="David Mottet" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:image" content="https://davidmottet.com/og-image.png" />
+
+<!-- Icons & manifest -->
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#f4f1ea" />
+
+<link rel="preload" href="/fonts/fraunces-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/fonts/fonts.css" />
+<style>
+  :root{
+    --paper:#f4f1ea;
+    --paper-2:#efeae0;
+    --card:#faf8f3;
+    --ink:#1a1813;
+    --ink-soft:#3d3a32;
+    --muted:#75706485;
+    --muted-2:#827c6f;
+    --accent:#c0502c;
+    --accent-soft:#e8d9cf;
+    --live:#4f9a63;
+    --line:rgba(26,24,19,.12);
+    --line-2:rgba(26,24,19,.07);
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Hanken Grotesk',system-ui,sans-serif;
+    --mono:'JetBrains Mono',monospace;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --maxw:900px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--accent);color:var(--paper)}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;overflow-x:hidden;
+  }
+  body::before{ /* subtle paper grain */
+    content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.025;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,48px);position:relative;z-index:2}
+  a{color:inherit}
+
+  /* ---------- header ---------- */
+  header{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s var(--ease)}
+  header.scrolled{border-color:var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);max-width:var(--maxw);margin:0 auto}
+  .logo{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:9px}
+  .logo .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .nav-links{display:flex;gap:clamp(16px,2.4vw,30px)}
+  .nav-links a{font-size:14.5px;text-decoration:none;color:var(--ink-soft);position:relative;padding:3px 0;transition:color .25s var(--ease)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-1px;width:0;height:1.5px;background:var(--accent);transition:width .3s var(--ease)}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-links a:hover::after{width:100%}
+
+  /* ---------- page head ---------- */
+  .page-head{padding:clamp(50px,9vh,90px) 0 clamp(30px,5vh,50px)}
+  .page-kicker{font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--accent);text-transform:uppercase;margin-bottom:16px}
+  .page-head h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,7vw,72px);line-height:.98;letter-spacing:-.02em}
+  .page-head h1 .it{font-style:italic}
+  .page-lead{max-width:56ch;font-size:clamp(15px,1.3vw,17px);color:var(--ink-soft);margin-top:20px;line-height:1.7}
+
+  /* ---------- days ---------- */
+  .day{border-top:1px solid var(--line);padding:clamp(30px,5vh,48px) 0}
+  .day:last-of-type{border-bottom:1px solid var(--line)}
+  .day-date{font-family:var(--mono);font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+  .day-title{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.8vw,30px);letter-spacing:-.01em;margin-top:10px}
+  .day-intro{color:var(--ink-soft);font-size:15.5px;line-height:1.7;margin-top:12px;max-width:64ch}
+  .items{margin-top:22px;display:flex;flex-direction:column}
+  .item{padding:16px 0;border-top:1px solid var(--line-2)}
+  .item-title{font-size:16.5px;font-weight:600;line-height:1.4}
+  .item-title a{text-decoration:none;transition:color .25s var(--ease)}
+  .item-title a:hover{color:var(--accent)}
+  .item-meta{font-family:var(--mono);font-size:12px;color:var(--muted-2);margin-top:5px;display:flex;flex-wrap:wrap;gap:14px}
+  .item-meta a{text-decoration:none;color:var(--muted-2)}
+  .item-meta a:hover{color:var(--accent)}
+  .item-summary{color:var(--ink-soft);font-size:15px;line-height:1.65;margin-top:8px;max-width:66ch}
+
+  /* ---------- states ---------- */
+  .state{font-family:var(--mono);font-size:13px;color:var(--muted-2);padding:40px 0}
+  .more-row{display:flex;justify-content:center;padding:36px 0}
+  .btn{font-size:15px;font-weight:500;padding:12px 24px;border-radius:100px;display:inline-flex;align-items:center;gap:9px;transition:all .3s var(--ease);border:1px solid var(--line);color:var(--ink);background:transparent;cursor:pointer;font-family:var(--sans)}
+  .btn:hover{border-color:var(--ink);background:var(--card);transform:translateY(-2px)}
+  .btn[hidden]{display:none}
+
+  footer{border-top:1px solid var(--line);margin-top:30px;padding:30px 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted-2)}
+  .foot a{text-decoration:none;color:var(--muted-2)}
+  .foot a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+  <header id="hdr">
+    <nav class="nav" aria-label="Principale">
+      <a href="/" class="logo"><span class="dot"></span>David Mottet</a>
+      <div class="nav-links">
+        <a href="/#about">À propos</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <div class="page-kicker">Veille · Hacker News</div>
+        <h1>La <span class="it">veille</span></h1>
+        <p class="page-lead">Chaque jour, un résumé en français des sujets qui ont retenu mon attention sur Hacker News. Généré automatiquement, versionné dans Git, publié ici.</p>
+      </div>
+
+      <div id="days" aria-live="polite">
+        <p class="state" id="state">Chargement…</p>
+      </div>
+
+      <div class="more-row">
+        <button class="btn" id="more" hidden>Jours précédents ↓</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <span>© 2026 David Mottet — Cerbère (66), France</span>
+        <span><a href="/">← Retour au site</a></span>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  /* ---------- header shadow ---------- */
+  const hdr = document.getElementById('hdr');
+  const onScroll = ()=>hdr.classList.toggle('scrolled', window.scrollY>10);
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- news rendering ---------- */
+  const PAGE = 7; // days per batch
+  const daysEl = document.getElementById('days');
+  const stateEl = document.getElementById('state');
+  const moreBtn = document.getElementById('more');
+  let manifest = [];
+  let cursor = 0;
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const fmtDate = iso => {
+    const d = new Date(iso + 'T12:00:00');
+    return isNaN(d) ? iso : d.toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+  };
+
+  function renderDay(day){
+    const items = (day.items || []).map(it => {
+      const meta = [];
+      if (Number.isFinite(it.points)) meta.push(`▲ ${it.points} pts`);
+      if (Number.isFinite(it.comments)) meta.push(it.hn
+        ? `<a href="${esc(it.hn)}" target="_blank" rel="noopener">💬 ${it.comments} commentaires ↗</a>`
+        : `💬 ${it.comments} commentaires`);
+      else if (it.hn) meta.push(`<a href="${esc(it.hn)}" target="_blank" rel="noopener">discussion HN ↗</a>`);
+      let host = '';
+      try { host = new URL(it.url).hostname.replace(/^www\./,''); } catch {}
+      if (host) meta.push(esc(host));
+      return `<article class="item">
+        <h3 class="item-title"><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></h3>
+        ${meta.length ? `<div class="item-meta">${meta.join('')}</div>`.replace(/<\/a>(?=<)/g,'</a> ') : ''}
+        ${it.summary ? `<p class="item-summary">${esc(it.summary)}</p>` : ''}
+      </article>`;
+    }).join('');
+    return `<section class="day" id="d-${esc(day.date)}">
+      <div class="day-date">${esc(fmtDate(day.date))}</div>
+      ${day.title ? `<h2 class="day-title">${esc(day.title)}</h2>` : ''}
+      ${day.intro ? `<p class="day-intro">${esc(day.intro)}</p>` : ''}
+      <div class="items">${items}</div>
+    </section>`;
+  }
+
+  async function loadBatch(){
+    const batch = manifest.slice(cursor, cursor + PAGE);
+    cursor += batch.length;
+    moreBtn.disabled = true;
+    const days = await Promise.all(batch.map(d =>
+      fetch(`/news/data/${encodeURIComponent(d.date)}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
+    ));
+    daysEl.insertAdjacentHTML('beforeend', days.filter(Boolean).map(renderDay).join(''));
+    moreBtn.disabled = false;
+    moreBtn.hidden = cursor >= manifest.length;
+  }
+
+  moreBtn.addEventListener('click', loadBatch);
+
+  fetch('/news/data/index.json')
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(async idx => {
+      manifest = (idx.days || []).slice().sort((a,b) => b.date.localeCompare(a.date));
+      stateEl.remove();
+      if (!manifest.length){
+        daysEl.innerHTML = '<p class="state">Rien à lire pour l’instant — la première édition arrive bientôt.</p>';
+        return;
+      }
+      await loadBatch();
+    })
+    .catch(() => { stateEl.textContent = 'Impossible de charger la veille pour le moment.'; });
+</script>
+</body>
+</html>

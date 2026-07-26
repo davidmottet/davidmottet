@@ -19,6 +19,7 @@ COPY index.html robots.txt sitemap.xml site.webmanifest \
      /usr/share/nginx/html/
 COPY fonts/ /usr/share/nginx/html/fonts/
 COPY en/ /usr/share/nginx/html/en/
+COPY news/ /usr/share/nginx/html/news/
 COPY CV_David_Mottet_EN.pdf CV_David_Mottet_FR.pdf /usr/share/nginx/html/
 
 EXPOSE 80
