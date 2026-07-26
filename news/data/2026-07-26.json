@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-26",
+  "title": "Exemple — premier jour de veille",
+  "intro": "Entrée d'exemple pour valider la section news. Elle sera remplacée par le premier vrai résumé quotidien de Hacker News généré par la tâche programmée.",
+  "items": [
+    {
+      "title": "Show HN: un exemple d'entrée",
+      "url": "https://news.ycombinator.com/",
+      "hn": "https://news.ycombinator.com/",
+      "points": 128,
+      "comments": 64,
+      "summary": "Deux ou trois phrases de résumé de l'article, rédigées par la tâche quotidienne. C'est ce texte qui apparaît sous le titre."
+    },
+    {
+      "title": "Un deuxième sujet du jour",
+      "url": "https://example.com/",
+      "points": 342,
+      "comments": 210,
+      "summary": "Le lien « HN » est optionnel : s'il est absent, seul le lien vers l'article est affiché."
+    },
+    {
+      "title": "Un troisième sujet, minimal",
+      "url": "https://example.org/",
+      "summary": "Points et commentaires sont optionnels aussi — le rendu s'adapte."
+    }
+  ]
+}
