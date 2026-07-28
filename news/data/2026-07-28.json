@@ -1,0 +1,103 @@
+{
+  "date": "2026-07-28",
+  "title": "Confiance trahie, Windows absorbé par Linux et l'IA qui redistribue les cartes",
+  "intro": "La journée est dominée par des questions de confiance : deux frères jumeaux qui effacent 96 bases de données gouvernementales à la minute où ils sont licenciés, un exploit zero-day qui ouvre les disques chiffrés par BitLocker, et Princeton qui abandonne 133 ans d'honor system face à la triche assistée par IA. En parallèle, l'IA continue de redistribuer les cartes de l'industrie — licenciements chez Cisco malgré des revenus records, offensive d'Anthropic vers les petites entreprises, débat sur la commercialisation américaine — pendant que Linux digère les API de Windows pour mieux faire tourner ses jeux.",
+  "items": [
+    {
+      "title": "Des jumeaux effacent 96 bases de données gouvernementales quelques minutes après leur licenciement",
+      "url": "https://arstechnica.com/tech-policy/2026/07/twin-brothers-wipe-96-government-databases-minutes-after-being-fired/",
+      "hn": "https://news.ycombinator.com/item?id=48115438",
+      "points": 327,
+      "comments": 242,
+      "summary": "Muneeb et Sohaib Akhter, 34 ans, sous-traitants fédéraux chez Opexus, ont supprimé environ 96 bases de données (dont des systèmes liés au Homeland Security et aux demandes FOIA) dans les minutes suivant leur licenciement, en profitant d'accès réseau non révoqués — et en demandant à une IA comment effacer les journaux système. Déjà condamnés en 2015 pour avoir piraté le Département d'État, ils risquent jusqu'à 45 ans de prison. Les commentaires HN débattent surtout des leçons à en tirer : révoquer les accès sensibles avant l'annonce d'un licenciement, limiter les accès unilatéraux, sans tomber dans une paranoïa sécuritaire contre-productive à l'embauche."
+    },
+    {
+      "title": "Le jeu sous Linux accélère parce que les API Windows deviennent des fonctionnalités du noyau",
+      "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
+      "hn": "https://news.ycombinator.com/item?id=48087887",
+      "points": 202,
+      "comments": 158,
+      "summary": "Le pilote NTSYNC, activé dans Linux 6.14, implémente les primitives de synchronisation NT de Windows (sémaphores, mutex, événements) directement dans le noyau, évitant à Wine et Proton de coûteux contournements en espace utilisateur. Wine 11.0 et le bêta de Proton 11 l'exploitent déjà : les gains portent surtout sur la régularité des frametimes et la latence, plus que sur les FPS moyens. Sur HN, on salue Proton comme « la bonne approche », on discute de l'avenir du jeu natif Linux, et beaucoup citent Windows 11 comme moteur de leur migration."
+    },
+    {
+      "title": "YellowKey : un exploit zero-day ouvre les disques protégés par BitLocker avec une simple clé USB",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/microsoft-bitlocker-protected-drives-can-now-be-opened-with-just-some-files-on-a-usb-stick-yellowkey-zero-day-exploit-demonstrates-an-apparent-backdoor",
+      "hn": "https://news.ycombinator.com/item?id=48130519",
+      "points": 111,
+      "comments": 60,
+      "summary": "Un chercheur publie YellowKey : copier un dossier « FsTx » sur une clé USB puis redémarrer Windows en mode récupération suffit à obtenir une invite de commande avec accès complet au disque chiffré, même avec TPM et code PIN. Le chercheur affirme que Microsoft avait ignoré ses signalements ; aucun correctif n'existe et l'exploit touche Windows 11 et Windows Server, faisant de tout portable volé une cible. Les commentateurs HN épluchent les dépôts de preuve de concept (YellowKey, GreenPlasma) et s'interrogent sur le caractère de porte dérobée volontaire que suggère l'auto-effacement des fichiers de l'exploit."
+    },
+    {
+      "title": "Cisco supprime près de 4 000 postes malgré un chiffre d'affaires record",
+      "url": "https://blogs.cisco.com/news/our-path-forward",
+      "hn": "https://news.ycombinator.com/item?id=48130123",
+      "points": 187,
+      "comments": 168,
+      "summary": "Cisco annonce la suppression de moins de 4 000 postes (moins de 5 % des effectifs) alors même que le trimestre affiche un revenu record de 15,8 milliards de dollars, en hausse de 12 %. Le PDG Chuck Robbins justifie ce recentrage vers le silicium, l'optique, la sécurité et le déploiement de l'IA : « les entreprises qui gagneront l'ère de l'IA seront celles qui ont la discipline de réallouer sans cesse leurs investissements ». Les commentaires HN pointent la contradiction apparente entre croissance à deux chiffres et licenciements, y voyant un symptôme d'une industrie qui coupe par stratégie et non par nécessité."
+    },
+    {
+      "title": "Princeton impose la surveillance des examens, rompant 133 ans de tradition",
+      "url": "https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent",
+      "hn": "https://news.ycombinator.com/item?id=48126848",
+      "points": 159,
+      "comments": 208,
+      "summary": "Le corps enseignant de Princeton a voté à la quasi-unanimité (une seule voix contre) l'obligation de surveiller tous les examens en présentiel dès juillet 2026, alors que l'université interdisait explicitement le proctoring depuis 1893 au profit d'un honor system. En cause : la triche assistée par IA sur smartphone, difficile à détecter par les pairs, et l'effondrement du signalement (44,6 % des étudiants connaissaient des violations, 0,4 % les signalaient). Sur HN, le débat oppose ceux pour qui les examens surveillés sont la norme mondiale évidente et ceux qui y voient la fin symbolique d'une culture de confiance."
+    },
+    {
+      "title": "L'« Emacsification » du logiciel : l'ère du sur-mesure personnel",
+      "url": "https://sockpuppet.org/blog/2026/05/12/emacsification/",
+      "hn": "https://news.ycombinator.com/item?id=48118727",
+      "points": 181,
+      "comments": 116,
+      "summary": "Thomas Ptacek soutient que les agents IA font au logiciel entier ce qu'Emacs et elisp ont fait à l'édition de texte : chacun peut désormais se construire des applications natives sur mesure, comme son visualiseur Markdown MDV.app assemblé en 30 minutes. Le code source compte moins que les idées et les prompts ; programmer devient un acte de configuration. Les commentaires prolongent la thèse — pourquoi subir des applications monolithiques quand les API sous-jacentes existent ? — tout en s'interrogeant sur la maintenance et la qualité de cette prolifération d'outils personnels."
+    },
+    {
+      "title": "Obtenir gratuitement un domaine de localité .city.state.us (2025)",
+      "url": "https://fredchan.org/blog/locality-domains-guide/",
+      "hn": "https://news.ycombinator.com/item?id=48122635",
+      "points": 193,
+      "comments": 46,
+      "summary": "Les domaines de localité américains (du type prenom.seattle.wa.us) existent depuis 1992 et restent gratuits, à condition de retrouver le registrar délégué de sa ville — souvent via des listes de contacts obsolètes — et de remplir un formulaire hérité des années 90. L'auteur détaille le parcours : nameservers gratuits via Amazon Lightsail, dossier envoyé par email, attente de plusieurs semaines. Les commentaires HN mêlent nostalgie de l'Internet hiérarchique, anecdotes de registrars tenus par une seule personne (parfois décédée), et débats sur la confidentialité WHOIS du TLD .us."
+    },
+    {
+      "title": "Anthropic lance Claude for Small Business",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "hn": "https://news.ycombinator.com/item?id=48130950",
+      "points": 84,
+      "comments": 33,
+      "summary": "Anthropic cible les petites entreprises — 44 % du PIB américain — avec un paquet de 15 workflows agentiques et 15 compétences intégrées (paie, clôture mensuelle, relance de factures) connectés à QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace et Microsoft 365, chaque action requérant l'approbation de l'utilisateur. Une tournée dans plus de dix villes accompagne le lancement. Sur HN, on partage des automatisations maison (catégorisation de factures via IMAP et beancount) et on estime que le vrai défi n'est pas la capacité mais l'adoption : la moitié des PME citent la sécurité des données comme premier frein."
+    },
+    {
+      "title": "Les États-Unis gagnent la course à l'IA là où ça compte : la commercialisation",
+      "url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+      "hn": "https://news.ycombinator.com/item?id=48121929",
+      "points": 57,
+      "comments": 142,
+      "summary": "L'auteur soutient que l'avantage américain ne tient pas au coût de l'énergie mais à l'intégration verticale : hyperscalers (AWS, Azure, Google Cloud) comme canaux de distribution, contrôle des plateformes de données (YouTube, GitHub, Microsoft 365) et rapidité de mise sur le marché, quand DeepSeek servirait d'abord l'autonomie technologique chinoise plutôt qu'une logique commerciale. L'Europe, sans hyperscaler, mettrait une décennie à rattraper. Les 142 commentaires contestent surtout la définition de « gagner » : si l'avenir est aux LLM locaux et au matériel grand public, c'est peut-être la Chine qui mène."
+    },
+    {
+      "title": "Une histoire des IDE chez Google",
+      "url": "https://laurent.le-brun.eu/blog/a-history-of-ides-at-google",
+      "hn": "https://news.ycombinator.com/item?id=48073979",
+      "points": 65,
+      "comments": 36,
+      "summary": "D'un écosystème fragmenté en 2011 — Jeff Dean lui-même s'opposait à imposer un IDE unique — Google est passé à Cider, éditeur web maison lancé vers 2013, puis à Cider V, qui greffe un frontend VS Code sur le backend d'indexation du monorepo : 80 % d'adoption en 2023, une centaine d'extensions internes et des fonctions IA (revue de code, smart paste). Le billet illustre la difficulté d'outiller un des plus grands monorepos du monde. Les commentaires s'interrogent sur la suite, notamment la place d'Antigravity face à Cider V dans l'outillage officiel."
+    },
+    {
+      "title": "MacBook Neo : benchmarks, économie du wafer et le pari des 8 Go",
+      "url": "https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/",
+      "hn": "https://news.ycombinator.com/item?id=48125617",
+      "points": 52,
+      "comments": 19,
+      "summary": "Analyse fouillée du MacBook Neo, le portable Apple d'entrée de gamme lancé en mars 2026 à 599 $ (699 $ depuis juin) autour de la puce A18 Pro de l'iPhone 16 Pro : excellent en rafale (3 569 points single-core sur Geekbench 6, entre M3 et M4), mais l'absence de ventilateur fait chuter les performances de 64 % en 15 secondes de charge soutenue. La petite puce de 105 mm² coûterait 34 à 40 $ le die, amortie sur 230 millions d'iPhone, et la pénurie de DRAM explique le plafond de 8 Go. Sur HN, on juge la machine « suffisante pour 90 % des gens à moitié prix » d'un MacBook Air."
+    },
+    {
+      "title": "Scorched Earth 2000 arrive dans le navigateur",
+      "url": "http://www.scorch2000.com/web/",
+      "hn": "https://news.ycombinator.com/item?id=48129694",
+      "points": 108,
+      "comments": 33,
+      "summary": "Le remake multijoueur du légendaire jeu d'artillerie DOS Scorched Earth, développé à l'origine en Java sous le nom Scorched Earth 2000, est désormais jouable directement dans le navigateur. La recette n'a pas changé : des tanks, un angle, une puissance, et un arsenal démesuré pour pulvériser le terrain et les adversaires. Le fil HN est un concentré de nostalgie, où l'on raconte ses premières bidouilles d'enfance — comme modifier les fichiers de la version shareware pour débloquer les armes payantes."
+    }
+  ]
+}
