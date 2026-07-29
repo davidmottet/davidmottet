@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-29",
+  "title": "Poids ouverts sous pression, PIN de contrainte devant la justice et livres rares au broyeur",
+  "intro": "La question des modèles à poids ouverts domine la journée : Anthropic publie sa position officielle pendant que le chinois Kimi-K3 s'installe au sommet des classements, et que l'introduction en bourse record du fabricant de mémoire CXMT rappelle l'ampleur de la course aux infrastructures. En parallèle, deux affaires judiciaires font frémir la communauté — un PIN d'effacement d'urgence qui vaut des poursuites fédérales à un voyageur, et un underscore manquant qui a envoyé un innocent en prison. Enfin, la révélation que des entreprises d'IA broient des livres rares après numérisation soulève un débat inattendu sur le patrimoine écrit.",
+  "items": [
+    {
+      "title": "Anthropic publie sa position sur les modèles à poids ouverts",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "hn": "https://news.ycombinator.com/item?id=49076057",
+      "points": 1364,
+      "comments": 944,
+      "summary": "Dario Amodei affirme qu'Anthropic n'a « jamais plaidé pour une interdiction » des modèles à poids ouverts : l'entreprise propose que les modèles les plus capables — ouverts ou fermés — passent des tests de sécurité rigoureux, et défend plutôt des contrôles sur les semi-conducteurs et des mesures contre la distillation à grande échelle. Le texte répond aux critiques visant Anthropic, l'un des derniers grands acteurs à ne pas avoir signé la lettre pro-poids ouverts menée par Nvidia. Les 900+ commentaires HN sont largement sceptiques : beaucoup y voient une capture réglementaire déguisée en discours de sécurité, relèvent l'ironie d'un opposant à la distillation qui a lui-même entraîné ses modèles sur les données d'autrui, et notent que les positions de l'entreprise s'alignent commodément avec ses intérêts commerciaux."
+    },
+    {
+      "title": "Un Américain poursuivi après l'effacement de son téléphone GrapheneOS lors d'une fouille à l'aéroport",
+      "url": "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html",
+      "hn": "https://news.ycombinator.com/item?id=49063022",
+      "points": 1038,
+      "comments": 1290,
+      "summary": "De retour de République dominicaine, un citoyen américain a donné aux agents du CBP le « PIN de contrainte » de son téléphone GrapheneOS, déclenchant l'effacement complet de l'appareil ; le parquet fédéral le poursuit pour destruction de preuves et fausses déclarations, sans qu'aucune infraction sous-jacente précise ne soit établie — le dossier évoque vaguement son activisme passé contre « Cop City » à Atlanta. Le fil, l'un des plus commentés de la semaine, débat de la légalité de ces fouilles sans mandat à la frontière, de la question de savoir si fournir un PIN d'effacement constitue un mensonge à un agent fédéral, et du risque juridique réel des fonctions de sécurité type duress PIN, entre droit au silence et accusation d'obstruction."
+    },
+    {
+      "title": "Kimi-K3 : le modèle à poids ouverts de Moonshot AI s'installe au niveau des modèles frontière",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "hn": "https://news.ycombinator.com/item?id=49065752",
+      "points": 532,
+      "comments": 1343,
+      "summary": "Moonshot AI a mis en ligne les poids de Kimi-K3, un Mixture-of-Experts de 2 800 milliards de paramètres (16 experts actifs sur 896) avec contexte d'un million de tokens et vision native, qui se classe troisième de l'index Artificial Analysis derrière Claude Fable et GPT-5.6 — du jamais vu pour un modèle ouvert, réduisant l'écart avec les modèles fermés à 3-5 mois environ. Le fil HN (1 300+ commentaires) discute des besoins matériels démesurés (environ 1,5 To de VRAM en service, 2,5-3 To de RAM en CPU pour 5-6 tokens/s), de la pression tarifaire attendue sur les API propriétaires, et des chiffres de SemiAnalysis suggérant que les marges brutes des grands labos dépassent 80 % côté API."
+    },
+    {
+      "title": "Des entreprises d'IA broient des livres rares après les avoir numérisés",
+      "url": "https://x.com/HedgieMarkets/status/2081534588485296565",
+      "hn": "https://news.ycombinator.com/item?id=49068738",
+      "points": 489,
+      "comments": 769,
+      "summary": "Un fil viral, appuyé par des libraires européens et des enquêtes de presse, documente l'achat en masse de livres d'occasion — dont des éditions à faible tirage — que des entreprises d'IA scannent en coupant les reliures puis détruisent ; des propositions de prestataires évoquent 500 000 à 2 millions d'ouvrages sur six mois, et le jugement Bartz v. Anthropic de 2025 a validé ce « scan destructif » d'exemplaires achetés comme fair use. Les commentaires HN soulignent l'incitation perverse du droit d'auteur — numériser-détruire est légal là où numériser-préserver expose à des poursuites, comme l'a appris Archive.org — tout en débattant de la rareté réelle des ouvrages concernés, les achats semblant se concentrer sur des volumes avec ISBN plutôt que sur les livres anciens."
+    },
+    {
+      "title": "Où en est la réécriture de Bun en Rust ?",
+      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "hn": "https://news.ycombinator.com/item?id=49067854",
+      "points": 372,
+      "comments": 472,
+      "summary": "Tom Lockwood fait le point sur la traduction du runtime JavaScript Bun de Zig vers Rust, réalisée en grande partie par Claude pour un coût annoncé d'environ 165 000 dollars de tokens ; la version Rust serait déjà déployée auprès des utilisateurs de Claude Code, mais sans publication officielle. Les commentateurs contestent le récit du « moins cher qu'une équipe d'ingénieurs » : le code produit serait du Rust non idiomatique truffé de blocs unsafe, les métriques d'avancement comptent des fichiers touchés plutôt qu'un travail validé, et beaucoup y voient d'abord une opération de communication sur les capacités des agents, dont la dette technique reste à payer."
+    },
+    {
+      "title": "Un cadre de Netflix licencié après une confession lors d'un « exercice de confiance »",
+      "url": "https://www.thedailybeast.com/netflix-exec-kevin-baillie-fired-for-revealing-this-during-a-work-retreat/",
+      "hn": "https://news.ycombinator.com/item?id=49076923",
+      "points": 345,
+      "comments": 349,
+      "summary": "Kevin Baillie, vice-président des studios d'effets visuels Eyeline (salaire d'environ 1,1 million de dollars), a révélé lors d'un séminaire Netflix de janvier avoir suivi en 2022 un traitement médical à la kétamine contre la dépression après le décès de sa mère ; licencié en avril sans indemnités, il poursuit l'entreprise, dont l'avocat a reconnu que la question de la kétamine avait « pesé dans la décision ». Les commentaires HN sont unanimes sur la leçon : un séminaire reste un lieu de travail où les rapports de pouvoir ne disparaissent pas, les RH protègent l'entreprise et non l'employé, et l'injonction à « apporter tout son être au travail » se retourne contre ceux qui la prennent au mot — plusieurs y voient en outre une discrimination liée au handicap juridiquement risquée pour Netflix."
+    },
+    {
+      "title": "Ed Zitron : Apple « regardera tout brûler » quand la bulle IA éclatera",
+      "url": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+      "hn": "https://news.ycombinator.com/item?id=49070427",
+      "points": 320,
+      "comments": 241,
+      "summary": "Le critique Ed Zitron soutient que la prudence d'Apple — environ 14 milliards de dollars de capex quand les hyperscalers en engloutissent plus de 650 milliards par an, et 1 milliard versé à Google pour intégrer Gemini plutôt que de construire ses propres data centers — la placera en position de force pour racheter à bas prix quand l'économie des LLM, illustrée par les 20,9 milliards de pertes d'OpenAI en 2025, s'effondrera. L'argument fait mouche dans un contexte où la pénurie de mémoire liée à l'IA a doublé le prix de la DRAM et renchérit déjà le matériel ; les commentateurs débattent de savoir si Apple est visionnaire ou simplement en retard, son propre Apple Intelligence étant qualifié par Zitron de machine à « radicaliser ses utilisateurs contre l'IA »."
+    },
+    {
+      "title": "Le fabricant chinois de mémoire CXMT bondit de 470 % pour son entrée en bourse",
+      "url": "https://au.finance.yahoo.com/news/chipmaker-cxmt-becomes-mainland-chinas-042559033.html",
+      "hn": "https://news.ycombinator.com/item?id=49066962",
+      "points": 184,
+      "comments": 212,
+      "summary": "ChangXin Memory Technologies (CXMT), fabricant chinois de DRAM, a vu son action s'envoler de près de 470 % le 28 juillet pour ses débuts sur le Star Market de Shanghai, atteignant environ 3 300 milliards de yuans (487 milliards de dollars) de capitalisation — la plus grosse valeur cotée de Chine continentale, avec seulement 7 % du capital flottant. L'envolée illustre à la fois la pénurie mondiale de mémoire, dont les prix ont plus que doublé en quelques mois sous la demande des data centers IA, et la volonté de Pékin de briser la domination coréenne et américaine qui concentre environ 90 % de la production mondiale de DRAM."
+    },
+    {
+      "title": "Un underscore manquant a envoyé un innocent en prison pendant 18 mois",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/how-a-single-underscore-led-to-an-innocent-halifax-man-s-conviction-9.7283149",
+      "hn": "https://news.ycombinator.com/item?id=49076116",
+      "points": 184,
+      "comments": 319,
+      "summary": "Dans une enquête pour sollicitation de mineurs partie du Wisconsin, la police a demandé à la messagerie Kik les données du compte « fus_ro_dah » (un underscore) au lieu du suspect « fus__ro_dah » (deux underscores) : Brandon Klayme, un Néo-Écossais titulaire du premier pseudo, a été arrêté en 2020, condamné et a purgé 18 mois de prison avant que la Cour d'appel de Nouvelle-Écosse ne le déclare « factuellement innocent » — l'erreur n'a été repérée qu'en appel, alors que l'information figurait au dossier dès le procès et qu'aucune preuve n'existait sur ses appareils. Le fil HN s'indigne qu'aucun maillon de la chaîne — police, parquet, défense, juge — n'ait vérifié une correspondance aussi élémentaire, et y voit une illustration du danger d'une confiance aveugle dans les preuves numériques."
+    },
+    {
+      "title": "Un juge rejette la tentative de Google d'utiliser le DMCA contre le scraping de ses résultats",
+      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
+      "hn": "https://news.ycombinator.com/item?id=49073513",
+      "points": 128,
+      "comments": 316,
+      "summary": "Dans l'affaire Google contre SerpAPI — service qui revend un accès programmatique aux pages de résultats, notamment à Perplexity —, un juge fédéral californien a rejeté l'argument selon lequel contourner « SearchGuard », le mécanisme anti-bots de Google, violerait les dispositions anti-contournement du DMCA : les pages de résultats mêlent contenus protégés et non protégés, et le DMCA ne s'applique qu'aux œuvres sous copyright. Google peut redéposer des griefs plus étroits, mais la décision affaiblit l'arme juridique favorite contre les scrapers ; les commentateurs savourent l'ironie de voir le plus grand scraper du web plaider contre le scraping, au moment où les données deviennent le nerf de la guerre de l'IA."
+    },
+    {
+      "title": "Faut-il laver ses panneaux solaires ? Une expérience chiffrée",
+      "url": "https://incoherency.co.uk/blog/stories/should-you-wash-your-solar-panels.html",
+      "hn": "https://news.ycombinator.com/item?id=49069132",
+      "points": 234,
+      "comments": 235,
+      "summary": "James Stanley a lavé une seule des deux rangées de ses 16 panneaux vieux de 15 ans et comparé leur production tout au long de la journée : le nettoyage n'apporte que 2 à 5 % de gain, soit environ 60 à 150 livres par an, ce qui rend l'opération « tout juste rentable » — d'autant que la poussière revient. Les commentaires HN nuancent avec des contre-exemples (un lecteur revendique 35-40 % de gain après 8 ans sans entretien dans un environnement plus sale), rappellent les règles de mise à la terre et les risques des tensions continues de 300-600 V, et déconseillent les services professionnels à 50 dollars le panneau pour un bénéfice aussi marginal."
+    }
+  ]
+}
