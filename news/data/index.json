@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-01",
+      "title": "La CJUE légitime les VPN, Azure Cosmos DB mis à nu et l'IA entre recherche opaque et prolifération d'agents",
+      "count": 12
+    },
+    {
       "date": "2026-07-30",
       "title": "Windows déteint sur le noyau Linux, sabotage éclair de 96 bases fédérales et porte dérobée présumée dans BitLocker",
       "count": 12

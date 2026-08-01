@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-01",
+  "title": "La CJUE légitime les VPN, Azure Cosmos DB mis à nu et l'IA entre recherche opaque et prolifération d'agents",
+  "intro": "Journée dominée par le droit et la sécurité du cloud : la Cour de justice de l'UE déclare les VPN « outils techniques licites » dans une affaire autour du journal d'Anne Frank, pendant que Wiz révèle une faille qui donnait accès à toutes les bases Azure Cosmos DB. Côté IA, un article de Science pointe le peu de publications scientifiques des startups vedettes, alors que les outils pour piloter des flottes d'agents de code connaissent une « explosion cambrienne ». Et entre batteries tout-solide, verre optique de 1914 et retour de Ron Gilbert, la technique garde une belle place.",
+  "items": [
+    {
+      "title": "« Les VPN sont des outils techniques licites » : la CJUE tranche dans l'affaire du journal d'Anne Frank",
+      "url": "https://remysharp.com/links/2026-07-23-35890312",
+      "hn": "https://news.ycombinator.com/item?id=49109440",
+      "points": 410,
+      "comments": 158,
+      "summary": "Des institutions académiques néerlandaises et belges avaient publié une édition savante du journal d'Anne Frank hébergée en Belgique (où le texte est dans le domaine public) avec géoblocage des IP néerlandaises, le texte restant protégé aux Pays-Bas jusqu'en 2037 ; le fonds Anne Frank attaquait en arguant que les VPN rendaient ce blocage inopérant. La Cour de justice de l'UE juge que les VPN sont des « outils techniques licites », que l'éditeur n'est pas responsable des contournements par VPN et qu'un géoblocage n'a pas à être parfait pour être valable. Sur HN, on salue la reconnaissance des usages légitimes (télétravail, domotique, sécurité) tout en débattant de l'efficacité réelle des VPN commerciaux pour la vie privée."
+    },
+    {
+      "title": "CosmosEscape : une chaîne de failles donnait accès à toutes les bases Azure Cosmos DB",
+      "url": "https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db",
+      "hn": "https://news.ycombinator.com/item?id=49108963",
+      "points": 54,
+      "comments": 14,
+      "summary": "Les chercheurs de Wiz montrent que le moteur de requêtes Gremlin de Cosmos DB traduisait les requêtes en code .NET sans se prémunir de la réflexion .NET, permettant une évasion puis, via une « clé maîtresse » interne, un accès en lecture-écriture à toutes les bases Cosmos DB du service. Microsoft a colmaté la faille immédiate en deux jours mais a passé six mois à réarchitecturer le backend, qui alimente aussi des services comme Teams et Copilot. Les commentaires jugent la conception « amateur », rappellent le précédent ChaosDB déjà déniché par Wiz et s'interrogent sur la confiance à accorder aux bases managées des hyperscalers."
+    },
+    {
+      "title": "Le meilleur usage du Vision Pro : visiter sa future maison avant de la construire",
+      "url": "https://christianselig.com/2026/07/vision-pro-house/",
+      "hn": "https://news.ycombinator.com/item?id=49102774",
+      "points": 320,
+      "comments": 154,
+      "summary": "Christian Selig a modélisé sa future maison dans Fusion 360, exporté le modèle en USDZ et l'a parcourue en taille réelle avec un Apple Vision Pro pour valider proportions, hauteurs sous plafond et volumes avant le chantier, corrigeant des défauts qui auraient coûté cher une fois construits. Des professionnels confirment dans les commentaires que des cabinets d'architecture font déjà des visites immersives clients avec Revit et Enscape sur Quest 3. Le débat porte surtout sur le prix : beaucoup estiment qu'un casque à 3 500 $ n'apporte rien de plus qu'un Quest d'occasion à 300 $ pour ce cas d'usage, relançant la question de la viabilité du Vision Pro."
+    },
+    {
+      "title": "Pourquoi tout le monde veut construire une batterie tout-solide",
+      "url": "https://www.construction-physics.com/p/why-is-everyone-trying-to-build-a",
+      "hn": "https://news.ycombinator.com/item?id=49109193",
+      "points": 151,
+      "comments": 186,
+      "summary": "Construction Physics examine pourquoi l'industrie investit massivement dans les batteries à électrolyte solide, promesse de meilleure densité énergétique et de sécurité par rapport au lithium-ion classique, malgré des obstacles de fabrication persistants. Les commentaires, très techniques, décrivent le « Graal » — un électrolyte polymère conducteur monoionique stable de -40 °C à 80 °C — que personne n'a encore réalisé, et notent que le design de QuantumScape n'est pas purement solide puisqu'il conserve un catholyte liquide organique. On y débat aussi de l'idée reçue selon laquelle plus de densité énergétique impliquerait forcément plus de danger."
+    },
+    {
+      "title": "Les startups vedettes de l'IA ne publient presque plus leur recherche",
+      "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+      "hn": "https://news.ycombinator.com/item?id=49103285",
+      "points": 46,
+      "comments": 34,
+      "summary": "Science analyse la production scientifique des licornes de l'IA et constate que la plupart contribuent très peu à la recherche évaluée par les pairs ; classée par impact de citations, OpenAI arrive en tête devant MEGVII, Hugging Face, Waymo et Momenta. Le paradoxe soulevé : l'essor actuel de l'IA repose sur des travaux publics comme « Attention is All You Need », mais les acteurs dominants gardent désormais leurs résultats pour eux. Les commentaires opposent la logique commerciale (le secret est la norme des startups) aux inquiétudes sur la « blogification » de la recherche, sa reproductibilité et sa valeur scientifique."
+    },
+    {
+      "title": "Ron Gilbert lance la production de Thimbleweed Park 2",
+      "url": "https://www.grumpygamer.com/twp2_announce/",
+      "hn": "https://news.ycombinator.com/item?id=49107246",
+      "points": 223,
+      "comments": 102,
+      "summary": "Le créateur de Monkey Island annonce sur son blog le début de la production de Thimbleweed Park 2, suite du jeu d'aventure point-and-click de 2017, financée sur fonds propres et attendue début 2028 sur PC, Mac et Linux, avec une sortie GOG confirmée. Les commentaires rejouent les débats du premier épisode : puzzles à la logique jugée arbitraire (« moon logic »), humour inégal et gestion fastidieuse de cinq personnages jouables. La fin méta du premier jeu, qui brisait le quatrième mur, reste le point le plus clivant, certains reprochant à Gilbert d'avoir récidivé dans Return to Monkey Island."
+    },
+    {
+      "title": "Carolina Cloud rémunère au taux SOFR les crédits prépayés non utilisés",
+      "url": "https://docs.carolinacloud.io/organizations/prepaid-interest/",
+      "hn": "https://news.ycombinator.com/item?id=49107713",
+      "points": 55,
+      "comments": 43,
+      "summary": "Ce fournisseur cloud verse des intérêts au taux SOFR (taux de référence américain au jour le jour) sur les crédits prépayés inutilisés, une offre pensée pour les directions financières : en théorie, un prépaiement suffisant peut générer assez d'intérêts pour faire tourner une petite infrastructure indéfiniment. La discussion HN porte sur la frontière réglementaire : un commentateur ayant étudié l'idée en Europe explique que rémunérer des crédits change complètement leur classification juridique, quand d'autres notent que ces crédits non remboursables en espèces échappent aux licences bancaires. Les parallèles avec les programmes de fidélité et le risque d'enfermement chez le fournisseur alimentent le débat."
+    },
+    {
+      "title": "La famine du verre : comment la Grande-Bretagne a réindustrialisé son optique en pleine guerre",
+      "url": "https://edconway.substack.com/p/the-glass-famine",
+      "hn": "https://news.ycombinator.com/item?id=49070073",
+      "points": 111,
+      "comments": 56,
+      "summary": "Ed Conway raconte comment le Royaume-Uni, privé du verre optique allemand en 1914 alors qu'il en dépendait pour ses jumelles et viseurs, a reconstruit une filière domestique au point de fournir ses alliés en fin de guerre — preuve qu'une économie peut se réindustrialiser vite quand la nécessité l'impose. Il note aussi que cette industrie fut laissée dépérir après-guerre, ce que les commentaires relient à la désindustrialisation occidentale depuis la fin de la guerre froide. Le fil débat du rôle de l'intervention étatique, avec la Chine en contre-exemple moderne de subventions stratégiques massives."
+    },
+    {
+      "title": "RFC 8890 : Internet est fait pour les utilisateurs finaux",
+      "url": "https://mnot.net/blog/2020/for_the_users",
+      "hn": "https://news.ycombinator.com/item?id=49109474",
+      "points": 111,
+      "comments": 34,
+      "summary": "Retour sur ce texte de 2020 de Mark Nottingham où l'IETF affirme que la conception des protocoles doit privilégier les utilisateurs finaux plutôt que les autres parties prenantes. La discussion illustre la tension actuelle : les protections anti-bots deviennent si agressives que des humains utilisent des LLM pour franchir les captchas, et Cloudflare est qualifié de « plaie d'Internet » pour ses murs qui excluent des visiteurs légitimes. Plus largement, les commentateurs doutent qu'un principe sans mécanisme d'application résiste aux incitations économiques, citant DNS-over-HTTPS comme exemple de pouvoir déplacé vers les grandes plateformes."
+    },
+    {
+      "title": "Agent-Manager : un TUI sur tmux pour piloter Claude Code, Codex et OpenCode",
+      "url": "https://github.com/YoanWai/agent-manager",
+      "hn": "https://news.ycombinator.com/item?id=49107749",
+      "points": 74,
+      "comments": 57,
+      "summary": "Cet outil en Go se superpose à tmux pour gérer plusieurs agents de code IA en parallèle : statuts en direct dans une barre latérale, envoi de prompts aux agents bloqués sans s'attacher au pane, et un mode revue affichant les diffs par fichier avec commentaires en ligne. Les commentaires comparent avec des alternatives comme herdr (multiplexeur autonome) et débattent de l'utilité réelle de ces surcouches face à tmux nu, un sceptique parlant de « tokenmaxxing ». Plusieurs développeurs révèlent avoir construit des outils similaires indépendamment — une « explosion cambrienne » du logiciel de gestion d'agents."
+    },
+    {
+      "title": "Gpiozero Flow : programmer le GPIO du Raspberry Pi en visuel",
+      "url": "https://bennuttall.com/blog/2026/07/gpiozero-flow/",
+      "hn": "https://news.ycombinator.com/item?id=49108048",
+      "points": 101,
+      "comments": 30,
+      "summary": "Ben Nuttall présente Gpiozero Flow, une interface de programmation visuelle façon Node-RED pour la bibliothèque Gpiozero : on câble des nœuds graphiques pour contrôler le matériel du Raspberry Pi sans écrire de code. Les commentaires ressortent la critique classique : tout outil visuel finit par exiger un « nœud code », moment où chacun retourne au texte. Mais on cite aussi les succès durables du paradigme — Houdini, les Blueprints d'Unreal, LabVIEW, Simulink ou la logique à relais des automates — qui marchent précisément là où les utilisateurs ne sont pas des développeurs traditionnels."
+    },
+    {
+      "title": "ChipBuilder : un jeu dans le navigateur pour construire un CPU à partir de portes logiques",
+      "url": "https://select.supply/game/chipbuilder",
+      "hn": "https://news.ycombinator.com/item?id=49108571",
+      "points": 47,
+      "comments": 49,
+      "summary": "Ce jeu « Show HN » enseigne l'architecture des ordinateurs par la pratique : on part des portes logiques pour assembler additionneurs, multiplexeurs, mémoire et ALU jusqu'à un CPU complet capable d'exécuter de l'assembleur. Les retours saluent l'idée mais pointent une interface de câblage laborieuse, l'absence de sauvegarde de progression et des niveaux avancés à la logique erronée. Les habitués renvoient aux références du genre — Turing Complete, NANDGame — tandis que l'auteur, réceptif, s'engage à corriger."
+    }
+  ]
+}
