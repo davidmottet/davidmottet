@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-03",
+  "title": "Linux accélère le jeu en absorbant Windows, des jumeaux effacent 96 bases fédérales, et Princeton renonce à 133 ans de confiance",
+  "intro": "Journée placée sous le signe des frontières qui bougent : le noyau Linux intègre des mécanismes venus de Windows pour faire tourner les jeux plus vite, pendant qu'un exploit présenté comme une porte dérobée fait vaciller la confiance dans BitLocker. La sécurité interne prend aussi cher avec l'histoire édifiante de deux frères licenciés qui effacent 96 bases de données gouvernementales en quelques heures. Côté IA, les débats portent moins sur les modèles que sur leurs effets : Princeton abandonne son code d'honneur face à la triche assistée, un essai voit dans les agents de code l'avènement du logiciel personnel « à la Emacs », et Cisco réorganise ses effectifs au nom de l'IA malgré des résultats records.",
+  "items": [
+    {
+      "title": "Le jeu sur Linux accélère parce que des API Windows deviennent des fonctionnalités du noyau",
+      "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
+      "hn": "https://news.ycombinator.com/item?id=48087887",
+      "points": 664,
+      "comments": 435,
+      "summary": "L'article explique comment le pilote NTSYNC reproduit désormais dans le noyau Linux les primitives de synchronisation propres à Windows dont dépendent les jeux, là où Wine se contentait d'approximations (esync, fsync). Les gains annoncés de 40 à 200 % de FPS sont à relativiser : ils comparent à Wine non modifié, alors que face à Proton l'amélioration est modeste et profite surtout aux jeux qui souffraient de blocages ou de comportements erratiques. Dans les commentaires, les joueurs confirment la maturité de Proton au quotidien et beaucoup désignent Windows 11 comme le vrai moteur de la migration vers Linux."
+    },
+    {
+      "title": "Obtenir gratuitement un domaine de localité *.ville.état.us (2025)",
+      "url": "https://fredchan.org/blog/locality-domains-guide/",
+      "hn": "https://news.ycombinator.com/item?id=48122635",
+      "points": 550,
+      "comments": 172,
+      "summary": "Ce guide détaille comment enregistrer gratuitement un domaine de localité américain du type frederick.seattle.wa.us, un système qui existe depuis 1992 : trouver le registrar délégué de sa localité, fournir ses serveurs de noms (par exemple via Amazon Lightsail) et envoyer un formulaire, avec des délais de plusieurs jours à plusieurs semaines. La discussion HN mêle nostalgie des adresses k12 des écoles et retours d'expérience plus rugueux : validation capricieuse chez certains services, absence de confidentialité WHOIS sur le .us, et fragilité d'une infrastructure parfois tenue par une seule personne — un registrar est décédé et sa veuve prévoit de fermer le service, les transferts exigeant une lettre notariée de la municipalité."
+    },
+    {
+      "title": "Des jumeaux effacent 96 bases de données gouvernementales quelques minutes après leur licenciement",
+      "url": "https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/",
+      "hn": "https://news.ycombinator.com/item?id=48115438",
+      "points": 396,
+      "comments": 296,
+      "summary": "Sohaib et Muneeb Akhter, employés du contractant fédéral Opexus (logiciels pour plus de 45 agences), ont été licenciés après la découverte d'une condamnation pour piratage datant de 2015 ; dans les heures qui ont suivi, ils ont supprimé 96 bases de données et exfiltré plus de 1 800 fichiers de l'EEOC ainsi que des données fiscales sur clé USB. Sohaib encourt jusqu'à 21 ans de prison, son frère a plaidé coupable. Les commentaires débattent des vraies leçons : révocation immédiate des accès sensibles lors d'un licenciement, sauvegardes et moindre privilège, mais aussi du risque de sur-réaction — offboardings brutaux et mise à l'écart systématique des candidats ayant un casier."
+    },
+    {
+      "title": "Une histoire des IDE chez Google",
+      "url": "https://laurent.le-brun.eu/blog/a-history-of-ides-at-google",
+      "hn": "https://news.ycombinator.com/item?id=48073979",
+      "points": 351,
+      "comments": 238,
+      "summary": "Ce récit retrace l'évolution de l'outillage interne de Google : du laisser-faire assumé (Jeff Dean jugeant qu'imposer un éditeur serait « une recette pour le malheur ») à l'IDE web Cider en 2013, puis à Cider V, hybride adossé à VS Code qui concentrait 80 % du développement sur le monorepo en 2023, avant l'ère des fonctions IA intégrées. La leçon mise en avant : sans jamais rien rendre obligatoire, la standardisation de fait sur une plateforme extensible a donné un levier d'investissement énorme sur l'outillage. Les commentaires prolongent le sujet sur les tensions actuelles entre outils internes, notamment l'articulation entre Cider V et les nouveaux outils de la vague IA."
+    },
+    {
+      "title": "Princeton impose la surveillance des examens et rompt avec 133 ans de tradition",
+      "url": "https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent",
+      "hn": "https://news.ycombinator.com/item?id=48126848",
+      "points": 317,
+      "comments": 454,
+      "summary": "Le corps enseignant de Princeton a voté à la quasi-unanimité (une seule voix contre) l'obligation de surveiller tous les examens en présentiel, mettant fin au code d'honneur de 1893 qui interdisait explicitement le proctoring. En cause : la triche assistée par IA sur appareils personnels, devenue indétectable par les pairs — 29,9 % des étudiants de la promotion 2025 admettent avoir triché, mais 0,4 % seulement ont signalé une infraction. La discussion HN oppose ceux pour qui les examens surveillés sont la norme évidente partout ailleurs à ceux qui y voient l'érosion d'une culture de confiance, l'ancienne doyenne Jill Dolan résumant : « c'est dommage, mais c'est nécessaire »."
+    },
+    {
+      "title": "L'« Emacsification » du logiciel",
+      "url": "https://sockpuppet.org/blog/2026/05/12/emacsification/",
+      "hn": "https://news.ycombinator.com/item?id=48118727",
+      "points": 276,
+      "comments": 182,
+      "summary": "Thomas Ptacek soutient que les agents de code font entrer tout le logiciel dans la culture Emacs : des outils personnels, malléables et idiosyncratiques, que l'on modifie au lieu de les consommer — il raconte avoir bâti en une trentaine de minutes un visualiseur Markdown natif supérieur aux offres existantes. Ce qui compte à partager, dit-il, ce sont les idées et les prompts plus que le code. Les commentaires dressent la liste des logiciels mûrs pour ce traitement (lecteurs de podcasts, lecteurs RSS, prise de notes, messageries), en notant l'ironie que les grandes plateformes exposent d'excellentes API pendant que leurs applications grand public restent médiocres."
+    },
+    {
+      "title": "Scorched Earth 2000 jouable dans le navigateur",
+      "url": "http://www.scorch2000.com/web/",
+      "hn": "https://news.ycombinator.com/item?id=48129694",
+      "points": 217,
+      "comments": 81,
+      "summary": "Le mythique jeu d'artillerie des années 90, où des tanks s'échangent des tirs paraboliques sur terrain destructible, débarque en version web jouable directement dans le navigateur. Le fil HN est un concentré de nostalgie : les commentateurs racontent leurs parties en shareware et surtout leurs premiers pas de bidouilleurs, comme ce joueur qui avait découvert qu'éditer les fichiers du jeu, stockés en texte, permettait de débloquer le tank ultime — une initiation involontaire à la rétro-ingénierie."
+    },
+    {
+      "title": "Les États-Unis gagnent la course à l'IA là où ça compte : la commercialisation",
+      "url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+      "hn": "https://news.ycombinator.com/item?id=48121929",
+      "points": 193,
+      "comments": 519,
+      "summary": "L'essai avance que la vraie mesure de la « victoire » dans la course à l'IA n'est ni la recherche ni les benchmarks, mais la capacité à transformer les modèles en produits rentables — un terrain où les entreprises américaines domineraient nettement. Les 500 et quelques commentaires contestent surtout la prémisse : gagner, est-ce dominer le SaaS (avantage États-Unis), diffuser l'IA dans les usages quotidiens et l'industrie (avantage possible de la Chine), ou réaliser les percées fondamentales, difficilement comparables quand une grande partie de la recherche se fait à huis clos ? Le choix de la commercialisation comme métrique est jugé commode plus que démontré."
+    },
+    {
+      "title": "MacBook Neo : benchmarks, économie du silicium et le pari des 8 Go",
+      "url": "https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/",
+      "hn": "https://news.ycombinator.com/item?id=48125617",
+      "points": 188,
+      "comments": 199,
+      "summary": "Cette analyse décortique le MacBook Neo, portable d'entrée de gamme d'Apple lancé à 599 $ (passé à 699 $ en juin) autour de la puce A18 Pro de l'iPhone : excellent en mono-cœur (3 569 sur Geekbench 6, entre M3 et M4), mais bridé par un châssis sans ventilateur qui fait chuter les performances de 87 % en charge prolongée. L'argument économique est central : une puce de 105 mm² donne environ 500 unités par wafer TSMC, soit 38 à 47 $ par SoC amorti sur les volumes de l'iPhone. Le débat porte sur les 8 Go de RAM non extensibles : triomphe du rapport qualité-prix pour 90 % des usages selon les uns, obsolescence programmée pour les autres."
+    },
+    {
+      "title": "Cisco supprime près de 4 000 postes malgré un chiffre d'affaires record",
+      "url": "https://blogs.cisco.com/news/our-path-forward",
+      "hn": "https://news.ycombinator.com/item?id=48130123",
+      "points": 174,
+      "comments": 138,
+      "summary": "Cisco annonce une réduction d'effectifs de moins de 4 000 postes (moins de 5 % de l'entreprise) pour réorienter l'investissement vers le silicium, l'optique, la sécurité et les compétences IA, tout en publiant un trimestre record à 15,8 milliards de dollars, en hausse de 12 %. Les salariés touchés reçoivent bonus proratisé, aide au reclassement et un an d'accès aux formations Cisco U. Les commentaires pointent la dissonance : difficile de justifier des licenciements par la « discipline d'investissement » quand la direction se félicite au même moment d'une croissance à deux chiffres — beaucoup y voient le nouveau réflexe des grandes entreprises tech à l'ère de l'IA."
+    },
+    {
+      "title": "Anthropic lance Claude pour les petites entreprises",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "hn": "https://news.ycombinator.com/item?id=48130950",
+      "points": 171,
+      "comments": 104,
+      "summary": "Anthropic cible les PME avec un pack de 15 workflows agentiques et 15 compétences prêtes à l'emploi (paie, clôture mensuelle, relance de factures, revue de contrats), connectés à QuickBooks, PayPal, HubSpot, Canva, DocuSign et aux suites Google et Microsoft — avec approbation humaine avant chaque action. Un cours gratuit avec PayPal et une tournée d'ateliers accompagnent le lancement, les PME représentant 44 % du PIB américain mais restant à la traîne sur l'IA. Les retours HN sont plutôt concrets et positifs (catégorisation de factures, analyses accélérées), la principale critique portant sur la distribution : les patrons de PME ne savent pas que ces outils résolvent leurs problèmes, et Anthropic devrait vendre des cas d'usage précis plutôt que des fonctionnalités."
+    },
+    {
+      "title": "BitLocker : l'exploit zero-day YellowKey ressemble à une porte dérobée",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/microsoft-bitlocker-protected-drives-can-now-be-opened-with-just-some-files-on-a-usb-stick-yellowkey-zero-day-exploit-demonstrates-an-apparent-backdoor",
+      "hn": "https://news.ycombinator.com/item?id=48130519",
+      "points": 126,
+      "comments": 72,
+      "summary": "Le chercheur Chaotic Eclipse démontre qu'il suffit de copier certains fichiers du dossier System Volume Information sur une clé USB puis de redémarrer en environnement de récupération Windows pour obtenir l'accès complet à un disque chiffré par BitLocker, sans mot de passe ni clé de récupération — le tout sur Windows 11 et Windows Server 2022/2025. Le fait que les fichiers de l'exploit s'effacent après usage nourrit l'hypothèse d'une porte dérobée délibérée ; Microsoft, accusé par le chercheur d'avoir ignoré ses signalements précédents, n'avait pas réagi à la publication. Les commentaires s'attachent surtout à vérifier les affirmations, sources primaires et dépôts GitHub à l'appui, entre scepticisme et inquiétude."
+    }
+  ]
+}
