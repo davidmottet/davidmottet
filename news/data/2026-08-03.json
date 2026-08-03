@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-03",
+  "title": "Reprendre la main sur l'IA : proxys humains, dette cognitive et CVE hallucinés",
+  "intro": "Ce dimanche, Hacker News est traversé par un même fil rouge : comment rester maître de son travail à l'ère des assistants IA. Le billet « Don't be a meat proxy » domine largement la journée, entouré de débats sur la confiance dans les outils, la dette cognitive du code généré et jusqu'à de fausses CVE SQLite rédigées par LLM. En contrepoint, la communauté célèbre un web plus lent et plus artisanal — blog manuscrit, canvas collaboratif en SSH, carte isométrique de San Francisco — pendant qu'Alibaba avance ses pions avec Qwen3.8-Max.",
+  "items": [
+    {
+      "title": "Ne soyez pas un proxy à viande",
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "hn": "https://news.ycombinator.com/item?id=49151933",
+      "points": 807,
+      "comments": 355,
+      "summary": "Ce billet fustige la pratique qui consiste à relayer telles quelles des réponses d'IA (dans Slack, une revue de code, un groupe WhatsApp) sans les avoir lues ni comprises : celui qui le fait n'ajoute aucune valeur et devient un simple « proxy à viande ». Les 355 commentaires abondent massivement dans ce sens — abdication de responsabilité, érosion des compétences, reviewers qui héritent du travail de compréhension — tandis qu'une minorité défend le partage d'outputs IA à condition d'annoncer la source et d'avoir soi-même évalué la réponse."
+    },
+    {
+      "title": "Qwen3.8-Max : Alibaba place la barre plus haut sur le code",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "hn": "https://news.ycombinator.com/item?id=49150470",
+      "points": 677,
+      "comments": 337,
+      "summary": "Alibaba met en avant Qwen3.8-Max, déclinaison orientée code et travail collaboratif de son modèle phare annoncé à 2 400 milliards de paramètres, accessible pour l'instant en preview avec des poids ouverts promis mais sans table de benchmarks officielle ni model card. Sur HN, beaucoup racontent avoir remplacé leurs abonnements propriétaires par des Qwen locaux au quotidien, débattent du matériel réellement nécessaire (l'offloading MoE sur 8-12 Go de VRAM divise) et regrettent l'absence d'un modèle dense intermédiaire de 48-72B. Le fil s'échauffe aussi sur la dynamique géopolitique : des labos chinois qui publient agressivement en open-weight face aux acteurs américains propriétaires."
+    },
+    {
+      "title": "Show HN : Isopolis, une carte de San Francisco en pixel art isométrique",
+      "url": "https://sf.isopolis.city/",
+      "hn": "https://news.ycombinator.com/item?id=49149966",
+      "points": 244,
+      "comments": 52,
+      "summary": "Isopolis transforme San Francisco en carte interactive façon pixel art « à la Ghibli » : l'auteur a scrappé les tuiles 3D photoréalistes de Google, les a rendues avec three.js puis stylisées via un pipeline de génération d'images, avec beaucoup de curation manuelle et l'aide de Claude Code. Les commentaires oscillent entre l'enthousiasme (comparaisons à SimCity 2000 et Isometric.NYC) et la critique : plans d'eau hallucinés à la place de routes, relief absent dans la ville la plus pentue des États-Unis, et un débat sur la frontière entre vrai pixel art et « AI slop »."
+    },
+    {
+      "title": "Show HN : Kakehashi, exécuter des binaires macOS sur Linux ARM",
+      "url": "https://github.com/wie-project/kakehashi",
+      "hn": "https://news.ycombinator.com/item?id=49145937",
+      "points": 225,
+      "comments": 58,
+      "summary": "Kakehashi est une couche de traduction expérimentale en espace utilisateur (sans root ni module noyau) qui charge des binaires Mach-O ARM64, fournit une libSystem maison et convertit les syscalls BSD vers Linux ; le code tourne nativement, avec un surcoût d'environ x5 sur certaines charges, jugé rentable vu que les runners Linux ARM coûtent 10 à 12 fois moins cher que les runners macOS. La discussion compare le projet à Darling (Rust contre C/Objective-C), s'interroge sur la taille réelle du marché des programmes « macOS uniquement », et questionne le statut « clean room » : l'auteur parle de « light-gray room » en assumant l'usage de LLM sans copie directe de code Apple."
+    },
+    {
+      "title": "Les développeurs s'attachent aux outils parce que les outils encodent la confiance",
+      "url": "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/",
+      "hn": "https://news.ycombinator.com/item?id=49097961",
+      "points": 223,
+      "comments": 122,
+      "summary": "Le blog de Stack Overflow soutient que la fidélité aux outils vient de leur prévisibilité, et que les agents IA cassent ce contrat : selon leur enquête développeurs, l'usage de l'IA est passé de 76 % à 84 % pendant que la confiance chutait de 40 % à 29 %. L'article plaide pour des processus (responsabilité humaine explicite, specs claires, savoir quand ne pas utiliser l'IA) plutôt que pour toujours plus de génération. Les commentateurs enfoncent le clou sur les mises à jour forcées qui détruisent la confiance accumulée, et rapportent le paradoxe d'un code généré en un dixième du temps mais dont la correction annule le gain."
+    },
+    {
+      "title": "SwiftUI, sept ans après : une histoire de médiocrité",
+      "url": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/",
+      "hn": "https://news.ycombinator.com/item?id=49147263",
+      "points": 210,
+      "comments": 200,
+      "summary": "Sept ans après son annonce, l'auteur dresse un réquisitoire contre SwiftUI : réactivité imprévisible, moteur de layout qui s'effondre sur les cas non triviaux, API instables truffées de « if #available », performances en retrait sur UIKit — jusqu'au tutoriel officiel d'Apple qui garde des bugs visuels depuis deux ans. Il y voit un glissement d'Apple du « craftsmanship » vers le « suffisamment bon ». Les 200 commentaires confirment largement le diagnostic, mais les défenseurs rappellent que 80 % des cas simples sont bien plus faciles qu'en UIKit ; le consensus qui émerge est une approche hybride SwiftUI + UIKit."
+    },
+    {
+      "title": "Prise de notes et gestion des connaissances personnelles",
+      "url": "https://unattributed.cc/note-taking-and-personal-knowledge-management",
+      "hn": "https://news.ycombinator.com/item?id=49084324",
+      "points": 210,
+      "comments": 73,
+      "summary": "Réponse point par point à un billet qui doutait de l'utilité réelle des systèmes de PKM : l'auteur reproche à la critique de mal lire ses sources et rappelle que « les outils ne font pas les contributions, ils permettent aux personnes de les faire ». Dans les commentaires, Obsidian domine (devant Logseq, Org mode ou Apple Notes), mais le consensus est que le processus d'écriture compte plus que l'outil : un simple fichier markdown suffit, et l'optimisation sans fin de son système relève de la paralysie par l'analyse."
+    },
+    {
+      "title": "Show HN : ssh ssh.place",
+      "url": "https://ssh.place",
+      "hn": "https://news.ycombinator.com/item?id=49149805",
+      "points": 130,
+      "comments": 75,
+      "summary": "Un adolescent du Hack Club a construit un r/place accessible en une commande : « ssh ssh.place » ouvre un canvas de dessin collaboratif dans le terminal, bâti avec Wish, Bubble Tea et Lipgloss, le cooldown étant lié à la clé SSH. Les commentaires saluent le projet et recensent l'écosystème des services SSH ludiques (pico.sh, late.sh...), tout en débattant du risque de se connecter à des serveurs SSH inconnus — vulnérabilités du client, séquences d'échappement malveillantes — que d'autres relativisent par rapport aux usages web courants."
+    },
+    {
+      "title": "Show HN : une plateforme de blogs manuscrits",
+      "url": "https://handwritten.blog/",
+      "hn": "https://news.ycombinator.com/item?id=49119751",
+      "points": 123,
+      "comments": 64,
+      "summary": "handwritten.blog publie des billets sous forme de photos de pages écrites à la main (envoyées par upload ou par e-mail), avec transcriptions pour l'accessibilité et sans flux, algorithme ni likes ; le créateur assume : « il s'agit de ralentir ma pensée, pas d'écrire efficacement ». Les commentateurs y voient un antidote charmant au web actuel — certains évoquent les manuscrits numérisés de Dijkstra — tout en pointant les limites pratiques : lisibilité des écritures, lecture au long cours, lecteurs d'écran et traduction."
+    },
+    {
+      "title": "Prévenir la dette cognitive en retapant à la main le code généré par LLM",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "hn": "https://news.ycombinator.com/item?id=49153374",
+      "points": 112,
+      "comments": 86,
+      "summary": "Ankur Sethi demande à l'IA de générer le code dans le chat puis retape chaque ligne à la main au lieu de la laisser modifier ses fichiers : il y gagne une carte mentale du projet, détecte hallucinations et mauvais choix au passage, et accepte un gain de 2x plutôt que 10x — car « l'industrie accumule une dette cognitive qu'il faudra bientôt rembourser ». Le fil se déchire entre ceux pour qui écrire renforce la compréhension (comme recopier les listings de magazines autrefois) et ceux qui jugent l'exercice absurde — « une carrière de peinture à numéros » — préférant écrire soi-même directement ou réserver l'IA aux parties ennuyeuses."
+    },
+    {
+      "title": "Une CVE critique émise pour une vulnérabilité SQLite hallucinée",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "hn": "https://news.ycombinator.com/item?id=49154332",
+      "points": 65,
+      "comments": 15,
+      "summary": "JFrog a analysé six CVE SQLite récentes (dont CVE-2026-51302, notée 10.0 critique par la NVD) et montré qu'elles sont manifestement générées par IA : fonctions inexistantes dans les versions visées, numéros de ligne au-delà de la fin des fichiers, PoC qui ne reproduisent rien, aucune trace sur la page d'avis officielle de SQLite — le tout publié par un compte GitHub fraîchement créé. Red Hat a déjà rétrogradé une note de 10.0 à 7.6. Les commentaires s'alarment d'un système CVE noyé sous les faux rapports, avec un coût réel pour les organisations obligées de corriger toute CVE critique (ISO 27000, ITAR)."
+    },
+    {
+      "title": "Objectifs du projet Rust : types immobiles et destructeurs garantis",
+      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+      "hn": "https://news.ycombinator.com/item?id=49152023",
+      "points": 106,
+      "comments": 28,
+      "summary": "Un objectif de projet Rust 2026-2027 (pas encore une RFC acceptée) propose des traits Move, Destruct et Forget pour rendre optionnelles des capacités aujourd'hui universelles : des types immobiles simplifieraient l'async auto-référentiel par rapport à Pin, et des destructeurs garantis permettraient des transactions impossibles à oublier et des tâches async « scoped ». Les commentaires pèsent cette approche face aux « pinned places » rivales (propriété de la référence plutôt que du type), s'enthousiasment pour les types linéaires — erreur de compilation si on oublie commit() ou rollback() — et s'inquiètent d'une fragmentation de l'écosystème si l'intégration avec Pin<T> est ratée."
+    }
+  ]
+}

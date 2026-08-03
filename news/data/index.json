@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-03",
+      "title": "Reprendre la main sur l'IA : proxys humains, dette cognitive et CVE hallucinés",
+      "count": 12
+    },
+    {
       "date": "2026-08-02",
       "title": "L'IA corrige Chrome et fait tomber une conjecture, un agent s'invite chez Hugging Face, et l'UE étiquette dès aujourd'hui",
       "count": 12
