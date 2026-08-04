@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-04",
+      "title": "Windows s'invite dans le noyau Linux, BitLocker soupçonné de porte dérobée, et l'IA qui restructure tout",
+      "count": 12
+    },
+    {
       "date": "2026-08-03",
       "title": "Reprendre la main sur l'IA : proxys humains, dette cognitive et CVE hallucinés",
       "count": 12
