@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-05",
+  "title": "Wolfram en deuil, l'IA se niche partout — de la modération Mistral aux puces AMD — et Oxide lève 445 M$",
+  "intro": "Journée contrastée sur Hacker News : l'hommage bouleversant de Stephen Wolfram à son épouse côtoie une actualité IA dense — modèle de modération ouvert chez Mistral, DeepSeek V4 Flash sur une seule puce AMD, un 20B qui tourne sur iPhone, et Gwern qui sort de l'anonymat pour lancer une startup d'« anges gardiens » numériques. Côté infrastructure, Oxide lève 445 millions de dollars pendant que Waymo ouvre Dallas à tous. La sécurité reste en toile de fond, entre phishing entretenu par FedEx et rapport Interpol sur le cybercrime africain dopé à l'IA.",
+  "items": [
+    {
+      "title": "À la mémoire de ma femme, Elise Cawley, avec gratitude pour 36 merveilleuses années",
+      "url": "https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years/",
+      "hn": "https://news.ycombinator.com/item?id=49173165",
+      "points": 787,
+      "comments": 43,
+      "summary": "Stephen Wolfram publie un hommage très personnel à son épouse Elise Cawley, décédée brutalement d'une crise cardiaque après, écrit-il, « une journée remplie de joie ». Le texte retrace 36 ans de vie commune, son rôle dans la conception de leur maison et sa vie de mère et de partenaire. Les commentaires, essentiellement des condoléances, saluent la sincérité du texte et évoquent la légendaire pratique de documentation exhaustive de Wolfram, qui donne à ce portrait un niveau de détail rare."
+    },
+    {
+      "title": "Show HN : un algorithme simple et un espace colorimétrique pour générer des teintes de peau variées",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "hn": "https://news.ycombinator.com/item?id=49170165",
+      "points": 447,
+      "comments": 87,
+      "summary": "Un outil interactif génère procéduralement des teintes de peau réalistes à partir d'un espace colorimétrique à deux dimensions, une approche cohérente avec la biologie puisque la couleur de peau se paramètre par les concentrations de mélanine et d'hémoglobine, comme le confirme un docteur du domaine dans les commentaires. Le fil discute d'applications concrètes en jeu vidéo, character design et avatars VR. L'auteur reconnaît lui-même les limites de son étiquetage manuel, notamment pour les peaux foncées, et s'engage à passer le projet sous licence MIT."
+    },
+    {
+      "title": "DeepSeek V4 Flash sur une seule carte AMD MI300X",
+      "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+      "hn": "https://news.ycombinator.com/item?id=49166386",
+      "points": 362,
+      "comments": 87,
+      "summary": "Un dépôt GitHub montre comment faire tourner DeepSeek V4 Flash sur un unique accélérateur AMD MI300X, une configuration accessible en location plutôt qu'à l'achat — l'auteur cite l'AMD Developer Cloud de DigitalOcean à 1,99 $ de l'heure, quand un serveur de 8 cartes coûte environ 250 000 €. La discussion porte sur l'accessibilité réelle de ce matériel et sur un scénario d'éclatement de la bulle IA qui inonderait le marché de GPU d'occasion, hypothèse tempérée par ceux qui pensent que les acheteurs entreprise absorberaient l'offre."
+    },
+    {
+      "title": "Mistral publie Shieldstral, un modèle ouvert de 3 milliards de paramètres pour la modération multimodale",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "hn": "https://news.ycombinator.com/item?id=49171268",
+      "points": 283,
+      "comments": 69,
+      "summary": "Shieldstral, sous licence Apache 2.0, traite la modération comme du question-réponse : on lui fournit une politique de sécurité en langage naturel à l'inférence, sans réentraînement, et il renvoie des scores calibrés pour du texte, des images ou les deux, le tout sur un seul GPU de 16 Go. Mistral affirme qu'il surpasse des modèles jusqu'à 7 fois plus gros et le présente comme membre inaugural de l'Open Secure AI Alliance aux côtés de NVIDIA. Les commentaires débattent de la stratégie de Mistral — spécialisation choisie ou manque de calcul pour viser la frontière — et du risque d'imposer des « valeurs de la Silicon Valley » via des règles de modération standardisées."
+    },
+    {
+      "title": "Waymo ouvre son service à tous les habitants de Dallas",
+      "url": "https://waymo.com/blog/shorts/dallas-open-to-all/",
+      "hn": "https://news.ycombinator.com/item?id=49172836",
+      "points": 230,
+      "comments": 282,
+      "summary": "Le service de robotaxis, jusqu'ici sur liste d'attente, devient accessible à quiconque a l'application et une carte bancaire, sur une zone couvrant notamment Bishop Arts, Fair Park et White Rock — autoroutes réactivées depuis quelques jours après une pause. Les commentaires sont largement positifs sur la fiabilité et la prévisibilité des véhicules, et un fil note que Waymo dessert aussi des quartiers historiquement victimes de redlining, contrairement à la concentration des concurrents sur les zones aisées. Restent les débats habituels : banlieues exclues, blocages réglementaires dans le Nord-Est américain et questions de vie privée liées aux caméras embarquées."
+    },
+    {
+      "title": "Merci FedEx : voilà pourquoi on continue de se faire hameçonner (2024)",
+      "url": "https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/",
+      "hn": "https://news.ycombinator.com/item?id=49175192",
+      "points": 194,
+      "comments": 46,
+      "summary": "Troy Hunt montre comment des entreprises légitimes entraînent elles-mêmes leurs clients à tomber dans le phishing : expéditeurs flous, domaines inconnus, demandes de données sensibles — exactement les signaux qu'on apprend à fuir. Les commentaires accumulent les exemples : Google qui écrit depuis c.gle, FedEx Australie qui encaisse des paiements sur des domaines non officiels, ou des e-mails Microsoft authentiques indiscernables d'arnaques. Le constat partagé : tant que les communications officielles ressembleront à du phishing, la vigilance des utilisateurs restera contre-productive."
+    },
+    {
+      "title": "Oxide Computer lève 445 millions de dollars",
+      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
+      "hn": "https://news.ycombinator.com/item?id=49174407",
+      "points": 159,
+      "comments": 67,
+      "summary": "Un formulaire D déposé à la SEC révèle une série D de 445 millions de dollars pour le fabricant de serveurs intégrés, après des tours de 44 M$ (2023), 100 M$ (2025) et 200 M$ (2026). La discussion oppose l'approche matériel-logiciel intégrée d'Oxide — un ex-ingénieur vante la disparition du BIOS et le support unifié — aux solutions bare-metal classiques type Hetzner ou OVH. On s'interroge aussi sur le ciblage commercial (un VP Engineering dépensant 900 k$ par an chez AWS dit n'avoir jamais eu de réponse) et sur le risque qu'un rachat, façon Oracle avalant Sun, trahisse les fondateurs venus justement de Sun."
+    },
+    {
+      "title": "L'IA alimente plus de la moitié du cybercrime en Afrique, selon Interpol",
+      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+      "hn": "https://news.ycombinator.com/item?id=49175826",
+      "points": 107,
+      "comments": 51,
+      "summary": "Le rapport African Cyberthreat Assessment 2026 d'Interpol attribue à l'IA plus de la moitié des cybercrimes du continent : deepfakes, identités synthétiques qui contournent les contrôles KYC, phishing hyper-personnalisé et malwares qui échappent à la détection. Les commentaires rappellent que l'arnaque à l'avance de frais précède largement l'IA — du « prisonnier espagnol » de 1913 aux princes nigérians — et que la technologie amplifie plutôt qu'elle n'invente. Le fil débat aussi des causes profondes (pauvreté et instabilité économique versus technologie) et de la vulnérabilité particulière des personnes âgées face à l'ingénierie sociale augmentée."
+    },
+    {
+      "title": "Gwern abandonne l'écriture à plein temps et le pseudonymat pour lancer Guardian Angel",
+      "url": "https://twitter.com/gwern/status/2084739205071343837",
+      "hn": "https://news.ycombinator.com/item?id=49174900",
+      "points": 84,
+      "comments": 32,
+      "summary": "L'essayiste pseudonyme Gwern annonce révéler son identité et fonder Guardian Angel Inc., des « jumeaux numériques » à base de LLM alignés sur les valeurs d'un utilisateur unique, avec apprentissage en ligne, interface en ligne de commande et un tarif initial annoncé à plus de 1 000 $ par mois. Les commentaires butent d'abord sur le prix, qui réserverait ces assistants aux plus aisés, même si certains parient sur une baisse rapide. On débat aussi du concept même — veut-on vraiment une IA à son image, alors qu'on décide déjà mal pour soi-même ? — et de la confiance à accorder à une entreprise privée sur des données aussi intimes."
+    },
+    {
+      "title": "libexpat désormais financé par la ville de Munich pour une durée allant jusqu'à six mois",
+      "url": "https://blog.hartwork.org/posts/libexpat-city-of-munich-open-source-sabbatical/",
+      "hn": "https://news.ycombinator.com/item?id=49176606",
+      "points": 45,
+      "comments": 3,
+      "summary": "Le mainteneur de libexpat, bibliothèque d'analyse XML omniprésente et chroniquement sous-financée, bénéficie du programme « Open Source Sabbatical » de la ville de Munich, ouvert aussi aux développeurs externes à l'administration. Les commentaires replacent l'annonce dans l'histoire mouvementée du logiciel libre munichois : la migration LiMux de 14 000 postes sous Linux, son abandon au profit de Microsoft, et l'espoir d'un nouveau cap depuis l'élection du maire Dominik Krause en mai. Un signal encourageant pour le financement public des infrastructures open source critiques."
+    },
+    {
+      "title": "Show HN : Maple-Preview, un MoE ternaire de 20 milliards de paramètres à 120 tokens/s sur iPhone",
+      "url": "https://deepgrove.ai/maple-preview",
+      "hn": "https://news.ycombinator.com/item?id=49173984",
+      "points": 31,
+      "comments": 10,
+      "summary": "Deepgrove présente un modèle de langage à quantification ternaire et architecture mixture-of-experts qui atteint 120 tokens par seconde en local sur un iPhone, une des premières démonstrations d'un modèle de cette taille réellement utilisable sur mobile. Les testeurs relèvent des hallucinations assurées sur les sujets pointus — une étymologie totalement fausse, par exemple — mais estiment qu'un couplage avec des outils de recherche compenserait ces lacunes. Un commentateur pointe aussi des votes suspects venant de comptes à faible karma, tempérant l'enthousiasme du fil."
+    },
+    {
+      "title": "On venait enfin d'apprendre à centrer une div, et les navigateurs ont ajouté des barres latérales",
+      "url": "https://seg6.space/posts/center-div/",
+      "hn": "https://news.ycombinator.com/item?id=49176055",
+      "points": 27,
+      "comments": 14,
+      "summary": "Un développeur, agacé que les barres latérales des navigateurs décentrent visuellement le contenu à l'écran, détecte la position de la fenêtre via des API propres à Chromium pour recentrer sa page par rapport à l'écran physique — avant de faire machine arrière et de reléguer l'astuce dans une extension. Les commentaires sont quasi unanimes : le contenu doit se centrer dans le viewport, pas sur l'écran, et un site n'a pas à connaître la position de la fenêtre ni à contourner l'interface du navigateur. L'auteur assume une préférence esthétique personnelle et accepte la critique."
+    }
+  ]
+}
