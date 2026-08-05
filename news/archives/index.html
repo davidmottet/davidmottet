@@ -82,13 +82,26 @@
   .page-head h1 .it{font-style:italic}
   .page-lead{max-width:56ch;font-size:clamp(15px,1.3vw,17px);color:var(--ink-soft);margin-top:20px;line-height:1.7}
 
-  /* ---------- days ---------- */
-  .day{border-top:1px solid var(--line);padding:clamp(30px,5vh,48px) 0}
-  .day:last-of-type{border-bottom:1px solid var(--line)}
-  .day-date{font-family:var(--mono);font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
-  .day-title{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.8vw,30px);letter-spacing:-.01em;margin-top:10px}
-  .day-intro{color:var(--ink-soft);font-size:15.5px;line-height:1.7;margin-top:12px;max-width:64ch}
-  .items{margin-top:22px;display:flex;flex-direction:column}
+  /* ---------- archive list (newest → oldest) ---------- */
+  .arch{border-top:1px solid var(--line)}
+  .arch:last-of-type{border-bottom:1px solid var(--line)}
+  .arch-head{
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 18px;
+    padding:20px 0;cursor:pointer;list-style:none;
+    transition:color .25s var(--ease);
+  }
+  .arch-head::-webkit-details-marker{display:none}
+  .arch-head::marker{content:""}
+  .arch-date{font-family:var(--mono);font-size:12.5px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;flex:0 0 auto;min-width:21ch}
+  .arch-title{font-family:var(--serif);font-weight:500;font-size:clamp(17px,2.2vw,21px);letter-spacing:-.01em;line-height:1.35;flex:1 1 30ch;transition:color .25s var(--ease)}
+  .arch-count{font-family:var(--mono);font-size:12px;color:var(--muted-2);white-space:nowrap;flex:0 0 auto}
+  .arch-chev{font-family:var(--mono);font-size:13px;color:var(--muted-2);flex:0 0 auto;transition:transform .3s var(--ease)}
+  .arch-head:hover .arch-title{color:var(--accent)}
+  .arch[open] .arch-chev{transform:rotate(180deg)}
+  .arch[open] .arch-head{padding-bottom:8px}
+  .arch-body{padding:0 0 clamp(24px,4vh,40px)}
+  .day-intro{color:var(--ink-soft);font-size:15.5px;line-height:1.7;margin-top:8px;max-width:64ch}
+  .items{margin-top:18px;display:flex;flex-direction:column}
   .item{padding:16px 0;border-top:1px solid var(--line-2)}
   .item-title{font-size:16.5px;font-weight:600;line-height:1.4}
   .item-title a{text-decoration:none;transition:color .25s var(--ease)}
@@ -100,10 +113,6 @@
 
   /* ---------- states ---------- */
   .state{font-family:var(--mono);font-size:13px;color:var(--muted-2);padding:40px 0}
-  .more-row{display:flex;justify-content:center;padding:36px 0}
-  .btn{font-size:15px;font-weight:500;padding:12px 24px;border-radius:100px;display:inline-flex;align-items:center;gap:9px;transition:all .3s var(--ease);border:1px solid var(--line);color:var(--ink);background:transparent;cursor:pointer;font-family:var(--sans);text-decoration:none}
-  .btn:hover{border-color:var(--ink);background:var(--card);transform:translateY(-2px)}
-  .btn[hidden]{display:none}
 
   footer{border-top:1px solid var(--line);margin-top:30px;padding:30px 0}
   .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted-2)}
@@ -127,15 +136,11 @@
       <div class="page-head">
         <div class="page-kicker">Veille · Archives</div>
         <h1>Les <span class="it">archives</span></h1>
-        <p class="page-lead">Toutes les éditions précédentes de la veille quotidienne Hacker News. L'édition du jour, elle, vit sur <a href="/news/">la page principale</a>.</p>
+        <p class="page-lead">Toutes les éditions précédentes de la veille quotidienne Hacker News, de la plus récente à la plus ancienne — cliquez sur un jour pour le déplier. L'édition du jour, elle, vit sur <a href="/news/">la page principale</a>.</p>
       </div>
 
       <div id="days" aria-live="polite">
         <p class="state" id="state">Chargement…</p>
-      </div>
-
-      <div class="more-row">
-        <button class="btn" id="more" hidden>Jours précédents ↓</button>
       </div>
     </div>
   </main>
@@ -155,13 +160,9 @@
   const onScroll = ()=>hdr.classList.toggle('scrolled', window.scrollY>10);
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-  /* ---------- archives rendering: every edition EXCEPT the latest ---------- */
-  const PAGE = 10; // days per batch
+  /* ---------- archives: compact list newest → oldest, lazy-expanded ---------- */
   const daysEl = document.getElementById('days');
   const stateEl = document.getElementById('state');
-  const moreBtn = document.getElementById('more');
-  let manifest = [];
-  let cursor = 0;
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -170,8 +171,8 @@
     return isNaN(d) ? iso : d.toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
   };
 
-  function renderDay(day){
-    const items = (day.items || []).map(it => {
+  function renderItems(day){
+    return (day.items || []).map(it => {
       const meta = [];
       if (Number.isFinite(it.points)) meta.push(`▲ ${it.points} pts`);
       if (Number.isFinite(it.comments)) meta.push(it.hn
@@ -187,39 +188,56 @@
         ${it.summary ? `<p class="item-summary">${esc(it.summary)}</p>` : ''}
       </article>`;
     }).join('');
-    return `<section class="day" id="d-${esc(day.date)}">
-      <div class="day-date">${esc(fmtDate(day.date))}</div>
-      ${day.title ? `<h2 class="day-title">${esc(day.title)}</h2>` : ''}
-      ${day.intro ? `<p class="day-intro">${esc(day.intro)}</p>` : ''}
-      <div class="items">${items}</div>
-    </section>`;
   }
 
-  async function loadBatch(){
-    const batch = manifest.slice(cursor, cursor + PAGE);
-    cursor += batch.length;
-    moreBtn.disabled = true;
-    const days = await Promise.all(batch.map(d =>
-      fetch(`/news/data/${encodeURIComponent(d.date)}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
-    ));
-    daysEl.insertAdjacentHTML('beforeend', days.filter(Boolean).map(renderDay).join(''));
-    moreBtn.disabled = false;
-    moreBtn.hidden = cursor >= manifest.length;
+  function renderRow(entry){
+    const count = Number.isFinite(entry.count) ? `${entry.count} article${entry.count > 1 ? 's' : ''}` : '';
+    return `<details class="arch" id="d-${esc(entry.date)}" data-date="${esc(entry.date)}">
+      <summary class="arch-head">
+        <span class="arch-date">${esc(fmtDate(entry.date))}</span>
+        <span class="arch-title">${esc(entry.title || 'Édition du ' + fmtDate(entry.date))}</span>
+        ${count ? `<span class="arch-count">${count}</span>` : ''}
+        <span class="arch-chev">↓</span>
+      </summary>
+      <div class="arch-body"><p class="state">Chargement…</p></div>
+    </details>`;
   }
 
-  moreBtn.addEventListener('click', loadBatch);
+  async function expand(det){
+    if (det.dataset.loaded) return;
+    det.dataset.loaded = '1';
+    const body = det.querySelector('.arch-body');
+    try {
+      const r = await fetch(`/news/data/${encodeURIComponent(det.dataset.date)}.json`);
+      if (!r.ok) throw new Error(r.status);
+      const day = await r.json();
+      body.innerHTML = `${day.intro ? `<p class="day-intro">${esc(day.intro)}</p>` : ''}
+        <div class="items">${renderItems(day)}</div>`;
+    } catch {
+      delete det.dataset.loaded;
+      body.innerHTML = '<p class="state">Impossible de charger cette édition pour le moment.</p>';
+    }
+  }
 
   fetch('/news/data/index.json')
     .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-    .then(async idx => {
-      // Skip the most recent edition: it lives on /news/.
-      manifest = (idx.days || []).slice().sort((a,b) => b.date.localeCompare(a.date)).slice(1);
+    .then(idx => {
+      // Newest first; skip the most recent edition: it lives on /news/.
+      const manifest = (idx.days || []).slice().sort((a,b) => b.date.localeCompare(a.date)).slice(1);
       stateEl.remove();
       if (!manifest.length){
         daysEl.innerHTML = '<p class="state">Pas encore d’archives — seule l’édition du jour existe pour l’instant.</p>';
         return;
       }
-      await loadBatch();
+      daysEl.innerHTML = manifest.map(renderRow).join('');
+      daysEl.querySelectorAll('details.arch').forEach(det => {
+        det.addEventListener('toggle', () => { if (det.open) expand(det); });
+      });
+      // Deep link: /news/archives/#d-2026-07-27 opens that day.
+      if (location.hash){
+        const target = document.getElementById(location.hash.slice(1));
+        if (target?.matches('details.arch')){ target.open = true; target.scrollIntoView(); }
+      }
     })
     .catch(() => { stateEl.textContent = 'Impossible de charger les archives pour le moment.'; });
 </script>
