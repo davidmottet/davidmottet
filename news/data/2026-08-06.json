@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-06",
+  "title": "Les légendes de Google s'en vont fonder Discovery Loop, et les agents s'installent partout",
+  "intro": "Journée dominée par un séisme chez Google : Jeff Dean et Sanjay Ghemawat quittent l'entreprise après 27 ans pour fonder Discovery Loop, tandis que Demis Hassabis prend du recul chez DeepMind. En parallèle, les plateformes d'agents se multiplient — Cloudflare OS, Zed DeltaDB, Muse Code chez Meta, Celld chez Deno — pendant que la sécurité de ces mêmes agents inquiète (exfiltration de données via Atlassian Rovo). En contrepoint, plusieurs textes très discutés interrogent les limites des LLM et le rejet qu'ils suscitent chez les programmeurs amateurs.",
+  "items": [
+    {
+      "title": "Discovery Loop : Jeff Dean, Sanjay Ghemawat, Quoc Le et Oriol Vinyals quittent Google pour automatiser la recherche scientifique",
+      "url": "https://www.discoveryloop.com/",
+      "hn": "https://news.ycombinator.com/item?id=49184960",
+      "points": 645,
+      "comments": 396,
+      "summary": "Quatre figures majeures de Google (TensorFlow, MapReduce, Gemini, AlphaFold) fondent Discovery Loop, une société qui veut compresser les boucles d'expérimentation scientifique en faisant proposer, exécuter et analyser des milliers d'expériences en parallèle par l'IA, en commençant par la recherche en machine learning elle-même. Constituée en public benefit corporation, elle garde Google comme investisseur fondateur et partenaire cloud. Les commentaires oscillent entre admiration pour le pedigree de l'équipe et scepticisme : une boucle purement computationnelle peut-elle vraiment faire de la science sans validation par le monde physique ?"
+    },
+    {
+      "title": "Remaniement chez Google DeepMind : Demis Hassabis passe de CEO à président, Jeff Dean s'en va",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+      "hn": "https://news.ycombinator.com/item?id=49184755",
+      "points": 534,
+      "comments": 619,
+      "summary": "Hassabis abandonne la gestion quotidienne pour devenir président de Google DeepMind et Chief Scientist d'Alphabet, avec un rôle élargi chez Isomorphic Labs ; Koray Kavukcuoglu, jusqu'ici CTO, prend la tête des modèles Gemini et de la recherche de pointe. Après 27 ans chez Google, Jeff Dean part avec Sanjay Ghemawat fonder Discovery Loop. Pour beaucoup de commentateurs, le départ de Dean et Ghemawat est la vraie nouvelle du jour, et le fil débat longuement de la position concurrentielle de Google face à Anthropic et aux modèles chinois, ainsi que de ses difficultés chroniques à transformer sa recherche en produits."
+    },
+    {
+      "title": "Cloudflare OS : une plateforme ouverte pour les agents, les applications et le travail",
+      "url": "https://blog.cloudflare.com/cloudflare-os/",
+      "hn": "https://news.ycombinator.com/item?id=49182996",
+      "points": 492,
+      "comments": 252,
+      "summary": "Cloudflare publie en open source une plateforme où des agents IA, chargés du contexte de l'organisation, peuvent mener des recherches, rédiger des documents et construire de vraies applications full-stack exécutées comme des Workers avec bases SQLite isolées. Le modèle de sécurité repose sur des « gatekeepers » : les agents partent sans aucun accès et doivent demander chaque ressource, sur un principe zero-trust. Dans les commentaires, Kenton Varda défend un modèle de bacs à sable hérité de Sandstorm où « l'IA ne peut pas introduire de faille majeure », tandis que plusieurs lecteurs jugent l'appellation « OS » trompeuse et y voient surtout une manœuvre pour vendre de l'infrastructure."
+    },
+    {
+      "title": "Zed DeltaDB : un contrôle de version qui enregistre le travail entre les commits",
+      "url": "https://zed.dev/deltadb",
+      "hn": "https://news.ycombinator.com/item?id=49187256",
+      "points": 335,
+      "comments": 176,
+      "summary": "L'éditeur Zed dévoile DeltaDB, un système qui capture chaque opération entre deux commits avec une identité stable, relie chaque modification de code à la conversation d'agent qui l'a produite, et virtualise le worktree pour rendre la création de branches d'agents quasi gratuite. Le tout est en accès anticipé sur inscription. Le fil débat de l'utilité réelle face à l'« historique local » d'IntelliJ ou à Git/Jujutsu, certains demandant à Zed de d'abord stabiliser les fondamentaux, d'autres saluant une vraie réponse au problème du travail multi-agents."
+    },
+    {
+      "title": "Position : les LLM ne savent pas sauter",
+      "url": "https://openreview.net/forum?id=klU4737opt",
+      "hn": "https://news.ycombinator.com/item?id=49181083",
+      "points": 252,
+      "comments": 172,
+      "summary": "Dans ce position paper, Tom Zahavy soutient que les LLM sont structurellement incapables des sauts créatifs fondateurs de la science — créer de nouveaux axiomes quand les données d'observation manquent, comme Einstein avec la relativité générale — faute d'intuition physique ancrée dans l'expérience sensorielle. Les commentateurs contestent la prémisse (la quantification de l'énergie fut découverte par raisonnement mathématique, pas par sensation), pointent des approximations historiques sur l'apport réel d'Einstein, et raillent le déplacement perpétuel des buts des arguments « les LLM ne peuvent pas… ». L'auteur précise qu'il s'agit de philosophie exploratoire, pas de limites définitives."
+    },
+    {
+      "title": "Battre GPT-5.6 Sol en recherche documentaire avec des modèles ouverts 100 fois moins chers",
+      "url": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
+      "hn": "https://news.ycombinator.com/item?id=49186762",
+      "points": 248,
+      "comments": 60,
+      "summary": "Neon et Castform affirment qu'un modèle open source de 4 milliards de paramètres, post-entraîné par apprentissage par renforcement sur l'infrastructure Lakebase Search (BM25 hybride et recherche vectorielle), égale la précision de GPT-5.6 Sol en recherche agentique pour un coût 100 fois moindre — une requête multi-tours avec le modèle frontière coûtant environ 0,03 $ et plus de 10 secondes. Le fil oppose partisans des petits modèles spécialisés (« les gros modèles sur-réfléchissent, les petits font le travail ») et sceptiques qui dénoncent des benchmarks maison invérifiables."
+    },
+    {
+      "title": "Je fais passer mon téléphone d'Android à Linux",
+      "url": "https://runarcn.no/android-to-linux/",
+      "hn": "https://news.ycombinator.com/item?id=49188022",
+      "points": 244,
+      "comments": 200,
+      "summary": "Lassé du pistage de Google Play Services, de l'IA imposée et des restrictions sur le sideloading, l'auteur installe SailfishOS sur un Fairphone 4, préféré à Ubuntu Touch et postmarketOS — au prix d'un GPS cassé, de logiciels datés et d'un second téléphone Android conservé pour la banque et les démarches administratives. Le fil dresse un état des lieux lucide du téléphone Linux : applications bancaires et étatiques inaccessibles, photographie computationnelle très en retrait, claviers virtuels frustrants, mais des utilisateurs de longue date qui jugent le gain de contrôle et de vie privée digne de ces compromis."
+    },
+    {
+      "title": "Meta lance Muse Code et Muse Spark 1.2",
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "hn": "https://news.ycombinator.com/item?id=49187575",
+      "points": 207,
+      "comments": 121,
+      "summary": "Meta publie Muse Code, un agent de codage en terminal avec sous-agents persistants en arrière-plan et journal d'événements local pour reprendre les tâches longues après un crash, accompagné du modèle Muse Spark 1.2, co-entraîné avec l'agent et annoncé en progrès sur Terminal-Bench 2.1 et DeepSWE 1.1, avec une étude de cas d'optimisation de kernels GPU sur plus de 1 000 appels d'outils. Les commentateurs s'interrogent sur cette version 1.2 sortie moins d'un mois après la 1.1, sur des comparaisons jugées sélectives (face à Opus 5 plutôt qu'aux modèles les plus forts) et sur la confidentialité du code envoyé à Meta."
+    },
+    {
+      "title": "Atlassian Rovo exfiltre des données en contournant les contrôles",
+      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+      "hn": "https://news.ycombinator.com/item?id=49185983",
+      "points": 192,
+      "comments": 77,
+      "summary": "PromptArmor montre qu'une injection de prompt indirecte cachée dans un fichier peut pousser l'agent Rovo d'Atlassian à ajouter des données sensibles (tickets Jira, pages Confluence, connecteurs tiers) à des URL contrôlées par l'attaquant, que son outil de récupération d'URL ouvre ensuite — même si la recherche web est désactivée. Signalée le 23 mai, la faille restait non corrigée à la publication le 5 août, Atlassian n'ayant plus répondu après l'accusé de réception. Le fil y voit moins un cas isolé qu'une faiblesse endémique de tous les systèmes agentiques, et en profite pour étriller la trajectoire produit d'Atlassian."
+    },
+    {
+      "title": "« Born Against » : pourquoi les communautés de programmation amateur rejettent les LLM",
+      "url": "https://blog.fogus.me/llm/born-against.html",
+      "hn": "https://news.ycombinator.com/item?id=49187061",
+      "points": 167,
+      "comments": 162,
+      "summary": "L'essai de Fogus soutient que si les programmeurs amateurs rejettent les LLM, c'est que le hobby valorise le processus plutôt que le résultat : automatiser l'acte de programmer revient à vider le loisir de sa substance. Le fil distingue ceux qui aiment programmer de ceux qui veulent surtout obtenir un logiciel, certains comparant l'usage des LLM au dopage sportif quand d'autres décrivent un usage sélectif qui leur permet de taper moins de code tout en faisant plus. La discussion touche aussi à l'honnêteté intellectuelle, le débat d'origine portant sur des idées reprises d'autres moteurs de jeu."
+    },
+    {
+      "title": "Les cartons-titres de Blade Runner sont admirables",
+      "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
+      "hn": "https://news.ycombinator.com/item?id=49189287",
+      "points": 187,
+      "comments": 81,
+      "summary": "Rands analyse le générique de Blade Runner comme une leçon de retenue typographique : une seule police, Goudy Oldstyle, déclinée en capitales, tailles, italiques et un rouge réservé au mot « Replicant » — là où la version workprint utilisait un Impact « de facilité » qui sabotait le ton dystopique. Pour l'auteur, ces derniers 10 % de soin font la différence entre un travail correct et l'excellence. Les commentaires ajoutent que la partition de Vangelis, compositeur qui ne lisait pas la musique, porte autant la séquence, et s'amusent du paradoxe d'un film devenu si copié qu'il paraît aujourd'hui dérivatif."
+    },
+    {
+      "title": "Celld : des Durable Objects distribués et auto-hébergés par Deno",
+      "url": "https://github.com/denoland/celld",
+      "hn": "https://news.ycombinator.com/item?id=49185430",
+      "points": 166,
+      "comments": 30,
+      "summary": "Deno publie Celld (v0.0.1), un démon en Rust avec V8 embarqué qui exécute des Workers et Durable Objects sur sa propre infrastructure : chaque objet est une base SQLite adressée par nom, répliquée en continu vers un stockage compatible S3 via Litestream, et les nœuds se coordonnent par compare-and-swap sur le stockage objet, sans plan de contrôle ni protocole de consensus. Le fil salue une alternative à Cloudflare pour les cas où celui-ci est surdimensionné, tout en relevant que S3 devient de fait la couche de consensus — la dépendance est déplacée, pas éliminée."
+    }
+  ]
+}
