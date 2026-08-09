@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-09",
+      "title": "Coder reste difficile, le Danemark fait passer les élèves à l'oral, et l'attaque accidentelle d'OpenAI contre Hugging Face se précise",
+      "count": 12
+    },
+    {
       "date": "2026-08-08",
       "title": "Meta condamné à 567 M$ au Nouveau-Mexique, DeepSeek casse les prix, et Oracle ferme OpenJDK au code généré par IA",
       "count": 12
