@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-10",
+      "title": "Mea culpa d'un dev IA, bloat Windows et surveillance permanente : la responsabilité en question",
+      "count": 12
+    },
+    {
       "date": "2026-08-09",
       "title": "Coder reste difficile, le Danemark fait passer les élèves à l'oral, et l'attaque accidentelle d'OpenAI contre Hugging Face se précise",
       "count": 12
