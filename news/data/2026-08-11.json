@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-11",
+  "title": "Meta rouvre ses modèles, l'IA tient dans 14 Mo et l'anonymat en ligne recule",
+  "intro": "Journée dominée par le retour de Meta aux modèles ouverts : le lancement de Muse Glimmer, un modèle 30B open weights pour le code, s'accompagne d'une offensive médiatique de Zuckerberg contre les IA « fermées » de ses rivaux. En face, l'IA embarquée se miniaturise à l'extrême avec Needle2, un agent de 14 Mo pour objets connectés. Le reste du front page mêle défense des libertés numériques — guerre contre l'anonymat en ligne, action collective contre Sony — et belle vitalité des langages et outils créatifs, de Sonic Pi v5 à Chicken Scheme 6.0.",
+  "items": [
+    {
+      "title": "Meta Muse Glimmer : un modèle 30B open weights pour le code et les agents locaux",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "hn": "https://news.ycombinator.com/item?id=49241679",
+      "points": 547,
+      "comments": 284,
+      "summary": "Meta publie Muse Glimmer, un modèle de 30 milliards de paramètres en open weights, optimisé pour le code et les tâches agentiques : environ 20 Go en quantification 4 bits, versions pré-quantifiées et drafter à prédiction multi-tokens, le tout annoncé comme tenant dans 24 Go de mémoire avec « une dégradation minimale » sous compression. Les commentaires questionnent le timing (une sortie précipitée avant le prochain Qwen ?), la crédibilité des benchmarks et l'équation économique : 15 tokens/s sur du matériel grand public à plus de 4 000 €, face à des API cloud à quelques dollars — le local se paie surtout en confidentialité."
+    },
+    {
+      "title": "« La guerre britannique contre l'anonymat a gagné l'Amérique »",
+      "url": "https://www.effort.news/uk-lobby",
+      "hn": "https://news.ycombinator.com/item?id=49251411",
+      "points": 441,
+      "comments": 330,
+      "summary": "L'article soutient que des ONG venues du Royaume-Uni recyclent la rhétorique de la « protection de l'enfance » pour pousser des lois d'identification numérique aux États-Unis, au détriment de l'anonymat des adultes en ligne. Le fil, très fourni, oppose ceux qui jugent les inquiétudes parentales sincères à ceux qui y voient un agenda de surveillance, avec des accusations de financement d'associations par Meta pour détourner sa responsabilité. D'autres relativisent la thèse : les lois de vérification d'âge américaines (Californie, Illinois) sont antérieures à l'influence britannique."
+    },
+    {
+      "title": "Sonic Pi v5 : la création musicale par le code se modernise",
+      "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
+      "hn": "https://news.ycombinator.com/item?id=49208296",
+      "points": 327,
+      "comments": 80,
+      "summary": "Sam Aaron publie la version 5 de son outil libre de live coding musical : messages d'erreur plus pédagogiques, options audio professionnelles, visuels dynamiques pour la scène et raccourcis clavier configurables. Les commentaires comparent l'outil à Strudel et SuperCollider, saluent la licence MIT, et rappellent l'origine du nom (le logiciel était livré avec Raspberry Pi OS). Un débat plus piquant porte sur l'inclusion du célèbre Amen Break : peut-on distribuer un sample sous copyright dans un projet open source ?"
+    },
+    {
+      "title": "Squeak 6.1 : le Smalltalk historique continue d'évoluer",
+      "url": "https://squeak.org/release_notes/6.1/",
+      "hn": "https://news.ycombinator.com/item?id=49242653",
+      "points": 236,
+      "comments": 119,
+      "summary": "Nouvelle version de Squeak, l'implémentation libre de Smalltalk héritière des travaux d'Alan Kay. Les commentateurs vantent sa valeur pédagogique — apprendre Smalltalk, c'est comprendre ce que « orienté objet » veut vraiment dire — et débattent de son influence réelle sur JavaScript face à celle de Self. La critique récurrente reste l'interface : toujours pas de vrai support des écrans haute densité, un chantier que Pharo, le cousin moderne, tente de régler avec une nouvelle pile graphique."
+    },
+    {
+      "title": "Show HN – Needle2 : un LLM agentique de 14 Mo pour téléphones, wearables et robots",
+      "url": "https://cactuscompute.com/needle",
+      "hn": "https://news.ycombinator.com/item?id=49246804",
+      "points": 225,
+      "comments": 92,
+      "summary": "Needle2 est un modèle de 45 millions de paramètres compressé en 2 bits, livré en binaire unique de 14 Mo tournant dans 28 Mo de RAM : 500 tokens/s sur Raspberry Pi 5, environ 70 MFLOPs par token, ciblant l'appel d'outils et l'extraction structurée plutôt que la génération libre, avec un score de confiance pour escalader vers le cloud. La communauté applaudit la piste des micro-LLM hiérarchiques, mais la démo déçoit : appels d'outils erratiques (un « lock_door » déclenché sur la requête « HN ») et échecs sur des additions simples."
+    },
+    {
+      "title": "Stop Killing Games appelle à poursuivre Sony aux côtés d'une fondation néerlandaise",
+      "url": "https://www.massaschadeconsument.nl/collectieve-acties/playstation/",
+      "hn": "https://news.ycombinator.com/item?id=49249481",
+      "points": 222,
+      "comments": 100,
+      "summary": "La fondation néerlandaise Massaschade & Consument lance une action collective contre Sony pour abus de position dominante : la « taxe Sony » consisterait à réserver la vente de jeux dématérialisés au seul PlayStation Store, à des prix égaux ou supérieurs au physique malgré des coûts de distribution moindres. Les résidents néerlandais ayant acheté sur le Store depuis novembre 2013 peuvent se joindre gratuitement à la procédure, financée par un tiers. Sur HN, certains objectent que les joueurs achètent « en connaissance de cause » et que des alternatives existent (PC, autres consoles)."
+    },
+    {
+      "title": "Stowaway : prendre le hublot de n'importe quel avion ou satellite au-dessus de vous",
+      "url": "https://stowaway.live/",
+      "hn": "https://news.ycombinator.com/item?id=49209918",
+      "points": 171,
+      "comments": 17,
+      "summary": "Ce site interactif affiche les avions et satellites survolant votre position et permet de « s'installer » à leur bord pour voir le monde depuis leur point de vue, effets sonores compris. Les commentaires, unanimement enthousiastes, saluent le soin du design sonore et s'étonnent de la visibilité des satellites au-dessus des zones nocturnes ; quelques demandes d'améliorations émergent, comme l'affichage des distances."
+    },
+    {
+      "title": "Show HN : faire défiler les 43 252 003 274 489 856 000 états du Rubik's Cube",
+      "url": "https://everycube.alen.is/",
+      "hn": "https://news.ycombinator.com/item?id=49251179",
+      "points": 166,
+      "comments": 52,
+      "summary": "Un site indexe les 43,25 trillions de milliards de configurations possibles du Rubik's Cube et permet de les parcourir à la molette, chaque état ayant son URL. Un commentateur calcule qu'à 12 états par pouce de défilement, il faudrait 9 ans et demi en déplaçant la molette à la vitesse de la lumière pour tout voir. Entre blagues sur le « doomscrolling littéral » et suggestions (défilement automatique, générateur de mots de passe), l'exécution est saluée, et l'auteur a corrigé en direct la gestion des changements d'URL."
+    },
+    {
+      "title": "Chicken Scheme 6.0 : Unicode complet pour le compilateur Scheme-vers-C",
+      "url": "https://code.call-cc.org/releases/6.0.0/NEWS",
+      "hn": "https://news.ycombinator.com/item?id=49251702",
+      "points": 155,
+      "comments": 17,
+      "summary": "Chicken, le compilateur qui traduit Scheme en C portable, passe en version 6.0 avec le support complet d'Unicode et l'arrivée de Crunch, un compilateur R7RS statiquement typé. Les commentaires louent la portabilité (« du Scheme sur des systèmes qui ne font pas tourner Scheme ») et l'écosystème de bibliothèques « eggs », tout en comparant Chicken à Gambit sur la taille de leurs écosystèmes respectifs."
+    },
+    {
+      "title": "Du SIMD Rust sur GPU : un fork du compilateur pour porter le code CPU existant",
+      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
+      "hn": "https://news.ycombinator.com/item?id=49247477",
+      "points": 151,
+      "comments": 68,
+      "summary": "Vectorware présente un fork du compilateur Rust qui fait tourner sur GPU du code CPU existant, en s'inspirant de core::simd pour masquer la complexité des kernels CUDA (sérialisation, gestion hôte/périphérique). Les questions techniques fusent sur la représentation intermédiaire et la correspondance vers PTX, ainsi que sur le positionnement face aux approches classiques ; d'autres s'interrogent sur le modèle économique de la société, entre support, conseil et licences."
+    },
+    {
+      "title": "Publier ses schémas avant que « open source » n'existe : 55 ans d'Akizuki Denshi",
+      "url": "https://fabscene.medium.com/publishing-schematics-before-open-source-was-a-word-55-years-of-akizuki-denshi-japans-be7ca9629704",
+      "hn": "https://news.ycombinator.com/item?id=49212449",
+      "points": 76,
+      "comments": 18,
+      "summary": "Portrait d'Akizuki Denshi, boutique de composants électroniques d'Akihabara fondée en 1970, qui publie depuis toujours les schémas complets de ses kits et joint des fiches techniques imprimées jusqu'aux sachets de condensateurs à 100 yens — « si vous divulguez toute l'information, les clients peuvent corriger leurs erreurs eux-mêmes », selon son fondateur Akio Tsujimoto. Une institution de la culture maker japonaise, incarnation de l'esprit open hardware des décennies avant le mot."
+    },
+    {
+      "title": "Zuckerberg attaque les IA « fermées » de ses rivaux, Meta revient aux modèles ouverts",
+      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "hn": "https://news.ycombinator.com/item?id=49243880",
+      "points": 47,
+      "comments": 37,
+      "summary": "Dans le Financial Times, Mark Zuckerberg critique les modèles fermés de ses concurrents au moment où Meta relance sa stratégie open source avec Muse Glimmer. Les commentaires restent sceptiques : « open weights » n'est pas open source, et la manœuvre viserait surtout à banaliser les produits des rivaux plutôt qu'à défendre un principe. Beaucoup concèdent néanmoins que, quelles que soient les motivations, davantage de modèles ouverts profite à tout l'écosystème."
+    }
+  ]
+}
