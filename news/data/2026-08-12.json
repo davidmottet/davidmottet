@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-12",
+  "title": "Les « pensées » chiffrées des LLM fuient, Mojo passe en 1.0 et l'Angleterre en passe d'éliminer l'hépatite C",
+  "intro": "Grosse journée sécurité IA : des chercheurs montrent que les blocs de raisonnement chiffrés renvoyés par les API d'Anthropic, OpenAI et Google peuvent être rejoués et déchiffrés via des modèles frères jailbreakés, exposant au passage clés d'API et mots de passe. Côté langages, Mojo atteint enfin la version 1.0 pendant que Google plaide pour Go comme langage idéal du code assisté par IA — et qu'un développeur solo porte Clojure sur Chez Scheme en deux mois avec l'aide des LLM. Hors tech pure, l'Angleterre s'approche de l'élimination de l'hépatite C avec dix ans d'avance sur l'objectif de l'OMS.",
+  "items": [
+    {
+      "title": "Voler les traces de raisonnement des API de LLM propriétaires",
+      "url": "https://stolen-thoughts.com/",
+      "hn": "https://news.ycombinator.com/item?id=49257876",
+      "points": 522,
+      "comments": 214,
+      "summary": "Des chercheurs montrent que les blocs de raisonnement chiffrés renvoyés par les API d'Anthropic, OpenAI et Google sont « portables » : rejoués dans un modèle frère plus faible et jailbreaké du même fournisseur, ils sont déchiffrés en clair. Ils ont reconstruit 315 320 blocs de raisonnement à partir de 6 708 trajectoires d'agents publiées sur GitHub et Hugging Face, y récupérant 704 artefacts privés dont 62 clés d'API et 33 mots de passe — dont 64 n'apparaissaient que dans le raisonnement caché. Les commentaires débattent de la responsabilité des fournisseurs (le rejeu inter-sessions semble volontaire, pour permettre le changement de modèle en cours de conversation) et se demandent si cette technique explique certaines distillations de modèles de pointe."
+    },
+    {
+      "title": "L'Angleterre en passe d'être un des premiers pays à éliminer l'hépatite C",
+      "url": "https://www.bbc.com/news/articles/c75gk620r22o",
+      "hn": "https://news.ycombinator.com/item?id=49257377",
+      "points": 495,
+      "comments": 358,
+      "summary": "Plus de 100 000 personnes ont été diagnostiquées et traitées depuis 2015 grâce à des antiviraux pris 8 à 12 semaines qui guérissent plus de 95 % des cas ; les décès ont chuté de 36 % en dix ans et l'Angleterre devrait battre l'objectif d'élimination fixé par l'OMS pour 2030. Les commentaires saluent le rôle du NHS et de son dépistage agressif, jugé difficilement réplicable aux États-Unis dans le climat vaccino-sceptique actuel. Un long fil sémantique conteste le mot « élimination » — qui en santé publique signifie l'arrêt des nouvelles transmissions, pas zéro cas."
+    },
+    {
+      "title": "La responsable de l'éthique d'OpenAI part moins d'un an après son arrivée",
+      "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+      "hn": "https://news.ycombinator.com/item?id=49257160",
+      "points": 312,
+      "comments": 354,
+      "summary": "Selon le Financial Times, la responsable de l'éthique d'OpenAI — précédemment cheffe de l'éthique chez Meta — quitte l'entreprise moins d'un an après son embauche, apparemment sans remplacement prévu. Les commentaires sont très cyniques sur la fonction même d'« éthicien d'entreprise », vue comme un poste de relations publiques destiné à avaliser des décisions déjà prises. Le débat s'élargit à la question de savoir si une grande entreprise peut être autre chose qu'amorale quand la valeur actionnariale prime."
+    },
+    {
+      "title": "Mojo 1.0 est disponible",
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "hn": "https://news.ycombinator.com/item?id=49261128",
+      "points": 308,
+      "comments": 140,
+      "summary": "Modular publie la version 1.0 de Mojo, son langage qui vise à marier la simplicité de Python et les performances du calcul système, notamment pour les GPU. La critique principale des commentaires reste le compilateur propriétaire — Modular promet de l'ouvrir courant 2026 — tandis que d'autres y voient une vraie réponse pour les développeurs Python qui ont besoin de performance sans passer à C++ ou Rust. Question récurrente à l'ère des LLM : un nouveau langage peut-il encore percer quand les assistants IA ne le maîtrisent pas ?"
+    },
+    {
+      "title": "Go serait le langage idéal pour l'ingénierie logicielle assistée par IA",
+      "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+      "hn": "https://news.ycombinator.com/item?id=49261133",
+      "points": 296,
+      "comments": 336,
+      "summary": "Un billet du blog développeurs de Google soutient que Go se prête particulièrement bien au code généré par IA : seulement 25 mots-clés, formatage unique via go fmt, bibliothèque standard riche qui limite les dépendances tierces, et compilation rapide pour les boucles d'itération des agents. Un responsable de la guilde Go de Netflix confirme que les agents y écrivent « du meilleur code que dans d'autres langages », mais les critiques pointent l'absence totale de métriques comparatives et soupçonnent un billet publicitaire. Les partisans de Rust répliquent qu'un système de types plus strict produit du code généré plus sûr."
+    },
+    {
+      "title": "La compression, c'est de la prédiction",
+      "url": "https://ngrok.com/blog/compression-is-prediction",
+      "hn": "https://news.ycombinator.com/item?id=49263497",
+      "points": 288,
+      "comments": 128,
+      "summary": "Un billet du blog ngrok vulgarise l'équivalence fondamentale entre compression et prédiction : mieux on prédit les données, mieux on les compresse — le lien qui relie la théorie de l'information de Shannon (1948) aux modèles de langage actuels. Les commentaires rappellent que l'idée n'est pas neuve (cours de David MacKay à Cambridge, prix Hutter vieux de vingt ans, papier DeepMind de 2023) et débattent du manque de citations du billet. La discussion glisse vers les LLM : la prédiction du prochain token comme compression expliquerait leurs capacités, avec la réserve que la compression ne garantit pas la généralisation si la distribution des données change."
+    },
+    {
+      "title": "Show HN : une app iPhone fusionne les images simultanées de deux objectifs en une photo",
+      "url": "https://photosynthesis.camera",
+      "hn": "https://news.ycombinator.com/item?id=49226623",
+      "points": 220,
+      "comments": 225,
+      "summary": "Photosynthesis exploite l'API multi-caméra AVCapture d'Apple pour capturer en même temps le grand-angle et le téléobjectif, puis fusionne les deux images en lissant la couture pour gagner en détail au centre du cadre. Le fil est surtout un procès du modèle économique : l'abonnement pour une app locale sans coût serveur passe mal, la version gratuite étant limitée à 3 exports par mois. Beaucoup réclament un achat unique autour de 20 $, et certains rappellent qu'Apple pratique déjà la fusion multi-capteurs en interne depuis des années."
+    },
+    {
+      "title": "Nvidia annonce Nemotron 3.5 Lightning et NeMo Switchyard",
+      "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/",
+      "hn": "https://news.ycombinator.com/item?id=49263340",
+      "points": 190,
+      "comments": 97,
+      "summary": "Nvidia présente Nemotron 3.5 Lightning, un modèle ouvert rapide destiné aux stations RTX et DGX, accompagné de NeMo Switchyard, un système de routage intelligent entre modèles. Les commentaires sont sceptiques : le dépôt GitHub de Switchyard affiche « logiciel expérimental, pas pour la production » alors que le communiqué suggère l'inverse, et le routage dynamique est accusé de casser le cache de prompts, certains qualifiant ces routeurs de « poudre de perlimpinpin ». D'autres jugent les nouveaux modèles 30B de Meta nettement meilleurs sur les benchmarks."
+    },
+    {
+      "title": "Grok Bot : des agents xAI qui tournent en permanence sur leur propre machine",
+      "url": "https://x.ai/bot",
+      "hn": "https://news.ycombinator.com/item?id=49261514",
+      "points": 167,
+      "comments": 146,
+      "summary": "xAI lance Grok Bot, des agents autonomes qui tournent 24h/24 sur des machines virtuelles dédiées, gardent leur contexte entre les sessions et peuvent se coordonner entre eux, facturés 120 à 200 $ par mois et par employé. Un utilisateur raconte avoir fait contacter une quarantaine de fournisseurs de tissu au Vietnam via WhatsApp pour négocier des prix — en brûlant « plus de tokens ce mois-ci qu'en cinq ans ». Les commentaires s'inquiètent du coût externalisé sur les destinataires humains, des injections de prompt sur des agents détenant des identifiants, et d'une économie où les échanges bot-à-bot ne profitent qu'aux fournisseurs de LLM."
+    },
+    {
+      "title": "Jolt : un compilateur Clojure implémenté sur Chez Scheme",
+      "url": "https://jolt-lang.github.io",
+      "hn": "https://news.ycombinator.com/item?id=49223965",
+      "points": 158,
+      "comments": 57,
+      "summary": "Dmitri Sotnikov (yogthos) publie Jolt, un compilateur Clojure reposant sur Chez Scheme : exécutables autonomes de 18 Mo, performances proches de la JVM (1x dans la plupart des cas, 6x plus lent au pire), nREPL, FFI et compatibilité avec des bibliothèques populaires comme Ring, Reitit ou Malli. Le projet a été développé en deux mois environ et 2 000 commits par un seul développeur, avec une aide assumée des LLM. Le fil débat de la frontière entre « slop IA » et accélération légitime — le portage d'un langage existant, bien spécifié et couvert de tests, étant vu comme le cas idéal pour ce mode de travail."
+    },
+    {
+      "title": "WorldClaw : génération agentique de mondes 3D ouverts à grande échelle chez Tencent",
+      "url": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/",
+      "hn": "https://news.ycombinator.com/item?id=49265051",
+      "points": 146,
+      "comments": 47,
+      "summary": "L'équipe Hunyuan de Tencent présente WorldClaw, un système agentique qui génère des mondes 3D ouverts : des scripts orchestrent LLM et modèles d'image, la composition étant produite en 2D puis convertie en objets 3D (via SAM3D) placés dans la scène. Les commentaires soulignent qu'il ne s'agit pas d'un nouveau modèle mais d'un assemblage d'outils existants, sans code publié, et relèvent des ratés dans les images de démonstration — bâtiments posés sur l'eau, placements dignes d'un « pinceau de dispersion » mal utilisé. Le débat de fond oppose la génération procédurale de masse au monde façonné à la main, à la Skyrim contre Starfield."
+    },
+    {
+      "title": "Fabriquer des hologrammes avec un traceur à stylo",
+      "url": "https://blog.jordan.matelsky.com/Penplotter-holography/",
+      "hn": "https://news.ycombinator.com/item?id=49262811",
+      "points": 126,
+      "comments": 12,
+      "summary": "Un bricoleur détourne un traceur à stylo pour graver des « hologrammes à rayures » : des arcs finement tracés qui réfléchissent la lumière différemment selon l'angle et créent une illusion de profondeur, une technique cousine de l'holographie par abrasion connue depuis les années 1990. Les commentaires apprécient la pédagogie du billet — dont une démonstration avec de l'huile d'olive sur un écran de téléphone — tout en rappelant qu'il ne s'agit pas d'holographie au sens physique du terme, l'auteur l'admettant lui-même. Plusieurs pointent vers les travaux de William Beaty et une vidéo de Steve Mould sur le même principe."
+    }
+  ]
+}
