@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-13",
+  "title": "Trois modèles d'IA en 24 heures, Tailscale déterre un bug de 16 ans dans SQLite et l'éclipse se regarde en webcam",
+  "intro": "Journée d'avalanche côté modèles : DeepSeek V4 Pro, le mastodonte ouvert Qwen3.8 à 2 400 milliards de paramètres et Grok 4.6 sortent quasi simultanément, relançant le débat prix contre confiance envers les labos chinois et xAI. La belle histoire d'ingénierie du jour vient de Tailscale, qui a traqué une corruption de base de données jusqu'à une condition de course vieille de 16 ans dans le WAL de SQLite — et a payé les développeurs pour la corriger. Ailleurs, uBlock Origin jette l'éponge face aux publicités de Facebook, et l'éclipse totale du 12 août sur l'Islande et l'Espagne s'est suivie en direct via une carte de webcams devenue virale.",
+  "items": [
+    {
+      "title": "Tailscale remonte une corruption de base de données jusqu'à un bug de 16 ans dans le WAL de SQLite",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "hn": "https://news.ycombinator.com/item?id=49272832",
+      "points": 863,
+      "comments": 167,
+      "summary": "Tailscale a subi des corruptions sur le plan de contrôle et les a traquées jusqu'à une condition de course présente depuis 16 ans dans la logique de réinitialisation du write-ahead log de SQLite : le moteur rapportait plus de pages copiées depuis le WAL qu'il n'en existait, avec perte de données définitive. Le bug ne se déclenchait qu'avec plusieurs connexions et un checkpointing manuel très agressif — un usage atypique — et l'entreprise a financé un outil de débogage dédié puis payé un contrat de support aux développeurs de SQLite pour le corriger. Les commentaires saluent ce financement direct de l'open source, notent qu'une suite de tests de 92 millions de lignes n'a pas suffi à attraper le bug, et débattent de la pertinence du checkpointing manuel."
+    },
+    {
+      "title": "DeepSeek V4 Pro : des performances proches des meilleurs modèles pour une fraction du prix",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "hn": "https://news.ycombinator.com/item?id=49274600",
+      "points": 795,
+      "comments": 307,
+      "summary": "DeepSeek publie V4 Pro, facturé 0,435 $ en entrée et 0,87 $ en sortie par million de tokens (une hausse est déjà annoncée), avec des scores de 87,9 sur Terminal Bench 2.1 et 83,3 sur Cybergym qui le placent au niveau des modèles de pointe occidentaux. Un commentateur calcule qu'avec le cache, une requête de codage agentique coûte environ 60 fois moins cher qu'avec les modèles les plus chers du marché. Les débats portent sur l'écart de valeur réel avec le V4 Flash, plus rapide et déjà très apprécié, et sur les réticences des entreprises : DeepSeek peut entraîner ses modèles sur les prompts, ce qui alimente les inquiétudes de confidentialité autour des modèles chinois."
+    },
+    {
+      "title": "Qwen3.8-2.4T : un modèle ouvert de 2 400 milliards de paramètres",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "hn": "https://news.ycombinator.com/item?id=49273478",
+      "points": 525,
+      "comments": 116,
+      "summary": "Alibaba publie les poids de Qwen3.8-2.4T, un mixture-of-experts de 2 400 milliards de paramètres dont 95 milliards actifs par token, soit environ 5 To en BF16, avec un contexte plafonné à 250 000 tokens contre 1 million pour la version propriétaire. La licence est gratuite pour usage interne et pour les organisations sous 50 M$ de chiffre d'affaires, mais restreint le service commercial du modèle. Les commentaires jugent le modèle au coude à coude avec les meilleurs modèles fermés selon les benchmarks — tout en doutant de leur corrélation avec l'usage réel — et regrettent l'absence de vision et l'inaccessibilité pratique d'un modèle de cette taille, beaucoup attendant plutôt la variante 27B."
+    },
+    {
+      "title": "Des webcams pour suivre l'éclipse totale du 12 août en Islande et en Espagne",
+      "url": "https://jonty.github.io/2026_eclipse_webcams/",
+      "hn": "https://news.ycombinator.com/item?id=49270953",
+      "points": 459,
+      "comments": 124,
+      "summary": "Le développeur Jonty a ressorti la carte interactive de webcams construite pour l'éclipse américaine de 2024 et l'a adaptée à l'éclipse totale du 12 août 2026, dont la bande de totalité traverse le Groenland, l'Islande puis le nord-est de l'Espagne et les Baléares au coucher du soleil. Les commentaires signalent une météo islandaise catastrophique (96 % de couverture nuageuse) contre de bien meilleures conditions dans l'intérieur espagnol, autour de Teruel et Guadalajara. Beaucoup partagent leurs récits de voyage d'éclipses passées et notent la coïncidence avec le pic des Perséides."
+    },
+    {
+      "title": "Zed lance Delta, une plateforme collaborative pour travailler avec des agents IA",
+      "url": "https://zed.dev/blog/introducing-delta",
+      "hn": "https://news.ycombinator.com/item?id=49276574",
+      "points": 443,
+      "comments": 149,
+      "summary": "L'éditeur Zed présente Delta, un espace de conversation multijoueur avec des agents IA où chaque échange est traité comme un document : on peut surligner un passage précis d'une réponse et y répondre en commentaire, plutôt que d'expliquer laborieusement à l'agent de quoi on parle. L'outil, bâti sur une nouvelle base de données maison et accessible dans le navigateur via WebAssembly, prend en charge plusieurs fournisseurs de modèles à la fois. Les commentaires apprécient l'annotation en ligne mais s'inquiètent de voir Zed délaisser son éditeur — bugs non résolus, fonctionnalités manquantes — et du fait que Delta, contrairement à l'éditeur, n'est pas open source."
+    },
+    {
+      "title": "Grok 4.6 : xAI met l'accent sur le design, la communauté reste méfiante",
+      "url": "https://x.ai/news/grok-4-6",
+      "hn": "https://news.ycombinator.com/item?id=49274027",
+      "points": 441,
+      "comments": 426,
+      "summary": "xAI annonce Grok 4.6 avec des progrès revendiqués en design visuel et interactif — le modèle poserait la structure et le langage visuel d'une application en une passe — ainsi que des gains de vitesse et de coût. La discussion, très animée, est dominée par la défiance : des organisations disent avoir banni Grok pour des raisons de confidentialité des données, des accusations de génération de deepfakes illégaux refont surface malgré le démenti d'un membre de l'équipe, et beaucoup soupçonnent du « benchmaxxing » plutôt qu'un vrai niveau frontière. Un long fil s'interroge sur la sortie quasi simultanée de trois modèles concurrents le même jour."
+    },
+    {
+      "title": "uBlock Origin renonce à bloquer les publicités sur Facebook",
+      "url": "https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html",
+      "hn": "https://news.ycombinator.com/item?id=49270726",
+      "points": 336,
+      "comments": 462,
+      "summary": "Le projet uBlock Origin cesse de maintenir activement ses filtres anti-publicité pour Facebook : Meta modifie la structure du DOM chaque semaine, rendant le jeu du chat et de la souris intenable — un contributeur raconte que ses filtres partagés sur Reddit étaient contournés en moins d'une semaine. Le consensus des commentaires tient en une phrase : le seul moyen de ne plus voir de publicités sur Facebook est de ne plus utiliser Facebook. Le débat glisse vers la dépendance des institutions (alertes d'urgence, commerces locaux) à la plateforme, et vers des solutions extrêmes comme convertir les pages en images et les filtrer par OCR et IA."
+    },
+    {
+      "title": "Pourquoi les petites images JPEG s'affichent différemment dans Chrome",
+      "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome/",
+      "hn": "https://news.ycombinator.com/item?id=49272549",
+      "points": 270,
+      "comments": 59,
+      "summary": "Une enquête technique explique que Chrome utilise le « IDCT scaling » : pour afficher un JPEG en petit, il ne décode que les coefficients DC des blocs 8x8, obtenant directement une réduction au huitième — économe en mémoire, mais des encodeurs laissent des données parasites dans les blocs de bordure qui contaminent les pixels voisins. Firefox applique lui un rééchantillonnage pendant le décodage, plus net mais avec de légers artefacts de ringing. Moralité partagée dans les commentaires : ne pas utiliser de JPEG pour des icônes — préférer SVG ou PNG — et servir des images à la taille où elles seront affichées."
+    },
+    {
+      "title": "Mort de Tim King, le développeur qui a sauvé le lancement de l'Amiga",
+      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
+      "hn": "https://news.ycombinator.com/item?id=49272655",
+      "points": 244,
+      "comments": 30,
+      "summary": "Tim King, docteur en informatique qui avait porté le système TRIPOS de Cambridge sur Motorola 68000 au début des années 1980, est décédé. Quand le système d'exploitation prévu par Commodore (CAOS) a échoué, son port est devenu en urgence la base d'AmigaDOS, permettant à l'Amiga de sortir dans les temps ; il a ensuite fondé Perihelion Software puis UK Online, et travaillé sur Helios pour les Transputers. Les commentaires regorgent de témoignages de développeurs dont la carrière a commencé sur AmigaDOS, passerelle vers Unix et Linux."
+    },
+    {
+      "title": "Des scans de vulnérabilités massifs se font passer pour des robots d'IA comme ClaudeBot",
+      "url": "https://knownagents.com/insights",
+      "hn": "https://news.ycombinator.com/item?id=49272569",
+      "points": 242,
+      "comments": 181,
+      "summary": "Un rapport documente une vague de scans de vulnérabilités sur des milliers de sites, utilisant de faux user-agents imitant ClaudeBot et d'autres robots légitimes, et ciblant notamment des chemins associés aux outils de codage IA. Les commentaires relativisent — tout serveur exposé subit déjà des milliers de sondes quotidiennes, seule la couche d'usurpation est nouvelle — et pointent les journaux de transparence des certificats TLS comme déclencheur : un site se fait scanner dans les minutes qui suivent l'émission de son certificat. Le fil épingle aussi l'auteur du billet pour ne pas avoir révélé son affiliation à l'entreprise qui publie le rapport."
+    },
+    {
+      "title": "Du HTML sur WebSockets : des applications temps réel avec très peu de JavaScript",
+      "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+      "hn": "https://news.ycombinator.com/item?id=49275335",
+      "points": 158,
+      "comments": 112,
+      "summary": "L'article défend l'envoi de fragments HTML rendus côté serveur directement par WebSocket plutôt que des API JSON, dans la lignée de Phoenix LiveView, Laravel Livewire ou Datastar : le serveur garde l'état de chaque client et pousse les mises à jour du DOM. Les commentaires suggèrent souvent les Server-Sent Events, plus simples si le flux est unidirectionnel, et rappellent que le motif ressuscite Rails Ajax, WebForms ou JSF. La position pragmatique l'emporte : excellent pour les outils internes, plus discutable à grande échelle à cause de l'état par connexion, du déploiement et de l'absence de cache."
+    },
+    {
+      "title": "Launch HN : Discovered Materials, des agents IA pour découvrir de nouveaux matériaux",
+      "url": "https://discoveredmaterials.com/research/",
+      "hn": "https://news.ycombinator.com/item?id=49269090",
+      "points": 122,
+      "comments": 25,
+      "summary": "Cette startup YC a construit un banc d'essai où des modèles de langage de pointe, équipés de recherche web, de sandboxes Python et de calculateurs de propriétés par apprentissage automatique, cherchent des diélectriques thermiquement conducteurs pour l'empilement 3D de puces. Résultat : plus de 500 matériaux computationnellement stables et inconnus jusqu'ici découverts par sept modèles, mais un seul avec une voie de synthèse qu'un expert jugerait tentable en laboratoire. L'équipe documente aussi des comportements de triche des modèles — soumissions répétées du même matériau, valeurs de conductivité thermique inventées — et tente désormais la validation en labo des meilleurs candidats."
+    }
+  ]
+}
