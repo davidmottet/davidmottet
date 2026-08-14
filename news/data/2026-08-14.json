@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-14",
+  "title": "L'IA passe en mode vitesse avec Gemini 3.7 Flash et Cerebras, Christopher Domas spaghettifie la DRAM et le vieux web s'efface",
+  "intro": "La journée est dominée par la course à la vitesse d'inférence : Google sort Gemini 3.7 Flash trois semaines seulement après le 3.6, Cerebras et OpenAI revendiquent 750 tokens par seconde sur GPT-5.6 Sol, et DeepSeek publie son propre harness d'agents open source. La démonstration technique du jour vient de Christopher Domas, qui contourne toutes les protections mémoire des puces AMD en reprogrammant le contrôleur DRAM lui-même. En contrepoint, plusieurs fils interrogent ce qui se perd : la compréhension du code généré par IA, 77 % de liens morts dans une archive de 657 607 URLs, et 50 To d'archives télé bloquées chez Iron Mountain.",
+  "items": [
+    {
+      "title": "Google lance Gemini 3.7 Flash, son « cheval de trait » pour le code et les agents",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "hn": "https://news.ycombinator.com/item?id=49289112",
+      "points": 702,
+      "comments": 388,
+      "summary": "Trois semaines après le 3.6, Google publie Gemini 3.7 Flash avec des gains nets sur les benchmarks de code (43,6 % sur FrontierCode 1.1 contre 34,4 %, 65,3 % sur DeepSWE v1.1 contre 49 %) et un tarif de lancement à 0,75 $/M tokens en entrée et 3,75 $/M en sortie, valable jusqu'au 31 décembre avant un doublement des prix. Les commentaires saluent sa latence et ses capacités multimodales, jugées parmi les meilleures pour les tâches visuelles. Mais l'annonce d'une hausse de prix programmée fait ricaner — le modèle sera probablement obsolète avant — et beaucoup le trouvent moins compétitif que les alternatives moins chères de DeepSeek ou d'OpenAI, certains se demandant si Google peut encore livrer un vrai modèle frontière."
+    },
+    {
+      "title": "DeepSeek publie Harness, son framework d'agents open source, en preview développeur",
+      "url": "https://deepseek.com/harness/en/",
+      "hn": "https://news.ycombinator.com/item?id=49285244",
+      "points": 597,
+      "comments": 251,
+      "summary": "DeepSeek sort sous licence MIT un framework qui sépare le modèle (l'intelligence) du harness (l'environnement d'exécution) : chaque capacité — outils, sessions, sandboxes, boucles, interface — est un plugin recomposable bâti sur le noyau Cordis, et chaque exécution est intégralement tracée dans un journal de session en append-only, avec reprise, fork et replay. Les commentaires apprécient qu'un grand fournisseur de modèles publie un harness first-party aussi traçable, mais pointent un README squelettique, une API encore instable et un avantage flou face aux outils existants. Un fil tangent débat de la domination de Node.js dans les harness d'agents face à Python ou Rust."
+    },
+    {
+      "title": "« Spaghettifier » la DRAM : contourner toutes les protections mémoire en reprogrammant le contrôleur",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "hn": "https://news.ycombinator.com/item?id=49286341",
+      "points": 539,
+      "comments": 146,
+      "summary": "Le rétro-ingénieur Christopher Domas montre qu'en manipulant les registres de traduction d'adresses du contrôleur DRAM de CPU AMD Family 16h, on crée des alias vers des régions protégées : firmware du Platform Security Processor et ses clés RSA, code SMM en ring -2, état du CPU sauvegardé en veille C6 et patchs de microcode. Les protections opérant au-dessus du contrôleur ne voient rien, puisque c'est la couche la plus basse du système mémoire qui est détournée — il suffit de basculer un bit puis de restaurer la configuration. Les commentaires saluent la réputation de Domas, s'interrogent sur la vulnérabilité des générations AMD récentes, dont les registres ne sont plus documentés, et sur un éventuel contournement de la virtualisation KVM."
+    },
+    {
+      "title": "Cerebras et OpenAI revendiquent 750 tokens/seconde pour GPT-5.6 Sol « Ultrafast »",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "hn": "https://news.ycombinator.com/item?id=49289844",
+      "points": 496,
+      "comments": 205,
+      "summary": "Grâce au Wafer-Scale Engine de Cerebras et ses 44 Go de SRAM par puce, qui gardent les poids sur silicium et éliminent le goulot de bande passante mémoire, GPT-5.6 Sol en mode Ultrafast aurait avalé les 2 500 questions de Humanity's Last Exam en 11 h 11 contre 78 h pour son concurrent le plus lent, sans perte de qualité mesurée sur GDP-Val. Les commentaires y voient un vrai saut — des gains façon années 90, obtenus par ASIC plutôt que par finesse de gravure — et rappellent que la vitesse d'inférence est sous-estimée. Les sceptiques relèvent l'absence de prix, d'engagement explicite d'iso-qualité avec le modèle standard, et un accès limité à quelques clients triés sur le volet."
+    },
+    {
+      "title": "« Choisissez la technologie ennuyeuse » : le classique de 2015 refait surface à l'ère des agents",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "hn": "https://news.ycombinator.com/item?id=49289512",
+      "points": 292,
+      "comments": 147,
+      "summary": "L'essai de Dan McKinley et ses « jetons d'innovation » — un budget limité d'expérimentations technologiques à dépenser avec parcimonie — revient en page d'accueil. Les commentaires louent l'outil de discussion qu'il offre entre ingénieurs et product managers, mais un fil nourri conteste que « ennuyeux » veuille dire quoi que ce soit, préférant une analyse des besoins au cas par cas. Le débat prend une couleur 2026 : les données d'entraînement des agents IA biaisées vers TypeScript et Next.js redéfinissent de facto ce qui est « ennuyeux », et Kubernetes, malgré ses douze ans, reste classé par beaucoup comme inapproprié pour 90 % des équipes."
+    },
+    {
+      "title": "Mistral OCR 4.1 apporte les bounding boxes par paragraphe, à un prix contesté",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "hn": "https://news.ycombinator.com/item?id=49288889",
+      "points": 279,
+      "comments": 111,
+      "summary": "La nouvelle version de l'OCR de Mistral, en preview publique, ajoute l'extraction native de bounding boxes au niveau du paragraphe, des labels de structure et des scores de confiance par bloc, à 3,50 € les 1 000 pages (4,38 € avec annotations). Les retours d'usage sont corrects sur l'écriture manuscrite et les mises en page complexes, avec un traitement plus rapide que les API concurrentes. Mais le prix concentre les critiques — Google Document AI est à 1,50 €, l'auto-hébergement à quelques centimes — et plusieurs commentaires acides suggèrent que Mistral survit davantage grâce à la préférence réglementaire européenne qu'à une supériorité technique."
+    },
+    {
+      "title": "La chaîne publique Nine PBS attaque Iron Mountain, qui bloque 50 To de ses archives",
+      "url": "https://current.org/2026/08/nine-pbs-sues-iron-mountain-over-blocked-access-to-archival-data/",
+      "hn": "https://news.ycombinator.com/item?id=49285418",
+      "points": 274,
+      "comments": 158,
+      "summary": "La station de Saint-Louis avait confié 70 ans d'archives numérisées — 50 To couvrant notamment la crue de 1993 et le COVID — au revendeur cloud Open Source Storage, qui a cessé ses activités en mars en coupant l'accès sans préavis. Iron Mountain, qui héberge physiquement les données, refuse de les rendre au motif qu'OSS possède l'infrastructure ; un juge du Colorado a accordé une mesure conservatoire interdisant toute suppression. Les commentaires épinglent surtout l'absence de seconde copie — la règle 3-2-1 aurait coûté un NAS à 10 000 $ pour un volume aussi modeste — tout en reconnaissant qu'Iron Mountain ne peut pas restituer des données à un tiers sans décision de justice."
+    },
+    {
+      "title": "« La compréhension est le nouveau goulot d'étranglement » du développement assisté par IA",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "hn": "https://news.ycombinator.com/item?id=49290299",
+      "points": 252,
+      "comments": 137,
+      "summary": "Geoffrey Litt soutient que les agents générant du code plus vite que les humains ne peuvent l'absorber, la limite n'est plus la production mais la compréhension — indispensable non pour vérifier, mais pour continuer à participer créativement au projet et éviter une « dette cognitive » où l'équipe perd le fil. Il propose des documents explicatifs pédagogiques, des quiz servant de régulateurs de vitesse et des « micro-mondes » interactifs pour explorer les systèmes. Les commentaires abondent d'exemples vécus — une PR de 500 lignes générée là où 3 lignes réutilisées suffisaient, la relecture qui « devient du survol » quand la vélocité triple — et rejettent nettement l'idée de ne plus lire le code du tout."
+    },
+    {
+      "title": "DONKEY.BAS a 45 ans : 131 lignes de gloire cosignées Bill Gates",
+      "url": "https://donkeybas.com/",
+      "hn": "https://news.ycombinator.com/item?id=49289465",
+      "points": 205,
+      "comments": 93,
+      "summary": "Un portage JavaScript ressuscite le petit jeu de conduite livré avec l'IBM PC en 1981, où l'on évite un âne sur la route, écrit en 131 lignes de BASIC notamment par Bill Gates. Les commentaires débordent de nostalgie : DONKEY.BAS, GORILLA.BAS et NIBBLES.BAS furent la porte d'entrée en programmation de toute une génération, l'un racontant qu'une modification du code enfant a lancé sa carrière de trente ans. Beaucoup regrettent la simplicité perdue des environnements « piles incluses » de l'époque, avec mode immédiat et aide intégrée, face aux empilements de dépendances modernes."
+    },
+    {
+      "title": "« NP-surcoté » : les problèmes NP-difficiles font rarement exploser les programmes réels",
+      "url": "https://gruhn.me/blog/2026-08-13/",
+      "hn": "https://news.ycombinator.com/item?id=49291268",
+      "points": 179,
+      "comments": 111,
+      "summary": "L'article soutient que l'intractabilité des problèmes NP-difficiles est théoriquement fondée mais pratiquement surestimée : la résolution de dépendances ou le type checking se comportent bien sur l'écrasante majorité des instances réelles, l'optimisation a gagné un facteur 450 milliards entre 1991 et 2015 surtout par les algorithmes, et Amazon résout un milliard de problèmes SMT par jour. Les commentaires apportent la contradiction avec des contre-exemples vécus — l'inférence de types de Swift, le solveur de conda, les attaques ReDoS — et défendent la théorie de la complexité comme science des limites du calcul plutôt que comme prophétie de malheur. L'auteur a reconnu devoir nuancer certaines affirmations trop absolues."
+    },
+    {
+      "title": "Une seule ligne de log coûte 49 Ko d'écritures disque à systemd-journald (110 Ko sur btrfs)",
+      "url": "https://github.com/systemd/systemd/issues/40262",
+      "hn": "https://news.ycombinator.com/item?id=49290215",
+      "points": 169,
+      "comments": 109,
+      "summary": "Un ticket GitHub mesure une amplification d'écriture massive : environ 50 IOPS pour deux lignes de log par seconde d'entrées HAProxy d'environ 150 octets, la faute au format sur disque de journald qui disperse les métadonnées à des offsets discontinus bien plus petits que les blocs d'E/S, aggravé par l'écriture via mmap. Les commentaires comparent défavorablement l'architecture à celle du syslog traditionnel et débattent d'alternatives comme SQLite, DuckDB ou de simples fichiers texte. Un contributeur ayant travaillé sur la lecture de journald chez CoreOS confirme l'inefficacité du format, et un fil documente le bavardage disque généralisé d'applications comme Firefox ou KDE Plasma."
+    },
+    {
+      "title": "Où est passé le vieux web ? 657 607 liens suivis, 77 % ne chargent plus",
+      "url": "https://0.mk/blog/link-rot",
+      "hn": "https://news.ycombinator.com/item?id=49289532",
+      "points": 146,
+      "comments": 133,
+      "summary": "Le raccourcisseur macédonien 0.mk a retrouvé sa base 2009-2014 et testé ses 657 607 liens : 76,7 % ne renvoient plus de page, et au niveau des URLs uniques seules 21,3 % chargent encore, plus de la moitié des échecs venant de DNS ou de connexions mortes plutôt que d'erreurs 404. Le web centralisé (YouTube, Wikipédia) survit bien mieux que les blogs personnels, forums et journaux locaux, dont la disparition emporte un pan irrécupérable de l'histoire numérique régionale. Les commentaires se disputent sur la définition du « vieux web » — avant Google, l'ère Geocities ou l'avant-réseaux-sociaux — et savourent l'ironie d'un raccourcisseur lui-même resté hors ligne dix ans."
+    }
+  ]
+}

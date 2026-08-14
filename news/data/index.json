@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-14",
+      "title": "L'IA passe en mode vitesse avec Gemini 3.7 Flash et Cerebras, Christopher Domas spaghettifie la DRAM et le vieux web s'efface",
+      "count": 12
+    },
+    {
       "date": "2026-08-13",
       "title": "Trois modèles d'IA en 24 heures, Tailscale déterre un bug de 16 ans dans SQLite et l'éclipse se regarde en webcam",
       "count": 12
