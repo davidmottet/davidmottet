@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-15",
+  "title": "Qwen 3.8 27B rapproche le frontière du local, Firefox devient le dernier refuge d'uBlock Origin et Google veut rendre l'IA privée par chiffrement",
+  "intro": "Journée dominée par la tension entre IA locale et cloud : Qwen 3.8 27B, un modèle dense à poids ouverts qui tourne sur une carte grand public, écrase le front page, pendant que Google défend l'inférence sur données chiffrées par chiffrement homomorphe et que Matthew Green prédit un « going dark » généralisé qui affolera les États. En parallèle, la vie privée au quotidien reste un champ de bataille : Firefox se retrouve dernier grand navigateur à faire tourner uBlock Origin complet. Côté bricolage, la journée est riche : trackball open source Ploopy A+, journal e-ink alimenté par RSS et batterie électronique expérimentale.",
+  "items": [
+    {
+      "title": "Qwen 3.8 27B : un modèle dense à poids ouverts qui vise les performances des modèles frontière",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "hn": "https://news.ycombinator.com/item?id=49299605",
+      "points": 992,
+      "comments": 642,
+      "summary": "Alibaba publie sur Hugging Face les poids ouverts de Qwen 3.8 27B, un modèle dense livré en FP8 qui tourne quantisé sur une seule carte grand public type RTX 4090, voire une 3090. Les benchmarks annoncés le placent près d'Opus 4.6, ce qui en ferait un jalon majeur pour l'IA locale sans dépendance au cloud. Les commentaires oscillent entre enthousiasme — « la plupart des usages n'ont pas besoin d'un modèle frontière » — et scepticisme sur des benchmarks jugés difficiles à croire pour 27 milliards de paramètres, avec des comparaisons de prix (environ 2 $/M tokens sur OpenRouter contre 0,34 $ pour Gemma 31B) et d'architecture face aux modèles MoE concurrents."
+    },
+    {
+      "title": "Firefox est désormais le dernier grand navigateur à faire tourner uBlock Origin",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "hn": "https://news.ycombinator.com/item?id=49303202",
+      "points": 637,
+      "comments": 241,
+      "summary": "Avec la bascule de Chrome, Edge et des navigateurs Chromium vers Manifest V3, qui supprime l'API webRequestBlocking indispensable au filtrage complet, seul Firefox conserve le support de Manifest V2 et donc d'uBlock Origin intégral — les autres se contentent de la version Lite, aux capacités réduites. L'article souligne que ces limitations sont un choix délibéré de Google, même si Vivaldi a réactivé Manifest V2 et que Brave propose des contournements. Les commentaires débattent de la crédibilité de Mozilla après ses récents changements de politique de données, de la suffisance réelle d'uBlock Lite pour l'utilisateur moyen, et des alternatives comme Brave ou le futur Ladybird."
+    },
+    {
+      "title": "Google veut rendre l'IA privée praticable grâce au chiffrement homomorphe",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "hn": "https://news.ycombinator.com/item?id=49300314",
+      "points": 323,
+      "comments": 193,
+      "summary": "Google publie ses travaux pour rendre le chiffrement totalement homomorphe (FHE) utilisable en inférence IA — calculer sur des données chiffrées sans jamais les déchiffrer — avec des outils open source dont le compilateur HEIR et du code de benchmark. Des chercheurs en commentaires ramènent à la réalité : le surcoût reste d'environ 1000x par rapport au calcul en clair (une addition à 100 ms, une inférence CIFAR à 200 ms dans le meilleur des cas). Le débat oppose l'intérêt réglementaire réel — faire tourner des modèles médicaux sur des scans chiffrés — aux alternatives moins coûteuses comme l'inférence locale ou les enclaves sécurisées, et questionne ce que vaut la garantie mathématique quand Google contrôle de toute façon les serveurs."
+    },
+    {
+      "title": "« Tout va bientôt passer au noir » : Matthew Green sur la fin du hacking policier",
+      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+      "hn": "https://news.ycombinator.com/item?id=49304447",
+      "points": 264,
+      "comments": 130,
+      "summary": "Le cryptographe Matthew Green soutient que la recherche de vulnérabilités assistée par IA va épuiser en deux ans environ les bugs exploitables à distance dans les grands logiciels : la sécurité s'améliorera drastiquement, mais police et renseignement perdront leur principal outil d'intrusion, ce qui risque de pousser les États à exiger des portes dérobées, voire des systèmes « nationalisés » à la russe ou à la chinoise. Les commentaires contestent la prémisse optimiste — le code généré par IA introduirait des failles plus vite qu'on ne les corrige — et débattent de la criminalisation possible des logiciels sans backdoor, l'auto-hébergement de modèles ouverts étant vu comme la seule défense viable."
+    },
+    {
+      "title": "RustDesk prend enfin en charge l'accès distant sans surveillance sous Wayland",
+      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+      "hn": "https://news.ycombinator.com/item?id=49300759",
+      "points": 250,
+      "comments": 106,
+      "summary": "L'outil de bureau à distance open source RustDesk annonce le vrai accès non surveillé (unattended) sous Wayland, levant une limitation historique liée au modèle de sécurité du serveur d'affichage qui compliquait la vie des utilisateurs Linux depuis l'abandon progressif de X11. Les commentaires saluent une alternative auto-hébergeable face à l'« enshittification » de TeamViewer et AnyDesk, et créditent RustDesk de meilleures performances grâce aux codecs vidéo modernes. Les critiques portent sur l'absence de chiffrement du mode Direct IP auto-hébergé et sur l'entropie des phrases de passe, et certains relèvent l'ironie d'une vidéo de démonstration qui tourne encore sous X."
+    },
+    {
+      "title": "AI by Hand : comprendre les modèles d'IA en les refaisant à la main",
+      "url": "https://www.byhand.ai/",
+      "hn": "https://news.ycombinator.com/item?id=49300568",
+      "points": 242,
+      "comments": 19,
+      "summary": "Le professeur Tom Yeh lance By Hand Research, une publication et des cours qui décortiquent le fonctionnement interne des modèles d'IA au niveau mathématique et algorithmique, dans l'esprit du « ce que je ne peux pas créer, je ne le comprends pas » de Feynman. L'approche pédagogique séduit les développeurs lassés de traiter les réseaux de neurones comme des boîtes noires, avec des parallèles tracés vers micrograd et les autres projets d'implémentation from scratch. Le principal reproche des commentaires vise le mur payant, qui rend flou ce qu'on obtient réellement avant de s'abonner."
+    },
+    {
+      "title": "Mixedbread présente Toast 1, un modèle de langage spécialisé dans la recherche",
+      "url": "https://www.mixedbread.com/blog/toast-1",
+      "hn": "https://news.ycombinator.com/item?id=49299746",
+      "points": 190,
+      "comments": 59,
+      "summary": "La startup Mixedbread lance Toast 1, un agent de recherche bâti sur son modèle de récupération à interaction tardive Wholembed v3, utilisable via un client compatible OpenAI et branchable sur n'importe quel backend de recherche, avec des benchmarks avantageux sur OfficeQA Pro v2 et Harvey LAB. L'idée d'un LLM spécialisé dans la recherche séduit, sur fond de déclin perçu de Google Search. Les commentaires butent surtout sur le branding « Toast / Mixedbread », jugé peu sérieux pour un produit d'entreprise, et sur le flou du positionnement face à Perplexity ou aux fonctions de recherche de Gemini."
+    },
+    {
+      "title": "Il transforme ses flux RSS en journal e-ink pour arrêter de lire sur son téléphone",
+      "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+      "hn": "https://news.ycombinator.com/item?id=49299081",
+      "points": 168,
+      "comments": 65,
+      "summary": "Un développeur détaille son pipeline qui convertit ses flux RSS en un document mis en page comme un journal, lu sur liseuse e-ink pour retrouver une lecture calme, hors notifications. La lenteur et la friction de l'encre électronique sont revendiquées comme des qualités plutôt que des défauts. Les commentaires partagent leurs propres stratégies anti-téléphone (écran en niveaux de gris, bloqueurs d'applications), pointent les obstacles pratiques — synchronisation à automatiser, flux RSS tronqués nécessitant Miniflux ou équivalent — et versent dans la nostalgie du journal papier."
+    },
+    {
+      "title": "Anthropic explique comment tirer le maximum de ses sessions Claude Code",
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "hn": "https://news.ycombinator.com/item?id=49300800",
+      "points": 164,
+      "comments": 106,
+      "summary": "Anthropic publie un guide pour réduire la consommation de tokens dans Claude Code : /clear entre les tâches, choix du modèle et de l'effort avant de commencer pour préserver le cache de prompt, fichiers attachés par @-mention, commandes bruyantes déportées en sous-agents, /compact avant les pauses. Les commentaires y voient surtout un aveu de design : c'est au produit d'automatiser ces optimisations, pas à l'utilisateur de les gérer — le fameux sophisme du « you're holding it wrong ». D'autres rapportent des comportements de cache inexpliqués (réécritures de 2 M de tokens) et relèvent le conflit d'intérêt d'un éditeur facturé au token qui conseille d'en consommer moins."
+    },
+    {
+      "title": "Séisme de magnitude 7,7 au large de Flores, en Indonésie",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
+      "hn": "https://news.ycombinator.com/item?id=49306577",
+      "points": 147,
+      "comments": 30,
+      "summary": "Un séisme de magnitude 7,7, lié à une faille chevauchante de subduction, a frappé à 68 km au nord-nord-ouest d'Ende, sur l'île de Flores. Le bulletin tsunami indonésien a clos l'événement avec un impact limité : vagues maximales de 94 cm, la plupart sous 50 cm, sans alerte majeure, et environ 19 répliques dans les heures suivantes. Les commentaires — dont un voyageur qui était sur un ferry entre Lombok et Bali au moment de la secousse — discutent de la sécurité des navires en cas de tsunami et vérifient, données USGS à l'appui, que 2026 reste dans la norme historique d'environ 16 séismes de magnitude 7+ par an."
+    },
+    {
+      "title": "Photographier les oiseaux en ultraviolet, pour voir ce qu'ils voient",
+      "url": "https://uvbirds.com/",
+      "hn": "https://news.ycombinator.com/item?id=49211375",
+      "points": 128,
+      "comments": 23,
+      "summary": "Le site uvbirds.com expose des photographies d'oiseaux où l'ultraviolet est ajouté en fausse couleur, révélant des motifs de plumage invisibles à l'œil humain. Les oiseaux étant tétrachromates — quatre types de récepteurs contre trois chez l'humain — leur plumage porte des signaux que seuls leurs congénères perçoivent, comme la calotte des mésanges bleues mâles, plus brillante en UV et préférée des femelles. Les commentaires élargissent aux crevettes-mantes et à leurs 16 photorécepteurs ou aux rares humains tétrachromates, même si certains avouent être surpris que la différence visible reste finalement modeste."
+    },
+    {
+      "title": "Le trackball open source Ploopy A+ est disponible en kit",
+      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
+      "hn": "https://news.ycombinator.com/item?id=49306443",
+      "points": 65,
+      "comments": 35,
+      "summary": "Ploopy lance l'A+, un trackball open hardware sous licence CERN OHL v2 fortement réciproque, vendu 99 $ CAD en kit à souder soi-même, avec précommandes le 19 août : deux boutons-molettes de plus que le modèle Adept et des LED internes, documentation et sources complètes sur GitHub. L'argument central est la réparabilité — un périphérique démontable et maintenable sur la durée, à rebours des souris jetables. Les commentaires débattent de l'intérêt du soudage quand des concurrents assemblés existent au même prix, de la durabilité de l'impression 3D, et regrettent l'absence de défilement par rotation de la boule, breveté par Kensington."
+    }
+  ]
+}

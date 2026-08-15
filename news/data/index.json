@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-15",
+      "title": "Qwen 3.8 27B rapproche le frontière du local, Firefox devient le dernier refuge d'uBlock Origin et Google veut rendre l'IA privée par chiffrement",
+      "count": 12
+    },
+    {
       "date": "2026-08-14",
       "title": "L'IA passe en mode vitesse avec Gemini 3.7 Flash et Cerebras, Christopher Domas spaghettifie la DRAM et le vieux web s'efface",
       "count": 12
