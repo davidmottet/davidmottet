@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-16",
+  "title": "L'IA optimise des kernels à 232x et « out-mémorise » les mathématiciens, pendant que RISC-V et Unicode encaissent les critiques",
+  "intro": "Journée très orientée sur ce que l'IA change concrètement au travail technique : un développeur laisse un agent optimiser un kernel en boucle autonome jusqu'à un gain de 232x, un essai soutient que l'avantage de l'IA en maths tient à sa mémoire de travail plutôt qu'à sa pensée, et un autre compare le métier de développeur à du leadership — trois textes que les commentaires HN accueillent avec autant d'enthousiasme que de scepticisme. En contrepoint, deux démolitions en règle font débat : Dmitry Grinberg contre les choix de conception de RISC-V, et les « caractères fantômes » qui hantent Unicode. Côté santé, le sémaglutide s'invite sur le terrain de la démence et un test de tiques à domicile divise médecins et utilisateurs.",
+  "items": [
+    {
+      "title": "Recherche automatisée avec Codex : comment j'ai obtenu un kernel 232x plus rapide",
+      "url": "https://sankalp.bearblog.dev/autoresearch/",
+      "hn": "https://news.ycombinator.com/item?id=49309549",
+      "points": 386,
+      "comments": 86,
+      "summary": "Un développeur a laissé un agent IA optimiser en autonomie un kernel de compression vidéo dans une boucle benchmark-profilage-vérification-amélioration, avec accès à des profileurs comme Intel VTune, pour un gain final de 232x en quelques heures et un coût dérisoire. Les commentaires rapportent des succès similaires (FlashAttention, protobuf en C#, rétro-ingénierie de firmware) et convergent sur une explication : les LLM excellent sur les tâches « facilement vérifiables et optimisables par gradient », comme les kernels GPU aux métriques claires. Les sceptiques rappellent que les modèles prennent des raccourcis dès qu'on les laisse faire, et certains s'inquiètent des risques systémiques de ces boucles d'itération ultra-rapides."
+    },
+    {
+      "title": "L'IA dispose d'une mémoire de travail bien plus vaste que le cerveau humain",
+      "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+      "hn": "https://news.ycombinator.com/item?id=49312845",
+      "points": 377,
+      "comments": 335,
+      "summary": "L'essai soutient que la supériorité apparente de l'IA en mathématiques ne relève pas d'une pensée supérieure mais d'une mémoire écrasante et d'une persistance sans fatigue : elle « out-mémorise » les humains en explorant exhaustivement l'espace des solutions, y compris les pistes ratées que la recherche humaine ne publie jamais. Une partie des 335 commentaires valide — « cette chose ne se fatigue jamais, ne se décourage jamais » — tandis que d'autres jugent la dichotomie mémoire/intelligence arbitraire, beaucoup de percées consistant justement à connecter des connaissances existantes. L'inquiétude qui domine : des démonstrations si complexes que même les spécialistes ne pourraient plus les vérifier."
+    },
+    {
+      "title": "Le sémaglutide associé à une baisse du risque prédit de démence",
+      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+      "hn": "https://news.ycombinator.com/item?id=49311651",
+      "points": 322,
+      "comments": 227,
+      "summary": "Une analyse post-hoc de l'essai SELECT sur 2 970 adultes de 65 ans et plus, suivis 104 semaines, montre que le sémaglutide 2,4 mg ralentit la progression de signatures sanguines prédictives de démence (test à 25 protéines) : le risque prédit à 5 ans augmente 2,5 fois moins que sous placebo, et 72 % de l'effet persiste après ajustement sur la perte de poids, suggérant un mécanisme propre au médicament. Les commentaires pointent les limites : on mesure des biomarqueurs (« le voyant moteur »), pas des cas réels de démence, et l'étude est financée par Novo Nordisk. Le débat oppose effet direct anti-inflammatoire et simple bénéfice de la perte de poids, avec des témoignages personnels contrastés."
+    },
+    {
+      "title": "Travailler avec l'IA ressemble plus à du leadership qu'à du code",
+      "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+      "hn": "https://news.ycombinator.com/item?id=49309451",
+      "points": 256,
+      "comments": 166,
+      "summary": "L'essai avance que développer avec des agents IA relève désormais du leadership : diriger, cadrer, arbitrer à un niveau supérieur plutôt qu'écrire chaque ligne. Les commentaires contestent d'abord le vocabulaire — « le mot est management, pas leadership ; on dirait un post LinkedIn » — puisque l'IA n'a ni volonté ni émotions à fédérer. Beaucoup décrivent plutôt leur quotidien comme « de la revue de code à très haut volume », toujours technique, juste sans taper les lettres. Un contre-exemple marquant circule : un manager avec 25 ans d'expérience mais sans bagage technique qui a généré 60 000 lignes de « vibecode » non fonctionnelles."
+    },
+    {
+      "title": "RISC-V : ils auraient dû le savoir",
+      "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
+      "hn": "https://news.ycombinator.com/item?id=49298035",
+      "points": 213,
+      "comments": 288,
+      "summary": "Dmitry Grinberg reproche à RISC-V d'avoir ignoré des décennies de leçons en conception d'ISA : encodages qui se chevauchent entre extensions (un store flottant devient silencieusement un déplacement de registres avec Zce), explosion combinatoire de configurations incompatibles, pas de détection standardisée des capacités CPU depuis l'espace utilisateur, et modes d'adressage faibles qui renchérissent l'indexation de tableaux. Les défenseurs répondent que la vraie valeur est juridique — une ISA libre face aux licences ARM et x86 — que la densité de code avec compression RVC reste compétitive et que les profils comme RVA23 canalisent la fragmentation. Le fond du débat : les défauts techniques comptent-ils face au statut de standard ouvert déjà déployé ?"
+    },
+    {
+      "title": "Un test à domicile des tiques infectées pourrait améliorer le diagnostic de la maladie de Lyme",
+      "url": "https://www.smithsonianmag.com/innovation/the-first-at-home-test-for-infected-ticks-could-improve-lyme-disease-diagnosis-180989235/",
+      "hn": "https://news.ycombinator.com/item?id=49310682",
+      "points": 198,
+      "comments": 70,
+      "summary": "LymeAlert est un kit à 50 $ qui détecte Borrelia burgdorferi dans une tique retirée de la peau : on broie la tique dans un « Tick Crusher », on mélange à un tampon et une bandelette type test COVID donne le résultat — sans agrément FDA, non requis pour tester des tiques. Les médecins en commentaires rappellent que les recommandations professionnelles (IDSA) déconseillent justement de tester les tiques : une tique positive ne transmet la maladie que dans 1 à 25 % des cas selon l'engorgement, et un résultat négatif n'exclut rien. Les utilisateurs des zones à risque (nord-est américain, Royaume-Uni) restent enthousiastes, et la discussion dérive sur le vaccin abandonné des années 1990 et la désinformation dans les communautés Lyme en ligne."
+    },
+    {
+      "title": "Show HN : Eigendrum — dessinez une forme et écoutez le tambour correspondant",
+      "url": "https://baselashraf81.github.io/eigendrum/",
+      "hn": "https://news.ycombinator.com/item?id=49246366",
+      "points": 193,
+      "comments": 91,
+      "summary": "Eigendrum résout l'équation d'onde 2D par éléments finis sur un maillage triangulaire de la forme dessinée, puis synthétise le son à partir des modes de vibration calculés — entièrement dans le navigateur, avec contrôle du point de frappe, de la largeur de la mailloche et amortissement de Rayleigh. Le solveur est validé à moins de 0,1 % d'erreur contre les solutions analytiques des cercles et rectangles, et permet d'illustrer les « tambours de Kac », ces formes différentes au spectre sonore identique. Les commentaires ont adoré l'outil mais épinglé une bannière de consentement publicitaire listant 1 192 partenaires ; l'auteur a reconnu l'erreur et retiré publicités et bannière."
+    },
+    {
+      "title": "La beauté mathématique des courbes hyperbézier",
+      "url": "https://linebender.org/blog/hyperbezier/",
+      "hn": "https://news.ycombinator.com/item?id=49237183",
+      "points": 184,
+      "comments": 35,
+      "summary": "Raph Levien (projet Linebender) présente les hyperbéziers, une nouvelle famille de courbes pilotée par la courbure et l'angle de tangente plutôt que par interpolation de points : continuité G2 au lieu de G1, meilleure approximation des coniques et spirales d'Euler, superellipses naturelles, et fermeture par subdivision dans la même famille. En contrepartie : impossibilité de représenter boucles et points de rebroussement multiples, mathématiques plus lourdes (divisions, racines carrées) et des zones où déplacer un point de contrôle n'a presque aucun effet visuel. Les commentaires saluent l'élégance, notamment pour le dessin de fontes, mais questionnent l'intuitivité de la manipulation interactive — et l'auteur confirme qu'aucun déploiement réel n'a encore eu lieu."
+    },
+    {
+      "title": "Un spectre hante Unicode : les caractères fantômes",
+      "url": "https://www.dampfkraft.com/ghost-characters.html",
+      "hn": "https://news.ycombinator.com/item?id=49310926",
+      "points": 157,
+      "comments": 47,
+      "summary": "L'article de Paul McCann explore les « caractères fantômes » d'Unicode : des points de code représentant des caractères sans origine attestée, souvent nés d'erreurs de numérisation — le kanji 彁 proviendrait ainsi d'un mauvais scan de journal — et intégrés sans vérification historique depuis des sources comme le dictionnaire Kangxi. Les commentaires ravivent la controverse de l'unification Han : le Japon s'est opposé à la fusion de caractères d'apparence différente entre japonais et chinois, produisant un système jugé incohérent où certains caractères similaires ont des points de code distincts et d'autres non. Conséquence concrète : des recherches textuelles qui échouent, en particulier pour les variantes de Hong Kong et Taïwan."
+    },
+    {
+      "title": "Les ingénieurs feraient n'importe quoi pour éviter d'apprendre de l'histoire",
+      "url": "https://horn.gg/blog/engineers-will-do-anything-to-avoid-learning-from-history/",
+      "hn": "https://news.ycombinator.com/item?id=49314744",
+      "points": 121,
+      "comments": 62,
+      "summary": "L'essai accuse les ingénieurs logiciels de réinventer sans cesse des solutions établies plutôt que d'étudier les disciplines existantes, car « on gagne beaucoup d'argent en faisant passer une chose pour nouvelle et inexplorée » — les leçons de Brooks ou de Coase étant redécouvertes à chaque génération plutôt qu'appliquées. Les commentaires acquiescent sur l'absence de standards professionnels du logiciel et les incitations du capital-risque à la fausse nouveauté, mais contestent le parallèle avec le génie civil : conséquences moindres, itération rapide, contraintes différentes. Certains retournent l'argument contre l'auteur, qui simplifierait lui-même les champs qu'il invoque — la data science n'est pas juste « des statistiques avec du marketing »."
+    },
+    {
+      "title": "L'IA en découverte de médicaments : où en est-on vraiment",
+      "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+      "hn": "https://news.ycombinator.com/item?id=49313367",
+      "points": 71,
+      "comments": 37,
+      "summary": "Derek Lowe dresse un état des lieux mesuré : l'IA accélère nettement les processus existants — AlphaFold en tête pour la modélisation structurale — mais n'a pas encore démontré de découverte véritablement nouvelle, et il appelle à réfléchir au pourquoi des techniques plutôt qu'à les adopter parce qu'elles sont disponibles. Un biologiste structural confirme en commentaire : les tâches routinières sont « beaucoup plus rapides et faciles », sans percée inédite pour autant. La discussion souligne la valeur des vulgarisateurs experts comme Lowe pour contextualiser les annonces, et rappelle que les délais du développement pharmaceutique dépassent de loin la période d'existence pratique de ces outils."
+    },
+    {
+      "title": "Le gouvernement américain surveille les comptes TikTok et Instagram anti-Flock",
+      "url": "https://www.404media.co/the-government-is-monitoring-anti-flock-tiktok-and-instagram-accounts/",
+      "hn": "https://news.ycombinator.com/item?id=49314962",
+      "points": 56,
+      "comments": 37,
+      "summary": "404 Media révèle que des agences gouvernementales américaines surveillent les comptes de réseaux sociaux critiques envers Flock, le réseau de caméras de lecture automatique de plaques d'immatriculation. Les commentaires débattent de la constitutionnalité de cette surveillance de masse — les données agrégées de plaques permettant un pistage sans mandat — en citant la jurisprudence sur l'accès aux historiques de localisation, et documentent les abus policiers connus, comme la consultation des bases pour suivre des partenaires amoureux. Beaucoup relèvent l'ironie d'un État qui surveille ceux qui dénoncent la surveillance, certains plaisantant sur leur propre inscription probable sur une liste."
+    }
+  ]
+}

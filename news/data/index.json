@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-16",
+      "title": "L'IA optimise des kernels à 232x et « out-mémorise » les mathématiciens, pendant que RISC-V et Unicode encaissent les critiques",
+      "count": 12
+    },
+    {
       "date": "2026-08-15",
       "title": "Qwen 3.8 27B rapproche le frontière du local, Firefox devient le dernier refuge d'uBlock Origin et Google veut rendre l'IA privée par chiffrement",
       "count": 12
