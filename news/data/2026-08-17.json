@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-17",
+  "title": "Anthropic expose les prompts système de Claude, Firefox bloque la pub sur iOS et Stripe s'offre OpenRouter pour 7 milliards",
+  "intro": "Dimanche placé sous le signe de la transparence et de l'économie de l'IA : Anthropic documente publiquement les prompts système de Claude, une enquête révèle un marché gris de crédits API bradés jusqu'à -98 %, et Stripe rachète OpenRouter pour plus de 7 milliards de dollars. Côté outils, Firefox intègre enfin un bloqueur de publicités natif sur iOS et Qwen 3.8 27B impressionne malgré une fâcheuse tendance à trop réfléchir. Le reste de la journée oscille entre matériel concret — kit électrique Asus pour vélo, plaidoyer d'un ingénieur du tiers-monde pour RISC-V — et belles histoires low-tech et rétro.",
+  "items": [
+    {
+      "title": "Claude : Anthropic publie les prompts système de ses modèles",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "hn": "https://news.ycombinator.com/item?id=49319556",
+      "points": 595,
+      "comments": 244,
+      "summary": "Anthropic documente désormais dans ses notes de version les prompts système utilisés par l'interface de chat et les applications mobiles de Claude, et Simon Willison en suit l'évolution dans un dépôt git qui montre les différences entre versions de modèles. Ces instructions ont énormément grossi au fil du temps, passant de quelques centaines de mots aux tout débuts à plusieurs milliers aujourd'hui. Les commentaires débattent du coût de ce texte dans la fenêtre de contexte, relèvent des contradictions internes, et s'amusent de voir Claude ignorer sa propre consigne de rester « bref et concis »."
+    },
+    {
+      "title": "Firefox pour iOS intègre désormais un bloqueur de publicités natif",
+      "url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+      "hn": "https://news.ycombinator.com/item?id=49319633",
+      "points": 611,
+      "comments": 251,
+      "summary": "Mozilla ajoute à Firefox sur iOS un blocage de publicités intégré fondé sur les listes EasyList, opérant au niveau réseau — mais qui épargne les annonces des moteurs de recherche et les contenus sponsorisés de la page d'accueil. Les commentaires y voient un conflit d'intérêts, Google versant environ 585 millions de dollars par an à Mozilla, et rappellent que l'obligation d'utiliser WebKit sur iOS limite ce que Firefox peut faire hors de l'Union européenne. Entre « mieux que rien » et regret de l'absence d'un vrai uBlock Origin, l'accueil reste partagé."
+    },
+    {
+      "title": "Stripe s'offre OpenRouter pour plus de 7 milliards de dollars",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "hn": "https://news.ycombinator.com/item?id=49323381",
+      "points": 255,
+      "comments": 178,
+      "summary": "Selon Bloomberg, Stripe finalise le rachat d'OpenRouter, la passerelle unifiée d'accès aux modèles de langage, pour plus de 7 milliards de dollars — quelques mois seulement après une levée de fonds valorisant la société 1,3 milliard. Les partisans de l'opération y voient une suite logique : OpenRouter abstrait la facturation et le routage des tokens IA comme Stripe l'a fait pour les paiements. Les sceptiques jugent le prix délirant pour un « intermédiaire d'appels API » et s'inquiètent de ce qu'un géant des paiements puisse voir transiter des prompts sensibles."
+    },
+    {
+      "title": "Un ingénieur embarqué du tiers-monde répond à « RISC-V : ils auraient dû savoir »",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "hn": "https://news.ycombinator.com/item?id=49321717",
+      "points": 442,
+      "comments": 233,
+      "summary": "En réponse à la charge de Dmitry Grinberg contre les choix de conception de RISC-V (discutée hier sur HN), un ingénieur travaillant avec des étudiants dans un pays en développement défend l'architecture ouverte : face aux brevets d'x86, aux licences ARM et aux sondes de débogage hors de prix, RISC-V est ce qui rend le développement matériel réellement accessible hors des économies riches. Les 233 commentaires débattent du privilège des ingénieurs occidentaux, des coûts réels d'importation de matériel en Afrique ou en Asie du Sud, et de la composition démographique de Hacker News lui-même."
+    },
+    {
+      "title": "L'économie souterraine de la revente de crédits IA",
+      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+      "hn": "https://news.ycombinator.com/item?id=49320611",
+      "points": 243,
+      "comments": 93,
+      "summary": "Une enquête décrit un marché gris florissant où des crédits API pour Claude ou ChatGPT se revendent avec des remises allant jusqu'à 98 %, via des canaux Telegram et des forums chinois comme linux.do, l'auteur estimant à plusieurs dizaines de millions les crédits en circulation. Les commentaires détaillent les sources probables : cartes bancaires volées, comptes piratés, arbitrage géographique depuis la Chine où l'accès aux modèles occidentaux est restreint, et revente de crédits promotionnels destinés aux startups. Beaucoup soupçonnent aussi les relais de journaliser les prompts, voire de substituer discrètement des modèles moins chers à ceux payés."
+    },
+    {
+      "title": "Qwen 3.8 27B est excellent, mais réfléchit trop par défaut",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "hn": "https://news.ycombinator.com/item?id=49324985",
+      "points": 234,
+      "comments": 99,
+      "summary": "Simon Willison teste le nouveau modèle ouvert d'Alibaba (licence Apache 2, 27 milliards de paramètres, vision, 17 Go, contexte de 262 144 tokens) et le juge remarquable pour du matériel grand public — sauf que son mode de raisonnement réglé au maximum par défaut transforme un dessin de pélican en 21 minutes de calcul, contre 2 minutes raisonnement coupé. Il recommande de désactiver ou réduire le raisonnement pour l'usage courant. Les commentaires confirment le problème, comparent les budgets de « thinking tokens » entre modèles et réclament des plafonds de raisonnement mieux exposés dans les outils locaux, tout en saluant sans doute le meilleur modèle auto-hébergeable du moment."
+    },
+    {
+      "title": "Les modèles deviennent volontairement plus bêtes",
+      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "hn": "https://news.ycombinator.com/item?id=49322695",
+      "points": 298,
+      "comments": 164,
+      "summary": "L'essai défend l'idée de retirer des poids des modèles les connaissances rarement utilisées pour les déporter vers des sources externes interrogées par outils : des modèles plus petits, moins chers, et censément moins sujets aux hallucinations. Les commentaires contestent la séparation entre savoir et raisonnement — connaître Python rend un modèle meilleur en Swift, argue l'un d'eux — et soulignent que déplacer les faits hors des poids ne garantit en rien des réponses exactes. Ironie relevée par plusieurs lecteurs : le texte lui-même est détecté comme entièrement généré par IA et cite des benchmarks périmés."
+    },
+    {
+      "title": "Vie et mort de Direct File, le logiciel d'impôts gratuit de l'IRS",
+      "url": "https://www.ischool.berkeley.edu/sites/default/files/vinton_report_5.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49325185",
+      "points": 159,
+      "comments": 69,
+      "summary": "Un rapport de Berkeley retrace l'histoire de Direct File, l'outil public et gratuit de déclaration d'impôts américain : environ 50 millions de dollars investis, quatre ans jusqu'au pilote dans 25 États, puis l'arrêt du programme. Les commentaires y voient un succès technique rare pour un logiciel d'État, tué par le lobbying d'une industrie de la préparation fiscale dont l'existence même était menacée. Le débat porte sur le coût cité d'environ 226 dollars par déclaration contre 40 dans le privé — chiffre trompeur, répondent beaucoup, puisqu'il impute au pilote des coûts de développement déjà amortis, comme pour un pont qu'on vient de construire."
+    },
+    {
+      "title": "Protobuf a enfin un serveur LSP",
+      "url": "https://buf.build/blog/protobuf-lsp",
+      "hn": "https://news.ycombinator.com/item?id=49322573",
+      "points": 138,
+      "comments": 90,
+      "summary": "Buf annonce la prise en charge du Language Server Protocol pour Protobuf, promettant autocomplétion et navigation modernes dans les fichiers .proto. Le ton du billet — « You're welcome » — agace une partie des commentateurs, qui rappellent qu'IntelliJ offre ce support depuis 2021 environ. Sur le fond, la discussion ravive des débats classiques : contrats stricts et compatibilité ascendante contre simplicité de JSON, et jusqu'à la question de savoir si les schémas restent pertinents à l'ère des sorties structurées des LLM — beaucoup répondant qu'ils deviennent au contraire plus critiques."
+    },
+    {
+      "title": "Le filtre à eau céramique, une solution low-tech",
+      "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
+      "hn": "https://news.ycombinator.com/item?id=49259980",
+      "points": 151,
+      "comments": 37,
+      "summary": "Le wiki du Low-tech Lab documente la fabrication d'un filtre à eau en céramique — argile, charbon et argent — qui purifie l'eau sans électricité. Les commentaires soulignent l'ancrage culturel de cette technologie, du « filtro de barro » brésilien, réputé parmi les meilleurs au monde et qui rafraîchit l'eau par évaporation, aux ateliers indonésiens qui la commercialisent aujourd'hui. Le scepticisme porte sur les affirmations chiffrées de certains fabricants, notamment sur les débits de filtration et l'élimination réelle des microplastiques, faute de tests indépendants solides."
+    },
+    {
+      "title": "AGI-64 porte les jeux d'aventure Sierra sur Commodore 64",
+      "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+      "hn": "https://news.ycombinator.com/item?id=49325714",
+      "points": 70,
+      "comments": 9,
+      "summary": "AGI-64 réimplémente sur Commodore 64 l'interpréteur AGI de Sierra — le moteur de King's Quest et Space Quest, cousin du SCUMM de LucasArts — en préprocessant les graphismes pour tenir dans les contraintes de la machine. Les commentaires saluent l'exploit de faire tourner tout cela dans 64 Ko de mémoire et s'interrogent sur l'histoire : si l'Apple II a eu droit à ces jeux, le C64 n'y a jamais eu droit à l'époque, apparemment par choix commercial de Sierra plutôt que par impossibilité technique."
+    },
+    {
+      "title": "Asus Bike Booster : un kit de motorisation amovible pour vélo",
+      "url": "https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/",
+      "hn": "https://news.ycombinator.com/item?id=49268580",
+      "points": 542,
+      "comments": 372,
+      "summary": "Asus, plus connu pour ses cartes mères, propose un kit d'électrification par galet de friction qui s'accroche sur la roue arrière d'un vélo classique, avec une batterie amovible de 158 Wh et une puissance calibrée pour rester dans les limites légales de la plupart des pays. Les 372 commentaires dissèquent les compromis : usure du pneu, adhérence douteuse sous la pluie, autonomie modeste face aux vrais VAE. La facilité de vol du module divise — certains y voient au contraire un avantage, puisqu'on emporte avec soi la partie coûteuse en laissant le vélo au parking."
+    }
+  ]
+}

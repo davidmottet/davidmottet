@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-17",
+      "title": "Anthropic expose les prompts système de Claude, Firefox bloque la pub sur iOS et Stripe s'offre OpenRouter pour 7 milliards",
+      "count": 12
+    },
+    {
       "date": "2026-08-16",
       "title": "L'IA optimise des kernels à 232x et « out-mémorise » les mathématiciens, pendant que RISC-V et Unicode encaissent les critiques",
       "count": 12
