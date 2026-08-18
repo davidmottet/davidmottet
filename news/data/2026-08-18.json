@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-18",
+  "title": "« AI;DR » ou le ras-le-bol du contenu généré, DuckDB 2.0 se dévoile et un correctif Copilot ouvre le Jira de Snowflake",
+  "intro": "Journée dominée par une même question sous trois angles : que fait l'IA à notre écosystème d'information ? Un billet baptisé « AI;DR » cristallise le refus de lire du contenu généré non relu, une agence payée par le gouvernement israélien fabrique un faux think tank pour orienter les réponses des chatbots, et un correctif de sécurité signé Copilot introduit la faille qui a permis de compromettre le Jira de Snowflake. Côté technique, DuckDB dévoile une version 2.0 ambitieuse avec mode client/serveur, et OpenAI pousse son GPT-5.6 Sol entre percée en vision par ordinateur et baisse de prix. Le rétro et le bidouillage complètent le tableau, du CD shareware de Quake au Fairphone 6 sous postmarketOS.",
+  "items": [
+    {
+      "title": "AI;DR : « généré par IA, pas lu »",
+      "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+      "hn": "https://news.ycombinator.com/item?id=49336573",
+      "points": 730,
+      "comments": 469,
+      "summary": "Rick Manelius propose « AI;DR » (AI; Didn't Read), pendant du célèbre TL;DR : si l'auteur n'a pas pris la peine de relire et d'éditer son texte généré par IA, le lecteur n'a aucune raison de prendre la peine de le lire. Le billet, en tête de HN avec 469 commentaires, touche un nerf : beaucoup racontent des pull requests et des e-mails remplis de sortie brute de LLM qui déplacent la charge de travail vers le relecteur. Le débat oppose ce refus de principe aux usages légitimes — aide aux personnes qui écrivent difficilement, documentation — et plusieurs plaident pour la transparence : partager son prompt ou créditer l'IA plutôt que de signer un texte qu'on n'a pas écrit."
+    },
+    {
+      "title": "Un aperçu de DuckDB 2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "hn": "https://news.ycombinator.com/item?id=49330781",
+      "points": 585,
+      "comments": 105,
+      "summary": "DuckDB présente sa version 2.0 « Cyanoptera » : un mode client/serveur via le nouveau protocole Quack, un type VARIANT de première classe pour les données semi-structurées, des triggers, des CTE récursives environ 40 fois plus rapides sur les parcours de graphes, des entrées/sorties asynchrones et un nouveau parseur SQL en PEG avec modes de compatibilité entre dialectes. Les extensions gagnent une API C stable qui les rend compatibles entre versions. Dans les commentaires, les développeurs racontent des usages bien au-delà de l'analytique sur portable — bases par tenant en SaaS, tableaux de bord en WASM — et attendent surtout l'asynchrone et Quack pour lisser les angles rugueux de la concurrence."
+    },
+    {
+      "title": "Un « autofix » de Copilot a permis de compromettre le Jira de Snowflake",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "hn": "https://news.ycombinator.com/item?id=49331423",
+      "points": 343,
+      "comments": 137,
+      "summary": "L'agent autonome de sécurité offensive de Wiz a exploité une injection de commande dans une GitHub Action du dépôt public snowflake-connector-net : un correctif co-signé par Copilot Autofix avait remplacé un parsing sécurisé (variables d'environnement et jq) par une interpolation directe du titre des issues dans le shell. Un titre d'issue piégé a suffi pour exfiltrer un jeton Jira et lire les projets internes d'ingénierie et de sécurité de Snowflake ; Wiz a signalé la faille via HackerOne le 23 juin et Snowflake a corrigé le jour même. Les commentaires soulignent que rien dans la PR ne « sautait aux yeux » et débattent d'une conclusion inconfortable : si les modèles introduisent ce genre de régression, on ne peut pas non plus leur confier le tri de ce qui est « mineur »."
+    },
+    {
+      "title": "Comment Bluesky dessine son logo sur les captures d'écran",
+      "url": "https://timmarinin.net/2026/bluesky-screenshots/",
+      "hn": "https://news.ycombinator.com/item?id=49338459",
+      "points": 366,
+      "comments": 243,
+      "summary": "Bluesky détourne une protection d'iOS : le bouton « Follow » est rendu dans un champ marqué isSecureTextEntry, qu'iOS masque automatiquement dans les captures d'écran — révélant un logo Bluesky placé dessous, sans aucune détection de capture côté application. Le fichier s'appelle sans complexe GrowthHack.tsx, ce qu'un développeur de Bluesky assume dans les commentaires. La discussion oppose ceux pour qui une capture d'écran doit refléter exactement l'affichage, sans manipulation par l'application, à ceux qui rappellent que X, Threads, Reddit ou TikTok apposent déjà leur logo — et beaucoup renvoient la responsabilité à Apple, qui rend ce détournement possible."
+    },
+    {
+      "title": "GPT-5.6 Sol, meilleur modèle « vision » jamais publié par OpenAI",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "hn": "https://news.ycombinator.com/item?id=49329575",
+      "points": 319,
+      "comments": 156,
+      "summary": "Les benchmarks de Roboflow mesurent un vrai bond en vision par ordinateur : GPT-5.6 Sol atteint 46,2 de mAP@50 en détection d'objets contre 13,8 pour GPT-5.5, et 73 % de précision en comptage, avec de bons résultats sur les scènes denses et l'écriture manuscrite. Les limites restent nettes : instabilité au-delà d'environ 2000×2000 pixels, légère régression en OCR, environ 10 secondes et 2,5 cents par image là où Gemini 3.5 Flash coûte 0,8 cent. Les commentaires sont partagés entre ceux qui voient Sol restructurer intelligemment des maquettes d'interface et ceux qui ne constatent « aucun goût, aucune attention au détail » dans leurs usages réels."
+    },
+    {
+      "title": "Le prix de GPT-5.6 Sol réduit de moitié",
+      "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+      "hn": "https://news.ycombinator.com/item?id=49337602",
+      "points": 291,
+      "comments": 149,
+      "summary": "GPT-5.6 Sol passe à 2,50 $ le million de tokens en entrée et 15 $ en sortie, soit moitié moins que ses tarifs de lancement de juillet, avec un contexte d'un million de tokens. Les commentateurs relèvent toutefois que la remise s'applique via OpenRouter et non sur la tarification native d'OpenAI, ce qui rend le titre trompeur. Le débat porte sur la guerre des prix — Grok 4.6 offrirait des capacités comparables pour moins cher — et sur ce que le tarif ne règle pas : plusieurs refusent de faire transiter des données sensibles par des fournisseurs d'inférence tiers sans accord de non-rétention."
+    },
+    {
+      "title": "Israël crée un faux think tank, probablement pour tromper les chatbots",
+      "url": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+      "hn": "https://news.ycombinator.com/item?id=49337392",
+      "points": 284,
+      "comments": 155,
+      "summary": "Le « Hanover Institute », qui se présente comme un centre de recherche sur le conflit israélo-palestinien, serait en réalité une façade créée par la société Piro pour l'agence de publicité gouvernementale israélienne, pour 900 000 dollars : plus de 100 rapports sans signature publiés depuis début août, dont 11 sur 12 détectés comme générés par IA, dans le but affiché de « rétro-ingéniérer » la façon dont ChatGPT, Claude ou Gemini construisent leurs réponses — une pratique qualifiée d'empoisonnement de LLM. Les commentaires replacent l'affaire dans l'histoire des opérations d'influence étatiques et filent la métaphore de « l'acier pré-atomique » : le contenu humain antérieur à 2022 deviendrait une ressource finie à mesure que le web se remplit de texte synthétique."
+    },
+    {
+      "title": "Olo, la couleur que seules cinq personnes ont vue",
+      "url": "https://en.wikipedia.org/wiki/Olo_(color)",
+      "hn": "https://news.ycombinator.com/item?id=49270194",
+      "points": 373,
+      "comments": 74,
+      "summary": "L'article Wikipédia sur olo, couleur « impossible » produite en 2025 à UC Berkeley par l'équipe de Ren Ng, refait surface sur HN : en stimulant au laser uniquement les cônes M de la rétine — ce qu'aucune longueur d'onde naturelle ne peut faire — les chercheurs ont fait percevoir à cinq sujets un bleu-vert d'une saturation sans précédent, nommé d'après ses coordonnées (0,1,0) dans l'espace LMS. Les commentaires explorent les couleurs chimériques et les pistes d'application, du traitement du daltonisme à une éventuelle tétrachromie humaine, tandis que des sceptiques se demandent si l'on peut vraiment parler de « nouvelle couleur » plutôt que d'un artefact de stimulation."
+    },
+    {
+      "title": "Quake en shareware, le CD-ROM un peu trop rempli",
+      "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
+      "hn": "https://news.ycombinator.com/item?id=49338328",
+      "points": 246,
+      "comments": 109,
+      "summary": "Fabien Sanglard dissèque le CD shareware de Quake vendu 9,95 $ en 1996 : le jeu complet était sur le disque, chiffré par la technologie de TestDrive, et un appel téléphonique payant fournissait le code de déverrouillage. Le défaut fatal : le code ne contenait aucun secret et pouvait être généré localement — le crack QCRACK.EXE du groupe GNOMON est sorti 39 jours après le lancement, et id Software s'est retrouvé avec 150 000 CD invendus. Les commentaires savourent les détails — la bande-son de Nine Inch Nails, les fichiers de sauvegarde en clair — et débattent de savoir si ce système facile à casser était une bourde ou un coup marketing involontairement génial."
+    },
+    {
+      "title": "Déport de calcul sur GPU en Rust : portable, sûr et rapide",
+      "url": "https://arxiv.org/abs/2608.13759",
+      "hn": "https://news.ycombinator.com/item?id=49334991",
+      "points": 184,
+      "comments": 36,
+      "summary": "Un article de recherche présente un cadre de compilation GPU multi-fournisseurs intégré directement dans le compilateur Rust et LLVM : le système de types et le modèle d'ownership permettent d'écrire des noyaux GPU sûrs, sans code unsafe ni langage propriétaire, avec gestion automatique des transferts mémoire. Sur les benchmarks RAJAPerf, le code généré rivalise avec des implémentations CUDA et HIP optimisées à la main. Les commentaires confirment que le travail est intégré au dépôt de rustc et comparent l'approche à Mojo et à rust-gpu, un intervenant s'étonnant « du nombre de gens qui compliquent encore le déport vers les GPU »."
+    },
+    {
+      "title": "Quitter Gmail pour Fastmail : le bilan quelques mois après",
+      "url": "https://moddedbear.com/an-update-on-leaving-gmail-for-fastmail/",
+      "hn": "https://news.ycombinator.com/item?id=49334409",
+      "points": 167,
+      "comments": 112,
+      "summary": "Après plusieurs mois, l'auteur ne regrette pas sa migration : l'adressage par sous-domaine trie mieux que les filtres de Gmail, les adresses masquées neutralisent les expéditeurs indésirables, et il n'a mis à jour qu'une dizaine de comptes essentiels en gardant Gmail en filet de sécurité. Les commentaires confirment que le changement est moins pénible que redouté, mais pointent deux frictions réelles : un filtrage antispam de Fastmail en deçà de celui de Google et la dépendance aux boutons « Se connecter avec Google » semés partout. Consensus notable : passer par un domaine personnalisé, pour pouvoir changer de fournisseur sans jamais reperdre son adresse."
+    },
+    {
+      "title": "Fairphone 6 sous postmarketOS : la caméra principale fonctionne",
+      "url": "https://catcrafts.net/posts/fairphone-6-postmarketos-working-main-camera",
+      "hn": "https://news.ycombinator.com/item?id=49338285",
+      "points": 124,
+      "comments": 28,
+      "summary": "Une développeuse de la communauté postmarketOS a écrit de zéro un pilote pour la caméra principale du Fairphone 6, avec autofocus et correction des couleurs, en s'appuyant sur des travaux antérieurs consacrés à l'objectif grand-angle ; l'itération continue pour réduire le grain des images. L'appareil photo étant l'un des derniers gros obstacles à l'usage quotidien d'un téléphone sous Linux, cette avancée rapproche le projet de son objectif affiché : « un téléphone aussi ouvert que possible, avec du bon logiciel ». Le billet a séduit HN, où le mobile Linux garde un public fidèle."
+    }
+  ]
+}
