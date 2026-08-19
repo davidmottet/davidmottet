@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-19",
+  "title": "Défiance envers les plateformes, RAM hors de prix et salaires rognés par l'inflation",
+  "intro": "La journée est dominée par une défiance croissante envers les grandes plateformes : Seth Godin accuse la publicité de recherche d'Amazon de « voler » ses clients, Cursor lance un concurrent de GitHub accueilli avec scepticisme, et Apple remanie une nouvelle fois ses règles européennes. Côté économie, la flambée des prix de la mémoire vive alimentée par l'IA et une étude montrant l'érosion des salaires réels américains nourrissent les débats. En contrepoint, deux belles histoires de bidouille : un Framework ressuscité pour 20 dollars et une caméra linéaire qui transforme le rail en scanner géant.",
+  "items": [
+    {
+      "title": "La « taxe Amazon » : quand la publicité de recherche dégrade la plateforme",
+      "url": "https://seths.blog/2026/08/the-amazon-tax/",
+      "hn": "https://news.ycombinator.com/item?id=49345263",
+      "points": 1006,
+      "comments": 577,
+      "summary": "Seth Godin soutient qu'Amazon tire près d'un milliard de dollars par semaine de ses publicités de recherche, un jeu à somme nulle qui ne crée aucune vente supplémentaire mais force même les meilleurs vendeurs à payer pour apparaître sur leurs propres produits, tirant les prix vers le haut et la qualité vers le bas. Il conclut qu'« Amazon vole les clients qu'il prétendait servir ». Sur HN, beaucoup confirment que jusqu'à 75 % des résultats de recherche sont sponsorisés et racontent leurs stratégies de contournement (recherche via Google, tri par meilleures ventes), tandis qu'une minorité défend la pub comme seul moyen pour les nouveaux vendeurs d'émerger."
+    },
+    {
+      "title": "Une couverture santé universelle ferait économiser 1 000 milliards de dollars et 114 000 vies par an, selon Yale",
+      "url": "https://ysph.yale.edu/news-article/universal-health-coverage-could-save-one-trillion-dollars-and-114000-lives-every-year/",
+      "hn": "https://news.ycombinator.com/item?id=49332981",
+      "points": 762,
+      "comments": 830,
+      "summary": "Des chercheurs de la Yale School of Public Health estiment qu'un système à payeur unique type « Medicare for All » réduirait les dépenses de santé américaines de 1 040 milliards de dollars par an (près de 20 %) tout en évitant plus de 114 000 décès, grâce à des médicaments moins chers, moins de gaspillage administratif et moins d'urgences évitables. L'étude, non relue par les pairs, reconnaît ne pas chiffrer les coûts de transition. La discussion, très fournie, oppose ceux qui jugent les hypothèses trop optimistes — les hôpitaux tournent avec 2 à 5 % de marge — à ceux qui rappellent que tous les autres pays riches y parviennent."
+    },
+    {
+      "title": "Les prix de la mémoire s'envolent de 500 % en douze mois",
+      "url": "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399",
+      "hn": "https://news.ycombinator.com/item?id=49334960",
+      "points": 556,
+      "comments": 462,
+      "summary": "Un kit DDR5 de 128 Go coûte désormais 3 399 dollars, dix fois son prix plancher historique, et un kit de 64 Go est passé de moins de 200 à plus de 1 100 dollars : la demande des datacenters IA absorbe quasiment toute la production mondiale de DRAM, les hyperscalers réservant déjà les capacités de 2027. Le PDG de SK Hynix prédit que 2027 sera « la pire année de l'histoire pour l'approvisionnement mémoire ». Les commentaires oscillent entre accusations de manipulation de marché, résignation à faire durer le matériel existant et paris sur un krach de l'IA qui ferait retomber les prix."
+    },
+    {
+      "title": "Cursor lance Origin, une alternative à GitHub",
+      "url": "https://cursor.com/changelog/origin-code-hosting",
+      "hn": "https://news.ycombinator.com/item?id=49334209",
+      "points": 533,
+      "comments": 395,
+      "summary": "Cursor ouvre en bêta pour ses abonnés payants Origin, une plateforme d'hébergement de code avec dépôts, pull requests, navigation dans le code et synchronisation bidirectionnelle avec GitHub (les commentaires apparaissent des deux côtés en quelques secondes), intégrée à Vercel, Depot ou Buildkite. La discussion est largement sceptique : méfiance sur l'usage des dépôts pour entraîner des modèles d'IA, débat entre centralisation et alternatives fédérées comme Forgejo, et désaccord sur la fiabilité réelle de GitHub après ses récentes pannes."
+    },
+    {
+      "title": "« Méfiez-vous des consultants en management » : la charge du fondateur d'Iceland Foods",
+      "url": "https://about.iceland.co.uk/our-story/the-dark-ages/beware-management-consultants/",
+      "hn": "https://news.ycombinator.com/item?id=49351324",
+      "points": 468,
+      "comments": 125,
+      "summary": "La chaîne de supermarchés britannique Iceland publie sur son propre site une charge satirique contre les cabinets de conseil, moquant leurs réorganisations absurdes — « 4 capitaines, dirigés par 2 managers, rapportant à 1 directeur senior » — et leurs recommandations que les dirigeants connaissent déjà. Sur HN, on s'accorde à dire que les consultants servent surtout de caution externe pour des décisions impopulaires, voire de « blanchiment d'information » facturé au prix fort, tandis que quelques voix défendent leur utilité pour des expertises pointues ou des fusions-acquisitions bien cadrées."
+    },
+    {
+      "title": "Utiliser le réseau ferroviaire comme un scanner à plat",
+      "url": "https://philo.gay/linecam/",
+      "hn": "https://news.ycombinator.com/item?id=49344825",
+      "points": 416,
+      "comments": 68,
+      "summary": "En fixant une caméra linéaire industrielle (une seule colonne de pixels capturée jusqu'à 19 000 fois par seconde) sur des trains et des ferries, l'auteur reconstruit d'immenses panoramas dépassant 56 000 pixels de large, en s'appuyant sur un accéléromètre pour compenser les variations de vitesse. Les images des lignes de Boston et de trains canadiens sont publiées dans une galerie zoomable. Le fil HN, enthousiaste, exhume des expériences similaires de slit-scan et discute des usages industriels et satellitaires de ces capteurs."
+    },
+    {
+      "title": "Réparer un Framework 13 briqué avec 20 dollars d'outils",
+      "url": "https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/",
+      "hn": "https://news.ycombinator.com/item?id=49345220",
+      "points": 383,
+      "comments": 259,
+      "summary": "Après une mise à jour de BIOS ratée, Framework proposait à l'auteur un remplacement de carte mère à plus de 500 dollars, la garantie étant expirée ; il a préféré reflasher lui-même la puce BIOS Winbond avec un programmateur CH347, un adaptateur 1,8 V et une sonde à pointes, soit environ 20 dollars de matériel et une minute de flashrom. Le billet épingle l'absence de mécanisme de récupération. Sur HN, on débat de l'absence de double BIOS ou de mise à jour A/B chez un constructeur qui fait pourtant de la réparabilité son argument principal."
+    },
+    {
+      "title": "Être ambitieux et être père",
+      "url": "https://nicholascharriere.com/blog/being-ambitious-and-being-a-dad/",
+      "hn": "https://news.ycombinator.com/item?id=49321298",
+      "points": 377,
+      "comments": 231,
+      "summary": "Nicholas Charriere, fondateur passé par Y Combinator, refuse le choix entre carrière et paternité : il assume un écart de productivité par rapport à sa vie sans enfants, rejette la sous-traitance de l'éducation et redéfinit l'ambition comme l'excellence sur les deux fronts, à force de discipline et d'élimination du superflu. Le fil HN débat du bon moment pour avoir des enfants, du travail invisible du conjoint — souvent de la conjointe — qui rend ces réussites possibles, et de la question de savoir si « tout avoir » est autre chose qu'un mythe."
+    },
+    {
+      "title": "37 % des travailleurs américains ont vu leur salaire réel baisser entre 2021 et 2024",
+      "url": "https://bfi.uchicago.edu/wp-content/uploads/2026/08/BFI_WP_2026-108-1.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49355142",
+      "points": 340,
+      "comments": 182,
+      "summary": "À partir des données de paie ADP couvrant environ 16 millions de salariés par mois, ce papier montre que les normes d'augmentation annuelle des entreprises n'ont presque pas bougé malgré une inflation dépassant 7 % : parmi ceux restés chez le même employeur, 43 % ont subi une perte cumulée de salaire réel, de 9 % en moyenne, quand les salaires de ceux qui changeaient d'emploi suivaient l'inflation. Les auteurs y voient l'explication de la morosité persistante des ménages. Sur HN, on discute de la mobilité comme seule parade et des causes profondes de cette inflation, entre chocs d'offre et relances budgétaires."
+    },
+    {
+      "title": "Comment IKEA choisit les noms de ses produits",
+      "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+      "hn": "https://news.ycombinator.com/item?id=49349984",
+      "points": 318,
+      "comments": 188,
+      "summary": "Ingvar Kamprad, le fondateur d'IKEA, mémorisait mal les numéros : d'où un système de noms devenu marque de fabrique, avec une taxonomie stricte — noms de lieux suédois pour les canapés, prénoms masculins pour les bibliothèques, animaux et nature pour les produits enfants — appliquée aux 2 000 à 3 000 nouveaux produits nommés chaque année, chaque nom étant vérifié pour éviter les sens malheureux à l'étranger. Le fil HN s'amuse des ratés historiques (le bureau JERKER, la table LACK) et des Suédois surpris de retrouver leurs villes et prénoms sur des meubles."
+    },
+    {
+      "title": "Apple annonce de nouveaux changements pour les apps dans l'Union européenne",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/",
+      "hn": "https://news.ycombinator.com/item?id=49348055",
+      "points": 128,
+      "comments": 190,
+      "summary": "Sous la pression de la Commission européenne, Apple unifie ses conditions au 1er octobre 2026 : commissions de 5 à 26 % selon le mode de distribution et de paiement, remplacement de la Core Technology Fee par une commission de 5 % sur les transactions numériques des apps distribuées hors App Store, et choix pour les développeurs entre paiement Apple, processeurs alternatifs et liens web, avec engagement de douze mois. Les commentateurs se divisent entre ceux qui y voient un vrai progrès et ceux qui estiment qu'Apple garde le contrôle via la notarisation, sur fond de débat récurrent : un smartphone doit-il être un ordinateur ouvert ?"
+    },
+    {
+      "title": "Cerebras dévoile le CS-4, trois wafers géants contre les GPU",
+      "url": "https://www.cerebras.ai/cs4",
+      "hn": "https://news.ycombinator.com/item?id=49354949",
+      "points": 173,
+      "comments": 126,
+      "summary": "Le CS-4 de Cerebras embarque trois puces à l'échelle du wafer WSE-3 Turbo dans un système à l'échelle du rack, annoncé jusqu'à 30 fois plus rapide en inférence que les systèmes GPU, avec 10 fois plus de débit par watt que le CS-3, deux microsecondes de latence entre wafers et la prise en charge de modèles de plus de 10 000 milliards de paramètres à plus de 1 000 tokens par seconde. Sur HN, on questionne les 162 kW de consommation, la difficulté de porter les modèles récents sur cette architecture, et le fait qu'un avantage de vitesse ne suffit pas toujours à faire changer d'écosystème."
+    }
+  ]
+}

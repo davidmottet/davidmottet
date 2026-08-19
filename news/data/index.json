@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-19",
+      "title": "Défiance envers les plateformes, RAM hors de prix et salaires rognés par l'inflation",
+      "count": 12
+    },
+    {
       "date": "2026-08-18",
       "title": "« AI;DR » ou le ras-le-bol du contenu généré, DuckDB 2.0 se dévoile et un correctif Copilot ouvre le Jira de Snowflake",
       "count": 12
