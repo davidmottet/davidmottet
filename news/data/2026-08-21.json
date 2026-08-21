@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-21",
+  "title": "AliExpress pisté par WebAudio, un crate Rust piégé, et GitHub s'explique sur sa panne du 17 août",
+  "intro": "Journée dominée par la méfiance : AliExpress est pris la main dans le sac à faire du fingerprinting audio silencieux, un crate Rust populaire est compromis avec une charge exécutée à la compilation, et GitHub détaille comment un doublement du trafic — attribué au code généré par IA — a mis son infrastructure à genoux. En contrepoint, deux essais très lus défendent la littérature « épaisse » et la beauté de la biologie, pendant que la communauté s'agace de la prose de plus en plus absconse des derniers modèles d'Anthropic, au point d'écrire un outil pour la nettoyer.",
+  "items": [
+    {
+      "title": "AliExpress fait du fingerprinting WebAudio silencieux qui casse le multipoint Bluetooth",
+      "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
+      "hn": "https://news.ycombinator.com/item?id=49372583",
+      "points": 946,
+      "comments": 297,
+      "summary": "Un développeur découvre que le site d'AliExpress exécute du JavaScript obfusqué qui joue un flux audio silencieux via WebAudio pour identifier l'appareil — avec pour effet secondaire de monopoliser la connexion Bluetooth et d'empêcher le multipoint de basculer vers un autre appareil. D'autres utilisateurs rapportent le même comportement chez Twitter, Wolt ou des services de captcha. Les commentaires débattent d'un web « cassé » qui expose des API sensibles sans permission, et des filtres uBlock Origin comme parade."
+    },
+    {
+      "title": "HTML sait faire ça",
+      "url": "https://chrisburnell.com/html-can-do-that/",
+      "hn": "https://news.ycombinator.com/item?id=49362689",
+      "points": 710,
+      "comments": 178,
+      "summary": "Un tour d'horizon des capacités modernes du HTML natif — dialog, details, popover, datalist, API de formulaires — qui rendent JavaScript superflu dans bien des cas. Les retours d'expérience en production sont enthousiastes, mais le commentaire le plus voté tempère : datalist reste trop limité (pas de recherche floue, pas de contrat de valeurs) pour remplacer une vraie combobox. On débat aussi des incohérences entre navigateurs, de Safari à la traîne, et des LLM qui continuent de générer les vieux patterns JavaScript."
+    },
+    {
+      "title": "« Je les aime épais » : des excuses à mes profs d'anglais",
+      "url": "https://experimental-history.com/p/i-like-em-thick",
+      "hn": "https://news.ycombinator.com/item?id=49347543",
+      "points": 681,
+      "comments": 282,
+      "summary": "Un essai très partagé où l'auteur s'excuse auprès de ses professeurs de lettres : il comprend enfin que les grandes œuvres ont une « épaisseur » — des couches de choix délibérés qui récompensent la relecture, là où les œuvres minces s'épuisent à la première impression. La discussion porte sur l'école : les adolescents ont-ils le vécu nécessaire pour apprécier les classiques, faut-il jouer Shakespeare plutôt que le lire en silence, et pourquoi ne pas enseigner la littérature en tandem avec l'histoire."
+    },
+    {
+      "title": "Le crate Rust malveillant arrayref exécutait une charge à la compilation",
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "hn": "https://news.ycombinator.com/item?id=49374269",
+      "points": 465,
+      "comments": 394,
+      "summary": "Une version compromise du crate populaire arrayref, publiée le 20 août, embarquait une dépendance proc-macro1 qui exécutait du code arbitraire pendant le build ; elle a été retirée en 86 minutes, sans exploitation constatée. Les commentaires reprochent à crates.io d'avoir fait disparaître la version fautive sans mention publique, débattent du sandboxing des build.rs (difficile sans casser la compilation de dépendances C) et proposent des délais de quarantaine d'une semaine sur les nouvelles versions pour attraper les malwares à temps."
+    },
+    {
+      "title": "GitHub publie son post-mortem de la panne du 17 août",
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "hn": "https://news.ycombinator.com/item?id=49378957",
+      "points": 455,
+      "comments": 516,
+      "summary": "GitHub détaille les près de 8 heures de panne du 17 août : saturation réseau des load balancers du centre des États-Unis, un sidecar Istio mal dimensionné, quatre nœuds HAProxy à bout de ressources et des retries qui ont amplifié la cascade. Chiffre marquant : les commits mensuels sont passés de 1,4 à 2,9 milliards entre avril et août, croissance attribuée au code généré par IA. Les commentaires oscillent entre « c'est du slop IA qui sature l'infra », critiques de l'architecture (pas de read-replicas à cette échelle) et soupçons d'un récit préparant la migration vers Azure."
+    },
+    {
+      "title": "Les achats de la CIA ont aidé NeXT à survivre dans les années 80",
+      "url": "https://www.wsj.com/tech/steve-jobs-apple-next-cia-161b65f9",
+      "hn": "https://news.ycombinator.com/item?id=49368886",
+      "points": 390,
+      "comments": 233,
+      "summary": "Le Wall Street Journal raconte comment la CIA a contribué à maintenir NeXT, la société de Steve Jobs, à flot dans les années 80. Le commentaire le plus voté corrige le titre : il ne s'agissait pas d'injection de capital mais d'achats de machines pour un usage opérationnel, l'environnement de développement NeXT justifiant même des dérogations POSIX. La discussion élargit au rôle historique de l'État dans la tech américaine, d'In-Q-Tel au Département de la Défense qui a bâti la Silicon Valley à coups de commandes de semi-conducteurs."
+    },
+    {
+      "title": "Show HN : Huzzah, coder avec l'IA en écrivant du pseudo-code",
+      "url": "https://danielvaughn.dev/posts/huzzah/",
+      "hn": "https://news.ycombinator.com/item?id=49378768",
+      "points": 282,
+      "comments": 149,
+      "summary": "Un éditeur expérimental où l'on écrit du pseudo-code librement formulé, synchronisé en vrai code à la sauvegarde, le pseudo-code persistant comme trace de l'intention avec des source maps vers l'implémentation. L'auteur cherche un juste milieu entre prompts en prose épuisants et code manuel. Les sceptiques y voient une réinvention de la conception par spécification (le PDL de Code Complete date de 1993) et « un nouveau langage terse qui coûte de l'argent à compiler » ; les partisans saluent la capture formelle de l'intention."
+    },
+    {
+      "title": "Les boîtes d'IA détruisent des livres physiques — numérisons les livres rares avant qu'il soit trop tard",
+      "url": "https://annas-archive.gl/blog/physical-destruction.html",
+      "hn": "https://news.ycombinator.com/item?id=49383026",
+      "points": 266,
+      "comments": 189,
+      "summary": "Anna's Archive alerte : les entreprises d'IA achètent des livres d'occasion en masse, les scannent puis les détruisent pour obtenir des données d'entraînement antérieures à 2022, au risque de détruire sans le savoir des exemplaires rares. Les commentaires les plus votés relativisent — ces livres partaient de toute façon au pilon, le scan est une meilleure préservation que la benne — tandis que d'autres pointent le vrai problème : les scans restent privés, et le droit d'auteur incite paradoxalement à la destruction plutôt qu'au partage."
+    },
+    {
+      "title": "J'aurais dû aimer la biologie",
+      "url": "https://jsomers.net/i-should-have-loved-biology/",
+      "hn": "https://news.ycombinator.com/item?id=49377853",
+      "points": 251,
+      "comments": 98,
+      "summary": "L'essai de James Somers (2020) refait surface : la biologie devrait émerveiller, mais l'école la réduit à de la mémorisation, et l'auteur regrette d'avoir découvert son élégance si tard. Les commentaires de biologistes nuancent le romantisme — postes de recherche sous-payés, pressions institutionnelles — et élargissent la critique à l'enseignement des sciences en général, où « le but d'une expérience est de retrouver le résultat du prof » et où l'expérience ratée est pénalisée au lieu d'être formatrice."
+    },
+    {
+      "title": "Vomit : nettoyer la prose de Claude 5 avec un second LLM",
+      "url": "https://github.com/zachahn/vomit",
+      "hn": "https://news.ycombinator.com/item?id=49375996",
+      "points": 234,
+      "comments": 235,
+      "summary": "Un outil qui fait repasser la sortie de Claude 5 par un second LLM pour en retirer le jargon dense, les raisonnements alambiqués et l'autosatisfaction, et la réécrire en style clair. Le fil est révélateur d'une vraie frustration : beaucoup jugent la prose d'Opus 5 de moins en moins lisible, certains sont repassés à des versions antérieures ou à la concurrence. On débat des causes — artefacts de RLHF, boucles de modèles qui se notent entre eux, priorité donnée aux capacités agentiques sur la lisibilité — et de l'absurdité de payer un LLM pour en décoder un autre."
+    },
+    {
+      "title": "Linux 7.2 est sorti, avec le HDMI 2.1 enfin ouvert chez AMD",
+      "url": "https://igalia.com/2026/08/19/Linux-72-Released.html",
+      "hn": "https://news.ycombinator.com/item?id=49376265",
+      "points": 233,
+      "comments": 78,
+      "summary": "Igalia détaille ses contributions à Linux 7.2, dont la plus commentée : le support HDMI 2.1 dans le pilote libre AMD, longtemps bloqué par le HDMI Forum qui interdisait toute implémentation open source. Selon les commentaires, la pression est venue d'un contributeur externe non membre du Forum et surtout de Valve, qui aurait travaillé avec AMD pour débloquer le dossier avant la sortie de la Steam Machine. Le Forum aurait fini par céder, sa position devenant intenable."
+    },
+    {
+      "title": "Un bug de Codex sur AWS Bedrock facture 10 fois trop cher",
+      "url": "https://github.com/openai/codex/issues/37674",
+      "hn": "https://news.ycombinator.com/item?id=49383326",
+      "points": 98,
+      "comments": 31,
+      "summary": "Un ticket GitHub signale que Codex sur AWS Bedrock avait un cache cassé : moins de 5 % de ratio lecture/écriture, des écritures de cache coûteuses jamais réutilisées, d'où des factures multipliées par dix ; désactiver web_search contourne le problème. Les commentaires ironisent sur le ticket lui-même, « à moitié incohérent, probablement généré par une IA », et spéculent sur un changement d'architecture d'attention entre versions de modèles qui casserait la réutilisation du cache."
+    }
+  ]
+}
