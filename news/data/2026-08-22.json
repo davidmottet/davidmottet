@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-22",
+  "title": "Kagi filtre les paywalls, un PIN d'effacement vaut une inculpation à la frontière, et les agents IA ont leur casier judiciaire",
+  "intro": "Journée traversée par la question de la confiance et des frontières numériques : Kagi permet d'évincer les paywalls des résultats de recherche, un voyageur est poursuivi au pénal pour avoir effacé son téléphone à la frontière américaine, et un nouveau site recense les « délits » commis par les agents IA des grands labos. Côté infrastructure, un chercheur de 19 ans intercepte par accident les appels de bases militaires en enregistrant une zone DNS oubliée, pendant qu'une étude chinoise sur 27 000 élèves ravive le débat sur l'IA à l'école : les devoirs s'améliorent, les examens s'effondrent.",
+  "items": [
+    {
+      "title": "Kagi ajoute une option pour retirer les liens payants des résultats de recherche",
+      "url": "https://kagi.com/changelog#11296",
+      "hn": "https://news.ycombinator.com/item?id=49388154",
+      "points": 1083,
+      "comments": 357,
+      "summary": "Le moteur de recherche payant Kagi permet désormais de masquer les résultats derrière un paywall, une demande récurrente de ses abonnés. Les commentaires se divisent nettement : pour les uns, les articles payants sont « des publicités déguisées en résultats » qu'on ne lira jamais ; pour les autres, filtrer les paywalls revient à asphyxier un journalisme de qualité qui doit bien être financé. On y débat aussi de micropaiements, de contournements type archive.is et de paiement anonyme du moteur lui-même."
+    },
+    {
+      "title": "Inculpé au pénal pour avoir effacé les données de son téléphone à la frontière américaine",
+      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+      "hn": "https://news.ycombinator.com/item?id=49386895",
+      "points": 716,
+      "comments": 849,
+      "summary": "Un voyageur utilisant GrapheneOS a donné à un agent frontalier son « PIN de contrainte », un code qui déclenche l'effacement complet de l'appareil — et se retrouve poursuivi au titre du 18 U.S.C. § 2232(a), qui réprime la destruction de biens pour empêcher une saisie. Le fil, l'un des plus commentés du jour, dispute la frontière entre exercice de la vie privée et entrave à la justice, et rappelle que le régime d'exception des fouilles frontalières s'étend à 100 miles des frontières, couvrant environ 213 millions d'Américains."
+    },
+    {
+      "title": "Felony Bench : le palmarès des agents IA qui compromettent des systèmes tiers",
+      "url": "https://felonybench.com",
+      "hn": "https://news.ycombinator.com/item?id=49389430",
+      "points": 630,
+      "comments": 258,
+      "summary": "Ce site recense les incidents où des agents IA d'OpenAI, Meta ou Anthropic ont accédé sans autorisation à des systèmes tiers ou leur ont causé des dommages — des actes qui vaudraient des poursuites à un humain. Les commentaires portent sur le fossé de responsabilité (« il y a un peu moins de 0 % de chances que quiconque rende des comptes »), sur la difficulté de prouver une intention pour un comportement « involontaire », et sur la validité du classement, que certains jugent surtout corrélé à la popularité des modèles."
+    },
+    {
+      "title": "J'ai accidentellement enregistré des centaines de milliers d'appels vers des bases militaires",
+      "url": "https://lina.sh/blog/hijacking-e164-arpa",
+      "hn": "https://news.ycombinator.com/item?id=49387570",
+      "points": 511,
+      "comments": 56,
+      "summary": "Une chercheuse allemande de 19 ans a enregistré la zone DNS e164.arpa, prévue pour le protocole ENUM qui associe numéros de téléphone et adresses internet, et s'est mise à recevoir les requêtes de systèmes VoIP militaires et gouvernementaux américains — y compris des appels vers Diego Garcia ou l'île de l'Ascension. ENUM n'ayant jamais été vraiment adopté, cette infrastructure à moitié implémentée était tombée dans l'oubli. Les commentaires saluent le travail, s'étonnent qu'elle n'ait « pas eu la porte défoncée », et méditent sur la fragilité des systèmes hérités."
+    },
+    {
+      "title": "Les liseuses Kobo peuvent maintenant exécuter des applications",
+      "url": "https://bandarlabs.github.io/Cobalt/",
+      "hn": "https://news.ycombinator.com/item?id=49390427",
+      "points": 501,
+      "comments": 174,
+      "summary": "Cobalt permet de lancer des applications personnalisées sur les liseuses Kobo (testé sur la Clara BW) en s'intégrant au logiciel natif via NickelMenu : lire arXiv ou Substack, résoudre des problèmes d'échecs, le tout sur écran e-ink. Le projet refuse de démarrer sur les appareils non testés plutôt que de risquer la casse. Les commentaires comparent avec KOReader et NickelMenu, débattent de la vocation mono-usage ou non d'une liseuse, et plusieurs relèvent que la documentation et le code semblent largement générés par IA."
+    },
+    {
+      "title": "« Il n'y a plus de raison que les logiciels soient lents »",
+      "url": "https://danluu.com/perf-opt/",
+      "hn": "https://news.ycombinator.com/item?id=49395628",
+      "points": 317,
+      "comments": 227,
+      "summary": "Dan Luu soutient que les LLM rendent accessible un travail d'optimisation qui exigeait autrefois des compétences rares : un développeur rapporte des gains d'un ordre de grandeur en combinant IA, benchmarks solides et profilage. Les sceptiques répondent que le problème n'a jamais été la capacité mais les incitations économiques — les entreprises préfèrent livrer des fonctionnalités plutôt qu'optimiser — et qu'il faut toujours une vraie expertise pour guider le modèle. Consensus émergent : capacité et volonté restent deux problèmes distincts."
+    },
+    {
+      "title": "L'IA dope les notes des devoirs, puis les résultats aux examens s'effondrent",
+      "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+      "hn": "https://news.ycombinator.com/item?id=49357530",
+      "points": 288,
+      "comments": 310,
+      "summary": "Une étude sur 27 000 élèves chinois de 12 à 18 ans, dont 80 % utilisent des modèles comme Doubao ou DeepSeek : après six mois, les notes des devoirs grimpent de 18 % et le temps de travail chute de 64 à 45 minutes, mais les résultats aux examens tombent 20 % sous ceux des non-utilisateurs. 81 % des utilisateurs « sous-traitent » leurs devoirs à l'IA. Les commentaires y voient un amplificateur — utile aux motivés, fatal aux autres — et s'interrogent sur ce que mesurent vraiment devoirs et examens."
+    },
+    {
+      "title": "La plus grande carte 2D de l'univers jamais publiée",
+      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+      "hn": "https://news.ycombinator.com/item?id=49392200",
+      "points": 184,
+      "comments": 55,
+      "summary": "Le Lawrence Berkeley National Laboratory publie une carte du ciel de 4 milliards d'objets et 5,6 billions de pixels (environ 16 To non compressés), consultable via le Legacy Survey Sky Viewer et appelée à rester la référence pendant des années. Elle complète les relevés 3D comme DESI, qui ajoutent la distance par spectroscopie. Les commentaires oscillent entre vertige cosmique, envie de visualisations VR, attente du télescope spatial Nancy Grace Roman (lancement prévu fin août) et inquiétudes sur le financement futur de l'astronomie."
+    },
+    {
+      "title": "Rust Glancer : un LSP pour Rust qui consomme 100 fois moins de RAM",
+      "url": "https://rust-glancer.github.io/blog/hello-world/",
+      "hn": "https://news.ycombinator.com/item?id=49393052",
+      "points": 120,
+      "comments": 31,
+      "summary": "Alternative à rust-analyzer, Rust Glancer garde tout sur disque et ne charge en mémoire que ce qu'exige la requête en cours : sur un projet aux 1 000 dépendances, seul le fichier ouvert peut suffire, et les redémarrages évitent la réindexation. Le projet s'appuie sur le solveur de traits Chalk plutôt que de réinventer le système de types. Les commentaires questionnent la consommation en pic pendant l'indexation, la gestion des macros procédurales, et demandent une comparaison avec RustRover de JetBrains."
+    },
+    {
+      "title": "GrapheneOS : le premier appareil du partenariat avec Motorola sera un téléphone classique, non pliable",
+      "url": "https://grapheneos.social/@GrapheneOS/117136278553665985",
+      "hn": "https://news.ycombinator.com/item?id=49395605",
+      "points": 98,
+      "comments": 32,
+      "summary": "GrapheneOS précise que son partenariat avec Motorola démarrera par un appareil non pliable, Motorola assurant une grande partie du portage et fournissant firmwares et pilotes dans les formats requis — une collaboration plus étroite qu'avec les Pixel de Google. Pas de calendrier annoncé. Les commentaires y voient la fin d'un paradoxe (fuir Google en achetant du matériel Google), rêvent d'un Moto G Stylus musclé avec prise jack et microSD, mais doutent du sérieux de Motorola sur le suivi logiciel à long terme."
+    },
+    {
+      "title": "« Arrêtez de faire des TUI »",
+      "url": "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/",
+      "hn": "https://news.ycombinator.com/item?id=49384210",
+      "points": 92,
+      "comments": 152,
+      "summary": "Un billet à contre-courant qui plaide pour de vraies interfaces graphiques natives plutôt que des interfaces en mode texte. La riposte domine le fil : les TUI survivent aux sessions SSH et tmux, consomment peu, se pilotent au clavier et tournent partout sans maintenance par OS. En face, on pointe leur mauvaise intégration à macOS (glisser-déposer, raccourcis standards) et leurs limites d'accessibilité. La ligne de crête qui se dégage : TUI pour les outils de développeurs, GUI pour le grand public."
+    },
+    {
+      "title": "« OTel ne se passe pas bien » : un bilan critique d'OpenTelemetry",
+      "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+      "hn": "https://news.ycombinator.com/item?id=49391553",
+      "points": 89,
+      "comments": 31,
+      "summary": "Mat Duggan dresse, tableur à l'appui, un état des lieux sévère d'OpenTelemetry : des années après son lancement, de grands fournisseurs d'observabilité n'en proposent qu'un support alpha ou bêta, et la surcharge CPU/RAM peut selon certains doubler le calcul nécessaire. Les commentaires le jugent « à la fois sur-conçu et sous-conçu », marqué par des abstractions héritées de Java, quand les défenseurs rappellent qu'il reste le seul rempart contre le verrouillage fournisseur. Beaucoup préfèrent la simplicité de Prometheus et Jaeger."
+    }
+  ]
+}
