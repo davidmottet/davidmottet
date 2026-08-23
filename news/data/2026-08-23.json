@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-23",
+  "title": "Le Canada réplique « dollar pour dollar », l'outillage des agents IA s'organise, et le Z80 refuse de mourir",
+  "intro": "En ce samedi, la une de Hacker News tourne lentement — plusieurs gros sujets d'hier y trônent encore — mais les nouveautés dessinent deux fils rouges. D'un côté, l'escalade commerciale entre le Canada et les États-Unis déclenche l'une des discussions les plus animées du jour. De l'autre, l'écosystème des agents IA s'outille et s'interroge : un harnais multi-agents au nom parodique, une feuille de route ambitieuse pour MCP, une baisse de prix chez OpenAI et une satire des startups « Labs » à numéros. En toile de fond, la communauté s'offre une pause rétro et réflexive entre Z80, Racket et leçons de vie d'un chercheur en sécurité.",
+  "items": [
+    {
+      "title": "Le Canada répliquera aux droits de douane américains « dollar pour dollar »",
+      "url": "https://www.bbc.com/news/articles/cvgvyy4x2mvo",
+      "hn": "https://news.ycombinator.com/item?id=49397074",
+      "points": 164,
+      "comments": 765,
+      "summary": "Après l'échec des négociations commerciales avec Washington, Ottawa annonce des contre-mesures tarifaires strictement équivalentes aux droits de douane américains. Avec plus de 750 commentaires, c'est la discussion la plus animée du jour : les intervenants raillent des tactiques de négociation jugées erratiques — « les nations ne sont pas pressées de marchander avec un enfant capricieux », résume l'un d'eux — et s'inquiètent d'une guerre commerciale qui s'installe entre les deux voisins."
+    },
+    {
+      "title": "Munder Difflin : un harnais d'agents pour faire tourner un bureau de vos clones",
+      "url": "https://munderdiffl.in/",
+      "hn": "https://news.ycombinator.com/item?id=49398152",
+      "points": 205,
+      "comments": 83,
+      "summary": "Ce harnais multi-agents local, au nom emprunté à la série The Office, orchestre plusieurs instances d'agents de code (dont Claude Code) avec une mémoire partagée baptisée « mempalace », des simulations déterministes sans consommation de tokens, et des déclencheurs par webhook ou planification pour des tâches comme la revue de PR ou la gestion de Discord. Les commentaires se partagent entre ceux qui trouvent le branding « cringe » et ceux qui y voient la confirmation que l'innovation se joue désormais au niveau du harnais plutôt que du modèle."
+    },
+    {
+      "title": "La nouvelle feuille de route du Model Context Protocol",
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "hn": "https://news.ycombinator.com/item?id=49399591",
+      "points": 130,
+      "comments": 99,
+      "summary": "L'équipe du protocole MCP annonce cinq priorités : des primitives de messagerie « agentiques » dépassant le simple requête-réponse (événements initiés par le serveur, maturation de l'extension Tasks), l'unification des transports HTTP, une sécurité d'entreprise fondée sur l'identité des agents (DPoP, fédération d'identité de charge de travail), la standardisation du traitement des résultats d'outils avec découverte progressive, et l'amélioration des SDK. Les commentaires débattent de la complexité croissante d'un protocole né simple, à l'heure où il devient une brique d'infrastructure critique."
+    },
+    {
+      "title": "« Io.Threaded de Zig est élégant » : l'E/S annulable en première classe",
+      "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
+      "hn": "https://news.ycombinator.com/item?id=49388694",
+      "points": 141,
+      "comments": 83,
+      "summary": "matklad détaille comment la nouvelle interface Io de Zig permet d'annuler proprement des opérations d'E/S bloquantes via interruption ou fermeture — une capacité que Java offrait dès 2000 avec InterruptibleChannel, mais que Zig intègre nativement au langage. La discussion dérive vers l'éternel duel Zig contre Rust : verbosité de la syntaxe, pertinence des garanties mémoire de Rust à l'ère du code généré par LLM, et vitesse de compilation incrémentale que les défenseurs de Zig brandissent en argument massue."
+    },
+    {
+      "title": "ElevenLabs, TwelveLabs, ThirteenLabs : la satire des startups IA à numéros",
+      "url": "https://quantumi.sh/public/labs.html",
+      "hn": "https://news.ycombinator.com/item?id=49400408",
+      "points": 141,
+      "comments": 59,
+      "summary": "Cette page recense avec malice la prolifération de startups IA nommées d'un nombre suivi de « Labs », lignée ouverte par le succès d'ElevenLabs et du précurseur 15.ai. Les commentaires oscillent entre anecdotes de fondateurs — l'un revendique 5 M$ d'ARR après avoir pivoté de l'audio vers la vidéo — et références au sketch « 7-Minute Abs » de Mary à tout prix : quand tout le monde copie la même stratégie de nommage, plus personne ne se différencie."
+    },
+    {
+      "title": "OpenAI baisse de 20 % le prix de GPT-5.6 Sol",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "hn": "https://news.ycombinator.com/item?id=49396590",
+      "points": 58,
+      "comments": 36,
+      "summary": "OpenAI applique une réduction promotionnelle de 20 % sur GPT-5.6 Sol jusqu'au 3 septembre, ramenant le tarif à 2 $ par million de tokens en entrée et 10 $ en sortie. Les commentateurs se demandent si cette baisse traduit des gains d'efficacité réels ou la pression concurrentielle de DeepSeek et consorts, regrettent que les limites d'usage des abonnements restent inchangées, et spéculent sur des marges sacrifiées à l'approche d'une possible entrée en bourse."
+    },
+    {
+      "title": "Trois étapes importantes de ma maturation, par Thomas Dullien",
+      "url": "https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process/",
+      "hn": "https://news.ycombinator.com/item?id=49394496",
+      "points": 118,
+      "comments": 41,
+      "summary": "Le chercheur en sécurité Thomas Dullien (alias Halvar Flake) partage trois leçons de vie : comprendre sa propre structure d'incitations et se méfier de ses propres pensées, renoncer au déterminisme monocausal qui n'existe guère en dehors du débogage, et rejeter la dichotomie raison-émotion comme une construction culturelle. Les commentaires ajoutent leurs propres recettes (sport, thérapie, sommeil, finances), contestent le troisième point au nom des neurosciences, et rappellent que ces sagesses présupposent une stabilité matérielle que tout le monde n'a pas."
+    },
+    {
+      "title": "Comment la Thaïlande a résisté à la colonisation",
+      "url": "https://worksinprogress.co/issue/how-thailand-resisted-colonization/",
+      "hn": "https://news.ycombinator.com/item?id=49392099",
+      "points": 107,
+      "comments": 41,
+      "summary": "Works in Progress raconte comment le Siam du roi Chulalongkorn a évité la colonisation en se modernisant à marche forcée sur le modèle occidental et en cédant stratégiquement environ 40 % de son territoire à la France et à la Grande-Bretagne pour préserver son indépendance. Les commentaires nuancent la thèse : le Siam servait surtout d'État tampon commode entre les deux empires, et certains estiment que le pays s'est en réalité « colonisé lui-même » en réprimant ses minorités au nom de la modernisation."
+    },
+    {
+      "title": "Z80 : le microprocesseur des années 1970 toujours vivant",
+      "url": "https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi",
+      "hn": "https://news.ycombinator.com/item?id=49398158",
+      "points": 89,
+      "comments": 45,
+      "summary": "Cet article IEEE Micro de 2021 retrace la carrière du Z80 de Zilog, l'un des microprocesseurs les plus longévifs de l'histoire, resté en production près d'un demi-siècle. Les commentaires mêlent nostalgie du ZX Spectrum, analyse d'un jeu d'instructions « brouillon » hérité de la compatibilité 8080, et inventaire de sa survie actuelle : le Z80 classique a cessé d'être produit récemment, mais les variantes eZ80 équipent toujours les calculatrices TI et des projets d'amateurs comme le RC2014 ou l'Agon Light."
+    },
+    {
+      "title": "Le stress précoce laisse une « cicatrice » dans les cellules du cerveau chez la souris",
+      "url": "https://medicine.washu.edu/news/how-early-life-stress-leaves-a-scar-inside-brain-cells/",
+      "hn": "https://news.ycombinator.com/item?id=49380303",
+      "points": 79,
+      "comments": 28,
+      "summary": "Des chercheurs de Washington University montrent que le stress subi tôt dans la vie modifie durablement les neurones de souris via l'enzyme SETD7, qui altère les motifs de méthylation des gènes — un mécanisme épigénétique concret derrière les effets à long terme des traumatismes. Les commentaires soulignent qu'il s'agit de stress sévères (maltraitance, violence) et non d'examens scolaires, et retiennent la note d'espoir : ces marques étant théoriquement réversibles, elles offrent des cibles thérapeutiques."
+    },
+    {
+      "title": "Une introduction bienveillante à Racket",
+      "url": "https://geometridae.bearblog.dev/a-friendly-introduction-to-racket/",
+      "hn": "https://news.ycombinator.com/item?id=49399898",
+      "points": 76,
+      "comments": 22,
+      "summary": "Ce billet propose une porte d'entrée accessible vers Racket, le dialecte de Scheme pensé pour la création de langages et l'enseignement de la programmation. Les commentaires saluent la pédagogie mais pointent le paradoxe habituel du langage : un écosystème riche en bibliothèques et outils de développement, mais où les applications grand public visibles restent introuvables."
+    },
+    {
+      "title": "Un vendeur de voitures belge devient prince après un test ADN",
+      "url": "https://www.cnn.com/2026/08/22/europe/prince-belgium-secret-son-scli-intl",
+      "hn": "https://news.ycombinator.com/item?id=49401621",
+      "points": 45,
+      "comments": 24,
+      "summary": "Un test ADN a confirmé qu'un vendeur de voitures belge est le fils illégitime d'un membre de la famille royale : il obtient le titre de prince et des droits d'héritage, mais ni dotation, ni fonctions officielles, ni place dans l'ordre de succession. L'insolite du week-end nourrit un débat plus sérieux sur la légitimité des privilèges héréditaires et sur la portée toute symbolique des titres nobiliaires dans la Belgique moderne."
+    }
+  ]
+}
