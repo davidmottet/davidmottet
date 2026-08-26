@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-26",
+  "title": "Bruxelles fâche les makers, Microsoft marque ses pixels, Xiaomi défie Apple",
+  "intro": "Journée très politique sur Hacker News : un cri d'alarme sur la réglementation européenne des emballages écrase le classement, tandis que la découverte de filigranes invisibles dans MS Paint ravive les angoisses de surveillance. En parallèle, le fil rouge de la souveraineté numérique traverse la page d'accueil, de Xiaomi qui rivalise avec Apple sur les CPU aux 25 ans de XMPP, en passant par Nostr et les alias iCloud. Et pour souffler, San Francisco se visite désormais comme un jeu vidéo dans le navigateur.",
+  "items": [
+    {
+      "title": "Comment l'Europe tue les makers et les micro-entrepreneurs",
+      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
+      "hn": "https://news.ycombinator.com/item?id=49419237",
+      "points": 1283,
+      "comments": 775,
+      "summary": "Le règlement européen sur les emballages (PPWR), applicable depuis le 12 août 2026, oblige chaque vendeur à s'enregistrer auprès des schémas de responsabilité élargie de chaque État membre : l'article chiffre à environ 1 150 € par an le coût pour un ingénieur grec vendant dix cartes électroniques dans quatre pays. L'auteur propose des seuils de volume ou un portail d'enregistrement unique à l'échelle de l'UE. Les 775 commentaires débattent de la fragmentation des règles entre États (l'Autriche et l'Irlande ajoutent leurs propres frais), des nouveaux frais de traitement de 3 € sur les colis hors UE, et plus largement du rapport coût-bénéfice de la réglementation environnementale pour les petites structures."
+    },
+    {
+      "title": "Xiaomi : un nouveau CPU au niveau des cœurs Apple en monothread, bien plus rapide en multithread",
+      "url": "https://twitter.com/lemire/status/2091894299289874926",
+      "hn": "https://news.ycombinator.com/item?id=49420873",
+      "points": 842,
+      "comments": 597,
+      "summary": "Le XRing O3 de Xiaomi, bâti sur l'architecture ARM C1-Ultra (la même que le Dimensity 9500 de MediaTek), dépasse 4 000 points sur Geekbench 6 en laboratoire et rivalise avec les cœurs d'Apple. Les commentateurs tempèrent : dans un téléphone réel, la limitation thermique ramène le score autour de 3 300 après quelques secondes. La discussion glisse vers la concurrence accrue face à Qualcomm et MediaTek, le paradoxe des téléphones surpuissants qui ne semblent pas plus rapides à l'usage, et la dépendance géopolitique à TSMC."
+    },
+    {
+      "title": "MS Paint et Photos filigranent invisiblement les images générées localement avec un GUID",
+      "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+      "hn": "https://news.ycombinator.com/item?id=49421158",
+      "points": 688,
+      "comments": 276,
+      "summary": "Un travail de rétro-ingénierie montre que les fonctions IA de MS Paint et Photos sous Windows insèrent un filigrane invisible dans les pixels et les métadonnées des images, même générées localement : le point de modération de Microsoft reçoit le prompt et renvoie un identifiant unique, théoriquement rattachable à la machine d'origine. Le format BMP, qui aurait permis d'exporter sans filigrane, est absent des options. Les commentaires comparent le procédé aux points jaunes des imprimantes — qui avaient permis d'identifier la lanceuse d'alerte Reality Winner — et débattent de la portée réelle de la désanonymisation, certains jugeant les craintes exagérées."
+    },
+    {
+      "title": "Toute la ville de San Francisco en jeu vidéo",
+      "url": "https://sf.thijs.gg/",
+      "hn": "https://news.ycombinator.com/item?id=49422784",
+      "points": 440,
+      "comments": 139,
+      "summary": "Un développeur a transformé San Francisco en environnement 3D explorable dans le navigateur : on y marche, conduit et plane au-dessus d'une géométrie basse résolution aux textures photogrammétriques, apparemment extraites d'Apple Maps. Les anciens habitants décrivent une expérience émotionnelle étrange, proche du rêve, en retrouvant leur quartier. Le débat porte sur la légalité de l'extraction des données (Apple n'offre pas d'API 3D publique, le projet violerait donc les conditions d'utilisation) et sur la technique de rendu employée, entre splats gaussiens et maillage classique."
+    },
+    {
+      "title": "Les adresses « Masquer mon adresse e-mail » d'iCloud+ resteront sur icloud.com",
+      "url": "https://developer.apple.com/news/?id=1ptvdtcm",
+      "hn": "https://news.ycombinator.com/item?id=49426564",
+      "points": 418,
+      "comments": 113,
+      "summary": "Apple confirme que ses alias de messagerie jetables resteront hébergés sur le domaine icloud.com, ce qui leur garantit la légitimité d'un grand fournisseur : les relais de confidentialité plus petits se font régulièrement bloquer par les sites. Les commentaires saluent cet avantage d'échelle tout en pointant l'enfermement propriétaire qu'il crée — quitter Apple impose de changer d'adresse partout. Plusieurs utilisateurs rapportent au passage que Gmail classe trop souvent les courriels icloud.com en spam, certains y voyant un filtrage anticoncurrentiel."
+    },
+    {
+      "title": "Où sont passées les toilettes publiques ?",
+      "url": "https://daily.jstor.org/where-did-all-the-public-bathrooms-go/",
+      "hn": "https://news.ycombinator.com/item?id=49422800",
+      "points": 222,
+      "comments": 513,
+      "summary": "JSTOR Daily retrace l'histoire des toilettes publiques : les pissoirs ornementaux du Paris des années 1850 nés des épidémies de choléra, puis les « comfort stations » américaines (1869-1932) promues par les ligues de tempérance pour éviter que les saloons ne servent de toilettes de facto. Après la Prohibition, la construction s'est effondrée et l'accès est devenu une transaction commerciale : cafés, hôtels et magasins ont remplacé le service public. Le sujet a manifestement touché une corde sensible, avec 513 commentaires — plus du double des points du billet."
+    },
+    {
+      "title": "Jabber/XMPP : 25 ans d'indépendance numérique",
+      "url": "https://gultsch.de/posts/25-years-of-digital-independence/",
+      "hn": "https://news.ycombinator.com/item?id=49421536",
+      "points": 219,
+      "comments": 112,
+      "summary": "Daniel Gultsch, développeur de Conversations, célèbre le quart de siècle du protocole de messagerie décentralisé XMPP, toujours utilisé par l'OTAN, des forces de police et, en coulisses, par WhatsApp ou les notifications push d'Apple. Les commentaires ravivent la nostalgie de l'époque où Google Talk et Facebook Chat fédéraient en XMPP avant de fermer leurs portes. Le grand débat : les millions investis dans Matrix auraient-ils dû aller à XMPP, ou la complexité modulaire du protocole et le manque de finition de ses clients expliquent-ils son déclin face à Signal et Discord ?"
+    },
+    {
+      "title": "La Lune, expliquée en interactif par Bartosz Ciechanowski",
+      "url": "https://ciechanow.ski/moon/",
+      "hn": "https://news.ycombinator.com/item?id=49426466",
+      "points": 169,
+      "comments": 30,
+      "summary": "Le célèbre auteur d'essais interactifs consacre son format signature à la Lune : phases, masse et mécanique orbitale s'explorent via des visualisations manipulables directement dans la page. Les commentaires soulignent que sa vraie valeur est en amont du code — savoir quoi visualiser et comment faire enseigner l'interaction — et détaillent son modèle économique : environ 520 soutiens Patreon pour près de 5 000 $ mensuels. On y débat aussi de l'usage de son style comme modèle pour du contenu pédagogique généré par IA."
+    },
+    {
+      "title": "L'huile de menthe poivrée réduirait la tension artérielle de 8,48 mmHg dans une petite étude",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0344538",
+      "hn": "https://news.ycombinator.com/item?id=49420530",
+      "points": 146,
+      "comments": 71,
+      "summary": "Un essai randomisé publié dans PLOS ONE (20 participants, 2 abandons) rapporte qu'une supplémentation de 50 µL d'huile de menthe poivrée diluée dans l'eau pendant 20 jours réduit la tension systolique de 8,48 mmHg en moyenne. Les commentateurs, sceptiques, notent qu'une méta-analyse existante ne trouve qu'un effet groupé de -1,2 mmHg — sept fois moins — et que la baisse du tour de taille dans le groupe traité suggère des facteurs confondants d'hygiène de vie. Le mécanisme évoqué : le menthol agirait comme un inhibiteur calcique naturel provoquant une vasodilatation."
+    },
+    {
+      "title": "Nostr, un bien commun de communication inclusif ?",
+      "url": "https://nostr.org/",
+      "hn": "https://news.ycombinator.com/item?id=49399722",
+      "points": 118,
+      "comments": 42,
+      "summary": "Le site officiel de Nostr présente ce protocole décentralisé où l'identité repose sur une paire de clés cryptographiques et où les messages transitent par des relais indépendants, sans serveur central. Les critiques pointent l'absence de relayage entre relais, qui force à « mitrailler » ses messages vers de nombreux serveurs et recrée des pressions centralisatrices. Le débat le plus vif porte sur l'ironie du titre : un écosystème dominé par les maximalistes Bitcoin et les paiements Lightning peut-il vraiment se dire inclusif ?"
+    },
+    {
+      "title": "Les nouveautés d'Emacs 31.1",
+      "url": "https://www.masteringemacs.org/article/whats-new-in-emacs-311",
+      "hn": "https://news.ycombinator.com/item?id=49419252",
+      "points": 111,
+      "comments": 23,
+      "summary": "Mastering Emacs détaille la nouvelle version : retour du navigateur intégré xwidget-webkit (cassé depuis Emacs 29), intégration Tree-sitter améliorée avec installation automatique des grammaires, nouveau répertoire user-lisp/ pour du code personnel chargé paresseusement, et progrès d'Eglot pour le LSP. L'accueil est enthousiaste : entre Tree-sitter et Eglot, plusieurs utilisateurs estiment ne plus rien envier aux autres éditeurs. Les LLM s'invitent dans la discussion, gptel étant cité comme accélérateur pour personnaliser son environnement en Elisp."
+    },
+    {
+      "title": "Paul Graham : comment les universités devraient préparer les fondateurs",
+      "url": "https://paulgraham.com/prepare.html",
+      "hn": "https://news.ycombinator.com/item?id=49428121",
+      "points": 101,
+      "comments": 126,
+      "summary": "Dans son nouvel essai, Paul Graham plaide pour des cursus allégés laissant aux étudiants ambitieux du temps pour leurs projets personnels, car « le plus dur dans une startup, c'est le produit : savoir quoi construire et savoir le construire ». La réception est frondeuse : les commentateurs objectent que l'université sert bien d'autres carrières que l'entrepreneuriat, que les domaines pointus comme les batteries exigent une formation rigoureuse, et que la plupart des startups échouent. Les plus critiques y voient surtout le plaidoyer d'un investisseur pour ses propres intérêts."
+    }
+  ]
+}
