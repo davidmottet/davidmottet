@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-27",
+  "title": "Apple grave en 2 nm, OpenAI défie Nvidia, X fait tomber Nitter",
+  "intro": "Journée dominée par le silicium : Apple dévoile sa puce M6 gravée en 2 nm et un M5 Ultra à quatre dies pour le nouveau Mac Studio, pendant qu'OpenAI présente Jalapeño, un ASIC d'inférence conçu avec Broadcom qui prétend surpasser Nvidia. L'autre onde de choc est juridique : X Corp a fait fermer Nitter et XCancel par mise en demeure, relançant le débat sur le contrôle des plateformes. En marge, la FDA autorise un premier capteur combiné glucose-cétones chez Abbott, et un chercheur démontre que l'authentification C2PA des photos ne résiste pas à un téléphone Android rooté.",
+  "items": [
+    {
+      "title": "Apple présente le M6 et le M5 Ultra, un grand bond pour le calcul IA",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "hn": "https://news.ycombinator.com/item?id=49433292",
+      "points": 1112,
+      "comments": 1067,
+      "summary": "Le M6 est la première puce Apple gravée en 2 nm (12 cœurs CPU, jusqu'à 32 Go de mémoire unifiée), tandis que le M5 Ultra inaugure une architecture à quatre dies via UltraFusion : jusqu'à 36 cœurs CPU, 80 cœurs GPU, 512 Go de mémoire unifiée et 1,2 To/s de bande passante, avec 4,5 fois le calcul GPU pour l'IA du M3 Ultra. Dans les commentaires, le débat glisse vite du matériel vers le logiciel : beaucoup estiment que la lourdeur croissante de macOS et des applications engloutit les gains matériels, certains citant Casey Muratori pour qui le code moderne a effacé 15 à 20 ans de progrès des processeurs."
+    },
+    {
+      "title": "Nitter et XCancel ferment après des mises en demeure de X Corp",
+      "url": "https://github.com/zedeus/nitter/issues/1442",
+      "hn": "https://news.ycombinator.com/item?id=49437283",
+      "points": 884,
+      "comments": 728,
+      "summary": "Le 24 août, X Corp a envoyé des mises en demeure au créateur de Nitter (Zedeus) et à plusieurs opérateurs d'instances, invoquant un contournement illégal de son API, le Texas Harmful Access by Computer Act et le Lanham Act, avec ultimatum au lendemain 17 h. Nitter.net est hors ligne, le développement est suspendu le temps de consulter des avocats, et XCancel, qui reposait sur la même technologie, est tombé avec. Les 728 commentaires débattent du droit d'une plateforme privée à verrouiller des contenus devenus quasi-infrastructure publique (alertes d'urgence, communication des administrations), certains réclamant une régulation, d'autres le retour aux sites web, flux RSS et réseaux fédérés."
+    },
+    {
+      "title": "Nouveau Mac Studio avec M5 Max et M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+      "hn": "https://news.ycombinator.com/item?id=49433316",
+      "points": 763,
+      "comments": 502,
+      "summary": "Le Mac Studio passe au M5 Max (2 499 $) et au M5 Ultra (5 499 $), avec jusqu'à 512 Go de mémoire unifiée, Thunderbolt 5, Wi-Fi 7 et des performances IA annoncées jusqu'à 4,3 fois supérieures ; précommandes le 25 août, disponibilité le 22 septembre. Apple a aussi annoncé un nouveau Mac mini animé par le M6 ou le M5 Pro. Sur HN, la mémoire unifiée géante fait du Studio une machine de choix pour l'inférence locale de grands modèles (un utilisateur évoque 20 tokens/s de génération sur DeepSeek), et un long fil oppose poste fixe accessible à distance et MacBook Pro nomade."
+    },
+    {
+      "title": "OpenAI Jalapeño : meilleur que le Blackwell de Nvidia ?",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "hn": "https://news.ycombinator.com/item?id=49434378",
+      "points": 462,
+      "comments": 295,
+      "summary": "SemiAnalysis détaille Jalapeño, l'ASIC d'inférence conçu par OpenAI avec Broadcom : HBM4 à 15,4 To/s, formats MXFP4, 700 W de TDP, plus de 700 tokens/s par utilisateur revendiqués sur DeepSeek R1, montée en production courant 2027, et un langage de kernels maison, Gluon, bâti sur Triton. L'article lui-même précise que tous les chiffres viennent d'OpenAI, et les commentaires sont acerbes : beaucoup y voient un communiqué de presse déguisé relevant du journalisme d'accès, pointent l'absence des TPU de Google dans les comparaisons et rappellent que c'est le coût par token, pas la performance brute, qui décidera."
+    },
+    {
+      "title": "La FDA autorise le premier capteur qui suit en continu glucose et cétones",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+      "hn": "https://news.ycombinator.com/item?id=49439017",
+      "points": 375,
+      "comments": 186,
+      "summary": "La FDA a autorisé le Libre Duo 10 Day d'Abbott, premier capteur portable mesurant chaque minute glucose et cétones dans le liquide interstitiel, avec alertes automatiques pour prévenir l'acidocétose diabétique chez les patients dès 2 ans ; plus de 600 participants ont été suivis dans six essais cliniques. Le fil HN s'ouvre sur des hommages à Dan Kaminsky, figure de la sécurité informatique morte d'une acidocétose, et débat ensuite des usages hospitaliers (réanimation, chirurgie cardiaque), de l'intérêt réel du suivi du glucose chez les non-diabétiques et surtout du prix et de la couverture d'assurance, condition de l'impact réel."
+    },
+    {
+      "title": "Les caméras C2PA ne survivent pas au contact de la réalité",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "hn": "https://news.ycombinator.com/item?id=49439499",
+      "points": 144,
+      "comments": 81,
+      "summary": "David Buchanan démontre que la signature cryptographique C2PA, censée prouver qu'une photo sort d'un vrai appareil, s'effondre sur Android : via une injection de fautes DRAM ou l'exploit un-clic CVE-2026-43499 sur des Pixel à jour, il obtient root et fait signer comme authentiques une grenouille générée par IA et une vidéo YouTube. Sa conclusion, volontairement provocatrice : l'architecture reposant sur Key Attestation et Play Integrity est irréparable en l'état, car les failles matérielles sont permanentes et les exploits sortent plus vite que les correctifs — un coup dur pour la provenance des contenus à l'ère des générateurs d'images."
+    },
+    {
+      "title": "La pêche à l'explosif ravage les récifs coralliens d'Indonésie",
+      "url": "https://e360.yale.edu/digest/bomb-fishing-coral-reefs",
+      "hn": "https://news.ycombinator.com/item?id=49434820",
+      "points": 312,
+      "comments": 160,
+      "summary": "Dans l'archipel de Spermonde, des chercheurs ont enregistré plus de 3 500 explosions en 3 600 heures d'écoute, soit une bombe toutes les 62 minutes : chaque charge rase environ 18 m² de récif et 75 % du corail de la zone a disparu depuis 1990. La pratique, interdite mais documentée dans 34 pays, serait la première cause de perte récifale locale — et, contrairement au réchauffement, elle est réversible si elle cesse. Les commentaires débattent de la responsabilité (pauvreté ou profit, l'article penchant pour des pêcheurs à revenus moyens) et citent la Thaïlande, qui a éradiqué la pratique sous pression des sanctions européennes et américaines."
+    },
+    {
+      "title": "La singularité d'un trou noir serait une surface, pas un point",
+      "url": "https://arxiv.org/abs/2608.21590",
+      "hn": "https://news.ycombinator.com/item?id=49437210",
+      "points": 233,
+      "comments": 173,
+      "summary": "Un article sur arXiv soutient que deux observateurs tombant dans un trou noir selon des trajectoires angulaires différentes perdent tout contact causal bien avant le centre : la singularité serait donc une surface étendue, à deux dimensions, où résideraient les états quantiques du trou noir, et non un point. Sur HN, des physiciens tempèrent : le résultat serait connu de quiconque a suivi un cours avancé de relativité générale, la métrique de Kerr prédit déjà un anneau singulier, et plusieurs rappellent que la singularité marque surtout l'endroit où la théorie cesse d'être valide, gravité quantique oblige."
+    },
+    {
+      "title": "Construire un bureau de jardin : le chantier et les coûts détaillés",
+      "url": "https://www.imkylelambert.com/articles/building-a-backyard-office-the-build-and-cost-breakdown",
+      "hn": "https://news.ycombinator.com/item?id=49434645",
+      "points": 335,
+      "comments": 211,
+      "summary": "Kyle Lambert a transformé un abri Tuff Shed de 8 pieds sur 10 en vrai bureau à Portland pour 19 478 $ au total : 6 148 $ pour la coque, 4 350 $ d'électricité, 2 300 $ de climatisation réversible, 2 000 $ de dalle béton, plus de grandes fenêtres sur mesure pour ne pas se sentir dans une cabane. Le fil HN dispute chaque ligne du budget — certains ont posé leur mini-split eux-mêmes pour moins de 1 000 $ — pèse le coût face à des années de coworking, et note qu'à Portland les règles de 2024 imposent désormais un permis pour un bâtiment chauffé à usage professionnel."
+    },
+    {
+      "title": "Quand str.lower() devient une faille de sécurité en Python",
+      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "hn": "https://news.ycombinator.com/item?id=49440410",
+      "points": 113,
+      "comments": 46,
+      "summary": "Seth Larson explique la CVE-2026-17084 : le traitement IDNA 2003 des noms de domaine internationalisés exige les règles de casse d'Unicode 3.2.0, mais str.lower() applique la version d'Unicode avec laquelle Python a été compilé, d'où des divergences (comme le caractère cherokee U+13A0) exploitables en SSRF ou usurpation DNS quand deux composants d'une même pile interprètent le nom différemment. Le correctif ajoute des exceptions pour retrouver le comportement d'Unicode 3.2.0, et l'auteur recommande le paquet idna (IDNA 2008). Les commentaires se divisent : vraie vulnérabilité de différentiel d'analyse ou simple bug de conformité surclassé en CVE ?"
+    },
+    {
+      "title": "Des exécutables interrogeables en SQL",
+      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
+      "hn": "https://news.ycombinator.com/item?id=49442589",
+      "points": 154,
+      "comments": 28,
+      "summary": "Farid Zakaria pousse une idée singulière : stocker un programme dans une base SQLite (format « SELF »), qu'un interpréteur enregistré via binfmt_misc charge en mappant les segments lus depuis une table avant de sauter au point d'entrée ; le programme peut ensuite s'ouvrir lui-même et interroger son propre contenu en SQL. Journaux, configuration et état vivent alors transactionnellement dans le binaire : déployer devient copier un seul fichier, auditer une mise à jour revient à un sqldiff. Un serveur web de démonstration stocke ses visites dans son propre exécutable tout en le servant."
+    },
+    {
+      "title": "Les tooltips ont besoin d'un délai — puis de savoir le sauter",
+      "url": "https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/",
+      "hn": "https://news.ycombinator.com/item?id=49436786",
+      "points": 170,
+      "comments": 45,
+      "summary": "Un plaidoyer UX précis : une infobulle doit attendre environ 200 ms pour filtrer les survols accidentels, mais une fois la première ouverte, la page devient « chaude » et les suivantes doivent s'afficher instantanément pendant une fenêtre de 300 ms, avant retour à l'état froid. L'article détaille l'implémentation en React (contexte partagé, timers dans des refs, transition-delay à 0 ms), un raffinement que les commentateurs rapprochent du comportement natif des menus des systèmes d'exploitation, souvent perdu dans les interfaces web."
+    }
+  ]
+}
