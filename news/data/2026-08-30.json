@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-30",
+  "title": "Le clavier reprend ses droits, htmx passe la 4.0 et la géopolitique s'invite dans le code",
+  "intro": "Journée où la technique et la politique s'entremêlent : un plaidoyer pour des interfaces pilotables au clavier et la sortie d'htmx 4.0 dominent le front du web, pendant que Washington sanctionne l'hébergeur militant italien Autistici/Inventati et qu'OpenAI coupe les vivres à Cursor après son rachat par SpaceX. Côté sécurité, un constat glaçant : à l'ère des agents IA, la simple rumeur d'une faille suffit à déclencher des attaques. En contrepoint plus léger, un iPhone virtuel en ligne de commande, une carte de navigation courbée façon Inception et un séparateur de pistes audio open source.",
+  "items": [
+    {
+      "title": "Les interfaces graphiques devraient être entièrement pilotables au clavier",
+      "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "hn": "https://news.ycombinator.com/item?id=49479837",
+      "points": 778,
+      "comments": 393,
+      "summary": "L'auteur soutient que l'avantage supposé des interfaces en mode texte (TUI) sur les GUI tient surtout à la mauvaise conception de ces dernières : les recommandations de GNOME stipulent déjà que « chaque action doit aussi être possible au clavier ». Les commentaires HN adhèrent massivement, invoquant l'« effet bateau de trottoir » — l'accessibilité profite à tous —, mais débattent du coût pour les petites équipes et s'écharpent sur les audits d'accessibilité par IA, accusés de menacer l'emploi de travailleurs handicapés spécialisés."
+    },
+    {
+      "title": "htmx 4.0 est sorti",
+      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "hn": "https://news.ycombinator.com/item?id=49478178",
+      "points": 640,
+      "comments": 160,
+      "summary": "Après huit mois de développement, htmx 4.0 modernise ses fondations : passage de XMLHttpRequest à fetch(), héritage d'attributs désormais explicite, événements renommés selon un schéma htmx:phase:action, swaps par « morphing » du DOM et nouvelle balise <hx-partial> pour les réponses multi-éléments. La version 2.x reste le tag npm « latest » pour ne forcer personne à migrer. Sur HN, on rejoue le match hypermedia contre SPA : simplicité côté serveur pour les uns, gestion d'état limitée pour les applications complexes selon les autres, le tout ponctué du gag récurrent des innombrables « CEO de htmx »."
+    },
+    {
+      "title": "Les États-Unis sanctionnent le collectif Autistici/Inventati",
+      "url": "https://www.inventati.org/",
+      "hn": "https://news.ycombinator.com/item?id=49477854",
+      "points": 576,
+      "comments": 565,
+      "summary": "Washington a désigné l'hébergeur associatif italien Autistici/Inventati — qui fournit e-mail, hébergement et outils de communication anonyme à des militants depuis 2001 — comme soutien au terrorisme, une mesure qualifiée d'inédite contre un simple fournisseur d'infrastructure. Le fil HN, très fourni, y voit un dangereux précédent : si héberger des outils d'anonymat vaut sanction, qu'en sera-t-il des développeurs d'I2P, de Monero ou de Signal ? Le débat porte sur la dérive des régimes de sanctions vers la répression de la dissidence sous couvert d'antiterrorisme."
+    },
+    {
+      "title": "Une carte courbée façon Inception pour la navigation GPS",
+      "url": "https://www.orbify.eu/demo/",
+      "hn": "https://news.ycombinator.com/item?id=49477564",
+      "points": 495,
+      "comments": 167,
+      "summary": "La société norvégienne Orbify démontre une navigation en « Gaussian splatting » où le paysage se courbe vers le haut à la manière du film Inception, censée montrer davantage de contexte sans quitter la route des yeux. La démo web, propulsée par le moteur PlayCanvas et une technologie de déformation en instance de brevet, se pilote au clavier et à la souris dans un environnement 3D reconstitué. Le score élevé sur HN témoigne de la fascination pour cette réinvention visuelle du guidage routier."
+    },
+    {
+      "title": "OpenAI coupe l'accès de Cursor à ses modèles après le rachat par SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "hn": "https://news.ycombinator.com/item?id=49486172",
+      "points": 493,
+      "comments": 252,
+      "summary": "OpenAI résiliera au 12 novembre 2026 le contrat qui fournissait ses modèles à l'assistant de programmation Cursor, invoquant une clause de changement de contrôle après l'acquisition par SpaceX. L'entreprise dit ne pas pouvoir « être confiante que SpaceX utilisera notre technologie dans le respect de nos conditions », citant les antécédents d'Elon Musk (rachat de Twitter, violations des CGU par xAI) et la protection de son modèle Astra. Les commentaires pointent l'ironie d'acteurs ayant aspiré le web sans permission qui brandissent désormais leurs CGU, et y voient surtout une manœuvre dans la course à la domination de l'IA."
+    },
+    {
+      "title": "La simple rumeur d'un bug suffit désormais à produire un exploit",
+      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "hn": "https://news.ycombinator.com/item?id=49480466",
+      "points": 307,
+      "comments": 110,
+      "summary": "Anil Madhavapeddy raconte qu'après l'ouverture d'une pull request publique corrigeant une faille de cohttp, ses serveurs ont reçu des sondes d'attaque en quelques minutes : à l'ère des agents IA, un indice vague suffit pour redécouvrir l'exploit, et le délai moyen d'exploitation serait devenu négatif (7 jours avant le correctif). Il plaide pour des correctifs développés en privé, des livraisons continues façon Chrome et des mitigations au niveau protocole. Sur HN, des mainteneurs témoignent d'un doublement des signalements de sécurité, entre vraies failles et faux positifs générés par IA, et pointent l'épuisement des ressources de l'open source."
+    },
+    {
+      "title": "Démarrer un iPhone virtuel via Virtualization.framework d'Apple",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "hn": "https://news.ycombinator.com/item?id=49485267",
+      "points": 246,
+      "comments": 71,
+      "summary": "vphone-cli est un outil en ligne de commande qui fait tourner de véritables instances d'iOS virtualisées sur Mac Apple Silicon, moyennant macOS 15+, Xcode et la désactivation partielle de SIP/AMFI pour obtenir les entitlements privés nécessaires. Contrairement au simulateur iOS, on obtient un vrai noyau débogable et un environnement jailbreakable. Les commentaires saluent l'intérêt pour la recherche en sécurité, s'interrogent sur les différences régionales d'iOS (UE, Japon) et parient sur la réaction d'Apple, entre risque de fermes à clics et verrouillage à venir."
+    },
+    {
+      "title": "« J'ai accidentellement transformé la mémoire d'un LLM en analyse de programme »",
+      "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+      "hn": "https://news.ycombinator.com/item?id=49485416",
+      "points": 132,
+      "comments": 27,
+      "summary": "L'auteur a construit Lemmalog, un moteur Datalog qui stocke la connaissance d'un agent LLM sous forme de faits structurés avec provenance et invalidation automatique quand une prémisse change, plutôt que de relire l'historique de conversation. Sur les benchmarks LongMemEval et LoCoMo, le système atteint des scores F1 compétitifs (0,463 et 0,533) avec un contexte environ 38 fois plus petit que le prompt intégral. L'idée clé : la recherche de vulnérabilités ressemble à l'analyse statique de programmes — faits, règles, dérivations et points fixes."
+    },
+    {
+      "title": "La cour d'appel du 9e circuit donne raison aux États contre Kalshi",
+      "url": "https://azmirror.com/2026/08/28/9th-circuit-sides-with-states-in-kalshi-gambling-fight-potentially-reviving-arizonas-prosecution/",
+      "hn": "https://news.ycombinator.com/item?id=49485452",
+      "points": 126,
+      "comments": 100,
+      "summary": "Le 9e circuit a jugé que les paris sportifs ne sont pas des « swaps » protégés par le Commodity Exchange Act : une « occurrence » désigne le fait qu'un événement ait lieu, pas son résultat, et « le Congrès n'a pas passé au bulldozer toutes les régulations des paris sportifs ». La décision contredit l'injonction fédérale qui bloquait l'Arizona et pourrait relancer les 20 chefs d'accusation contre la plateforme de marchés prédictifs. Un coup dur pour le modèle de Kalshi, qui misait sur la régulation fédérale des matières premières pour contourner les lois des États sur les jeux d'argent."
+    },
+    {
+      "title": "La liste royale sumérienne s'aligne-t-elle sur les événements paléoclimatiques ?",
+      "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
+      "hn": "https://news.ycombinator.com/item?id=49485532",
+      "points": 98,
+      "comments": 38,
+      "summary": "L'étude teste statistiquement l'hypothèse selon laquelle les règnes antédiluviens démesurés de la liste royale sumérienne coderaient de vrais événements climatiques : chronologie rééchelonnée sur 241 200 ans, ancrée à environ 11 600 ans avant le présent, comparée par noyaux gaussiens à un catalogue d'événements quaternaires. Verdict : aucune corrélation significative, les p-values restent élevées quels que soient les paramètres. Une démarche appréciée sur HN pour son honnêteté — l'auteur publie un résultat négatif avec l'outil interactif permettant de le vérifier."
+    },
+    {
+      "title": "TurboKV : un magasin clé-valeur en Rust revendiquant des débits très élevés",
+      "url": "https://github.com/kingroryg/turbokv",
+      "hn": "https://news.ycombinator.com/item?id=49486334",
+      "points": 90,
+      "comments": 32,
+      "summary": "TurboKV est une base clé-valeur embarquée et asynchrone en Rust, à architecture LSM-tree, avec lots atomiques, parcours ordonnés par plage, compression et compaction en arrière-plan. Elle propose trois modes de durabilité — fast sans journal, durable avec reprise après crash, paranoid avec synchronisation avant acquittement — et annonce près de 3 millions de clés par seconde en mode fast. Un nouveau venu dans un espace déjà occupé par RocksDB, sled ou redb, où les chiffres de benchmarks font toujours discuter."
+    },
+    {
+      "title": "StemDeck, un séparateur de pistes audio par IA, gratuit, open source et local",
+      "url": "https://github.com/stemdeckapp/stemdeck",
+      "hn": "https://news.ycombinator.com/item?id=49486081",
+      "points": 86,
+      "comments": 18,
+      "summary": "StemDeck isole jusqu'à six pistes d'un morceau — voix, batterie, basse, guitare, piano et le reste — grâce au réseau de neurones Demucs de Meta AI, entièrement en local, sans compte ni téléversement. L'application tourne sur Windows, macOS et Linux et offre un éditeur de formes d'onde façon DAW avec export des stems en WAV, individuellement ou en mixages personnalisés. Une alternative libre aux services en ligne payants de séparation de sources, appréciée des musiciens et des DJ."
+    }
+  ]
+}

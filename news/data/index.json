@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-08-30",
+      "title": "Le clavier reprend ses droits, htmx passe la 4.0 et la géopolitique s'invite dans le code",
+      "count": 12
+    },
+    {
       "date": "2026-08-29",
       "title": "Cloudflare libère 100 téraoctets de RAM, les petits modèles s'imposent et le rétro-gaming renaît",
       "count": 12
