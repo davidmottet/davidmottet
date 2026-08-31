@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-31",
+  "title": "Python à tous les étages, Linux force les murs d'Apple et la surveillance se glisse dans l'assurance auto",
+  "intro": "Journée très Python sur Hacker News : CPython accueille officiellement RISC-V pendant qu'EVE Online entame la migration de ses 2,4 millions de lignes vers Python 3. Le monde du libre est à la fête, entre Tether qui apporte iMessage sur Linux, FreeCORE qui reprend le flambeau de TrueNAS Core et la Californie qui exempte les distributions open source de sa loi de vérification d'âge. En contrepoint, le Texas illustre la banalisation de la surveillance en finançant des milliers de caméras Flock par un dollar prélevé sur chaque police d'assurance auto, et Tencent avance ses pions dans la course à l'IA avec l'aperçu de Hy4.",
+  "items": [
+    {
+      "title": "Tether : iMessage et SMS enfin accessibles depuis Linux",
+      "url": "https://zackbartel.com/blog/2026/08/tether/",
+      "hn": "https://news.ycombinator.com/item?id=49415386",
+      "points": 451,
+      "comments": 200,
+      "summary": "Tether relie un iPhone à un bureau Linux via Bluetooth et Wi-Fi local grâce à une application « courtier » installée sur le téléphone, avec chiffrement de bout en bout (mTLS sur Wi-Fi). Le projet comble un vide assumé par KDE Connect, qui refuse explicitement d'implémenter iMessage et les SMS côté iOS. Les commentaires débattent du passage de la licence GPL à MIT décidé par l'auteur, entre adoption plus large et crainte d'une récupération commerciale, et saluent une brèche dans le jardin clos d'Apple."
+    },
+    {
+      "title": "EVE Online entame sa migration vers Python 3",
+      "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+      "hn": "https://news.ycombinator.com/item?id=49433328",
+      "points": 394,
+      "comments": 218,
+      "summary": "CCP Games explique comment migrer les 2,4 millions de lignes de code du MMO vers Python 3 : « très prudemment, et en plusieurs étapes », plus de cinq ans après la fin de vie de Python 2. Les commentateurs soulignent que les bases de code de jeux manquent cruellement de tests automatisés, ce qui rend l'exercice périlleux même avec l'aide d'outils modernes. La discussion vire à la nostalgie : vétérans regrettant l'économie ultra-libérale et le PvP à haut risque des débuts, et constat plus large du déclin des MMO persistants."
+    },
+    {
+      "title": "Tencent publie un aperçu de son modèle Hy4",
+      "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "hn": "https://news.ycombinator.com/item?id=49492632",
+      "points": 282,
+      "comments": 239,
+      "summary": "Tencent ouvre les poids de Hy4 Preview, un modèle qui aurait participé pour la première fois à sa propre mise au point en optimisant automatiquement méthodes d'entraînement, stratégies de données et cadres d'évaluation. Le modèle séduit par ses coûts, notamment un cache facturé 5 % du prix des tokens là où la concurrence prend 10 à 20 %, et des volumes déjà massifs sur OpenRouter. Les commentaires débattent de ses traces de raisonnement en style télégraphique — économie de tokens réelle ou raisonnement au rabais — et constatent que la Chine a comblé son retard en IA plus vite que prévu."
+    },
+    {
+      "title": "Au Texas, un dollar sur chaque assurance auto finance des caméras Flock",
+      "url": "https://www.texastribune.org/2026/08/28/texas-flock-cameras-auto-insurance-fee-mvcpa-grants/",
+      "hn": "https://news.ycombinator.com/item?id=49494182",
+      "points": 289,
+      "comments": 164,
+      "summary": "Le Texas Tribune révèle qu'une taxe d'un dollar par police d'assurance auto, votée en 2023 contre le vol de pots catalytiques, a financé au moins 3 200 caméras de lecture de plaques Flock via une agence contrôlée par des nommés du gouverneur Abbott. Les partisans y voient un outil efficace contre le vol de véhicules là où la police ne suit plus. Les critiques invoquent le quatrième amendement et l'arrêt Carpenter v. United States de 2018 sur la surveillance électronique sans mandat, et dénoncent un détournement de l'objectif initial de la taxe."
+    },
+    {
+      "title": "La Californie exempte Linux et l'open source de sa loi de vérification d'âge",
+      "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+      "hn": "https://news.ycombinator.com/item?id=49495372",
+      "points": 239,
+      "comments": 214,
+      "summary": "Les législateurs californiens ont voté à l'unanimité un amendement excluant de la loi AB 1856 sur la vérification d'âge tout logiciel dont la licence permet de copier, redistribuer et modifier le code — ce qui couvre les distributions sous GPL, MIT, BSD ou Apache comme Debian, Fedora ou Arch. Les commentateurs y voient une échappatoire évidente : les adolescents un peu techniques passeront par Linux pendant que les utilisateurs de Windows et macOS subiront les contrôles. Le débat porte aussi sur les zones grises (WSL, conteneurs, Android) et sur la légitimité même de ces lois de vérification d'âge."
+    },
+    {
+      "title": "Bug Blindness : pourquoi nous ne voyons plus les bugs",
+      "url": "https://danluu.com/bug-blind/",
+      "hn": "https://news.ycombinator.com/item?id=49494520",
+      "points": 246,
+      "comments": 132,
+      "summary": "Dan Luu soutient que la plupart des gens ne remarquent plus les défauts logiciels parce qu'ils développent inconsciemment des contournements — une « cécité aux bugs » alimentée par l'habitude, du spam des moteurs de recherche aux logiciels d'entreprise détestés comme Blackboard. Il estime que cette cécité se soigne et que les outils modernes rendent l'amélioration de la qualité plus accessible, à condition d'admettre que les problèmes existent. Les commentaires reprochent à l'auteur de confondre bug et mauvais design, et pointent le vrai nœud du logiciel d'entreprise : celui qui achète n'est pas celui qui l'utilise, ce qui supprime toute pression du marché sur la qualité."
+    },
+    {
+      "title": "FreeCORE : la communauté reprend TrueNAS Core abandonné",
+      "url": "https://freecore.org/",
+      "hn": "https://news.ycombinator.com/item?id=49494856",
+      "points": 171,
+      "comments": 98,
+      "summary": "FreeCORE est un fork communautaire de TrueNAS Core, la version FreeBSD du système de stockage réseau, dont l'éditeur iXsystems a arrêté le développement au profit de TrueNAS Scale basé sur Debian. La discussion s'enflamme sur le fait que TrueNAS a cessé de publier ses scripts de build, rendant volontairement difficile la compilation de son code pourtant open source. Entre défenseurs du « les développeurs méritent d'être payés » et ceux qui dénoncent une trahison de l'esprit du libre, le fil rejoue aussi l'éternel match FreeBSD contre Linux pour les serveurs de stockage."
+    },
+    {
+      "title": "SQLite comme base de données documentaire",
+      "url": "https://dgl.cx/2020/06/sqlite-json-support",
+      "hn": "https://news.ycombinator.com/item?id=49426995",
+      "points": 250,
+      "comments": 49,
+      "summary": "Cet article de 2020 montre comment les colonnes générées de SQLite (version 3.31) transforment le moteur embarqué en base documentaire : on stocke du JSON brut, on le valide à l'insertion via json_extract, puis on ajoute progressivement des colonnes virtuelles indexées selon les besoins. L'approche séduit pour des cas comme le stockage de webhooks, sans infrastructure séparée type PostgreSQL ou Elasticsearch. Les commentaires comparent colonnes générées et vues (seules les premières sont indexables dans SQLite), partagent des montages avec FTS5 et index vectoriels, et débattent de la frontière entre données relationnelles et hiérarchiques."
+    },
+    {
+      "title": "Le télescope spatial Nancy Grace Roman lancé vers L2",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/",
+      "hn": "https://news.ycombinator.com/item?id=49490870",
+      "points": 190,
+      "comments": 76,
+      "summary": "Le télescope Roman de la NASA, lancé le 30 août sur une Falcon Heavy, offrira un champ de vision bien plus large que Hubble ou James Webb — chaque image couvrira plus que la pleine Lune — et transmettra environ 1,5 téraoctet de données par jour depuis le point de Lagrange L2 à 500 Mbps. Les commentateurs saluent un projet livré en avance et sous le budget, en partie grâce à un miroir hérité d'un satellite espion reconverti. Le fil déplore en revanche la coupe budgétaire du futur Habitable Worlds Observatory, passé de 150 à 5 millions de dollars, et s'écharpe sur la part de mérite de SpaceX."
+    },
+    {
+      "title": "Se calibrer avant d'accélérer : le biais pour l'action dans un nouveau poste",
+      "url": "https://tucker.wales/writing/bias-towards-action/",
+      "hn": "https://news.ycombinator.com/item?id=49491714",
+      "points": 174,
+      "comments": 60,
+      "summary": "L'article défend l'idée qu'un nouvel arrivant — surtout un manager — doit d'abord construire du contexte par l'observation et les petites victoires avant de lancer de grands chantiers, plutôt que céder au biais pour l'action. Les commentaires convoquent la clôture de Chesterton (comprendre pourquoi un système existe avant de le démonter) et recommandent de commencer par réparer la documentation et les runbooks. Piquant du fil : soupçonné d'avoir été écrit par une IA, l'auteur admet avoir dicté le texte puis l'avoir fait reformuler par un modèle, relançant le débat sur l'écriture assistée comme signal négatif."
+    },
+    {
+      "title": "RISC-V officiellement supporté par CPython",
+      "url": "https://blog.python.org/2026/08/riscv-now-officially-supported/",
+      "hn": "https://news.ycombinator.com/item?id=49425252",
+      "points": 143,
+      "comments": 28,
+      "summary": "CPython fait de riscv64-unknown-linux-gnu (base RV64GC) une plateforme officiellement supportée de niveau 3, une étape symbolique pour l'architecture ouverte. Les commentateurs tempèrent : le tier 3 autorise toujours les casses sans bloquer les releases, et s'interrogent sur la prise en charge des extensions vectorielles des nouveaux cœurs RVA23. Le fil pointe aussi les incohérences du système de tiers de Python, où Windows 32 bits reste en tier 1 quand ARM64 Windows et WebAssembly attendent encore, et note l'arrivée de matériel RISC-V de classe CI qui rendra la montée en tier crédible."
+    },
+    {
+      "title": "Souris de glacier : les mystérieuses boules de mousse voyageuses",
+      "url": "https://en.wikipedia.org/wiki/Glacier_mice",
+      "hn": "https://news.ycombinator.com/item?id=49424320",
+      "points": 293,
+      "comments": 59,
+      "summary": "Les « souris de glacier » (jökla-mýs en islandais) sont des boules de mousse qui se forment et se déplacent lentement à la surface des glaciers, observées de l'Alaska à l'Ouganda en passant par l'Islande et le Svalbard. Leur mouvement collectif, encore mal expliqué, fascine les commentateurs, dont l'un s'étonne qu'aucun timelapse sérieux n'existe pour le documenter. Le fil, léger pour un dimanche, digresse sur les pierres mouvantes de la Vallée de la Mort et sur la poésie des noms islandais."
+    }
+  ]
+}
