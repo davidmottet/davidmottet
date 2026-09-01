@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-01",
+  "title": "Les crawlers IA assiègent kernel.org, une fuite de 12 To ressuscite le vieux Steam et Haiku fête ses 25 ans",
+  "intro": "Hacker News s'inquiète ce matin du coût bien réel des scrapers d'IA : l'infrastructure de kernel.org encaisse des millions de requêtes de bots par jour, et les défenses par preuve de travail montrent leurs limites. En contrepoint, la journée célèbre la patience artisanale sous toutes ses formes : un guide de jeu des années 90 écrit mot à mot pour justifier son texte, des mémoires à tores magnétiques du Spacelab, une carte de visite électronique alimentée par NFC et des établis bricolés à partir d'étagères IKEA. Côté logiciel, Haiku publie sa première bêta en deux ans à l'approche de ses 25 ans, pendant qu'une gigantesque fuite d'archives Steam ravit les historiens du jeu vidéo.",
+  "items": [
+    {
+      "title": "Creepy Crawlies : les scrapers d'IA écrasent l'infrastructure de kernel.org",
+      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "hn": "https://news.ycombinator.com/item?id=49491791",
+      "points": 1135,
+      "comments": 563,
+      "summary": "Konstantin Ryabitsev, administrateur de l'infrastructure du noyau Linux, documente l'impact des scrapers d'entraînement d'IA sur git.kernel.org : environ 6 millions de requêtes par jour, dont 98 % estimées provenir de bots qui moissonnent les rendus HTML des commits au lieu de simplement cloner les dépôts, consommant près de 20 % de la capacité de 90 cœurs répartie sur cinq nœuds. Malgré le défi de calcul Anubis, un tiers des scrapers résolvent désormais les puzzles pour passer. Les commentaires s'accordent sur l'inefficacité crasse de ces bots mais débattent de la parade : la preuve de travail ne tiendra pas face à des acteurs équipés d'ASIC, et certains plaident plutôt pour la limitation par IP et la détection comportementale."
+    },
+    {
+      "title": "« J'ai juste choisi mes mots avec soin » : la justification parfaite d'un guide de Super Metroid",
+      "url": "https://unsung.aresluna.org/i-just-chose-words-carefully/",
+      "hn": "https://news.ycombinator.com/item?id=49503601",
+      "points": 752,
+      "comments": 181,
+      "summary": "L'article exhume un guide de Super Metroid des années 90 dont l'auteur a réécrit 17 000 mots à la main pour que chaque ligne de texte brut se termine exactement à la marge droite, sans espaces ajoutés ni césures : « j'ai juste choisi mes mots avec soin ». Le billet y voit un parallèle avec le travail éditorial des livres imprimés. Le fil HN partage d'autres exemples de contraintes créatives, comme les blocs de commentaires de trois lignes de Laravel, mais débat de la frontière entre design délibéré et « TOC militarisé » : la symétrie visuelle vaut-elle qu'on sacrifie la formulation naturelle ?"
+    },
+    {
+      "title": "Haiku R1/beta6 est disponible",
+      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+      "hn": "https://news.ycombinator.com/item?id=49499867",
+      "points": 314,
+      "comments": 88,
+      "summary": "Première bêta en deux ans pour le système d'exploitation inspiré de BeOS, publiée à une semaine du 25e anniversaire du projet. Au menu : beaucoup plus d'applications fonctionnelles dont un portage de Firefox, un portage du langage Go, la virtualisation NVMM pour QEMU, des optimisations de performances, davantage de pilotes matériels et la poursuite du travail sur ARM64. Un projet communautaire qui continue d'avancer patiemment là où BeOS s'était arrêté en 2001."
+    },
+    {
+      "title": "Détourner des meubles IKEA pour se construire des établis",
+      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
+      "hn": "https://news.ycombinator.com/item?id=49497810",
+      "points": 313,
+      "comments": 221,
+      "summary": "L'auteur transforme des étagères IKEA Kallax en établis d'atelier à l'aide de panneaux MDF, de plaques de caoutchouc et d'un plateau de bureau récupéré, pour environ 130 euros pièce. Le billet détaille la planification, gabarits de perçage compris, et l'itération jusqu'à un résultat qui tient la route esthétiquement et mécaniquement. Un projet qui parle à la longue tradition du « IKEA hacking », comme en témoignent les 221 commentaires du fil."
+    },
+    {
+      "title": "Comprendre ChatGPT Work, décortiqué par Simon Willison",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "hn": "https://news.ycombinator.com/item?id=49504625",
+      "points": 176,
+      "comments": 72,
+      "summary": "Simon Willison démêle l'offre ChatGPT Work d'OpenAI, déclinée en Work Cloud et Work Local : exécution de code avec accès Internet, navigateur Chrome headless, stockage persistant, déploiement de sites, soit 223 outils et 44 compétences recensés. Il alerte sur les risques d'injection de prompt et la « triade fatale » des systèmes agentiques. Sur HN, on reconnaît l'utilité réelle pour les tâches ingrates, mais on s'écharpe : progrès ou théâtre de productivité façon loi de Parkinson ? Les sceptiques pointent surtout le danger de confier passeports, e-mails et contrôle système à un agent."
+    },
+    {
+      "title": "Show HN : une carte de visite PCB à récupération d'énergie NFC avec microcontrôleur",
+      "url": "https://wilsonharper.net/projects/businesscard/",
+      "hn": "https://news.ycombinator.com/item?id=49478426",
+      "points": 166,
+      "comments": 17,
+      "summary": "Wilson Harper a conçu une carte de visite au format carte bancaire qui allume 21 LED animées en puisant son énergie dans le champ NFC d'un smartphone, sans batterie. Une puce NXP NTAG I2C Plus récolte l'énergie, un ATtiny816 pilote les LED en Charlieplexing, et l'antenne spirale maison est accordée à 13,56 MHz. Un bel exercice d'électronique contrainte, jusqu'au routage des pistes pensé pour limiter les interférences tout en dessinant le verso de la carte."
+    },
+    {
+      "title": "Il faut cinq services cloud pour entendre ma sonnette",
+      "url": "https://blog.vghaisas.com/rube-goldberg-doorbell/",
+      "hn": "https://news.ycombinator.com/item?id=49480091",
+      "points": 147,
+      "comments": 134,
+      "summary": "Une sonnette connectée Blink qui ne notifie que les téléphones, et voilà l'auteur contraint d'enchaîner Alexa, Samsung SmartThings, un VPS, Home Assistant et les enceintes Google Home pour que la sonnette s'entende dans la maison. Le billet assume l'usine à gaz « sur-ingénierée mais fonctionnelle », avec une chute ironique : Samsung veut désormais faire payer l'accès à l'API SmartThings, menaçant tout l'édifice. Une illustration, très commentée, de la fragilité des maisons connectées bâties sur des clouds propriétaires."
+    },
+    {
+      "title": "Un « teraleak » Steam de 12 To exhume plus d'une décennie d'histoire du jeu PC",
+      "url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history/",
+      "hn": "https://news.ycombinator.com/item?id=49506182",
+      "points": 93,
+      "comments": 8,
+      "summary": "Une archive de 12 téraoctets du contenu Steam2 (2003-2013) a fait surface : presque toutes les versions de jeux téléversées sur les serveurs de Valve à l'époque, y compris des prototypes non publiés, des bêtas et du contenu coupé de Portal 2 ou de l'épisode 3 de Half-Life 2. Les données auraient été aspirées via une API publique non sécurisée, rendue obsolète par la migration vers SteamPipe en 2013. Une aubaine pour la préservation du jeu vidéo, mais un casse-tête juridique : Valve ne peut pas republier des contenus liés à des éditeurs tiers."
+    },
+    {
+      "title": "Un autocomplete à latence perçue nulle pour 240 millions de noms de domaine",
+      "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+      "hn": "https://news.ycombinator.com/item?id=49505219",
+      "points": 107,
+      "comments": 47,
+      "summary": "Ruurtjan Pul explique comment son service affiche des suggestions de domaines dès la frame suivante pour 99 % des frappes : le client précharge les résultats du caractère courant et des caractères probables dès le keydown, pour les afficher au keyup. Côté serveur, un trie en mémoire couvre le million de domaines les plus populaires et un index de blocs mappé en mémoire les 240 millions restants, avec un p99 d'environ 15 ms derrière nginx — largement dans le budget de 121 ms entre deux frappes."
+    },
+    {
+      "title": "Pourquoi l'open source, ça déchire : un nouveau pilote HDMI pour GPU Silicon Motion SM750",
+      "url": "https://github.com/KodeMunkie/sm750hdmifb",
+      "hn": "https://news.ycombinator.com/item?id=49501611",
+      "points": 107,
+      "comments": 36,
+      "summary": "Un pilote DRM/KMS expérimental pour Linux redonne vie à la carte graphique Silicon Motion SM750G10 avec sortie HDMI. Pour contourner l'étroitesse du lien PCIe 1.1 x1, l'auteur combine scanout RGB565 en 16 bits avec tramage, compression maison pour les écrans ultrawide et transferts DMA optimisés, obtenant des résolutions supérieures et un affichage plus fluide que l'ancien pilote framebuffer. L'exemple type de matériel délaissé que seul le code ouvert permet de faire progresser."
+    },
+    {
+      "title": "Des tores en orbite : la mémoire à tores magnétiques d'un ordinateur du Spacelab de 1980",
+      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+      "hn": "https://news.ycombinator.com/item?id=49502214",
+      "points": 104,
+      "comments": 17,
+      "summary": "Ken Shirriff dissèque le module de mémoire à tores d'un Mitra 125 MS, mini-ordinateur français embarqué dans le Spacelab de la navette spatiale : 128 Ko stockés dans de minuscules anneaux de ferrite, adressés par courants coïncidents, avec lignes de lecture anti-bruit et matrices de diodes. L'aérospatiale a conservé cette technologie bien après son abandon au sol, pour sa non-volatilité et sa résistance aux radiations. Une plongée soignée dans une architecture disparue."
+    },
+    {
+      "title": "OpenClaw 2.0, sorti « par accident »",
+      "url": "https://openclaw.ai/blog/openclaw-2-accidentally",
+      "hn": "https://news.ycombinator.com/item?id=49505310",
+      "points": 86,
+      "comments": 85,
+      "summary": "OpenClaw publie sa version 2.0, fruit de 933 contributeurs et de plus de 16 000 pull requests : un chantier de simplification de l'installation qui a fini par toucher tout le code, d'où le saut de version « accidentel ». Au programme : onboarding simplifié, application navigateur repensée et sessions cloud partagées « multijoueur ». Le fil HN est nettement plus tiède que le billet : beaucoup jugent que l'engouement est retombé depuis mars, questionnent les cas d'usage réels et les trous de sécurité, même si certains rappellent que le projet a défriché des fonctions reprises par ses concurrents."
+    }
+  ]
+}
