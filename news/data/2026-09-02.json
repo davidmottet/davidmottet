@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-02",
+  "title": "Une cabine téléphonique à Burning Man, des caméras qui écoutent les oiseaux et Apple débordé par la demande IA",
+  "intro": "Hacker News célèbre aujourd'hui le bricolage inspiré : une cabine téléphonique gratuite plantée en plein Burning Man, des caméras de surveillance recyclées en observatoire ornithologique et un client Spotify natif écrit en Rust qui fait honte à l'application officielle. En arrière-plan, l'IA continue de tordre le marché du matériel — Apple est pris de court par la demande de Mac Studio pour l'inférence locale — pendant que l'intégrité scientifique en prend un coup avec de nouvelles preuves de fraude visant une étude célèbre de Dan Ariely. Google, de son côté, s'attire les foudres de la communauté open source en menaçant AnkiDroid pour un simple lien de dons.",
+  "items": [
+    {
+      "title": "Playa Phone : une cabine téléphonique gratuite au milieu de Burning Man",
+      "url": "https://playaphone.com/",
+      "hn": "https://news.ycombinator.com/item?id=49510514",
+      "points": 656,
+      "comments": 213,
+      "summary": "Aaron Hopkins a installé à Black Rock City une vraie cabine téléphonique dont les entrailles ont été modifiées pour passer par Internet : cinq minutes d'appel gratuit vers le monde entier, et un numéro public (+1 775-557-4848) qui permet d'être mis en relation avec un festivalier au hasard. Les commentaires saluent la prouesse VoIP et l'esprit de l'installation, mais dérivent vite vers un débat sur Burning Man lui-même : festival dénaturé pour riches ou expérience communautaire où « on récolte ce qu'on y met » ?"
+    },
+    {
+      "title": "Il transforme ses caméras de surveillance en système d'identification automatique d'oiseaux",
+      "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+      "hn": "https://news.ycombinator.com/item?id=49511856",
+      "points": 526,
+      "comments": 132,
+      "summary": "Jason Tucker branche les flux RTSP de trois caméras équipées de micros sur BirdNET-Go, une application auto-hébergée dans Docker qui fait l'inférence en local et alerte Home Assistant et Discord. Bilan sur douze mois : environ 419 000 détections couvrant 271 espèces d'oiseaux, avec 60,9 % de confiance moyenne. Le fil regorge de montages similaires (écrans e-ink, contributions à eBird) et discute des faux positifs comme de ce qu'on peut tirer d'une infrastructure de vidéosurveillance déjà en place."
+    },
+    {
+      "title": "Fastpotify : un client Spotify léger et natif écrit en Rust",
+      "url": "https://fastpotify.rocks/",
+      "hn": "https://news.ycombinator.com/item?id=49517448",
+      "points": 493,
+      "comments": 281,
+      "summary": "Ce client open source (MIT) pour Linux, macOS et Windows démarre en moins d'une seconde, consomme 100 à 250 Mo de RAM et gère la lecture locale jusqu'à 320 kbps sans blanc entre les pistes, plus le contrôle d'appareils via Spotify Connect. La discussion devient un défouloir contre la qualité logicielle de l'application officielle — jusqu'à 1,5 Go de RAM, mode hors ligne capricieux, interface incohérente — et sur le constat que la plupart des applis de streaming souffrent des mêmes maux alors que le problème est résolu depuis des décennies."
+    },
+    {
+      "title": "Apple pris de court par la demande IA pour les Mac Mini et Mac Studio",
+      "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "hn": "https://news.ycombinator.com/item?id=49508982",
+      "points": 427,
+      "comments": 484,
+      "summary": "Selon The Information, Apple a avancé le lancement de ses nouveaux Mac Mini et Mac Studio face à un appétit inattendu des entreprises pour l'inférence IA locale — notamment la possibilité de chaîner plusieurs Mac Studio pour de gros modèles — alors que la firme n'avait ni équipe dédiée aux clients professionnels ni stratégie IA d'entreprise, et que les configurations haut de gamme restent en rupture depuis des mois au profit du DGX Spark de Nvidia. Les commentaires se déchirent : vraie demande des développeurs et labos, ou opération marketing orchestrée à coups de posts suspects sur les réseaux ?"
+    },
+    {
+      "title": "Terence Tao explique six concepts mathématiques essentiels [vidéo]",
+      "url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
+      "hn": "https://news.ycombinator.com/item?id=49503521",
+      "points": 466,
+      "comments": 64,
+      "summary": "Le médaillé Fields détaille les six piliers qui structurent selon lui les mathématiques : nombres, algèbre, géométrie, probabilités, analyse et dynamique. Les commentateurs louent la limpidité de son exposé comme preuve d'une compréhension profonde, tout en débattant de deux questions : ces six domaines suffisent-ils à couvrir la discipline, et faut-il vraiment savoir bien expliquer pour bien comprendre — certains excellents chercheurs étant de piètres pédagogues ?"
+    },
+    {
+      "title": "Dwarf Fortress prépare la mère de toutes les mises à jour magiques",
+      "url": "https://www.rockpapershotgun.com/dwarf-fortress-is-getting-the-mother-of-all-magic-updates-extending-to-the-fundamental-cosmological-makeup-of-the-universe",
+      "hn": "https://news.ycombinator.com/item?id=49467636",
+      "points": 437,
+      "comments": 180,
+      "summary": "La légendaire simulation des frères Adams va enfin recevoir sa refonte du système de magie, attendue depuis 2011, qui ira jusqu'à modifier la constitution cosmologique de chaque univers généré. Le fil HN mélange nostalgie des vétérans, éloge de la bande-son, débat entre l'interface Steam et les alternatives communautaires, et discussions sur la courbe d'apprentissage abrupte du jeu — sans oublier le succès financier mérité de la version Steam."
+    },
+    {
+      "title": "« Je crois que les congélateurs du commissariat militaire ont été piratés »",
+      "url": "https://signalandsilence.substack.com/p/i-think-someone-hacked-the-commissary",
+      "hn": "https://news.ycombinator.com/item?id=49508506",
+      "points": 371,
+      "comments": 206,
+      "summary": "L'auteur documente des pannes de réfrigération simultanées dans au moins 14 bases militaires américaines fin août : à Fort Huachuca, les congélateurs sont passés en mode dégivrage alors que le courant n'a jamais été coupé, or ces cycles sont pilotés par des systèmes de supervision à distance. Il juge une cyberattaque plausible — vulnérabilités récentes dans des contrôleurs frigorifiques, alertes de la NSA sur de la reconnaissance chinoise visant l'IoT critique — mais les commentateurs penchent plutôt pour une mise à jour ou une configuration défectueuse, tout en s'alarmant de la sécurité des équipements télégérés sur des bases militaires."
+    },
+    {
+      "title": "Une ville cyberpunk en ASCII, explorable, dans un seul fichier HTML [vidéo]",
+      "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+      "hn": "https://news.ycombinator.com/item?id=49512975",
+      "points": 342,
+      "comments": 48,
+      "summary": "Le créateur, Rhys, a écrit en JavaScript et Canvas un moteur 3D maison qui lance des rayons à chaque image pour calculer perspective, profondeur et collisions, puis dessine le tout uniquement avec des lettres, chiffres et symboles. Les commentaires comparent les approches de rendu (DOM, Canvas, WebGL, vrais TUI en terminal) mais regrettent une confusion d'attribution : la vidéo montre une version payante récente alors que le code open source disponible sur GitHub est plus ancien."
+    },
+    {
+      "title": "GPU World : un concours de nouvelles doté de 100 000 $ sur un futur saturé de calcul",
+      "url": "https://www.gpuworld.org/",
+      "hn": "https://news.ycombinator.com/item?id=49517584",
+      "points": 281,
+      "comments": 158,
+      "summary": "Ce concours d'écriture, soutenu par Paradigm, demande d'imaginer un monde de 2040 où chacun disposerait d'une IA de niveau frontière actuel, en supposant que le progrès plafonne après septembre 2026 ; jury prestigieux (Neal Stephenson, Gwern, Matt Huang), textes de 1 000 à 5 000 mots à rendre avant le 31 octobre. Les commentaires s'affrontent sur le fond du postulat : l'IA est-elle une technologie fondatrice comme Internet ou un simple outil de productivité, et une distribution « équitable » du calcul démocratiserait-elle vraiment quoi que ce soit ?"
+    },
+    {
+      "title": "Preuves de fraude dans une étude influente sur la procrastination",
+      "url": "https://datacolada.org/138",
+      "hn": "https://news.ycombinator.com/item?id=49516199",
+      "points": 272,
+      "comments": 184,
+      "summary": "Data Colada dissèque l'étude 2 du célèbre article d'Ariely et Wertenbroch (2002) sur les échéances auto-imposées : tailles d'effet invraisemblables (d de Cohen à 2,5), 18 participants sur 20 dotés de « jumeaux » aux scores identiques tâche par tâche, corrélations quasi nulles là où on en attend de fortes, et des estimations de temps sans les arrondis naturels des humains — conclusion : données « sévèrement trafiquées ou fabriquées ». Le fil s'indigne du parcours de Dan Ariely, toujours en poste à Duke malgré les scandales, et élargit à la crise de la réplication et à l'absence d'incitations à vérifier les données."
+    },
+    {
+      "title": "Rétro-ingénierie de mon test de dépistage du TDAH",
+      "url": "https://nullpt.rs/reverse-engineering-adhd-test",
+      "hn": "https://news.ycombinator.com/item?id=49467700",
+      "points": 242,
+      "comments": 150,
+      "summary": "En décortiquant le JavaScript d'un test cognitif en ligne, l'auteur découvre que tout repose sur le chronométrage des appuis sur la barre d'espace, les erreurs de frappe et les pertes de focus de la fenêtre — et surtout que le tableau de bord destiné aux praticiens était accessible via une simple inscription, lui permettant de s'administrer ses propres tests et de lire les rapports de scoring détaillés. Les commentaires débattent de la fiabilité de ces tests, du regard porté sur les traitements médicamenteux, et notent avec humour que passer des heures à rétro-analyser le test est en soi un symptôme assez parlant."
+    },
+    {
+      "title": "AnkiDroid menacé par Google Play à cause de son lien de dons Open Collective",
+      "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
+      "hn": "https://news.ycombinator.com/item?id=49520022",
+      "points": 217,
+      "comments": 32,
+      "summary": "Google rejette les mises à jour de l'application libre de cartes mémoire parce qu'elle renvoie vers Open Collective pour les dons : malgré les justificatifs du statut non lucratif 501(c)(6) de l'organisation, Google exige la suppression du lien ou le passage par sa propre facturation, sous peine de retrait du magasin le 11 septembre 2026 (sauf en Inde et en Russie). Les commentateurs y voient une illustration du pouvoir des magasins d'applications : répondre « installez F-Droid » revient à contourner le problème plutôt qu'à s'attaquer à la concentration du pouvoir."
+    }
+  ]
+}
