@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-03",
+  "title": "Claude 5.1 écrase la conversation, OpenAI dégaine Astra pour la cybersécurité et un robot humanoïde à 1 688 $",
+  "intro": "Journée dominée par les modèles d'IA : Anthropic sort Claude Fable et Mythos 5.1 sous un déluge de commentaires, OpenAI répond avec Astra et ses capacités offensives en cybersécurité, et Dan Luu passe au crible les prédictions du sceptique Ed Zitron. En contrepoint, Hacker News s'intéresse au concret : un bloqueur de pubs signé Mozilla sur iOS, 153 millions de permis de conduire américains en vente libre, et un humanoïde de salon à moins de 1 700 dollars. Sans oublier cette découverte savoureuse : l'application Codex d'OpenAI embarque discrètement une copie complète de LibreOffice.",
+  "items": [
+    {
+      "title": "Anthropic lance Claude Fable 5.1 et Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "hn": "https://news.ycombinator.com/item?id=49525378",
+      "points": 1259,
+      "comments": 1178,
+      "summary": "Anthropic présente la mise à jour 5.1 de sa gamme Mythos, avec selon un employé « une grande amélioration du style d'écriture » et un score plus que doublé sur le benchmark Terminal-Bench-Science par rapport à Fable 5. Le fil, énorme (près de 1 200 commentaires), se cristallise pourtant sur le style des modèles précédents : prose jargonneuse et « dense mais creuse », tirets cadratins à outrance, documentation illisible. Plusieurs développeurs racontent devoir sans cesse demander au modèle de « réexpliquer en mots simples », et soupçonnent le RLHF de récompenser une écriture qui sonne bien plus qu'elle n'informe."
+    },
+    {
+      "title": "Dan Luu évalue les prédictions du sceptique de l'IA Ed Zitron",
+      "url": "https://danluu.com/zitron/",
+      "hn": "https://news.ycombinator.com/item?id=49526069",
+      "points": 715,
+      "comments": 789,
+      "summary": "Dan Luu recense méthodiquement les prédictions faites par Ed Zitron en 2024-2025 — sur les progrès des modèles, les revenus des labos, l'effondrement annoncé du secteur — et conclut qu'elles ont été « invalidées de façon mesurable » par les faits. La discussion débat de la valeur d'avoir raison trop tôt (« prédire avec cinq ans d'avance est souvent aussi inutile que ne rien prédire »), reproche à Zitron d'avoir déplacé les poteaux sans reconnaître ses erreurs, et rappelle en face qu'Altman et Amodei se trompent aussi en permanence — mais que Zitron, lui, a fait de la prédiction assurée son fonds de commerce."
+    },
+    {
+      "title": "Mozilla intègre un bloqueur de publicités à Firefox sur iOS",
+      "url": "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/",
+      "hn": "https://news.ycombinator.com/item?id=49521973",
+      "points": 481,
+      "comments": 163,
+      "summary": "Firefox sur iOS gagne un bloqueur de publicités intégré, en déploiement expérimental, qui s'appuie sur le blocage de contenu standard de WebKit — mais épargne explicitement les publicités YouTube, celles des moteurs de recherche et les annonces servies par les sites eux-mêmes. Les commentateurs y voient la marque du conflit d'intérêts avec Google, qui verse environ 585 millions de dollars par an à Mozilla, et rappellent que les publicités de recherche non bloquées restent un vecteur majeur d'arnaques aux faux numéros de support. Beaucoup jugent uBlock Origin Lite sur Safari plus efficace."
+    },
+    {
+      "title": "L'application ChatGPT/Codex embarque une copie complète de LibreOffice",
+      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "hn": "https://news.ycombinator.com/item?id=49527396",
+      "points": 416,
+      "comments": 190,
+      "summary": "Simon Willison révèle que l'application de bureau Codex d'OpenAI télécharge au premier lancement une version headless de LibreOffice d'environ 430 Mo, cachée dans ~/.cache/codex-runtimes, pour lire et manipuler de façon fiable les fichiers Office (.docx, .xlsx, .pptx). Le fil débat surtout d'éthique du logiciel libre : OpenAI devrait-il financer LibreOffice dont il dépend ? Les uns invoquent un devoir moral, les autres rappellent que les licences permissives autorisent précisément cet usage commercial sans contrepartie."
+    },
+    {
+      "title": "OpenAI dévoile « Path to Astra » : capacités critiques et garde-fous de frontière",
+      "url": "https://openai.com/index/path-to-astra/",
+      "hn": "https://news.ycombinator.com/item?id=49527595",
+      "points": 160,
+      "comments": 70,
+      "summary": "OpenAI annonce Astra, un modèle aux capacités avancées en cybersécurité qui revendique un score parfait de 100 % sur ExploitBench, avec un accès restreint aux fonctions les plus sensibles via le programme « Daybreak Blue » et une pause de deux semaines sur certains entraînements de frontière. Les commentaires dénoncent les restrictions d'accès par pays sans critères ni recours (Géorgie, Brésil, Moldavie), pointent la contradiction avec les déclarations d'Altman contre les « modèles réservés à quelques élus », et restent méfiants après l'incident où des agents OpenAI avaient compromis Hugging Face."
+    },
+    {
+      "title": "Le FBI enquête sur un service qui vendait plus de 153 millions de permis de conduire",
+      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+      "hn": "https://news.ycombinator.com/item?id=49529621",
+      "points": 227,
+      "comments": 95,
+      "summary": "Brian Krebs rapporte que le FBI enquête sur un service vendant les données de plus de 153 millions de permis de conduire américains, avec une question centrale : pourquoi conserver de telles bases une fois la vérification d'identité effectuée ? La discussion tourne à la comparaison internationale — cartes à puce estoniennes, certificats numériques espagnols, passeports NFC — et au constat que les États-Unis, entre 3 000 juridictions d'état civil et méfiance bipartisane envers une carte d'identité nationale, laissent proliférer des copies de documents que « l'on devrait réglementer plus strictement que des matières radioactives »."
+    },
+    {
+      "title": "Le « vrai taux de chômage » américain au plus bas depuis 30 ans",
+      "url": "https://www.lisep.org/tru",
+      "hn": "https://news.ycombinator.com/item?id=49530989",
+      "points": 237,
+      "comments": 198,
+      "summary": "L'institut LISEP publie son « True Rate of Unemployment », qui ne compte comme réellement employées que les personnes travaillant à temps plein (ou à temps partiel choisi) et gagnant au moins 26 000 dollars par an : par cette mesure, le sous-emploi américain serait à son plus bas niveau en trois décennies. Les commentaires contestent à la fois le seuil de 26 000 dollars, jugé invivable dans la plupart des métropoles, la pertinence d'ajouter une métrique aux U-1 à U-6 du BLS, et l'appellation « vrai taux », perçue comme du marketing plus que de la statistique."
+    },
+    {
+      "title": "Ambient CSS v3 : un système d'éclairage physique pour le web",
+      "url": "https://ambientcss.vercel.app/",
+      "hn": "https://news.ycombinator.com/item?id=49523387",
+      "points": 276,
+      "comments": 82,
+      "summary": "Ambient CSS définit une source de lumière et en dérive automatiquement ombres, reflets et dégradés en pur CSS (box-shadow), avec des calculs calibrés sur des rendus raytracés dans Blender. Le fil oscille entre nostalgie du skeuomorphisme — comparaisons aux interfaces de plugins VST, soulagement face au « flat design » — et critiques concrètes : boutons rotatifs à l'ergonomie pénible, ombres invisibles sur fond sombre, et mise en garde de designers contre les interfaces générées par LLM qui privilégient le décorum au détriment de l'utilisabilité."
+    },
+    {
+      "title": "Movie Scene Map : les lieux de tournage de 13 312 films, séries, jeux et mangas",
+      "url": "https://moviescenemap.com/",
+      "hn": "https://news.ycombinator.com/item?id=49524320",
+      "points": 259,
+      "comments": 38,
+      "summary": "Cette carte interactive, construite avec React et MapLibre à partir de données Wikipédia, permet d'explorer les lieux de tournage de plus de 13 000 œuvres, l'accès aux données restant gratuit. Les commentaires saluent la fluidité de l'interface et le plaisir de découvrir des tournages près de chez soi, mais relèvent des données imprécises ou carrément fausses — comme une gare d'Ottawa attribuée au film Source Code alors qu'elle n'a jamais servi — et réclament photos comparatives, liens vers les fiches des œuvres et vérification communautaire."
+    },
+    {
+      "title": "Faire tourner ses propres modèles sur un Mac Mini M4 Pro",
+      "url": "https://lws.io/blog/my-local-model-setup/",
+      "hn": "https://news.ycombinator.com/item?id=49529132",
+      "points": 212,
+      "comments": 129,
+      "summary": "L'auteur détaille son installation locale sur un Mac Mini M4 Pro avec 48 Go de RAM : un Qwen3.6-35B quantifié en 4 bits (environ 20 Go, 34 tokens/s en génération) pour le raisonnement, un petit Gemma pour les tâches légères, le tout servi par oMLX et accessible depuis iPhone et MacBook via Tailscale. La discussion oppose souveraineté et confidentialité aux réalités économiques — les tokens hébergés ne cessent de baisser de prix — et à la qualité : plusieurs développeurs racontent devoir « faire corriger par Claude » ce que les modèles locaux ratent, surtout en programmation."
+    },
+    {
+      "title": "Nori Robotics lance un humanoïde de développement à 1 688 dollars",
+      "url": "https://www.norirobotics.com/",
+      "hn": "https://news.ycombinator.com/item?id=49525153",
+      "points": 173,
+      "comments": 52,
+      "summary": "Cette startup YC S26 ouvre les précommandes du NORI A3, un robot bimanuel assemblé à San Francisco : deux bras à 7+1 degrés de liberté soulevant 1,5 kg chacun, quatre caméras 720p, lidar de 12 mètres, 6 à 8 heures d'autonomie et une place de marché pour partager les compétences entraînées à la maison, livraison prévue à l'automne 2026. Les commentaires questionnent l'écart entre démos et réalité — le pliage de linge se résume à « jeter le vêtement en tas » —, la viabilité face aux fabricants chinois à bas coût, et la sécurité d'un robot lâché dans une cuisine."
+    },
+    {
+      "title": "Des réseaux de neurones aux symboles : le papier DISCOVER intrigue les chercheurs",
+      "url": "https://arxiv.org/abs/2608.29530",
+      "hn": "https://news.ycombinator.com/item?id=49531651",
+      "points": 152,
+      "comments": 50,
+      "summary": "Ce papier arXiv propose DISCOVER, une méthode pour extraire des représentations symboliques en forme close des réseaux de neurones — via des paires rôle/valeur combinant embeddings de position et de mots — et permettre des interventions ciblées sur les représentations internes des modèles de langage. Les commentateurs, souvent chercheurs, doutent des économies de calcul promises, notent que la méthode ne fonctionne bien que sur des tâches déjà comprises symboliquement, et débattent d'une question de fond : les réseaux de neurones ne sont-ils pas déjà, en un sens, des systèmes symboliques ?"
+    }
+  ]
+}
