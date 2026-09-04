@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-04",
+  "title": "Gemini 3.8 en tête, sources fabriquées pour l'IA et un frisson de matière noire",
+  "intro": "Journée dominée par l'IA : Google lance Gemini 3.8 Flash et une variante dédiée à la cybersécurité, Meta réplique avec Muse Spark 1.3, et Mistral se fait épingler sur ses réglages de confidentialité. En toile de fond, deux inquiétudes montent : des fermes de contenu fabriquées spécialement pour être citées par les moteurs IA, et un Google qui échappe au démantèlement de son activité publicitaire. Côté science, le détecteur LZ a peut-être vu passer une particule de matière noire — une seule, mais quelle particule.",
+  "items": [
+    {
+      "title": "Google lance Gemini 3.8 Flash et 3.8 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "hn": "https://news.ycombinator.com/item?id=49537553",
+      "points": 1037,
+      "comments": 578,
+      "summary": "Google annonce deux modèles : Gemini 3.8 Flash, orienté raisonnement, code et agents autonomes, et 3.8 Flash Cyber, spécialisé cybersécurité (2,6 fois plus de correctifs corrects que les modèles commerciaux selon l'équipe sécurité de Chrome, accès restreint via le programme Fairwind). Tarif d'appel : 0,75 $/million de tokens en entrée et 3,75 $ en sortie jusqu'à fin 2026. Les commentaires saluent les performances réelles mais pointent la verbosité du modèle (environ 11 000 tokens de plus par tâche), la fiabilité du code généré et le « labyrinthe » des offres Google pour y accéder."
+    },
+    {
+      "title": "Meta publie Muse Spark 1.3",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "hn": "https://news.ycombinator.com/item?id=49541256",
+      "points": 592,
+      "comments": 390,
+      "summary": "Meta met en ligne Muse Spark 1.3, un modèle présenté comme entraîné pour les workflows agentiques et optimisé pour la programmation compétitive — la page développeur reste avare en détails (tailles, licence, benchmarks). Sur HN, la discussion s'est cristallisée autour du fameux test du « pélican à vélo en SVG » de Simon Willison : les modèles reconnaissent désormais le benchmark, au point que certains identifient son auteur. Débat sur la saturation de ces tests informels et sur ce qu'ils mesurent vraiment."
+    },
+    {
+      "title": "Mistral : la sortie des données d'entraînement, un opt-out qui fait grincer",
+      "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+      "hn": "https://news.ycombinator.com/item?id=49535284",
+      "points": 448,
+      "comments": 205,
+      "summary": "Une page d'aide de Mistral confirme que les utilisateurs de Vibe ne sont pas exclus par défaut de l'entraînement des modèles (seuls les clients Enterprise le sont), et que les réglages Vibe et API doivent être désactivés séparément. Un utilisateur rapporte que le réglage à l'échelle de l'organisation a été retiré du plan Team pour devenir exclusif à l'offre Enterprise. Les commentaires dénoncent ces réglages par défaut, comparent avec les offres payantes d'Anthropic (entraînement désactivé par défaut) et doutent plus largement des promesses de confidentialité du secteur."
+    },
+    {
+      "title": "Trois sites, 215 128 pages « meilleurs logiciels » fabriquées pour l'IA — et citées par Perplexity",
+      "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+      "hn": "https://news.ycombinator.com/item?id=49536375",
+      "points": 431,
+      "comments": 208,
+      "summary": "Trellner Research a identifié trois sites apparemment liés (worldmetrics.org, wifitalents.com, gitnux.org) totalisant 215 128 pages générées par machine, conçues pour être citées par les moteurs de réponse. Sur 380 catégories de logiciels testées via les modèles Sonar de Perplexity, 59,8 % des citations pointent vers des domaines à très faible trafic et les trois sites suspects récoltent 181 citations. Les commentaires y voient un symptôme de la pollution de l'écosystème informationnel et discutent du biais des LLM à préférer du contenu généré par IA."
+    },
+    {
+      "title": "Google échappe au démantèlement de son activité de technologie publicitaire",
+      "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
+      "hn": "https://news.ycombinator.com/item?id=49537131",
+      "points": 396,
+      "comments": 282,
+      "summary": "Dans le procès antitrust sur l'ad tech, le tribunal n'impose pas à Google de céder ses activités publicitaires, contrairement à ce que réclamait le gouvernement américain. Les commentaires soulignent l'asymétrie du droit de la concurrence — approuver une fusion est facile, la défaire quasi impossible — et plaident pour un contrôle plus strict en amont plutôt que des démantèlements a posteriori. Le débat porte aussi sur la concentration des géants et leur bascule de l'innovation vers l'extraction de valeur."
+    },
+    {
+      "title": "Le plus grand détecteur de matière noire repère une unique particule étrange",
+      "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+      "hn": "https://news.ycombinator.com/item?id=49536079",
+      "points": 304,
+      "comments": 105,
+      "summary": "L'expérience LUX-ZEPLIN (LZ) a enregistré un événement qu'aucun bruit de fond connu n'explique bien, dans la zone où un signal de WIMP est attendu : significativité de 2,6 sigma, 0,5 % de probabilité qu'il s'agisse d'un bruit de fond, masse estimée à plus de 200 fois celle du proton. La collaboration (250 scientifiques, 220 jours de données) reste prudente : « nous ne prétendons pas avoir vu la matière noire ». Il faudra plus de données pour confirmer ou infirmer ce qui serait, sinon, une première historique."
+    },
+    {
+      "title": "Les cerveaux vieillissants fusionnent les souvenirs au lieu de simplement les oublier",
+      "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/",
+      "hn": "https://news.ycombinator.com/item?id=49535548",
+      "points": 290,
+      "comments": 119,
+      "summary": "Une étude de l'université de Binghamton (Cerebral Cortex, 61 participants de 18 à 74 ans sous IRM) montre que les schémas d'activité hippocampique qui prédisent un rappel exact chez les jeunes prédisent chez les plus âgés des confusions entre catégories : les souvenirs se mélangent plus qu'ils ne s'effacent. Les commentaires débattent d'une « compression avec perte » de la mémoire, rappellent que se souvenir est une reconstruction et non une relecture, et critiquent la petite taille de l'échantillon."
+    },
+    {
+      "title": "Fable 5.1 World Modeling : des quartiers réels reconstruits en 3D par un agent IA",
+      "url": "https://github.com/PhiloLabs/fable51-worlds",
+      "hn": "https://news.ycombinator.com/item?id=49541458",
+      "points": 260,
+      "comments": 74,
+      "summary": "PhiloLabs publie « worlds via code » : des reconstructions 3D explorables dans le navigateur (Three.js, sans moteur de jeu) de lieux réels — Union Square à San Francisco (453 bâtiments, 220 piétons) et Higashiyama à Kyoto en style anime (266 bâtiments, 1 938 arbres). Les mondes sont générés par l'agent Claude Fable 5.1 à partir de données OpenStreetMap et USGS, avec contrôle qualité par comparaison à des photos réelles, le tout sous licence MIT."
+    },
+    {
+      "title": "Rétro-ingénierie de formats de fichiers inconnus avec ImHex",
+      "url": "https://werwolv.net/posts/file_format_reverse_engineering/",
+      "hn": "https://news.ycombinator.com/item?id=49508608",
+      "points": 210,
+      "comments": 37,
+      "summary": "Un billet publié sur le blog de WerWolv, l'auteur de l'éditeur hexadécimal open source ImHex, consacré à l'analyse de formats de fichiers inconnus avec cet outil. Le sujet a séduit la communauté HN, où ImHex est régulièrement cité pour son langage de motifs qui permet de décrire et décoder des structures binaires."
+    },
+    {
+      "title": "L'écrivain et paysan Wendell Berry est mort à 92 ans",
+      "url": "https://www.nytimes.com/2026/08/31/us/wendell-berry-dead.html",
+      "hn": "https://news.ycombinator.com/item?id=49517018",
+      "points": 192,
+      "comments": 98,
+      "summary": "Wendell Berry, écrivain, poète et fermier du Kentucky, est mort le 31 août à 92 ans. Défenseur inlassable de l'agriculture paysanne, de la vie simple et des communautés rurales — et critique célèbre de la technologie, lui qui expliquait pourquoi il n'achèterait jamais d'ordinateur —, il laisse une œuvre abondante de romans, d'essais et de poèmes qui résonne étonnamment fort auprès des lecteurs de HN."
+    },
+    {
+      "title": "Polars 2.0 en pré-version : le moteur streaming par défaut",
+      "url": "https://pola.rs/posts/announcing-polars-2/",
+      "hn": "https://news.ycombinator.com/item?id=49546753",
+      "points": 174,
+      "comments": 32,
+      "summary": "La bibliothèque de dataframes Polars publie une release candidate 2.0 volontairement « ennuyeuse » : pas de grande nouveauté, mais de meilleurs réglages par défaut — le moteur streaming devient le défaut pour les requêtes lazy (environ 5 fois plus rapide en agrégat), l'ordre des lignes n'est plus garanti sans maintain_order=True, et les conversions de types deviennent plus strictes. Les commentaires saluent cette philosophie du « ménage » pour les versions majeures et comparent, comme toujours, Polars à Pandas, SQL et dplyr."
+    },
+    {
+      "title": "Le vol accidentel d'un Lightning par un ingénieur de la RAF (1966)",
+      "url": "https://en.wikipedia.org/wiki/Holden%27s_Lightning_flight",
+      "hn": "https://news.ycombinator.com/item?id=49508405",
+      "points": 161,
+      "comments": 35,
+      "summary": "Le 22 juillet 1966, le Wing Commander Walter « Taffy » Holden, ingénieur de 39 ans sans expérience des jets rapides, enclenche accidentellement la postcombustion d'un English Electric Lightning lors d'un essai au sol et se retrouve en vol — sans casque, sans verrière ni siège éjectable fonctionnel. Il pose l'appareil à la troisième tentative, sans blessure ; l'enquête conclut qu'il a « sauvé sa vie et l'avion ». L'appareil, réparé, est aujourd'hui exposé à Duxford. Un classique d'histoire aéronautique qui fait toujours recette sur HN."
+    }
+  ]
+}
