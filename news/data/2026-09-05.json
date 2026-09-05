@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-05",
+  "title": "GPT-6 Astra relance le débat AGI, l'open source contre-attaque et un humain bat l'IA au go",
+  "intro": "Journée écrasée par l'annonce de GPT-6 Astra, qui frôle la perfection sur ARC-AGI-3 et relance la querelle de définition de l'AGI, pendant que l'open source réplique en masse : six modèles K2 Horizon entièrement ouverts et un Qwen servi à 1 500 tokens par seconde chez Cerebras. En contrepoint, deux histoires d'humains remarquables — un grand maître de go qui bat KataGo avec deux pierres de handicap et un jeu Amiga de 1993 ressuscité via un LLM. En toile de fond, la confiance dans les infrastructures prend cher : domaines .name résiliés malgré des contrats courant jusqu'en 2040, 153 millions de permis de conduire exposés et un GPS perturbé par une tempête solaire.",
+  "items": [
+    {
+      "title": "OpenAI annonce GPT-6 Astra et rallume le débat sur l'AGI",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "hn": "https://news.ycombinator.com/item?id=49554643",
+      "points": 2118,
+      "comments": 1922,
+      "summary": "OpenAI présente GPT-6 Astra, qui atteint 99,9 % sur le benchmark ARC-AGI-3 — au point que François Chollet, créateur du test, avance son calendrier AGI à avant 2030. La discussion, fleuve, porte moins sur les scores que sur la définition même de l'AGI : le critère de Sam Altman (« un employé distant médian ») est contesté de toutes parts. Les sceptiques rappellent les limites d'architecture — modèle sans état, sans mémoire long terme mutable ni apprentissage continu — et opposent optimisation de benchmarks et compétence réelle."
+    },
+    {
+      "title": "Verisign veut résilier les domaines .name, même ceux payés jusqu'en 2040",
+      "url": "https://neil.fraser.name/news/2026/09/03/",
+      "hn": "https://news.ycombinator.com/item?id=49550772",
+      "points": 1878,
+      "comments": 464,
+      "summary": "Neil Fraser révèle que Verisign propose de supprimer tous les domaines de troisième niveau sous .name — y compris le sien, payé jusqu'en 2040 — alors que ces domaines avaient été vendus comme renouvelables « à vie ». Les commentaires y voient une rupture de contrat pure et simple, un remboursement ne compensant en rien la perte d'une adresse utilisée depuis vingt ans. Beaucoup suggèrent des alternatives évidentes (geler les nouvelles inscriptions en honorant l'existant, laisser les titulaires racheter le domaine parent) et élargissent au problème de fond : on ne possède jamais un nom de domaine, on le loue."
+    },
+    {
+      "title": "Qwen 3.8 27B servi à 1 500 tokens/s chez Cerebras",
+      "url": "https://inference-docs.cerebras.ai/models/overview",
+      "hn": "https://news.ycombinator.com/item?id=49554520",
+      "points": 576,
+      "comments": 190,
+      "summary": "Cerebras propose Qwen 3.8 27B à 1 500 tokens par seconde en sortie, mais avec des limites serrées : 150 000 tokens/minute d'entrée non cachée, contexte réduit à 128K (contre 1M natif) et aucun tarif préférentiel pour les tokens en cache. Les commentateurs calculent qu'à pleine vitesse le quota mensuel fond en environ 90 secondes : le modèle serait « trop rapide pour son propre bien ». L'explication technique avancée : l'architecture Cerebras ne sait pas stocker et restaurer efficacement le cache KV, d'où recalcul complet du contexte à chaque requête — rédhibitoire pour les workflows agentiques."
+    },
+    {
+      "title": "Le plus gros avion électrique du monde a volé",
+      "url": "https://www.youtube.com/watch?v=nM86DBOqgPM",
+      "hn": "https://news.ycombinator.com/item?id=49526453",
+      "points": 349,
+      "comments": 239,
+      "summary": "Le X1 de Heart Aerospace, démonstrateur du futur ES-30 de 30 places, a effectué son premier vol le 12 août à Plattsburgh (État de New York) : 27 minutes, 1 100 pieds d'altitude, plus d'un mégawatt de puissance électrique et environ 5 dollars d'électricité consommée pour un appareil de plus de 11 tonnes au décollage. Heart vise des essais du premier ES-30 de pré-série en 2028 et une mise en service en 2031, avec des engagements de United Airlines, Air Canada et JSX, et promet plus de 40 % de réduction des coûts d'exploitation par rapport aux avions régionaux classiques."
+    },
+    {
+      "title": "Le grand maître de go Shin Jinseo bat KataGo avec deux pierres de handicap",
+      "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+      "hn": "https://news.ycombinator.com/item?id=49544762",
+      "points": 329,
+      "comments": 125,
+      "summary": "Shin Jinseo, numéro un mondial avec environ 120 points d'avance au classement GoRatings sur son dauphin, a battu KataGo (tournant sur 4 RTX-3090, 20 secondes par coup) en recevant deux pierres de handicap — l'écart traditionnel entre un 9e dan et un 1er dan professionnel. Sa stratégie : éviter les combats complexes que l'IA lit « comme un monstre », jouer solide et dérouler un joseki mémorisé d'une cinquantaine de coups. Les commentaires relativisent — KataGo n'est pas entraîné au jeu à handicap — tout en saluant l'exploit, dix ans après la victoire de Lee Sedol contre AlphaGo, dernière d'un humain à égalité."
+    },
+    {
+      "title": "Porter son jeu Amiga de 1993 vers Godot, avec un LLM qui lit l'assembleur 68000",
+      "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+      "hn": "https://news.ycombinator.com/item?id=49550375",
+      "points": 306,
+      "comments": 100,
+      "summary": "Le créateur de Babylonian Twins, jeu Amiga écrit en assembleur MC68000 dans le Bagdad de 1993 sous sanctions, l'a porté vers Godot en faisant lire le code original par Claude : réassemblage avec vasm à l'octet près pour valider la compréhension, premier portage jouable en une soirée, puis des week-ends de peaufinage. Les commentaires y voient un point de bascule pour la rétro-ingénierie assistée par IA — plusieurs partagent des projets similaires (Syndicate, Red Baron, titres C64) — et discutent d'une mutualisation des outils pour la préservation du jeu vidéo. Seul bémol soulevé : la prose visiblement générée par IA du billet de blog."
+    },
+    {
+      "title": "K2 Horizon : une flotte de six modèles ouverts, de 0,9 à 375 milliards de paramètres",
+      "url": "https://ifm.ai/blog/k2/",
+      "hn": "https://news.ycombinator.com/item?id=49551760",
+      "points": 303,
+      "comments": 104,
+      "summary": "L'Institute of Foundation Models de l'université MBZUAI (Abou Dabi) publie K2 Horizon, six modèles de 0,9B (wearables) à 375B de paramètres (usage entreprise, code et agents), présentés comme « le plus gros lancement entièrement open source de l'histoire de l'IA ». L'ouverture est radicale : poids, code d'entraînement complet, jeu de données de pré-entraînement TxT360-v2 et recettes de construction des données. L'institut revendique des performances de premier plan dans chaque classe de taille sur les tâches de code et agentiques."
+    },
+    {
+      "title": "Des barrages de castors artificiels font passer la survie des jeunes saumons coho de 8 % à 60 %",
+      "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+      "hn": "https://news.ycombinator.com/item?id=49552572",
+      "points": 269,
+      "comments": 86,
+      "summary": "En Californie, des barrages imitant ceux des castors ont fait bondir la survie des jeunes saumons coho de 8 % à 60 % : les bassins créés offrent refuge et nourriture, l'eau filtrée par le sol ressort plus fraîche et le courant ralenti économise l'énergie des poissons. La question qui anime les commentaires : pourquoi de l'artificiel plutôt que de vrais castors ? Réponse — la résistance des propriétaires terriens, entre craintes d'inondation et réglementation des zones humides qui décourage paradoxalement leur réintroduction."
+    },
+    {
+      "title": "Quels outils choisissent Claude, Codex et Cursor ? 17 000 sessions à la loupe",
+      "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+      "hn": "https://news.ycombinator.com/item?id=49557206",
+      "points": 232,
+      "comments": 106,
+      "summary": "La startup Armature (YC) a analysé environ 17 000 sessions d'agents de code pour voir quels outils ils choisissent : Claude Code cherche rarement sur le web quand Codex le fait presque systématiquement, les agents sont souvent en désaccord entre eux, et les acteurs établis (LangChain, Supabase, PayPal…) sont beaucoup cités mais rarement retenus. Le fondateur assume que l'étude sert à « orienter les agents vers son propre produit », ce qui fait bondir une partie des commentateurs : on rejouerait les dérives du SEO, version IA. Fait notable : les tentatives de biaiser les résultats déclenchent les garde-fous anti-injection des modèles."
+    },
+    {
+      "title": "Des pirates ont eu un flux en direct des scans d'une société de vérification d'identité pendant plus d'un an",
+      "url": "http://www.techdirt.com/2026/09/03/hackers-had-a-live-feed-of-every-id-this-verification-company-scanned-for-over-a-year/",
+      "hn": "https://news.ycombinator.com/item?id=49561320",
+      "points": 197,
+      "comments": 60,
+      "summary": "D'après Techdirt, s'appuyant sur les révélations de Brian Krebs, des pirates ont disposé pendant plus d'un an d'un accès en continu — pas un simple vol ponctuel — aux documents scannés par une société de vérification d'identité, avec environ 153 millions de permis de conduire exposés ; le FBI enquête. Les commentaires opposent solutions techniques (preuves à divulgation nulle, portefeuilles d'identité numérique à l'européenne) et défiance envers toute centralisation, étatique ou privée. Colère récurrente : l'absence totale de conséquences financières pour les entreprises qui perdent nos données."
+    },
+    {
+      "title": "Quand le GPS a dévié de 10 mètres sur tous les États-Unis",
+      "url": "https://www.sciencealert.com/gps-glitched-across-the-us-by-as-much-as-33-feet-scientists-have-never-seen-this-before",
+      "hn": "https://news.ycombinator.com/item?id=49544618",
+      "points": 183,
+      "comments": 113,
+      "summary": "Retour sur la tempête géomagnétique de novembre 2025, qui a provoqué des erreurs de positionnement GPS dépassant 10 mètres sur l'ensemble du territoire continental américain, via des scintillations jamais observées à cette échelle — avec un impact direct sur l'agriculture de précision et les transports autonomes. Un journaliste rappelle dans les commentaires que ces dérives touchent aussi les bracelets électroniques : dans le comté de Cook, des dizaines de personnes ont été réincarcérées sur la foi d'alertes erronées. D'autres plaident pour activer BeiDou en redondance sur les appareils civils américains, malgré les réserves de sécurité nationale."
+    },
+    {
+      "title": "Comment un projet de recherche du MIT est devenu le langage Julia",
+      "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
+      "hn": "https://news.ycombinator.com/item?id=49507072",
+      "points": 104,
+      "comments": 35,
+      "summary": "Le MIT retrace la trajectoire de Julia, né projet académique et devenu langage de référence du calcul scientifique, concurrent de R et MATLAB. Les commentaires saluent sa vitesse et sa notation proche des mathématiques, mais pointent la latence de compilation JIT — plusieurs secondes pour des scripts qui s'exécutent en moins de 100 ms — qu'un cache inter-sessions attendu dans la version 1.14 devrait atténuer. Petite polémique en marge : certains estiment que le MIT s'attribue un peu généreusement la paternité du succès."
+    }
+  ]
+}
