@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-08",
+  "title": "Le web libre contre-attaque : Nitter ressuscite, la Suisse largue Microsoft et l'Internet Archive appelle à l'aide",
+  "intro": "Journée placée sous le signe de la reconquête numérique : Nitter et XCancel reprennent du service après avis juridique, la Suisse lance sa migration hors de Microsoft 365 et l'Internet Archive cherche des dons pour maintenir ses serveurs. En face, les téléviseurs LG sont pris en flagrant délit d'espionnage domestique, pendant que GrapheneOS et Anubis renforcent leurs défenses. Et l'IA continue de brouiller les frontières : gestion des skills d'agents, rétro-ingénierie d'un piano par Fable et débat sur la programmation comme art.",
+  "items": [
+    {
+      "title": "Nitter et XCancel reprennent du service après avis juridique",
+      "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+      "hn": "https://news.ycombinator.com/item?id=49588988",
+      "points": 904,
+      "comments": 398,
+      "summary": "Les frontends alternatifs Nitter et XCancel, qui permettent de lire X/Twitter sans compte ni pistage, reprennent leurs opérations après consultation juridique. Les commentaires soulignent que quantité de services publics (transports, alertes météo et d'urgence) publient exclusivement sur X, rendant ces outils de lecture indispensables aux citoyens sans compte. Le débat élargit au problème de fond : les institutions publiques ne devraient pas dépendre d'une plateforme propriétaire fermée derrière un mur d'authentification, et certains réclament une obligation réglementaire d'accessibilité sans connexion."
+    },
+    {
+      "title": "« Keep Our Servers Running » : l'Internet Archive triple les dons de septembre",
+      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+      "hn": "https://news.ycombinator.com/item?id=49593563",
+      "points": 970,
+      "comments": 252,
+      "summary": "L'Internet Archive lance un appel aux dons avec un abondement à 3x pour tout don récurrent en septembre. Les commentaires questionnent la transparence de l'opération (qui finance ce triplement ?) et rapportent des soucis de fiabilité récents — timeouts, erreurs 429, pannes — qui donnent du poids au « keep running ». D'autres débattent des activités annexes de l'organisation, jugées par certains comme une dispersion de ressources, et comparent avec archive.today."
+    },
+    {
+      "title": "La Suisse remplace Microsoft sur 3 000 ordinateurs fédéraux",
+      "url": "https://itsfoss.com/news/switzerland-replace-microssoft-pilot/",
+      "hn": "https://news.ycombinator.com/item?id=49594251",
+      "points": 346,
+      "comments": 269,
+      "summary": "Le gouvernement fédéral suisse lance un pilote à 9 millions de francs pour remplacer Microsoft 365 par la suite open source allemande openDesk sur 3 000 postes (7 % de l'effectif fédéral) d'ici fin 2027, avant un déploiement potentiel sur les 54 000 machines restantes. L'armée suisse va plus vite et vise un remplacement complet dès octobre 2026. Motifs invoqués : souveraineté numérique face à la législation extraterritoriale américaine, réduction de la dépendance à un fournisseur unique et maîtrise des coûts de licences."
+    },
+    {
+      "title": "Des TV LG surprises à enregistrer l'audio écran éteint et à sonder le réseau local",
+      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+      "hn": "https://news.ycombinator.com/item?id=49594878",
+      "points": 340,
+      "comments": 189,
+      "summary": "Une investigation montre que des téléviseurs LG enregistrent l'audio même écran éteint, inspectent les appareils du réseau local, collectent la géolocalisation WiFi et téléversent des empreintes du contenu affiché vers les serveurs LG. Les commentaires réclament une réponse législative plutôt que des contournements individuels (VLAN, pare-feu, TV jamais connectée), inaccessibles au consommateur moyen. Une minorité sceptique estime que l'enquête mélange du vrai spyware avec des comportements systèmes normaux couverts par les CGU."
+    },
+    {
+      "title": "GrapheneOS refond ses applications par défaut et sécurise le presse-papiers",
+      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
+      "hn": "https://news.ycombinator.com/item?id=49590512",
+      "points": 394,
+      "comments": 250,
+      "summary": "GrapheneOS annonce une refonte de ses applications par défaut, à commencer par une nouvelle app SMS/RCS avec chiffrement de bout en bout prévu via MLS, puis le remplacement de la galerie AOSP et potentiellement du clavier. Les commentaires débattent de l'intérêt de RCS face à Signal, perçu par certains comme un outil de Google/Apple plus qu'un standard ouvert. Les mainteneurs expliquent aussi pourquoi les licences GPLv3 ou « source-available » (comme celle du clavier FUTO réclamé par les utilisateurs) sont incompatibles avec leur distribution."
+    },
+    {
+      "title": "Il a fallu un an pour livrer WebAssembly dans Anubis",
+      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "hn": "https://news.ycombinator.com/item?id=49590611",
+      "points": 349,
+      "comments": 187,
+      "summary": "Le système anti-bot par preuve de travail Anubis raconte une année d'efforts pour passer à WebAssembly : compatibilité avec les vieux navigateurs, et maintien d'un fallback JavaScript pour ceux qui désactivent Wasm. Les commentaires discutent de la légitimité de déployer Anubis sur des pages statiques — « le trafic bot ne nuit qu'aux pages dynamiques » pour les uns, coût CPU et bande passante bien réels pour les autres. Reste la question de fond : combien de temps ces protections tiendront-elles face aux scrapers dopés à l'IA et aux proxys résidentiels ?"
+    },
+    {
+      "title": "Ask HN : comment gérez-vous vos fichiers de skills ?",
+      "url": "https://news.ycombinator.com/item?id=49589914",
+      "hn": "https://news.ycombinator.com/item?id=49589914",
+      "points": 288,
+      "comments": 259,
+      "summary": "Un fil très actif sur la façon de trouver, organiser et maintenir les « skills » des agents IA, et sur leur durée de vie face à des modèles toujours plus capables. Division nette : pour les uns, les skills téléchargés en ligne relèvent « du pur marketing » et seuls ceux écrits pour ses propres workflows valent quelque chose ; pour les autres, un skill bien conçu réduit la consommation de tokens et améliore la cohérence. Consensus émergent : utile pour documenter des processus métier propriétaires, inutile en accumulation passive de recettes génériques."
+    },
+    {
+      "title": "Un interpréteur Python en 1024 octets",
+      "url": "https://austinhenley.com/blog/python1024.html",
+      "hn": "https://news.ycombinator.com/item?id=49591876",
+      "points": 308,
+      "comments": 104,
+      "summary": "Un interpréteur « Python » tenant en 1 024 octets de C : variables à une lettre, mots-clés abrégés (f, w, i, d, p), interprétation directe du source sans AST et zéro gestion d'erreur. Les commentaires saluent le côté « délicieusement crade » tout en rappelant qu'il s'agit plus d'un mini-langage que de Python, dans la lignée de SectorLisp, SectorC ou C4. Un long fil s'attarde sur l'indentation comme syntaxe, casse-tête particulier de ce genre d'exercice de code golf."
+    },
+    {
+      "title": "Ask HN : Fable a hacké mon piano, puis-je publier le résultat ?",
+      "url": "https://news.ycombinator.com/item?id=49577129",
+      "hn": "https://news.ycombinator.com/item?id=49577129",
+      "points": 107,
+      "comments": 57,
+      "summary": "Un utilisateur a fait décoder par l'IA Fable le format MIDI propriétaire de son piano PianoDisc, obfusqué par des « notes leurres » ajoutées par le fabricant, et demande s'il peut publier l'encodeur/décodeur obtenus. Les juristes amateurs du fil invoquent la DMCA : l'obfuscation pourrait compter comme mesure technique de protection, même si d'autres doutent qu'un simple brouillage vaille un chiffrement devant un tribunal. Le consensus pragmatique : mieux vaut demander pardon que permission, quitte à publier anonymement."
+    },
+    {
+      "title": "« You Can See Everything » : le documentaire de Nathan Fielder sur Elizabeth Holmes",
+      "url": "https://variety.com/2026/film/reviews/nathan-fielder-surprise-film-telluride-elizabeth-holmes-1236853513/",
+      "hn": "https://news.ycombinator.com/item?id=49596119",
+      "points": 298,
+      "comments": 250,
+      "summary": "Variety chronique le documentaire surprise de Nathan Fielder sur Elizabeth Holmes et la fraude Theranos, présenté à Telluride. Sur HN, la discussion dévie vite vers le rôle du récit médiatique : un commentateur raconte qu'en 2013 ses professeurs célébraient Holmes pour ce qu'elle représentait plus que pour ses réalisations. Le fil débat de la part du genre dans l'affaire — « la promesse irréaliste est un trope sans genre » contre l'effet « femme Steve Jobs » — et rappelle que ses connexions élitistes ont sans doute pesé plus lourd que tout le reste."
+    },
+    {
+      "title": "La programmation est un art",
+      "url": "https://orchidfiles.com/programming-is-art/",
+      "hn": "https://news.ycombinator.com/item?id=49595360",
+      "points": 186,
+      "comments": 189,
+      "summary": "Un essai défendant la programmation comme art pratiqué par passion, et non simple profession commerciale. Les commentaires convoquent l'analogie avec la photographie : l'IA pourrait faire du code une activité créative plutôt que lucrative, comme l'appareil photo l'a fait pour la peinture. D'autres distinguent art, artisanat et ingénierie — pour certains, seule l'architecture système mérite le mot « art » — et le fil revient sans cesse à la question du jour : l'IA remplace-t-elle les programmeurs ou déplace-t-elle simplement leur terrain de jeu ?"
+    },
+    {
+      "title": "Show HN : GET Together, le réseau social où l'on poste sans POST",
+      "url": "https://gettogether.dev",
+      "hn": "https://news.ycombinator.com/item?id=49592840",
+      "points": 104,
+      "comments": 54,
+      "summary": "Un réseau social parodique où l'on publie via des requêtes HTTP GET au lieu de POST — blague sur les conventions du web et clin d'œil aux garde-fous des agents IA, souvent bridés sur les requêtes mutatives. Plusieurs commentateurs y voient un honeypot délibéré pour LLM, ce à quoi l'auteur répond d'un laconique « Maybe ». Le fil pointe aussi les failles bien réelles du concept : XSS via balises d'images, doubles publications au bouton retour, et une avalanche de jeux de mots sur les méthodes HTTP."
+    }
+  ]
+}
