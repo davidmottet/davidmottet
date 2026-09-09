@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-09",
+  "title": "L'Europe met 3 milliards sur Mistral pendant que Cloudflare, Google et Broadcom resserrent leur emprise",
+  "intro": "Journée dominée par la question de la souveraineté numérique : Mistral signe la plus grosse levée tech européenne avec Samsung en chef de file, tandis qu'une étude montre que près de 9 entreprises européennes sur 10 derrière un CDN dépendent de Cloudflare et que Broadcom complique la fuite hors de VMware. Côté web libre, Jellyfin 12 et l'ouverture de TALA font le bonheur de l'open source, pendant que Google enterre les wikis indépendants dans sa « prison » de nouveaux domaines. Et deux belles histoires techniques : des clés RSA d'une autorité de certification des années 90 factorisées sur un simple PC, et la gravité d'Einstein observée pour la première fois sur des objets quantiques.",
+  "items": [
+    {
+      "title": "Mistral lève 3 milliards d'euros et se valorise à plus de 21 milliards",
+      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "hn": "https://news.ycombinator.com/item?id=49605767",
+      "points": 543,
+      "comments": 377,
+      "summary": "Mistral AI boucle une série D de 3 milliards d'euros — la plus grosse levée technologique européenne — à une valorisation dépassant 21 milliards, menée par Samsung Electronics avec le Scaleup Europe Fund, PSG Equity, BlackRock et NVIDIA. L'entreprise, qui revendique plus de 125 clients entreprises dont Airbus et HSBC dans 20 pays, promet de pousser ses modèles open weight « souverains » vers la frontière. Sur HN, le débat fait rage entre ceux qui jugent les modèles Mistral structurellement en retard sur les concurrents américains et chinois, et ceux qui estiment que seul le financement manquait — avec en toile de fond la question du handicap réglementaire européen."
+    },
+    {
+      "title": "Jellyfin 12.0 : le serveur multimédia libre change d'ère (et de numérotation)",
+      "url": "https://jellyfin.org/posts/jellyfin-release-12.0/",
+      "hn": "https://news.ycombinator.com/item?id=49604861",
+      "points": 416,
+      "comments": 177,
+      "summary": "Jellyfin abandonne le préfixe « 10.x » et sort la version 12.0 : refonte de la base de données pour de meilleures performances (playlists et collections stockées en lignes individuelles), support tant attendu des livres et BD avec interface de lecture repensée, et layout « Modern » par défaut. La migration impose un scan complet de la bibliothèque et une sauvegarde préalable, et casse les très vieux clients tiers. Les commentaires tournent autour de la migration depuis Plex (même pour les détenteurs du pass à vie), des performances par rapport aux 10.11.x, et de la sécurité d'une exposition directe sur Internet versus un VPN type Tailscale."
+    },
+    {
+      "title": "Il a factorisé les clés RSA d'une autorité de certification des années 90",
+      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+      "hn": "https://news.ycombinator.com/item?id=49604637",
+      "points": 365,
+      "comments": 59,
+      "summary": "Un chercheur a factorisé les clés RSA 512 bits de l'autorité de certification canadienne disparue E-Certify, livrées avec Netscape 4.51 en 1999 : environ 32 heures par clé avec CADO-NFS sur un simple Ryzen 9 de bureau. Il a reconstruit les clés privées de deux certificats racines et monté un serveur TLS fonctionnel capable d'émettre des certificats — de quoi piéger en homme du milieu n'importe quel utilisateur de Netscape à l'horloge mal réglée. HN salue cette « archéologie inversée » tout en s'inquiétant du « record now, decrypt later » : casser du RSA 512 bits ne coûte plus que deux jours de machine grand public."
+    },
+    {
+      "title": "WeatherNext 3 : DeepMind pousse la météo par IA à la résolution de 5 km",
+      "url": "https://deepmind.google/science/weathernext/",
+      "hn": "https://news.ycombinator.com/item?id=49552299",
+      "points": 343,
+      "comments": 85,
+      "summary": "Le nouveau modèle météo de Google DeepMind génère des prévisions toutes les heures en exploitant l'imagerie satellite brute : température et humidité à 5 km de résolution, vent à 10 km, avec une bonne précision même sur des zones absentes de l'entraînement. Il alimente Search, Maps et Gemini et s'ouvre aux entreprises via BigQuery, Earth Engine et Google Maps Platform, notamment pour la prévision d'énergies renouvelables. Les commentaires ironisent sur la piètre précision actuelle de Google Weather, débattent de l'impact des coupes budgétaires de la NOAA sur les données, et regrettent le nowcasting minute par minute de feu Dark Sky."
+    },
+    {
+      "title": "Regarder Los Angeles se construire, bâtiment par bâtiment (1880–2026)",
+      "url": "https://lax-skyline.parcelscope.net/",
+      "hn": "https://news.ycombinator.com/item?id=49601655",
+      "points": 302,
+      "comments": 150,
+      "summary": "Une visualisation 3D interactive affiche chaque bâtiment encore debout du comté de Los Angeles à l'année de sa construction, à partir des contours LARIAC 2020 et des registres du cadastre. La limite assumée : seuls les bâtiments survivants apparaissent, ce qui fait paraître les premières décennies plus vides qu'elles ne l'étaient. La discussion HN dérive vers le zonage et la crise du logement — downzoning des années 80, Proposition 13, disparition du réseau de tramways Red Car — et la question de savoir si l'étalement de LA est un usage efficace du sol ou un désastre environnemental."
+    },
+    {
+      "title": "TALA, le moteur de layout de D2 pour les diagrammes d'architecture, passe open source",
+      "url": "https://d2lang.com/blog/tala-is-open-source/",
+      "hn": "https://news.ycombinator.com/item?id=49604150",
+      "points": 245,
+      "comments": 17,
+      "summary": "Terrastruct libère TALA, son algorithme de placement automatique conçu spécifiquement pour les diagrammes d'architecture logicielle, sous licence MPL-2.0 comme D2, dans la foulée du passage de l'organisation en non-profit. L'approche orthogonale mélange techniques issues de la recherche et méthodes originales, avec routage automatique et positions personnalisables. Les commentateurs saluent l'ouverture mais pointent les limites : les DAG sont mieux servis par Dagre ou ELK, et le moteur privilégierait des mises en page carrées au détriment des directions de flux voulues par l'utilisateur."
+    },
+    {
+      "title": "La gravité d'Einstein observée pour la première fois sur des objets quantiques",
+      "url": "https://www.ox.ac.uk/news/2026-08-28-scientists-observe-einsteins-gravity-in-the-quantum-world",
+      "hn": "https://news.ycombinator.com/item?id=49569838",
+      "points": 231,
+      "comments": 68,
+      "summary": "Des chercheurs d'Oxford ont mesuré l'effet de la gravité sur des atomes de rubidium ultra-froids scindés en deux trajectoires — l'une immobile, l'autre en chute libre — et observé le déphasage quantique prédit par le principe d'équivalence d'Einstein. Le résultat montre que ce principe reste cohérent avec la mécanique quantique dans ce régime, sans pour autant unifier les deux théories ni invalider l'hypothèse de Penrose sur les objets massifs. Sur HN, on débat de la portée réelle de l'expérience : confirmation de physique connue ou premier pas vers la gravité quantique — et non, cela ne prouve pas l'existence des gravitons."
+    },
+    {
+      "title": "La « prison Google » qui étouffe les wikis indépendants",
+      "url": "https://weirdgloop.org/blog/google-jail",
+      "hn": "https://news.ycombinator.com/item?id=49604870",
+      "points": 215,
+      "comments": 75,
+      "summary": "Weird Gloop (hébergeur des wikis RuneScape) documente une pénalité frappant les domaines fraîchement enregistrés depuis mars 2024 : environ 90 % des wikis lancés depuis n'apparaissent sur Google que pour leur page d'accueil, parfois pendant plus d'un an — dont les wikis Hollow Knight et Path of Exile 2. Avec 85 % du trafic venant de Google, c'est rédhibitoire, et l'hébergeur contourne désormais le problème en lançant les nouveaux wikis sur des sous-domaines établis. Les commentaires fustigent le paradoxe : Fandom et ses pages saturées de pubs restent premiers, et du contenu généré par IA s'indexe sans peine pendant que des sites indépendants de qualité restent invisibles."
+    },
+    {
+      "title": "Quitter VMware devient plus dur : Broadcom retire les téléchargements du VDDK",
+      "url": "https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/",
+      "hn": "https://news.ycombinator.com/item?id=49602699",
+      "points": 209,
+      "comments": 100,
+      "summary": "Broadcom a supprimé sans annonce l'accès public au Virtual Disk Development Kit, brique essentielle des outils de migration hors de VMware : Azure Migrate (dont la méthode sans agent devient inutilisable), le Migration Toolkit de Red Hat, Nutanix Move (erreurs 404) ou Platform9 en dépendent tous. Le support Broadcom aurait indiqué à des clients que le VDDK n'est « plus disponible au téléchargement ni à l'utilisation », sans explication publique. Un verrou de plus, très commenté sur HN, dans la stratégie de rétention musclée de Broadcom depuis le rachat de VMware."
+    },
+    {
+      "title": "Ils ont construit leur maison pour les LAN parties",
+      "url": "https://lanparty.house/",
+      "hn": "https://news.ycombinator.com/item?id=49579443",
+      "points": 188,
+      "comments": 92,
+      "summary": "Kenton Varda (Cloudflare Workers) et Jade Wang ont conçu leur maison autour du jeu en réseau : 12 stations de jeu escamotables au sous-sol, 6 autres cachées sous une table de réunion transformable, 20 machines identiques reliées à une salle serveur dédiée, tapis de danse DDR intégrés au plancher et fibre optique jusqu'aux écrans. Le fil HN oscille entre admiration pour la prouesse technique et malaise face à la démonstration de richesse, certains comparant la visite à un épisode de MTV Cribs et discutant de la part de chance versus mérite dans la réussite des propriétaires."
+    },
+    {
+      "title": "Près de 9 entreprises européennes sous CDN sur 10 dépendent de Cloudflare",
+      "url": "https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten",
+      "hn": "https://news.ycombinator.com/item?id=49607443",
+      "points": 164,
+      "comments": 143,
+      "summary": "Une analyse de CipherCue portant sur 44 143 entreprises européennes révèle que 89,6 % de celles utilisant un CDN sont derrière Cloudflare, de 78,8 % en Espagne et Irlande jusqu'à 95,6 % aux Pays-Bas. L'étude rappelle que trois pannes majeures de Cloudflare en 2025-2026, causées par de banales erreurs internes, ont paralysé simultanément des milliers d'entreprises sans lien entre elles. Sur HN, le pragmatisme économique (prix et simplicité imbattables) s'oppose aux inquiétudes de souveraineté, avec un constat partagé : bâtir une alternative européenne demanderait un capital et une coordination considérables."
+    },
+    {
+      "title": "Dan Luu : les agents IA utilisent-ils vraiment les techniques de test qu'on leur demande ?",
+      "url": "https://danluu.com/agentic-testing/",
+      "hn": "https://news.ycombinator.com/item?id=49605246",
+      "points": 103,
+      "comments": 31,
+      "summary": "Dan Luu a testé 26 consignes différentes (TDD, méthodes formelles Verus et Lean, tests par propriétés, fuzzing…) sur l'implémentation de Zstd, à raison d'environ 80 exécutions par condition. Verdict : les agents appliquent ces techniques de façon superficielle — ils écrivent leurs tests habituels dans l'habillage demandé — et la condition « sans instruction particulière » fait mieux que la moyenne, signe que pousser un agent vers des pratiques qu'il ne maîtrise pas dégrade le résultat. Les commentaires débattent de la méthodologie (le test est-il séparable de l'architecture du code ?) et suggèrent que des contraintes automatisées, comme le mutation testing, seraient plus efficaces que des consignes que l'agent peut ignorer."
+    }
+  ]
+}
