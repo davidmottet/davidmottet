@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-10",
+  "title": "OpenAI revendique Navier-Stokes et s'attire une tempête, Meta dégaine son agent Muse, DeepMind cartographie 9 milliards de mutations",
+  "intro": "Journée dominée par l'affaire Navier-Stokes : OpenAI revendique une percée mathématique majeure, mais le mathématicien Tristan Buckmaster l'accuse d'avoir potentiellement exploité ses données de chat — deux des sujets les plus discutés du jour tournent autour de cette controverse. Les agents IA sont partout : Meta lance Muse, son assistant personnel grand public, OpenAI fait piloter des expériences quantiques par Codex, et un simple fichier de consignes pour agents de code truste la page d'accueil. En contrepoint, deux belles découvertes en biologie (l'atlas génomique de DeepMind, les « muscles » des arbres) et une décision de justice qui fait entrer « tweet » et l'oiseau bleu dans le domaine public.",
+  "items": [
+    {
+      "title": "Navier-Stokes : la déclaration de Tristan Buckmaster qui accuse OpenAI",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49605915",
+      "points": 1749,
+      "comments": 732,
+      "summary": "OpenAI affirme avoir résolu un problème majeur lié aux équations de Navier-Stokes en exhibant un scénario d'explosion (« blow-up »), peu après que Tristan Buckmaster (NYU) et Levent Alpöge ont publié des avancées sur le problème voisin d'Euler avec forçage. Dans cette déclaration, Buckmaster soupçonne OpenAI d'avoir bénéficié de ses données d'utilisation de ChatGPT — l'entreprise admet ne pas pouvoir « exclure que des données dé-identifiées dérivées de leur usage aient contribué à améliorer nos modèles » — et rapporte qu'on lui a demandé d'écarter Alpöge, employé d'Anthropic, des discussions d'attribution. Les 732 commentaires débattent de la confidentialité des conversations avec les IA, de la plausibilité d'une découverte indépendante et simultanée, et du caractère évasif de la réponse d'OpenAI."
+    },
+    {
+      "title": "AlphaGenome Atlas : DeepMind prédit l'effet des 9 milliards de mutations possibles de l'ADN humain",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+      "hn": "https://news.ycombinator.com/item?id=49611251",
+      "points": 569,
+      "comments": 123,
+      "summary": "Google DeepMind publie un atlas des prédictions moléculaires pour les neuf milliards de substitutions d'une lettre possibles dans le génome humain — un pétaoctet de données — plus de 100 millions d'insertions et délétions observées. Un score unique, l'AlphaGenome Variant Impact (AVI), distingue les mutations pathogènes des variations bénignes, sans exiger de compétences en programmation, et l'outil est librement accessible. Les chercheurs y voient une aide précieuse pour le diagnostic des maladies rares et l'étude de la régulation des gènes, tout en rappelant que ces prédictions ne remplaceront pas les expériences en laboratoire."
+    },
+    {
+      "title": "Muse : Meta lance son agent IA personnel pour le grand public",
+      "url": "https://ai.meta.com/muse/",
+      "hn": "https://news.ycombinator.com/item?id=49615537",
+      "points": 536,
+      "comments": 585,
+      "summary": "Meta dévoile Muse, un agent personnel proactif capable d'utiliser un ordinateur dans une machine virtuelle hébergée chez Meta, avec un mécanisme de contrôle des accès baptisé Sentinel : gratuit avec des abonnements à 20 et 100 dollars par mois, lancé d'abord aux États-Unis, et pensé pour l'utilisateur moyen plutôt que pour les technophiles. Meta le présente comme « une première étape majeure vers la superintelligence personnelle », avec une version confidentielle promise d'ici la fin de l'année. Les 585 commentaires oscillent entre l'analyse stratégique (capter les utilisateurs « par défaut ») et un fort scepticisme : anciens employés décrivant une entreprise sans stratégie et vidée de ses talents, inquiétudes sur l'exploitation des données privées et sur l'ampleur vertigineuse des engagements financiers de Meta dans l'IA."
+    },
+    {
+      "title": "i-have-adhd : la consigne qui empêche les agents de code d'enterrer la réponse",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "hn": "https://news.ycombinator.com/item?id=49610631",
+      "points": 469,
+      "comments": 320,
+      "summary": "Ce petit dépôt GitHub fournit une « skill » compatible Claude, Cursor ou Gemini qui impose dix règles de formatage aux assistants de code : commencer par l'action à faire, numéroter les étapes, estimer les durées et supprimer les politesses — pour transformer un paragraphe verbeux en instructions directes du type « lance npm install, puis édite src/auth.ts:42 ». Déjà environ 35 000 étoiles et 2 100 forks, signe que le besoin dépasse largement le public revendiqué par son titre. Avec 320 commentaires, c'est aussi l'un des fils les plus animés du jour sur la manière dont les agents IA communiquent avec leurs utilisateurs."
+    },
+    {
+      "title": "DaVinci Resolve 21.1 : plus de 100 nouveautés et un serveur MCP pour piloter le montage en langage naturel",
+      "url": "https://www.blackmagicdesign.com/media/release/20260908-03",
+      "hn": "https://news.ycombinator.com/item?id=49610181",
+      "points": 411,
+      "comments": 187,
+      "summary": "Blackmagic Design publie une mise à jour majeure et gratuite de son logiciel de montage : plus de 100 nouveaux outils, dont un serveur MCP qui permet de contrôler Resolve par commandes en langage naturel via un assistant IA comme Claude. La page Fusion gagne plus de 25 outils Krokodove pour le motion design, et l'étalonnage gère désormais des passes séparées Dolby Vision, HDR10+ et HDR Vivid. La version gratuite reste complète, la Studio coûte 295 dollars avec mises à jour gratuites — un modèle que les commentateurs de HN aiment opposer aux abonnements d'Adobe."
+    },
+    {
+      "title": "« Construire une imprimante » : un serveur d'impression qui affiche vos documents sur un écran e-ink",
+      "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+      "hn": "https://news.ycombinator.com/item?id=49617255",
+      "points": 360,
+      "comments": 79,
+      "summary": "Derrière le titre provocateur, l'auteur n'a pas construit d'imprimante à encre : il a implémenté le protocole IPP sur une liseuse e-ink Xteink X3, si bien que n'importe quel appareil peut y « imprimer » un document qui s'affiche à l'écran. Les commentaires saluent l'astuce de détourner l'infrastructure d'impression existante, partagent leur frustration face à la complexité des piles d'impression (« des bugs sur des bugs »), et imaginent des usages concrets comme afficher une recette en cuisine sans salir son téléphone — avec d'inévitables comparaisons aux PADDs de Star Trek."
+    },
+    {
+      "title": "Mercury 2.5 : le LLM par diffusion d'Inception atteint 1 100 tokens par seconde",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+      "hn": "https://news.ycombinator.com/item?id=49616354",
+      "points": 211,
+      "comments": 36,
+      "summary": "Inception Labs annonce Mercury 2.5, son modèle de langage à diffusion (qui génère le texte en parallèle plutôt que token par token) : 1 107 tokens par seconde sur des GPU NVIDIA standards, un contexte de 260 000 tokens et une « intelligence » annoncée en hausse de 40 % par rapport à Mercury 2, au niveau des modèles frontières optimisés coût comme GPT-5.6 Luna ou Claude Haiku 4.5. Tarifs à 0,20 dollar le million de tokens en entrée et 0,75 en sortie, avec raisonnement réglable et appels d'outils parallèles. L'architecture diffusion confirme qu'une alternative crédible aux transformeurs autorégressifs se dessine sur les usages sensibles à la latence : recherche, agents vocaux, assistance au code."
+    },
+    {
+      "title": "Les LLM inventent des biais sociaux inédits par exploration insuffisante",
+      "url": "https://openreview.net/forum?id=Ob6H8KDPIu",
+      "hn": "https://news.ycombinator.com/item?id=49617581",
+      "points": 175,
+      "comments": 91,
+      "summary": "En s'appuyant sur des paradigmes de psychologie expérimentale, des chercheurs montrent que les grands modèles de langage créent spontanément des biais envers des groupes démographiques artificiels ne présentant aucune différence réelle : faute d'explorer suffisamment, les premières observations façonnent durablement leurs « impressions ». Ces biais émergents produisent des attributions de tâches plus injustes que celles d'humains, et le phénomène s'aggrave dans les modèles récents et plus grands. La parade la plus efficace testée : encourager explicitement l'exploration — un résultat qui suggère que les modèles ne se contentent pas de refléter nos biais, ils en fabriquent de nouveaux."
+    },
+    {
+      "title": "Le bois de tension, un « muscle » qui permet aux arbres de corriger leur posture",
+      "url": "https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html",
+      "hn": "https://news.ycombinator.com/item?id=49546964",
+      "points": 129,
+      "comments": 34,
+      "summary": "Des chercheurs d'INRAE et de l'Université Clermont Auvergne ont placé des peupliers courbés dans un dispositif rotatif qui neutralise la perception de la gravité : privés de tout repère sauf la perception de leur propre forme, les arbres ont déplacé leur bois de tension du côté opposé de la tige pour la redresser en quelques semaines, comme des muscles antagonistes. Publiée dans New Phytologist, l'étude prouve que les plantes intègrent une véritable proprioception à leurs signaux environnementaux. Au-delà de la curiosité, cela ouvre des pistes pour sélectionner des cultures résistantes à la verse et comprendre la tenue des arbres aux tempêtes."
+    },
+    {
+      "title": "« Tweet » et l'oiseau bleu tombent dans le domaine public, mais X garde la marque Twitter",
+      "url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+      "hn": "https://news.ycombinator.com/item?id=49621751",
+      "points": 117,
+      "comments": 68,
+      "summary": "Dans l'affaire X v. Project Bluebird, un juge fédéral du Delaware a rendu une injonction préliminaire en demi-teinte : X conserve la marque « Twitter » (maintenue en usage via la mention « formerly known as Twitter » sur l'App Store), mais a bien abandonné « tweet » et le logo de l'oiseau bleu — le juge citant notamment les déclarations publiques d'Elon Musk faisant « ses adieux aux oiseaux » et les logos retirés au chalumeau. En face, Operation Bluebird, fondée par un ancien avocat des marques de Twitter, s'est aussitôt rebaptisée Tweet.app et poursuit sa bataille juridique jusqu'au procès. Les commentaires savourent l'ironie de voir Musk perdre des actifs qu'il a lui-même méthodiquement détruits."
+    },
+    {
+      "title": "GPT-5.6 Sol pilote des expériences d'informatique quantique au MIT",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "hn": "https://news.ycombinator.com/item?id=49622561",
+      "points": 86,
+      "comments": 68,
+      "summary": "OpenAI et le groupe Engineering Quantum Systems du MIT ont laissé des agents Codex mener de façon autonome des mesures de routine sur une puce supraconductrice de six qubits : choix des paramètres, pilotage du matériel, analyse des données et calibration des fréquences et impulsions de contrôle. Le système s'est montré fiable quand les signaux étaient nets, mais a régulièrement eu besoin d'un chercheur expérimenté face à des données bruitées, et n'a pas été testé sur de la recherche inédite. L'intérêt revendiqué est de libérer les physiciens des tâches répétitives de calibration — un assistant de laboratoire plus qu'un scientifique autonome, nuance que reprennent les commentaires."
+    },
+    {
+      "title": "Comment la « percée mathématique » de l'IA a déclenché une controverse",
+      "url": "https://www.science.org/content/article/how-ai-math-breakthrough-ignited-controversy",
+      "hn": "https://news.ycombinator.com/item?id=49624163",
+      "points": 80,
+      "comments": 62,
+      "summary": "Le magazine Science revient sur l'affaire du jour : la preuve d'OpenAI sur Navier-Stokes fait 166 pages et a été vérifiée formellement avec Lean, mais, comme le souligne le mathématicien Gregory Eyink (Johns Hopkins), personne ne l'a encore complètement validée « côté humain ». L'article détaille la chronologie qui nourrit les soupçons — les travaux de Buckmaster et Alpöge sur Euler avec forçage en août, l'annonce d'OpenAI en septembre avec une approche jugée très similaire — et la question centrale de l'accès éventuel d'OpenAI à des travaux non publiés via les données d'usage. Un cas d'école sur l'attribution scientifique à l'ère des laboratoires d'IA concurrents, qui prolonge le débat du fil principal."
+    }
+  ]
+}
