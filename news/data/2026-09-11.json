@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-11",
+  "title": "Apple plie son iPhone, l'IA avale Tailwind, et le conseil d'Automattic écarte Mullenweg",
+  "intro": "Journée dominée par le keynote Apple : l'iPhone Duo pliable à 2 000 dollars truste la page d'accueil aux côtés des iPhone 18 Pro, AirPods 5 et Apple Watch 12. En coulisses, l'IA continue de rebattre les cartes : Tailwind Labs, saigné par la chute du trafic vers sa documentation, se vend à Shopify, DeepSeek publie v4.1 Flash, et Sebastian Raschka décortique les rumeurs de « transformers bouclés » derrière GPT-6 Astra. Ajoutez le conseil d'administration d'Automattic qui met Matt Mullenweg en congé forcé, et des données de plus en plus solides sur la sécurité des voitures autonomes : les débats ne manquaient pas.",
+  "items": [
+    {
+      "title": "iPhone Duo : Apple lance son premier iPhone pliable à 2 000 dollars",
+      "url": "https://www.apple.com/iphone-duo/",
+      "hn": "https://news.ycombinator.com/item?id=49630931",
+      "points": 1392,
+      "comments": 2411,
+      "summary": "Apple entre enfin sur le marché du pliable : l'iPhone Duo, annoncé au keynote de rentrée, arrive le 23 octobre à 2 000 dollars, avec compatibilité Apple Pencil et une pliure annoncée comme quasi invisible. Les commentaires se déchirent précisément là-dessus : certains jurent qu'« il n'y a aucune pliure », d'autres brandissent photos et vidéos montrant un pli visible sur fond sombre. On débat aussi de l'utilité réelle du format si les développeurs n'adaptent pas leurs apps, et du sentiment qu'Apple adopte une technologie mûrie par Samsung plutôt que d'innover — sans oublier la nostalgie des keynotes en direct, remplacés par des vidéos jugées aseptisées."
+    },
+    {
+      "title": "Shopify rachète Tailwind, dont l'activité a été laminée par l'IA",
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "hn": "https://news.ycombinator.com/item?id=49626190",
+      "points": 1094,
+      "comments": 422,
+      "summary": "Shopify acquiert Tailwind Labs, l'éditeur du framework CSS le plus populaire du web. Selon l'équipe, l'IA a tué le modèle économique : 75 % des ingénieurs avaient déjà été licenciés et le trafic vers la documentation a chuté de 40 %, tarissant la conversion vers les produits payants (Tailwind Plus) puisque les développeurs demandent désormais à leurs assistants IA d'écrire le code. Les commentaires débattent de la viabilité d'un business fondé sur des composants d'interface, entre ceux qui y voient une « inefficience » condamnée et ceux qui rappellent que Telerik ou DevExpress en vivent depuis des décennies — d'autres pointent des causes plus structurelles que l'IA."
+    },
+    {
+      "title": "DeepSeek publie v4.1 Flash",
+      "url": "https://twitter.com/deepseek_ai/status/2097930608790167907",
+      "hn": "https://news.ycombinator.com/item?id=49639090",
+      "points": 485,
+      "comments": 261,
+      "summary": "DeepSeek dévoile v4.1 Flash, déclinaison rapide de son modèle phare, accompagnée d'un rapport technique détaillé. C'est justement cette transparence qui domine les commentaires : beaucoup opposent les rapports « pleins de détails croustillants » du laboratoire chinois à la communication jugée plus marketing des laboratoires occidentaux. Deux autres fils animent la discussion : un débat philosophique sur la conscience et le « bien-être » des modèles, et la question récurrente de la distillation — DeepSeek s'est-il entraîné sur les sorties de modèles propriétaires concurrents ?"
+    },
+    {
+      "title": "Le conseil d'administration d'Automattic met Matt Mullenweg en congé forcé",
+      "url": "https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/",
+      "hn": "https://news.ycombinator.com/item?id=49636283",
+      "points": 328,
+      "comments": 215,
+      "summary": "Coup de tonnerre chez la maison mère de WordPress.com : le 9 septembre, le conseil d'administration a voté la mise en congé payé forcée du fondateur et PDG Matt Mullenweg, remplacé par intérim par le directeur financier Mark Davies. Mullenweg, qui reste administrateur, affirme n'avoir reçu la résolution que 50 minutes avant le vote et s'être vu refuser un examen juridique. Le conseil n'a pas motivé publiquement sa décision, mais elle survient après deux années agitées : conflit avec WP Engine, départ de 159 employés, licenciement de 16 % des effectifs et messages cryptiques du dirigeant évoquant des « attaques en diffamation » à venir."
+    },
+    {
+      "title": "GPT-6 Astra, transformers bouclés et raisonnement caché : l'analyse de Sebastian Raschka",
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "hn": "https://news.ycombinator.com/item?id=49627370",
+      "points": 454,
+      "comments": 146,
+      "summary": "Sebastian Raschka dissèque la rumeur selon laquelle GPT-6 Astra, dernier modèle phare d'OpenAI (99,9 % sur ARC-AGI-3 contre 7,8 % pour GPT-5.6 Sol, entraîné sur environ 100 000 GPU Grace Blackwell), reposerait sur un « transformer bouclé » qui repasse plusieurs fois par les mêmes couches pour économiser environ la moitié des paramètres. Sa conclusion : rien ne prouve que l'architecture « cache » du raisonnement — les traces plus courtes d'Astra s'expliquent plus simplement par un modèle globalement meilleur, et les gains viendraient surtout des recettes et données d'entraînement. Une mise au point pédagogique bienvenue face à l'emballement, avec un tour d'horizon de la recherche sur la profondeur récurrente."
+    },
+    {
+      "title": "Que font vraiment Visa et Mastercard ? Une introduction aux réseaux de cartes",
+      "url": "https://tautology.town/2026/06/01/card-networks.html",
+      "hn": "https://news.ycombinator.com/item?id=49614280",
+      "points": 649,
+      "comments": 387,
+      "summary": "Un long article pédagogique démonte la mécanique des réseaux de cartes bancaires : rôles de l'émetteur, de l'acquéreur et du réseau, circuit d'une transaction et répartition des commissions d'interchange. Les commentaires tournent vite à la comparaison transatlantique : l'Europe plafonne l'interchange à 0,3 % (crédit) et 0,2 % (débit) quand les taux américains grimpent bien plus haut, alimentant un système de récompenses que beaucoup décrivent comme un transfert de richesse des payeurs en liquide ou en débit vers les détenteurs de cartes premium. On y débat aussi des protections anti-fraude, bien meilleures sur les cartes de crédit que de débit."
+    },
+    {
+      "title": "Les preuves s'accumulent : les voitures autonomes sauvent des vies",
+      "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
+      "hn": "https://news.ycombinator.com/item?id=49629886",
+      "points": 365,
+      "comments": 638,
+      "summary": "IEEE Spectrum compile les données de sécurité des robotaxis : sur 220 millions de miles et 20 millions de courses payantes, Waymo revendique 92 % de collisions graves ou mortelles en moins que les conducteurs humains en environnement urbain comparable, et une étude indépendante de l'IIHS (50 millions de miles autonomes contre 222 milliards de miles humains) mesure 68 % de collisions en moins et 81 % de blessures en moins par mile. L'article garde des réserves : les robotaxis ne roulent que par beau temps dans quelques villes, et la moitié des accidents humains ne sont jamais déclarés, ce qui biaise les comparaisons. Avec 638 commentaires, le sujet reste l'un des plus clivants du jour."
+    },
+    {
+      "title": "Desert Ant Labs : des petits modèles rapides qui tournent entièrement sur l'appareil",
+      "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "hn": "https://news.ycombinator.com/item?id=49624823",
+      "points": 460,
+      "comments": 97,
+      "summary": "Un nouveau laboratoire européen fondé par Paul Veugent lance 18 petits modèles spécialisés (audio, vision, texte) conçus pour tourner en local, avec des SDK Swift, Kotlin et JavaScript. Les chiffres impressionnent : Voz transcrit 10 minutes d'audio en 2 secondes sur iPhone (4,7 fois plus vite que Whisper), Clear débruite 5 minutes d'enregistrement en 1 seconde avec un modèle de 9 Mo, et Tongue identifie 84 langues avec 2 Mo. L'offre gratuite couvre jusqu'à 100 000 appareils actifs mensuels, et le laboratoire met en avant une consommation d'énergie 470 fois inférieure aux solutions cloud équivalentes — un contrepoint assumé à la course aux modèles géants."
+    },
+    {
+      "title": "Qwen 3.8 « reconnaît » les préfixes de raisonnement de GPT-5.5 Pro",
+      "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
+      "hn": "https://news.ycombinator.com/item?id=49630026",
+      "points": 232,
+      "comments": 93,
+      "summary": "Une expérience partagée sur GitHub montre que si l'on préremplit Qwen 3.8 avec le tout début (1 %) d'une chaîne de raisonnement de GPT-5.5 Pro, ses réponses convergent fortement vers celles du modèle d'OpenAI (+20,6 points sur les benchmarks testés) — un indice de distillation des sorties de GPT dans l'entraînement de Qwen. Les commentateurs contestent la méthodologie (les traces utilisées étant publiques depuis un article d'août, tout modèle récent a pu les voir) et s'écharpent sur la morale de l'affaire : des laboratoires qui ont aspiré le web sans permission sont-ils légitimes à dénoncer la distillation de leurs propres sorties ?"
+    },
+    {
+      "title": "No Man's Sky : la mise à jour Cosmos (7.0) pour les 10 ans du jeu",
+      "url": "https://www.nomanssky.com/cosmos-update/",
+      "hn": "https://news.ycombinator.com/item?id=49628493",
+      "points": 411,
+      "comments": 410,
+      "summary": "Hello Games célèbre les dix ans de No Man's Sky avec Cosmos, une mise à jour 7.0 toujours gratuite : direction de stations spatiales personnalisables, alliances galactiques entre joueurs, bases orbitales flottantes, démantèlement d'épaves colossales et sorties extravéhiculaires améliorées, sur toutes les plateformes de la PS4 à la Switch 2. Les 410 commentaires saluent surtout la trajectoire du studio : dix ans de mises à jour gratuites après un lancement catastrophique en 2016, régulièrement cité comme le plus beau rachat de réputation du jeu vidéo — et beaucoup y voient un modèle face aux jeux-service à monétisation agressive."
+    },
+    {
+      "title": "iPhone 18 Pro et 18 Pro Max : le reste du keynote Apple",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "hn": "https://news.ycombinator.com/item?id=49630151",
+      "points": 375,
+      "comments": 418,
+      "summary": "Aux côtés de l'iPhone Duo, Apple a présenté sa gamme classique : iPhone 18 Pro et Pro Max, AirPods 5 à réduction de bruit active en format ouvert (470 points sur HN) et Apple Watch Series 12 avec son nouveau système de capteurs santé (263 points). Quatre annonces Apple simultanées en page d'accueil de HN — un raz-de-marée rare. Dans les fils de discussion, la tonalité générale est celle d'une itération solide mais sans surprise, le pliable concentrant l'essentiel de l'attention, et la fonction Siri Recaps de l'Apple Watch soulevant déjà des questions de vie privée sur l'écoute permanente."
+    },
+    {
+      "title": "Show HN : et si la lumière allait à 5 km/h ?",
+      "url": "https://rivendell.dmitrybrant.com/relativity/",
+      "hn": "https://news.ycombinator.com/item?id=49637385",
+      "points": 402,
+      "comments": 161,
+      "summary": "Une démo interactive à la première personne où la vitesse de la lumière est ramenée à 5 km/h : en se promenant dans un parc, on observe contraction des longueurs, dilatation du temps et décalage des couleurs dès qu'on presse le pas. Les commentaires convoquent le précédent « A Slower Speed of Light » du MIT Game Lab (2012), dont cette version modéliserait mieux l'effet Doppler temporel, et pinaillent joyeusement sur la physique : changer la seule constante c sans toucher au reste bouleverserait en réalité la structure atomique et la formation des trous noirs. Un bel exemple de vulgarisation de la relativité restreinte par le jeu."
+    }
+  ]
+}
