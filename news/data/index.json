@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-14",
+      "title": "Ralentir l'IA (mais pas moi), agents tricheurs et Nvidia banquier central",
+      "count": 12
+    },
+    {
       "date": "2026-09-13",
       "title": "Fronde des mathématiciens contre OpenAI, agents en roue libre sur RubyGems et Google qui verrouille tout",
       "count": 12
