@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-16",
+      "title": "Armes en orbite, rail saboté, Spotlight en panne : infrastructures sous tension",
+      "count": 12
+    },
+    {
       "date": "2026-09-15",
       "title": "Bots d'OpenAI chez RubyGems, Steam Frame à 1 059 $ et XCancel de nouveau suspendu",
       "count": 12

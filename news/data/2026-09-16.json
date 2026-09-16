@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-16",
+  "title": "Armes en orbite, rail saboté, Spotlight en panne : infrastructures sous tension",
+  "intro": "Entre la confirmation américaine d'armes déployées en orbite, un sabotage coordonné du rail néerlandais et le bilan sans appel de Bruce Schneier sur 25 ans de surveillance de masse, la journée a des airs de géopolitique des infrastructures. Côté logiciel, Apple livre iOS 27 et macOS 27 pendant que HN règle ses comptes avec Spotlight, Java 27 sort sans aucune nouveauté de langage, OpenAI s'offre une pépite de la photographie computationnelle et une conjecture d'algorithmique ouverte de longue date vient de tomber. En contrepoint, les bricoleurs enchantent la page d'accueil avec un cadre e-ink qui écoute les oiseaux et un bras robotique entièrement open source.",
+  "items": [
+    {
+      "title": "iOS 27, iPadOS 27 et macOS 27 sont disponibles",
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+      "hn": "https://news.ycombinator.com/item?id=49701004",
+      "points": 697,
+      "comments": 821,
+      "summary": "Apple publie ses mises à jour majeures annuelles pour iPhone, iPad et Mac, présentées comme un cru axé sur les performances et la qualité logicielle. La discussion HN est largement détournée vers un procès de la recherche système : des utilisateurs documentent Spotlight faisant disparaître une application en cours de frappe (« CHE » affiche Chess, le « SS » final le fait disparaître) et des listes de résultats qui se réorganisent sous le doigt au moment de taper. Beaucoup notent que Windows souffre des mêmes maux et disent avoir migré vers Alfred, Raycast ou PowerToys."
+    },
+    {
+      "title": "« Je n'arrête pas de penser à la Papouasie-Nouvelle-Guinée »",
+      "url": "https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua",
+      "hn": "https://news.ycombinator.com/item?id=49708431",
+      "points": 583,
+      "comments": 245,
+      "summary": "Un essai fascinant sur un pays dont les hauts plateaux sont restés inconnus du monde extérieur jusqu'aux années 1930 : monnaie de coquillages avec sa propre inflation, centaines de groupes isolés passés en une génération à la société contemporaine, et conflits tribaux qui persistent. Les commentaires débattent de la guerre ritualisée des highlands — des batailles rangées à l'arc faisant étonnamment peu de morts, par retenue délibérée selon certains anthropologues — et notent que l'arrivée des armes à feu a fait exploser la létalité de ces affrontements."
+    },
+    {
+      "title": "Sabotage présumé : le rail néerlandais fortement perturbé",
+      "url": "https://www.bbc.com/news/articles/c8ly49w9g1edo",
+      "hn": "https://news.ycombinator.com/item?id=49710253",
+      "points": 296,
+      "comments": 273,
+      "summary": "Des tubes métalliques de 1,5 à 2 mètres ont été fixés aux voies en de multiples points du réseau ; un train en a percuté près de Steenwijk au petit matin du 15 septembre, jour de présentation du budget. Le trafic a été sévèrement perturbé dans le centre et l'est du pays, jusqu'à Utrecht Central, et la police nationale enquête avec l'appui des services de renseignement AIVD et NCTV. Aucune revendication à ce stade : les experts cités évoquent aussi bien un acteur étatique que des extrémistes locaux, en soulignant que tout reste spéculatif."
+    },
+    {
+      "title": "25 ans de surveillance de masse, ça suffit",
+      "url": "https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html",
+      "hn": "https://news.ycombinator.com/item?id=49710883",
+      "points": 281,
+      "comments": 48,
+      "summary": "Bruce Schneier dresse le bilan d'un quart de siècle de surveillance de masse depuis le 11 Septembre : les bénéfices sécuritaires promis ne sont pas au rendez-vous, tandis que l'érosion des libertés civiles, elle, est bien réelle. Les commentaires s'écharpent sur la nature du phénomène — complot délibéré des puissants ou simple alignement d'incitations — et sur la possibilité même d'y résister, entre ceux qui jugent l'infrastructure de surveillance désormais irréversible et ceux qui rappellent que des mobilisations ont déjà fait reculer des programmes."
+    },
+    {
+      "title": "Show HN : un cadre e-ink qui écoute les oiseaux et les dessine en planches naturalistes du XIXe",
+      "url": "https://github.com/arnegiacomo/fugleramme",
+      "hn": "https://news.ycombinator.com/item?id=49711544",
+      "points": 265,
+      "comments": 59,
+      "summary": "Un Raspberry Pi équipé d'un micro identifie les chants d'oiseaux du jardin avec BirdNET-Go, puis affiche sur un écran e-ink les espèces détectées sous forme d'illustrations d'histoire naturelle du XIXe siècle — plus de 800 découpes issues de vraies planches du domaine public, l'écran ne se rafraîchissant que quand la composition change. HN adore le projet ; le fil débat surtout de l'attribution vis-à-vis de projets antérieurs similaires (l'auteur s'est engagé à les créditer) et de la transparence sur la retouche par IA de certaines images."
+    },
+    {
+      "title": "Les États-Unis confirment pour la première fois avoir déployé des armes dans l'espace",
+      "url": "https://www.bbc.com/news/articles/ck790xg41ygro",
+      "hn": "https://news.ycombinator.com/item?id=49707473",
+      "points": 200,
+      "comments": 120,
+      "summary": "Le secrétaire à l'Air Force Troy Meink a déclaré le 15 septembre que les États-Unis disposent en orbite d'« armes de contrôle spatial » capables de défendre leurs forces, aux moyens kinétiques comme non kinétiques (lasers, brouillage), sans donner de détails sur leur nature ou leur nombre. Pékin a aussitôt mis en garde contre la transformation de l'espace en champ de bataille et Moscou a appelé à sa démilitarisation complète — une officialisation qui acte la militarisation assumée de l'orbite terrestre."
+    },
+    {
+      "title": "OpenArm : un bras humanoïde 7 axes entièrement open source",
+      "url": "https://github.com/enactic/OpenArm",
+      "hn": "https://news.ycombinator.com/item?id=49684289",
+      "points": 165,
+      "comments": 33,
+      "summary": "Enactic publie un bras robotique à 7 degrés de liberté aux proportions humaines, pensé pour la recherche en IA physique dans les environnements à contacts riches : environ 6 500 $ le système bimanuel complet, logiciel sous Apache-2.0 et matériel sous CERN-OHL-S avec les fichiers CAO fournis. L'écosystème est déjà fourni — ROS 2, téléopération bilatérale, simulation Isaac Lab et MuJoCo — ce qui en fait une plateforme sérieuse pour l'apprentissage par imitation et la collecte de données réelles, à une fraction du prix des bras commerciaux."
+    },
+    {
+      "title": "CSS-Tricks dans les limbes",
+      "url": "https://vale.rocks/micros/20260915-0135",
+      "hn": "https://news.ycombinator.com/item?id=49708993",
+      "points": 148,
+      "comments": 56,
+      "summary": "Le site emblématique du développement web, racheté par DigitalOcean en 2022, est de nouveau à l'arrêt : équipe licenciée en 2023, relance en 2024 avec le retour de l'éditeur Geoff Graham, puis plus rien et un silence complet de l'entreprise. Le billet pointe un contraste cruel — DigitalOcean a engagé 3 millions de dollars en quelques jours pour le projet Omarchy de DHH pendant que CSS-Tricks n'obtenait aucun moyen — et la presse spécialisée rapporte que Chris Coyier, son fondateur, aimerait récupérer le site."
+    },
+    {
+      "title": "Des alternatives à MinIO pour du S3 local mono-nœud",
+      "url": "https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/",
+      "hn": "https://news.ycombinator.com/item?id=49709381",
+      "points": 131,
+      "comments": 65,
+      "summary": "Un tour d'horizon des solutions compatibles S3 pour remplacer MinIO en développement local, qui distingue la vraie compatibilité S3 de la simple compatibilité MinIO et passe en revue Garage, Versity Gateway, SeaweedFS, JuiceFS ou encore RustFS. Dans les commentaires, Garage sort favori (sa v2.3.0 simplifie la configuration mono-nœud), certains défendent des options minimalistes comme rclone serve s3, et un fork communautaire maintenu de MinIO corrigeant les CVE (pgsty/minio) est recommandé."
+    },
+    {
+      "title": "Java 27 est disponible",
+      "url": "https://mail.openjdk.org/archives/list/announce@openjdk.org/thread/ORGGLMN75HFEWP7YL3ZLGHLYHVIBJDYT/",
+      "hn": "https://news.ycombinator.com/item?id=49712041",
+      "points": 120,
+      "comments": 72,
+      "summary": "Une version volontairement sans éclat : zéro changement de langage, une évolution mineure côté TLS et une vingtaine de méthodes d'API, l'essentiel du travail portant sur les entrailles d'OpenJDK. Les commentaires débattent de l'intérêt de cette cadence semestrielle quand les nouveautés visibles se raréfient, de la valeur de ces versions pour les runtimes alternatifs comme GraalVM, et de l'absence persistante de null safety — les regards se tournent vers Project Valhalla, attendu pour la suite."
+    },
+    {
+      "title": "OpenAI rachète Glass Imaging, spécialiste de la photo sur smartphone, pour 300 M$",
+      "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+      "hn": "https://news.ycombinator.com/item?id=49711240",
+      "points": 75,
+      "comments": 40,
+      "summary": "OpenAI s'offre pour plus de 300 millions de dollars cette startup de Los Altos fondée en 2019 par Ziv Attar et Tom Bishop, anciens ingénieurs d'Apple ayant travaillé sur le mode Portrait, dont les réseaux de neurones améliorent l'image au moment de la capture plutôt qu'en post-traitement. La société n'avait levé qu'environ 30 millions : l'opération confirme les ambitions matérielles d'OpenAI — smartphone, écouteurs, compagnon IA — après le rachat à 6,5 milliards de la société de design de Jony Ive."
+    },
+    {
+      "title": "La conjecture k-serveur est vraie",
+      "url": "https://arxiv.org/abs/2609.15979",
+      "hn": "https://news.ycombinator.com/item?id=49709129",
+      "points": 69,
+      "comments": 29,
+      "summary": "Christian Coester, Elias Koutsoupias et Marek Zbysiński annoncent la résolution d'une des grandes conjectures des algorithmes en ligne : l'algorithme de la fonction de travail atteint un ratio de compétitivité k sur tout espace métrique. La preuve repose sur une représentation matricielle de la fonction de travail — les opérations de coût optimal deviennent des additions et multiplications de matrices — combinée à une analyse amortie par fonction de potentiel, une approche saluée pour son élégance."
+    }
+  ]
+}
