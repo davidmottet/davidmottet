@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-18",
+  "title": "GPT-6 passe le barreau, Fujitsu joue la souveraineté et un modèle construit sa propre infra",
+  "intro": "Journée dominée par l'institutionnalisation de l'IA : OpenAI lance une déclinaison de GPT-6 pour les cabinets d'avocats, Z.ai affirme que son modèle GLM a optimisé lui-même l'infrastructure qui le sert, et la compression ternaire fait tenir un 27B dans 6 Go. En parallèle, le matériel se fait géopolitique — CPU « souverain » 2nm chez Fujitsu, 100 000 accélérateurs chinois chez Z.ai — pendant que la culture hacker répond présente : congrès du CCC à Hambourg, moteur de recherche personnel auto-hébergé en tête de page et récit d'intrusion chez OpenAI mené avec un agent IA. Même les mathématiciens s'en mêlent, avec la lettre des médaillés Fields sur l'IA que Timothy Gowers refuse de signer.",
+  "items": [
+    {
+      "title": "Astra for Law : OpenAI lance un GPT-6 taillé pour les juristes",
+      "url": "https://openai.com/index/astra-for-law/",
+      "hn": "https://news.ycombinator.com/item?id=49745940",
+      "points": 448,
+      "comments": 467,
+      "summary": "OpenAI présente Astra for Law, une configuration de GPT-6 dédiée au droit, adossée à un index de recherche juridique de plus de 230 millions d'URLs (jurisprudence, lois, règlements) et présentée comme « le début d'un investissement de long terme dans le droit ». Le produit vise les grands cabinets (Am Law 200) via un programme « Trusted Access », ainsi que les éditeurs legaltech comme Harvey et Legora. Sur HN, un avocat raconte être passé de 2-3 à 8-10 documents relus par heure grâce à l'IA, mais le fil débat ferme d'hallucinations, de responsabilité professionnelle et de savoir si ces outils démocratisent l'accès au droit ou butent toujours sur les jugements complexes."
+    },
+    {
+      "title": "Fujitsu lance MONAKA, son CPU « made in Japan » de nouvelle génération",
+      "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
+      "hn": "https://news.ycombinator.com/item?id=49715813",
+      "points": 571,
+      "comments": 216,
+      "summary": "Processeur serveur ARM (ARMv9, SVE2) de 144 cœurs gravés en 2 nm et empilés en 3D avec des puces SRAM en 5 nm, jusqu'à 3,8 GHz, disponible en novembre 2026 dans des serveurs « IA souveraine » japonais ; Fujitsu revendique un débit d'inférence doublé par rapport aux autres CPU et une grande efficacité énergétique. Les commentateurs relativisent le discours souverainiste — la fabrication reste chez TSMC et l'architecture est ARM — et comparent la bande passante mémoire (845 Go/s) aux GPU Nvidia, tout en saluant l'effort d'ingénierie et en doutant de la viabilité commerciale hors d'Asie."
+    },
+    {
+      "title": "Comment GLM a construit sa propre infrastructure d'inférence",
+      "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+      "hn": "https://news.ycombinator.com/item?id=49737922",
+      "points": 384,
+      "comments": 265,
+      "summary": "Z.ai raconte comment un « Infra Agent » propulsé par GLM-5.3 a optimisé l'infrastructure servant GLM-5.3-Flash sur plus de 100 000 accélérateurs chinois : débit triplé en moins de deux semaines grâce à une méthode de « feedback dense » (tests de correction, logs, microbenchmarks), avec des humains gardant la main sur les objectifs et les risques. L'entreprise y voit un embryon d'auto-amélioration récursive. La discussion porte surtout sur un paradoxe : les restrictions américaines sur les puces ont-elles accéléré l'innovation chinoise en jouant le rôle de barrière protectionniste ? Les sceptiques questionnent le récit et la soutenabilité de prix subventionnés."
+    },
+    {
+      "title": "Hister : un moteur de recherche privé pour vos pages visitées et vos fichiers",
+      "url": "https://github.com/asciimoo/hister",
+      "hn": "https://news.ycombinator.com/item?id=49743097",
+      "points": 566,
+      "comments": 150,
+      "summary": "Outil auto-hébergé écrit en Go (AGPLv3) qui indexe le contenu intégral des pages visitées via des extensions Firefox/Chrome et des fichiers locaux : recherche plein texte avec filtres et jokers, recherche sémantique optionnelle, crawler, multi-utilisateurs et intégration aux assistants IA via MCP, le tout sans télémétrie. Le fil déborde de nostalgie pour Google Desktop Search et de comparaisons avec ArchiveBox ou SingleFile ; beaucoup disent avoir bricolé leur propre système équivalent, signe d'un vrai manque, tandis que d'autres signalent des soucis de reverse proxy et un futur changement de nom pour cause de marque déposée."
+    },
+    {
+      "title": "Bend : un langage qui bloque les erreurs des IA par la preuve, sur CPU et GPU",
+      "url": "https://bend-lang.com",
+      "hn": "https://news.ycombinator.com/item?id=49746163",
+      "points": 419,
+      "comments": 200,
+      "summary": "Victor Taelin publie Bend 2.0, un langage à types dépendants affines exécutable sur CPU et GPU, dont les « laws » permettent de prouver que le code — notamment celui généré par des IA — respecte les contraintes spécifiées. Le fil est très disputé : une démo où l'IA réinterprète créativement les règles d'un jeu illustre pour les critiques que des lois sont par nature sous-spécifiées, la vérification formelle passe mal à l'échelle selon certains, et la crédibilité du projet est questionnée (historique git écrasé puis restauré, croissance des étoiles GitHub jugée atypique, comparaisons non relues avec Lean et Agda)."
+    },
+    {
+      "title": "Bonsai 2 27B : compression quasi sans perte dans une empreinte 9 fois plus petite",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "hn": "https://news.ycombinator.com/item?id=49746618",
+      "points": 384,
+      "comments": 116,
+      "summary": "PrismML publie un modèle dérivé de Qwen 3.8 27B quantifié en poids ternaires {-1, 0, +1} avec mise à l'échelle FP16 par groupes, soit environ 1,76 bit effectif par poids : le modèle tient dans ~6 Go et tourne à 143 tokens/s sur une RTX 5090 ou 46,8 sur un M5 Max, pour des performances annoncées quasi sans perte. Les commentaires comparent aux quantifications Q4 d'Unsloth, s'interrogent sur la tenue du raisonnement dans les tâches longues et multi-étapes, et chipotent sur la formule « 9× plus petit »."
+    },
+    {
+      "title": "Hacking OpenAI : d'un débordement de tampon au monorepo interne",
+      "url": "https://hacktron.ai/blog/hacking-openai",
+      "hn": "https://news.ycombinator.com/item?id=49749656",
+      "points": 277,
+      "comments": 97,
+      "summary": "Des chercheurs en sécurité racontent une chaîne d'exploitation partant d'un buffer overflow dans libheif exploité sur une instance Discourse, en utilisant un agent Claude en boucle autonome — persuadé de jouer un CTF — pour aboutir à un accès au monorepo GitHub interne d'OpenAI via des identifiants d'employés compromis. La discussion s'indigne d'une prime de 6 500 $ jugée dérisoire au regard de l'impact potentiel, débat de l'opportunité de libérer les capacités offensives des LLM pour accélérer les correctifs, et revient sur les racines du problème : les dépendances C/C++ comme libheif ou ImageMagick, avec appel à migrer vers des langages memory-safe."
+    },
+    {
+      "title": "Le CCC invite tous les « model citizens » au 40C3",
+      "url": "https://events.ccc.de/en/2026/09/12/40c3-model-citizens/",
+      "hn": "https://news.ycombinator.com/item?id=49737787",
+      "points": 348,
+      "comments": 181,
+      "summary": "Le 40e Chaos Communication Congress se tiendra du 27 au 30 décembre 2026 dans les halls de la Messe de Hambourg, avec plus de 16 000 participants attendus. Le mot d'ordre « Model Citizens » invite à « chercher ensemble de nouveaux modèles de société » après l'échec des modèles établis, et l'appel à contributions est ouvert aux conférences comme aux installations artistiques, DJ sets et performances. L'événement, entièrement porté par des bénévoles, revendique un modèle où les participants façonnent le congrès au lieu de le consommer."
+    },
+    {
+      "title": "Un an de développement sponsorisé pour Servo",
+      "url": "https://servo.org/blog/2026/09/15/one-year-of-sponsorship/",
+      "hn": "https://news.ycombinator.com/item?id=49737849",
+      "points": 346,
+      "comments": 144,
+      "summary": "Le moteur de rendu écrit en Rust dresse le bilan d'un an de dons mensuels (OpenCollective, GitHub Sponsors) qui financent à temps partiel le mainteneur Josh Bowman-Matthews sur l'expérience contributeur : 8 nouveaux mainteneurs nommés, 1 150 pull requests relues, 114 issues « débutant » créées dont 92 % résolues, plus un appui à la réécriture du moteur JavaScript pour éliminer des paniques intermittentes. Un exemple concret de ce qu'un financement communautaire même modeste change pour un projet open source d'ampleur."
+    },
+    {
+      "title": "Pourquoi je n'ai pas signé la lettre des médaillés Fields",
+      "url": "https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/",
+      "hn": "https://news.ycombinator.com/item?id=49738091",
+      "points": 241,
+      "comments": 342,
+      "summary": "25 médaillés Fields ont signé une lettre s'inquiétant qu'un déluge de résultats produits par des IA sans compréhension conceptuelle « détruise un terrain fertile » pour les mathématiques. Timothy Gowers partage certaines craintes mais refuse de signer : la sortie de ces outils est selon lui inévitable, la vraie question étant de préserver les structures sociales qui « digèrent » les résultats et motivent les jeunes mathématiciens, plutôt que de s'opposer aux entreprises d'IA. Le fil HN, très fourni, se déchire sur la question de fond : le progrès mathématique exige-t-il la compréhension humaine, ou des solutions suffisent-elles ?"
+    },
+    {
+      "title": "Mon correctif PHP « temporaire » de 2014 frôle les 20 millions d'installations — je le déprécie",
+      "url": "https://jakeasmith.com/blog/http-build-url/",
+      "hn": "https://news.ycombinator.com/item?id=49718773",
+      "points": 305,
+      "comments": 86,
+      "summary": "Jake Smith avait écrit en 2014 un polyfill de 174 lignes de http_build_url() pour la migration PHP 5.2 vers 5.3 du CMS d'AOL ; douze ans plus tard, le paquet cumule près de 20 millions d'installations Packagist et s'est glissé dans WPML, Debian et Ubuntu. Il le déprécie aujourd'hui car PHP 8.5 intègre enfin une API URI conforme aux standards. Le billet savoure l'ironie du temporaire devenu permanent : AOL n'a jamais migré avant de fermer vers 2020, et un bug avalant les « a » dans certains chemins est passé inaperçu pendant des années."
+    },
+    {
+      "title": "Les limites de débit de GitLab.com changent",
+      "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
+      "hn": "https://news.ycombinator.com/item?id=49742353",
+      "points": 162,
+      "comments": 109,
+      "summary": "À partir du 19 octobre 2026, GitLab.com applique des limites de requêtes par niveau d'abonnement : les requêtes non authentifiées tombent à 60 par heure et par IP, tandis que les limites Premium et Ultimate arriveront en janvier 2027. GitLab affirme que la quasi-totalité des utilisateurs est déjà sous les nouveaux seuils, la mesure visant les grosses charges d'automatisation, et propose des fenêtres de test les 7 et 14 octobre pour vérifier ses pipelines. Une authentification par jeton d'accès personnel ou une montée en gamme permettent d'augmenter les quotas."
+    }
+  ]
+}
