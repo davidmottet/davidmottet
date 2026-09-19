@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-19",
+  "title": "« Le plus grand vol de travail de l'histoire » : la confiance en question, des données d'entraînement aux passkeys",
+  "intro": "Journée placée sous le signe de la confiance : des pièces descellées du procès du New York Times révèlent qu'un dirigeant de Microsoft qualifiait en interne le scraping IA de « plus grand vol de travail de l'histoire de l'humanité », pendant qu'un chercheur démontre que l'agent de codage ZCode exfiltre silencieusement l'historique Git complet de ses utilisateurs. La communauté répond par l'ouverture — OpenJev réplique le modèle décisionnel Jev dans le navigateur, Alibaba pousse son omni-modèle Qwen 3.8 — et Dan Abramov raconte comment il a « vibé » une preuve formelle d'une conjecture de Conway à coups d'agents. Côté outillage, les passkeys et le remplacement des pull requests par Zed nourrissent deux gros débats, et une page d'histoire se tourne chez Berkshire Hathaway.",
+  "items": [
+    {
+      "title": "Un dirigeant de Microsoft qualifiait le scraping IA de « plus grand vol de travail de l'histoire »",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+      "hn": "https://news.ycombinator.com/item?id=49752056",
+      "points": 586,
+      "comments": 484,
+      "summary": "Des pièces récemment descellées du procès du New York Times contre OpenAI et Microsoft révèlent qu'en janvier 2023, Brent Hecht, directeur de la science appliquée chez Microsoft, décrivait en interne le scraping des contenus comme « un vol stupéfiant d'une ampleur sans précédent » et « le plus grand vol de travail de l'histoire de l'humanité ». Les documents chiffrent l'ampleur : plus de 2 millions de documents de nytimes.com dans les jeux dérivés de Common Crawl, et une chute allant jusqu'à 93 % du taux de clics vers le NYT via Copilot par rapport à Bing classique. Satya Nadella y témoigne que les contenus payants « devraient être licenciés par quiconque veut les utiliser » — de quoi alimenter la plus grosse discussion du jour sur HN."
+    },
+    {
+      "title": "« Je n'aime pas les passkeys »",
+      "url": "https://hawksley.dev/blog/i-dont-like-passkeys",
+      "hn": "https://news.ycombinator.com/item?id=49753211",
+      "points": 336,
+      "comments": 319,
+      "summary": "Ethan Hawksley juge les passkeys inadaptées à un usage personnel malgré une technologie « fantastique » : risque de perte définitive de compte si la récupération échoue, verrouillage dans les écosystèmes Apple/Google (un bannissement automatique fait perdre toutes les passkeys synchronisées), clés matérielles limitées à 25–300 comptes et impossibles à sauvegarder, connexion pénible sur appareils partagés. Il recommande à la place des mots de passe aléatoires dans un gestionnaire tiers, couplés à une application TOTP indépendante. Le billet a déclenché l'un des plus gros débats du jour, sujet récurrent et clivant sur HN."
+    },
+    {
+      "title": "OpenJev : des « if sémantiques » avec des modèles ouverts, dans le navigateur",
+      "url": "https://openjev.com/",
+      "hn": "https://news.ycombinator.com/item?id=49752041",
+      "points": 315,
+      "comments": 185,
+      "summary": "OpenJev (rebaptisé SemIf) est une démo de recherche indépendante qui reproduit dans le navigateur, via WebGPU, le principe de Jev — le modèle « System One » de TypeSafe AI qui produit des décisions calibrées plutôt que du texte. Elle compare deux méthodes d'inférence (lecture directe des logits contre génération JSON autorégressive) sur des modèles ouverts de 0,6 à 4 milliards de paramètres, atteignant jusqu'à 84,5 % de précision là où le Jev officiel affiche 88,3 % sur le même banc d'essai. L'engouement illustre la vague déclenchée par Jev, que TechCrunch décrit comme un nouveau type de modèle entraîné uniquement sur données synthétiques, incapable d'halluciner et 10 à 20 fois moins cher que les LLM classiques."
+    },
+    {
+      "title": "Qwen 3.8 Omni Flash : l'omni-modèle d'Alibaba à 1 million de tokens",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "hn": "https://news.ycombinator.com/item?id=49747925",
+      "points": 290,
+      "comments": 102,
+      "summary": "Alibaba dévoile Qwen 3.8 Omni Flash, un modèle nativement multimodal qui traite texte, image, audio et vidéo dans une seule architecture, avec une fenêtre de contexte d'un million de tokens. Les données partagées par Qwen le placent en tête sur plusieurs tâches audio-visuelles, dont la transcription de réunions multi-locuteurs, à des tarifs nettement inférieurs à ceux de Gemini 3 Flash pour l'audio et la vidéo selon la presse spécialisée. Alibaba a indiqué son intention d'ouvrir les poids prochainement, dans la lignée des précédentes versions de Qwen."
+    },
+    {
+      "title": "Bend 2 et le piège du « vibe-coding »",
+      "url": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+      "hn": "https://news.ycombinator.com/item?id=49753179",
+      "points": 256,
+      "comments": 177,
+      "summary": "Au lendemain du lancement très remarqué de Bend 2 — le langage de Victor Taelin qui « bloque les erreurs des IA » par vérification de preuves — Liam Powell publie une critique acérée : la démo de Bend exige 58 lignes de spécification puis 442 lignes de preuve générée par IA, quand il reproduit le même résultat en une soixantaine de lignes avec SPARK, un langage de vérification formelle existant dont les preuves sont établies automatiquement, sans LLM. Il y voit le « piège du vibe-coding » : construire des systèmes entiers sans vérifier si la recherche n'a pas déjà mieux résolu le problème. Les deux billets, le lancement comme la critique, figurent simultanément en page d'accueil de HN."
+    },
+    {
+      "title": "ZCode, l'agent de codage de GLM, téléverse silencieusement votre historique Git",
+      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "hn": "https://news.ycombinator.com/item?id=49752422",
+      "points": 221,
+      "comments": 49,
+      "summary": "En décompilant le client ZCode, le développeur ferstar montre que l'agent empaquette l'espace de travail complet — répertoire .git, reflogs et caches inclus, soit 86,6 % d'une charge de 313 Mo dans son exemple — et l'envoie vers Aliyun OSS avant chaque prompt, chiffré avec une enveloppe dont seul Z.ai détient la clé privée. Les réglages de l'application ne bloquent pas ces envois : ils ne contrôlent que l'autorisation d'entraînement et l'indexation. Dans les commentaires, la défiance domine : plusieurs voix plaident pour des harnais open source plutôt que des agents fermés, tout en rappelant que la transparence sur les données reste insuffisante chez la plupart des fournisseurs."
+    },
+    {
+      "title": "Comment j'ai « vibé » une preuve de la conjecture de Conway",
+      "url": "https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/",
+      "hn": "https://news.ycombinator.com/item?id=49755024",
+      "points": 40,
+      "comments": 20,
+      "summary": "Dan Abramov (connu pour React et overreacted.io) raconte comment, sans expertise mathématique poussée, il a obtenu en un mois une preuve formelle en Lean 4 de la conjecture de raffinement de Conway sur les entiers omnifiques, en orchestrant des agents IA aux rôles spécialisés (exploration, vérification, revue critique, formalisation). Le coût donne le vertige : environ 40 milliards de tokens et 40 000 dollars d'API. La preuve passe le noyau de Lean mais n'a pas encore été validée indépendamment par des mathématiciens — l'auteur le souligne lui-même, prudence qui n'enlève rien au caractère spectaculaire de l'exercice."
+    },
+    {
+      "title": "Le fléau de l'émulation x86 sur ARM",
+      "url": "https://fex-emu.com/Scourge-of-emulation/",
+      "hn": "https://news.ycombinator.com/item?id=49750094",
+      "points": 219,
+      "comments": 57,
+      "summary": "L'équipe de FEX-Emu détaille pourquoi émuler le modèle mémoire strict du x86 (Total Store Ordering) sur ARM coûte si cher : instructions acquire/release pénalisantes selon les puces, accès non alignés jusqu'à 50 % plus lents, et surtout des atomiques « split-lock » catastrophiques — jusqu'à 816 fois moins de bande passante sur la mémoire write-combine, au point que des jeux comme Hollow Knight: Silksong tombent sous 1 image par seconde. Le billet appelle les fabricants de matériel à la rescousse, plaidant pour des extensions architecturales dédiées à l'émulation x86-TSO plutôt que pour des contournements logiciels."
+    },
+    {
+      "title": "Warren Buffett quitte la présidence de Berkshire Hathaway, son fils Howard lui succède",
+      "url": "https://www.nytimes.com/2026/09/18/business/warren-buffett-berkshire-chairman.html",
+      "hn": "https://news.ycombinator.com/item?id=49752614",
+      "points": 171,
+      "comments": 109,
+      "summary": "Warren Buffett abandonne la présidence du conseil d'administration de Berkshire Hathaway, refermant un règne de six décennies sur le conglomérat qu'il avait bâti à partir d'une filature en difficulté. Son fils Howard prend la présidence du conseil, tandis que Greg Abel occupe déjà le poste de directeur général depuis début 2026. « Father Time always wins » (« le temps gagne toujours »), a commenté l'investisseur de 96 ans, dont le retrait complet marque la fin d'une époque pour des générations d'investisseurs — et de lecteurs de ses lettres annuelles."
+    },
+    {
+      "title": "Jemalloc 5.4.0 : plus de 160 commits pour assainir l'allocateur",
+      "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
+      "hn": "https://news.ycombinator.com/item?id=49750152",
+      "points": 256,
+      "comments": 62,
+      "summary": "Nouvelle version de jemalloc, l'un des allocateurs mémoire les plus utilisés de l'industrie, centrée sur la réduction de dette technique : plus de 160 commits de refactorisation, corrections et nettoyage d'options. Au menu : remplissage adaptatif du tcache en remplacement de la politique fixe, suivi de la mémoire épinglée (pages HugeTLB non réclamables), retour de la sélection d'arène par CPU, support de GCC 16 et corrections de portabilité macOS/MinGW. Un signe de vie bienvenu pour un projet dont beaucoup suivaient l'avenir avec attention depuis le retrait de Meta."
+    },
+    {
+      "title": "Zed remplace les pull requests par Delta, désormais en bêta publique",
+      "url": "https://zed.dev/blog/delta-public-beta",
+      "hn": "https://news.ycombinator.com/item?id=49727245",
+      "points": 97,
+      "comments": 50,
+      "summary": "Zed ouvre à tous Delta, son environnement « multijoueur » pour coder avec des agents : au lieu de committer puis d'ouvrir une PR, on invite ses collègues directement dans le fil de conversation de l'agent, avec des sous-fils de revue isolés et une base DeltaDB qui conserve les éditions intermédiaires entre les commits. L'équipe de Zed (33 personnes) a désactivé les pull requests sur son propre dépôt et revendique 570 changements fusionnés depuis, tout en restant compatible Git. Gratuit pendant la bêta, disponible sur macOS, Linux, Windows et navigateur."
+    },
+    {
+      "title": "Le moteur à cire",
+      "url": "https://en.wikipedia.org/wiki/Wax_motor",
+      "hn": "https://news.ycombinator.com/item?id=49726007",
+      "points": 483,
+      "comments": 89,
+      "summary": "La curiosité technique du jour : le moteur à cire, un actionneur qui convertit la chaleur en mouvement grâce à l'expansion d'une cire lors de sa fusion (5 à 20 % de volume), capable de développer environ 4 000 newtons — près de 400 kg de poussée — sans électronique ni pièce d'usure complexe. On le trouve partout sans le savoir : verrous de porte de lave-linge, distributeurs de détergent de lave-vaisselle, vannes thermostatiques, ouvertures automatiques de serres ou circuits hydrauliques d'avions. L'archétype du sujet Wikipédia qui fait un carton sur HN."
+    }
+  ]
+}

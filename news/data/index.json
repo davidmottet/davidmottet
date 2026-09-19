@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-19",
+      "title": "« Le plus grand vol de travail de l'histoire » : la confiance en question, des données d'entraînement aux passkeys",
+      "count": 12
+    },
+    {
       "date": "2026-09-18",
       "title": "GPT-6 passe le barreau, Fujitsu joue la souveraineté et un modèle construit sa propre infra",
       "count": 12
