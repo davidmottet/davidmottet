@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-20",
+      "title": "Android se referme, Jev s'ouvre : journée sous tension pour l'open source",
+      "count": 12
+    },
+    {
       "date": "2026-09-19",
       "title": "« Le plus grand vol de travail de l'histoire » : la confiance en question, des données d'entraînement aux passkeys",
       "count": 12

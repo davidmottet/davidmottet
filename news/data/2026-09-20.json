@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-20",
+  "title": "Android se referme, Jev s'ouvre : journée sous tension pour l'open source",
+  "intro": "Grosse journée sur le front de l'open source : la communauté s'alarme d'un Android 17 qui arrive sans publication AOSP complète, pendant que l'écosystème autour du modèle de décision Jev de TypeSafe s'ouvre à marche forcée avec OpenJev et Laya. Cloudflare place deux sujets en tête de page, entre tunnels gratuits et optimisation mémoire spectaculaire du cache DNS de 1.1.1.1. Et comme souvent, l'IA traverse tout le reste : affiches générées, écriture assistée, cryptanalyse historique et avenir des mathématiques.",
+  "items": [
+    {
+      "title": "Android 17, premier depuis 3.x à ajouter des API sans publication AOSP",
+      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+      "hn": "https://news.ycombinator.com/item?id=49758736",
+      "points": 950,
+      "comments": 519,
+      "summary": "Le projet GrapheneOS signale qu'Android 17 introduit de nouvelles API sans les publier dans l'Android Open Source Project, une première depuis Android 3.x, et accuse Google de freiner les projets alternatifs via des retards de patchs et l'attestation. Les commentaires y voient un tournant : Google aurait utilisé l'open source pour conquérir le marché avant de le verrouiller. Le débat porte sur la faisabilité d'un hard fork d'Android face aux moyens colossaux de Google, aux BSP propriétaires et aux effets de réseau."
+    },
+    {
+      "title": "Cloudflare Quick Tunnels : des URL publiques instantanées pour le dev local",
+      "url": "https://try.cloudflare.com/",
+      "hn": "https://news.ycombinator.com/item?id=49754785",
+      "points": 766,
+      "comments": 299,
+      "summary": "Quick Tunnels expose gratuitement un serveur de développement local derrière une URL publique temporaire, sans inscription ni authentification, à la manière de ngrok ou LocalTunnel. Les commentateurs relativisent l'enthousiasme : le produit a environ cinq ans et seule la page d'accueil a été rafraîchie, avec un rendu jugé « généré par IA » et peu lisible en mode sombre. La discussion compare surtout les alternatives (Tailscale, Netbird, ngrok) et critique l'orientation très entreprise de la documentation de Cloudflare."
+    },
+    {
+      "title": "OpenJev : un serveur de décision « System One » compatible avec l'API Jev",
+      "url": "https://openjev.com/",
+      "hn": "https://news.ycombinator.com/item?id=49752041",
+      "points": 656,
+      "comments": 275,
+      "summary": "OpenJev est un serveur open source (Apache-2.0) compatible avec l'API Jev de TypeSafe : il répond à des questions structurées (oui/non, choix multiples, notes) par des distributions de probabilités, sans génération de texte donc sans hallucination. Il tourne sur le modèle DiffusionGemma 26B de NVIDIA via vLLM et revendique environ 57 requêtes par seconde à 64 requêtes concurrentes, avec une latence médiane d'environ 760 ms sur GPU haut de gamme. Son succès illustre l'appétit pour des briques de décision rapides et vérifiables en dehors des offres propriétaires."
+    },
+    {
+      "title": "Les affiches générées par IA ne sont pas obligées d'être affreuses",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "hn": "https://news.ycombinator.com/item?id=49764791",
+      "points": 610,
+      "comments": 367,
+      "summary": "Un billet montre, exemples à l'appui, qu'un prompt soigné permet à de petites associations sans budget graphique de produire des affiches d'événements correctes. Les commentaires se divisent : certains rappellent que le public note mieux les créations IA quand il en ignore l'origine, d'autres y voient un signal de paresse et une esthétique homogène qui vire au « slop ». Le fil oppose démocratisation du design et déplacement des graphistes, avec l'argument que les prestataires low-cost font souvent pire."
+    },
+    {
+      "title": "Comment écrire avec un LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "hn": "https://news.ycombinator.com/item?id=49747070",
+      "points": 546,
+      "comments": 357,
+      "summary": "L'article défend une écriture assistée où l'auteur garde la main : messages de commit et descriptions de PR rédigés soi-même plutôt que d'accepter la sortie brute du modèle. Les commentaires débattent de la valeur des messages de commit générés (mieux qu'un « fix » paresseux, mais verbeux et muets sur le pourquoi) et du fait que rédiger force à comprendre son propre code. Question de fond du fil : un texte a-t-il de la valeur si son auteur n'y a pas investi de réflexion, ou l'édition et la curation sont-elles des compétences à part entière ?"
+    },
+    {
+      "title": "Le cerveau humain serait un organe composite, selon une étude menée par Stanford",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "hn": "https://news.ycombinator.com/item?id=49763697",
+      "points": 441,
+      "comments": 163,
+      "summary": "Des chercheurs de Stanford identifient deux populations distinctes de cellules progénitrices qui ne se recouvrent jamais : l'une (Otx2) forme le cerveau antérieur et moyen, l'autre (Gbx2) le cerveau postérieur, deux lignées séparées depuis environ 550 millions d'années. Les commentateurs jugent le titre « deux organes séparés » survendu, le papier parlant plutôt d'organe composite. L'intérêt pratique retenu : de nouvelles techniques pour cultiver des cellules souches cérébrales in vitro, utiles notamment pour la recherche sur la SLA."
+    },
+    {
+      "title": "Cloudflare économise encore 100 To de RAM avec des maths (et du Rust)",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "hn": "https://news.ycombinator.com/item?id=49758580",
+      "points": 406,
+      "comments": 87,
+      "summary": "En repensant le stockage des entrées du cache DNS du résolveur 1.1.1.1, réécrit en Rust, Cloudflare fait passer chaque entrée d'environ 953 à 420 octets et annonce des lectures environ 19 % plus rapides. À l'échelle de plus de 250 milliards d'entrées en cache, chaque octet gagné représente environ 250 Go, d'où le total d'environ 100 To de RAM libérés. Un cas d'école d'optimisation où de petits gains unitaires deviennent énormes à l'échelle d'une infrastructure mondiale."
+    },
+    {
+      "title": "Laya, la version open source de Jev",
+      "url": "https://laya.convaiinnovations.com/",
+      "hn": "https://news.ycombinator.com/item?id=49765348",
+      "points": 363,
+      "comments": 78,
+      "summary": "Laya se présente comme une alternative ouverte au modèle propriétaire Jev de TypeSafe : un classifieur « one shot » capable d'exécuter plusieurs classifications en un seul appel, fondé sur des travaux publiés en mars 2025. Les commentaires pointent une limite peu mise en avant : une fenêtre de contexte de 512 à 1024 tokens contre 32k pour Jev. Le fil débat aussi de la nouveauté réelle (« du BERT avec plus de données » pour les sceptiques) et de la difficulté de vérifier les revendications d'antériorité, TypeSafe n'ayant jamais publié l'architecture de Jev."
+    },
+    {
+      "title": "La première nouvelle espèce de félin découverte en 100 ans",
+      "url": "https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years",
+      "hn": "https://news.ycombinator.com/item?id=49744704",
+      "points": 311,
+      "comments": 119,
+      "summary": "Le chat tilcayo (Leopardus tilcayo), identifié dans les forêts de nuages des Yungas en Bolivie, est la première espèce de félin formellement décrite depuis plus d'un siècle ; l'étude est parue dans Current Biology. L'identification repose sur l'analyse ADN d'un unique mâle captif d'un sanctuaire, un animal minuscule d'environ 1,3 kg aux taches plus larges et à la robe plus terne que les chats-tigres voisins. Le nom rend hommage au savoir ancestral des communautés locales qui connaissaient l'animal de longue date."
+    },
+    {
+      "title": "San Francisco Onion Futures Company : des contrats à terme sur les oignons",
+      "url": "https://onionfutures.com/",
+      "hn": "https://news.ycombinator.com/item?id=49763296",
+      "points": 274,
+      "comments": 92,
+      "summary": "Mi-projet artistique, mi-pied de nez juridique : ce site vend de vrais contrats à terme sur des oignons, réellement livrés, en exploitant une faille de l'Onion Futures Act de 1958 qui n'interdit les futures sur oignons que « sur les places de marché » — ici, on traite en dealer privé. Les commentaires ressortent l'histoire de Vincent Kosuga, dont la manipulation du marché dans les années 1950 avait motivé la loi. Le fil digresse joyeusement sur l'économie des marchés à terme et sur ce qui rend les oignons si faciles à accaparer : périssables, saisonniers, marché étroit."
+    },
+    {
+      "title": "GPT-6 Astra déchiffre un message radio allemand de la Première Guerre mondiale",
+      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "hn": "https://news.ycombinator.com/item?id=49763987",
+      "points": 226,
+      "comments": 120,
+      "summary": "Le modèle a décrypté un message allemand de 14-18 resté non résolu, en identifiant la clé « TRUPPENVERSCHIEBUNG » et en corrigeant une erreur de transmission ; le contenu a été validé par les journaux de bord du HMS Canterbury. Les critiques tempèrent : la clé provenait d'une source publiée, il s'agit donc moins de cryptanalyse que d'application méthodique. Les défenseurs répondent que l'intérêt de l'IA est précisément de rendre rentables des tâches que des humains pourraient faire mais ne feront jamais, et le fil discute de la part de mérite revenant au chercheur qui a piloté l'opération."
+    },
+    {
+      "title": "Si les maths sont plus que des démonstrations, célébrons mieux le reste",
+      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/",
+      "hn": "https://news.ycombinator.com/item?id=49763928",
+      "points": 208,
+      "comments": 169,
+      "summary": "Un billet invité de Grant Sanderson (3Blue1Brown) sur le blog de Terence Tao : les mathématiques ne se réduisent pas aux démonstrations rigoureuses — intuition, motivation et exposition comptent tout autant, surtout si l'IA automatise la partie résolution. Les commentaires oscillent entre anxiété (financement et identité professionnelle des mathématiciens menacés) et optimisme (une redirection bienvenue vers la construction de théories et l'exploration). Le fil convoque la loi de Goodhart : quand la résolution de problèmes est devenue l'objectif mesurable, elle a cessé d'être une bonne mesure de la valeur mathématique."
+    }
+  ]
+}
