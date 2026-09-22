@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-22",
+  "title": "Google industrialise les agents, Samsung double la mémoire HBM4, et l'archive Snowden s'est éteinte en silence",
+  "intro": "L'infrastructure de l'IA domine ce lundi : Google publie AX, un orchestrateur open source pour exécuter des agents à très grande échelle, Samsung s'apprête à plus que doubler sa production de HBM4 pour suivre la demande, et xAI sort Grok 4.7. En contrepoint, HN débat de ce que l'époque fait à notre attention — des flux algorithmiques aux lunettes caméra de Meta, avec une app pour les détecter — et se penche sur deux autopsies : celle de l'archive Snowden, qui ne publie plus depuis 2019, et celle de Sun Microsystems, racontée par Bryan Cantrill.",
+  "items": [
+    {
+      "title": "Qu'est devenue l'archive Snowden ?",
+      "url": "https://libroot.org/posts/what-happened-to-the-snowden-archive",
+      "hn": "https://news.ycombinator.com/item?id=49780820",
+      "points": 604,
+      "comments": 421,
+      "summary": "Une enquête documente pourquoi plus aucun document Snowden n'a été publié depuis mai 2019, alors que plusieurs rédactions détiennent toujours l'archive d'environ 50 000 documents : au total, à peine 1 % a été rendu public (une trentaine de documents pour le Guardian et le Washington Post, environ 256 pour The Intercept). L'article retrace la destruction de la copie londonienne du Guardian sous pression gouvernementale en 2013, la fermeture du programme de The Intercept en 2019 aux justifications changeantes, et le silence de Greenwald, Poitras et Gellman, qui en conservent des copies complètes. Sujet le plus commenté de la page (421 commentaires)."
+    },
+    {
+      "title": "AX : l'orchestrateur d'agents open source de Google",
+      "url": "https://agentexecutor.io/",
+      "hn": "https://news.ycombinator.com/item?id=49780797",
+      "points": 599,
+      "comments": 280,
+      "summary": "Google publie sous licence Apache 2.0 un plan de contrôle déclaratif pour exécuter des tâches agentiques à grande échelle : sandboxing du code des agents, préparation automatique des espaces de travail (dépôts Git, serveurs MCP, outils), politiques réseau par listes d'autorisation avec injection de identifiants, et reprise des agents en moins d'une seconde via checkpoints. Google traite les agents comme « un nouveau type de charge de travail », ni microservice ni batch, et revendique une architecture d'acteurs légers pensée pour des milliards de tâches concurrentes par cluster. Près de 600 points et 280 commentaires : l'annonce a dominé la journée."
+    },
+    {
+      "title": "Samsung va plus que doubler sa production de HBM4 et HBM4E",
+      "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+      "hn": "https://news.ycombinator.com/item?id=49778029",
+      "points": 536,
+      "comments": 412,
+      "summary": "Selon le Seoul Economic Daily, Samsung porterait sa production mémoire d'environ 180 000 à 250 000 wafers par mois l'an prochain, la famille HBM4 passant d'environ 40 % à 80 % du volume, avec des échantillons de HBM4E 12 couches déjà livrés à Nvidia. Un indicateur indirect appuie l'ampleur du mouvement : le volume de nettoyage externalisé des supports en verre passerait de 20 000 à 50 000 feuilles par mois. Un signal de plus que la demande en mémoire pour l'IA ne faiblit pas, très largement discuté (412 commentaires)."
+    },
+    {
+      "title": "Ce que Sun a raté",
+      "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
+      "hn": "https://news.ycombinator.com/item?id=49787436",
+      "points": 375,
+      "comments": 199,
+      "summary": "Bryan Cantrill (DTrace, Oxide) attribue le déclin de Sun Microsystems moins à la technique qu'à une direction déconnectée du terrain : il raconte une startup incapable d'acheter des serveurs Sun faute d'interlocuteur commercial, quand Dell répondait immédiatement. DTrace et ZFS n'ont pas suffi face à la commoditisation x86/Linux. Les commentaires valident massivement l'anecdote (« acheter du Sun était un cauchemar »), mais beaucoup rappellent aussi que les machines x86 écrasaient déjà les UltraSPARC au début des années 2000 et que l'éclatement de la bulle télécom aurait de toute façon frappé fort."
+    },
+    {
+      "title": "xAI sort Grok 4.7",
+      "url": "https://x.ai/news/grok-4-7",
+      "hn": "https://news.ycombinator.com/item?id=49788838",
+      "points": 351,
+      "comments": 293,
+      "summary": "xAI annonce Grok 4.7, avec 40 % de poids de plus que Grok 4.6 à tarif inchangé, après un lancement repoussé d'environ deux semaines. La discussion porte moins sur les benchmarks — jugés peu fiables — que sur les styles d'écriture des modèles (plusieurs commentateurs opposent l'anglais direct de Grok au « Claudish » verbeux) et sur les forces par domaine constatées en pratique : Grok plutôt côté frontend, Claude côté backend. L'efficacité en tokens de raisonnement et le rapport coût/tâche face à DeepSeek et Gemini Flash font aussi débat."
+    },
+    {
+      "title": "L'attention est tout ce que vous avez",
+      "url": "https://alicegg.tech/2026/09/21/attention",
+      "hn": "https://news.ycombinator.com/item?id=49787726",
+      "points": 334,
+      "comments": 96,
+      "summary": "Un essai sur le basculement d'un internet intentionnel — marque-pages, sites qu'on choisit de visiter — vers des flux de recommandation qui décident à notre place pour maximiser l'engagement. Les commentaires nuancent la nostalgie (les portails à clics de Yahoo ou MSN monétisaient déjà l'attention bien avant les algorithmes) et échangent des parades : RSS, extensions bloquant les flux, plages de concentration programmées. Fil récurrent : HN est-il lui-même un réseau social ? Sa défense — un flux chronologique, non personnalisé."
+    },
+    {
+      "title": "Le document de conception des énigmes de Grim Fandango (1996) [pdf]",
+      "url": "http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49783495",
+      "points": 317,
+      "comments": 70,
+      "summary": "Le « puzzle document » rédigé par Tim Schafer et son équipe chez LucasArts en 1996 pour concevoir les énigmes de Grim Fandango, classique du jeu d'aventure sorti en 1998, refait surface sur HN. Le document détaille la structure des énigmes du jeu, année par année du voyage de Manny Calavera, et reste une référence citée en design de jeu. Un morceau d'histoire du jeu vidéo qui a séduit la page d'accueil (317 points)."
+    },
+    {
+      "title": "J'ai souvent tort",
+      "url": "https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html",
+      "hn": "https://news.ycombinator.com/item?id=49777467",
+      "points": 306,
+      "comments": 212,
+      "summary": "Boris Cherny partage une note écrite pour son équipe : avoir tort est le prix normal d'une démarche itérative — « quand il y a de nouvelles données, il faut mettre à jour ses a priori ». Sa méthode en six étapes insiste sur deux points que les équipes bâclent le plus souvent : définir clairement le problème et esquisser la solution la plus simple, faute de quoi on obtient « des plans complexes et des critères de succès flous ». Le billet, tourné vers les product builders de l'ère IA, a généré 212 commentaires."
+    },
+    {
+      "title": "ZuckOff, l'app gratuite qui repère les lunettes Meta avant qu'elles ne vous voient",
+      "url": "https://www.wired.me/story/meta-smart-glasses-detector-app-zuckoff",
+      "hn": "https://news.ycombinator.com/item?id=49785397",
+      "points": 298,
+      "comments": 301,
+      "summary": "Développée par le programmeur polonais Pawel Szydlowski, ZuckOff détecte les signatures Bluetooth des lunettes connectées (Ray-Ban Meta, Oakley Meta, Snap Spectacles) et estime leur distance — environ 5 000 téléchargements sur iOS le premier mois, et des régulateurs européens qui ont pris contact. Limites assumées : l'app ne sait pas si les lunettes filment, et des commentateurs soulignent que la détection dépend du mode d'appairage. Le débat (301 commentaires) porte sur l'enregistrement non consenti, Meta promettant de son côté de couper la capture si la LED témoin est masquée."
+    },
+    {
+      "title": "MCP a-t-il toujours été une mauvaise idée ?",
+      "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
+      "hn": "https://news.ycombinator.com/item?id=49779329",
+      "points": 286,
+      "comments": 268,
+      "summary": "Maharshi Patel soutient que le Model Context Protocol, conçu fin 2024 pour des modèles moins capables, est devenu superflu : les agents actuels savent appeler des API HTTP et des outils CLI directement, et les schémas d'outils des serveurs MCP gonflent inutilement le contexte. Il plaide pour des API « agent-friendly » (réponses en markdown négociées par en-têtes, à la Vercel ou Shopify). Les défenseurs répliquent que MCP garde sa valeur pour le contrôle d'accès, l'audit et l'isolation des identifiants hors de portée des agents ; l'efficacité en tokens, elle, divise selon la qualité des implémentations."
+    },
+    {
+      "title": "Show HN : Mini-AGI, un modèle à apprentissage continu entraîné sur 8 Go de VRAM",
+      "url": "https://github.com/volotat/mini-AGI",
+      "hn": "https://news.ycombinator.com/item?id=49783133",
+      "points": 222,
+      "comments": 44,
+      "summary": "Un modèle de langage au niveau de l'octet qui apprend en continu depuis un flux de texte sans oubli catastrophique (99,84 % de rétention revendiquée), entraîné from scratch sur un simple GPU portable de 8 Go. L'architecture combine un bloc récurrent à poids partagés appliqué jusqu'à 24 fois par caractère (profondeur adaptative façon PonderNet) et un pool croissant d'experts MoE pagés sur disque — 143 experts et 467,7 millions de paramètres après 236,8 millions de caractères lus. L'auteur prévient honnêtement : c'est un « toy model », encore répétitif."
+    },
+    {
+      "title": "Kev : une petite famille de modèles de décision construite sur Qwen3.5",
+      "url": "https://github.com/jaredpalmer/kev",
+      "hn": "https://news.ycombinator.com/item?id=49783999",
+      "points": 83,
+      "comments": 41,
+      "summary": "Jared Palmer publie Kev, des modèles de classification légers et open source inspirés de Jev : on définit ses catégories de sortie à la volée, sans fine-tuning par cas d'usage, pour du routage, de la vérification dans des agents de code ou du filtrage de spam. Les commentaires questionnent la filiation revendiquée — Qwen est entraîné par RLHF là où Jev repose sur du RLCD — et se divisent entre ceux qui n'y voient que du tool-calling reconditionné et ceux qui saluent l'accessibilité pratique de l'approche."
+    }
+  ]
+}
