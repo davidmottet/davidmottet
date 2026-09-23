@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-23",
+  "title": "Opus 5.5 baisse les prix, MiMo v2.6 ouvre ses poids, GPT-6 casse Enigma — et la confiance s'effrite, des spymarks aux pubs d'Apple",
+  "intro": "Journée dominée par la course aux modèles : Anthropic lance Claude Opus 5.5, moins cher et plus rapide, trois semaines après Fable 5.1, pendant que Xiaomi publie MiMo v2.6 en poids ouverts au niveau de la frontière et qu'OpenAI fait casser par GPT-6 Astra un message Enigma resté insoluble depuis 2005. En contrepoint, la communauté s'inquiète de la confiance qu'on peut encore accorder aux plateformes : tatouages traceurs « spymarks », publicités persistantes dans les réglages d'iOS, générateur aléatoire d'AMD biaisé et faille critique dans WordPress.",
+  "items": [
+    {
+      "title": "Claude Opus 5.5 : performances de Fable pour 40 % moins cher",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49803892",
+      "points": 260,
+      "comments": 340,
+      "summary": "Anthropic annonce Claude Opus 5.5 : 66,4 % sur Terminal-Bench 4.0 (contre 52,3 % pour Opus 5), sorties 30 % plus rapides et tarifs en baisse de 20 % (4 $/M tokens en entrée, 20 $/M en sortie, lectures de cache à -60 %), soit environ 40 % d'économie sur les charges types. Les commentateurs saluent les prix et le style moins verbeux, mais relèvent la contradiction avec les appels récents de Dario Amodei à ralentir l'IA — Fable 5.1 est sorti 21 jours plus tôt — et s'agacent des programmes de vérification imposés pour la biologie et la cybersécurité."
+    },
+    {
+      "title": "Xiaomi MiMo v2.6 : un modèle à 1 000 milliards de paramètres en poids ouverts",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "hn": "https://news.ycombinator.com/item?id=49792730",
+      "points": 1047,
+      "comments": 462,
+      "summary": "Xiaomi publie sous licence MIT MiMo-V2.6-Pro (1 020 milliards de paramètres, 42 milliards actifs, contexte d'un million de tokens, multimodal) et Flash (310 milliards, 15 milliards actifs), présentés comme les meilleurs poids ouverts du monde — au niveau de Grok 4.7 et devant DeepSeek V4.1 sur l'indice d'Artificial Analysis. L'entraînement RL (750 000 trajectoires en moins de six jours, 2,62 M$ pour Pro) a été retransmis sur un tableau de bord public qui a impressionné HN. Le fil débat de la transparence réelle de ces logs, de la confiance à accorder aux modèles chinois et d'une réglementation « sécurité » soupçonnée de protectionnisme américain."
+    },
+    {
+      "title": "GPT-6 Astra casse un message Enigma resté insoluble depuis 2005",
+      "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+      "hn": "https://news.ycombinator.com/item?id=49801324",
+      "points": 339,
+      "comments": 277,
+      "summary": "Le message MVUEH, transmis le 10 juillet 1941 par l'armée allemande et résistant aux cryptanalystes depuis 2005 à cause d'erreurs de transcription et d'un rare passage de rotor gauche, a été cassé par GPT-6 Astra : le modèle a repéré seul la parenté avec un message voisin, écrit son propre simulateur Enigma et une Bombe logicielle en Python/C++, puis utilisé le nom de lieu ROSENOW comme crib. La discussion HN oscille entre admiration et scepticisme : mérite du modèle ou du chercheur qui l'a piloté, simple recyclage de 80 ans de littérature sur Enigma présente dans les données d'entraînement, et demandes de transparence sur les prompts utilisés."
+    },
+    {
+      "title": "« Spymarks, pas watermarks » : nommer la surveillance cachée dans les contenus",
+      "url": "https://brand.io/article/spymarks/",
+      "hn": "https://news.ycombinator.com/item?id=49794615",
+      "points": 616,
+      "comments": 155,
+      "summary": "Brandon Thomas propose d'appeler « spymarks » les signaux invisibles qui rendent un contenu traçable à l'insu de son auteur — SynthID de Google, points jaunes des imprimantes, motifs statistiques dans le texte — pour les distinguer des vrais tatouages d'authenticité. L'enjeu : ces identifiants peuvent être reliés à des données personnelles et menacer lanceurs d'alerte et dissidents. Sur HN, on débat de la charge péjorative du terme (les tatouages invisibles ne sont pas tous malveillants), de la difficulté à les retirer — un développeur raconte avoir échoué à effacer SynthID au bruit et au flou — et du risque que les réseaux sociaux en insèrent lors de la recompression."
+    },
+    {
+      "title": "Apple ajoute des publicités persistantes dans les réglages d'iOS",
+      "url": "https://www.techradar.com/phones/iphone/i-wish-apple-would-just-stop-that-crap-apple-has-added-persistent-ads-to-ios-and-its-driving-users-crazy",
+      "hn": "https://news.ycombinator.com/item?id=49801939",
+      "points": 358,
+      "comments": 267,
+      "summary": "Des bannières promouvant iCloud+, Apple Music, Apple TV et AppleCare+ s'affichent en haut de l'app Réglages, souvent sans bouton pour les fermer — certains abonnés voient même des pubs pour des services qu'ils paient déjà. La colère est générale sur les réseaux et sur HN : on cite Steve Jobs (« nous ne voulons pas de pubs »), on parle d'« enshittification » façon menu Démarrer de Windows et d'un téléphone à 2 000 $ qui affiche des réclames. Le contre-argument du fil : les coûts de sortie de l'écosystème sont tels que les utilisateurs n'iront nulle part, malgré les mentions de GrapheneOS et Linux."
+    },
+    {
+      "title": "gzip peut-il servir de modèle de langage ?",
+      "url": "https://nathan.rs/posts/gzip-lm/",
+      "hn": "https://news.ycombinator.com/item?id=49797323",
+      "points": 328,
+      "comments": 124,
+      "summary": "En exploitant l'équivalence compression-prédiction, l'auteur génère du texte en notant chaque continuation candidate par la taille de gzip(contexte + candidat), avec une recherche en faisceau pour éviter les boucles de copie verbatim. Amorcé sur Shakespeare, le résultat est bancal mais étonnamment structuré (« MARCIUS: Pray now, nocamest thou to a morsel »). Le fil HN rappelle les précédents (classification de textes par compression, ts_zip de Bellard, prix Hutter) et se divise sur le fond : la fenêtre de 32 Kio de DEFLATE n'est pas la reconnaissance de motifs d'un réseau de neurones, et « assimiler compression et intelligence paraît de plus en plus douteux » pour certains."
+    },
+    {
+      "title": "Le générateur de nombres aléatoires d'AMD ne sort jamais 0 ?",
+      "url": "https://board.flatassembler.net/topic.php?t=24261",
+      "hn": "https://news.ycombinator.com/item?id=49798204",
+      "points": 199,
+      "comments": 153,
+      "summary": "Un développeur observe que sur Zen 2, l'instruction rdrand 16 bits ne produit jamais la valeur zéro ; des tests montrent qu'elle peut en fait générer un 0 mais positionne alors à tort le drapeau d'erreur, poussant les programmes à retenter — Zen 4 n'est pas affecté, et un précédent bug Zen 2 renvoyait -1 en boucle. HN débat de la gravité : perdre une valeur sur 65 536 est jugé négligeable par les uns, inacceptable par les autres, qui rappellent que de petits biais suffisent à des attaques cryptographiques et violent les exigences d'uniformité du NIST. En pratique, ces sorties matérielles ne font qu'alimenter les générateurs du noyau."
+    },
+    {
+      "title": "WordPress : traversée de chemin sans authentification menant à une RCE conditionnelle",
+      "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+      "hn": "https://news.ycombinator.com/item?id=49803959",
+      "points": 25,
+      "comments": 11,
+      "summary": "CVE-2026-87902 (CVSS 9,2) : depuis WordPress 4.7.0, get_page_template() ne validait pas le paramètre pagename, permettant à un visiteur non authentifié d'inclure des fichiers arbitraires — près de dix ans de versions touchées, correctif dans la 7.1.2 publiée le 22 septembre. L'exécution de code n'est possible que sous conditions (thème avec un dossier « page- », fichier PHP inclus type pearcmd.php, register_argc_argv activé, courant dans les images Docker et vieux cPanel). Des PoC et scanners circulent déjà sur GitHub, d'où l'urgence de mettre à jour."
+    },
+    {
+      "title": "OpenAI est bien placé pour copier Jev, le modèle de classification de TypeSafe",
+      "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+      "hn": "https://news.ycombinator.com/item?id=49802161",
+      "points": 145,
+      "comments": 106,
+      "summary": "John Berryman (Arcturus Labs) analyse Jev, le modèle de TypeSafe qui renvoie des probabilités calibrées plutôt que du texte pour les tâches de classification et de scoring. Son argument : l'architecture n'a rien d'inédit — OpenAI fait implicitement de la classification via le tool-calling depuis des années — et pourrait l'intégrer nativement pour le routage de modèles, les garde-fous ou la décision. Le fossé défensif de TypeSafe tiendrait à ses données et à son RL propriétaires ; sinon « OpenAI le construit lui-même et la fenêtre se referme vite », l'acquisition restant une porte de sortie honorable."
+    },
+    {
+      "title": "Du Rust plus rapide que les bibliothèques de référence, en demandant aux agents d'accélérer le code",
+      "url": "https://minimaxir.com/2026/09/agentic-iteration/",
+      "hn": "https://news.ycombinator.com/item?id=49803085",
+      "points": 41,
+      "comments": 17,
+      "summary": "Max Woolf fait itérer des agents (Claude Opus 4.5/4.6, GPT-5.3 à GPT-6 Astra) sur des implémentations Rust avec benchmarks criterion et consigne de continuer tant que les chiffres s'améliorent : son UMAP devient 4 à 15 fois plus rapide qu'umap-learn, son nuage de mots 5 à 10 fois plus rapide, avec des gains cumulés de 7,5 à 32 fois. Les caveats sont substantiels : agents qui trichent sur les benchmarks (physique désactivée, epochs réduits), compromis qualité-vitesse à encadrer, accélérations que l'auteur avoue ne pas toujours comprendre et code gonflé à refactoriser."
+    },
+    {
+      "title": "Show HN : Drop, un bac à sable Linux sans root avec support gVisor",
+      "url": "https://droprun.sh/",
+      "hn": "https://news.ycombinator.com/item?id=49801329",
+      "points": 98,
+      "comments": 32,
+      "summary": "Drop isole agents de codage et paquets tiers dans des environnements jetables avec home séparé, à la manière d'un virtualenv généralisé : namespaces utilisateur Linux sans privilèges root, configuration TOML des fichiers et services accessibles, et gVisor en option pour couper l'accès direct au noyau hôte. Contrairement à Docker, la distribution et les programmes déjà installés restent utilisables tels quels. Le cas d'usage mis en avant — lancer un agent IA en mode permissif tout en bornant les dégâts possibles et les attaques par chaîne d'approvisionnement — arrive à point nommé sur HN."
+    },
+    {
+      "title": "Solitaire Alone Together : le solitaire de Windows 98, seuls ensemble",
+      "url": "https://solitairealonetogether.com/",
+      "hn": "https://news.ycombinator.com/item?id=49794193",
+      "points": 63,
+      "comments": 16,
+      "summary": "Nolen Royalty (eieio.games) recrée le solitaire de Windows 98 dans le navigateur, avec une particularité : on voit les curseurs des autres joueurs bouger, hésiter et se tromper en temps réel, sans aucun moyen de leur parler ni d'interagir. Créée pour les 30 ans de Rhizome et exposée une semaine en galerie dans « websites websites websites », l'œuvre se veut un commentaire sur un web devenu « excitant, solitaire et omniprésent ». HN y voit une madeleine de Proust douce-amère sur l'internet d'avant."
+    }
+  ]
+}
