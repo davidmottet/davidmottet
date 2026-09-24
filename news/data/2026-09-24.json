@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-24",
+  "title": "OpenAI divise les prix par deux avec Sol et Luna, le Pentagone accuse l'IA, le FBI se fait piller — et FoxPro ressuscite",
+  "intro": "La guerre des prix s'intensifie : au lendemain de Claude Opus 5.5, OpenAI complète sa gamme GPT-6 avec Sol et Luna, deux fois moins chers que leurs prédécesseurs. Mais la journée rappelle aussi le revers de l'automatisation : le Pentagone reconnaît qu'une confiance excessive dans l'IA de ciblage a contribué à la frappe meurtrière sur une école iranienne, ShinyHunters affirme détenir des données sur tous les employés du FBI, et une mise à jour Samsung a éteint des réfrigérateurs entiers en Corée. Côté nostalgie productive, un FoxPro réécrit en Rust fait un carton.",
+  "items": [
+    {
+      "title": "GPT-6 Sol et Luna : OpenAI divise ses prix par deux",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "hn": "https://news.ycombinator.com/item?id=49805509",
+      "points": 1666,
+      "comments": 800,
+      "summary": "Au lendemain de Claude Opus 5.5, OpenAI complète la gamme GPT-6 avec Sol (2 $/M tokens en entrée, 10 $/M en sortie) et Luna (0,10 $ et 0,50 $), soit moitié moins cher que les GPT-5.6 qu'ils remplacent. OpenAI revendique de meilleurs scores en automatisation et en code à une fraction du coût des modèles Anthropic — Sol ferait jeu égal avec Fable 5.1 sur le code pour environ 80 % moins cher par tâche. Disponibles immédiatement dans ChatGPT Work, Codex et l'API, ces sorties confirment que la compétition entre laboratoires se joue désormais autant sur le prix que sur les capacités."
+    },
+    {
+      "title": "Le Pentagone reconnaît que la sur-confiance dans l'IA a contribué à la frappe sur une école iranienne",
+      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+      "hn": "https://news.ycombinator.com/item?id=49806430",
+      "points": 817,
+      "comments": 433,
+      "summary": "Selon l'enquête interne du Pentagone révélée par Bloomberg, la frappe de février 2026 qui a tué plus de 150 personnes dont 123 enfants dans une école de Minab résulte de trois défaillances : une confiance excessive dans le système de ciblage Maven de Palantir, des bases de données obsolètes qui classaient toujours le site comme installation des Gardiens de la révolution alors que l'imagerie satellite montrait une école depuis 2017, et la réduction d'environ 90 % des équipes de prévention des victimes civiles — une seule personne restait au Centcom. Palantir se dit « non responsable des données sous-jacentes » ; le rapport complet, quasi terminé depuis des mois, n'est toujours pas publié."
+    },
+    {
+      "title": "« On a piraté le FBI » : ShinyHunters affirme détenir des données sur tous les employés",
+      "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
+      "hn": "https://news.ycombinator.com/item?id=49805278",
+      "points": 738,
+      "comments": 535,
+      "summary": "Le groupe ShinyHunters affirme avoir compromis un serveur Oracle PeopleSoft de recrutement du FBI puis pivoté vers un cloud gouvernemental hébergé chez Amazon, exfiltrant des téraoctets de données : noms, adresses personnelles et téléphones d'agents et de candidats. Le groupe se dit « non motivé financièrement » et exige le retrait d'un rapport du FBI qu'il juge diffamatoire ; le site FBIjobs.gov a aussi été défiguré et le Bureau confirme une enquête en cours. L'exposition des adresses d'agents fédéraux constitue une menace de contre-espionnage majeure, et c'est déjà la deuxième intrusion connue dans des systèmes du FBI en 2026."
+    },
+    {
+      "title": "Jev en 25 lignes de Python",
+      "url": "https://www.nobodywho.ai/posts/jev-in-25-lines/",
+      "hn": "https://news.ycombinator.com/item?id=49812769",
+      "points": 470,
+      "comments": 140,
+      "summary": "Un billet parodique montre qu'on peut reproduire l'essentiel de Jev, le classifieur commercial dont HN débat depuis des semaines, en 25 lignes de Python en lisant directement les logits d'un modèle de langage — une prédiction d'un seul token par question, parallélisable. Les commentaires démontent l'exercice avec sérieux : les logprobs des modèles conversationnels sont dilués par leur entraînement à produire de la prose, le billet omet taux d'erreur et fiabilité du parsing, et des alternatives plus robustes existent (sorties structurées, contraintes de grammaire, LoRA). Certains rappellent surtout que le titre HN gomme le fait que l'auteur assume la parodie."
+    },
+    {
+      "title": "Comment Ryzen a gagné 50 % en deux ans",
+      "url": "https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years/",
+      "hn": "https://news.ycombinator.com/item?id=49758709",
+      "points": 427,
+      "comments": 174,
+      "summary": "Daniel Lemire compare trois Ryzen 8 cœurs à 3D V-Cache (5800X3D de 2022, 7800X3D, 9800X3D de 2024) : +47 % en mono-cœur et +58 % en multi-cœur sur Geekbench 6, alors que la fréquence maximale n'a progressé que de 15 %. L'explication tient dans la largeur des cœurs : 50 % de transistors en plus (11 à 16 milliards), dispatch passé de 6 à 8 instructions par cycle, 6 ALU entières au lieu de 4, reorder buffer de 256 à 448 entrées et unités SIMD doublées à 512 bits. Les processeurs ne deviennent plus rapides mais plus larges — un rappel utile à l'heure où l'on déclare la loi de Moore morte."
+    },
+    {
+      "title": "Microsoft a tué FoxPro en 2007. Qu'importe : le voici ressuscité",
+      "url": "https://foxscript.org/",
+      "hn": "https://news.ycombinator.com/item?id=49808023",
+      "points": 422,
+      "comments": 232,
+      "summary": "FoxDev Studio réimplémente de zéro Visual FoxPro 9 : un IDE Electron/React et une machine virtuelle en Rust compilée en WebAssembly qui exécute les projets VFP existants (formulaires, bases, code) sans conversion, avec un pont 32 bits pour les vieilles bibliothèques .fll. Le projet vise la parité avec VFP 9, ajoute des extensions modernes (lambdas, serveur HTTP) et publie des builds nightly open source pour Windows et Linux. Près de vingt ans après l'abandon par Microsoft, l'engouement du fil témoigne de la masse d'applications métier FoxPro toujours en production."
+    },
+    {
+      "title": "Claude Code ne lisait AGENTS.md que si la télémétrie était activée [corrigé]",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "hn": "https://news.ycombinator.com/item?id=49814947",
+      "points": 345,
+      "comments": 187,
+      "summary": "En plaçant un mot-canari dans son AGENTS.md, l'auteur a découvert que le support de ce fichier dans Claude Code 2.1.277 dépendait d'un feature flag distant (tengu_agents_md_mod) : avec DISABLE_TELEMETRY=1 ou le trafic non essentiel coupé, le flag n'était jamais récupéré et le fichier local était silencieusement ignoré. L'ironie a fait réagir : ce sont précisément les utilisateurs soucieux de vie privée et les entreprises qui coupent la télémétrie qui perdaient la fonctionnalité, alors que lire un fichier local ne devrait exiger aucun accès réseau. Le titre HN indique que le comportement a depuis été corrigé ; en attendant, un CLAUDE.md contenant @AGENTS.md servait de contournement."
+    },
+    {
+      "title": "SAML : une fractale de mauvaise conception",
+      "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+      "hn": "https://news.ycombinator.com/item?id=49806335",
+      "points": 305,
+      "comments": 158,
+      "summary": "Trail of Bits plaide pour la dépréciation pure et simple de SAML au profit d'OpenID Connect : le socle XML (XXE, bugs de canonicalisation, différentiels de parseurs) et les signatures enveloppées dans le document signé produisent des contournements d'authentification depuis 2005 — les attaques par enrobage de signature refont surface jusqu'en 2025. Le billet recommande aux fournisseurs de services d'abandonner SAML et aux fournisseurs d'identité de fixer des dates de fin de vie. Vingt ans de CVE récurrentes sur les mêmes classes de failles donnent du poids à l'argument, même si des milliers d'entreprises restent verrouillées sur SAML."
+    },
+    {
+      "title": "Ce que la Californie apprend de ses panneaux solaires au-dessus des canaux d'irrigation",
+      "url": "https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals",
+      "hn": "https://news.ycombinator.com/item?id=49796379",
+      "points": 299,
+      "comments": 572,
+      "summary": "Project Nexus, pilote à 20 millions de dollars mené avec UC Merced dans le district d'irrigation de Turlock, ne produit que 1,7 MW mais livre ses premiers enseignements : par centaine de miles de canaux couverts, les projections vont de 330 à 1 400 MW selon la largeur, avec une économie d'eau pouvant alimenter jusqu'à 11 000 foyers par an. Effet inattendu, l'ombre des panneaux réduit nettement la prolifération d'algues — la limite ombre/soleil se voit à l'œil nu dans les canaux vidangés. Le rapport final attendu fin 2026 décidera si l'État généralise l'approche."
+    },
+    {
+      "title": "Waymo récompense les correspondances avec les transports en commun",
+      "url": "https://waymo.com/blog/2026/09/transit-rewards/",
+      "hn": "https://news.ycombinator.com/item?id=49811065",
+      "points": 215,
+      "comments": 268,
+      "summary": "Dans la baie de San Francisco, Waymo créditera 2,85 $ (le prix d'un ticket de bus) aux passagers qui enchaînent dans les deux heures une course Waymo et un trajet en transport public payé avec la même carte Visa liée à l'app — les 27 agences de transit acceptant le paiement sans contact sont couvertes. L'entreprise loue aussi 40 places de stationnement dédiées dans des gares Caltrain et affirme que plus de la moitié de ses clients des marchés matures utilisent déjà les transports en commun. Une réponse directe à la critique récurrente selon laquelle les robotaxis cannibalisent le transport public plutôt que de le compléter."
+    },
+    {
+      "title": "Samsung gèle ses frigos connectés avec une mise à jour",
+      "url": "https://www.androidauthority.com/samsung-accidentally-freezes-its-smart-fridges-with-a-software-update-3714472/",
+      "hn": "https://news.ycombinator.com/item?id=49815381",
+      "points": 184,
+      "comments": 181,
+      "summary": "Une mise à jour SmartThings défectueuse a rendu inopérants des réfrigérateurs Samsung en Corée du Sud — plus de froid, plus d'écran tactile, plus de lumière — principalement des modèles Bespoke AI 4 portes, sans possibilité de récupération par l'utilisateur. Samsung a stoppé le déploiement avant qu'il n'atteigne d'autres pays et promet des réparations, mais celles-ci ne pouvaient être planifiées qu'après le congé national de Chuseok (26 septembre), laissant des familles avec leurs provisions de fête gâtées. L'incident relance la question qui fâche : pourquoi un appareil dont la fonction est de refroidir peut-il être neutralisé par une mise à jour logicielle à distance ?"
+    },
+    {
+      "title": "GPT-6 Astra a appris à conduire une voiture",
+      "url": "https://drivingbench.com/",
+      "hn": "https://news.ycombinator.com/item?id=49817404",
+      "points": 100,
+      "comments": 71,
+      "summary": "Le projet DrivingBench fait piloter une vraie Toyota Corolla par des LLM via un boîtier comma four et openpilot : GPT-6 Astra est le premier modèle à boucler le parcours de cônes sur parking — 134,7 mètres en 5 minutes 22 à 1,5 km/h, là où GPT-5.6, Grok 4.6 et Fable 5.1 ont échoué. La performance a coûté 6,6 millions de tokens (7,74 $), soit environ 92 $ du mile, avec une image caméra rafraîchie toutes les 5 à 6 secondes seulement ; le modèle refusait d'ailleurs régulièrement de conduire et les chercheurs ont dû présenter l'exercice comme une « simulation ». Totalement impraticable, donc, mais révélateur de ce que les modèles généralistes savent improviser hors de leur terrain."
+    }
+  ]
+}
