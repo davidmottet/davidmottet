@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-25",
+  "title": "F-Droid 2.0 défie Google, chiffrement à deux vitesses au Royaume-Uni, et le desktop open source cherche sa révolution",
+  "intro": "Journée placée sous le signe des libertés numériques : F-Droid sort la plus grosse mise à jour de son histoire en plein tour de vis de Google sur l'installation d'applications, un billet sur le chiffrement « à deux vitesses » d'Apple au Royaume-Uni relance le débat sur l'Investigatory Powers Act, et un éditeur indépendant raconte comment GitHub a laissé traîner trois semaines un clone malveillant de son logiciel. Côté technique, Scott Jenson appelle le desktop Linux à cesser de copier Apple et Microsoft, DHH assume le virage agentique de Rails, et Linebender publie Fearless SIMD 1.0.",
+  "items": [
+    {
+      "title": "F-Droid 2.0 : une refonte complète en plein bras de fer avec Google",
+      "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+      "hn": "https://news.ycombinator.com/item?id=49831968",
+      "points": 481,
+      "comments": 150,
+      "summary": "Le magasin d'applications libre pour Android publie sa plus grosse mise à jour en dix ans : réécriture en Kotlin/Jetpack Compose, navigation simplifiée (Découvrir, Recherche, Mes apps), mises à jour automatiques en arrière-plan via les nouvelles API de pré-approbation d'Android, tout en conservant le support Tor et les fonctions anti-panique. Les commentaires saluent une interface enfin moderne — certains utilisateurs de Droid-ify envisagent de revenir — mais s'inquiètent surtout des restrictions croissantes de Google sur le sideloading, qui poussent une partie de la communauté vers GrapheneOS."
+    },
+    {
+      "title": "Moderniser le desktop open source : l'appel de Scott Jenson",
+      "url": "https://lwn.net/SubscriberLink/1095425/2d9f411252325784/",
+      "hn": "https://news.ycombinator.com/item?id=49825642",
+      "points": 352,
+      "comments": 438,
+      "summary": "L'ex-designer d'Apple et Google, aujourd'hui chez Mastodon et Home Assistant, estime que l'UX du desktop n'a pas bougé en vingt ans et que Linux devrait innover au lieu de copier ses concurrents. Il montre trois prototypes : des mises en page pensées pour les écrans larges, un presse-papiers inspiré du Canvas d'Obsidian, et une « mémoire de travail » respectueuse de la vie privée pour retrouver ce qu'on a vu. Les 438 commentaires oscillent entre « ne touchez pas à mes réglages », le débat fragmentation contre standardisation, et la méfiance envers les recettes venues des GAFAM."
+    },
+    {
+      "title": "Chiffrement à deux vitesses au Royaume-Uni",
+      "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
+      "hn": "https://news.ycombinator.com/item?id=49828731",
+      "points": 299,
+      "comments": 294,
+      "summary": "Depuis qu'Apple a retiré l'Advanced Data Protection aux nouveaux utilisateurs britanniques en février 2025 — plutôt que de céder à une Technical Capability Notice secrète fondée sur l'Investigatory Powers Act de 2016 — deux iPhone identiques n'offrent plus la même protection : ceux qui avaient activé ADP la conservent, les autres n'y ont plus accès. Apple conteste toujours l'injonction devant l'Investigatory Powers Tribunal. Sur HN, on rappelle qu'iCloud Backup sans ADP casse de fait le chiffrement de bout en bout d'iMessage, et on débat de la sincérité de la résistance d'Apple, plus conciliante en Chine."
+    },
+    {
+      "title": "Les archives du design Nokia ouvertes au public",
+      "url": "https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c",
+      "hn": "https://news.ycombinator.com/item?id=49828385",
+      "points": 186,
+      "comments": 97,
+      "summary": "L'université Aalto (Finlande) publie un portail interactif retraçant plus de vingt ans de design chez Nokia : 700 entrées curatées issues d'un fonds de plus de 20 000 documents (croquis, prototypes, présentations, vidéos), enrichies des témoignages d'environ 250 anciens designers. L'archive, rendue possible par des dons de Microsoft Mobile et d'ex-employés, se parcourt par réseau ou par chronologie et documente aussi les nombreux concepts jamais commercialisés — une plongée nostalgique pour tous ceux qui ont possédé un 3310."
+    },
+    {
+      "title": "GitHub a laissé un clone malveillant en ligne pendant trois semaines",
+      "url": "https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/",
+      "hn": "https://news.ycombinator.com/item?id=49832406",
+      "points": 176,
+      "comments": 73,
+      "summary": "L'auteur d'Easy Data Transform a découvert sur GitHub une contrefaçon de son logiciel, reprenant nom et logo, dont l'installeur Mac contenait des malwares et une image incitant à ignorer les alertes de sécurité. Signalée le 31 août avec preuves à l'appui le 10 septembre, le dépôt n'a reçu qu'un accusé de réception automatique pendant 23 jours — avant d'être supprimé une dizaine de minutes après l'arrivée de l'article en une de HN. Une illustration, largement commentée, du fait que la visibilité médiatique reste le moyen le plus fiable d'obtenir une réaction des grandes plateformes."
+    },
+    {
+      "title": "La science de Monkey Island : le grog peut-il vraiment dissoudre une chope en 35 secondes ?",
+      "url": "https://jgeekstudies.org/2026/09/23/the-science-of-monkey-island-can-grog-actually-dissolve-a-metal-mug-that-fast/",
+      "hn": "https://news.ycombinator.com/item?id=49818031",
+      "points": 110,
+      "comments": 23,
+      "summary": "Le Journal of Geek Studies s'attaque très sérieusement à une énigme du jeu culte de LucasArts : en modélisant la corrosion de l'étain par une chimie acide limitée par diffusion, l'auteur calcule qu'il faudrait une concentration en protons d'environ 383 M — une dizaine de fois l'acide sulfurique concentré — pour dissoudre la chope au rythme observé dans le jeu. Conclusion : le grog est bien trop caustique pour la chimie ordinaire, sauf à invoquer la convection ou son mystérieux ingrédient « SCUMM ». HN savoure l'exercice de fausse rigueur académique appliquée au jeu vidéo."
+    },
+    {
+      "title": "Toyota électrifie la Corolla",
+      "url": "https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/",
+      "hn": "https://news.ycombinator.com/item?id=49823568",
+      "points": 96,
+      "comments": 96,
+      "summary": "La prochaine génération de la voiture la plus vendue au monde, attendue en 2027 pour le millésime 2028, sera déclinée en essence, hybride, hybride rechargeable et 100 % électrique sur une plateforme TNGA-C fortement remaniée. La version électrique viserait au moins 400 km d'autonomie en configurations un ou deux moteurs, avec des prix estimés autour de 25 000 $ pour l'essence et 30 000 $ pour l'électrique ; la disponibilité américaine reste incertaine. Un symbole du basculement prudent de Toyota, longtemps critiqué pour son attentisme sur le tout-électrique."
+    },
+    {
+      "title": "Show HN : Whiteboard (YC W26), un IDE open source pour concevoir avant de coder",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "hn": "https://news.ycombinator.com/item?id=49833867",
+      "points": 76,
+      "comments": 18,
+      "summary": "Cette startup YC propose un IDE de bureau bâti sur Code OSS où humains et agents IA collaborent sur l'architecture logicielle : intégration avec Claude Code, visionneuse de diff sémantique écrite en Rust, journal des décisions prises par les agents autonomes, et système de plugins WASM. L'idée : donner un espace de réflexion structuré à la conception, plutôt que de laisser les agents foncer dans le code. Premiers retours positifs sur l'esthétique « à la Zed », avec la curiosité prudente habituelle des Show HN."
+    },
+    {
+      "title": "Rails World 2026 : DHH assume le virage agentique",
+      "url": "https://www.youtube.com/watch?v=vDjW_dRyKXY",
+      "hn": "https://news.ycombinator.com/item?id=49817680",
+      "points": 75,
+      "comments": 46,
+      "summary": "Dans sa keynote d'ouverture à Austin, DHH embrasse le codage par agents IA : des équipes plus petites qui font plus, six applications natives développées chez 37signals là où l'entreprise aurait autrefois fait du web hybride, et un backend de Hey réécrit en Rust avec, selon lui, 90 % de coûts serveurs en moins. Les commentaires HN sont partagés : les gains de productivité annoncés font craindre moins d'embauches et des salaires stagnants, et certains se demandent si l'enthousiasme de DHH pour Rust et le natif n'est pas un aveu de déclin pour Rails."
+    },
+    {
+      "title": "Fearless SIMD 1.0 : du SIMD sûr en Rust",
+      "url": "https://linebender.org/blog/fearless-simd-1-0/",
+      "hn": "https://news.ycombinator.com/item?id=49800085",
+      "points": 44,
+      "comments": 8,
+      "summary": "Linebender publie la version 1.0 de sa bibliothèque qui élimine le code unsafe de la programmation SIMD en Rust : opérations vectorielles portables, accès sûr aux intrinsics des plateformes, macro #[simd] pour le multiversioning de fonctions, et module de transmutation sûre. Déjà utilisée directement par une trentaine de crates et indirectement par plus d'un millier, elle s'accompagne de trois ans de mises à jour de sécurité et se veut complémentaire du futur SIMD de la bibliothèque standard, avec le support des extensions SVE et RISC-V Vector en ligne de mire."
+    },
+    {
+      "title": "La créatine renforcerait l'immunité antitumorale",
+      "url": "https://www.cell.com/iscience/fulltext/S2589-0042(26)00811-4",
+      "hn": "https://news.ycombinator.com/item?id=49834825",
+      "points": 36,
+      "comments": 21,
+      "summary": "Une étude publiée dans iScience montre que l'absorption de créatine favorise l'activation des cellules dendritiques et la réponse immunitaire contre les tumeurs, chez la souris comme sur des cellules humaines en culture, à des doses équivalentes à la supplémentation courante (environ 3 g/jour pour un adulte). Les commentaires tempèrent : d'autres travaux suggèrent que certaines tumeurs profitent elles-mêmes de la créatine, l'effet pourrait dépendre du type de cancer, et il s'agit de recherche fondamentale, pas d'une recommandation clinique."
+    },
+    {
+      "title": "Pourquoi le foie est-il si étrangement régénératif ?",
+      "url": "https://dynomight.substack.com/p/liver",
+      "hn": "https://news.ycombinator.com/item?id=49832938",
+      "points": 31,
+      "comments": 30,
+      "summary": "L'essayiste Dynomight retourne la question : ce n'est pas le foie qui est exceptionnel, c'est le reste du corps qui sacrifie délibérément sa capacité de régénération pour se protéger du cancer — le raccourcissement des télomères empêche les cellules mutées de proliférer indéfiniment. Chaque organe arbitre entre régénération, prévention du cancer et coût énergétique : l'intestin grêle, lui, s'en sort avec un « tapis roulant » cellulaire qui évacue les cellules avant que les mutations ne s'accumulent. Une vulgarisation appréciée sur HN pour son angle contre-intuitif."
+    }
+  ]
+}
