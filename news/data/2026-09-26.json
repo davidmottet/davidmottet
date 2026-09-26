@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-26",
+  "title": "La justice confirme la mise au ban d'Anthropic par le Pentagone, DHH enterre le code écrit à la main, et Google envoie ses TPU en orbite",
+  "intro": "Grosse journée sur le front IA-État : une cour d'appel fédérale valide la désignation d'Anthropic comme « risque pour la chaîne d'approvisionnement » du Pentagone, pendant que la keynote de DHH à Rails World continue de secouer la communauté Ruby. L'outillage des développeurs se réorganise autour des agents — IDE visuel Whiteboard, runtime local Ollaya, tracker git-bug — et Go expérimente le SIMD dans sa bibliothèque standard. Côté détente, HN plébiscite la biologie évolutive du foie, les usines Factorio imprimées en 3D et un Pentium II émulé sur Mac Mini M6.",
+  "items": [
+    {
+      "title": "Une cour d'appel américaine confirme la désignation d'Anthropic comme risque pour la chaîne d'approvisionnement",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "hn": "https://news.ycombinator.com/item?id=49845977",
+      "points": 285,
+      "comments": 438,
+      "summary": "Par 2 voix contre 1, la cour d'appel fédérale de Washington (opinion du juge Gregory Katsas) rejette le recours d'Anthropic contre sa désignation de mars 2026, prononcée après son refus de retirer les garde-fous empêchant l'usage de ses modèles dans des armes autonomes ou la surveillance de masse — la majorité estimant qu'un modèle « trop contraint » pourrait s'arrêter en pleine opération militaire. La décision contredit un jugement d'août à San Francisco qui avait invalidé une désignation parallèle ; Anthropic, qui chiffre le manque à gagner en milliards à l'approche de son IPO, envisage un réexamen en formation plénière. C'est de loin le sujet le plus débattu du jour sur HN, avec 438 commentaires."
+    },
+    {
+      "title": "Pourquoi le foie est-il si étrangement régénératif ?",
+      "url": "https://dynomight.substack.com/p/liver",
+      "hn": "https://news.ycombinator.com/item?id=49832938",
+      "points": 539,
+      "comments": 270,
+      "summary": "Dynomight se demande pourquoi le corps humain régénère si mal — sauf le foie — et propose un arbitrage évolutif à trois termes entre régénération, risque de cancer et coût énergétique : plus un tissu se renouvelle, plus il risque la tumeur, sauf à payer très cher des mécanismes de protection comme le « tapis roulant » cellulaire de l'intestin grêle, qui remplace son épithélium en quelques jours (environ 40 milliards de cellules perdues par jour). Le foie, exposé en permanence aux toxines, a fait le choix inverse des neurones, qui ne se divisent plus pour éviter la transformation maligne. Conclusion de l'auteur : même sans cancer, nous payons toute notre vie le coût métabolique de ces défenses — « même si les barbares ne franchissent jamais la muraille, il a bien fallu la construire ». Article le plus voté du jour."
+    },
+    {
+      "title": "« What About Rails? » : la keynote de DHH à Rails World laisse la communauté sans boussole",
+      "url": "https://jardo.dev/what-about-rails",
+      "hn": "https://news.ycombinator.com/item?id=49839664",
+      "points": 272,
+      "comments": 171,
+      "summary": "Jared Norman critique la keynote d'ouverture de DHH à Rails World 2026 : le créateur de Rails s'y déclare « retraité du métier de programmeur », affirme avoir produit 150 000 lignes de code en août (contre 30 000 par an auparavant, Ruby ne représentant plus que 3 % de son activité) et prédit que les LLM généreront la quasi-totalité du code d'ici la fin de l'année, tout en annonçant la migration de Hey vers des applications natives à backend Rust (« 99 % de CPU et 95 % de mémoire en moins »). Norman conteste ces métriques — du Rust verbeux comparé à du Ruby concis, un code généré que DHH admet ne pas lire — et surtout l'absence de toute vision concrète pour l'avenir du framework. Le billet a vivement fait réagir la communauté, avec 171 commentaires."
+    },
+    {
+      "title": "Show HN : Whiteboard (YC W26), un IDE open source pour concevoir les logiciels avec les agents",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "hn": "https://news.ycombinator.com/item?id=49833867",
+      "points": 386,
+      "comments": 127,
+      "summary": "Whiteboard est une application de bureau open source (MIT, Electron avec un fork de VS Code embarqué) où humains et agents de code (Claude Code, Codex…) collaborent sur un espace visuel partagé : les agents y dessinent diagrammes de séquence ou schémas entité-relation cliquables qui renvoient directement au code. L'outil ajoute un diff sémantique conscient de l'AST écrit en Rust, un journal des décisions prises par les agents et un système de plugins WASM, le tout en local-first. Le dépôt approche le millier d'étoiles au moment du Show HN, l'un des plus gros succès du jour avec 386 points."
+    },
+    {
+      "title": "Du SIMD indépendant de la plateforme en Go",
+      "url": "https://go.dev/blog/simd-experiment",
+      "hn": "https://news.ycombinator.com/item?id=49843269",
+      "points": 312,
+      "comments": 120,
+      "summary": "Le blog officiel de Go présente une expérimentation d'API SIMD portable dans la bibliothèque standard, une capacité encore rare que les commentateurs comparent à ce qu'offrent Java, .NET, Zig, Swift ou Rust. La discussion oppose ceux pour qui l'autovectorisation du compilateur est « suffisante » à ceux qui veulent un contrôle explicite, plusieurs admettant honnêtement que peu de développeurs savent écrire du SIMD efficace. Des travaux d'autovectorisation du compilateur Go sont d'ailleurs déjà soumis en revue en parallèle."
+    },
+    {
+      "title": "Git-bug : un tracker de bugs distribué et offline-first embarqué dans Git",
+      "url": "https://github.com/git-bug/git-bug",
+      "hn": "https://news.ycombinator.com/item?id=49843174",
+      "points": 256,
+      "comments": 88,
+      "summary": "Le projet de Michael Mure stocke les tickets directement dans le dépôt Git et résout les éditions concurrentes avec des CRDT plutôt que par des conflits de merge, pour « capturer l'intention » des échanges ; l'auteur prévoit d'adopter did:plc, le système d'identité de Bluesky, et un mainteneur du noyau Linux a récemment montré une intégration dans b4 et cgit. Les commentaires débattent du bien-fondé même du concept — les tickets doivent rester accessibles aux non-développeurs, ce qui favorise les systèmes centralisés — et de la monétisation, résumée par un « vendre aux développeurs est impossible, il faut vendre à leur patron ». Les limites actuelles (statuts réduits à ouvert/fermé, gestion SSH incomplète) sont aussi pointées."
+    },
+    {
+      "title": "Factorio à toucher : Wube publie ses modèles à imprimer en 3D",
+      "url": "https://factorio.com/blog/post/fff-447",
+      "hn": "https://news.ycombinator.com/item?id=49845133",
+      "points": 255,
+      "comments": 73,
+      "summary": "Dans son Friday Facts #447, le studio Wube offre en téléchargement gratuit sur Printables 15 ensembles de modèles 3D imprimables — 65 modèles et 247 fichiers STL : convoyeurs, bras inserters, foreuses, fours, murs et même les biters — plutôt que de vendre une édition collector. L'équipe raconte des mois de prototypage pour convertir des sprites isométriques pleins d'astuces de perspective en géométrie réellement imprimable. Les commentaires saluent la philosophie « développeurs d'abord » du studio, avant de bifurquer sur un débat récurrent : l'extension Space Age est-elle trop dirigiste par rapport à la liberté du jeu de base ?"
+    },
+    {
+      "title": "Un Pentium II à 600 MHz avec Voodoo 3, émulé sur un Mac Mini M6",
+      "url": "https://nyaa.sh/reviews/mac-mini-m6-emulation",
+      "hn": "https://news.ycombinator.com/item?id=49841285",
+      "points": 245,
+      "comments": 105,
+      "summary": "Grâce à la puissance mono-cœur de la puce M6, l'émulateur 86Box fait tourner sur un Mac Mini l'équivalent d'un PC de la fin des années 1990 — Pentium II à 600 MHz et carte Voodoo 3 avec l'API Glide — de quoi rejouer à Need for Speed II ou Turok dans les conditions d'époque. La discussion mêle nostalgie assumée, réglages de recompilation dynamique et comparaisons avec QEMU ou Parallels. Le désaccord le plus net porte sur la philosophie d'émulation : la précision matérielle est-elle « surcotée », ou est-ce justement ce qui distingue 86Box, quitte à sacrifier la vitesse ?"
+    },
+    {
+      "title": "Ink & Switch fête ses dix ans avec une page d'accueil interactive",
+      "url": "https://www.inkandswitch.com/",
+      "hn": "https://news.ycombinator.com/item?id=49842270",
+      "points": 202,
+      "comments": 25,
+      "summary": "Le laboratoire de recherche indépendant, connu pour avoir popularisé le « local-first » et créé la bibliothèque Automerge, refait sa page d'accueil autour de « Tenfold », une pièce d'art interactive célébrant ses dix ans et construite avec ses propres technologies — on peut cliquer et faire glisser partout. La page met en avant ses quatre axes de recherche : logiciel local-first, logiciel malléable, encre programmable et contrôle de version universel. Un hommage au « tools for thought » qui a séduit HN avec 202 points."
+    },
+    {
+      "title": "Penser en partant des premiers principes : éloge et limites",
+      "url": "https://sunilsadasivan.com/writing/first-principles-thinking/",
+      "hn": "https://news.ycombinator.com/item?id=49844736",
+      "points": 171,
+      "comments": 70,
+      "summary": "Sunil Sadasivan défend le raisonnement « from first principles » : interroger les raisons fondamentales de ce qu'on fait et adapter son outillage en conséquence. Les commentaires nuancent — ce mode de pensée ignore volontiers les contraintes organisationnelles bien réelles, comme une réarchitecture qui gèlerait les fonctionnalités pendant un an — et rappellent que les meilleurs ingénieurs cherchent le design le plus simple, pas le plus ambitieux. Le fil dérive vers un débat animé : les agents IA sont-ils « pathétiques » ou au contraire meilleurs que les humains en décisions d'architecture ?"
+    },
+    {
+      "title": "Ollaya : un Ollama pour les modèles de décision open source",
+      "url": "https://ollaya.dev/",
+      "hn": "https://news.ycombinator.com/item?id=49848269",
+      "points": 154,
+      "comments": 44,
+      "summary": "Ollaya permet de télécharger et servir localement des modèles de décision ouverts « à la Jev » — Laya, decider, NLI, GLiClass — derrière une API compatible TypeSafe, sur le modèle de ce qu'Ollama a fait pour les LLM. Les commentaires sont partagés : l'auteur admet que les petits modèles restent « nettement en dessous de Jev sur les requêtes difficiles », certains jugent que « modèle de décision » est un habillage marketing pour des classifieurs de texte, d'autres soulignent l'intérêt d'une alternative locale et bon marché face à un service propriétaire facturé à la requête. Beaucoup parient qu'Ollama finira par intégrer la fonctionnalité lui-même."
+    },
+    {
+      "title": "Suncatcher : le premier test de data center orbital de Google décollera le 1er octobre",
+      "url": "https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/",
+      "hn": "https://news.ycombinator.com/item?id=49837350",
+      "points": 36,
+      "comments": 29,
+      "summary": "Le satellite prototype MVP du projet Suncatcher, développé avec Planet Labs, embarquera quatre TPU Trillium alimentés par 1 kW de panneaux solaires, à bord de la mission rideshare Transporter-18 de SpaceX. Les puces ont subi des tests de vibration et d'irradiation aux protons à l'UC Davis ; l'objectif est de valider leur comportement en orbite basse avant la vision à plus long terme de Google : des grappes de 81 satellites reliées par liens laser à l'horizon 2027. Restent des défis assumés — refroidir sans atmosphère, et des liaisons optiques exigeant une précision comparée à « toucher une pièce de monnaie à des kilomètres, alors que les deux points bougent »."
+    }
+  ]
+}
