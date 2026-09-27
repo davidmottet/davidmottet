@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-27",
+      "title": "Les traces du hack de Hugging Face par un essaim d'agents OpenAI, la fronde des développeurs contre Google Play, et Terence Tao veut plus de mathématiciens",
+      "count": 12
+    },
+    {
       "date": "2026-09-26",
       "title": "La justice confirme la mise au ban d'Anthropic par le Pentagone, DHH enterre le code écrit à la main, et Google envoie ses TPU en orbite",
       "count": 12
