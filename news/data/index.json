@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-09-28",
+      "title": "Google devenu étrange, OpenAI rattrapé par les livres piratés, NeoVim et le devoir de diligence : la confiance en question",
+      "count": 12
+    },
+    {
       "date": "2026-09-27",
       "title": "Les traces du hack de Hugging Face par un essaim d'agents OpenAI, la fronde des développeurs contre Google Play, et Terence Tao veut plus de mathématiciens",
       "count": 12

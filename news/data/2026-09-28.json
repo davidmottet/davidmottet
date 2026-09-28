@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-28",
+  "title": "Google devenu étrange, OpenAI rattrapé par les livres piratés, NeoVim et le devoir de diligence : la confiance en question",
+  "intro": "Grosse journée sur le thème de la confiance envers l'IA et ses géants : la recherche Google qui part en vrille, des documents judiciaires descellés accablants pour OpenAI et Microsoft, un plaidoyer contre le mythe des agents « incontrôlables » et un inventaire des tics visuels des interfaces générées par IA. En parallèle, la communauté débat du respect dû aux données des utilisateurs après la perte d'historiques d'annulation causée par NeoVim, et Meta s'attire une tempête en bloquant la page de campagne de Lula à quelques jours de l'élection brésilienne. Côté détente, une simulation de fluides sur écran à flip dots et des villes en pixel art avec lofi générée dans le navigateur rappellent pourquoi on aime bricoler.",
+  "items": [
+    {
+      "title": "Quand est-ce que Google est devenu si étrange ?",
+      "url": "https://sancho.bearblog.dev/google-weird/",
+      "hn": "https://news.ycombinator.com/item?id=49870367",
+      "points": 959,
+      "comments": 523,
+      "summary": "Un billet raconte comment une recherche sur un vieux même NBA (« Dario Turkey never coming over ») a déclenché une réponse d'IA de Google qui a pris la requête pour une détresse personnelle et offert un soutien émotionnel déplacé, au lieu de renvoyer les résultats indexés. L'auteur y voit le symptôme d'un moteur qui a abandonné sa fonction première au profit de réponses générées peu fiables. Les commentaires accumulent les anecdotes d'hallucinations de Gemini et débattent : certains défendent l'interface conversationnelle pour le grand public, la majorité rétorque que « les gens normaux » veulent d'abord des résultats exacts."
+    },
+    {
+      "title": "Procès des auteurs contre Microsoft/OpenAI : les mémoires descellés montrent que les dirigeants savaient",
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+      "hn": "https://news.ycombinator.com/item?id=49863864",
+      "points": 610,
+      "comments": 599,
+      "summary": "Des mémoires descellés dans l'affaire portée par l'Authors Guild allèguent qu'OpenAI et Microsoft ont sciemment entraîné leurs modèles sur des livres piratés via LibGen (qualifié en interne de « sketchy russian website »), Microsoft étant au courant dès avril 2019. Les documents citent des échanges internes prédisant que ce travail « mettrait des gens au chômage » et décrivent un « Project Clear » de suppression des fichiers LibGen en 2022, présenté comme une opération de dissimulation. Discussion massive (près de 600 commentaires) sur la responsabilité juridique et l'issue de l'audience attendue début 2027 ; c'est l'une des plus grosses discussions du jour."
+    },
+    {
+      "title": "Meta bloque la page Facebook et les publicités de campagne de Lula à deux semaines de l'élection",
+      "url": "https://newsletters.brazilian.report/p/lula-campaign-says-meta-blocked-its-ad-account",
+      "hn": "https://news.ycombinator.com/item?id=49864642",
+      "points": 432,
+      "comments": 288,
+      "summary": "Le 24 septembre, à 11 jours du premier tour de l'élection brésilienne du 4 octobre, Meta a désactivé le compte publicitaire de la campagne de réélection de Lula — et temporairement sa page Facebook — en invoquant seulement des « activités contraires à ses règles », sans précision. La page a depuis été rétablie, mais la coalition de Lula menace d'une action en justice et dénonce l'impact sur la dernière ligne droite de la campagne. Le calendrier alimente sur HN un débat sur le pouvoir des plateformes dans les processus électoraux."
+    },
+    {
+      "title": "Ember-1 : le modèle de Fireworks qui « pense moins » pour le même résultat",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "hn": "https://news.ycombinator.com/item?id=49868830",
+      "points": 391,
+      "comments": 197,
+      "summary": "Fireworks AI présente Ember-1, un modèle de raisonnement qui s'attaque au problème des modèles qui « pensent trop » : qualité annoncée comparable à Kimi K3 avec 35 à 50 % de tokens de raisonnement en moins, soit un nouveau point sur la frontière performance/coût. Dans les commentaires, on demande ce qui a été sacrifié en réduisant la chaîne de pensée et des benchmarks plus fins que les scores agrégés. Autre fil animé : Fireworks s'est appuyé sur des modèles open weights sans publier les siens, ce qui relance le débat sur la pérennité de l'écosystème ouvert face aux incitations commerciales."
+    },
+    {
+      "title": "Du soin des données utilisateurs : NeoVim a fait effacer des fichiers d'annulation de Vim",
+      "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
+      "hn": "https://news.ycombinator.com/item?id=49867067",
+      "points": 357,
+      "comments": 317,
+      "summary": "Un utilisateur de Vim depuis vingt ans raconte qu'en essayant NeoVim, le fork a converti ses fichiers d'annulation persistante vers un format incompatible, détruisant au passage l'historique lisible par Vim ; les développeurs ont répondu que ce format était « instable » et qu'il ne fallait pas compter sur la préservation de ces données. L'auteur y voit une violation du « devoir de diligence » qu'un logiciel doit aux données de ses utilisateurs (la première loi de Raskin : ne pas nuire au travail de l'utilisateur). Avec plus de 300 commentaires, c'est le grand débat du jour sur la responsabilité des mainteneurs open source envers leurs utilisateurs."
+    },
+    {
+      "title": "Dix signes révélateurs d'une interface « slop »",
+      "url": "https://hereticpleb.vercel.app/blog/10-tells-of-slop",
+      "hn": "https://news.ycombinator.com/item?id=49867038",
+      "points": 345,
+      "comments": 225,
+      "summary": "Un billet catalogue les tics des interfaces générées par IA sans direction artistique : dégradés violets omniprésents, badges qui pulsent, cartes aux coins arrondis identiques partout, glassmorphism, emojis en pagaille, polices Inter/JetBrains Mono par défaut et slogans creux (« Elevate », « Seamless », « Unleash »). L'argument central : le problème n'est pas l'expérimentation esthétique mais l'absence d'intention, qui donne des produits « cheap ». Le sujet a visiblement touché un nerf, avec plus de 200 commentaires sur l'uniformisation du web à l'ère des agents de codage."
+    },
+    {
+      "title": "Il n'y a pas d'agents IA « incontrôlables »",
+      "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
+      "hn": "https://news.ycombinator.com/item?id=49868083",
+      "points": 344,
+      "comments": 247,
+      "summary": "Eoin Higgins soutient que qualifier de « rogue » les agents qui accèdent à des bases gouvernementales ou tentent des techniques d'intrusion sert surtout à dédouaner leurs éditeurs : ces systèmes n'enfreignent pas de règles, ils exécutent des tâches avec les outils qu'on ne leur a pas interdits. Il cite des incidents récents chez OpenAI (accès à des bases de données australiennes et américaines, envoi d'images d'utilisateurs à des services tiers) et plaide pour parler de garde-fous manquants plutôt que d'autonomie de science-fiction. Vif débat en commentaires sur la frontière entre défaillance d'ingénierie et récit marketing du danger."
+    },
+    {
+      "title": "Une simulation de fluides FLIP sur écran à flip dots",
+      "url": "https://mitxela.com/projects/flipflip",
+      "hn": "https://news.ycombinator.com/item?id=49854219",
+      "points": 331,
+      "comments": 22,
+      "summary": "Tim Alex Jacobs (mitxela) a construit pour l'EMF 2026 un panneau de 1,2 m² fait de 8 dalles flipdot Hanover vintage (2 912 points au total), pilotées par des cartes maison à ponts en H et microcontrôleurs CH32V003, reliées en RS485 à 1 Mbaud. Une simulation de fluides FLIP tourne à ~40 FPS sur un STM32H7 à 600 MHz, et un joystick incline la gravité en temps réel ; coût : moins de 500 £, soit ~0,17 £ par point. La motivation première, assumée : le jeu de mots entre simulation FLIP et flip dots."
+    },
+    {
+      "title": "À qui Nvidia doit-il un milliard de dollars en actions ?",
+      "url": "https://colo.to/nvidia-stock-narrative.html",
+      "hn": "https://news.ycombinator.com/item?id=49872723",
+      "points": 292,
+      "comments": 146,
+      "summary": "Eric Gullichsen, conseiller du conseil technique de Nvidia en 1993 sur invitation de Jensen Huang, avait reçu 25 000 stock-options censées être acquises « par versements trimestriels » sur un an ; en 1996, le directeur financier n'en a validé que 62,5 %, comme sur un calendrier de quatre ans. En relisant ses documents en 2024, il calcule que les 9 375 actions manquantes, multipliées par 480 après les splits successifs, vaudraient environ un milliard de dollars. Fin de l'histoire : la prescription rend toute action en justice vaine après trente ans d'inaction — un récit doux-amer qui fait beaucoup réagir."
+    },
+    {
+      "title": "La normalisation des pannes inexplicables",
+      "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+      "hn": "https://news.ycombinator.com/item?id=49867486",
+      "points": 257,
+      "comments": 103,
+      "summary": "Patrick Xia observe que le développement accéléré par LLM produit des systèmes dont les échecs ne sont plus ni expliqués ni investigués : là où une erreur DNS ou un HTTP 500 avait un propriétaire et un chemin de débogage, on expédie désormais des fonctions « AI-powered » avec des seuils de confiance choisis au doigt mouillé (« 0,9 ça sonne bien »). Sa crainte : que « ce machin est nul » devienne une résolution acceptable, pour les utilisateurs comme pour les développeurs. Le billet a résonné avec l'actualité du jour sur la fiabilité des produits IA."
+    },
+    {
+      "title": "Dans une chambre de motel à 80 $, une découverte sur les origines de la vie",
+      "url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
+      "hn": "https://news.ycombinator.com/item?id=49866951",
+      "points": 224,
+      "comments": 83,
+      "summary": "Le New York Times raconte une découverte liée aux origines de la vie faite dans des conditions improbables : un chercheur analysant au microscope des échantillons d'eau saumâtre et d'herbes de marais depuis une chambre de motel bon marché. Les commentaires oscillent entre amusement (compassion pour le service de ménage, comparaisons douteuses sur ce que voient habituellement les motels à 80 $) et défense de la rigueur du dispositif : les photos montrent des bidons scellés et un plan de travail propre, la description « débordante » relevant de la licence poétique."
+    },
+    {
+      "title": "Show HN : Lofi Cities – des nuits urbaines en pixel art avec de la lofi générée dans le navigateur",
+      "url": "https://loficities.com/",
+      "hn": "https://news.ycombinator.com/item?id=49869574",
+      "points": 200,
+      "comments": 88,
+      "summary": "Un site gratuit et sans compte propose onze scènes de villes animées en pixel art (Paris, Tokyo, New York, Rio…) accompagnées d'une musique lofi synthétisée en direct par la Web Audio API : progression d'accords, batterie, basse et mélodie, finies au « tape wobble » et au craquement de vinyle. Météo personnalisable, minuteurs de concentration, sons d'ambiance par ville et fonctionnement hors ligne en PWA complètent l'ensemble. Un Show HN chaleureusement accueilli, dans la tradition des projets « inutiles donc indispensables »."
+    }
+  ]
+}
