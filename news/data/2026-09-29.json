@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-29",
+  "title": "Sonnet 5.5 arrive, les labos d'IA sommés de rendre des comptes, et la résistance s'organise : IRC fédéré, préservation pirate et carte des caméras Flock",
+  "intro": "Journée dominée par l'IA sous toutes ses coutures : Anthropic sort Claude Sonnet 5.5 pendant que Cal Newport réclame une enquête du Congrès sur les labos et qu'un billet LessWrong très discuté doute de la sincérité de leurs promesses de prudence ; côté matériel, AMD s'offre World Labs, la société de Fei-Fei Li. En contrepoint, la communauté célèbre le petit et le local : mini-modèles de décision entraînés à la maison, LLM minuscules dans le navigateur, et un chat fédéré qui parle simplement IRC. Enfin, la surveillance et le contrôle des données traversent la journée, de la carte des 300 000 caméras Flock au flux vidéo non chiffré de la PS5, jusqu'aux pirates qui restaurent les films mieux que les studios.",
+  "items": [
+    {
+      "title": "Claude Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49881850",
+      "points": 493,
+      "comments": 331,
+      "summary": "Anthropic publie Sonnet 5.5, nouvelle version de son modèle intermédiaire, et c'est de loin la plus grosse discussion du jour. La page d'annonce n'ayant pas pu être consultée pendant la préparation de ce digest, on s'en tient aux fils lus : les échanges tournent beaucoup autour de la consommation de tokens et des quotas, certains utilisateurs disant n'utiliser presque plus Sonnet depuis Opus 5.5 mais saluant un modèle économe qui ménage leur abonnement Pro, quand d'autres racontent avoir déjà épuisé leur quota hebdomadaire."
+    },
+    {
+      "title": "Pirater les pirates : quand les fans restaurent les films mieux que les studios",
+      "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
+      "hn": "https://news.ycombinator.com/item?id=49880036",
+      "points": 354,
+      "comments": 178,
+      "summary": "Mubi raconte comment des passionnés pratiquent la restauration non autorisée : « remuxer » les meilleures pistes vidéo et audio de différentes éditions, préserver des œuvres que les studios ont altérées — des retouches incessantes de George Lucas sur Star Wars aux bandes originales remplacées de Daria ou The Wonder Years quand les droits musicaux expirent. Les commentaires débattent de la frontière entre archivage culturel légitime et contrefaçon, et accablent un système de copyright dont les durées interminables et les œuvres orphelines font des versions pirates le seul moyen de voir certains films tels qu'ils sont sortis."
+    },
+    {
+      "title": "Parley : un chat fédéré et décentralisé qui parle simplement IRC",
+      "url": "https://git.mills.io/prologic/parley",
+      "hn": "https://news.ycombinator.com/item?id=49875913",
+      "points": 284,
+      "comments": 145,
+      "summary": "Parley propose que chaque personne ou équipe héberge une petite instance pour son domaine et discute avec n'importe qui sous la forme alice@domaine, depuis un client IRC ordinaire comme irssi ou WeeChat, sans plugin. La fédération est automatique : découverte par enregistrements DNS SRV, échanges signés en ed25519 sur HTTPS, canaux globaux répliqués ou locaux, et extensions IRCv3 (historique, accusés de lecture, réactions). Le projet a déclenché l'une des plus grosses discussions du jour, signe que la nostalgie d'IRC et l'appétit pour la décentralisation restent bien vivants ; la page de discussion n'a pas pu être consultée pendant la session."
+    },
+    {
+      "title": "Détourner le flux RTMP de la PS5",
+      "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
+      "hn": "https://news.ycombinator.com/item?id=49879702",
+      "points": 165,
+      "comments": 54,
+      "summary": "En observant les requêtes DNS de sa console pendant un stream Twitch, un chercheur découvre que si la connexion initiale de la PS5 est bien chiffrée en TLS, le serveur RTMP final qui reçoit la vidéo ne l'est pas, ce qui permet d'intercepter et de rediriger le flux vers une autre destination sans vérification de certificat. Les commentaires s'étonnent qu'un flux parte encore en clair en 2026, discutent de savoir si la faute revient au protocole RTMP lui-même ou au choix de Twitch de ne pas imposer TLS jusqu'au bout, et regrettent que Sony n'autorise pas de destination de stream personnalisée, ce qui rendrait la question caduque."
+    },
+    {
+      "title": "« Il est temps d'enquêter sur les labos d'IA »",
+      "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+      "hn": "https://news.ycombinator.com/item?id=49883471",
+      "points": 142,
+      "comments": 39,
+      "summary": "Cal Newport soutient qu'OpenAI et Anthropic orchestrent un récit calculé — annonces d'agents autonomes dangereux, débats publics sur les probabilités d'extinction, lettres de dirigeants réclamant des restrictions pour leurs concurrents — pour façonner l'opinion et la régulation à leur avantage. Il propose que le Congrès américain ouvre une enquête formelle sur trois points : la nature des expériences risquées menées, les procédures internes de sécurité autour des agents autonomes, et l'influence d'idéologies apocalyptiques sur les décisions de ces entreprises, qui ne devraient pas, écrit-il, dicter ce que nous devons ressentir face à l'IA."
+    },
+    {
+      "title": "« Suivre la frontière » n'est pas le vrai objectif des labos d'IA",
+      "url": "https://www.lesswrong.com/posts/Nm4ewbYovtjq69dvH/pacing-the-frontier-is-not-the-actual-goal-for-ai-labs",
+      "hn": "https://news.ycombinator.com/item?id=49884119",
+      "points": 55,
+      "comments": 46,
+      "summary": "Ce billet LessWrong avance que les déclarations des dirigeants de labos sur la prudence et le ralentissement servent d'abord à retenir leurs employés inquiets, pendant que le comportement réel — course continue aux capacités — dit le contraire. Les commentaires font écho au texte de Cal Newport publié le même jour : impossibilité pour un acteur seul de ralentir sans se faire distancer (d'où l'appel de certains à une régulation, quand d'autres croient aux ententes spontanées), soupçon que « ces types veulent juste gagner », et constat que la rhétorique de la sécurité est aussi un outil de recrutement sincère et intéressé à la fois."
+    },
+    {
+      "title": "Jeff : des modèles de décision de 0,8 milliard de paramètres, entraînés à la maison, en ~30 ms",
+      "url": "https://github.com/firelex/jeff",
+      "hn": "https://news.ycombinator.com/item?id=49883844",
+      "points": 127,
+      "comments": 30,
+      "summary": "Jeff est une famille de petits modèles open source (0,8 à 2 milliards de paramètres, compatibles Jev) affinés pour la classification zero-shot rapide : entraînés sur du matériel modeste, ils rendent une décision en 28 à 30 millisecondes avec 83,1 % de précision annoncée, démos à l'appui dans Doom et Pac-Man. Dans les commentaires, un utilisateur rapporte une précision bien plus basse (70 %) sur ses propres cas et questionne la méthodologie des benchmarks, tandis que d'autres saluent surtout la possibilité d'avoir des modèles locaux et personnalisables par un court fine-tuning."
+    },
+    {
+      "title": "World Labs rejoint AMD",
+      "url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "hn": "https://news.ycombinator.com/item?id=49883760",
+      "points": 124,
+      "comments": 42,
+      "summary": "AMD rachète World Labs, la jeune société de Fei-Fei Li spécialisée dans les « world models » et la reconstruction 3D à partir de quelques images, pour muscler son écosystème IA face à NVIDIA. Les commentaires discutent le prix — un montant de 8 milliards de dollars y est évoqué pour une société d'environ deux ans d'existence — et doutent de la capacité d'AMD à intégrer ces talents alors que sa pile logicielle GPU (ROCm) peine déjà ; en toile de fond, le débat porte sur la consolidation verticale du secteur, les fabricants de puces absorbant désormais les labos de recherche."
+    },
+    {
+      "title": "MicroLLM Lab : essayer 7 LLM minuscules dans le navigateur",
+      "url": "https://stateofutopia.com/experiments/microllmlab/",
+      "hn": "https://news.ycombinator.com/item?id=49882781",
+      "points": 92,
+      "comments": 39,
+      "summary": "Une page d'expérimentation permet de tester sept très petits modèles de langage directement dans le navigateur, exécutés localement sans requête serveur. Les testeurs constatent vite les limites — l'un des modèles répond que 2+2 font 2 — et le fil rappelle qu'il s'agit de modèles de base sans instruction-tuning, utiles pour des tâches ciblées comme la classification plutôt que pour converser ; l'interface, jugée dense et brouillonne, est aussi critiquée. Discussion plus prospective en parallèle : faut-il une « Web Models API » standard des navigateurs pour exécuter des modèles ouverts sur l'appareil, avec registres et distribution des poids ?"
+    },
+    {
+      "title": "cf : la CLI agentique pour toute l'API Cloudflare",
+      "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+      "hn": "https://news.ycombinator.com/item?id=49879577",
+      "points": 88,
+      "comments": 38,
+      "summary": "Cloudflare lance cf, un outil en ligne de commande pensé pour les agents IA qui couvre l'intégralité de l'API — plus de 3 000 opérations contre environ 280 pour Wrangler — avec sortie JSON par défaut, configuration en TypeScript (cloudflare.config.ts), recherche de commandes en langage naturel et Vite comme serveur de développement par défaut. Disponible en bêta ouverte via npm, l'outil relègue Wrangler au rang d'outil maintenu pour 18 mois encore, un basculement qui illustre la conception d'outillage « agent-first » chez les grands fournisseurs cloud."
+    },
+    {
+      "title": "Flock veut faire disparaître la carte la plus détaillée de ses caméras de surveillance",
+      "url": "https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/",
+      "hn": "https://news.ycombinator.com/item?id=49884363",
+      "points": 75,
+      "comments": 26,
+      "summary": "Un chercheur en sécurité, Joshua Michael, a publié une carte recensant environ 300 000 appareils Flock aux États-Unis — bien plus que les 120 000 revendiqués publiquement par l'entreprise — à partir de données de localisation extraites des propres serveurs de Flock fin 2025, l'entreprise laissant fuiter des identifiants d'accès. Flock, qui nie toute fuite de données, tente maintenant de faire retirer la carte en invoquant le droit des marques ; l'affaire relance le débat sur ce réseau national de lecteurs de plaques qui, selon le chercheur, « trace les déplacements de tout le monde »."
+    },
+    {
+      "title": "Les portraits d'adolescents américains de Joseph Szabo",
+      "url": "https://www.newyorker.com/culture/photo-booth/the-teen-portraits-that-captivated-sofia-coppola",
+      "hn": "https://news.ycombinator.com/item?id=49881606",
+      "points": 66,
+      "comments": 30,
+      "summary": "Pause culturelle du jour : le New Yorker consacre un portfolio aux photographies d'adolescents américains de Joseph Szabo, dont l'article souligne qu'elles ont notamment marqué la cinéaste Sofia Coppola. La page de discussion n'a pas pu être consultée pendant la session ; le sujet a en tout cas trouvé son public sur HN, preuve que la photographie vernaculaire y fait toujours recette entre deux annonces de modèles d'IA."
+    }
+  ]
+}
