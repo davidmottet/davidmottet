@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-30",
+  "title": "OpenAI dégaine GPT-6.1 Sol et ses agents permanents Dots, une étude épingle le pistage des chatbots, et l'Amérique ne reçoit plus chez elle",
+  "intro": "Double offensive d'OpenAI qui écrase la journée : GPT-6.1 Sol, vendu cinq fois moins cher que GPT-6 Astra, et Dots, des agents autonomes qui tournent en permanence en arrière-plan. En contrepoint, une étude académique documente ce que les assistants conversationnels font de nos conversations — spoiler : ils en parlent aux régies publicitaires. Loin du cloud, la journée célèbre aussi le concret : Delhi qui a divisé par dix ses pertes électriques, une sculpture LED inspirée des tournesols, et Tcl/Tk qui, à 38 ans, apprend l'accessibilité. Et l'essai le plus discuté du jour constate que les Américains, toujours plus souvent chez eux, n'y invitent plus personne.",
+  "items": [
+    {
+      "title": "GPT-6.1 Sol : une intelligence proche d'Astra pour un cinquième du prix",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "hn": "https://news.ycombinator.com/item?id=49896586",
+      "points": 732,
+      "comments": 667,
+      "summary": "OpenAI lance GPT-6.1 Sol, positionné à un cinquième du prix de GPT-6 Astra pour des performances annoncées comme comparables, avec une entrée en cache à 0,10 $ le million de tokens, soit 95 % de moins que le tarif standard. Les commentaires y voient une réponse directe aux modèles chinois et à Opus 5.5 d'Anthropic, mais la qualité fait débat : plusieurs utilisateurs jugent que le précédent GPT-6 Sol régressait (« un jour à l'utiliser, le lendemain à réparer son code ») et lisent ce 6.1 précipité comme une correction de tir. Beaucoup s'inquiètent aussi d'une cadence de sorties intenable et aux rendements décroissants."
+    },
+    {
+      "title": "Tout le monde est chez soi, mais plus personne ne vient",
+      "url": "https://www.derekthompson.org/p/the-death-of-the-american-host",
+      "hn": "https://news.ycombinator.com/item?id=49891295",
+      "points": 704,
+      "comments": 646,
+      "summary": "Derek Thompson documente l'effondrement de l'hospitalité américaine : la part d'Américains recevant amis ou famille au moins une fois par mois serait passée de 42 % en 1975 à 12 % en 2026, alors que le temps passé chez soi a gagné près de deux heures par jour entre 2003 et 2022. Il avance quatre explications : couples bi-actifs débordés, parentalité intensive, réseaux d'amitié rétrécis et divertissement à domicile devenu plus simple que toute coordination sociale. Deuxième plus grosse discussion du jour (646 commentaires), dont la page n'a pas pu être consultée pendant la préparation de ce digest."
+    },
+    {
+      "title": "Dots : les agents « toujours actifs » d'OpenAI",
+      "url": "https://openai.com/index/introducing-dots/",
+      "hn": "https://news.ycombinator.com/item?id=49896604",
+      "points": 433,
+      "comments": 332,
+      "summary": "Le même jour, OpenAI lance Dots, des agents personnels propulsés par GPT-6 Astra qui poursuivent des objectifs définis par l'utilisateur « en continu, en arrière-plan, avec une supervision minimale » : surveiller des retours clients et corriger, relancer des analyses quand de nouvelles données arrivent, communiquer via Slack ou Teams. Réservés aux abonnés ChatGPT Pro et Business Premium, ils s'intègrent aux contrôles de sécurité Agent 365 de Microsoft. TechCrunch note que tout cela était déjà faisable via Codex et parle surtout d'un rebranding autonome ; la discussion HN, très fournie, n'a pas pu être consultée pendant la session."
+    },
+    {
+      "title": "Comment Delhi a fait passer ses pertes d'électricité de 50 % à 5 %",
+      "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+      "hn": "https://news.ycombinator.com/item?id=49892245",
+      "points": 407,
+      "comments": 242,
+      "summary": "IEEE Spectrum raconte comment Delhi, à partir de 2000, a ramené ses pertes de distribution d'environ 50 % à 5 % : privatisation vers Tata Power et BSES, câblage inviolable contre les branchements sauvages, et travail de terrain dans les quartiers où les pertes atteignaient 83 % — amélioration de l'eau, alphabétisation, recrutement de femmes du cru comme agents de recouvrement. Les commentaires mêlent souvenirs des coupures quotidiennes des années 1990, débat classique privatisation contre régulation (« le privé a réussi là où l'État corrompu échouait » contre « sans mécanismes de contrôle, ça vire au copinage »), et rappel technique qu'environ 5-6 % de pertes est la norme physique des pays développés."
+    },
+    {
+      "title": "Une analyse de la confidentialité des assistants IA web et mobiles [pdf]",
+      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+      "hn": "https://news.ycombinator.com/item?id=49890226",
+      "points": 402,
+      "comments": 126,
+      "summary": "Des chercheurs d'IMDEA Networks ont audité neuf assistants (ChatGPT, Claude, Gemini, Copilot, Meta AI, Grok, DeepSeek, Perplexity, Le Chat) : tous contactent au moins un service de publicité ou de pistage, avec 124 domaines tiers identifiés, et plusieurs clients web et applications Android laissent fuiter prompts, titres de conversations, voire captures d'écran vers Meta, Google ou TikTok. Refuser les cookies ne change presque rien (80,8 % des traqueurs restent actifs) et payer un abonnement n'apporte aucun avantage de confidentialité. L'étude, acceptée à PoPETs, signale aussi des conversations Grok et Perplexity publiques par défaut ; la discussion HN n'a pas pu être consultée pendant la session."
+    },
+    {
+      "title": "America.gov : un chatbot officiel pour naviguer l'administration américaine",
+      "url": "https://america.gov/",
+      "hn": "https://news.ycombinator.com/item?id=49893509",
+      "points": 251,
+      "comments": 216,
+      "summary": "Le gouvernement américain lance America.gov, un chatbot bâti sur Gemini de Google, censé aider les citoyens à s'orienter dans les services fédéraux et leurs droits aux prestations. Les commentaires saluent l'intention — les sites officiels sont illisibles et un point d'entrée officiel vaut mieux qu'une recherche Google truffée d'arnaques — mais s'inquiètent qu'un LLM sujet aux hallucinations réponde à des questions à portée légale, quand la France ou le Royaume-Uni s'en sortent avec des portails structurés classiques. Certains testeurs rapportent en outre des garde-fous empêchant toute critique directe de l'administration en place, et des images cassées qui trahissent un lancement précipité."
+    },
+    {
+      "title": "Relapse : un exploit kernel pour la PS5",
+      "url": "https://github.com/ntfargo/Relapse-Exploit",
+      "hn": "https://news.ycombinator.com/item?id=49895304",
+      "points": 208,
+      "comments": 110,
+      "summary": "L'exploit Relapse, publié sur GitHub, s'appuie sur un bug de JavaScriptCore (WebKit) pour obtenir une exécution au niveau du noyau de la PS5 — de quoi permettre le piratage de jeux, mais pas de faire tourner Linux, qui exigerait de percer l'hyperviseur. Sony a déjà colmaté la faille dans le firmware 14.0. La discussion porte moins sur la technique que sur la sociologie de la scène : des nouveaux venus découvrent des failles « avec l'IA » et les publient aussitôt, grillant des vulnérabilités que d'autres gardaient sous le coude en vue de la sortie de GTA6, et beaucoup trouvent aberrant de devoir pirater un matériel qu'on possède légalement pour en avoir le contrôle."
+    },
+    {
+      "title": "Tcl/Tk 9.1",
+      "url": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+      "hn": "https://news.ycombinator.com/item?id=49896712",
+      "points": 228,
+      "comments": 77,
+      "summary": "Le vénérable Tcl/Tk publie sa version 9.1 : nouvelles commandes unicode (normalisation), timer (horloges monotones à la microseconde) et lfilter, fonctions mathématiques C99 dans les expressions, et chemins insensibles à la casse sur macOS. Côté Tk, la boîte à outils graphique gagne un support des lecteurs d'écran, un début de prise en charge du texte bidirectionnel et des langues écrites de droite à gauche, et un widget ttk::toggleswitch. La page de discussion HN n'a pas pu être consultée pendant la préparation de ce digest."
+    },
+    {
+      "title": "Jeeves : le raisonnement améliore les modèles de décision façon Jev",
+      "url": "https://github.com/PostHog/jeeves",
+      "hn": "https://news.ycombinator.com/item?id=49891290",
+      "points": 220,
+      "comments": 85,
+      "summary": "PostHog publie Jeeves, un classifieur de décision open source (MIT) de 9 milliards de paramètres bâti sur Qwen3.5-9B avec LoRA, qui « réfléchit avant de décider » : il génère une chaîne de raisonnement avant de rendre des probabilités calibrées sur des questions oui/non, QCM ou notes. Résultat annoncé : 0,889 de précision sur les données de test contre 0,857 pour Jev, au prix d'une latence qui passe d'environ 0,3 s à 3,3 s en médiane sur H100 quand le raisonnement est activé. La discussion HN n'a pas pu être consultée pendant la session."
+    },
+    {
+      "title": "Phyllotaxis : une sculpture LED qui réagit au son",
+      "url": "https://jagi.studio/posts/phyllotaxis/",
+      "hn": "https://news.ycombinator.com/item?id=49880411",
+      "points": 253,
+      "comments": 42,
+      "summary": "Jagi Natarajan détaille la fabrication d'une sculpture lumineuse reprenant la double spirale des cœurs de tournesol : 89 LED adressables logées dans des cellules de Voronoï, un micro numérique I2S et une analyse de Fourier multi-bandes pour réagir à la musique. La seconde version, en Rust sur ESP32 avec cinq circuits imprimés identiques disposés en étoile, est installée à demeure au Recurse Center, où un petit site local permet aux visiteurs d'envoyer leurs propres sketches en WebAssembly. Un bel exemple du genre de projet matériel-logiciel léché dont HN raffole."
+    },
+    {
+      "title": "Les inspecteurs postaux américains ferment un site vendant des étiquettes d'affranchissement contrefaites",
+      "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
+      "hn": "https://news.ycombinator.com/item?id=49899090",
+      "points": 140,
+      "comments": 72,
+      "summary": "L'US Postal Inspection Service a saisi un site qui vendait autour de 2 $ pièce des étiquettes d'affranchissement contrefaites — plus de 5 millions d'étiquettes écoulées, pour un préjudice estimé à 126 millions de dollars pour l'USPS. Un ressortissant pakistanais fait face à dix chefs d'accusation fédéraux, et les inspecteurs rappellent qu'imprimer, vendre ou utiliser sciemment de faux affranchissements est un délit. La page de discussion HN n'a pas pu être consultée pendant la préparation de ce digest."
+    },
+    {
+      "title": "Show HN : le Système solaire en temps réel, avec 526 000 astéroïdes et tous les satellites suivis",
+      "url": "https://space.bl2.net/",
+      "hn": "https://news.ycombinator.com/item?id=49898778",
+      "points": 65,
+      "comments": 21,
+      "summary": "Un Show HN propose une visualisation en temps réel du Système solaire affichant 526 000 astéroïdes ainsi que l'ensemble des satellites artificiels suivis autour de la Terre. Ni le site ni la discussion n'ont pu être consultés pendant la préparation de ce digest ; on s'en tient donc au titre et aux métadonnées de la page d'accueil HN, où le projet figurait en bonne place ce matin."
+    }
+  ]
+}
