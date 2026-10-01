@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-01",
+  "title": "Google dégaine Gemini 4 Argon, un ado de 16 ans perce Microsoft, et Pi finit par adopter MCP",
+  "intro": "Journée dominée par l'IA : Google annonce Gemini 4 Argon, son nouveau modèle frontière aux tarifs agressifs mais au déploiement très contrôlé, tandis que l'agent de code Pi explique sa volte-face sur le protocole MCP. Côté sécurité, un chercheur de 16 ans raconte comment une faille JWT lui ouvrait 17 000 milliards de lignes de données internes Microsoft. Et entre deux annonces, HN savoure l'histoire longue : le terminal Bloomberg, un maréchal-ferrant remplacé par l'automobile, et l'État de Singapour qui joue les marieurs avec un algorithme nobélisé.",
+  "items": [
+    {
+      "title": "Gemini 4 Argon : le nouveau modèle frontière de Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "hn": "https://news.ycombinator.com/item?id=49913571",
+      "points": 820,
+      "comments": 546,
+      "summary": "Google annonce Gemini 4 Argon, présenté comme son modèle le plus puissant : 77,9 % sur le benchmark DeepSWE v1.1, une limite de sortie record d'un million de tokens et des migrations de code revendiquées au-delà de 800 000 lignes (C/C++ vers Rust). Tarif de lancement agressif à 2 $/10 $ par million de tokens en entrée/sortie (4 $/20 $ ensuite), mais déploiement d'abord réservé à des « cyberdéfenseurs de confiance » via le programme Fairwind. Dans les commentaires, on débat de cette sortie au compte-gouttes, des garde-fous encore en rodage et de la course aux benchmarks face à OpenAI et Anthropic."
+    },
+    {
+      "title": "« Vous aviez dit non à MCP ! » : l'agent Pi assume sa volte-face",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "hn": "https://news.ycombinator.com/item?id=49906637",
+      "points": 587,
+      "comments": 331,
+      "summary": "L'équipe d'Earendil, qui avait publiquement écarté le Model Context Protocol pour son agent de code Pi, explique pourquoi elle l'intègre finalement au cœur du produit : le protocole a mûri, et Pi dispose désormais de chargement différé d'outils et d'une sandbox JavaScript « Codemode » qui orchestre les serveurs MCP comme des API structurées, façon OpenAPI. Le billet illustre l'approche en analysant en parallèle le ton de 167 tickets Linear sans saturer le contexte. Le revirement, assumé dès le titre, a propulsé le billet en tête de HN avec plus de 300 commentaires."
+    },
+    {
+      "title": "« J'aurais pu accéder à 17 000 milliards d'enregistrements Microsoft »",
+      "url": "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records",
+      "hn": "https://news.ycombinator.com/item?id=49883970",
+      "points": 237,
+      "comments": 106,
+      "summary": "Un chercheur de 16 ans, Faav, raconte comment son outil maison Antares a repéré que Titan, un service d'analytique interne de Microsoft, ne vérifiait pas la signature des jetons JWT : en passant l'algorithme à « none » et le champ upn à « admin », il obtenait un rôle administrateur et pouvait exécuter des requêtes SQL. À la clé : environ 25 000 comptes, les organigrammes de milliers d'employés et des échantillons d'analytique Bing, pour un total estimé à 17 300 milliards de lignes réparties sur 17 bases. Microsoft a colmaté la faille en quatre jours mais n'a versé que 5 000 $ de prime, et a retouché la divulgation publique — deux points qui font grincer des dents dans les commentaires."
+    },
+    {
+      "title": "Une brève histoire du terminal Bloomberg",
+      "url": "https://spectrum.ieee.org/bloomberg-terminal",
+      "hn": "https://news.ycombinator.com/item?id=49909583",
+      "points": 204,
+      "comments": 82,
+      "summary": "IEEE Spectrum retrace l'histoire du terminal Bloomberg, né en 1981 quand Michael Bloomberg investit son indemnité de départ de 10 millions de dollars de Salomon Brothers ; les 22 premiers « Market Master » sont livrés à Merrill Lynch en 1982, contre 30 millions de dollars pour 30 % du capital. Du clavier « Chiclet » multicolore à l'authentification par empreinte digitale, la machine est devenue un logiciel facturé aujourd'hui plus de 32 000 $ par an. Sa longévité tient à un pari toujours valable : agréger des données financières éparses dans une interface unique que la concurrence n'a jamais vraiment réussi à déloger."
+    },
+    {
+      "title": "La dernière fois que ma famille a été remplacée par la technologie",
+      "url": "https://manuel.darcemont.fr/posts/the-last-time-my-family-was-replaced-by-technology/",
+      "hn": "https://news.ycombinator.com/item?id=49908394",
+      "points": 160,
+      "comments": 395,
+      "summary": "Un développeur français raconte comment son arrière-arrière-grand-père, maréchal-ferrant à Mandres-en-Barrois, a vu l'automobile anéantir son métier — et s'est reconverti en mécanicien, un métier transmis ensuite dans la famille. Il en tire une leçon pour les développeurs inquiets face à l'IA : « accepter de lâcher le comment pour garder le pourquoi », car ce qu'on aime dans le métier n'a jamais été seulement le code. Le parallèle a déclenché l'une des plus grosses discussions du jour, avec près de 400 commentaires."
+    },
+    {
+      "title": "Singapour teste une app de rencontre d'État fondée sur l'algorithme de Gale-Shapley",
+      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+      "hn": "https://news.ycombinator.com/item?id=49906432",
+      "points": 168,
+      "comments": 95,
+      "summary": "Le gouvernement singapourien pilote firstdate.sandbox.gov.sg, une application de rencontre réservée dans un premier temps aux fonctionnaires de 21 à 35 ans, qui apparie les profils avec l'algorithme des mariages stables de Gale-Shapley : personne ne peut se retrouver avec quelqu'un tout en préférant mutuellement une autre personne disponible. Les commentaires opposent cette optimisation « pour de vrais couples » aux apps commerciales accusées d'entretenir la recherche perpétuelle, mais doutent que des préférences déclarées prédisent la compatibilité réelle — et que l'algorithme change quoi que ce soit à la natalité singapourienne."
+    },
+    {
+      "title": "Ce que TLA+ peut vérifier — et ce qu'il ne peut pas",
+      "url": "https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/",
+      "hn": "https://news.ycombinator.com/item?id=49909056",
+      "points": 125,
+      "comments": 29,
+      "summary": "Hillel Wayne rappelle que TLA+ excelle à vérifier invariants, propriétés d'actions et vivacité des systèmes concurrents, ce qui couvre déjà beaucoup de besoins réels. Mais l'outil bute sur tout ce qui ne se formalise pas, les propriétés multi-étapes (« supprimer puis annuler restaure l'état »), l'atteignabilité d'un état précis et les hyperpropriétés comparant plusieurs exécutions. Une mise en garde directe contre le battage récent qui vend la vérification formelle comme solution à la sûreté de l'IA."
+    },
+    {
+      "title": "SDF, MSDF ou Slug : le rendu de texte sur GPU comparé",
+      "url": "https://alphapixeldev.com/sdf-vs-msdf-vs-slug-vs-rive-gpu-text-rendering/",
+      "hn": "https://news.ycombinator.com/item?id=49908962",
+      "points": 124,
+      "comments": 50,
+      "summary": "Un comparatif technique des grandes approches du rendu de texte sur GPU : atlas de bitmaps, champs de distance signés (SDF), leur variante multi-canaux MSDF, la tessellation façon Rive et l'algorithme Slug qui évalue directement les courbes de Bézier dans le fragment shader. Verdict nuancé : MSDF reste le meilleur compromis pour les interfaces de jeu statiques, Slug domine dès qu'il faut rester net en perspective 3D, à toute échelle ou avec de gros jeux de glyphes (CJK). Aucune technique ne gagne partout — le choix dépend du cas d'usage."
+    },
+    {
+      "title": "Le front-end C++ d'EDG devient open source",
+      "url": "https://edgcpp.org/",
+      "hn": "https://news.ycombinator.com/item?id=49913192",
+      "points": 122,
+      "comments": 45,
+      "summary": "Edison Design Group ouvre le code de son front-end C++, moteur de référence qui alimente depuis trente ans une bonne partie de l'industrie de la compilation : le code est public depuis le 30 septembre sur github.com/edgcpp, avec une maintenance confiée à la C++ Alliance, une organisation à but non lucratif dotée d'ingénieurs compilateurs. Le message insiste sur la continuité — « un changement de gardien, pas de cap » — et les contributions par pull request sont désormais acceptées. Compiler Explorer prépare déjà un builder dédié."
+    },
+    {
+      "title": "Launch HN : Magnitude, un moteur d'inférence local qui s'auto-optimise",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "hn": "https://news.ycombinator.com/item?id=49911995",
+      "points": 116,
+      "comments": 51,
+      "summary": "Cette startup YC S25 lance un moteur d'inférence pour agents locaux écrit en Rust et publié sous Apache 2.0 : il ajuste ses kernels GPU sur la machine de l'utilisateur avant l'exécution, alloue la mémoire dynamiquement pour cohabiter avec d'autres applications, et gère des sessions concurrentes par paged attention hybride. Les fondateurs revendiquent jusqu'à 92 % de vitesse de décodage en plus que llama.cpp sur certaines configurations. Les commentaires réclament la méthodologie des benchmarks, des comparaisons avec MLX et des précisions sur le modèle économique."
+    },
+    {
+      "title": "Des ondes étonnamment complexes révèlent le fonctionnement interne du cerveau",
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "hn": "https://news.ycombinator.com/item?id=49912955",
+      "points": 101,
+      "comments": 36,
+      "summary": "Quanta relate des travaux publiés dans Nature Communications par Joshua Jacobs et Anup Das : grâce à une centaine d'électrodes intracrâniennes posées chez des patients épileptiques effectuant des tâches de mémoire, les chercheurs ont observé des ondes cérébrales bien plus riches que les ondes planes connues — concentriques, convergentes et même spirales. Ces ondes voyageuses permettraient au cerveau de réorganiser son activité en quelques secondes, en complément de la plasticité structurelle, bien plus lente. Les ondes rotatives semblent liées aux tâches de mémoire les plus complexes."
+    },
+    {
+      "title": "Netlify divise par cinq la latence de ses Edge Functions en passant de V8 à Firecracker",
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "hn": "https://news.ycombinator.com/item?id=49912444",
+      "points": 96,
+      "comments": 35,
+      "summary": "Netlify a remplacé les isolates V8 d'un prestataire externe par des microVM Firecracker opérées dans son propre réseau : latence médiane passée de 25-40 ms à 5-6 ms, p99 amélioré de 47 %, création d'une VM en moins d'une milliseconde et démarrages à froid limités à 1,2 % des requêtes grâce à des snapshots restaurés par memory mapping. L'entreprise défend aussi un argument d'isolation : des microVM séparées offrent des garanties que les isolates V8, « quel que soit leur nom », n'apportent pas. Un contre-courant intéressant alors que l'industrie vantait la légèreté des isolates."
+    }
+  ]
+}
