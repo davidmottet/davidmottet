@@ -24,12 +24,32 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#f4f1ea" />
+<script>
+  /* ---------- theme: stored choice, else system preference — set before first paint ---------- */
+  (function(){
+    var root = document.documentElement;
+    var mq = matchMedia('(prefers-color-scheme: dark)');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    var system = function(){ return mq.matches ? 'dark' : 'light'; };
+    var stored = function(){ try{ var t = localStorage.getItem('theme'); return t==='dark'||t==='light' ? t : null; }catch(e){ return null; } };
+    var set = function(t){ root.dataset.theme = t; meta.content = t==='dark' ? '#16140f' : '#f4f1ea'; };
+    window.toggleTheme = function(){
+      var next = root.dataset.theme==='dark' ? 'light' : 'dark';
+      /* back on the system value → forget the override and follow the system again */
+      try{ if(next===system()) localStorage.removeItem('theme'); else localStorage.setItem('theme', next); }catch(e){}
+      set(next);
+    };
+    mq.addEventListener('change', function(){ set(stored() || system()); });
+    set(stored() || system());
+  })();
+</script>
 
 <link rel="preload" href="/fonts/fraunces-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/hanken-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="/fonts/fonts.css" />
 <style>
   :root{
+    color-scheme:light;
     --paper:#f4f1ea;
     --paper-2:#efeae0;
     --card:#faf8f3;
@@ -47,6 +67,21 @@
     --mono:'JetBrains Mono',monospace;
     --ease:cubic-bezier(.16,1,.3,1);
     --maxw:900px;
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --paper:#16140f;
+    --paper-2:#1b1913;
+    --card:#211e17;
+    --ink:#ece7db;
+    --ink-soft:#c6c0b1;
+    --muted:#9a948785;
+    --muted-2:#989183;
+    --accent:#e0714a;
+    --accent-soft:#3a2a21;
+    --live:#5fb276;
+    --line:rgba(236,231,219,.14);
+    --line-2:rgba(236,231,219,.08);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -69,11 +104,18 @@
   .nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,48px);max-width:var(--maxw);margin:0 auto}
   .logo{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:9px}
   .logo .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .nav-right{display:flex;align-items:center;gap:clamp(16px,2.5vw,32px)}
   .nav-links{display:flex;gap:clamp(16px,2.4vw,30px)}
   .nav-links a{font-size:14.5px;text-decoration:none;color:var(--ink-soft);position:relative;padding:3px 0;transition:color .25s var(--ease)}
   .nav-links a::after{content:"";position:absolute;left:0;bottom:-1px;width:0;height:1.5px;background:var(--accent);transition:width .3s var(--ease)}
   .nav-links a:hover{color:var(--ink)}
   .nav-links a:hover::after{width:100%}
+  .theme-toggle{width:32px;height:32px;flex:none;border-radius:50%;border:1px solid var(--line);background:none;color:var(--muted-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s var(--ease)}
+  .theme-toggle:hover{color:var(--ink);border-color:var(--ink)}
+  .theme-toggle svg{width:15px;height:15px}
+  .theme-toggle .sun{display:none}
+  [data-theme="dark"] .theme-toggle .sun{display:block}
+  [data-theme="dark"] .theme-toggle .moon{display:none}
 
   /* ---------- page head ---------- */
   .page-head{padding:clamp(50px,9vh,90px) 0 clamp(30px,5vh,50px)}
@@ -115,9 +157,15 @@
   <header id="hdr">
     <nav class="nav" aria-label="Principale">
       <a href="/" class="logo"><span class="dot"></span>David Mottet</a>
-      <div class="nav-links">
-        <a href="/#about">À propos</a>
-        <a href="/#contact">Contact</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="/#about">À propos</a>
+          <a href="/#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="theme" type="button" aria-label="Basculer le thème clair / sombre" title="Basculer le thème clair / sombre">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -154,6 +202,9 @@
   const hdr = document.getElementById('hdr');
   const onScroll = ()=>hdr.classList.toggle('scrolled', window.scrollY>10);
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- theme toggle ---------- */
+  document.getElementById('theme').addEventListener('click', toggleTheme);
 
   /* ---------- news rendering: latest edition only, the rest lives in /news/archives/ ---------- */
   const daysEl = document.getElementById('days');

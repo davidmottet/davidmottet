@@ -46,6 +46,25 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#f4f1ea" />
+<script>
+  /* ---------- theme: stored choice, else system preference — set before first paint ---------- */
+  (function(){
+    var root = document.documentElement;
+    var mq = matchMedia('(prefers-color-scheme: dark)');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    var system = function(){ return mq.matches ? 'dark' : 'light'; };
+    var stored = function(){ try{ var t = localStorage.getItem('theme'); return t==='dark'||t==='light' ? t : null; }catch(e){ return null; } };
+    var set = function(t){ root.dataset.theme = t; meta.content = t==='dark' ? '#16140f' : '#f4f1ea'; };
+    window.toggleTheme = function(){
+      var next = root.dataset.theme==='dark' ? 'light' : 'dark';
+      /* back on the system value → forget the override and follow the system again */
+      try{ if(next===system()) localStorage.removeItem('theme'); else localStorage.setItem('theme', next); }catch(e){}
+      set(next);
+    };
+    mq.addEventListener('change', function(){ set(stored() || system()); });
+    set(stored() || system());
+  })();
+</script>
 
 <!-- Structured data -->
 <script type="application/ld+json">
@@ -107,6 +126,7 @@
 <link rel="stylesheet" href="/fonts/fonts.css" />
 <style>
   :root{
+    color-scheme:light;
     --paper:#f4f1ea;
     --paper-2:#efeae0;
     --card:#faf8f3;
@@ -124,6 +144,21 @@
     --mono:'JetBrains Mono',monospace;
     --ease:cubic-bezier(.16,1,.3,1);
     --maxw:1180px;
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --paper:#16140f;
+    --paper-2:#1b1913;
+    --card:#211e17;
+    --ink:#ece7db;
+    --ink-soft:#c6c0b1;
+    --muted:#9a948785;
+    --muted-2:#989183;
+    --accent:#e0714a;
+    --accent-soft:#3a2a21;
+    --live:#5fb276;
+    --line:rgba(236,231,219,.14);
+    --line-2:rgba(236,231,219,.08);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -157,6 +192,12 @@
   .lang-toggle a{display:inline-block;text-decoration:none;padding:6px 11px;color:var(--muted-2);font-family:inherit;font-size:inherit;transition:all .2s var(--ease)}
   .lang-toggle a:hover{color:var(--ink)}
   .lang-toggle a.on{background:var(--ink);color:var(--paper)}
+  .theme-toggle{width:32px;height:32px;flex:none;border-radius:50%;border:1px solid var(--line);background:none;color:var(--muted-2);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s var(--ease)}
+  .theme-toggle:hover{color:var(--ink);border-color:var(--ink)}
+  .theme-toggle svg{width:15px;height:15px}
+  .theme-toggle .sun{display:none}
+  [data-theme="dark"] .theme-toggle .sun{display:block}
+  [data-theme="dark"] .theme-toggle .moon{display:none}
 
   /* ---------- hero ---------- */
   .hero{padding:clamp(70px,12vh,130px) 0 clamp(50px,8vh,90px)}
@@ -288,6 +329,10 @@
           <a href="/" class="on" hreflang="fr" aria-current="page">FR</a>
           <a href="/en/" hreflang="en">EN</a>
         </div>
+        <button class="theme-toggle" id="theme" type="button" aria-label="Basculer le thème clair / sombre" title="Basculer le thème clair / sombre">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -501,6 +546,9 @@
   const hdr = document.getElementById('hdr');
   const onScroll = ()=>hdr.classList.toggle('scrolled', window.scrollY>10);
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- theme toggle ---------- */
+  document.getElementById('theme').addEventListener('click', toggleTheme);
 
   /* ---------- reveal ---------- */
   const io = new IntersectionObserver((entries)=>{
