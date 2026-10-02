@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-02",
+      "title": "Pi 1.0 sacre les harnais d'agents, Cloudflare enchaîne Clef et K2, Git 3.0 divise",
+      "count": 12
+    },
+    {
       "date": "2026-10-01",
       "title": "Google dégaine Gemini 4 Argon, un ado de 16 ans perce Microsoft, et Pi finit par adopter MCP",
       "count": 12

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-02",
+  "title": "Pi 1.0 sacre les harnais d'agents, Cloudflare enchaîne Clef et K2, Git 3.0 divise",
+  "intro": "Journée dominée par l'outillage des agents IA : Earendil place deux annonces en tête de page avec Pi 1.0 et son pendant expérimental Pi Durable, pendant que Cloudflare dégaine coup sur coup des modèles de décision open source et un service de streams d'événements serverless. En toile de fond, les infrastructures se réinventent — turbopuffer enterre la base vectorielle comme index primaire — et la communauté s'écharpe sur le passage de Git 3.0 à SHA-256 par défaut. Côté matériel et vie privée, des capacités SDR cachées émergent des ESP32 et une étude académique documente ce que les voitures connectées racontent aux géants de la pub.",
+  "items": [
+    {
+      "title": "Pi 1.0 : le harnais d'agent minimaliste d'Earendil passe en version stable",
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "hn": "https://news.ycombinator.com/item?id=49926069",
+      "points": 938,
+      "comments": 310,
+      "summary": "Earendil publie Pi 1.0, un harnais d'agent « durci, minimal et extensible » utilisable comme agent de codage en terminal, sous licence MIT, avec support natif de Claude et des autres grands fournisseurs de modèles, intégration MCP via Codemode, chargement différé des outils et préchauffage du cache pour les modèles Anthropic. L'équipe revendique des centaines de milliers d'utilisateurs hebdomadaires et une philosophie assumée : n'adopter une fonctionnalité qu'une fois éprouvée. Avec plus de 900 points et 310 commentaires, c'est de loin le sujet le plus discuté du jour."
+    },
+    {
+      "title": "StreetComplete arrive sur iOS en bêta publique",
+      "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
+      "hn": "https://news.ycombinator.com/item?id=49920160",
+      "points": 539,
+      "comments": 141,
+      "summary": "L'application Android culte qui transforme la contribution à OpenStreetMap en quêtes ludiques annonce, dans son fil de suivi GitHub, une bêta publique iOS — aboutissement d'un portage de longue haleine vers Kotlin Multiplatform et Compose Multiplatform pour garder une base de code unique. Le fil, ouvert depuis des années, témoigne d'une demande massive des contributeurs OSM sous iPhone, jusqu'ici privés de l'outil de cartographie participative le plus accessible."
+    },
+    {
+      "title": "Clef : Cloudflare publie des « modèles de décision » open source et une plateforme de fine-tuning RL",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "hn": "https://news.ycombinator.com/item?id=49923692",
+      "points": 464,
+      "comments": 170,
+      "summary": "Cloudflare lance Clef et Clef-flash, des modèles de classification pour agents (bâtis sur Qwen 27B et 9B, licence Apache 2.0, contexte 64k, encodeur vision) qui produisent des sorties structurées et bornées plutôt que du texte libre — par exemple pour router des tickets de support. Latence médiane annoncée : 209 ms pour Clef, 38,8 ms pour la version flash, avec les meilleurs scores sur 43 évaluations internes. Une offre de fine-tuning par renforcement accompagne le lancement, d'abord avec des ingénieurs dédiés, puis en libre-service sur Workers AI."
+    },
+    {
+      "title": "« RIP, vector database » : turbopuffer relègue l'index vectoriel au second plan",
+      "url": "https://turbopuffer.com/blog/rip-vector-database",
+      "hn": "https://news.ycombinator.com/item?id=49923466",
+      "points": 297,
+      "comments": 79,
+      "summary": "Le moteur de recherche sur stockage objet turbopuffer explique pourquoi il abandonne l'index ANN comme organisation primaire de ses données : amplification du stockage pour les documents multi-vecteurs, amplification des écritures à chaque rééquilibrage, et blocs limités à 100-200 documents. Le vectoriel devient un index secondaire parmi d'autres, sur le modèle de la refonte full-text qui avait donné des index 10 fois plus petits et des requêtes jusqu'à 20 fois plus rapides. Un billet symbolique du reflux des bases « 100 % vectorielles », venant d'une plateforme qui revendique plus de 1 000 milliards de documents hébergés."
+    },
+    {
+      "title": "Pi Durable : un framework expérimental pour agents longue durée",
+      "url": "https://earendil.com/posts/pi-durable/",
+      "hn": "https://news.ycombinator.com/item?id=49925969",
+      "points": 287,
+      "comments": 35,
+      "summary": "Complément du précédent : Pi Durable étend les principes de Pi aux applications agentiques persistantes — conversations parallèles, checkpoints avant chaque étape pour survivre aux crashs, état applicatif stocké atomiquement avec les transcripts, backends mémoire, SQLite ou JSONL, et modification du code à chaud sans arrêter les agents. Le tout en MIT et dans environ 15 000 lignes de code, volontairement assez petit pour qu'un agent puisse lui-même le comprendre et le modifier."
+    },
+    {
+      "title": "« Le SHA-256 par défaut de Git 3.0 sera une erreur coûteuse »",
+      "url": "https://blog.gitbutler.com/git-3-sha-256",
+      "hn": "https://news.ycombinator.com/item?id=49924179",
+      "points": 277,
+      "comments": 275,
+      "summary": "Scott Chacon (cofondateur de GitHub, aujourd'hui GitButler) s'attaque au choix de Git 3.0 de créer les nouveaux dépôts en SHA-256 : selon lui, la menace des collisions SHA-1 est théorique — les vraies attaques de chaîne d'approvisionnement passent par l'ingénierie sociale — tandis que le coût est bien réel : signatures et liens historiques cassés à la conversion, outillage incomplet, sous-modules incompatibles entre formats. Il propose plutôt d'ajouter des en-têtes de hachage SHA-256 optionnels dans les commits signés. Le ratio quasi 1:1 entre points et commentaires dit tout du caractère clivant du sujet."
+    },
+    {
+      "title": "Accélérer le compilateur Rust : le bilan de septembre 2026",
+      "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+      "hn": "https://news.ycombinator.com/item?id=49920896",
+      "points": 238,
+      "comments": 122,
+      "summary": "Nicholas Nethercote dresse le bilan de deux mois de travail sur les performances de rustc : 4,57 % de temps de compilation en moins en moyenne, avec 555 benchmarks améliorés sur 629. Au menu : Clippy jusqu'à 18 % plus rapide grâce au PGO, passage à LLVM 23, optimisations du nouveau borrow checker Polonius et du nouveau trait solver (jusqu'à -50 % sur certains crates pathologiques), et un changement d'algorithme de parcours de CFG qui fait gagner environ 30 % sur cranelift-codegen."
+    },
+    {
+      "title": "Cloudflare K2 : des streams d'événements serverless bâtis sur R2",
+      "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "hn": "https://news.ycombinator.com/item?id=49921923",
+      "points": 218,
+      "comments": 88,
+      "summary": "Deuxième annonce Cloudflare du jour : K2, un service de journaux d'événements ordonnés et durables façon Kafka, mais qui délègue réplication et consensus au stockage objet R2 — une architecture jugée plus simple et moins chère à opérer sur une infrastructure edge faite de « petites tranches de machines ». En contrepartie, la latence de production atteint environ 1 seconde au 99e percentile. Bêta publique ouverte le 1er octobre aux comptes Workers payants, avec une tarification anticipée à 0,04 $/Go produit ou consommé."
+    },
+    {
+      "title": "Des capacités SDR cachées découvertes dans les microcontrôleurs ESP32",
+      "url": "https://www.rtl-sdr.com/various-projects-independently-find-hidden-sdr-capabilities-in-esp32-microcontrollers/",
+      "hn": "https://news.ycombinator.com/item?id=49922674",
+      "points": 192,
+      "comments": 30,
+      "summary": "Plusieurs projets indépendants (ESPARGOS, C5VRX, h0m3us3r…) ont découvert que des puces ESP32 peuvent capturer des échantillons IQ bruts en bande de base, bien au-delà de leurs fonctions Wi-Fi/Bluetooth officielles : couverture de 2,2 à 2,7 GHz et de 4,8 à 6 GHz sur l'ESP32-C5, jusqu'à 80 Méch/s. De quoi transformer un composant à quelques euros en récepteur SDR, voire en récepteur vidéo FPV 5,8 GHz temps réel. Les développeurs disent volontairement ne pas implémenter la transmission cohérente en phase, par crainte des usages abusifs."
+    },
+    {
+      "title": "GPT-Synopsys : OpenAI et Synopsys veulent un modèle qui pilote la conception de puces",
+      "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+      "hn": "https://news.ycombinator.com/item?id=49919910",
+      "points": 175,
+      "comments": 106,
+      "summary": "Partenariat pluriannuel entre OpenAI et le géant de l'EDA Synopsys autour de GPT-Synopsys, un modèle spécialisé censé raisonner sur la conception et la vérification de circuits et piloter directement les outils Synopsys, l'ingénieur fixant les objectifs et validant les résultats. Les deux entreprises commercialiseront l'offre ensemble avec partage de revenus ; des tests avec des clients semi-conducteurs sont déjà en cours, et OpenAI promet que les données clients, chiffrées, ne serviront pas à l'entraînement."
+    },
+    {
+      "title": "SvelteKit 3 est là",
+      "url": "https://svelte.dev/blog/sveltekit-3-is-here",
+      "hn": "https://news.ycombinator.com/item?id=49926536",
+      "points": 174,
+      "comments": 62,
+      "summary": "Nouvelle version majeure du framework : la configuration migre de svelte.config.js vers vite.config.ts, l'alias $lib cède la place aux imports de sous-chemins standard de Node (#lib), les service workers perdent leur boilerplate et la gestion d'erreurs est renforcée. La commande sv migrate automatise l'essentiel de la transition et génère une liste de TODO pour le reste. Les « remote functions » typées client-serveur, priorité affichée de l'équipe, restent derrière un drapeau expérimental."
+    },
+    {
+      "title": "Automatic Transmission : 19 voitures connectées sur 21 parlent à des tiers",
+      "url": "https://automatictransmission.khoury.northeastern.edu/index.html",
+      "hn": "https://news.ycombinator.com/item?id=49926628",
+      "points": 158,
+      "comments": 151,
+      "summary": "Une étude évaluée par les pairs de Northeastern (Khoury College) et Consumer Reports a placé 21 véhicules 2022-2025 sous tente de Faraday pour capturer tout leur trafic : la quasi-totalité des constructeurs transmettent des données de conduite à des tiers, dont Amazon, Google, Meta, Microsoft ou Snap. Cadillac Lyriq, Tesla Model 3 et Cybertruck figurent parmi les plus bavards ; Mercedes EQS et Range Rover n'ont généré aucun trafic publicitaire. Côté applications compagnes, 28 sur 30 contactent des régies ou outils d'analytics, et 7 partagent des données identifiantes comme le VIN associé à l'adresse e-mail du propriétaire."
+    }
+  ]
+}
