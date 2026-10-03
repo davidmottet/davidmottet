@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-03",
+      "title": "L'IA déborde de partout : arXiv se barricade, la pédagogie web agonise, DeepSeek s'invite sur le bureau",
+      "count": 12
+    },
+    {
       "date": "2026-10-02",
       "title": "Pi 1.0 sacre les harnais d'agents, Cloudflare enchaîne Clef et K2, Git 3.0 divise",
       "count": 12

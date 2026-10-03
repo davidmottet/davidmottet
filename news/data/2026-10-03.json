@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-03",
+  "title": "L'IA déborde de partout : arXiv se barricade, la pédagogie web agonise, DeepSeek s'invite sur le bureau",
+  "intro": "Journée où l'on mesure les ondes de choc de l'IA bien au-delà du code : arXiv plafonne les soumissions face au déluge de papiers générés, les formateurs web indépendants voient leurs revenus s'effondrer, et un historien exhume un témoignage inédit sur le dodo grâce à un agent. Pendant ce temps, DeepSeek démocratise son harnais d'agents avec une app de bureau, la communauté vote sur les défis IA que HN jugeait impossibles, et les inquiétudes s'accumulent côté infrastructure : vulnérabilités du noyau Linux et rumeurs insistantes sur l'absorption de Red Hat par IBM. En toile de fond géopolitique, l'énergie s'invite deux fois en tête de page.",
+  "items": [
+    {
+      "title": "Plusieurs vulnérabilités découvertes dans le noyau Linux",
+      "url": "https://lwn.net/Articles/1097401/",
+      "hn": "https://news.ycombinator.com/item?id=49928121",
+      "points": 213,
+      "comments": 296,
+      "summary": "LWN relaie une nouvelle salve d'alertes de sécurité touchant le noyau Linux. Le volume de réactions est inhabituel pour ce type de bulletin — 213 points et près de 300 commentaires — signe que la discussion a largement débordé le simple inventaire d'advisories pour toucher aux débats récurrents sur le processus de gestion des vulnérabilités du noyau."
+    },
+    {
+      "title": "DeepSeek Harness Desktop débarque sur macOS et Windows",
+      "url": "https://www.deepseek.com/en/harness/",
+      "hn": "https://news.ycombinator.com/item?id=49929489",
+      "points": 118,
+      "comments": 231,
+      "summary": "DeepSeek publie une déclinaison de bureau de son harnais d'agents open source, qui s'adresse aux non-développeurs : l'application embarque ses propres runtimes Node.js, Python et pnpm, vise macOS 13+ (Apple Silicon) et Windows x64, et reste sous licence MIT. Elle gère l'organisation de documents, l'analyse de tableurs, l'écriture de code et les tâches de fond, avec les modèles DeepSeek par défaut mais aussi des fournisseurs tiers via clé API. Encore en « developer preview », elle nourrit une discussion fournie (231 commentaires) sur la course aux agents grand public."
+    },
+    {
+      "title": "La mort de la formation au développement web",
+      "url": "https://molily.de/web-dev-education/",
+      "hn": "https://news.ycombinator.com/item?id=49927100",
+      "points": 155,
+      "comments": 199,
+      "summary": "Le développeur et pédagogue allemand Molily documente l'effondrement économique des formateurs web indépendants depuis l'arrivée de l'IA générative : Josh Comeau évoque des revenus en baisse de plus de 50 %, les ventes de livres d'Axel Rauschmayer seraient tombées à zéro, le trafic humain étant remplacé par des crawlers. L'auteur refuse la fatalité et appelle à rémunérer équitablement les enseignants humains et à bâtir des communautés d'apprentissage indépendantes. Près de 200 commentaires débattent de ce constat, entre nostalgie du web artisanal et adaptation forcée."
+    },
+    {
+      "title": "Votez : quels défis lancés à l'IA par Hacker News ont été relevés ?",
+      "url": "https://stoppels.ch/goalposts/",
+      "hn": "https://news.ycombinator.com/item?id=49924618",
+      "points": 156,
+      "comments": 142,
+      "summary": "Le site « Goalposts » compile d'anciens défis lancés à l'IA dans les commentaires de Hacker News — du genre « une IA qui code comme un développeur junior » — et laisse chacun voter en oui/non sur leur accomplissement, sans inscription. Les premiers votes dessinent un consensus : les capacités des modèles de langage sont largement considérées comme acquises, tandis que la robotique et la conduite autonome restent en chantier. Un miroir amusant et un peu cruel tendu aux prédictions de la communauté."
+    },
+    {
+      "title": "Red Hat en voie de disparition ?",
+      "url": "https://techrights.org/n/2026/10/01/Red_Hat_Being_Phased_Out_of_Existence_Like_Many_Other_Companies.shtml",
+      "hn": "https://news.ycombinator.com/item?id=49923056",
+      "points": 112,
+      "comments": 194,
+      "summary": "Le site militant Techrights affirme qu'IBM est en train d'absorber la marque Red Hat : depuis le 1er octobre, les badges des employés afficheraient « IBM », et de nombreux départs auraient eu lieu sans annonce officielle de licenciements. L'article, polémique et à prendre avec précaution, s'inscrit dans une série de billets prédisant la dissolution de Red Hat sur le modèle des acquisitions passées d'IBM. Les 194 commentaires pèsent le vrai du faux, entre témoignages d'initiés et scepticisme sur la fiabilité de la source."
+    },
+    {
+      "title": "Comment fonctionne FirstDate, le service de rencontres du gouvernement singapourien",
+      "url": "https://www.singapore-samizdat.com/p/how-singapores-government-run-dating-service-firstdate-works",
+      "hn": "https://news.ycombinator.com/item?id=49929113",
+      "points": 102,
+      "comments": 156,
+      "summary": "Singapour pilote via GovTech un service de rencontres réservé aux fonctionnaires de 21 à 35 ans, identité vérifiée par Singpass : l'appariement repose sur l'algorithme des mariages stables de Gale-Shapley et un questionnaire d'une trentaine de réponses, avec un match par « cycle » et partage de contacts sous réserve d'accord mutuel. L'auteur doute que l'optimisation algorithmique résolve la crise du célibat : un appariement « stable » n'est pas un appariement heureux, et ce sont les expériences partagées et les lieux de sociabilité qui créent la connexion. Le mélange d'État-providence et de vie amoureuse fascine visiblement HN (156 commentaires)."
+    },
+    {
+      "title": "Le Canada accélère un oléoduc vers le Pacifique pour réduire sa dépendance aux États-Unis",
+      "url": "https://apnews.com/article/alberta-canada-carney-pipeline-68539133d6e0245fad3622263afd4aeb",
+      "hn": "https://news.ycombinator.com/item?id=49923575",
+      "points": 91,
+      "comments": 81,
+      "summary": "Selon AP, le gouvernement canadien place un projet d'oléoduc reliant l'Alberta à la côte Pacifique sur une voie d'approbation accélérée, avec l'objectif affiché de diversifier les débouchés du pétrole canadien au-delà du marché américain. Le sujet, éminemment politique, croise souveraineté énergétique, relations tendues avec Washington et enjeux climatiques — un cocktail qui alimente la discussion."
+    },
+    {
+      "title": "Les États-Unis somment la France et l'Allemagne de puiser dans leurs stocks de diesel",
+      "url": "https://www.reuters.com/business/energy/us-tells-france-germany-release-diesel-stocks-or-face-us-export-ban-sources-say-2026-10-01/",
+      "hn": "https://news.ycombinator.com/item?id=49930086",
+      "points": 76,
+      "comments": 53,
+      "summary": "D'après des sources de Reuters, Washington demande à Paris et Berlin de libérer une partie de leurs stocks stratégiques de diesel, sous peine d'un embargo américain sur les exportations. Une pression commerciale inhabituelle entre alliés qui en dit long sur les tensions actuelles des marchés de l'énergie, et que les commentateurs replacent dans le bras de fer transatlantique plus large."
+    },
+    {
+      "title": "« Muse de Meta est fantastique pour le scraping web »",
+      "url": "https://sigh.dev/posts/metas-muse-is-fantastic-for-web-scraping/",
+      "hn": "https://news.ycombinator.com/item?id=49929970",
+      "points": 64,
+      "comments": 50,
+      "summary": "Un développeur raconte comment il utilise Muse, le service d'agents de Meta à 80 $ par mois, pour agréger des concerts : l'agent écume Reddit et YouTube à la recherche d'un millier de vidéos correspondant à ses critères et fait l'appariement d'artistes, en consommant « quelques milliards de tokens par semaine » dans un usage apparemment illimité. Il juge le modèle médiocre en rédaction mais redoutable pour ce travail de fourmi, malgré des jobs qui gèlent et la perspective de blocages généralisés — Amazon a déjà banni l'agent. La discussion porte sur ce que deviennent les sites quand les agents remplacent les visiteurs."
+    },
+    {
+      "title": "arXiv plafonne les soumissions : deux papiers par mois et par auteur",
+      "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
+      "hn": "https://news.ycombinator.com/item?id=49926512",
+      "points": 55,
+      "comments": 115,
+      "summary": "Face à une croissance explosive alimentée par les papiers générés à l'IA — 40 363 soumissions et près de 9 000 tickets de support rien qu'en septembre — arXiv limite désormais chaque auteur à deux soumissions par mois calendaire et trois soumissions actives au total, à effet du 1er octobre. La plateforme cite la multiplication des papiers « saucissonnés » et de faible qualité ; les refus comptent dans le quota, pas les brouillons supprimés avant annonce. Les commentaires se partagent entre soulagement des modérateurs et crainte de pénaliser les chercheurs prolifiques légitimes."
+    },
+    {
+      "title": "Opus 5.5 exhume un témoignage oculaire inédit du dodo",
+      "url": "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness",
+      "hn": "https://news.ycombinator.com/item?id=49926917",
+      "points": 41,
+      "comments": 144,
+      "summary": "L'historien Benjamin Breen a lancé des agents Opus 5.5 en recherche sémantique sur GLOBALISE, l'archive numérisée de la Compagnie néerlandaise des Indes orientales, pour balayer des millions de documents multilingues. Résultat : un journal de bord de 1615 du navire Wapen van Amsterdam mentionnant la capture à Maurice de tortues, de « dodeersen » (dodos), d'oies et de perroquets — un témoignage passé inaperçu qui comble une lacune documentaire (1611-1616) et pourrait éclairer l'origine du dodo peint à la cour de l'empereur moghol Jahangir. Un cas d'école, très commenté, de ce que l'IA peut apporter à la recherche historique."
+    },
+    {
+      "title": "Frog and Toad face aux machines de plus en plus capables",
+      "url": "https://www.frogandtoad.ai/",
+      "hn": "https://news.ycombinator.com/item?id=49927760",
+      "points": 35,
+      "comments": 161,
+      "summary": "Un pastiche des albums jeunesse d'Arnold Lobel où Grenouille et Crapaud affrontent « le plus moderne des défis » : des machines toujours plus capables. Le texte, faussement naïf, interroge ce qui reste de l'amitié, du travail bien fait et du sens quand l'automatisation sait tout faire. Le ratio inhabituel — 161 commentaires pour 35 points — dit assez combien cette fable douce-amère a touché une corde sensible chez les lecteurs de HN."
+    }
+  ]
+}
