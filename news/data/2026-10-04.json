@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-04",
+  "title": "Kolibri plante le drapeau européen, la surveillance Flock jugée inconstitutionnelle, OpenAI perd un gardien",
+  "intro": "Grosse journée pour l'« IA souveraine » : l'allemand Aleph Alpha publie Kolibri, un modèle ouvert qui truste trois liens de la page d'accueil. En face, les contre-pouvoirs s'activent : une juge fédérale américaine qualifie les caméras Flock de surveillance de masse, un responsable sécurité d'OpenAI claque la porte en dénonçant une culture « cassée », et Simon Willison réclame des plafonds de dépenses par défaut pour l'ère des agents. Côté libertés toujours, le Conseil d'État français enterre l'accès public aux scans 3D du musée Rodin, pendant que le bureau COSMIC de System76 bannit le code généré par IA.",
+  "items": [
+    {
+      "title": "Kolibri : Aleph Alpha lance un modèle ouvert « souverain » européen",
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "hn": "https://news.ycombinator.com/item?id=49942706",
+      "points": 584,
+      "comments": 311,
+      "summary": "L'allemand Aleph Alpha publie Kolibri, un modèle mixture-of-experts de 78,1 milliards de paramètres (3,46 milliards actifs par token), sous licence Apache 2.0, bilingue anglais-allemand, avec un contexte jusqu'à 1 million de tokens, entraîné sur 768 GPU B200 et environ 24 000 milliards de tokens. Pensé pour l'auto-hébergement dans les administrations et industries régulées européennes, il est aussi entraîné à s'abstenir plutôt qu'à halluciner quand les preuves manquent. Trois liens Kolibri (annonce, rapport technique, analyse indépendante) figuraient en même temps sur la page d'accueil de HN — l'IA « souveraine » européenne est le sujet du jour."
+    },
+    {
+      "title": "Une juge fédérale qualifie une recherche Flock de « surveillance de masse indiscriminée »",
+      "url": "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/",
+      "hn": "https://news.ycombinator.com/item?id=49948254",
+      "points": 410,
+      "comments": 231,
+      "summary": "En Oklahoma, la juge fédérale Sara Hill a estimé qu'une recherche sans mandat dans le réseau de lecteurs de plaques Flock — plus de 50 relevés retraçant les déplacements d'une conductrice — violait le 4e amendement, et a écarté toutes les preuves qui en découlaient, dont 41 kg de méthamphétamine. La décision prend le contre-pied de jugements antérieurs en assimilant ce réseau national de caméras à une surveillance de type dragnet. Elle tombe au moment où Bernie Sanders et Alexandria Ocasio-Cortez proposent une loi pour interdire ces lecteurs de plaques."
+    },
+    {
+      "title": "« Je quitte OpenAI parce que sa culture est cassée » : un responsable sécurité claque la porte",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "hn": "https://news.ycombinator.com/item?id=49944227",
+      "points": 177,
+      "comments": 432,
+      "summary": "David Robinson, qui pilotait depuis trois ans et demi les rapports de sécurité des grands lancements d'OpenAI, démissionne et s'en explique dans un essai publié par The Atlantic : l'approche « essai-erreur » de l'entreprise « garantit des défaillances périodiques » à mesure que les systèmes gagnent en capacités, et il réclame des protocoles dignes de l'industrie nucléaire ou aérospatiale. OpenAI répond qu'elle « renforce significativement la sécurité ». Deux fils distincts (The Atlantic et The Guardian) occupaient la page d'accueil, celui-ci dépassant les 430 commentaires."
+    },
+    {
+      "title": "Simon Willison : « il nous faudra des plafonds de dépenses par défaut, à peu près partout »",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "hn": "https://news.ycombinator.com/item?id=49949235",
+      "points": 375,
+      "comments": 185,
+      "summary": "Les agents de code rendent trivial le déploiement de services cloud… et donc les factures surprises : Willison plaide pour des plafonds de dépenses durs activés par défaut, qui coupent le service une fois la limite atteinte, avec désactivation possible pour qui accepte le risque. Il cite les spend limits lancés par AWS en septembre et les Spend Caps de Google Cloud en juillet, et résume : la plupart des gens préfèrent des erreurs à une facture inattendue de plus de 10 000 dollars."
+    },
+    {
+      "title": "Bob Cringely est mort",
+      "url": "https://news.ycombinator.com/item?id=49949438",
+      "hn": "https://news.ycombinator.com/item?id=49949438",
+      "points": 357,
+      "comments": 69,
+      "summary": "La communauté HN rend hommage à Robert X. Cringely (de son vrai nom Mark Stephens), chroniqueur mythique d'InfoWorld, auteur d'« Accidental Empires » et du documentaire « Triumph of the Nerds », qui a raconté la Silicon Valley des débuts du PC comme personne. Un fil « Tell HN » sobre, rempli d'anecdotes de lecteurs qui ont grandi avec ses colonnes et ses documentaires."
+    },
+    {
+      "title": "Hole Punch : catapultez votre vaisseau dans les champs gravitationnels",
+      "url": "https://notoriousbfg.com/hole-punch/",
+      "hn": "https://news.ycombinator.com/item?id=49946393",
+      "points": 277,
+      "comments": 62,
+      "summary": "Un petit jeu de physique où l'on fronde son vaisseau spatial autour de puits gravitationnels pour atteindre sa cible — le genre de démo ludique et élégante qui fait mouche sur HN le week-end. Près de 280 points pour un projet indépendant, preuve que l'amour du jeu d'adresse orbital ne se dément pas."
+    },
+    {
+      "title": "Chez Valve, Timur Kristóf continue de ressusciter les vieux GPU AMD sous Linux",
+      "url": "https://www.phoronix.com/news/Timur-More-Old-AMDGPU-2026",
+      "hn": "https://news.ycombinator.com/item?id=49946895",
+      "points": 234,
+      "comments": 28,
+      "summary": "Phoronix récapitule le travail du développeur Valve : la bascule des GPU GCN 1.0/1.1 vers le pilote AMDGPU par défaut dans Linux 6.19 apporte de bien meilleures performances et le support Vulkan via RADV prêt à l'emploi. Au programme 2026 : format modifiers DRM pour les générations SI/CIK/VI/Polaris, refonte de la gestion d'énergie et correctifs ciblés (Radeon 430, écran noir de la HD 7790). Du matériel de 2012 qui reste utilisable — HN apprécie l'anti-obsolescence."
+    },
+    {
+      "title": "TDAH, autisme ou traumatisme complexe ?",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4826561366615BFAEC807CDE28A7/S0007125026108046a.pdf",
+      "hn": "https://news.ycombinator.com/item?id=49946403",
+      "points": 209,
+      "comments": 236,
+      "summary": "Un article académique publié chez Cambridge University Press interroge le chevauchement entre ces trois diagnostics et la difficulté de les démêler en clinique. Avec plus de commentaires que de points, le fil montre à quel point le sujet touche la communauté tech, où les questions de neurodivergence reviennent régulièrement en première page."
+    },
+    {
+      "title": "Tirer le meilleur d'Opus 5.5 dans Claude et Claude Code",
+      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+      "hn": "https://news.ycombinator.com/item?id=49946567",
+      "points": 208,
+      "comments": 142,
+      "summary": "Le blog de Claude publie un guide de bonnes pratiques pour exploiter le nouveau modèle phare d'Anthropic dans l'assistant et dans Claude Code. Le fil HN, bien fourni, prolonge l'éternelle conversation du moment : comment adapter ses habitudes de travail à chaque nouvelle génération de modèles."
+    },
+    {
+      "title": "FTL : un nouveau système d'exploitation pensé pour le cloud",
+      "url": "https://ftl-os.org/",
+      "hn": "https://news.ycombinator.com/item?id=49944912",
+      "points": 171,
+      "comments": 67,
+      "summary": "Écrit en Rust par Seiya Nuta (ingénieur chez Vercel), FTL donne à chaque conteneur son propre OS en espace utilisateur au-dessus d'un noyau minimal, au lieu de partager un noyau Linux — une isolation de type machine virtuelle avec compatibilité binaire Linux par émulation d'ABI, pour fermer la porte aux évasions de conteneurs. La v0.1.0 reste embryonnaire (pas encore de système de fichiers complet), mais l'approche exokernel séduit."
+    },
+    {
+      "title": "Scans 3D du musée Rodin : un verdict au goût de trahison",
+      "url": "https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict",
+      "hn": "https://news.ycombinator.com/item?id=49946355",
+      "points": 154,
+      "comments": 72,
+      "summary": "Le Conseil d'État a jugé que les scans 3D des sculptures de Rodin, pourtant financés par de l'argent public, sont assimilables à des reproductions physiques de la collection et échappent donc au droit d'accès aux documents administratifs — annulant la victoire obtenue par Cosmo Wenman devant le tribunal de Paris. L'artiste américain, qui se bat depuis des années pour leur publication, dénonce une décision construite sur des arguments que le musée n'avait même pas soulevés."
+    },
+    {
+      "title": "Le bureau COSMIC de Pop!_OS bannit le code généré par IA",
+      "url": "https://www.xda-developers.com/cosmic-bans-all-ai-generated-submissions/",
+      "hn": "https://news.ycombinator.com/item?id=49946321",
+      "points": 98,
+      "comments": 154,
+      "summary": "System76 refuse désormais les contributions générées par LLM sur une grande partie du code de son environnement de bureau COSMIC : les mainteneurs se disaient submergés de pull requests de faible qualité. C'est le premier environnement de bureau majeur à franchir ce pas. Avec une fois et demie plus de commentaires que de points, le fil illustre la fracture entre partisans de l'IA comme outil de contribution et défenseurs d'une revue humaine soutenable."
+    }
+  ]
+}
