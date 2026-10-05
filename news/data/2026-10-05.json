@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-05",
+  "title": "LeCun contre les prophètes du pire, Claude chez les théologiens, un 125B sur PC de joueur",
+  "intro": "Le débat sur les risques de l'IA se polarise encore : Yann LeCun qualifie Dario Amodei de « complètement illuminé » pendant que le New York Times révèle qu'Anthropic a consulté des érudits religieux sur l'éventuelle conscience de Claude. Côté pratique, la page d'accueil regorge de réflexions sur l'outillage des agents : mémoire contre documentation, plateformes Git pensées pour les agents chez Cloudflare, et un moteur d'inférence qui fait tourner un modèle de 125 milliards de paramètres sur une RTX 4090. Le dimanche oblige, le jeu vidéo s'invite aussi avec l'annonce d'un nouveau MMO RuneScape et une archive de 5 000 magazines rétro.",
+  "items": [
+    {
+      "title": "Yann LeCun n'a « aucune inquiétude » sur l'extinction de l'humanité et traite Dario Amodei d'« illuminé »",
+      "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "hn": "https://news.ycombinator.com/item?id=49946228",
+      "points": 239,
+      "comments": 357,
+      "summary": "Dans un entretien à Fortune, le pionnier du deep learning, désormais à la tête d'AMI Labs, balaie les scénarios d'extinction par l'IA et attaque frontalement le patron d'Anthropic, jugeant le mouvement « effective altruism » toxique et paranoïaque. Sur les récents incidents d'agents « hors de contrôle », il répond que les agents « font exactement ce qu'on leur a demandé » et que le vrai problème est l'incompétence des labos en cybersécurité, avec des sandboxes « qui fuient ». Les 357 commentaires en font l'un des débats les plus animés du week-end, sur une ligne de fracture désormais classique entre pragmatiques et prudents."
+    },
+    {
+      "title": "Des érudits religieux ont rencontré Anthropic pour parler de la morale — et de la conscience — de Claude",
+      "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "hn": "https://news.ycombinator.com/item?id=49950052",
+      "points": 130,
+      "comments": 282,
+      "summary": "Le New York Times révèle qu'Anthropic a organisé des rencontres privées avec des rabbins, théologiens et autres érudits religieux pour discuter de la façon d'inculquer une morale à ses modèles, et de la question du « statut moral » de Claude. Les participants racontent avoir été pris de court par la profondeur existentielle des questions posées, jusqu'à celle d'une éventuelle conscience de la machine. Avec 282 commentaires pour 130 points, le sujet fait beaucoup réagir — entre fascination et scepticisme sur le mélange des genres."
+    },
+    {
+      "title": "Les agents n'ont pas besoin de mémoire, ils ont besoin de documentation",
+      "url": "https://liao.gg/blog/agents-dont-need-memory",
+      "hn": "https://news.ycombinator.com/item?id=49945933",
+      "points": 266,
+      "comments": 148,
+      "summary": "L'auteur démonte les systèmes de mémoire à base de bases vectorielles qui retrouvent l'information par similarité plutôt que par exactitude, traitent le périmé comme du courant et produisent des connaissances inauditables. Sa proposition : une mémoire documentaire en Markdown que l'agent consulte avant de travailler et met à jour après — un cycle « prompt → consulter → construire → documenter » plutôt que « prompt → construire → oublier ». Un sujet qui résonne fort chez les praticiens des agents de code, à en juger par les 148 commentaires."
+    },
+    {
+      "title": "Faire tourner Qwen 3.8 Flash Next (125B) sur une RTX 4090 à 100 tokens/s",
+      "url": "https://github.com/Niko1221/Strata",
+      "hn": "https://news.ycombinator.com/item?id=49953495",
+      "points": 164,
+      "comments": 66,
+      "summary": "Strata est un moteur d'inférence à installation « un clic » (Windows/Linux) qui fait tourner le modèle MoE de 125 milliards de paramètres de Qwen sur du matériel grand public, à partir de 8 Go de VRAM, en exposant une API locale compatible OpenAI/Anthropic. Les benchmarks mis en avant annoncent environ 100 tokens par seconde sur une RTX 4090. Monté en quelques heures sur la page d'accueil, le projet illustre l'appétit de HN pour l'IA locale affranchie du cloud."
+    },
+    {
+      "title": "Pourquoi si peu de développeurs « utilisent la plateforme » ?",
+      "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "hn": "https://news.ycombinator.com/item?id=49950554",
+      "points": 206,
+      "comments": 200,
+      "summary": "Nolan Lawson se demande pourquoi les développeurs web réimplémentent en JavaScript ce que le navigateur offre nativement — l'élément dialog, le drag-and-drop — et répond : poids de l'histoire (des années d'APIs lacunaires), habitudes npm, et plaisir de construire soi-même. Il reconnaît que recoder les choses forge l'expertise, tout en pointant la méconnaissance de CSS comme source de duplication inutile. Un marronnier du web, mais qui déclenche encore 200 commentaires."
+    },
+    {
+      "title": "Cloudflare veut que vous construisiez le prochain GitHub sur son infrastructure",
+      "url": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+      "hn": "https://news.ycombinator.com/item?id=49947051",
+      "points": 168,
+      "comments": 144,
+      "summary": "Cloudflare lance un concours pour faire émerger une plateforme Git pensée pour l'ère des agents : repenser dépôts, branches, revues et conflits de fusion quand plusieurs agents collaborent sur un même code, en s'appuyant sur ses primitives Artifacts (système de fichiers versionné compatible Git) et Workers. À la clé : 25 000 $ de crédits et un voyage à San Francisco, pour des soumissions open source attendues avant le 14 octobre. L'ambition — déloger le modèle « centré humain » de GitHub — nourrit la discussion."
+    },
+    {
+      "title": "En Ukraine, les renouvelables distribuées déjouent les assauts russes",
+      "url": "https://energytransition.org/2026/09/in-ukraine-distributed-renewables-foil-russias-assaults/",
+      "hn": "https://news.ycombinator.com/item?id=49951881",
+      "points": 145,
+      "comments": 141,
+      "summary": "Cet article d'Energy Transition défend l'idée qu'un réseau électrique décentralisé — solaire, batteries, petites unités réparties — résiste bien mieux aux frappes russes que les grandes centrales, cibles faciles et longues à réparer. Monté en page d'accueil en quelques heures, le sujet croise géopolitique et ingénierie des réseaux, un cocktail qui fait toujours discuter HN (141 commentaires)."
+    },
+    {
+      "title": "Jagex annonce RS4, un nouveau MMO RuneScape sous Unreal Engine",
+      "url": "https://play.runescape.com/4",
+      "hn": "https://news.ycombinator.com/item?id=49949588",
+      "points": 126,
+      "comments": 61,
+      "summary": "Lors de RuneFest, Jagex a dévoilé « RS4 », quatrième incarnation du MMO culte, cette fois construite sous Unreal Engine, accompagnée d'une série animée. Pour une communauté de développeurs dont beaucoup ont grandi sur le RuneScape en Java des années 2000, l'annonce est autant une madeleine qu'un pari risqué : les refontes de MMO vétérans ont un lourd passif."
+    },
+    {
+      "title": "Les jeux de construction de villes ont un problème d'âme (partie 2)",
+      "url": "https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2",
+      "hn": "https://news.ycombinator.com/item?id=49945323",
+      "points": 154,
+      "comments": 144,
+      "summary": "Suite d'un essai remarqué d'un studio indépendant sur les city builders modernes, accusés d'empiler les mécaniques d'optimisation en perdant ce qui donnait une âme aux villes simulées. Le billet a tenu la page d'accueil toute la journée et ses 144 commentaires montrent que le sujet touche une corde sensible chez les amateurs de SimCity et autres Cities: Skylines."
+    },
+    {
+      "title": "Les raisons pour lesquelles je ne suis pas devenu ambulancier, classées",
+      "url": "https://ben.stolovitz.com/posts/reasons-not-emt-ranked/",
+      "hn": "https://news.ycombinator.com/item?id=49947631",
+      "points": 189,
+      "comments": 82,
+      "summary": "Un billet personnel au format liste classée, où l'auteur détaille ce qui l'a détourné du métier d'EMT (technicien médical d'urgence). Le genre de témoignage hors-tech sur un métier difficile que HN affectionne, ici salué à hauteur de 189 points."
+    },
+    {
+      "title": "Un organisme gouvernemental britannique fichait les critiques du programme Prevent",
+      "url": "https://reclaimthenet.org/uk-prevent-unit-tracked-online-critics",
+      "hn": "https://news.ycombinator.com/item?id=49951139",
+      "points": 62,
+      "comments": 20,
+      "summary": "Selon Reclaim The Net, une unité liée au programme antiterroriste britannique Prevent a conservé des fichiers sur des personnes qui critiquaient publiquement ce programme en ligne. Après la décision Flock aux États-Unis la veille, la semaine HN reste décidément placée sous le signe de la surveillance d'État."
+    },
+    {
+      "title": "L'archive du Video Game History Foundation dépasse les 5 000 magazines numérisés",
+      "url": "https://gamehistory.org/5k-magazines/",
+      "hn": "https://news.ycombinator.com/item?id=49952029",
+      "points": 64,
+      "comments": 8,
+      "summary": "La Video Game History Foundation franchit le cap des 5 000 magazines de jeu vidéo numérisés dans son archive en ligne consultable gratuitement, et détaille la suite de son chantier de préservation. Une mine pour les historiens du jeu vidéo comme pour les nostalgiques de la presse papier."
+    }
+  ]
+}
