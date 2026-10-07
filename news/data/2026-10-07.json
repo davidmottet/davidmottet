@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-07",
+  "title": "Mistral voit grand avec Large 4, OpenAI publie ses maths, et les « modèles de décision » débarquent",
+  "intro": "Journée dominée par l'open-weight et l'IA spécialisée : Mistral dévoile Large 4, un modèle à mille milliards de paramètres présenté comme le plus puissant hors de Chine, pendant qu'OpenAI publie sur GitHub les travaux mathématiques de son modèle interne, preuves Lean à l'appui. Une nouvelle catégorie d'outils s'installe — les « modèles de décision » — avec la Decisions API d'OpenAI en bêta publique et le Strands Decider 2B d'AWS. En marge, un accélérateur TPU open source conçu par des agents IA et une couche de compatibilité PS5 vers PC font parler.",
+  "items": [
+    {
+      "title": "Mistral Large 4 : mille milliards de paramètres en open-weight",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "hn": "https://news.ycombinator.com/item?id=49977979",
+      "points": 1734,
+      "comments": 1026,
+      "summary": "Mistral dévoile Large 4, surnommé « Le Chonk » : un mixture-of-experts d'environ 1 000 milliards de paramètres (49 milliards actifs par requête), présenté comme « le système open-weight le plus puissant hors de Chine » — API en préversion immédiate, poids promis pour le 27 octobre. Entraîné en deux mois sur 4 000 GPU Nvidia dans des data centers européens, il revendique 62 % sur DeepSWE (devant DeepSeek-V4-Pro à 57 %) et plus de 160 langues. Fil le plus commenté du jour : on y débat des prétentions face aux modèles chinois, des gains d'efficacité et de la stratégie « API d'abord, poids ensuite »."
+    },
+    {
+      "title": "OpenAI publie les travaux mathématiques de son modèle interne",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "hn": "https://news.ycombinator.com/item?id=49984923",
+      "points": 791,
+      "comments": 727,
+      "summary": "OpenAI met en ligne les résultats mathématiques d'un modèle frontière interne : un dépôt GitHub de manuscrits (plus de 700 selon la presse) avec formalisations Lean, statistiques de tentatives et résumés de raisonnement, selon un protocole établi avec le groupe consultatif maths-IA de l'Institute for Advanced Study. Chaque résultat a demandé en moyenne « environ trois heures de réflexion ChatGPT Pro ». Un preprint revendiquant une multiplication d'entiers sous n log n attire l'attention ; la discussion, prudente, porte sur la reproductibilité et la vérification de ces résultats."
+    },
+    {
+      "title": "EmbeddingGemma 2 : l'embedding multimodal léger et ouvert de Google",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "hn": "https://news.ycombinator.com/item?id=49980487",
+      "points": 297,
+      "comments": 31,
+      "summary": "Google publie EmbeddingGemma 2, successeur multimodal de son petit modèle d'embedding ouvert de la famille Gemma, pensé pour la recherche sémantique et les pipelines RAG, y compris en local sur du matériel modeste. L'intérêt est net côté développeurs : des embeddings multimodaux ouverts et légers restent rares face aux API propriétaires."
+    },
+    {
+      "title": "OpenTPU : un accélérateur d'IA open source, conçu par des IA",
+      "url": "https://github.com/FeSens/openTPU",
+      "hn": "https://news.ycombinator.com/item?id=49980715",
+      "points": 276,
+      "comments": 331,
+      "summary": "Un projet de puce accélératrice d'IA open source dont la conception est présentée comme l'œuvre d'agents IA. Le fil, très animé, oppose les sceptiques — faisabilité d'un silicium réellement fabricable, part effective de l'IA dans le design — à ceux qui saluent l'ambition de démocratiser le matériel d'inférence face aux TPU et GPU propriétaires."
+    },
+    {
+      "title": "La Decisions API d'OpenAI passe en bêta publique",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "hn": "https://news.ycombinator.com/item?id=49984025",
+      "points": 252,
+      "comments": 113,
+      "summary": "Annoncée au DevDay fin septembre, la Decisions API arrive en bêta publique : un endpoint spécialisé, propulsé par GPT-6 « Luna », qui choisit une réponse parmi un ensemble fermé d'options (routage de tickets, classification, décisions d'agents) à partir de texte ou d'images. OpenAI promet des latences sous les 100 ms, mais des tests tiers mesurent plutôt 1,5 s en médiane, et la tarification n'est pas publiée. Les commentaires notent que les structured outputs couvrent déjà ces usages et comparent au modèle Jev de TypeSafe, moins cher et doté de scores de confiance."
+    },
+    {
+      "title": "AnyPS5 : porter les binaires PS5 sur PC sans émulation",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "hn": "https://news.ycombinator.com/item?id=49985664",
+      "points": 219,
+      "comments": 169,
+      "summary": "AnyPS5 est une couche de traduction à la Proton — « techniquement pas un émulateur » — qui convertit les exécutables PS5 pour Linux et Windows, en misant sur la parenté matérielle entre la console et les PC modernes (CPU Zen 2, GPU RDNA 2) pour éviter le coût d'une émulation complète. Le projet annonce 87 % des bibliothèques système mappées, mais aucun jeu ne se lance encore. La discussion oscille entre enthousiasme technique, scepticisme sur la dernière ligne droite et questions juridiques."
+    },
+    {
+      "title": "Quelle est l'espèce dominante sur Terre, en masse ?",
+      "url": "https://signoregalilei.com/2026/09/27/whats-earths-dominant-species-by-mass/",
+      "hn": "https://news.ycombinator.com/item?id=49977531",
+      "points": 212,
+      "comments": 145,
+      "summary": "Un essai de vulgarisation qui prend la question au pied de la lettre : chez les animaux, les bovins (~650 millions de tonnes) devancent le krill antarctique (~379 Mt) et les humains (~350 Mt), mais ramenée au carbone, la végétation écrase tout. L'épinette noire des forêts boréales contiendrait à elle seule près de trois fois plus de carbone que l'ensemble des animaux réunis — l'espèce dominante est un arbre."
+    },
+    {
+      "title": "Messages suggérés de Claude Code : « le vrai client, c'est le modèle »",
+      "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "hn": "https://news.ycombinator.com/item?id=49981905",
+      "points": 177,
+      "comments": 91,
+      "summary": "Un billet dissèque la fonction de messages suggérés de Claude Code et défend une thèse provocatrice : cette fonctionnalité servirait d'abord le modèle — en orientant les interactions et en alimentant sa boucle d'amélioration — avant de servir l'utilisateur. Le fil y voit un cas d'école du design des produits IA : à qui profite vraiment l'ergonomie quand l'éditeur est aussi l'entraîneur du modèle ?"
+    },
+    {
+      "title": "Tell HN : GitHub refuse de retirer des copies crackées de mon logiciel depuis un mois",
+      "url": "https://news.ycombinator.com/item?id=49982498",
+      "hn": "https://news.ycombinator.com/item?id=49982498",
+      "points": 154,
+      "comments": 91,
+      "summary": "Un développeur indépendant raconte que des dépôts hébergeant des copies crackées de son logiciel restent en ligne sur GitHub un mois après ses signalements. Le témoignage ravive les débats récurrents sur le traitement des demandes DMCA par la plateforme : lenteur et opacité pour les petits éditeurs, quand les ayants droit puissants obtiennent des retraits rapides."
+    },
+    {
+      "title": "Penguin Mail : un client email open source en Rust pour Linux, avec IA",
+      "url": "https://penguin-mail.com/",
+      "hn": "https://news.ycombinator.com/item?id=49984716",
+      "points": 150,
+      "comments": 82,
+      "summary": "Penguin Mail se présente comme un client email natif pour Linux, open source et écrit en Rust, avec des fonctions d'assistance par IA et un positionnement respectueux de la vie privée. Les commentaires saluent l'architecture légère et le pari d'un vrai client desktop moderne pour Linux — tout en débattant, classiquement, de la place de l'IA dans un logiciel de messagerie."
+    },
+    {
+      "title": "Strands Decider 2B : le petit modèle de décision open source d'AWS",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "hn": "https://news.ycombinator.com/item?id=49987076",
+      "points": 136,
+      "comments": 26,
+      "summary": "L'équipe Strands d'AWS publie Decider 2B, un modèle de 2 milliards de paramètres qui ne génère pas de texte libre : il choisit entre des options définies et leur attribue des probabilités (sélection d'outils, routage, garde-fous d'agents). Base Qwen 3.5-2B affinée en LoRA, poids, code et données publiés, ~115 ms de latence médiane sur une RTX 3090 et troisième place sur JevBench dans sa catégorie. C'est le troisième modèle de décision gratuit lancé en une semaine — la catégorie, popularisée par Jev, s'installe."
+    },
+    {
+      "title": "State of Devs 2026 : les résultats de l'enquête sont en ligne",
+      "url": "https://2026.stateofdevs.com/",
+      "hn": "https://news.ycombinator.com/item?id=49985643",
+      "points": 132,
+      "comments": 63,
+      "summary": "L'enquête State of Devs (la déclinaison « au-delà du code » des enquêtes State of JS/CSS) publie son édition 2026 : carrière, rémunération, conditions de travail, santé et rapport à l'IA chez les développeurs. Comme chaque année, la discussion porte autant sur les résultats que sur la représentativité de l'échantillon, auto-sélectionné parmi les habitués de ces enquêtes."
+    }
+  ]
+}
