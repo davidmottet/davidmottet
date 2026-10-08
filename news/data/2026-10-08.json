@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-08",
+  "title": "Adieu Margaret Hamilton, GPT-6 et Haiku 5.5 débarquent, les maths d'OpenAI contestées",
+  "intro": "Journée chargée en émotion et en annonces : la communauté salue la mémoire de Margaret Hamilton, pionnière du logiciel d'Apollo, disparue à 90 ans. Côté IA, OpenAI déploie GPT-6 avec son « Intelligent UI » pendant qu'Anthropic riposte avec Claude Haiku 5.5, petit modèle à prix cassé — et un article académique vient semer le doute sur la preuve Navier-Stokes d'OpenAI, dont le fil mathématique reste le plus commenté du jour. En marge, Chrome ressuscite JPEG XL et les marchands américains repartent en guerre contre Visa et Mastercard.",
+  "items": [
+    {
+      "title": "Margaret Hamilton, pionnière du logiciel d'Apollo, est morte à 90 ans",
+      "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+      "hn": "https://news.ycombinator.com/item?id=49998895",
+      "points": 1063,
+      "comments": 120,
+      "summary": "Le MIT annonce le décès, le 30 septembre, de Margaret Hamilton, qui dirigea l'équipe logicielle du programme Apollo à l'Instrumentation Lab. Son système de priorités a permis à l'ordinateur d'Apollo 11 d'ignorer les tâches non critiques pendant les alarmes de l'alunissage de 1969 ; on lui doit aussi la popularisation du terme « software engineering » et une programmation défensive avant l'heure. Fondatrice de Higher Order Software (1976) puis de Hamilton Technologies, elle avait reçu la Presidential Medal of Freedom en 2016 ; le fil HN est un hommage unanime à l'une des figures fondatrices du métier."
+    },
+    {
+      "title": "Claude Haiku 5.5 : le petit modèle d'Anthropic divise ses prix par dix",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "hn": "https://news.ycombinator.com/item?id=49996437",
+      "points": 769,
+      "comments": 380,
+      "summary": "Anthropic lance Claude Haiku 5.5, présenté comme son petit modèle « le moins cher, le plus rapide et le plus capable » : 72,4 % sur OSWorld 2.1 (contre 15,7 % pour Haiku 4.5) et 45,9 % sur Humanity's Last Exam sans outils. Tarif : 0,10 $ le million de tokens en entrée et 0,50 $ en sortie (contre 1 $ et 5 $ pour Haiku 4.5), soit environ 75 % d'économie, avec pour la première fois un réglage d'« effort » sur un Haiku. Disponible immédiatement sur la plateforme Claude, AWS, Google Cloud et Azure — de quoi relancer la guerre des prix sur les modèles d'appoint et les sous-agents."
+    },
+    {
+      "title": "OpenAI déploie GPT-6 et son « Intelligent UI » pour tous",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "hn": "https://news.ycombinator.com/item?id=49996425",
+      "points": 557,
+      "comments": 288,
+      "summary": "OpenAI déploie GPT-6 dans ChatGPT au niveau mondial, accompagné d'« Intelligent UI » : les réponses peuvent désormais prendre la forme de graphiques, boutons, formulaires et mini-outils interactifs directement dans la conversation. GPT-6 commence à répondre pendant qu'il raisonne encore, et GPT-6 Instant démarrerait ses réponses environ 44 % plus tôt que GPT-5.6 Instant sur les questions avec recherche web. Accès immédiat pour les abonnés Plus, Pro, Business et Enterprise, les comptes gratuits suivant le lendemain — l'annonce, le même jour que Haiku 5.5, illustre le rythme effréné du duel OpenAI-Anthropic."
+    },
+    {
+      "title": "Les maths d'OpenAI, fil le plus commenté du jour",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "hn": "https://news.ycombinator.com/item?id=49984923",
+      "points": 1257,
+      "comments": 1426,
+      "summary": "Le dépôt de résultats mathématiques d'OpenAI, publié la veille, continue d'enfler : 1 426 commentaires, de loin le fil le plus actif du jour. OpenAI y partage des résultats sur des problèmes ouverts produits par un modèle frontière interne — formalisations Lean vérifiables par machine, résumés de raisonnement, coût moyen d'« environ trois heures » de calcul ChatGPT Pro par résultat — avec un protocole validé par le groupe consultatif maths-IA de l'Institute for Advanced Study. Le débat s'est durci avec la publication d'une critique académique visant directement la preuve Navier-Stokes revendiquée (voir l'item suivant)."
+    },
+    {
+      "title": "« Navier-Stokes lost in translation » : la vérification Lean ne prouve pas ce qu'on croit",
+      "url": "https://arxiv.org/abs/2610.08144",
+      "hn": "https://news.ycombinator.com/item?id=49994145",
+      "points": 278,
+      "comments": 171,
+      "summary": "Trois mathématiciens (Bastounis, Circelli, Hansen) démontrent qu'une vérification Lean d'une preuve autoformalisée par IA ne garantit pas la justesse de la preuve en langage naturel d'origine : lever les ambiguïtés d'un texte mathématique serait un problème de complexité arbitrairement élevée dans la hiérarchie SCI, plus dur encore que le problème de l'arrêt. Ils visent explicitement la preuve de blow-up Navier-Stokes annoncée par OpenAI et concluent que « la preuve Lean formalisée ne correspond pas à la preuve en langage naturel ». Un contrepoint cinglant au récit « vérifié par machine, donc vrai » qui alimente la défiance d'une partie de la communauté."
+    },
+    {
+      "title": "Chrome livre enfin JPEG XL, en Rust",
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "hn": "https://news.ycombinator.com/item?id=49991227",
+      "points": 513,
+      "comments": 348,
+      "summary": "Chrome 155 décodera nativement le format JPEG XL, annonce Google — un revirement remarqué, trois ans après le retrait controversé du format en 2022 qui avait provoqué un tollé. L'équipe s'appuie sur jxl-rs, un décodeur écrit en Rust pour éliminer les failles mémoire à la source, avec SIMD sécurisé et fuzzing n'ayant révélé aucun bug de sécurité mémoire. Le format promet 30 à 50 % de compression en plus que JPEG, du lossless, du HDR natif et le transcodage sans perte des JPEG existants."
+    },
+    {
+      "title": "Visa, Mastercard et les grandes banques de nouveau attaqués sur les frais marchands",
+      "url": "https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees",
+      "hn": "https://news.ycombinator.com/item?id=49993914",
+      "points": 521,
+      "comments": 376,
+      "summary": "Une pizzeria de San Diego a déposé le 30 septembre une class action contre Visa, Mastercard et de grandes banques (Bank of America, Chase, Citibank, Capital One, Wells Fargo), les accusant de s'entendre sur des frais d'interchange uniformes et d'imposer des règles anticoncurrentielles — obligation d'accepter toutes les cartes, restrictions sur les surcharges et l'orientation vers des paiements moins chers. La plainte chiffre à plus de 100 milliards de dollars par an ces frais, « un péage mort sur pratiquement chaque achat par carte en Amérique ». Nouveauté : elle cible les pratiques postérieures au règlement de 2019 (plus de 5 milliards de dollars), qui ne couvrait que les transactions jusqu'à janvier 2019."
+    },
+    {
+      "title": "Meta et Microsoft freinent l'usage interne de Claude",
+      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "hn": "https://news.ycombinator.com/item?id=49997161",
+      "points": 320,
+      "comments": 302,
+      "summary": "Selon The Information, Microsoft prévoit de supprimer la plupart des licences internes Claude Code au profit de GitHub Copilot CLI, les coûts au token ayant dépassé les budgets, avec l'objectif de réduire d'un tiers ses dépenses sur les modèles Anthropic ; l'entreprise a aussi temporairement restreint un nouveau modèle Claude le temps d'évaluer les conditions de rétention des données (prompts conservés 30 jours selon Reuters). Meta limite de son côté Claude et Codex pour le développement de ses modèles, par crainte de « distillation », et pousse son agent maison MetaCode. Les partenariats commerciaux restent intacts : Claude demeure disponible pour les clients via Microsoft Foundry et Azure."
+    },
+    {
+      "title": "Docker Agent : des équipes d'agents IA définies en YAML",
+      "url": "https://github.com/docker/docker-agent",
+      "hn": "https://news.ycombinator.com/item?id=49996259",
+      "points": 204,
+      "comments": 93,
+      "summary": "Docker publie Docker Agent, un framework open source pour construire des équipes d'agents IA spécialisés depuis le terminal : chaque agent (rôle, instructions, modèle, outils MCP) se décrit dans un fichier YAML, et un agent racine délègue le travail à ses sous-agents, chacun avec son propre contexte. Compatible avec n'importe quel fournisseur de LLM, il est livré avec Docker Desktop 4.63 (c'était « cagent » dans les versions précédentes) et installable via Homebrew ou Winget. Docker pousse ainsi ses pions sur le terrain très disputé de l'orchestration multi-agents."
+    },
+    {
+      "title": "Google Playground : créer des jeux par la conversation",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "hn": "https://news.ycombinator.com/item?id=49991823",
+      "points": 131,
+      "comments": 210,
+      "summary": "Google lance Playground, une plateforme expérimentale dans le navigateur pour créer, jouer et partager des jeux décrits en langage naturel : on ajuste règles, physique, personnages et environnements par prompts, puis on publie dans une galerie avec classements et multijoueur sur certains genres. Lancement réservé aux États-Unis (18 ans et plus) sur playground.google, avec des capacités de création échelonnées selon l'abonnement Google One et une intégration Unity Spark annoncée. Le ratio commentaires/points élevé trahit un accueil pour le moins discuté."
+    },
+    {
+      "title": "Show HN : Bigwords.page transforme n'importe quel écran en pancarte",
+      "url": "https://bigwords.page/",
+      "hn": "https://news.ycombinator.com/item?id=49994443",
+      "points": 419,
+      "comments": 123,
+      "summary": "Un Show HN minimaliste qui a séduit la communauté : une page web qui affiche un texte en très grand pour transformer tout écran — téléphone, tablette, portable — en panneau d'affichage improvisé. Son credo, « l'URL est l'application » : pas d'installation ni de compte, le lien suffit. Un succès typique de HN, où la simplicité radicale d'un outil jetable mais immédiatement utile l'emporte souvent sur les produits sophistiqués."
+    },
+    {
+      "title": "God of War (PSP) recompilé en WebAssembly tourne dans le navigateur",
+      "url": "https://github.com/snuri00/psp-web-recomp",
+      "hn": "https://news.ycombinator.com/item?id=49991243",
+      "points": 178,
+      "comments": 95,
+      "summary": "Un projet GitHub fait tourner God of War version PSP directement dans le navigateur, via une recompilation du jeu en WebAssembly plutôt qu'une émulation classique. Il s'inscrit dans la vague des recompilations statiques de jeux rétro (N64, PS1) qui produisent des portages natifs performants — appliquée ici au catalogue PSP, avec le navigateur comme cible universelle. Comme toujours avec ces projets, la question des droits sur les assets du jeu reste entière : il faut fournir sa propre copie."
+    }
+  ]
+}
