@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-09",
+  "title": "L'IA frugale en vedette : la voix dans 16,9 Mo, DeepSeek à prix cassé et une machine à café qui avale 1 To",
+  "intro": "La journée est dominée par l'IA « efficiente » : un modèle de reconnaissance vocale de 16,9 Mo qui tourne sur CPU, un billet qui s'étonne du peu de réactions face aux performances et aux prix de DeepSeek V4.1-Flash, et le MoE chinois Step 5 Preview avec son contexte d'un million de tokens. En contrepoint, HN savoure des histoires plus humaines : une machine à café connectée qui sature le Wi-Fi familial, une maison dessinée à la main devenue tableau de bord domotique, et un étrange musée interactif du procès Theranos. Côté fond, Carson Gross défend le métier de programmeur à l'ère de l'IA et une revue scientifique relit le TDAH à la lumière des rythmes circadiens.",
+  "items": [
+    {
+      "title": "Whistle : la reconnaissance vocale dans un fichier de 16,9 Mo",
+      "url": "https://cactuscompute.com/blog/whistle",
+      "hn": "https://news.ycombinator.com/item?id=50008427",
+      "points": 545,
+      "comments": 120,
+      "summary": "Cactus Compute publie Whistle, un modèle speech-to-text de 16,9 Mo conçu pour tourner localement sur CPU — desktop, mobile, RISC-V, WebAssembly — en sept langues dont le français. L'éditeur annonce 4,31 % d'erreur sur LibriSpeech test-clean (légèrement mieux que Whisper base) et environ 1 300 tokens décodés par seconde sur un Apple M4 Pro, soit près de cinq fois la vitesse de Whisper base. Chiffres rapportés par l'entreprise et non reproduits indépendamment, avec une limite notable : des segments audio de 30 secondes maximum."
+    },
+    {
+      "title": "Pourquoi l'industrie ne panique-t-elle pas devant DeepSeek 4.1 Flash ?",
+      "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "hn": "https://news.ycombinator.com/item?id=50000488",
+      "points": 426,
+      "comments": 358,
+      "summary": "Un billet s'étonne de l'indifférence relative face à DeepSeek V4.1-Flash, sorti le 10 septembre : 552 milliards de paramètres (8 à 16 milliards actifs), vision native, cache KV réduit d'un facteur 3,9, et des scores au niveau de Claude Opus 5 et GPT 5.6 Sol sur certains benchmarks agentiques (74,2 sur DeepSWE v1.1) — pour un prix de sortie 20 à 40 fois inférieur à celui d'Opus 5. Le tableau n'est pas uniforme : le modèle reste nettement derrière sur Terminal-Bench 3.0 et Humanity's Last Exam. Avec 358 commentaires, c'est le fil le plus discuté du jour."
+    },
+    {
+      "title": "Il découvre que la machine à café de ses parents a consommé 1 To de données en dix jours",
+      "url": "https://www.dexerto.com/entertainment/man-discovers-his-parents-coffee-machine-used-1tb-of-data-in-10-days-3416399/",
+      "hn": "https://news.ycombinator.com/item?id=49995495",
+      "points": 412,
+      "comments": 260,
+      "summary": "Un informaticien qui gère à distance le réseau de ses parents a découvert que leur machine à café connectée avait généré environ 1 To de trafic en dix jours, au point de saturer le point d'accès Wi-Fi de la maison. L'essentiel du trafic restait sur le réseau local ; il penche pour un bug de l'appareil, qu'il a fini par débrancher plutôt que d'enquêter davantage. Une illustration de plus des dérives des objets connectés domestiques, sujet dont HN ne se lasse jamais."
+    },
+    {
+      "title": "Il fait dessiner sa maison par un illustrateur — c'est désormais son tableau de bord Home Assistant",
+      "url": "https://antonfrolov.substack.com/p/i-hired-an-illustrator-to-draw-my",
+      "hn": "https://news.ycombinator.com/item?id=49986882",
+      "points": 396,
+      "comments": 65,
+      "summary": "Anton Frolov raconte comment il a commandé à un illustrateur un dessin de sa maison pour en faire l'interface de son tableau de bord Home Assistant, à la place des grilles de boutons habituelles. Le billet détaille la démarche, du brief à l'intégration dans la domotique. Le résultat, à contre-courant des dashboards utilitaires, a séduit la communauté (396 points)."
+    },
+    {
+      "title": "Theranos.world : asseyez-vous au bureau d'Elizabeth Holmes",
+      "url": "https://www.theranos.world/",
+      "hn": "https://news.ycombinator.com/item?id=50009295",
+      "points": 283,
+      "comments": 116,
+      "summary": "Bo Lau, ingénieur chez Extend, a mis en ligne une reconstitution interactive du bureau d'Elizabeth Holmes en 2016 : on y ouvre son MacBook sous OS X El Capitan, on déverrouille son iPhone et on fait tourner la machine Edison. Le site donne accès à plus d'un millier de documents réels — e-mails, SMS, présentations — issus des pièces du procès United States v. Holmes. Mi-blague, mi-outil d'archive, il sort opportunément avant le documentaire de Nathan Fielder « You Can See Everything » consacré à la fondatrice déchue."
+    },
+    {
+      "title": "La beauté des menus de DVD",
+      "url": "https://vale.rocks/posts/dvd-menus",
+      "hn": "https://news.ycombinator.com/item?id=50005527",
+      "points": 264,
+      "comments": 147,
+      "summary": "Un essai consacré à l'esthétique des menus de DVD, ces écrans d'accueil animés et soignés qui accompagnaient chaque film et ont disparu avec le streaming. Le sujet a touché une corde nostalgique sur HN : 264 points et 147 commentaires pour un art d'interface aujourd'hui éteint."
+    },
+    {
+      "title": "« Yes, and… » : faut-il encore devenir programmeur à l'ère de l'IA ?",
+      "url": "https://htmx.org/essays/yes-and/",
+      "hn": "https://news.ycombinator.com/item?id=50003796",
+      "points": 181,
+      "comments": 69,
+      "summary": "Carson Gross, créateur de htmx, répond « oui, mais » à la question qu'on lui pose sans cesse : le métier reste un bon choix car il consiste à résoudre des problèmes et à maîtriser la complexité, pas seulement à taper du code. Il met en garde les juniors contre le réflexe de laisser l'IA écrire à leur place — on n'apprend qu'en écrivant soi-même — tout en voyant dans les LLM un excellent assistant pédagogique pour se débloquer. Sur l'emploi, il juge le marché actuel mauvais mais cyclique, et conseille le réseau personnel plutôt que les job boards."
+    },
+    {
+      "title": "Le TDAH, un trouble du rythme circadien ? Ce que dit la chronothérapie",
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+      "hn": "https://news.ycombinator.com/item?id=50011928",
+      "points": 166,
+      "comments": 124,
+      "summary": "Une revue publiée dans Frontiers in Psychiatry rassemble les indices liant TDAH et horloge biologique : jusqu'à 80 % des adultes concernés rapportent des troubles du sommeil, la sécrétion de mélatonine démarre environ 45 minutes plus tard chez l'enfant et 90 minutes chez l'adulte, et les rythmes du cortisol comme des gènes horloges apparaissent atténués. Les auteurs plaident pour des approches de chronothérapie — lumière vive le matin, mélatonine à faible dose, horaires de lever fixes — qui avancent l'horloge et semblent réduire certains symptômes. Ils soulignent toutefois que les études restent petites et courtes, et qu'aucune ne montre de rémission du TDAH par ces interventions."
+    },
+    {
+      "title": "DuckLake : le format lakehouse de l'équipe DuckDB",
+      "url": "https://github.com/duckdb/ducklake",
+      "hn": "https://news.ycombinator.com/item?id=49996149",
+      "points": 118,
+      "comments": 16,
+      "summary": "Le dépôt de DuckLake remonte en tête de HN : cette spécification lakehouse de l'équipe DuckDB range toutes les métadonnées dans une base SQL (SQLite, PostgreSQL ou DuckDB) au lieu de les éparpiller en fichiers sur le stockage objet comme Iceberg ou Delta. Passée en v1.0 en avril avec compatibilité ascendante garantie, elle est implémentée par une extension DuckDB figurant parmi les dix plus téléchargées, avec des clients communautaires pour Spark, Trino, DataFusion et pandas. Parmi les idées remarquées : l'« inlining » des petites écritures directement dans le catalogue, qui évite la multiplication des petits fichiers."
+    },
+    {
+      "title": "Ask HN : que faites-vous tourner sur un VPS à 5 $ qui mérite de rester en ligne 24h/24 ?",
+      "url": "https://news.ycombinator.com/item?id=49985548",
+      "hn": "https://news.ycombinator.com/item?id=49985548",
+      "points": 116,
+      "comments": 167,
+      "summary": "Un grand classique du genre : les lecteurs de HN partagent ce qu'ils hébergent sur un petit serveur à quelques dollars par mois et qui justifie de tourner en continu. Avec 167 commentaires, le fil offre un instantané des pratiques d'auto-hébergement de la communauté, entre petits services personnels et outils de veille."
+    },
+    {
+      "title": "OSC 7501 : un protocole pour que les programmes annoncent leur état au terminal",
+      "url": "https://mitchellh.com/writing/program-status-osc7501",
+      "hn": "https://news.ycombinator.com/item?id=49984159",
+      "points": 101,
+      "comments": 33,
+      "summary": "Mitchell Hashimoto, créateur du terminal Ghostty, décrit une séquence d'échappement standardisée (OSC 7501) permettant aux programmes en cours d'exécution de signaler leur état au terminal qui les héberge. L'enjeu : donner aux émulateurs un moyen fiable d'afficher la progression ou l'état d'une commande sans heuristiques fragiles. Une brique de plus dans la vague actuelle de modernisation des protocoles de terminaux."
+    },
+    {
+      "title": "Step 5 Preview : un MoE à 1 million de tokens de contexte signé StepFun débarque sur OpenRouter",
+      "url": "https://openrouter.ai/stepfun/step-5-preview",
+      "hn": "https://news.ycombinator.com/item?id=50007764",
+      "points": 97,
+      "comments": 23,
+      "summary": "Le modèle phare du Shanghaïen StepFun apparaît sur OpenRouter : un Mixture-of-Experts de 600 milliards de paramètres (27 milliards actifs par token), avec un contexte d'un million de tokens, des entrées texte, image et vidéo, et un positionnement agentique revendiqué, notamment en finance. Tarifs annoncés : 1 $ le million de tokens en entrée et 2,70 $ en sortie, avec cache à 0,05 $. StepFun promet l'ouverture des poids pour le 15 octobre — un nom de plus dans la cohorte des laboratoires chinois qui occupent le terrain des modèles ouverts."
+    }
+  ]
+}
