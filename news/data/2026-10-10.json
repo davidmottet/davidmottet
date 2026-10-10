@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-10",
+  "title": "OpenAI dans la tourmente : preuves retirées, mathématicien en colère, chercheurs licenciés — et un Nobel pour Navi Pillay",
+  "intro": "Grosse journée OpenAI sur Hacker News, et pas à son avantage : trois des 722 manuscrits mathématiques publiés mardi ont été retirés pour une erreur de signe, le théoricien des ensembles Asaf Karagila fustige un « déni de service » contre les mathématiciens, et trois chercheurs en sécurité licenciés contestent leur mise à l'écart. Côté infrastructure, Cloudflare rachète Deno et prévoit d'arrêter le développement du runtime d'ici un an. Le prix Nobel de la paix 2026 à la juriste sud-africaine Navi Pillay s'invite aussi en tête de page, pendant que les fils de la veille (DeepSeek 4.1 Flash à 868 points, Whistle à 817) continuent de grimper.",
+  "items": [
+    {
+      "title": "OpenAI retire trois de ses résultats mathématiques générés par IA",
+      "url": "https://twitter.com/danintheory/status/2108065033070789090",
+      "hn": "https://news.ycombinator.com/item?id=50002650",
+      "points": 339,
+      "comments": 584,
+      "summary": "Le 6 octobre, OpenAI a publié 722 manuscrits mathématiques produits par un modèle interne non diffusé (environ 4 000 problèmes posés, ~3 heures de calcul par résultat). Dès le lendemain, trois manuscrits étaient retirés : une erreur de signe dans « Algebraicity of Weil classes on split abelian eightfolds » invalide un argument de cancellation, entraînant deux papiers qui dépendaient de la même construction ; 14 autres ont été révisés. Seuls ~42 % des résultats (300 sur 719) sont formalisés en Lean, et le fil le plus commenté du jour (584 commentaires) reprend la position d'Andrew Sutherland (MIT) : tant que le modèle n'est pas public, ces résultats doivent être traités comme non vérifiés."
+    },
+    {
+      "title": "OpenAI, le Partition Principle et les mathématiques : la colère d'Asaf Karagila",
+      "url": "https://karagila.org/2026/openai-pp/",
+      "hn": "https://news.ycombinator.com/item?id=50013902",
+      "points": 144,
+      "comments": 225,
+      "summary": "Parmi les 722 manuscrits d'OpenAI figure la revendication que le Partition Principle n'implique pas l'axiome du choix — l'un des plus vieux problèmes ouverts de la théorie des ensembles, auquel Karagila a consacré une partie de sa carrière (sa page « Problems » promettait une bouteille de whisky au solveur ; il annonce qu'il ne l'enverra pas à Sam Altman). Il juge le preprint confus, digne d'un rejet éditorial immédiat, et appuyé sur des notes de cours non publiées. Surtout, il dénonce un « déni de service » : des centaines de « solutions » illisibles que les experts devraient vérifier toutes affaires cessantes, et des annonces qui laissent croire aux financeurs que des bots remplacent les mathématiciens. Les 225 commentaires débattent de qui, de la communauté ou des labos d'IA, doit s'adapter aux standards de l'autre."
+    },
+    {
+      "title": "Le prix Nobel de la paix 2026 à Navi Pillay",
+      "url": "https://www.nobelprize.org/prizes/peace/2026/press-release/",
+      "hn": "https://news.ycombinator.com/item?id=50018420",
+      "points": 162,
+      "comments": 78,
+      "summary": "Le comité norvégien récompense la juriste sud-africaine Navanethem « Navi » Pillay pour son action en faveur de la paix et du droit international. Née à Durban sous l'apartheid dans une famille tamoule, avocate de militants anti-apartheid dont Nelson Mandela, elle a été juge au Tribunal pénal international pour le Rwanda — où elle a contribué à faire reconnaître le viol comme acte de génocide —, à la CPI, haut-commissaire de l'ONU aux droits de l'homme, et préside aujourd'hui à la CIJ dans l'affaire du génocide imputé à la Birmanie. Elle a aussi dirigé jusqu'à récemment la commission d'enquête de l'ONU sur les territoires palestiniens occupés, un rôle qui nourrit une partie des discussions."
+    },
+    {
+      "title": "Deno rejoint Cloudflare — et le runtime sera abandonné dans un an",
+      "url": "https://deno.com/blog/cloudflare",
+      "hn": "https://news.ycombinator.com/item?id=50019911",
+      "points": 27,
+      "comments": 1,
+      "summary": "Cloudflare rachète Deno, l'entreprise de Ryan Dahl (créateur de Node.js). Le runtime Deno ne sera maintenu qu'un an — correctifs et mises à jour de sécurité mensuels — avant que Cloudflare n'en arrête le développement ; le code reste open source et la communauté est invitée à prendre le relais. L'équipe se concentrera sur celld, son implémentation open source du modèle Durable Objects, pour faire de l'auto-hébergement de workerd une option de premier plan. Dahl assume une décision conjointe : Deno, tiré vers la compatibilité Node, « n'est plus l'endroit de son travail le plus important ». L'annonce venait d'arriver en page d'accueil au moment de la lecture."
+    },
+    {
+      "title": "OpenAI licencie trois chercheurs en sécurité, qui contestent et dénoncent un effet dissuasif",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "hn": "https://news.ycombinator.com/item?id=50018350",
+      "points": 77,
+      "comments": 39,
+      "summary": "OpenAI a licencié trois chercheurs — Korbak (équipe sécurité), Wang et Balesni (alignement) — pour avoir, selon une enquête interne, partagé des informations sensibles hors des procédures approuvées avec une organisation externe de sécurité de l'IA. Les intéressés contestent les accusations de faute et alertent sur l'effet dissuasif pour la collaboration avec les évaluateurs externes ; Korbak était justement le contact technique d'OpenAI pour Redwood Research et METR. Le fil HN y voit un test de la crédibilité des engagements de transparence d'OpenAI en matière de sécurité."
+    },
+    {
+      "title": "Ask HN : que faites-vous tourner sur un VPS à 5 $ qui mérite de rester en ligne 24h/24 ?",
+      "url": "https://news.ycombinator.com/item?id=49985548",
+      "hn": "https://news.ycombinator.com/item?id=49985548",
+      "points": 279,
+      "comments": 456,
+      "summary": "Un grand classique du genre : la communauté partage ce qu'elle héberge sur de petits serveurs à quelques dollars par mois. Avec 456 commentaires, le fil est l'un des plus actifs du jour et dresse un panorama de l'auto-hébergement côté bidouilleurs — la discussion n'a pas pu être lue en détail depuis cette session, mais son ampleur en fait un point d'entrée de choix pour qui cherche des idées de services à faire tourner en continu."
+    },
+    {
+      "title": "La beauté des menus de DVD",
+      "url": "https://vale.rocks/posts/dvd-menus",
+      "hn": "https://news.ycombinator.com/item?id=50005527",
+      "points": 319,
+      "comments": 167,
+      "summary": "Un essai célèbre l'art des menus de DVD, cette interface disparue qui accueillait le spectateur avant le film. À 319 points et 167 commentaires, le sujet touche une corde nostalgique évidente chez HN, où les discussions sur les artefacts d'interface des années 2000 trouvent toujours preneur. Le détail du billet et des commentaires n'a pas pu être consulté depuis cette session."
+    },
+    {
+      "title": "Les différences de clavier entre Windows et Mac, en profondeur",
+      "url": "https://unsung.aresluna.org/deeper-dive-keyboard-differences-between-windows-and-macs/",
+      "hn": "https://news.ycombinator.com/item?id=50015515",
+      "points": 201,
+      "comments": 176,
+      "summary": "Une plongée détaillée dans les divergences entre claviers Windows et Mac — raccourcis, touches modificatrices, logiques d'édition de texte héritées de décennies de choix divergents. Le ratio commentaires/points (176 pour 201) trahit un fil animé, chacun défendant ses habitudes de frappe. Le contenu précis de l'article n'a pas pu être consulté depuis cette session."
+    },
+    {
+      "title": "« Je crois que j'ai trouvé une planète inconnue — avec Claude Code »",
+      "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+      "hn": "https://news.ycombinator.com/item?id=50002665",
+      "points": 218,
+      "comments": 105,
+      "summary": "Un développeur raconte sur Reddit avoir repéré, dans des courbes de lumière publiques (archives type NASA/MAST), un signal de transit absent des catalogues, à l'aide de scripts Python écrits et débogués itérativement par Claude Code (lightkurve, algorithmes de recherche de période). Aucune confirmation indépendante à ce stade : la validation exige un vetting manuel et des observations de suivi. Les commentateurs réclament les données, les étapes de vérification et le journal complet de la session, et rappellent que des découvertes similaires se font avec des scripts simples — l'apport de l'IA étant surtout d'abaisser la barrière d'entrée."
+    },
+    {
+      "title": "Show HN : Quake porté en Rust « sûr », jouable dans le navigateur",
+      "url": "https://quake-srp.pages.dev/",
+      "hn": "https://news.ycombinator.com/item?id=50016312",
+      "points": 192,
+      "comments": 153,
+      "summary": "Un portage du Quake original en Rust sans code unsafe, compilé pour le navigateur où il se joue directement. Le projet coche deux cases chères à HN — la préservation des jeux cultes et la réécriture en Rust — et ses 153 commentaires en font l'un des Show HN les plus discutés du jour. Les détails techniques du portage n'ont pas pu être consultés depuis cette session."
+    },
+    {
+      "title": "DuckLake : le format lakehouse de DuckDB en vedette",
+      "url": "https://github.com/duckdb/ducklake",
+      "hn": "https://news.ycombinator.com/item?id=49996149",
+      "points": 198,
+      "comments": 24,
+      "summary": "Le dépôt GitHub de DuckLake remonte en page d'accueil. Lancé par l'équipe DuckDB en mai 2025 et déclaré prêt pour la production avec sa version 1.0 en avril 2026, DuckLake prend le contre-pied d'Iceberg et Delta Lake : plutôt que d'empiler des fichiers de métadonnées sur le stockage objet, il confie tout le catalogue et les métadonnées à une base SQL classique, les données restant en Parquet. Une simplification radicale de l'architecture lakehouse qui continue de faire son chemin dans l'écosystème data."
+    },
+    {
+      "title": "ETH-68 : une interface audio Ethernet pour Linux",
+      "url": "https://naturalsystems.io/eth68",
+      "hn": "https://news.ycombinator.com/item?id=49992994",
+      "points": 177,
+      "comments": 105,
+      "summary": "Natural Systems présente l'ETH-68, une interface audio qui passe par Ethernet plutôt que par USB, pensée pour Linux. L'approche séduit le public HN des musiciens-bricoleurs sous Linux, où le support matériel audio reste un point sensible : 105 commentaires en témoignent. Les spécifications détaillées n'ont pas pu être consultées depuis cette session."
+    }
+  ]
+}
