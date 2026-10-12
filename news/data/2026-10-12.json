@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-12",
+  "title": "LineageOS 24, IRCv3 et Total Annihilation ressuscité : le dimanche des projets qui durent",
+  "intro": "Un dimanche placé sous le signe de la longévité du logiciel : LineageOS passe à Android 17, la communauté IRC redécouvre les extensions IRCv3, et un classique de 1997, Total Annihilation, renaît pour les machines modernes. Côté IA, Terence Tao esquisse les contours d'une « mathématique 2.0 » assistée par machine pendant qu'Andrej Karpathy s'inquiète du fossé grandissant entre utilisateurs occasionnels et avancés des LLM. Et à New York, la règle « Click to Cancel » oblige désormais les entreprises à rendre la résiliation d'un abonnement aussi simple que la souscription.",
+  "items": [
+    {
+      "title": "LineageOS 24.0 est disponible",
+      "url": "https://lineageos.org/Changelog-32/",
+      "hn": "https://news.ycombinator.com/item?id=50040276",
+      "points": 394,
+      "comments": 163,
+      "summary": "La ROM Android communautaire publie sa version 24.0, désormais basée sur Android 17, l'aboutissement d'un cycle qui a aussi apporté un outil de flash depuis le navigateur et un nouvel Updater affichant le niveau de correctif de sécurité et diffusant les mises à jour A/B en streaming. Le projet reste l'une des rares voies pour prolonger la vie d'appareils abandonnés par leurs constructeurs, avec de nouveaux appareils Samsung, Motorola, Sony et Xiaomi pris en charge. Avec près de 400 points et plus de 160 commentaires, la discussion témoigne de l'attachement de la communauté à cette alternative libre face au verrouillage croissant d'Android."
+    },
+    {
+      "title": "IRCv3 : la modernisation du protocole IRC",
+      "url": "https://ircv3.net/",
+      "hn": "https://news.ycombinator.com/item?id=50041540",
+      "points": 323,
+      "comments": 277,
+      "summary": "IRCv3 est un groupe de travail réunissant des auteurs de clients et de serveurs IRC pour étendre le protocole tout en restant compatible avec l'existant : authentification SASL, tags de métadonnées sur les messages, horodatages précis, regroupement de messages liés. Les chantiers en cours incluent l'historique de discussion standardisé, l'enregistrement de comptes, les pseudos Unicode et les avatars. Le sujet, très commenté (277 commentaires), ravive l'éternel débat entre la simplicité d'IRC et les messageries modernes centralisées type Discord ou Slack."
+    },
+    {
+      "title": "La règle « Click to Cancel » de New York est entrée en vigueur",
+      "url": "https://www.nyc.gov/main/click-to-cancel",
+      "hn": "https://news.ycombinator.com/item?id=50045946",
+      "points": 287,
+      "comments": 138,
+      "summary": "Depuis le 1er octobre 2026, les entreprises opérant à New York doivent permettre de résilier un abonnement par le même canal que celui utilisé pour souscrire, expliquer clairement les conditions, et ne peuvent plus facturer le renvoi d'articles non demandés. C'est la première règle municipale de ce type aux États-Unis, après l'abandon de la règle fédérale équivalente de la FTC ; les contrevenants risquent des amendes civiles à partir de 525 dollars et des remboursements. Les commentaires saluent largement la mesure, tout en débattant de son applicabilité aux entreprises hors de la ville et de la nécessité d'une loi fédérale."
+    },
+    {
+      "title": "Total Annihilation, reconstruit pour les ordinateurs modernes",
+      "url": "https://nanolathe.gg",
+      "hn": "https://news.ycombinator.com/item?id=50045984",
+      "points": 283,
+      "comments": 119,
+      "summary": "Le projet Nanolathe fait renaître Total Annihilation, le jeu de stratégie en temps réel culte de 1997 de Cavedog, pour qu'il tourne nativement sur les machines actuelles. Le titre du jeu — resté une référence pour son économie en flux continu et ses batailles massives — explique l'enthousiasme : près de 300 points et 119 commentaires où les vétérans partagent leurs souvenirs et comparent avec ses héritiers spirituels comme Beyond All Reason ou Supreme Commander."
+    },
+    {
+      "title": "Terence Tao : « Math 2.0 » [PDF]",
+      "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50043026",
+      "points": 282,
+      "comments": 340,
+      "summary": "Dans des diapositives présentées à Caltech, le médaillé Fields Terence Tao expose sa vision d'une « mathématique 2.0 » où la formalisation assistée par ordinateur (notamment via Lean) et l'IA transforment la manière de produire et de vérifier des preuves. Tao défend depuis plusieurs années l'idée de l'IA comme partenaire de recherche plutôt que comme remplaçant du mathématicien. C'est le fil le plus commenté du jour (340 commentaires), entre enthousiasme pour les preuves vérifiées à grande échelle et scepticisme sur la part réelle de l'IA dans les découvertes."
+    },
+    {
+      "title": "Le tilde dans votre PATH n'est pas forcément votre HOME",
+      "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
+      "hn": "https://news.ycombinator.com/item?id=50042425",
+      "points": 196,
+      "comments": 137,
+      "summary": "Un billet technique met en garde contre l'ajout d'un « ~ » dans la variable d'environnement PATH : selon le contexte, le tilde n'est pas toujours développé vers le répertoire personnel, avec des comportements surprenants à la clé. Le sujet a suscité 137 commentaires d'administrateurs et développeurs échangeant sur les subtilités d'expansion des shells et les bonnes pratiques de configuration."
+    },
+    {
+      "title": "Vendre ses vieux numéros papier de The Onion ? Le journal les recherche",
+      "url": "https://theonion.com/archivehunt/",
+      "hn": "https://news.ycombinator.com/item?id=50047055",
+      "points": 205,
+      "comments": 22,
+      "summary": "Le journal satirique The Onion, qui a relancé son édition papier, mène une « chasse aux archives » : il s'adresse aux lecteurs détenant de vieux numéros imprimés, dans le cadre de son projet de reconstitution et de numérisation de son catalogue historique, dont les éditions de 1988 à 1996 longtemps inaccessibles. Une démarche inhabituelle — un média rachetant sa propre histoire à ses lecteurs — qui amuse et touche la communauté HN."
+    },
+    {
+      "title": "500 milliards de tokens plus tard : des agents IA décompilent un jeu de tir",
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "hn": "https://news.ycombinator.com/item?id=50039092",
+      "points": 130,
+      "comments": 95,
+      "summary": "Un développeur raconte comment il a laissé des agents IA travailler à la décompilation d'un jeu de tir à la première personne, une entreprise qui a consommé quelque 500 milliards de tokens. Le billet s'inscrit dans une vague récente de projets utilisant des agents de code pour reconstruire le code source de jeux anciens à partir de leurs binaires. Les 95 commentaires débattent du coût, de l'efficacité réelle de l'approche par rapport aux outils classiques de rétro-ingénierie, et de ses implications juridiques."
+    },
+    {
+      "title": "Karpathy : le fossé de compréhension des capacités des LLM se creuse",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "hn": "https://news.ycombinator.com/item?id=50047422",
+      "points": 113,
+      "comments": 138,
+      "summary": "Andrej Karpathy observe un écart grandissant dans la perception des capacités de l'IA : beaucoup se sont forgé une opinion sur un essai ancien d'un modèle gratuit, tandis que les utilisateurs intensifs constatent des progrès majeurs sur les tâches techniques comme le code. Le constat relance un débat familier — Gary Marcus y voit des progrès limités aux domaines vérifiables, quand d'autres comme Ethan Mollick soulignent la généralité des modèles actuels. Sur HN, 138 commentaires s'écharpent sur la part de réalité et de battage dans cette « capability gap »."
+    },
+    {
+      "title": "Construire un patrimoine quand on est salarié",
+      "url": "https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/",
+      "hn": "https://news.ycombinator.com/item?id=50044715",
+      "points": 127,
+      "comments": 122,
+      "summary": "Un essai sur la construction d'un patrimoine pour ceux qui font carrière en entreprise plutôt que de monter leur société, sujet récurrent et clivant sur HN. Les 122 commentaires confrontent les trajectoires : épargne et investissement passif contre prise de risque entrepreneuriale, poids de la rémunération en actions dans la tech, et scepticisme habituel envers les recettes universelles d'enrichissement."
+    },
+    {
+      "title": "Les cartographes de la Corée du Nord",
+      "url": "https://cartographers-nk.wonyoung.so/",
+      "hn": "https://news.ycombinator.com/item?id=50047091",
+      "points": 117,
+      "comments": 16,
+      "summary": "Un projet web explore la cartographie de la Corée du Nord, pays parmi les plus fermés au monde, où produire une carte relève autant de l'enquête que de la géographie. Le sujet rappelle les efforts de longue date — du crowdsourcing sur Google Maps à l'imagerie satellite — pour documenter un territoire que son régime garde opaque. Un fil modeste en commentaires mais salué pour la qualité du travail présenté."
+    },
+    {
+      "title": "« Les passkeys sont un piège, ne les utilisez pas »",
+      "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+      "hn": "https://news.ycombinator.com/item?id=50048312",
+      "points": 76,
+      "comments": 23,
+      "summary": "Un billet à charge contre les passkeys, reprenant une critique récurrente : en pratique, les clés d'accès sont souvent capturées par les écosystèmes d'Apple, de Google ou de Microsoft, difficiles à exporter, et renforcent la dépendance aux plateformes malgré leurs réels atouts contre le phishing. Le débat divise comme à chaque fois sur HN : sécurité supérieure aux mots de passe d'un côté, verrouillage propriétaire et risque de perte d'accès de l'autre."
+    }
+  ]
+}
