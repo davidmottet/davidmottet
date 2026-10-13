@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-13",
+  "title": "Agents frontier chez Meta, frigos de supermarchés piratés et mise en garde du FMI sur la bulle IA",
+  "intro": "L'IA domine encore la page d'accueil, mais sous toutes ses coutures : Meta lance ses modèles agentiques Muse Wonder, un papier arXiv montre qu'on peut prouvablement cacher des capacités dans un modèle, et le FMI s'inquiète d'un krach boursier lié à l'IA. En parallèle, une cyberattaque inédite dégivre les frigos des supermarchés européens, et la communauté débat de l'artisanat logiciel, entre une web app commerciale écrite en C et le daemon auto-installé de Codex CLI qui passe mal.",
+  "items": [
+    {
+      "title": "Muse Wonder de Meta place la barre plus haut pour les agents IA personnels",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "hn": "https://news.ycombinator.com/item?id=50059115",
+      "points": 612,
+      "comments": 328,
+      "summary": "Meta publie Muse Wonder et Muse Wonder Full, présentés comme des modèles frontier pour le travail agentique personnel et professionnel, entraînés « à l'échelle du gigawatt » et bâtis sur ses systèmes Active Memory et Active Focus. Ils sont disponibles via la Meta Model API et Muse Code, et Meta les décrit comme ses modèles les plus alignés à ce jour. Les commentaires relativisent : plusieurs estiment que le modèle reste derrière Opus 5.5 d'Anthropic en développement réel, notent que les benchmarks vedettes concernent la version Full plus chère, et rappellent la promesse non tenue d'ouvrir les poids de Muse Spark."
+    },
+    {
+      "title": "Des pirates dégivrent les frigos des supermarchés européens",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "hn": "https://news.ycombinator.com/item?id=50055304",
+      "points": 611,
+      "comments": 767,
+      "summary": "Une cyberattaque qualifiée d'inédite a déclenché à distance des cycles de dégivrage continus dans des réfrigérateurs de supermarchés en France, en Belgique et aux Pays-Bas, perturbant aussi livraisons et affichage des prix. Le fil le plus commenté du jour (767 commentaires) y voit un signal d'alarme sur la vulnérabilité des infrastructures de froid connectées. Les commentateurs débattent du périmètre réel — l'incident belgo-néerlandais serait un problème IT distinct sans lien avec le froid — et se demandent si les gains de la supervision à distance justifient un tel risque."
+    },
+    {
+      "title": "Codex CLI installe par défaut un daemon persistant qui se met à jour tout seul",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "hn": "https://news.ycombinator.com/item?id=50060694",
+      "points": 540,
+      "comments": 271,
+      "summary": "Depuis la version 0.157.0, ouvrir une session interactive de Codex CLI lance un daemon qui survit à la fermeture du terminal : il copie un paquet de 374 Mo dans ~/.codex, exécute un auto-updater horaire capable d'interrompre un tour en cours, et fige l'environnement proxy de la session d'origine. L'issue GitHub demande que ce comportement devienne opt-in via un réglage daemon_auto_start. Le sujet cristallise la méfiance des développeurs envers les outils d'agents qui modifient silencieusement la machine hôte."
+    },
+    {
+      "title": "GLM-Legal égale les modèles frontier sur les benchmarks juridiques avec une empreinte réduite",
+      "url": "https://z.ai/blog/glm-legal",
+      "hn": "https://news.ycombinator.com/item?id=50058507",
+      "points": 523,
+      "comments": 299,
+      "summary": "Z.ai présente GLM-Legal, bâti sur le léger GLM-5.3-Flash : 19,2 % de réussite complète sur Harvey LAB, des scores au niveau des meilleurs modèles fermés sur LegalBench et PLawBench, et +12,5 points sur son modèle de base dans des cabinets couvrant 24 domaines de pratique, grâce à un mid-training juridique et du RL sur des dizaines de milliers d'environnements réalistes. Les commentaires doutent de la portée pratique : 20 % de réussite reste faible pour du travail juridique inédit, la qualité du benchmark Harvey est questionnée, et la confiance se heurte aux spécificités juridictionnelles et aux questions de confidentialité des données chez Z.ai."
+    },
+    {
+      "title": "Une web app moderne en C : un binaire, trois dépendances, zéro interruption",
+      "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "hn": "https://news.ycombinator.com/item?id=50058528",
+      "points": 514,
+      "comments": 216,
+      "summary": "Corey Prophitt a construit son produit commercial marketyour.games sur la pile BCHS (OpenBSD, C, httpd, SQLite), sans framework ni conteneur : chaque requête fork un nouveau processus et déployer revient à remplacer un fichier. Il soutient que les raisons du déclin du CGI après 2004 ne tiennent plus — le fork est devenu bon marché et l'application entière tient dans la tête. Les commentaires s'inquiètent de la sécurité d'un serveur web en C (risque de RCE) et des performances, entre contention SQLite à chaque requête et coût du fork, certains suggérant Go comme alternative à binaire unique."
+    },
+    {
+      "title": "L'IA est un outil, et bien s'en servir est une compétence",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "hn": "https://news.ycombinator.com/item?id=50063427",
+      "points": 363,
+      "comments": 284,
+      "summary": "En réponse à Rich Hickey, pour qui les LLM relèvent de l'automatisation et non de l'outil « qu'on manie », l'auteur défend qu'un LLM se manie avec savoir-faire et qu'un outil amplifie autant le mauvais jugement que le bon. La vraie frontière serait entre usage habile d'un instrument et délégation sans compréhension ni supervision. Les commentaires se divisent : les techniques de prompt deviennent-elles obsolètes à chaque génération de modèles, ou la communication claire et l'expérience métier restent-elles durables ? Certains comparent les LLM à des machines à sous et s'inquiètent des effets sur la pensée et la maintenabilité du code."
+    },
+    {
+      "title": "Des modèles d'IA peuvent prouvablement cacher des capacités arbitraires, sapant les audits de sécurité",
+      "url": "https://arxiv.org/abs/2610.13928",
+      "hn": "https://news.ycombinator.com/item?id=50065692",
+      "points": 157,
+      "comments": 86,
+      "summary": "Un papier arXiv montre qu'on peut incruster des réseaux de neurones chiffrés dans les poids d'un modèle hôte, déchiffrés et activés uniquement par un déclencheur secret : sous hypothèses cryptographiques, ces circuits cachés restent prouvablement difficiles à détecter ou interpréter, même avec accès complet aux poids. Les tests PyTorch sur une tâche de prédiction de réactions chimiques ont résisté au fine-tuning, au bruitage des poids, à la recherche de déclencheurs par gradient et à l'entraînement adverse. Le résultat fragilise l'hypothèse centrale des évaluations de capacités menées avant déploiement."
+    },
+    {
+      "title": "Le FMI avertit qu'un krach des actions IA pourrait ébranler tout le système financier mondial",
+      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "hn": "https://news.ycombinator.com/item?id=50067356",
+      "points": 57,
+      "comments": 41,
+      "summary": "Dans son rapport semestriel sur la stabilité financière mondiale, le FMI classe un effondrement des valorisations liées à l'IA parmi trois « risques saillants », aux côtés de la hausse des coûts d'emprunt des États et d'une cyberattaque majeure. Il pointe des valorisations élevées, un levier croissant, des expositions concentrées et des montages de financement circulaires, et prévient qu'une correction pourrait couper net l'investissement et se propager mondialement, les marchés asiatiques étant les plus exposés après les États-Unis. Publié ce matin, le sujet grimpe vite sur la page d'accueil."
+    },
+    {
+      "title": "Citroën ressuscite la 2CV en électrique pour contrer les constructeurs chinois",
+      "url": "https://www.bbc.com/news/articles/c620r33plgppo",
+      "hn": "https://news.ycombinator.com/item?id=50055220",
+      "points": 313,
+      "comments": 348,
+      "summary": "Citroën a dévoilé au Mondial de Paris un concept de 2CV électrique au style rétro, visé en concession vers 2028 autour de 13 000 £, misant comme Renault, VW et Fiat sur le patrimoine pour vendre des VE face à la concurrence chinoise. L'originale de 1948, voiture bon marché des campagnes françaises, était restée plus de 40 ans en production. Les commentaires doutent que la nostalgie suffise — les acheteurs pragmatiques regardent autonomie et prix — même si certains saluent un poids sous la tonne, et regrettent l'abandon des petites citadines thermiques abordables."
+    },
+    {
+      "title": "Un routeur Wi-Fi 7 transformé en radio logicielle à 320 Méch/s",
+      "url": "https://github.com/h0m3us3r/w1700k-sdr",
+      "hn": "https://news.ycombinator.com/item?id=50055593",
+      "points": 323,
+      "comments": 89,
+      "summary": "Un bidouilleur a converti un routeur Gemtek W1700K en récepteur SDR large bande : la radio MediaTek MT7996 capture des échantillons IQ 14 bits jusqu'à 320 Méch/s, streamés en 10 GbE par le SoC Airoha, avec un firmware maison qui initialise la radio dès la mise sous tension. Un hôte Linux affiche spectre et chute d'eau en direct dans le navigateur, sur les bandes 2,4, 5 et 6 GHz avec accord arbitraire en temps réel. Du matériel grand public à quelques dizaines d'euros rejoint ainsi le territoire des SDR haut de gamme."
+    },
+    {
+      "title": "Le GPU Intel D270 embarque 480 Go de LPDDR5X pour l'IA agentique sans HBM",
+      "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "hn": "https://news.ycombinator.com/item?id=50063365",
+      "points": 164,
+      "comments": 73,
+      "summary": "Intel cible les charges agentiques, dominées par le prefill et très gourmandes en lecture, avec un GPU datacenter doté de 480 Go de LPDDR5X par carte, 32 cœurs Xe3P et 256 moteurs matriciels XMX. Le format PCIe 5.0 refroidi par air à 350 W évite HBM et refroidissement liquide pour maximiser les tokens par rack et par watt sur l'inférence longue à forte concurrence. Un pari à contre-courant de la course au HBM qui alimente la discussion sur l'économie de l'inférence."
+    },
+    {
+      "title": "Les cellules sanguines d'un donneur de 80 ans redeviennent des cellules souches d'âge moléculaire inférieur à 20 ans",
+      "url": "https://doi.org/10.1111/acel.70751",
+      "hn": "https://news.ycombinator.com/item?id=50064536",
+      "points": 145,
+      "comments": 98,
+      "summary": "Des chercheurs ont reprogrammé des cellules sanguines d'un donneur de 80 ans en cellules souches pluripotentes dont l'âge moléculaire mesuré est inférieur à 20 ans, suggérant que le vieillissement cellulaire est en partie réversible. Les auteurs présentent ces travaux, publiés dans Aging Cell, comme préliminaires. Le fil HN discute des implications pour la longévité et des limites entre rajeunissement mesuré par horloges épigénétiques et rajeunissement fonctionnel réel."
+    }
+  ]
+}
