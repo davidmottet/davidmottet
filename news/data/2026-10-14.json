@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-14",
+  "title": "Micro dans la salle du conseil d'OpenAI, Apple s'installe dans la maison avec HomeView et le borrow checker de Rust pris en défaut",
+  "intro": "Journée chargée côté confiance et sécurité : un ingénieur d'OpenAI est arrêté pour avoir prétendument posé un micro dans une salle de réunion de la direction, Bloomberg révèle que des analystes de la CFTC auraient été sommés de retirer leur analyse de trades pétroliers suspects, et Character.AI se place sous Chapter 11. En face, les lancements s'enchaînent : Apple dévoile son hub domestique HomeView, Google pousse Gemini 4 Argon, Mozilla officialise Firefox Enterprise et Thunderbird arrive sur iOS. Et les fondamentaux ne sont pas oubliés, entre des bugs de sûreté vieux de 11 ans dans le borrow checker de Rust et une archive royale hittite de 3 400 ans exhumée en Turquie.",
+  "items": [
+    {
+      "title": "Un ingénieur d'OpenAI arrêté pour avoir mis sur écoute la salle de réunion de la direction",
+      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+      "hn": "https://news.ycombinator.com/item?id=50078141",
+      "summary": "Selon le San Francisco Standard, un ingénieur d'OpenAI a été arrêté pour avoir prétendument dissimulé un dispositif d'écoute dans une salle de conférence réservée aux dirigeants. L'affaire prend une tournure d'espionnage industriel : des commentateurs HN relèvent qu'un compte de chatbot lié au conjoint du suspect aurait fourni des indices aux enquêteurs, et raillent des « espions pas très malins ». Elle survient dans un climat déjà tendu chez OpenAI, qui a licencié début octobre trois chercheurs pour manquement aux règles de confidentialité."
+    },
+    {
+      "title": "Apple HomeView : un hub domestique à écran 7 pouces, livré mi-novembre",
+      "url": "https://www.apple.com/apple-homeview/",
+      "hn": "https://news.ycombinator.com/item?id=50071017",
+      "points": 437,
+      "comments": 546,
+      "summary": "Apple officialise HomeView, centre de commande Siri pour la maison : écran Liquid Retina de 7 pouces, puce A18, deux déclinaisons (à poser sur socle haut-parleur en quatre coloris, ou murale) et une interface pilotée principalement à la voix, sans App Store dédié. Les précommandes sont ouvertes pour une livraison autour de la mi-novembre, et l'annonce s'accompagne d'une nouvelle Apple TV 4K et d'un HomePod mini 2. Avec 546 commentaires, c'est l'un des fils les plus animés du jour."
+    },
+    {
+      "title": "Gemini 4 Argon en tête de HN, porté par la question de sa disponibilité",
+      "url": "https://deepmind.google/models/gemini/",
+      "hn": "https://news.ycombinator.com/item?id=50073879",
+      "points": 335,
+      "comments": 275,
+      "summary": "Le modèle frontier de Google, annoncé fin septembre, revient en tête de page : sortie portée à 1 million de tokens par réponse (contre 64 K auparavant), tarif de lancement à 2 $/10 $ par million de tokens (4 $/20 $ ensuite) et 85,8 % revendiqués en découverte de vulnérabilités réelles. L'accès reste le principal sujet de discussion : d'abord réservé à des partenaires de cyberdéfense, le modèle arrive progressivement pour les abonnés payants, et Google a annoncé dans la foulée une déclinaison Gemini 4 Argon for Robotics."
+    },
+    {
+      "title": "Des bugs d'unsoundness vieux de 11 ans découverts dans le borrow checker de Rust",
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "hn": "https://news.ycombinator.com/item?id=50069499",
+      "points": 541,
+      "comments": 313,
+      "summary": "Une issue GitHub recense des failles de sûreté présentes depuis 11 ans dans le borrow checker, la pièce maîtresse des garanties mémoire de Rust. Ce type de bug fait accepter au compilateur du code « safe » qui ne devrait pas compiler, par exemple en laissant une valeur survivre à l'emprunt dont elle dépend — de quoi produire des références pendantes sans une ligne d'unsafe. Le fil, très suivi (313 commentaires), ravive le débat récurrent sur les limites des garanties formelles du langage."
+    },
+    {
+      "title": "Des analystes de la CFTC sommés de retirer leur analyse de trades pétroliers suspects",
+      "url": "https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract-analysis-of-suspicious-oil-trades-on-iran",
+      "hn": "https://news.ycombinator.com/item?id=50069329",
+      "points": 390,
+      "comments": 196,
+      "summary": "Une enquête de Bloomberg affirme que des agents du régulateur américain des marchés dérivés ont reçu l'ordre de retirer leur analyse de transactions pétrolières étrangement bien synchronisées avec les annonces de Donald Trump sur l'Iran. La CFTC enquêtait sur ces paris — chiffrés à 2,6 milliards de dollars par la presse au printemps — et avait demandé leurs données aux plateformes de CME et ICE. Le fil s'inquiète de l'indépendance des régulateurs financiers face au pouvoir politique."
+    },
+    {
+      "title": "Mozilla lance Firefox Enterprise, du support payant pour les organisations",
+      "url": "https://www.firefox.com/en-US/enterprise/",
+      "hn": "https://news.ycombinator.com/item?id=50070302",
+      "points": 364,
+      "comments": 162,
+      "summary": "Mozilla officialise une offre destinée aux entreprises, écoles et administrations qui utilisent Firefox pour des opérations critiques : canal de support privé avec accès direct aux employés de Mozilla et temps de réponse garantis, remises sur des développements sur mesure (intégrations, tests de compatibilité) et visibilité anticipée sur la feuille de route. La documentation, la base de connaissances et les forums communautaires restent gratuits, tout comme l'ESR et les politiques de groupe existantes — le modèle rappelle le support entreprise payant de Chrome."
+    },
+    {
+      "title": "Character.AI engage une procédure volontaire de Chapter 11",
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "hn": "https://news.ycombinator.com/item?id=50068036",
+      "points": 173,
+      "comments": 192,
+      "summary": "La plateforme de compagnons IA annonce sur son blog s'être placée volontairement sous la protection du Chapter 11, le régime américain de restructuration. La nouvelle arrive après une année noire : procès réglés avec des familles autour de la santé mentale d'adolescents, mise en demeure de Disney sur des personnages contrefaits et fermeture fin 2025 des conversations ouvertes pour les mineurs. Les 192 commentaires y voient un signal pour toute l'économie des chatbots compagnons, dont la modération coûte cher et dont le public le plus engagé a été écarté."
+    },
+    {
+      "title": "EmbeddingGemma 2 détourné en modèle de reconnaissance vocale",
+      "url": "https://eg2.haku.sh/",
+      "hn": "https://news.ycombinator.com/item?id=50069971",
+      "points": 301,
+      "comments": 71,
+      "summary": "Des développeurs montrent qu'EmbeddingGemma 2, le modèle d'embeddings multimodal on-device de Google, peut être transformé en modèle speech-to-text fonctionnel. L'astuce illustre la porosité croissante entre familles de modèles : un réseau entraîné à représenter du contenu peut, avec un montage adapté, en transcrire. Le fil (301 points) salue le bricolage et discute de ce que ces reconversions disent des représentations internes des modèles audio."
+    },
+    {
+      "title": "Minions : Apple fabrique un cloud de GPU virtuels avec les Mac inactifs",
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "hn": "https://news.ycombinator.com/item?id=50070593",
+      "points": 169,
+      "comments": 73,
+      "summary": "La recherche d'Apple décrit « Minions », un cloud GPU virtuel, dynamique et distribué, construit sur les machines Apple Silicon inactives d'une organisation — avec, avant son adoption en interne, des files d'attente d'inférence dépassant parfois dix heures. Le système gère deux types de charges (génération d'embeddings via transformers et complétions LLM via Ollama), surveille les machines par heartbeat toutes les cinq minutes et fait transiter entrées et sorties par S3. Les lecteurs critiques notent l'absence de benchmarks de débit ou de coût par token dans l'évaluation."
+    },
+    {
+      "title": "L'intelligence déroutante d'une cellule unique (2024)",
+      "url": "https://jsomers.net/e-coli-chemotaxis/",
+      "hn": "https://news.ycombinator.com/item?id=50041866",
+      "points": 381,
+      "comments": 119,
+      "summary": "Cet essai de 2024 sur le chimiotactisme d'E. coli remonte en tête de HN : comment une bactérie sans neurone ni cerveau « décide » de sa trajectoire en suivant les gradients chimiques de son environnement. À 381 points et 119 commentaires, le fil confirme l'appétit de la communauté pour la biologie computationnelle — et pour la question de ce qu'on appelle, au juste, de l'intelligence."
+    },
+    {
+      "title": "Une archive royale hittite de 3 400 ans exhumée en Turquie",
+      "url": "https://www.thehistoryblog.com/archives/77107",
+      "hn": "https://news.ycombinator.com/item?id=50067414",
+      "points": 278,
+      "comments": 71,
+      "summary": "À Kayalıpınar (l'antique Šamuḫa, province de Sivas), les fouilles menées par Çiğdem Maner de l'université Koç ont livré 131 tablettes cunéiformes en 2026, portant l'archive à 184 documents datés du règne de Tudhaliya II, il y a environ 3 400 ans. Les textes, en hittite et en hourrite, racontent une épidémie de fièvre meurtrière pour les enfants, la maladie puis les funérailles d'une jeune princesse, et une lettre de généraux réclamant soldats, chevaux et chars. L'équipe y voit la plus importante archive en langue hittite découverte au XXIe siècle."
+    },
+    {
+      "title": "Thunderbird prépare son application native pour iOS",
+      "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
+      "hn": "https://news.ycombinator.com/item?id=50072913",
+      "points": 124,
+      "comments": 43,
+      "summary": "L'équipe de Thunderbird publie un premier aperçu de son client mail natif pour iPhone, encore en développement. Après l'arrivée de Thunderbird sur Android fin 2024, c'est la dernière grande plateforme qui manquait au vétéran du mail libre. Le fil accueille la nouvelle avec un enthousiasme prudent, l'écosystème iOS restant difficile pour les clients mail indépendants."
+    }
+  ]
+}

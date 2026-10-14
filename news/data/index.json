@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-14",
+      "title": "Micro dans la salle du conseil d'OpenAI, Apple s'installe dans la maison avec HomeView et le borrow checker de Rust pris en défaut",
+      "count": 12
+    },
+    {
       "date": "2026-10-13",
       "title": "Agents frontier chez Meta, frigos de supermarchés piratés et mise en garde du FMI sur la bulle IA",
       "count": 12
