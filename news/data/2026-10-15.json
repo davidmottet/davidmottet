@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-15",
+  "title": "La sécurité des agents IA mise en cause, la dette des datacenters cherche preneur et OpenCode 2.0 réorganise l'agent de codage",
+  "intro": "Grosse journée pour les comptes à rendre de l'IA : des experts en sécurité imputent la vague de « piratages par IA » à des sandbox mal configurées plutôt qu'à des modèles rebelles, pendant que les banques tentent de refourguer la dette des datacenters qu'elles viennent de souscrire et qu'Anthropic est accusée d'avoir copié la conception de Mononoke sans crédit. Côté humain, deux récits dominent la une : les leçons pratiques d'un patient atteint d'un cancer et des chiffres préoccupants sur le suicide des hommes d'âge moyen et le déclin de la vie sociale américaine. Les outils ne sont pas en reste, entre OpenCode 2.0, la réutilisation des connexions HTTP/1 dans Go 1.27 et un nouveau MoE on-device chez Liquid AI.",
+  "items": [
+    {
+      "title": "Les agents IA ne « deviennent pas incontrôlables » : les labos négligent les bases de la sécurité",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "hn": "https://news.ycombinator.com/item?id=50091788",
+      "points": 854,
+      "comments": 481,
+      "summary": "Après la série d'incidents de l'été — accès non autorisé d'un modèle d'Anthropic aux infrastructures de production de trois organisations, piratages involontaires attribués à Gemini, l'affaire OpenAI/Hugging Face — des experts (SANS Institute, RAND, Berryville Institute) démontent le récit de l'« IA rebelle » : en cause, des défauts de confinement et de supervision, l'activité malveillante sur Hugging Face ayant duré des jours sans que personne ne s'en aperçoive. Le sandboxing sécurisé date des années 1990, rappellent-ils, reprochant aux labos de traiter ces questions comme de l'« AI safety » en ignorant les praticiens de la sécurité. En toile de fond : un projet de loi de sénateurs démocrates sur la responsabilité des opérateurs d'agents et une enquête de la FTC visant plusieurs labos. Sujet le plus brûlant du jour sur HN."
+    },
+    {
+      "title": "Ce qu'il faut savoir quand on vous diagnostique un cancer",
+      "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
+      "hn": "https://news.ycombinator.com/item?id=50093568",
+      "points": 987,
+      "comments": 237,
+      "summary": "JJ Maxwell, diagnostiqué d'un carcinome épidermoïde de la bouche en mai 2026, tire les leçons pratiques de son parcours : rappeler sans relâche pour décrocher des rendez-vous plus tôt, exiger d'emblée les tests génétiques complets (un test fait sur la mauvaise tumeur lui a coûté plusieurs mois), lire soi-même les référentiels de traitement NCCN, interroger le chirurgien sur son volume de cas, et chercher un deuxième avis dans un grand centre anticancéreux s'il est à moins de 2-3 heures de route. Fil conducteur : « personne ne se soucie plus de votre dossier que vous ». Le plus gros score du jour (987 points), avec une discussion fournie de témoignages."
+    },
+    {
+      "title": "OpenCode 2.0",
+      "url": "https://anoma.ly/notes/opencode-2-0/",
+      "hn": "https://news.ycombinator.com/item?id=50094994",
+      "points": 411,
+      "comments": 173,
+      "summary": "L'agent de codage open source passe en 2.0 avec une architecture repensée : un unique service d'arrière-plan auquel se connectent terminal, web et application de bureau, une API réécrite de zéro que l'agent peut appeler lui-même, et un « Code Mode » qui transforme serveurs MCP et endpoints OpenAPI en fonctions JavaScript appelables en un seul aller-retour. S'y ajoutent des sous-agents et commandes shell en arrière-plan, et plus de 80 fonctionnalités internes réimplémentées comme plugins rechargeables à chaud. Migration musclée : les plugins 1.0 ne fonctionnent plus et l'API serveur change complètement."
+    },
+    {
+      "title": "Le Scion d'Anthropic est fortement inspiré de Mononoke",
+      "url": "https://sunshowers.io/posts/anthropic-mononoke/",
+      "hn": "https://news.ycombinator.com/item?id=50094694",
+      "points": 312,
+      "comments": 120,
+      "summary": "Rain, qui a travaillé sur Mononoke chez Meta, met côte à côte le billet d'ingénierie d'Anthropic sur son nouveau système de gestion de versions Scion et la conception des « derived data » de Mononoke (open source via le projet Sapling) : parallèles étroits, crédit quasi absent — une présentation « à la limite du plagiat », d'autant qu'Anthropic suggère que la conception vient de Claude. L'argument de fond dépasse le cas d'espèce : des LLM entraînés sur du code open source reproduisent naturellement les conceptions existantes, ce qui rend l'attribution plus nécessaire que jamais."
+    },
+    {
+      "title": "Les banques cherchent déjà à se délester de la dette des datacenters IA qu'elles ont souscrite",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "hn": "https://news.ycombinator.com/item?id=50092664",
+      "points": 338,
+      "comments": 237,
+      "summary": "Selon le FT et Bloomberg, JPMorgan, Morgan Stanley, SMBC et MUFG explorent des transferts de risque significatifs sur leurs prêts datacenters, et un consortium peine depuis six mois à distribuer 38 milliards de dollars de dette de construction pour des sites loués à Oracle. Les signaux s'accumulent : CDS d'Oracle à ~151 points de base (un niveau de 2009), note abaissée à BBB-, carnets d'ordres des obligations des hyperscalers tombés de 5x à moins de 2x de sursouscription, et environ 120 milliards de dollars de dépenses logées dans des véhicules hors bilan. Le débat porte sur la question de savoir si le crédit restera ouvert à des conditions raisonnables pour financer la suite du boom."
+    },
+    {
+      "title": "Incendie sur un site Starlink en Bulgarie après un sabotage présumé en Pologne",
+      "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/",
+      "hn": "https://news.ycombinator.com/item?id=50092730",
+      "points": 319,
+      "comments": 208,
+      "summary": "Selon cette dépêche de l'agence de presse allemande DPA, un incendie a touché un site Starlink en Bulgarie, peu après des actes de sabotage présumés visant des installations en Pologne. L'article complet n'était pas accessible au moment de la rédaction ; le sujet s'inscrit dans la série d'atteintes aux infrastructures critiques en Europe de l'Est et a généré l'une des discussions les plus nourries de la journée sur HN."
+    },
+    {
+      "title": "Royaume-Uni : le taux de suicide des hommes d'âge moyen à son plus haut niveau jamais enregistré",
+      "url": "https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/",
+      "hn": "https://news.ycombinator.com/item?id=50093180",
+      "points": 344,
+      "comments": 434,
+      "summary": "Le Telegraph rapporte que les taux de suicide chez les hommes d'âge moyen atteignent un record historique au Royaume-Uni. L'article est sous paywall et n'a pas pu être consulté en détail, mais le sujet a déclenché la discussion la plus commentée du jour sur HN (434 commentaires), signe de la résonance du thème de la détresse masculine et de l'isolement dans la communauté tech."
+    },
+    {
+      "title": "L'activité sociale des Américains a fortement décliné en 30 ans",
+      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
+      "hn": "https://news.ycombinator.com/item?id=50089921",
+      "points": 293,
+      "comments": 295,
+      "summary": "Data for Progress a posé à 1 098 adultes américains les questions des enquêtes DDB Needham (1975-1999) pour comparer 2026 à 1995 : recevoir chez soi passe de 88 % à 67 %, la fréquentation d'un lieu de culte de 74 % à 54 %, pique-niques et réunions de club perdent 19 points chacun ; à l'inverse, internet (+90 points) et les jeux vidéo (+22) explosent. Les auteurs soulignent eux-mêmes les limites méthodologiques (modes d'enquête différents), mais les résultats confortent les travaux sur le recul du temps passé avec les autres et la baisse du nombre d'amis proches."
+    },
+    {
+      "title": "Meilleure réutilisation des connexions HTTP/1 dans Go 1.27",
+      "url": "https://go.dev/blog/http-connection-reuse",
+      "hn": "https://news.ycombinator.com/item?id=50090369",
+      "points": 217,
+      "comments": 32,
+      "summary": "Jusqu'à Go 1.26, fermer un corps de réponse HTTP/1 sans l'avoir lu en entier — un octet restant suffit — abandonnait silencieusement la connexion, imposant un nouveau handshake TCP+TLS à la requête suivante. À partir de Go 1.27, le transport draine automatiquement le corps non lu (jusqu'à 50 ms ou 256 Ko) pour pouvoir réutiliser la connexion : dans le benchmark du billet, 100 requêtes vers index.golang.org passent d'environ 710 ms à 150 ms, près de 5 fois plus rapide. Les contournements manuels de drainage deviennent inutiles."
+    },
+    {
+      "title": "Tiny Little Office : le lien est le document",
+      "url": "https://tinylittleoffice.com/",
+      "hn": "https://news.ycombinator.com/item?id=50096142",
+      "points": 233,
+      "comments": 31,
+      "summary": "Une suite bureautique minimaliste de dix applications — traitement de texte, tableur, présentations, dessin, diagrammes, calendrier… — dont les documents vivent entièrement dans l'URL : pas de compte, rien n'est stocké côté serveur, le partage se fait en copiant le lien. Le genre de démonstration d'ingéniosité web frugale dont HN raffole, avec ses limites évidentes (JavaScript requis, taille bornée par la longueur des URL)."
+    },
+    {
+      "title": "LFM2.5-24B-A2B : un MoE taillé pour les agents rapides sur l'appareil",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "hn": "https://news.ycombinator.com/item?id=50097369",
+      "points": 114,
+      "comments": 30,
+      "summary": "Liquid AI publie en poids ouverts le plus gros modèle de sa famille LFM2.5 : un mixture-of-experts de 24 milliards de paramètres dont 2 milliards actifs par token, contexte porté à 131 072 tokens, pré-entraînement passé de 17 à 33 billions de tokens. Pensé pour tourner localement (184 tokens/s sur Apple M5 Max, support llama.cpp, MLX, vLLM), il devance Qwen3.6-35B-A3B sur la plupart des benchmarks agentiques et de suivi d'instructions, tout en restant derrière sur les épreuves de connaissances et de code comme GPQA ou SWE-Bench."
+    },
+    {
+      "title": "Jev 1.14.0 : des fonctionnalités expérimentales « pour les rêveurs »",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "hn": "https://news.ycombinator.com/item?id=50095353",
+      "points": 233,
+      "comments": 80,
+      "summary": "TypeSafe AI met à jour Jev, son modèle « System One » piloté en JSON pour la prise de décision dans les logiciels d'automatisation : la 1.14.0 améliore surtout le multilingue et introduit un type « box » (boîte englobante) sans erreur de type permise. La partie la plus commentée est la « danger zone » : des fonctionnalités opt-in par en-têtes d'API — images composables, contexte long — que l'éditeur déconseille explicitement en production, assumant de publier des capacités encore « trop irrégulières pour s'en porter garant »."
+    }
+  ]
+}

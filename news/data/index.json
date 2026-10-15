@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-15",
+      "title": "La sécurité des agents IA mise en cause, la dette des datacenters cherche preneur et OpenCode 2.0 réorganise l'agent de codage",
+      "count": 12
+    },
+    {
       "date": "2026-10-14",
       "title": "Micro dans la salle du conseil d'OpenAI, Apple s'installe dans la maison avec HomeView et le borrow checker de Rust pris en défaut",
       "count": 12
