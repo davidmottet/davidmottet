@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-19",
+  "title": "Le web se barricade face aux agents IA, DeepSeek casse les prix de la recherche, les mathématiciens sur le pied de guerre — et des coraux qui guérissent par contact",
+  "intro": "Le fil rouge du jour, c'est le bras de fer entre l'IA et le web ouvert : DeepSeek lance une API de recherche à prix cassés pour les agents, au moment même où Amazon, Walmart ou Yelp leur ferment la porte et où Meta s'octroie par ses nouvelles conditions le droit de scraper les sites des entreprises. En parallèle, la question de la confiance envers l'IA traverse la une : Terry Tao dit ne plus pouvoir « s'engager constructivement » avec OpenAI, Lean livre des noyaux vérifiés après son été des bugs de cohérence, et Anthropic propose au Congrès une loi de sécurité aux seuils très élevés. La bonne nouvelle vient de l'océan : des coraux blanchis guérissent en quelques semaines au contact d'un voisin sain.",
+  "items": [
+    {
+      "title": "DeepSeek lance la recherche et le fetch pour agents à 0,75 $ les 1 000 requêtes",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hn": "https://news.ycombinator.com/item?id=50138531",
+      "points": 561,
+      "comments": 263,
+      "summary": "DeepSeek ouvre une API de recherche web et de récupération de pages facturée 0,75 $ les 1 000 requêtes réussies, adossée à son propre index — loin des tarifs de Brave (~5 $), Exa (~4 $) ou Kagi (12 $). Sur HN, le débat oppose l'auto-hébergement (SearXNG, vite rattrapé par les CAPTCHA et le rate limiting) aux API payantes, et plusieurs écartent DeepSeek faute de garantie de non-rétention des données. Beaucoup notent que ce marché n'existe que parce que Google refuse de vendre une API de recherche digne de ce nom, pendant que les opérateurs de sites décrivent un déluge de crawlers IA qui ignorent robots.txt."
+    },
+    {
+      "title": "Les sites web ferment leurs portes aux agents IA",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "hn": "https://news.ycombinator.com/item?id=50141657",
+      "points": 105,
+      "comments": 86,
+      "summary": "The Verge documente la fermeture progressive du web aux agents : Amazon a bloqué en septembre l'agent Muse de Meta, les utilisateurs rapportent des échecs au paiement chez Walmart (vérifications anti-bots), Yelp réserve l'accès non humain à ses licences payantes et Delta comme United rappellent qu'aucun partenariat n'autorise la réservation par agent. Cloudflare a changé mi-septembre ses réglages par défaut contre les robots IA, pendant que Meta, Walmart, Stripe et d'autres planchent sur un standard ouvert de communication agent-commerçant. La question de fond divise : l'agent est-il le mandataire de l'internaute ou un robot à bloquer comme les autres ?"
+    },
+    {
+      "title": "Des juristes alertent : les nouvelles conditions de Meta autorisent un scraping très large",
+      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+      "hn": "https://news.ycombinator.com/item?id=50139692",
+      "points": 168,
+      "comments": 46,
+      "summary": "À partir du 30 octobre, tout compte professionnel sur Facebook, Instagram, Messenger ou WhatsApp sera réputé consentir à ce que Meta crawle et collecte le contenu des sites « associés » à son activité, y compris pour entraîner « AI at Meta » — sans possibilité de refus autre que cesser l'usage commercial des produits. Pour James Grimmelmann (Cornell), c'est une permission claire d'entraîner l'IA sur les sites des éditeurs de presse, et la clause des « identifiants de test » pourrait permettre de franchir les murs d'inscription ; un autre juriste y voit une vente liée au sens antitrust. Meta répond que robots.txt reste respecté et que rien ne change dans son crawl des éditeurs."
+    },
+    {
+      "title": "La loi de sécurité IA proposée par Anthropic ne s'applique qu'à partir de 50 morts ou 1 milliard de dollars de dégâts",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "hn": "https://news.ycombinator.com/item?id=50141429",
+      "points": 115,
+      "comments": 129,
+      "summary": "Selon Politico, Anthropic fait circuler au Congrès un projet de loi fédéral où un modèle de frontière ne pourrait être suspendu qu'en cas de risque « prévisible et imminent » de plus d'un milliard de dollars de dégâts ou de 50 morts ou blessés graves, limité à trois catégories : arme biologique, modèle échappant à ses garde-fous, cyberattaque. Des évaluateurs indépendants enregistrés auprès du département du Commerce — seule agence habilitée à saisir un juge fédéral — mèneraient les audits, les autres agences fédérales se voyant interdire toute suspension. Le texte, sans parrain déclaré au Capitole, nourrit un débat fourni sur HN quant à des seuils jugés très élevés et à la mise à l'écart de la FTC ou de la FDA."
+    },
+    {
+      "title": "Terry Tao : âge d'or ou âge sombre pour les mathématiques (et la science) ?",
+      "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
+      "hn": "https://news.ycombinator.com/item?id=50141681",
+      "points": 74,
+      "comments": 90,
+      "summary": "Le médaillé Fields, utilisateur assidu de l'IA depuis 2023, s'interroge publiquement sur la direction que prend sa discipline, entre promesse d'expansion (les problèmes ouverts sont inépuisables, l'IA peut élargir le champ du travail collaboratif) et signaux inquiétants. Il s'est dit « horrifié » par la publication par OpenAI de plus de 350 résultats qui percutent des années-personnes de recherche, surtout chez les jeunes mathématiciens, et 25 médaillés Fields ont signé une déclaration jugeant cette pratique « préjudiciable » au domaine. En toile de fond : la suspension de 600 millions de dollars de financements à UCLA, et un malaise sur des preuves générées par IA qu'aucun expert ne comprend entièrement et dont aucun auteur ne peut répondre."
+    },
+    {
+      "title": "Lean livre désormais des noyaux vérifiés",
+      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
+      "hn": "https://news.ycombinator.com/item?id=50114758",
+      "points": 182,
+      "comments": 65,
+      "summary": "Leonardo de Moura annonce que l'assistant de preuve Lean s'accompagne désormais de noyaux formellement vérifiés, aboutissement d'une année mouvementée : l'« été des bugs de cohérence » avait vu un défaut du noyau produire une fausse réfutation de la conjecture de Collatz, corrigée en une heure, puis une chasse aux bugs menée avec des modèles d'OpenAI jusqu'à la version corrective 4.33.1 d'août. Le vérificateur Con-Leche, dont le code et les preuves ont été générés par Claude, apporte une preuve de cohérence formalisée (sous hypothèses de théorie des ensembles) et a revérifié l'intégralité de mathlib et ses 200 000 théorèmes. Un jalon majeur pour la confiance dans les preuves vérifiées par machine, à l'heure où l'IA en produit en masse."
+    },
+    {
+      "title": "Des coraux blanchis se rétablissent en quelques semaines au contact d'un voisin sain",
+      "url": "https://www.nature.com/articles/d41586-026-03266-x",
+      "hn": "https://news.ycombinator.com/item?id=50126253",
+      "points": 527,
+      "comments": 113,
+      "summary": "Des écologues marins de Stanford (équipe de Stephen Palumbi) montrent dans Science Advances que des fragments blanchis de Pocillopora damicornis retrouvent leurs algues symbiotiques en huit semaines environ lorsqu'ils touchent un fragment sain, alors que des paires séparées de quelques millimètres ne récupèrent pas ; la microscopie montre le transfert d'algues et de nutriments d'un corail à l'autre. L'enthousiasme est tempéré par les limites de l'étude : dix paires en laboratoire, une seule espèce, et un effet observé uniquement entre clones génétiquement identiques capables de fusionner leurs tissus. Un espoir néanmoins, alors que 84 % des récifs mondiaux ont subi un stress thermique de niveau blanchissement entre 2023 et 2025."
+    },
+    {
+      "title": "macOS 15.8.2 casse OpenGL",
+      "url": "https://developer.apple.com/forums/thread/850550",
+      "hn": "https://news.ycombinator.com/item?id=50141909",
+      "points": 168,
+      "comments": 126,
+      "summary": "Un fil des forums développeurs d'Apple rapporte que la mise à jour macOS 15.8.2 casse des applications OpenGL, API qu'Apple a dépréciée dès 2018 au profit de Metal mais jamais retirée — une large base de jeux et d'outils anciens en dépend toujours. Des développeurs de jeux indépendants constatent depuis des mois des titres qui ne tournent plus sur Mac sans autre issue que de réécrire leurs shaders. L'épisode, très commenté sur HN, illustre la fragilité de tout ce qui repose sur une API maintenue à minima par la plateforme."
+    },
+    {
+      "title": "Ce que le documentaire sur Elizabeth Holmes « You Can See Everything » cache à son spectateur",
+      "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
+      "hn": "https://news.ycombinator.com/item?id=50137620",
+      "points": 271,
+      "comments": 372,
+      "summary": "Le documentaire co-réalisé par Nathan Fielder et Lance Oppenheim, tourné pendant trois ans à partir de 34 jours avant l'incarcération de la fondatrice de Theranos (condamnée en 2022 à 11 ans de prison), a stupéfié la critique à Telluride avant sa sortie en salles. The Profile soutient que le film lui-même trompe son public dans sa manière de mettre en scène Holmes, qui y affirme « je n'ai rien à vous cacher ». Avec 372 commentaires, c'est l'un des fils les plus animés du jour, à la mesure de la fascination qu'exerce toujours l'affaire Theranos."
+    },
+    {
+      "title": "Pele — des diagrammes Mermaid en SVG thémables",
+      "url": "https://pele.run/",
+      "hn": "https://news.ycombinator.com/item?id=50132193",
+      "points": 537,
+      "comments": 51,
+      "summary": "Pele promet de rendre les diagrammes Mermaid sous forme de SVG propres et personnalisables par thèmes, là où l'export d'images du Mermaid standard reste rigide. L'outil s'est hissé parmi les plus gros scores de la une (537 points), signe de l'appétit des développeurs pour la génération de schémas soignés à partir de texte — un usage devenu quotidien avec la documentation générée ou assistée par IA."
+    },
+    {
+      "title": "RepRapMicron : l'impression 3D à l'échelle du micron, en open hardware",
+      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+      "hn": "https://news.ycombinator.com/item?id=50141076",
+      "points": 194,
+      "comments": 28,
+      "summary": "Vik Olliver, pionnier du projet RepRap, développe une imprimante 3D auto-réplicable visant la précision micrométrique : le projet vient de produire son premier Benchy reconnaissable de 0,65 mm, après une refonte de la cinématique, une nouvelle chimie de résine et des structures multicouches à l'échelle du micron. L'objectif reste fidèle à l'esprit RepRap : amener la micro-fabrication sur les bureaux avec du matériel ouvert et bon marché. À noter qu'un second projet de micro-manipulateur sub-micrométrique open source figurait le même jour en une de HN."
+    },
+    {
+      "title": "Show HN : Sphinx — un hook qui vous interroge sur le code de votre IA avant de pousser",
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "hn": "https://news.ycombinator.com/item?id=50137950",
+      "points": 210,
+      "comments": 72,
+      "summary": "Ce Show HN s'attaque à la « dette de compréhension » du code généré par IA : Sphinx s'installe comme hook et vous pose des questions sur le code produit par votre assistant avant de vous laisser l'expédier, pour vérifier que vous comprenez ce que vous vous apprêtez à livrer. Avec 210 points et 72 commentaires, l'outil touche une corde sensible, au croisement de deux débats du jour : la productivité des assistants de code et la confiance qu'on peut accorder à ce qu'ils produisent."
+    }
+  ]
+}
