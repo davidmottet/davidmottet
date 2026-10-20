@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-20",
+  "title": "Linux 7.3, Mistral sur tous les fronts et la question de l'humain derrière la machine",
+  "intro": "Grosse journée noyau avec l'arrivée de Linux 7.3, pendant que Mistral occupe deux places en première page : des modèles de fondation pour séries temporelles et un partenariat avec le CERN autour de la physique des particules. L'autre fil rouge, c'est la place de l'humain dans un monde d'agents IA — des agents qui raisonnent en espace latent aux proxys LLM qu'on devrait auditer soi-même, en passant par un plaidoyer pour les mathématiques et un essai sur « quelqu'un derrière le logiciel ».",
+  "items": [
+    {
+      "title": "Linux 7.3 est disponible",
+      "url": "https://lwn.net/Articles/1101143/",
+      "hn": "https://news.ycombinator.com/item?id=50149392",
+      "points": 537,
+      "comments": 241,
+      "summary": "Nouvelle version du noyau, annoncée sur LWN. Au programme du cycle 7.3 : support initial des puces Apple M3 Pro/Max/Ultra (sans GPU), pilote pour le Steam Controller, graphismes Intel Nova Lake (Xe3P) activés par défaut, gains de performance Btrfs et lecture de la compression Windows dans le pilote NTFS. Le cycle a aussi été marqué par un volume de patchs inhabituel, attribué en partie aux contributions assistées par IA, portant l'arbre des sources à près de 41 millions de lignes — de quoi alimenter les 241 commentaires de la discussion."
+    },
+    {
+      "title": "« Il n'y a jamais eu de meilleur moment pour faire des maths » (3Blue1Brown)",
+      "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+      "hn": "https://news.ycombinator.com/item?id=50136150",
+      "points": 510,
+      "comments": 717,
+      "summary": "Grant Sanderson, l'auteur de la chaîne 3Blue1Brown, défend dans cette vidéo l'idée que c'est le meilleur moment de l'histoire pour se lancer dans les mathématiques. Le sujet a déclenché l'une des plus grosses discussions du jour sur HN — 717 commentaires — signe que la question de l'avenir des carrières scientifiques à l'ère de l'IA touche un nerf sensible de la communauté."
+    },
+    {
+      "title": "Quelqu'un derrière le logiciel",
+      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "hn": "https://news.ycombinator.com/item?id=50142573",
+      "points": 532,
+      "comments": 188,
+      "summary": "Essai de Karri Saarinen, cofondateur et CEO de Linear, sur le sentiment qu'il y a — ou non — « quelqu'un derrière le logiciel » qu'on utilise. Le texte résonne avec le moment actuel, où le code généré par IA se banalise et où la touche humaine devient un différenciateur. Avec 532 points et 188 commentaires, c'est l'un des sujets les plus discutés de la page."
+    },
+    {
+      "title": "HybridAgent : des agents LLM qui pensent en espace latent et agissent par le texte",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "hn": "https://news.ycombinator.com/item?id=50145337",
+      "points": 491,
+      "comments": 231,
+      "summary": "Des chercheurs de Stanford, de l'UIUC et de Together AI proposent des agents qui raisonnent en vecteurs latents continus mais appellent leurs outils en texte, en basculant entre les deux modes au sein d'une même génération, via un adaptateur baptisé HybridLink. Sur des modèles Qwen3 de 4B à 14B, ils annoncent +10,4 % de performance moyenne sur 11 benchmarks, 35 à 55 % de tokens en moins et un coût divisé par 2,7 à 3,7. Des chiffres auto-déclarés qui restent à répliquer, mais qui expliquent l'ampleur de la discussion (231 commentaires)."
+    },
+    {
+      "title": "Timestral : Mistral publie des modèles de fondation pour séries temporelles",
+      "url": "https://mistral.ai/news/timestral/",
+      "hn": "https://news.ycombinator.com/item?id=50150434",
+      "points": 379,
+      "comments": 67,
+      "summary": "Première incursion de Mistral dans les séries temporelles : quatre modèles (5M à 209M de paramètres) qui produisent des prévisions probabilistes multi-séries, gèrent les covariables et tournent sur CPU, sans GPU. Le modèle 209M prend la tête des classements zero-shot GIFT-Eval, TIME et fev-bench, et la version 28M ferait mieux que Chronos-2, pourtant quatre fois plus gros. Licence MIT modifiée, code sur GitHub et poids sur Hugging Face, avec déploiement on-premises ou air-gapped possible."
+    },
+    {
+      "title": "Wine porté sur OpenBSD",
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "hn": "https://news.ycombinator.com/item?id=50152307",
+      "points": 290,
+      "comments": 74,
+      "summary": "Un port de Wine fait son entrée dans l'arbre des ports d'OpenBSD, comme annoncé sur la liste openbsd-ports. C'est un petit événement : exécuter des binaires Windows via Wine était resté longtemps hors de portée sur ce système, notamment à cause de ses protections mémoire strictes qui s'accommodent mal des attentes de Wine. Le sujet a pris la première place de HN ce matin."
+    },
+    {
+      "title": "Si vous ne faites pas tourner votre propre proxy LLM, comment savoir ce qui se passe ?",
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "hn": "https://news.ycombinator.com/item?id=50145507",
+      "points": 278,
+      "comments": 195,
+      "summary": "Un billet au titre volontairement provocateur qui défend l'idée de faire passer tout son trafic d'agents et d'outils IA par un proxy LLM qu'on contrôle, pour voir réellement quels prompts, quelles données et quels appels d'outils partent vers les fournisseurs de modèles. La question de l'observabilité et de la confiance envers les outils IA fermés anime une discussion fournie de 195 commentaires."
+    },
+    {
+      "title": "William Gibson et le dépôt de marque sur le « cyberespace »",
+      "url": "https://colo.to/cyberspace.html",
+      "hn": "https://news.ycombinator.com/item?id=50146625",
+      "points": 250,
+      "comments": 115,
+      "summary": "Retour sur l'histoire du mot « cyberspace », forgé par William Gibson au début des années 1980 (« Burning Chrome », puis « Neuromancer »), et sur les tentatives de déposer ce terme comme marque commerciale. Un rappel que même les mots qui semblent appartenir à tout le monde ont une histoire juridique — sujet qui a trouvé son public avec 250 points et 115 commentaires."
+    },
+    {
+      "title": "Les alternatives à l'expérimentation animale décollent enfin",
+      "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+      "hn": "https://news.ycombinator.com/item?id=50150927",
+      "points": 193,
+      "comments": 49,
+      "summary": "IEEE Spectrum fait le point sur les organes sur puce, cultures cellulaires avancées et modèles computationnels qui remplacent progressivement les tests sur animaux. Le contexte réglementaire pousse dans ce sens : la FDA a engagé ces dernières années une feuille de route pour réduire, puis supprimer, l'exigence de tests animaux pour certains médicaments au profit de ces méthodes dites « new approach methodologies »."
+    },
+    {
+      "title": "Let's Encrypt ajoute deux perspectives distantes supplémentaires pour la validation de domaine",
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+      "hn": "https://news.ycombinator.com/item?id=50150809",
+      "points": 173,
+      "comments": 57,
+      "summary": "L'autorité de certification étend sa validation « multi-perspective » : les contrôles de domaine seront effectués depuis deux points de vue réseau supplémentaires, situés dans des régions différentes. Cette technique, que Let's Encrypt a été la première à déployer à grande échelle, vise à contrer les détournements BGP qui permettraient à un attaquant de faire émettre un certificat pour un domaine qu'il ne contrôle pas."
+    },
+    {
+      "title": "Tmux et Claude Code : sessions, send-keys… et le plafond",
+      "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+      "hn": "https://news.ycombinator.com/item?id=50148855",
+      "points": 130,
+      "comments": 90,
+      "summary": "Un guide pratique pour piloter des agents de code dans tmux : sessions détachables qui survivent aux coupures SSH, send-keys pour injecter des prompts par script, capture-pane pour lire la sortie. L'auteur décrit aussi le « plafond » : au-delà de quatre agents environ, tmux ne sait pas dire qui travaille, qui attend ou qui a fini, le scraping d'écran devient fragile et rien ne survit à un redémarrage."
+    },
+    {
+      "title": "Le CERN et Mistral s'allient pour accélérer l'IA au service de la science",
+      "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "hn": "https://news.ycombinator.com/item?id=50153630",
+      "points": 124,
+      "comments": 18,
+      "summary": "Partenariat stratégique de long terme pour développer FLARE, présenté comme le premier modèle de fondation pour la physique des collisionneurs : entraîné sur des milliards de collisions simulées plutôt que sur du texte, il doit remplacer certains algorithmes spécialisés de reconstruction de particules. Le CERN dispose d'environ un exaoctet de données du LHC, et les volumes devraient être multipliés par dix après la mise à niveau prévue vers 2030. Deuxième apparition de Mistral en première page ce jour-là, après Timestral."
+    }
+  ]
+}

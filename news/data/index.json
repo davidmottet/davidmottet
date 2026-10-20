@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-20",
+      "title": "Linux 7.3, Mistral sur tous les fronts et la question de l'humain derrière la machine",
+      "count": 12
+    },
+    {
       "date": "2026-10-19",
       "title": "Le web se barricade face aux agents IA, DeepSeek casse les prix de la recherche, les mathématiciens sur le pied de guerre — et des coraux qui guérissent par contact",
       "count": 12
