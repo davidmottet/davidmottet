@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-21",
+  "title": "DeepSeek ouvre son moteur d'inférence pendant que la confiance numérique vacille",
+  "intro": "DeepSeek écrase la première page en publiant son moteur d'inférence en open source, pendant que Mistral prend le chemin inverse avec Voxtral 3, un modèle vocal aux poids fermés. L'autre fil rouge du jour, c'est la confiance numérique mise à rude épreuve : une autorité de certification intermédiaire compromise chez eMudhra, de fausses statistiques publiées pour se faire citer par les LLM, et plus de 300 nœuds de sortie Tor malveillants retirés du réseau. Côté plateformes, Apple agace les présentateurs sur iPad et Ofcom semble jeter l'éponge face à 4chan.",
+  "items": [
+    {
+      "title": "DeepSeek publie son moteur d'inférence en open source",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "hn": "https://news.ycombinator.com/item?id=50163277",
+      "points": 1827,
+      "comments": 675,
+      "summary": "DeepSeek met en open source DeepInfer, le moteur d'inférence qui fait tourner ses modèles en production — de très loin le sujet le plus chaud du jour, avec plus de 1 800 points. La discussion tourne surtout autour de l'économie de l'inférence : les commentateurs se divisent sur la question de savoir si servir des modèles est rentable et si les modèles « non-frontière » deviennent une commodité dont le prix s'effondre. Un commentaire cite un billet chinois évoquant 155 000 milliards de tokens servis par jour sur un seul cluster — chiffre invérifiable, mais qui donne l'échelle du débat."
+    },
+    {
+      "title": "eMudhra : une autorité de certification intermédiaire compromise",
+      "url": "https://emudhra.we-have-a-problem.com/",
+      "hn": "https://news.ycombinator.com/item?id=50166579",
+      "points": 217,
+      "comments": 97,
+      "summary": "Divulgation d'une compromission d'autorités de certification intermédiaires liées à eMudhra, avec des clés privées d'une faiblesse stupéfiante — l'une d'elles serait littéralement « 4 », selon un commentateur. Point rassurant relevé dans le fil : aucun certificat émis par ces intermédiaires n'apparaît dans les journaux de Certificate Transparency avant la remédiation par les navigateurs. La discussion critique au passage la remédiation inégale de Firefox sur Android et, plus largement, l'architecture du Web PKI, où n'importe quelle AC peut émettre pour n'importe quel domaine."
+    },
+    {
+      "title": "Publier de fausses statistiques pour être cité par les LLM",
+      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "hn": "https://news.ycombinator.com/item?id=50165801",
+      "points": 197,
+      "comments": 105,
+      "summary": "Un billet de peec.ai raconte comment publier des statistiques inventées suffit à se faire citer partout sur le web — et par les modèles de langage. Sur HN, le débat porte sur la capacité des LLM à juger la provenance de leurs sources, certains rappelant que les humains ne font guère mieux. Les fils les plus animés se demandent si empoisonner délibérément les données d'entraînement est justifiable, et si publier des chiffres fabriqués relève carrément de la fraude."
+    },
+    {
+      "title": "Apple a cassé une fonction essentielle de présentation sur iPad",
+      "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
+      "hn": "https://news.ycombinator.com/item?id=50165208",
+      "points": 297,
+      "comments": 168,
+      "summary": "Un billet reproche à Apple d'avoir cassé la gestion de l'écran externe pendant les présentations sur iPad : d'après le fil, passer d'un diaporama à une démonstration dans une autre application exige désormais d'arrêter complètement la présentation. Les commentateurs débattent pour savoir s'il s'agit d'un compromis d'ergonomie délibéré ou d'une régression, et proposent des correctifs simples, comme laisser la dernière application diffusée garder l'écran externe. Le fil s'élargit en procès de la qualité d'iPadOS 27 et du rythme de sorties d'Apple."
+    },
+    {
+      "title": "Comment j'ai fait retirer plus de 300 nœuds de sortie Tor",
+      "url": "https://kaba.cx/posts/20261020_Tor/",
+      "hn": "https://news.ycombinator.com/item?id=50166257",
+      "points": 164,
+      "comments": 45,
+      "summary": "Un chercheur raconte avoir fait retirer du réseau plus de 300 nœuds de sortie Tor malveillants, impliqués dans l'interception de sessions SSH. Dans les commentaires, l'auteur d'exitmap — l'outil de détection de nœuds malveillants — rappelle l'avoir écrit il y a une décennie, et le débat porte sur ce qui protège réellement les utilisateurs (avertissements de clés d'hôte SSH, authentification par clé). Autres fils notables : les risques juridiques pour les opérateurs de nœuds de sortie, et la concentration des relais chez quelques hébergeurs."
+    },
+    {
+      "title": "Voxtral 3 : le nouveau modèle vocal de Mistral",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "hn": "https://news.ycombinator.com/item?id=50168396",
+      "points": 127,
+      "comments": 27,
+      "summary": "Mistral annonce Voxtral 3, accompagné d'après le fil d'un SDK d'« agent vocal » combinant écoute, raisonnement, appel d'outils et synthèse vocale, disponible via l'API hébergée dans l'UE ou en auto-déploiement sur contact commercial. La principale pomme de discorde sur HN : le modèle est à poids fermés, ce que beaucoup regrettent en le comparant aux alternatives ouvertes comme Parakeet de NVIDIA, Whisper ou Kokoro — et au précédent Voxtral Mini 4B Realtime, lui open-weight. Les autres fils portent sur la qualité des voix, la diarisation et la latence temps réel."
+    },
+    {
+      "title": "Tsrs : un portage de TypeScript en Rust",
+      "url": "https://blog.cloudflare.com/typescript-rust-port/",
+      "hn": "https://news.ycombinator.com/item?id=50165953",
+      "points": 164,
+      "comments": 86,
+      "summary": "Billet du blog Cloudflare consacré à « tsrs », présenté comme un portage de TypeScript vers Rust. Le sujet a rapidement accumulé 86 commentaires — la réécriture en Rust de l'outillage de l'écosystème JavaScript/TypeScript, après le portage officiel du compilateur en Go, reste un des marronniers les plus disputés de HN."
+    },
+    {
+      "title": "Nordwand Mono : une police monospace « pour développeurs et aventuriers »",
+      "url": "https://github.com/tywr/Nordwand-Mono",
+      "hn": "https://news.ycombinator.com/item?id=50141581",
+      "points": 478,
+      "comments": 132,
+      "summary": "Une nouvelle police à chasse fixe destinée au code, publiée sur GitHub, qui revendique un esprit « alpiniste ». Avec 478 points et 132 commentaires, c'est l'une des publications les plus populaires de la page — preuve que les polices de programmation restent un sujet qui passionne durablement la communauté."
+    },
+    {
+      "title": "MicroG : la réimplémentation libre des services Google pour Android",
+      "url": "https://github.com/microg/GmsCore/wiki",
+      "hn": "https://news.ycombinator.com/item?id=50162177",
+      "points": 297,
+      "comments": 40,
+      "summary": "Le wiki de MicroG, réimplémentation libre et open source de la couche logicielle propriétaire de Google sur Android, refait surface en première page avec près de 300 points. Le projet permet d'utiliser des applications dépendantes des services Google sur des systèmes dégooglisés — un sujet récurrent à l'heure où le contrôle de Google sur Android est de plus en plus discuté."
+    },
+    {
+      "title": "Ofcom s'avoue vaincu dans l'affaire 4chan",
+      "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
+      "hn": "https://news.ycombinator.com/item?id=50167028",
+      "points": 117,
+      "comments": 70,
+      "summary": "Un billet publié sur le blog de Preston Byrne affirme qu'Ofcom, le régulateur britannique des communications, concède la défaite dans l'affaire qui l'oppose au forum 4chan — un épisode du bras de fer sur l'application extraterritoriale de la régulation britannique des contenus en ligne. Le sujet a réuni 70 commentaires sur HN."
+    },
+    {
+      "title": "2026, une année passionnante pour le compilateur Rust",
+      "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
+      "hn": "https://news.ycombinator.com/item?id=50166502",
+      "points": 79,
+      "comments": 17,
+      "summary": "Billet personnel d'un développeur impliqué dans le compilateur Rust, qui présente 2026 comme une année charnière pour le projet — et pour lui. Le texte a trouvé son public en première page, signe de l'attention que la communauté porte aux évolutions de l'outillage Rust."
+    },
+    {
+      "title": "Mon ami Bob Cringely",
+      "url": "https://tyma.com/my-cringe-story/",
+      "hn": "https://news.ycombinator.com/item?id=50166794",
+      "points": 90,
+      "comments": 30,
+      "summary": "Récit personnel de Paul Tyma sur son amitié avec Bob Cringely, plume connue de longue date de la presse tech américaine. Le genre d'histoire humaine et nostalgique qui perce régulièrement en première page de HN entre deux annonces de modèles d'IA."
+    }
+  ]
+}

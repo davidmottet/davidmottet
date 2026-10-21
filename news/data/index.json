@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-21",
+      "title": "DeepSeek ouvre son moteur d'inférence pendant que la confiance numérique vacille",
+      "count": 12
+    },
+    {
       "date": "2026-10-20",
       "title": "Linux 7.3, Mistral sur tous les fronts et la question de l'humain derrière la machine",
       "count": 12
