@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-22",
+      "title": "Journée noire pour la sécurité : PHP, eMudhra, LiteLLM et Railway sous le feu, l'IA des deux côtés du front",
+      "count": 12
+    },
+    {
       "date": "2026-10-21",
       "title": "DeepSeek ouvre son moteur d'inférence pendant que la confiance numérique vacille",
       "count": 12
