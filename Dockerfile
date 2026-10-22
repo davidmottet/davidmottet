@@ -13,7 +13,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # NOTE: the CV PDFs are gitignored (personal docs), so this build MUST run from
 # a context where CV_David_Mottet_EN.pdf and CV_David_Mottet_FR.pdf are present
 # on disk (e.g. your local checkout), not from a fresh `git clone`.
-COPY index.html robots.txt sitemap.xml site.webmanifest \
+COPY index.html confidentialite.html conditions.html robots.txt sitemap.xml site.webmanifest \
      favicon.ico favicon.svg apple-touch-icon.png \
      icon-192.png icon-512.png og-image.png \
      /usr/share/nginx/html/
