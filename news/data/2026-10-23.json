@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-23",
+  "title": "La confiance se retire : eMudhra abandonne les certificats, Quad9 quitte la France, Arc tire sa révérence",
+  "intro": "Lendemain de tempête pour l'écosystème des certificats : après la révélation de ses clés à 8 bits d'entropie, eMudhra jette l'éponge et se retire du marché mondial du SSL/TLS. La journée est marquée par des retraits en série — Quad9 quitte la France sous la pression des blocages antipiratage, The Browser Company enterre Arc — pendant que la Finlande stoppe des chantiers de data centers de Google après le défrichage de 300 hectares de forêt. En contrepoint, la scène hacker brille : jailbreak de la Switch 2, iOS qui tourne sur des téléphones Android, et un modèle de 360M de paramètres qui simule un terminal.",
+  "items": [
+    {
+      "title": "eMudhra se retire du marché mondial des certificats SSL/TLS",
+      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "hn": "https://news.ycombinator.com/item?id=50195110",
+      "points": 571,
+      "comments": 431,
+      "summary": "Épilogue du scandale de la semaine : après la découverte de huit certificats intermédiaires aux clés privées quasi nulles (environ 8 bits d'entropie) et leur blocage par Apple, Google, Microsoft et Mozilla, l'autorité de certification indienne annonce son retrait du marché mondial du SSL/TLS — son action a plongé de 20 % à la bourse indienne. Sur HN, on doute qu'elle ait eu le choix : les programmes racine n'allaient pas lui rendre leur confiance, et un bug Mozilla demande pourquoi les problèmes de génération de clés n'avaient pas été investigués dès leur première apparition. Certains parient sur un retour sous une autre marque ou via une filiale discrètement essaimée, d'autres jugent la marque définitivement grillée."
+    },
+    {
+      "title": "Jailbreak de la Switch 2",
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "hn": "https://news.ycombinator.com/item?id=50192536",
+      "points": 507,
+      "comments": 187,
+      "summary": "Le hacker pepsipu publie « ns2jb », un billet technique détaillant le jailbreak de la Nintendo Switch 2, console réputée pour ses protections considérablement durcies par rapport à la première génération. La presse spécialisée confirmait ces dernières semaines qu'un déplombage complet se rapprochait et que Nintendo multipliait les contre-mesures. Avec plus de 500 points, c'est l'un des billets de rétro-ingénierie les plus discutés de la semaine sur HN."
+    },
+    {
+      "title": "WorldTUI : un modèle de 360M de paramètres entraîné à imiter un terminal",
+      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "hn": "https://news.ycombinator.com/item?id=50190363",
+      "points": 435,
+      "comments": 135,
+      "summary": "Un développeur raconte comment il a entraîné un petit modèle de 360 millions de paramètres à se faire passer pour un terminal : le modèle prédit la sortie des commandes comme un « world model » textuel, sans exécuter quoi que ce soit. L'expérience illustre la vague des world models appliquée à un environnement minimaliste mais familier des développeurs — et son score (435 points) montre que le sujet fascine bien au-delà des gros modèles génératifs."
+    },
+    {
+      "title": "Quad9 (résolveur DNS) quitte la France",
+      "url": "https://quad9.net/news/blog/au-revoir-france/",
+      "hn": "https://news.ycombinator.com/item?id=50195959",
+      "points": 351,
+      "comments": 112,
+      "summary": "Dans un billet intitulé « Au revoir France », le résolveur DNS à but non lucratif annonce son départ du pays, aboutissement d'un long bras de fer judiciaire : Canal+ puis beIN Sports ont obtenu des décisions forçant Quad9 à bloquer des domaines de piratage sportif au niveau DNS, beIN réclamant jusqu'à 580 000 € d'astreinte par jour. Quad9 avait prévenu qu'il refuserait de transformer son service mondial en outil de censure nationale et préférerait se retirer — c'est désormais chose faite, après le retrait similaire d'OpenDNS en 2024."
+    },
+    {
+      "title": "Qu'est-ce que la « gridification » ?",
+      "url": "https://musicalform.substack.com/p/what-is-gridifcation",
+      "hn": "https://news.ycombinator.com/item?id=50150163",
+      "points": 257,
+      "comments": 112,
+      "summary": "Un essai de la newsletter Musical Form sur la « mise en grille » de la musique moderne : la production contemporaine aligne rythmes et hauteurs sur des grilles parfaites (quantification, clic, Auto-Tune), au détriment des micro-variations humaines qui faisaient respirer les enregistrements d'antan. Le sujet, récurrent chez les musiciens comme chez les ingénieurs du son, a trouvé un large écho sur HN avec plus d'une centaine de commentaires."
+    },
+    {
+      "title": "What's Getting Pwned : qui se fait pirater en ce moment",
+      "url": "https://pwn.watch/",
+      "hn": "https://news.ycombinator.com/item?id=50195543",
+      "points": 178,
+      "comments": 109,
+      "summary": "Un tableau de bord qui suit en continu ce qui se fait compromettre : vulnérabilités activement exploitées et incidents en cours, présentés sous forme d'observatoire. Dans une semaine saturée d'incidents (PHP, eMudhra, LiteLLM, Railway), l'outil arrive à point nommé et cumule 109 commentaires sur HN."
+    },
+    {
+      "title": "Plus rapide qu'earcut : trianguler 3,7 millions de polygones cartographiques en 489 ms",
+      "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+      "hn": "https://news.ycombinator.com/item?id=50193170",
+      "points": 154,
+      "comments": 33,
+      "summary": "L'équipe de Globus détaille un algorithme de triangulation qui traite 3,7 millions de polygones de carte en 489 millisecondes, battant earcut, la bibliothèque de référence popularisée par Mapbox pour préparer les géométries affichées sur GPU. Un billet d'optimisation bas niveau comme HN les aime : structures de données, benchmarks et compromis entre robustesse et vitesse."
+    },
+    {
+      "title": "Google a rasé 300 hectares de forêt finlandaise, les régulateurs demandent des comptes",
+      "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
+      "hn": "https://news.ycombinator.com/item?id=50196837",
+      "points": 142,
+      "comments": 84,
+      "summary": "Dans le cadre d'un plan d'extension de data centers d'environ 13 milliards de dollars en Finlande, Google a défriché quelque 300 hectares de forêt — et les autorités finlandaises ont ordonné l'arrêt des travaux sur deux sites le temps d'une enquête sur la légalité du défrichage. L'affaire nourrit le débat croissant sur l'empreinte foncière et énergétique des infrastructures IA en Europe du Nord, région prisée pour son électricité bon marché et son climat froid."
+    },
+    {
+      "title": "Crystal 1.22 est disponible",
+      "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+      "hn": "https://news.ycombinator.com/item?id=50194938",
+      "points": 128,
+      "comments": 60,
+      "summary": "Nouvelle version du langage Crystal, qui combine une syntaxe inspirée de Ruby avec un typage statique inféré et une compilation native via LLVM. La 1.22 poursuit le cycle de releases régulières du projet open source, financé notamment via Open Collective, et sa présence en première page confirme la communauté fidèle du langage sur HN."
+    },
+    {
+      "title": "GNU Taler se prépare à opérer en Allemagne",
+      "url": "https://www.taler.net/en/news/2026-13.html",
+      "hn": "https://news.ycombinator.com/item?id=50197404",
+      "points": 123,
+      "comments": 35,
+      "summary": "Le système de paiement électronique libre GNU Taler, conçu pour offrir l'anonymat au payeur tout en rendant les bénéficiaires traçables (donc compatible avec la fiscalité), annonce préparer son exploitation réelle en Allemagne. Les commentaires HN débattent de ses chances face à Wero, l'initiative de paiement des banques européennes, et surtout de ses promesses de confidentialité : certains les jugent trompeuses dans un cadre KYC européen strict, d'autres défendent un compromis délibéré et conforme à la réglementation, avec de fréquentes références à David Chaum et DigiCash."
+    },
+    {
+      "title": "Show HN : iOS 16.5 fonctionne sur des téléphones Android",
+      "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+      "hn": "https://news.ycombinator.com/item?id=50196718",
+      "points": 91,
+      "comments": 36,
+      "summary": "Le projet HackiOS fait tourner le firmware complet d'iOS 16.5 sur des appareils Android (Xiaomi, Poco, OnePlus notamment), une première largement relayée par la presse tech cette semaine, qui repose sur un travail de portage autour du noyau XNU d'Apple. Au-delà de l'exploit technique, le projet pose les questions habituelles de légalité (iOS n'est licencié que pour du matériel Apple) et de praticabilité au quotidien."
+    },
+    {
+      "title": "Arc, c'est fini : The Browser Company enterre son navigateur",
+      "url": "https://arc.net/",
+      "hn": "https://news.ycombinator.com/item?id=50197601",
+      "points": 68,
+      "comments": 50,
+      "summary": "La page d'accueil d'Arc annonce le « sunsetting » du navigateur qui avait voulu réinventer l'interface du web avant d'être placé en simple maintenance, son éditeur ayant pivoté dès 2025 vers Dia, son navigateur centré sur l'IA. Pour ses utilisateurs fidèles, c'est la confirmation d'une fin annoncée — et un rappel du risque à adopter un navigateur propriétaire dont le modèle économique n'a jamais été trouvé."
+    }
+  ]
+}

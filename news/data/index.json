@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-23",
+      "title": "La confiance se retire : eMudhra abandonne les certificats, Quad9 quitte la France, Arc tire sa révérence",
+      "count": 12
+    },
+    {
       "date": "2026-10-22",
       "title": "Journée noire pour la sécurité : PHP, eMudhra, LiteLLM et Railway sous le feu, l'IA des deux côtés du front",
       "count": 12
