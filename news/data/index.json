@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-24",
+      "title": "Mistral sur tous les fronts, Wine débarque sur OpenBSD et le malaise du code écrit par l'IA",
+      "count": 12
+    },
+    {
       "date": "2026-10-23",
       "title": "La confiance se retire : eMudhra abandonne les certificats, Quad9 quitte la France, Arc tire sa révérence",
       "count": 12

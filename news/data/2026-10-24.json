@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-24",
+  "title": "Mistral sur tous les fronts, Wine débarque sur OpenBSD et le malaise du code écrit par l'IA",
+  "intro": "Journée dominée par Mistral, qui lance Timestral, une famille de modèles de fondation pour les séries temporelles, et officialise un partenariat avec le CERN pour bâtir un « grand modèle de physique ». La concurrence répond : MiniMax pousse son modèle de code M3.1 Flash et Inception Labs revendique plus de 1 000 tokens par seconde avec son LLM à diffusion Mercury 3. En contrepoint, la communauté s'interroge sur le métier : un essai défendant le simple plaisir de programmer et un Ask HN sur le code IA qu'on ne comprend pas cumulent plus de 700 commentaires. Côté systèmes et sécurité, Wine arrive sur OpenBSD (et fait tourner The Witcher 3), Let's Encrypt durcit sa validation de domaines et des serveurs Plex non corrigés se font transformer en mineurs de cryptomonnaie.",
+  "items": [
+    {
+      "title": "Timestral : les modèles de fondation de Mistral pour les séries temporelles",
+      "url": "https://mistral.ai/news/timestral/",
+      "hn": "https://news.ycombinator.com/item?id=50150434",
+      "points": 523,
+      "comments": 97,
+      "summary": "Mistral sort de son pré carré du langage avec Timestral, une famille de modèles de prévision de séries temporelles en poids ouverts (licence MIT modifiée) déclinée en 5M, 28M, 123M et 209M de paramètres, avec un contexte de 32 768 pas de temps et des prévisions probabilistes sur 21 quantiles. L'éditeur affirme que le modèle 209M prend la première place des trois grands benchmarks publics (GIFT-Eval, TIME, fev-bench) en battant TimesFM-3 avec environ un tiers de paramètres en moins — des chiffres maison, sans évaluation indépendante pour l'instant. Point notable : l'inférence se passe de GPU, avec 140 ms par prévision sur un simple CPU serveur, un argument fort pour l'industriel et l'embarqué."
+    },
+    {
+      "title": "Wine porté sur OpenBSD : la Witcher 3 tourne déjà",
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "hn": "https://news.ycombinator.com/item?id=50152307",
+      "points": 608,
+      "comments": 209,
+      "summary": "Thomas Frohwein propose un port de Wine pour OpenBSD, rendu possible par un contournement du problème de registre %gs mis au point par deux contributeurs. La plupart des programmes Windows 64 bits testés fonctionnent, et The Witcher 3 Remaster tourne via vkd3d-proton ; le support 32 bits (WoW64) manque encore à l'appel. La discussion s'enthousiasme — vidéos de Disco Elysium ou Death Stranding à l'appui, « 2026, enfin l'année du desktop BSD gaming » — mais note que peu de ces patchs remonteront upstream, les mainteneurs de Wine étant réticents à supporter un OS de plus."
+    },
+    {
+      "title": "Ça reste OK d'aimer programmer",
+      "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+      "hn": "https://news.ycombinator.com/item?id=50134472",
+      "points": 386,
+      "comments": 373,
+      "summary": "Chris Kiehl répond à la morosité ambiante : même si l'économie du code écrit à la main a changé au travail, programmer pour le plaisir — un clone de Breakout bancal, des types dépendants en Java — n'a pas besoin de justification financière. Les 373 commentaires donnent la température du moment : certains racontent qu'un outil « vibecodé » a dupliqué leur projet de hobby en quelques heures, d'autres que piloter des agents IA ressemble plus à de la gestion de produit qu'à de l'artisanat. Le parallèle qui revient : le tricot et la couture ont survécu à l'automatisation comme loisirs, et le code manuel pourrait devenir un artisanat de niche, comme l'horlogerie mécanique."
+    },
+    {
+      "title": "Ask HN : comment gérer la mise en production de code écrit par l'IA qu'on ne comprend pas ?",
+      "url": "https://news.ycombinator.com/item?id=50151036",
+      "hn": "https://news.ycombinator.com/item?id=50151036",
+      "points": 209,
+      "comments": 338,
+      "summary": "Un développeur demande comment vivre avec du code généré par IA qu'il ne comprend pas entièrement — 338 commentaires plus tard, un consensus pragmatique se dessine : garder l'architecture en main et laisser l'IA remplir les unités, comme un principal engineer qui dirige des juniors, puis vérifier par des tests massifs (« trust, but verify »). Beaucoup modulent l'exigence selon le risque : relecture systématique des schémas de base de données, laisser-faire sur l'UI. Les sceptiques rétorquent qu'on ne peut pas durablement livrer plus de code qu'on ne peut en relire — et que la compréhension finit toujours par redevenir nécessaire, au premier incident venu."
+    },
+    {
+      "title": "Le CERN et Mistral signent un partenariat stratégique autour d'un « grand modèle de physique »",
+      "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "hn": "https://news.ycombinator.com/item?id=50153630",
+      "points": 303,
+      "comments": 57,
+      "summary": "Le CERN et Mistral AI signent une déclaration d'intention pour un partenariat de long terme visant des modèles de fondation pour la découverte scientifique. L'ambition : un « Large Physics Model » entraîné sur des milliards de collisions de particules simulées, qui remplacerait les algorithmes spécialisés utilisés aujourd'hui pour reconstruire et identifier les particules, avec l'espoir d'étendre l'approche à d'autres sciences. Ni calendrier ni budget n'ont été dévoilés — mais pour l'écosystème européen, voir le CERN choisir un champion local plutôt qu'un hyperscaler américain est un signal en soi."
+    },
+    {
+      "title": "Mercury 3 : Inception Labs pousse la diffusion à l'échelle, à plus de 1 000 tokens/seconde",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "hn": "https://news.ycombinator.com/item?id=50155245",
+      "points": 207,
+      "comments": 82,
+      "summary": "Inception Labs présente Mercury 3, un LLM à diffusion qui génère et raffine plusieurs parties de la réponse en parallèle au lieu de produire les tokens un à un, et revendique 1 068 tokens par seconde avec une qualité comparable aux petits modèles frontières sur plusieurs benchmarks. Contexte d'un million de tokens, API compatible OpenAI, tarif agressif (0,20 $/M en entrée, 0,70 $/M en sortie, moitié prix en promotion de lancement). Les réserves habituelles s'appliquent : benchmarks maison non vérifiés indépendamment, et des premiers tests externes qui notent un suivi de consignes encore approximatif sur les contraintes précises."
+    },
+    {
+      "title": "MiniMax M3.1 Flash : un modèle de code avec un million de tokens de contexte",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "hn": "https://news.ycombinator.com/item?id=50154540",
+      "points": 332,
+      "comments": 147,
+      "summary": "MiniMax officialise M3.1 Flash, un modèle orienté tâches de développement courantes (corrections de bugs, petites fonctionnalités) doté d'une fenêtre de contexte d'un million de tokens et de cinq niveaux d'effort de raisonnement, le mode réflexion ne pouvant pas être désactivé. Lors de la preview, le modèle n'était accessible que dans l'outil MiniMax Code sur abonnement (de 22 à 132 $/mois), sans poids ouverts ni benchmarks publiés — un contraste avec M3, dont le score SWE-bench Verified de 80,5 % est documenté. La discussion HN (147 commentaires) reflète l'intérêt pour les modèles de code chinois à bas coût, et la difficulté croissante à les évaluer sans chiffres."
+    },
+    {
+      "title": "Mac.apk fait tourner des applications Android nativement sur macOS",
+      "url": "https://github.com/kksimp/Mac.apk",
+      "hn": "https://news.ycombinator.com/item?id=50154624",
+      "points": 231,
+      "comments": 107,
+      "summary": "Ce projet open source (AGPL-3.0) en alpha exécute des applications Android sur Mac Apple Silicon sans émulateur, machine virtuelle ni noyau Linux : il réimplémente l'environnement applicatif Android au-dessus de macOS, les applis tournant comme des processus Mac ordinaires avec accès direct au GPU. Sur 65 applications testées par l'auteur, 51 fonctionnent entièrement. Revers de la médaille, et sujet chaud des commentaires : pas de sandbox à la Android — une appli installée lit et écrit vos fichiers comme n'importe quel programme Mac."
+    },
+    {
+      "title": "Let's Encrypt ajoute deux points de vue distants à sa validation de domaines",
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+      "hn": "https://news.ycombinator.com/item?id=50150809",
+      "points": 237,
+      "comments": 76,
+      "summary": "La validation multi-perspective de Let's Encrypt passe de quatre à six points de vue distants (sept requêtes de validation au total avec le serveur primaire), en avance sur les exigences du CA/Browser Forum qui imposent au moins cinq perspectives sur deux registres Internet régionaux distincts d'ici décembre 2026. Objectif : rendre les détournements BGP et DNS beaucoup plus coûteux, puisqu'un attaquant doit tromper un quorum de réseaux indépendants. Déploiement en staging le 27 octobre, en production le 10 novembre. Les commentaires saluent le travail mais rappellent les limites : lors d'un détournement d'un bloc d'adresses Hetzner de 33 heures cet été, toutes les perspectives menaient au même faux serveur — d'où les appels à généraliser RPKI."
+    },
+    {
+      "title": "Des failles Plex exploitées pour installer un cryptomineur",
+      "url": "http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html",
+      "hn": "https://news.ycombinator.com/item?id=50152321",
+      "points": 133,
+      "comments": 59,
+      "summary": "La chaîne « Plex2Shell » — quatre vulnérabilités (SSRF, appels inter-plugins donnant le token admin, écriture de fichier arbitraire dans le répertoire Codecs) — permet une exécution de code à distance sans authentification sur Plex Media Server. Les attaques ont commencé dès le lendemain de la publication des détails techniques mi-octobre : un script shell télécharge un mineur XMRig et une porte dérobée faisant office de proxy inverse, infrastructure reliée au botnet AISURU. Les correctifs existent depuis la version 1.43.3.10861 d'août — l'épisode illustre surtout la lenteur de mise à jour du parc de serveurs auto-hébergés."
+    },
+    {
+      "title": "Les alternatives à l'expérimentation animale décollent enfin",
+      "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+      "hn": "https://news.ycombinator.com/item?id=50150927",
+      "points": 304,
+      "comments": 91,
+      "summary": "IEEE Spectrum consacre un dossier à la montée en puissance des méthodes de substitution aux tests sur les animaux, un domaine où les organes-sur-puce et autres modèles de tissus humains cherchent depuis des années à remplacer les modèles animaux, souvent mauvais prédicteurs des effets chez l'humain. Le sujet a trouvé un large écho sur HN avec plus de 300 points et 91 commentaires — signe que la question, à la croisée de la biotech, de l'éthique et de la réglementation, dépasse le cercle des spécialistes."
+    },
+    {
+      "title": "Construire un drone avec un seul moteur [vidéo]",
+      "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
+      "hn": "https://news.ycombinator.com/item?id=50150089",
+      "points": 311,
+      "comments": 56,
+      "summary": "Une vidéo de bricolage d'ingénierie qui a séduit HN (311 points) : concevoir un drone capable de voler avec un unique moteur, là où la stabilisation repose d'ordinaire sur quatre rotors. Le défi rappelle le « Monospinner » de l'ETH Zurich, premier engin volant contrôlable à une seule hélice, qui compensait par une rotation permanente de la cellule — un problème de contrôle réputé épineux, ce qui explique l'enthousiasme des commentateurs pour la démarche."
+    }
+  ]
+}
