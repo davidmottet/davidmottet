@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-25",
+  "title": "Le retour sur investissement de l'IA en question, un bitcoin à voler et des langages hors des sentiers battus",
+  "intro": "Journée très macro sur Hacker News : l'économiste en chef d'Apollo ne voit « aucun signe » de retombées de l'IA hors du secteur tech, pendant qu'une analyse fouille les 200 000 emplois perdus dans les médias et la création — et que la communauté débat de la part réelle de l'IA dans l'hécatombe. Côté sécurité, une faille critique dans le décodeur Brotli embarqué par Node.js (et bien d'autres) fait trembler l'écosystème HTTP, tandis qu'un défi « volez mon bitcoin » amuse et instruit. Et les langages tiennent le haut du pavé : Goose, nouveau venu salué par John Carmack, l'intégration de ty à uv chez Astral, et un essai sur les performances du fonctionnel pur face au C.",
+  "items": [
+    {
+      "title": "Aucun signe de retombées de l'IA hors du secteur tech",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "hn": "https://news.ycombinator.com/item?id=50224463",
+      "points": 491,
+      "comments": 492,
+      "summary": "Torsten Slok, économiste en chef d'Apollo, rappelle que les valorisations de l'IA reposent sur des gains de marge attendus chez les « S&P 493 » (l'indice hors Magnificent Seven) — gains dont il ne voit encore aucune trace hors de la tech. Refonte des processus, contraintes réglementaires dans la santé, la banque ou la pharma : la productivité pourrait arriver « bien au-delà » de ce que le marché anticipe, et si le gain met cinq ans au lieu de cinq mois, beaucoup de valeurs IA risquent une repricing brutale. Près de 500 commentaires : c'est le sujet le plus discuté du jour."
+    },
+    {
+      "title": "Local Wikipedia : Wikipédia, mais seulement à une demi-heure de marche de chez vous",
+      "url": "https://edjefferson.com/localwiki/",
+      "hn": "https://news.ycombinator.com/item?id=50202285",
+      "points": 1552,
+      "comments": 244,
+      "summary": "Le projet d'Ed Jefferson ne montre de Wikipédia que les articles géolocalisés à moins d'une demi-heure de marche de votre position : une façon de redécouvrir l'histoire et les curiosités de son propre quartier. L'idée, simple et charmante, a séduit massivement : plus de 1 500 points, le score le plus élevé de la page d'accueil du jour."
+    },
+    {
+      "title": "Show HN : Volez mon bitcoin",
+      "url": "https://stealmybitcoin.com/",
+      "hn": "https://news.ycombinator.com/item?id=50224916",
+      "points": 414,
+      "comments": 256,
+      "summary": "Un défi de sécurité grandeur nature : un serveur PHP volontairement vulnérable héberge la clé d'un portefeuille d'environ 500 $ en bitcoin, accessible via un binaire « print-flag » — le premier qui compromet la machine empoche la mise (adresse publique vérifiable sur mempool.space). Tout le trafic est journalisé et visible des autres participants, ce qui ajoute une dimension de contre-espionnage, et les gagnants fortunés sont invités à reverser le butin à GiveWell."
+    },
+    {
+      "title": "Node2Shell devient HTTP2Shell : la faille Brotli éclabousse de nombreuses bibliothèques HTTP",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "hn": "https://news.ycombinator.com/item?id=50219177",
+      "points": 281,
+      "comments": 140,
+      "summary": "La faille CVE-2026-111497, une écriture hors limites dans le décodeur Brotli embarqué par Node.js pouvant mener à de l'exécution de code à distance, a été corrigée le 21 octobre (Node 22.23.4, 24.22.1 et 26.12.1) — le fetch intégré atteindrait le décodeur par défaut sur les réponses HTTPS. Aikido montre que le rayon d'impact dépasse Node : de nombreux paquets et bibliothèques HTTP qui embarquent Brotli, notamment côté Python, sont exposés au même mécanisme, d'où le passage de « Node2Shell » à « HTTP2Shell »."
+    },
+    {
+      "title": "Astral rapproche uv et ty",
+      "url": "https://astral.sh/blog/uv-ty-integration",
+      "hn": "https://news.ycombinator.com/item?id=50172962",
+      "points": 303,
+      "comments": 111,
+      "summary": "Astral, déjà derrière uv et Ruff, annonce l'intégration de ty — son vérificateur de types Python écrit en Rust, encore en bêta — directement dans uv. ty revendique des performances spectaculaires (environ 20 fois plus rapide que mypy sur le dépôt home-assistant selon les benchmarks d'Astral), et ce rapprochement poursuit la stratégie de la société : une chaîne d'outils Python unifiée et ultra-rapide, du gestionnaire de paquets au typage."
+    },
+    {
+      "title": "Les États-Unis ont perdu 200 000 emplois dans les médias, le cinéma et les arts. Quelle part pour l'IA ?",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "hn": "https://news.ycombinator.com/item?id=50226419",
+      "points": 183,
+      "comments": 151,
+      "summary": "L'analyse d'Apricitas chiffre l'hémorragie des métiers créatifs américains sans trancher sur la responsabilité de l'IA — ce que plusieurs commentateurs saluent. La discussion HN pointe les facteurs concurrents : fin des taux zéro, délocalisation des tournages vers l'Irlande, le Royaume-Uni ou l'Inde à coups de subventions, consolidation du streaming et offre de contenus qui excède l'attention disponible. Entre ceux qui voient l'IA comme un outil de plus pour les créateurs indépendants et ceux qui dénoncent des gains d'efficacité captés par les actionnaires, le fil ne conclut pas plus que l'article."
+    },
+    {
+      "title": "Le langage de programmation Goose",
+      "url": "https://aardappel.github.io/goose/",
+      "hn": "https://news.ycombinator.com/item?id=50224100",
+      "points": 250,
+      "comments": 171,
+      "summary": "Nouveau langage système de l'auteur de Lobster : sûr en mémoire sans ramasse-miettes, sans allocateur de tas ni annotations de durée de vie, Goose stocke les données à plat sur des piles multiples gérées par le compilateur, avec des références relatives qui permettent de sauvegarder ou transmettre des structures en octets bruts. John Carmack a salué l'approche, y voyant un remède au parsing « 100 fois plus lent que nécessaire » ; les commentaires questionnent surtout le coût mémoire des régions d'adresses réservées par tableau et la comparaison avec Rust et C++."
+    },
+    {
+      "title": "Des physiciens piègent de l'antimatière pendant un mois",
+      "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+      "hn": "https://news.ycombinator.com/item?id=50186450",
+      "points": 281,
+      "comments": 80,
+      "summary": "L'équipe BASE-STEP du CERN, menée par Christian Smorra, a réussi à conserver des antiprotons plus d'un mois dans un piège de Penning transportable d'environ une tonne — et à les déplacer par la route, une première. L'objectif est d'acheminer l'antimatière vers des laboratoires capables de mesures de précision impossibles près de « l'usine à antimatière », pour traquer l'asymétrie matière-antimatière que le Big Bang aurait dû interdire."
+    },
+    {
+      "title": "Roku déplace ses dépôts développeurs de GitHub vers GitLab",
+      "url": "https://blog.roku.com/developer/gitlab-move",
+      "hn": "https://news.ycombinator.com/item?id=50222622",
+      "points": 268,
+      "comments": 179,
+      "summary": "Roku annonce sur son blog développeurs la migration de ses dépôts publics de GitHub vers GitLab, un mouvement à contre-courant des migrations habituelles qui a aussitôt relancé le débat sur la dépendance à GitHub. Avec 179 commentaires, le fil est l'un des plus animés du jour."
+    },
+    {
+      "title": "Jusqu'où la programmation fonctionnelle pure peut-elle approcher le C ?",
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "hn": "https://news.ycombinator.com/item?id=50218195",
+      "points": 257,
+      "comments": 87,
+      "summary": "Richard Feldman, créateur du langage Roc et voix connue du monde fonctionnel, examine ce qui sépare encore un langage fonctionnel pur des performances du C — et quelles techniques de compilation permettent de combler l'écart. Un sujet qu'il explore depuis des années, notamment dans sa conférence « Outperforming Imperative with Pure Functional Languages »."
+    },
+    {
+      "title": "Je ne comprends pas la physique quantique (2018)",
+      "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50219666",
+      "points": 288,
+      "comments": 218,
+      "summary": "La page personnelle d'un universitaire de Southampton, où il confesse — exemples à l'appui — que la physique quantique échappe à toute intuition, y compris la sienne. Ce classique de 2018 refait surface et déclenche plus de 200 commentaires, signe que la question « comprendre ou seulement calculer ? » n'a rien perdu de son pouvoir d'attraction."
+    },
+    {
+      "title": "Nous devrions être plus ambitieux dans les logiciels que nous construisons",
+      "url": "https://danluu.com/ambitious/",
+      "hn": "https://news.ycombinator.com/item?id=50225695",
+      "points": 192,
+      "comments": 150,
+      "summary": "Dan Luu, connu pour ses essais fouillés sur l'ingénierie logicielle, plaide pour plus d'ambition dans ce que l'industrie choisit de construire. L'essai a pris la tête de la page d'accueil et nourri un long fil de discussion sur ce qui bride l'ambition des équipes logicielles."
+    }
+  ]
+}
