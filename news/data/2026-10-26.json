@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "title": "Un agent IA décroche le root d'une TV Samsung, l'ambition logicielle en débat et la transparence qui se paie cher",
+  "intro": "Dimanche contrasté sur Hacker News : la sécurité offensive assistée par IA fait sensation avec un agent Codex qui transforme une faille de navigateur en root complet sur une TV Samsung, pendant que l'essai de Dan Luu sur le manque d'ambition du logiciel dépasse les 750 points et 690 commentaires. En toile de fond, la question du contrôle de l'information revient sous toutes ses formes : des frais de 2,5 millions de dollars réclamés à un petit média de l'Oregon pour des documents publics, un appel contre la censure d'Internet en route vers le FOSDEM, et une « tétine numérique » d'Amazon pour les tout-petits. Côté IA, un CNN vieux de dix ans qui bat les LLM de pointe en diagnostic du cancer de la peau et une analyse des baisses de prix massives d'OpenAI et d'Anthropic alimentent le débat sur ce que valent vraiment les modèles généralistes.",
+  "items": [
+    {
+      "title": "Un shell root sur une TV Samsung — obtenu par un agent Codex",
+      "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
+      "hn": "https://news.ycombinator.com/item?id=50218633",
+      "points": 787,
+      "comments": 607,
+      "summary": "Les chercheurs de Calif ont donné à Codex (OpenAI) un point d'entrée d'exécution de code dans le navigateur d'une TV Samsung ancienne et lui ont demandé d'atteindre le root : l'agent a audité les sources du pilote KantS2, repéré des nœuds de périphérique accessibles en écriture à tous (ntksys, ntkhdma) permettant de mapper de la mémoire physique arbitraire, puis réécrit les credentials kernel du processus navigateur. Les auteurs précisent avoir guidé l'agent à travers de nombreuses rondes de débogage. Plus de 600 commentaires : la démonstration que des agents IA peuvent pousser un simple foothold jusqu'à la compromission totale d'un appareil impressionne, même si un lecteur note que la faille sous-jacente aurait été corrigée en 2020."
+    },
+    {
+      "title": "Nous devrions être plus ambitieux dans les logiciels que nous construisons",
+      "url": "https://danluu.com/ambitious/",
+      "hn": "https://news.ycombinator.com/item?id=50225695",
+      "points": 753,
+      "comments": 696,
+      "summary": "L'essai de Dan Luu, connu pour ses analyses fouillées de l'industrie, plaide pour relever le niveau d'ambition de ce que nous construisons en logiciel. Posté la veille, il continue de dominer la page d'accueil avec plus de 750 points et près de 700 commentaires — de loin la discussion la plus fournie du week-end, signe que le diagnostic d'une industrie qui joue petit bras touche une corde sensible."
+    },
+    {
+      "title": "Un CNN vieux de dix ans surpasse les LLM de pointe pour le diagnostic du cancer de la peau",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "hn": "https://news.ycombinator.com/item?id=50233779",
+      "points": 468,
+      "comments": 216,
+      "summary": "D'après cette étude, un réseau de neurones convolutif spécialisé datant d'il y a une décennie fait mieux que les grands modèles de langage « frontier » actuels pour diagnostiquer le cancer de la peau. Un rappel que sur les tâches de classification d'images médicales, les petits modèles spécialisés gardent l'avantage sur les généralistes multimodaux — et une pièce de plus au dossier, très discuté (216 commentaires), de l'usage réel des LLM en médecine."
+    },
+    {
+      "title": "L'Imagination Library de Dolly Parton",
+      "url": "https://imaginationlibrary.com/",
+      "hn": "https://news.ycombinator.com/item?id=50234474",
+      "points": 428,
+      "comments": 79,
+      "summary": "Coup de projecteur sur le programme caritatif fondé par Dolly Parton en 1995 : chaque enfant inscrit reçoit gratuitement un livre par la poste tous les mois, de la naissance à ses cinq ans. Le programme, parti du Tennessee et étendu à plusieurs pays, a expédié plus de 200 millions de livres. HN salue massivement (428 points) une initiative d'alphabétisation simple, concrète et durable."
+    },
+    {
+      "title": "Dans l'Oregon, la police facture 2,5 millions de dollars à un média local pour des documents sur un seul policier",
+      "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+      "hn": "https://news.ycombinator.com/item?id=50234232",
+      "points": 411,
+      "comments": 107,
+      "summary": "La ville d'Eugene réclame 2 484 599 dollars au petit média Double Sided Media pour des documents publics concernant les manquements présumés de l'officier Justin Peckels entre 2018 et 2026 — la ville évalue la recherche à plus de 44 000 heures de travail. Avec une seconde demande facturée près de 196 000 dollars, l'addition frôle 2,7 millions ; The Intercept qualifie ces frais de « bâillon de fait » pour les petites rédactions et appelle à des plafonds de frais et de vraies exemptions d'intérêt public."
+    },
+    {
+      "title": "« Je refuse d'accepter un Internet censuré » : rendez-vous au FOSDEM 27",
+      "url": "https://talkweb.eu/openweb/4558/",
+      "hn": "https://news.ycombinator.com/item?id=50233929",
+      "points": 408,
+      "comments": 206,
+      "summary": "Un appel à refuser la censure croissante d'Internet et à se retrouver au FOSDEM 27, le grand rendez-vous européen du logiciel libre à Bruxelles, pour défendre un web ouvert. Le texte a fortement résonné (408 points, plus de 200 commentaires), dans un contexte de débats récurrents sur les contrôles d'accès et la régulation du réseau en Europe et ailleurs."
+    },
+    {
+      "title": "OpenAI et Anthropic ont baissé leurs prix jusqu'à 80 % en quelques mois. Pourquoi ?",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "hn": "https://news.ycombinator.com/item?id=50236102",
+      "points": 184,
+      "comments": 209,
+      "summary": "Max Woolf (minimaxir) se penche sur la vague de baisses de prix spectaculaires des API de LLM : OpenAI avait annoncé cet été des réductions allant jusqu'à 80 % sur ses modèles compacts, au moment où les entreprises scrutent de près leurs dépenses d'IA, et Anthropic a suivi le mouvement. L'essai interroge ce que ces baisses disent de l'économie du secteur — concurrence frontale, coûts d'inférence, course aux parts de marché — et la discussion est particulièrement animée : 209 commentaires pour 184 points."
+    },
+    {
+      "title": "Overgrown : quand des plantes envahissent vos onglets à l'abandon",
+      "url": "https://charliegerard.dev/blog/overgrown-extension/",
+      "hn": "https://news.ycombinator.com/item?id=50197108",
+      "points": 165,
+      "comments": 45,
+      "summary": "La développeuse créative Charlie Gerard présente Overgrown, une extension de navigateur qui fait pousser de la végétation sur les onglets laissés à l'abandon — plus un onglet reste ouvert sans visite, plus il se couvre de plantes. Une manière poétique de visualiser l'encombrement numérique et d'inciter au ménage, qui a charmé la communauté (165 points)."
+    },
+    {
+      "title": "Pourquoi je suis programmeur",
+      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "hn": "https://news.ycombinator.com/item?id=50235017",
+      "points": 149,
+      "comments": 56,
+      "summary": "Un essai personnel sur ce qui fait qu'on devient — et qu'on reste — programmeur, au-delà du métier et du salaire. Le texte a trouvé son public un dimanche matin (149 points, 56 commentaires), chacun y confrontant sa propre trajectoire et ses raisons d'aimer, ou non, encore ce métier."
+    },
+    {
+      "title": "Incident en cours chez DreamHost : réinitialisation des mots de passe forcée",
+      "url": "https://www.dreamhoststatus.com/",
+      "hn": "https://news.ycombinator.com/item?id=50231166",
+      "points": 127,
+      "comments": 54,
+      "summary": "L'hébergeur DreamHost fait face à un incident actif qui le conduit à forcer la réinitialisation des mots de passe de connexion à son panneau d'administration, avec des perturbations signalées sur l'envoi des emails de réinitialisation eux-mêmes. Les détails publiés restent minces à ce stade, ce qui nourrit les interrogations des clients sur la page d'accueil de HN (127 points, 54 commentaires)."
+    },
+    {
+      "title": "La « tétine numérique » d'Amazon pour les tout-petits",
+      "url": "https://oligarchwatch.substack.com/p/amazons-digital-pacifier-for-toddlers",
+      "hn": "https://news.ycombinator.com/item?id=50185534",
+      "points": 109,
+      "comments": 163,
+      "summary": "Une critique au vitriol de l'offre d'Amazon destinée aux très jeunes enfants, qualifiée de « tétine numérique » conçue pour capter l'attention des tout-petits au profit de l'écosystème du géant. Le ratio commentaires/points (163 pour 109) trahit un débat vif, classique sur HN dès qu'il s'agit d'écrans et de petite enfance : responsabilité des parents, design addictif et place des plateformes dans les foyers."
+    },
+    {
+      "title": "L'état du context engineering",
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "hn": "https://news.ycombinator.com/item?id=50235780",
+      "points": 97,
+      "comments": 28,
+      "summary": "Drew Breunig, dont les billets sur le sujet font référence, dresse un état des lieux du « context engineering » : l'art d'alimenter les LLM et les agents avec le bon contexte, au bon moment, devenu en un an une discipline à part entière du développement avec l'IA. Une lecture utile pour suivre la maturation rapide des pratiques autour des agents (97 points)."
+    }
+  ]
+}
