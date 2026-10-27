@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-27",
+  "title": "Anthropic dépose son S-1, Microsoft ouvre la porte à un quart de ses effectifs et l'IA revendique ses premières découvertes",
+  "intro": "L'IA écrase tout sur Hacker News ce lundi, du côté de la finance comme de la science : le dépôt du document d'introduction en bourse d'Anthropic frôle les 1 500 points et 1 500 commentaires, Microsoft propose des départs volontaires à environ un quart de ses effectifs pendant que ses capex datacenters explosent, OpenAI lance GPT-6.1 Terra et revendique des découvertes en mathématiques et en physique qui divisent profondément la communauté. En contrepoint, la politique s'invite avec la réélection de Lula au Brésil, Apple ressuscite l'iPad mini avec un écran OLED, et la BBC acte le dépassement du nucléaire par le solaire.",
+  "items": [
+    {
+      "title": "Anthropic dépose son S-1 auprès de la SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "hn": "https://news.ycombinator.com/item?id=50242939",
+      "points": 1486,
+      "comments": 1526,
+      "summary": "Le document d'introduction en bourse d'Anthropic est public sur le site de la SEC — de très loin le fil du jour (près de 1 500 points et plus de 1 500 commentaires). Le dépôt suit un brouillon confidentiel déposé en juin et une levée Series H de 65 milliards de dollars qui valorisait la société à 965 milliards ; le Guardian évoque désormais une valorisation visée de plus de 1 500 milliards de dollars. Le débat porte sur l'écart entre les quelque 47 milliards de dollars de revenus annualisés revendiqués et le revenu net, estimé bien plus bas par le Wall Street Journal, et sur le timing d'une IPO que certains, comme le New York Post, décrivent comme une course avant l'éclatement d'une bulle de l'IA."
+    },
+    {
+      "title": "Microsoft propose des départs volontaires à environ un quart de ses effectifs",
+      "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+      "hn": "https://news.ycombinator.com/item?id=50245524",
+      "points": 741,
+      "comments": 825,
+      "summary": "Selon le Seattle Times, Microsoft offre des départs volontaires massifs touchant environ un quart de ses effectifs — une extension spectaculaire du premier programme du genre chez l'éditeur, qui visait au printemps environ 7 % des salariés américains remplissant un critère d'âge plus ancienneté égal ou supérieur à 70, jusqu'au niveau senior director. Le contexte pèse lourd : environ 15 000 licenciements en 2025 et 37,5 milliards de dollars de dépenses d'investissement sur un seul trimestre, essentiellement pour les datacenters IA. Les 800 commentaires débattent de départs « volontaires » qui ressemblent à des licenciements mieux habillés, et d'une masse salariale sacrifiée au financement de l'infrastructure IA."
+    },
+    {
+      "title": "Brésil : Lula décroche un quatrième mandat au terme d'une remontée spectaculaire",
+      "url": "https://www.reuters.com/live/brazil-election-live-lula-bolsonaro-face-off-presidential-runoff-2026-10-25/",
+      "hn": "https://news.ycombinator.com/item?id=50237485",
+      "points": 620,
+      "comments": 505,
+      "summary": "Le dépouillement final du second tour du 25 octobre confirme la victoire de Lula face au sénateur Bolsonaro, un quatrième mandat obtenu, selon la BBC, au terme d'un retournement spectaculaire après un premier tour serré début octobre. Le fil Reuters en direct a dominé la page d'accueil pendant la nuit du dépouillement, avec plus de 500 commentaires. Rare sujet purement politique à percer sur HN, signe de l'attention portée à la trajectoire démocratique du Brésil et à ses conséquences pour l'Amazonie et la tech sud-américaine."
+    },
+    {
+      "title": "Apple offre à l'iPad mini « sa plus grosse mise à jour » : l'OLED arrive",
+      "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "hn": "https://news.ycombinator.com/item?id=50243061",
+      "points": 437,
+      "comments": 158,
+      "summary": "Apple présente un nouvel iPad mini qualifié de « plus grosse mise à jour jamais apportée » à la gamme. D'après les informations publiées autour du lancement, la petite tablette passe enfin à l'OLED (dalle d'environ 8,4 pouces, 60 Hz), gagne une puce nettement plus rapide et, pour la première fois de la lignée, une résistance à l'eau et à la poussière — avec un prix attendu en hausse autour de 699 dollars. Un second fil consacré à la fiche produit confirme que c'est bien l'écran OLED qui concentre l'attention des commentateurs, entre enthousiasme des lecteurs d'e-books et grogne sur le tarif."
+    },
+    {
+      "title": "OpenAI lance GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "hn": "https://news.ycombinator.com/item?id=50248124",
+      "points": 342,
+      "comments": 542,
+      "summary": "OpenAI officialise GPT-6.1 Terra, nouvelle itération de sa gamme « Terra » positionnée sur le rapport qualité-prix face aux modèles Sol haut de gamme (facturés 2 dollars le million de tokens en entrée et 10 en sortie). Le modèle avait fuité quelques jours plus tôt via un pull request de Microsoft qui basculait 18 configurations d'évaluation de GPT-5.6 Terra vers le nouveau nom. Avec 542 commentaires pour 342 points, la discussion est très animée : la cadence de sorties d'OpenAI et la lisibilité de sa gamme de modèles font débat."
+    },
+    {
+      "title": "Le PDG d'IBM : les modèles open weight sont devenus bons et bon marché en on-prem",
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "hn": "https://news.ycombinator.com/item?id=50238088",
+      "points": 327,
+      "comments": 417,
+      "summary": "Selon The Register, le PDG d'IBM Arvind Krishna juge les modèles à poids ouverts désormais « irrésistiblement bons et bon marché » pour un déploiement sur site. Une prise de position notable : elle légitime, du point de vue d'un géant des services aux entreprises, l'auto-hébergement de modèles ouverts face aux API propriétaires d'OpenAI ou d'Anthropic. Les plus de 400 commentaires confrontent les coûts réels du on-prem (GPU, opérations, mises à jour) aux économies promises, et y voient pour certains un discours intéressé d'IBM, vendeur de conseil et d'infrastructure."
+    },
+    {
+      "title": "Le solaire est en train de devenir plus gros que le nucléaire",
+      "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear",
+      "hn": "https://news.ycombinator.com/item?id=50245385",
+      "points": 306,
+      "comments": 188,
+      "summary": "La BBC retrace comment la production électrique solaire mondiale est en train de dépasser celle du nucléaire, aboutissement d'une décennie de chute des coûts des panneaux et d'installations record. Le jalon est autant symbolique qu'industriel : une technologie raillée pour sa marginalité il y a vingt ans double l'atome. Les 188 commentaires rejouent le débat classique de HN sur l'intermittence, le stockage et la place qui doit rester au nucléaire dans un mix bas carbone."
+    },
+    {
+      "title": "OpenAI revendique trois découvertes en maths, informatique et physique — la communauté doute",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "hn": "https://news.ycombinator.com/item?id=50251344",
+      "points": 268,
+      "comments": 622,
+      "summary": "OpenAI affirme que ses modèles ont contribué à de nouveaux résultats scientifiques : un modèle interne aurait résolu environ la moitié des dix problèmes inédits du défi « First Proof » (revu à la baisse après qu'une solution s'est révélée probablement fausse), et GPT-5.2 a contribué à un préprint de physique montrant que des amplitudes de gluons longtemps considérées comme nulles ne le sont pas. Les 622 commentaires pointent une méthodologie que Jakub Pachocki lui-même qualifie de « sprint chaotique », des transcripts incomplets réclamés par les organisateurs et le rôle réel des chercheurs humains. Un préprint séparé hébergé dans le dépôt openai/math, qui prétend carrément réfuter l'hypothèse du temps exponentiel (ETH), nourrit un second fil tout aussi sceptique (159 points, 418 commentaires)."
+    },
+    {
+      "title": "La Suisse, bloc par bloc, à l'échelle 1:1",
+      "url": "https://blocks.manifold3d.ch/",
+      "hn": "https://news.ycombinator.com/item?id=50240922",
+      "points": 214,
+      "comments": 465,
+      "summary": "Une démo cartographique qui reconstruit la Suisse entière « bloc par bloc » à l'échelle 1:1, façon monde voxel, vraisemblablement à partir des excellentes données topographiques ouvertes du pays. Le genre de projet jubilatoire dont HN raffole : 465 commentaires, où l'on explore son quartier, où l'on compare avec les données de swisstopo et où l'on discute des prouesses techniques nécessaires pour servir un tel volume de géométrie dans un navigateur."
+    },
+    {
+      "title": "La plus vieille application graphique qui tourne encore sous Windows 11",
+      "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+      "hn": "https://news.ycombinator.com/item?id=50248055",
+      "points": 205,
+      "comments": 342,
+      "summary": "Une enquête d'archéologie logicielle : quelle est la plus ancienne application graphique Windows qui s'exécute encore telle quelle sur Windows 11 ? L'exercice met en lumière l'obsession de Microsoft pour la rétrocompatibilité, capable de faire tourner des binaires vieux de plusieurs décennies sur un OS 64 bits moderne. Les 342 commentaires regorgent d'anecdotes de vieux logiciels métier toujours en production — et renvoient vers winevdm, le projet qui fait revivre les applications Windows 16 bits, également en page d'accueil ce jour."
+    },
+    {
+      "title": "Observer les oiseaux recâble le cerveau et ralentit le déclin cognitif",
+      "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+      "hn": "https://news.ycombinator.com/item?id=50215997",
+      "points": 201,
+      "comments": 517,
+      "summary": "La BBC se penche sur des travaux suggérant que l'observation des oiseaux — attention soutenue, écoute active, marche en extérieur — a des effets mesurables sur le cerveau et pourrait ralentir le déclin cognitif. Le sujet a étonnamment généré plus de 500 commentaires, un des fils les plus bavards du week-end : les lecteurs y partagent leur bascule vers le birdwatching, débattent de la causalité (est-ce l'observation ou simplement la marche et le lien social ?) et recommandent applications et jumelles."
+    },
+    {
+      "title": "Audio fuité : le PDG de Flock assure aux policiers que le rejet de ses caméras « n'est pas réel »",
+      "url": "https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/",
+      "hn": "https://news.ycombinator.com/item?id=50248005",
+      "points": 172,
+      "comments": 290,
+      "summary": "404 Media publie un enregistrement fuité dans lequel le PDG de Flock Safety, le fournisseur de caméras de lecture de plaques d'immatriculation qui équipe des milliers de polices locales américaines, affirme à des policiers que le mouvement de contestation contre l'entreprise n'est pas réel. Le propos passe mal sur HN, où plusieurs campagnes locales contre ces caméras ont justement été organisées et documentées : les 290 commentaires y voient la confirmation d'une entreprise qui balaie les inquiétudes de surveillance de masse plutôt que d'y répondre."
+    }
+  ]
+}
