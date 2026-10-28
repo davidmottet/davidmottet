@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-28",
+      "title": "Genie 4 simule le monde, Python enterre son JIT et Tailscale colmate ses brèches SSH",
+      "count": 12
+    },
+    {
       "date": "2026-10-27",
       "title": "Anthropic dépose son S-1, Microsoft ouvre la porte à un quart de ses effectifs et l'IA revendique ses premières découvertes",
       "count": 12

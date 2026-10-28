@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-28",
+  "title": "Genie 4 simule le monde, Python enterre son JIT et Tailscale colmate ses brèches SSH",
+  "intro": "Journée dense sur Hacker News, entre infrastructure et IA : Google DeepMind dévoile Genie 4, son simulateur de mondes interactifs, pendant que le terminal Ghostty 1.4 et sa bibliothèque embarquable séduisent la page d'accueil. Côté coulisses, le conseil de pilotage de Python acte le retrait du JIT expérimental après le retrait du PEP 836, Tailscale répond en urgence au rapport « Tailworm » sur ses failles SSH, et Wired révèle qu'une décision secrète de la cour FISA sur la surveillance des Américains est retenue au-delà du délai légal. Apple complète le tableau avec les premiers Mac M6, et Anthropic publie ses premiers résultats concrets dans le développement de médicaments.",
+  "items": [
+    {
+      "title": "Genie 4 : la nouvelle génération de simulation de mondes de DeepMind",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "hn": "https://news.ycombinator.com/item?id=50261319",
+      "points": 793,
+      "comments": 486,
+      "summary": "Google DeepMind présente Genie 4, un modèle de simulation de mondes « nativement multimodal » qui génère des environnements interactifs avec audio, musique d'ambiance et dialogues, réservé dans un premier temps aux abonnés Google AI Ultra via Project Genie. Les démonstrations (buste de marbre lâché sur une pastèque, kraken attaquant une ville, tableau transformé en scène explorable) impressionnent, mais aucun détail technique n'est publié. Les presque 500 commentaires reprochent l'absence de poids ouverts, pointent des erreurs de physique et des incohérences visuelles, doutent de l'économie du streaming de mondes générés (le spectre de Stadia revient), et débattent des vrais usages : simulation pour la robotique et les véhicules autonomes plutôt que jeu vidéo."
+    },
+    {
+      "title": "Ghostty 1.4 : le terminal devient une bibliothèque embarquable",
+      "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+      "hn": "https://news.ycombinator.com/item?id=50261998",
+      "points": 855,
+      "comments": 269,
+      "summary": "La version 1.4 du terminal de Mitchell Hashimoto met en avant libghostty, un cœur de terminal embarquable testé sur Apple, Windows, Linux, FreeBSD, Android et WebAssembly, avec des bindings C, Zig, Go, Swift, Python ou Rust ; un terminal vide consomme environ 90 % de mémoire en moins, et l'auteur revendique 10 000 terminaux actifs sur un serveur 4 cœurs/8 Go. JetBrains l'utilise déjà et Neovim a accepté le principe de l'adopter comme cœur de terminal ; un libghostty 1.0 avec ABI stable est visé d'ici quelques mois. Les commentaires saluent la vitesse et les réglages par défaut, mais râlent sur le TERM xterm-ghostty qui casse certains SSH distants, des bugs macOS, et comparent inlassablement avec Kitty, Alacritty et Konsole."
+    },
+    {
+      "title": "Le gouvernement américain cache une décision de justice secrète sur la surveillance des Américains",
+      "url": "https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/",
+      "hn": "https://news.ycombinator.com/item?id=50259604",
+      "points": 854,
+      "comments": 305,
+      "summary": "En mars, la cour FISA a jugé que des outils de filtrage automatisés appliqués aux communications interceptées au titre de la Section 702 constituaient des recherches sans mandat illégales visant des Américains — tout en autorisant une année de surveillance supplémentaire. La loi imposait une déclassification sous 180 jours, échue le 13 septembre : l'administration n'a ni publié la décision ni invoqué la dérogation de sécurité nationale, et les sénateurs Wyden et Schiff exigent des explications du DNI et de l'Attorney General d'ici le 6 novembre. Une coalition de 23 organisations de défense des libertés demande au Congrès de ne pas réautoriser la Section 702 — techniquement expirée depuis juin mais maintenue par la certification de mars — tant que l'avis n'est pas rendu public."
+    },
+    {
+      "title": "Python : le JIT expérimental va être retiré de CPython",
+      "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+      "hn": "https://news.ycombinator.com/item?id=50257419",
+      "points": 466,
+      "comments": 253,
+      "summary": "Après la pause imposée en juin par le conseil de pilotage, qui exigeait un PEP en six mois, les auteurs du PEP 836 « JIT Go Brrr » (Brandt Bucher, Savannah Ostrowski, Ken Jin) l'ont retiré le 19 octobre, faute de bande passante pour répondre au niveau d'exigence demandé : le compilateur JIT, expérimental depuis Python 3.13, sera donc retiré de la branche principale pendant le cycle 3.16. Le conseil jugeait insuffisants les engagements de maintenance, la parité entre plateformes, le traitement de la sécurité, et trop tardive la revue de compatibilité prévue pour 2028. Brett Cannon précise que le travail pourra continuer hors du dépôt principal, mais l'avenir du projet — et de ses contributeurs — reste incertain."
+    },
+    {
+      "title": "Tailscale SSH : point d'étape sur l'enquête et les correctifs après le rapport « Tailworm »",
+      "url": "https://tailscale.com/ssh-investigation-update",
+      "hn": "https://news.ycombinator.com/item?id=50264857",
+      "points": 232,
+      "comments": 119,
+      "summary": "Le 25 octobre, la chercheuse Erica Windisch (Cyberdione Labs) a publié « Tailworm », un rapport décrivant 11 problèmes dans Tailscale SSH, les app connectors, serve, DERP et headscale — dont des escalades vers root via le forwarding SSH et une race condition permettant, en laboratoire, de capturer une clé d'enrôlement et de joindre une machine attaquante au réseau (bloquée par Tailnet Lock). Dans sa mise à jour du 27 octobre, Tailscale confirme des « problèmes de sécurité sérieux » d'escalade de privilèges, annonce des correctifs visés sous 24 heures et un advisory détaillé, sans recommander de désactiver Tailscale SSH ; en attendant, désactiver le forwarding (TS_SSH_DISABLE_FORWARDING=1) et resserrer les ACL. Le débat porte sur la divulgation « signalée mais non coordonnée » et sur le qualificatif « wormable », contesté faute de reproduction indépendante."
+    },
+    {
+      "title": "Apple lance le MacBook Pro 14 pouces M6 et l'iMac M6",
+      "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "hn": "https://news.ycombinator.com/item?id=50261352",
+      "points": 307,
+      "comments": 398,
+      "summary": "Apple met à jour le MacBook Pro 14 pouces et l'iMac avec la puce M6, étrennée par le Mac mini en août : une montée en gamme sans changement de design, avec environ 170 Go/s de bande passante mémoire et la disparition de la configuration de base 16 Go sur le portable. Précommandes le 28 octobre, disponibilité le 6 novembre ; des MacBook Pro haut de gamme à écran OLED tactile sont attendus séparément, autour de 2 899 dollars selon la presse spécialisée. Les deux fils HN cumulent près de 800 commentaires, le fil iMac (319 points) faisant presque jeu égal avec celui du portable."
+    },
+    {
+      "title": "Anthropic détaille ses premiers résultats dans le développement de médicaments avec Claude",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "hn": "https://news.ycombinator.com/item?id=50265609",
+      "points": 169,
+      "comments": 159,
+      "summary": "Anthropic publie un point d'étape, « encore précoce » et essentiellement préclinique, sur six partenariats pharmaceutiques : chez Generate Biomedicines, un design de CAR-T raccourci d'environ 70 % proposé via Claude Code décuple l'expression des récepteurs ; Divergence Labs a généré 35 000 designs d'anticorps en un mois ; chez Enveda, la revue de 1 061 pages de documentation réglementaire a retrouvé les 11 problèmes identifiés par les humains plus 7 manqués, réduisant le temps de relecture de 89 %. La société révèle aussi l'acquisition de Mithril Medicine, une entreprise unipersonnelle visant deux dystrophies musculaires rares, dont le candidat est passé de l'idée à des résultats prometteurs chez la souris en moins de 18 mois, avec des essais humains envisagés fin 2028. Près de 160 commentaires accueillent ces chiffres d'autopromotion avec l'habituel mélange d'intérêt et de scepticisme."
+    },
+    {
+      "title": "Survival LLM : un assistant IA et une bibliothèque d'urgence 100 % hors ligne",
+      "url": "https://www.brangus.io/survival-llm",
+      "hn": "https://news.ycombinator.com/item?id=50264853",
+      "points": 237,
+      "comments": 117,
+      "summary": "Le projet combine un modèle de langage local (IBM Granite 4.2 8B) et une bibliothèque de référence d'urgence, le tout fonctionnant sans Internet sur un ordinateur personnel alimentable par un petit générateur. La discussion oppose les partisans d'une simple recherche locale type Kiwix — plus fiable, moins gourmande — aux défenseurs de l'interface conversationnelle ; le risque d'hallucination en situation vitale (l'exemple de l'identification de champignons revient) est l'objection centrale. D'autres fils explorent les alternatives : Wikipédia hors ligne sur Raspberry Pi, llamafile, ou des petits modèles spécialisés par tâche."
+    },
+    {
+      "title": "La classification des groupes simples finis formalisée en Lean",
+      "url": "https://cfsg.axiommath.ai/",
+      "hn": "https://news.ycombinator.com/item?id=50261647",
+      "points": 187,
+      "comments": 52,
+      "summary": "Le projet s'attaque à la formalisation en Lean de l'un des monuments des mathématiques modernes : la classification des groupes simples finis, une démonstration estimée entre 10 000 et 20 000 pages réparties sur des centaines d'articles. L'approche, portée notamment par Inna Capdeboscq (co-autrice de la preuve « GLS » de seconde génération) et Damiano Testa à Warwick, est modulaire et humain-IA : les mathématiciens fixent les objectifs, l'IA formalise les arguments, et chaque sous-projet autonome peut être vérifié à toutes les échelles. Les retombées annoncées : des bibliothèques ouvertes de théorie des groupes, l'outillage associé et un benchmark structuré pour l'autoformalisation."
+    },
+    {
+      "title": "Pourquoi Micron abandonne la DRAM 4F² quand ses rivaux s'y accrochent",
+      "url": "https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram",
+      "hn": "https://news.ycombinator.com/item?id=50245014",
+      "points": 152,
+      "comments": 23,
+      "summary": "Micron renonce à la cellule DRAM 4F² qu'elle dit avoir inventée et poursuivie pendant plus de vingt ans : selon son CTO Scott DeBoer, le gain théorique de 33 % de densité se heurte à l'espacement réel des condensateurs et le passage augmente drastiquement coût et complexité de fabrication. L'entreprise continuera d'étirer la DRAM planaire 6F² (nœud 1δ en production, 1ε avec collage de wafers en développement) avant un saut direct vers la 3D DRAM à couches empilées. Le pari est risqué : Samsung, SK hynix et le chinois CXMT persistent sur le 4F², CXMT promettant même des RDIMM DDR5 serveur en 4F² d'ici la fin de l'année."
+    },
+    {
+      "title": "Un « Git » pour le Code des États-Unis",
+      "url": "https://lexifina.com/blog/git-for-the-us-code",
+      "hn": "https://news.ycombinator.com/item?id=50268380",
+      "points": 111,
+      "comments": 46,
+      "summary": "Lexifina a reconstruit l'historique de version du US Code : en rejouant chaque loi publique entre les points de publication officiels depuis 2017, l'outil permet de voir le texte en vigueur à n'importe quelle date et quelle loi a écrit chaque phrase — 361 des 365 modifications testées sur neuf titres reproduisent exactement la version suivante. L'enjeu dépasse la curiosité juridique : les LLM appliquent souvent des règles abrogées (une étude de la TU Munich mesure 24 % de bonnes réponses sans le texte à jour contre 87 % avec), et demander à un modèle de régénérer un texte ancien est trompeusement proche de l'original sans être exact. Le billet détaille honnêtement les limites, comme les lois rétroactives pas encore signalées et les dates d'effet lues par heuristique."
+    },
+    {
+      "title": "Le paquebot SS United States sera coulé en novembre, plus grand récif artificiel du monde",
+      "url": "https://divemagazine.com/scuba-diving-news/ss-united-states-to-be-sunk-as-worlds-largest-artificial-reef-in-november",
+      "hn": "https://news.ycombinator.com/item?id=50239214",
+      "points": 107,
+      "comments": 77,
+      "summary": "Le comté d'Okaloosa (Floride) a fixé la fenêtre : dans la deuxième semaine de novembre, selon la météo, le paquebot lancé en 1951 — détenteur toujours en titre du Ruban bleu — sera coulé par ennoyage contrôlé, sans explosifs, à 22 milles nautiques au sud-ouest de Destin-Fort Walton Beach, par 180 pieds de fond. Après 29 ans à quai à Philadelphie, le navire a été dépollué à Mobile : 128 réservoirs nettoyés, plus de 400 hublots déposés, câblage et revêtements au PCB retirés. L'opération sera retransmise en direct et un musée à terre exposera les cheminées et le mât radar sauvegardés."
+    }
+  ]
+}
