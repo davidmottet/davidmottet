@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-30",
+  "title": "Casse à 5,6 milliards chez Binance, Mistral Large 4 en poids ouverts et DoorDash s'offre Instacart",
+  "intro": "Journée spectaculaire sur Hacker News, dominée par un piratage record de Binance — environ 5,6 milliards de dollars dérobés, dont une partie déjà gelée par Tether et Circle. L'IA reste omniprésente : Mistral publie les poids de Large 4 sous licence contestée, YC Labs fait tourner des essaims d'agents dans Minecraft avec des résultats délicieusement bureaucratiques, et Martin Fowler théorise la « voix LLM » qui trahit les textes générés. Côté consolidation, DoorDash annonce le rachat d'Instacart pour environ 17 milliards de dollars, pendant que Pico CSS tire sa révérence, son créateur estimant que les outils d'IA ont réduit l'intérêt d'un framework CSS minimaliste.",
+  "items": [
+    {
+      "title": "Binance-hacker-1029 : environ 5,6 milliards de dollars dérobés à Binance",
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "hn": "https://news.ycombinator.com/item?id=50296470",
+      "points": 1018,
+      "comments": 610,
+      "summary": "Une page Arkham Intelligence trace le pirate qui aurait dérobé environ 5,6 milliards de dollars à Binance ; d'après la discussion, Circle et Tether ont déjà gelé environ 2,4 milliards en USDC/USDT sur Ethereum et Tron, alors que le fonds d'assurance SAFU de Binance pèse environ 1 milliard, entièrement en bitcoin. CZ a reconnu que « cela ressemble bien à un hack de Binance » et remercié les émetteurs de stablecoins pour la rapidité des gels. Les commentaires soulignent l'ironie de ces gels centralisés face à l'ethos « sans retour en arrière » des cryptomonnaies, et spéculent sans preuve sur l'attribution (Corée du Nord, complicité interne)."
+    },
+    {
+      "title": "Mistral publie les poids de Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "hn": "https://news.ycombinator.com/item?id=50289418",
+      "points": 1300,
+      "comments": 360,
+      "summary": "Les poids de Mistral Large 4 (« Le Chonk », 1T de paramètres dont 52B actifs, plus une variante NVFP4) sont sur Hugging Face, sous licence MIT modifiée exigeant une licence commerciale pour les fournisseurs de « Model as a Service ». Le prix de l'API a été à peu près divisé par deux, à environ 0,70 $/M de tokens en entrée et 2,10 $/M en sortie. Le fil conteste surtout l'appellation « open weight » au vu des restrictions commerciales, et critique le flou de la clause « meaningful control over the inputs » ainsi qu'un taux de refus cyber de 96,6 % présenté sans référentiel de refus bénins."
+    },
+    {
+      "title": "DoorDash va racheter Instacart",
+      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+      "hn": "https://news.ycombinator.com/item?id=50287919",
+      "points": 458,
+      "comments": 626,
+      "summary": "Selon le communiqué déposé à la SEC, DoorDash rachète Instacart (Maplebear) à 65 $ l'action, soit environ 17 milliards de dollars et une prime de 26 % sur le cours du 22 octobre, avec paiement en cash, en actions DoorDash (plafonnées à 25 %) ou mixte. L'opération, financée par la trésorerie et un prêt relais de JPMorgan, vise plus de 500 M$ de synergies annuelles et une clôture entre fin 2027 et le premier semestre 2028. L'annonce accompagne un T3 2026 solide pour DoorDash : 4,6 Md$ de revenus (+34 %) et 466 M$ de bénéfice net."
+    },
+    {
+      "title": "« LLM Voice » : Martin Fowler sur la voix reconnaissable des textes générés",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "hn": "https://news.ycombinator.com/item?id=50290177",
+      "points": 403,
+      "comments": 211,
+      "summary": "Dans ce billet, Martin Fowler soutient que les lecteurs perçoivent une « voix LLM » dérangeante dans la prose générée et perdent confiance avant même tout outil de détection — « ce ne sont pas les tirets cadratins, ce sont les métaphores porteuses ». Il exhorte les auteurs à écrire leurs propres brouillons (même une relecture lourde laisse la voix d'origine transparaître), rappelle que son site impose de déclarer l'usage d'IA, et admet des exceptions : l'accessibilité (Jim Highsmith écrivant avec Parkinson), la traduction et les textes à faible enjeu."
+    },
+    {
+      "title": "YC Labs a fait tourner des essaims d'agents IA dans Minecraft et Mindustry",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "hn": "https://news.ycombinator.com/item?id=50296486",
+      "points": 237,
+      "comments": 79,
+      "summary": "YC Labs a lâché des groupes d'agents IA dans Minecraft (via l'API Mineflayer) et Mindustry : les agents ont développé des comportements bureaucratiques, quatre d'entre eux passant onze minutes à nommer un « opérateur unique de fertilisant » pour un seul bloc de poudre d'os, avant une enquête « sans blâme » sur un incident de lancer de poulet. La discussion doute de l'adéquation des gros modèles de raisonnement aux jeux temps réel (Minecraft tourne à 20 ticks par seconde) et se demande si déléguer les réflexes à du JavaScript est une astuce légitime ou l'aveu d'un raisonnement trop lent."
+    },
+    {
+      "title": "H.264 Is Magic (2016) : les coulisses de la compression vidéo",
+      "url": "https://sidbala.com/h-264-is-magic/",
+      "hn": "https://news.ycombinator.com/item?id=50291054",
+      "points": 370,
+      "comments": 137,
+      "summary": "Retour en page d'accueil pour ce classique de Sid Bala expliquant pourquoi H.264 paraît magique : quantification dans le domaine fréquentiel pour éliminer les détails invisibles, couleur YCbCr avec chrominance au quart de la résolution, macroblocs 16x16 et images I/P/B pour la compensation de mouvement. Le codage entropique CABAC et le filtre de déblocage intégré sont cités parmi les apports décisifs par rapport aux standards MPEG antérieurs. La discussion du jour n'a pas pu être consultée."
+    },
+    {
+      "title": "Pico CSS n'est plus maintenu",
+      "url": "https://github.com/picocss/pico/discussions/754",
+      "hn": "https://news.ycombinator.com/item?id=50298964",
+      "points": 83,
+      "comments": 22,
+      "summary": "Le créateur Lucas Larroche archive les dépôts de Pico CSS : la v2.1.1 sera la dernière version de ce framework CSS minimaliste. Il estime que les outils d'IA ont réduit le besoin d'un tel framework et qu'une version modernisée serait de toute façon un autre projet. Le paquet npm, le CDN jsDelivr et le site restent en ligne, et les forks sous licence MIT sont bienvenus à condition de ne pas réutiliser le nom ni le logo."
+    },
+    {
+      "title": "CVE-2026-98432 : un use-after-free TCP dans le noyau Linux",
+      "url": "https://www.penligent.ai/hackinglabs/cve-2026-98432/",
+      "hn": "https://news.ycombinator.com/item?id=50299182",
+      "points": 36,
+      "comments": 27,
+      "summary": "Une faille use-after-free dans la pile TCP de Linux (corruption mémoire plus condition de course) pourrait selon certains mener à de l'exécution de code, même si les distributions la classent moins sévère et qu'une exploitation exigerait du heap grooming. Le fil note que Go 1.24 active MPTCP par défaut côté serveur sur Linux (vérifiable avec « ss -M ») et que Red Hat aurait différé son correctif. L'article lui-même est éreinté comme du « slop » probablement généré par LLM, relançant le débat sur l'avalanche de bugs découverts par IA dans les bases de code C."
+    },
+    {
+      "title": "Herdr, le multiplexeur de terminal, sort son application native",
+      "url": "https://github.com/herdrdev/herdr-app",
+      "hn": "https://news.ycombinator.com/item?id=50298436",
+      "points": 94,
+      "comments": 66,
+      "summary": "Herdr, alternative open source à tmux financée par du capital-risque et pensée pour les agents de codage, publie une application de bureau native construite sur libghostty, évitant le terminal-dans-le-terminal. Le support SSH est là, mais la télémétrie est activée par défaut dans les binaires et des bugs de sélection/copie subsistent sur macOS. La discussion s'inquiète surtout d'une future « enshittification » liée au financement VC — contrée par « c'est open source, forkez-le » — et compare l'outil à tmux, Zellij et cmux."
+    },
+    {
+      "title": "Un monde virtuel génératif sur un Raspberry Pi Pico 2 W",
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "hn": "https://news.ycombinator.com/item?id=50295450",
+      "points": 171,
+      "comments": 10,
+      "summary": "Le projet GitHub « tinyworldformer » fait tourner un minuscule world model — un modèle qui génère le jeu image par image — sur un microcontrôleur Raspberry Pi Pico 2 W. Ni le dépôt ni la discussion n'ont pu être consultés aujourd'hui ; les 171 points en quelques heures témoignent en tout cas de l'enthousiasme pour l'IA générative sur matériel ultra-contraint."
+    },
+    {
+      "title": "Cuis : le Smalltalk-80 moderne",
+      "url": "https://cuis.st/",
+      "hn": "https://news.ycombinator.com/item?id=50255343",
+      "points": 53,
+      "comments": 9,
+      "summary": "Cuis est un environnement Smalltalk forké de Squeak et rigoureusement épuré — un commentateur résume : Squeak est Debian, Pharo est Arch, Cuis est Alpine. Il partage la même machine virtuelle que Squeak et Pharo mais propose une interface Morphic réécrite avec graphiques vectoriels accélérés matériellement, polices comprises. La discussion pèse le charme de sa simplicité explorable contre un écosystème de bibliothèques plus maigre (Fuel, Seaside manquent à l'appel) et le recommande aux débutants en Smalltalk."
+    },
+    {
+      "title": "Astroterm : un planétarium dans votre terminal",
+      "url": "https://github.com/da-luce/astroterm",
+      "hn": "https://news.ycombinator.com/item?id=50270651",
+      "points": 56,
+      "comments": 3,
+      "summary": "Astroterm affiche un planétarium en ASCII dans le terminal, étoiles nommées à l'appui (Capella, Rigel, Sirius). Les commentateurs saluent un README exemplaire, contrastant avec les projets « vibe-codés » mal documentés, même si l'un d'eux juge l'outil inutilisable pour une vraie observation du ciel — Orion n'y est pas reconnaissable — et réclame toujours un vrai Stellarium pour terminal."
+    }
+  ]
+}
