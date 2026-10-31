@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-10-31",
+      "title": "Backdoor dans l'extension Claude Code, suites du casse Binance et Northflank compromis : l'octobre noir de la chaîne d'approvisionnement",
+      "count": 10
+    },
+    {
       "date": "2026-10-30",
       "title": "Casse à 5,6 milliards chez Binance, Mistral Large 4 en poids ouverts et DoorDash s'offre Instacart",
       "count": 12

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-31",
+  "title": "Backdoor dans l'extension Claude Code, suites du casse Binance et Northflank compromis : l'octobre noir de la chaîne d'approvisionnement",
+  "intro": "Journée dominée par la sécurité sur Hacker News : une version piégée de l'extension Claude Code pour VS Code a été diffusée sur la marketplace de Cursor, Northflank reconnaît une compromission neuf jours après Railway, et Wired revient sur le casse record de Binance — 6,3 milliards de dollars en une vingtaine de minutes. En toile de fond, la bulle IA inquiète : des élus démocrates déposent une résolution contre tout renflouement des géants de la tech, Blackstone doute de la note de crédit d'Anthropic après son IPO, et un billet très discuté affirme que l'IA déqualifie les SRE plutôt qu'elle ne les remplace. Respiration du jour : elect.horse, un puzzle quotidien de gerrymandering.",
+  "items": [
+    {
+      "title": "Une backdoor dans l'extension Claude Code pour VS Code diffusée sur la marketplace de Cursor",
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "hn": "https://news.ycombinator.com/item?id=50300683",
+      "points": 804,
+      "comments": 501,
+      "summary": "Selon l'analyse de Phorion, une version compromise de l'extension officielle Claude Code a été publiée sur la marketplace d'extensions de Cursor (registre Open VSX), livrant un cheval de Troie d'accès à distance sur les machines des développeurs. Le chercheur Kevin Beaumont (DoublePulsar) parle d'« Anthropic piraté pour livrer un RAT aux laptops des développeurs Claude dans le monde entier » ; deux fils connexes ont aussi atteint le haut de la page (652 et 399 points). Avec plus de 500 commentaires, c'est le sujet le plus discuté du jour, dans la lignée des compromissions de plateformes de développement qui s'enchaînent depuis début octobre."
+    },
+    {
+      "title": "Des élus démocrates déposent une résolution contre tout renflouement de la bulle IA",
+      "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+      "hn": "https://news.ycombinator.com/item?id=50302814",
+      "points": 627,
+      "comments": 479,
+      "summary": "Les représentants Greg Casar et Maxine Waters mènent une résolution du Congressional Progressive Caucus s'opposant par avance à tout sauvetage public des géants de la tech si la bulle de l'investissement en IA venait à éclater. Le texte s'inscrit dans un débat déjà vif à Washington : la Maison-Blanche a exclu un « backstop » pour l'industrie, et la sénatrice Warren l'avait interrogée sur d'éventuels renflouements. Près de 480 commentaires en font l'un des fils les plus animés de la journée, signe que l'exposition systémique des dépenses d'infrastructure IA inquiète bien au-delà des cercles financiers."
+    },
+    {
+      "title": "Le casse à 6,3 milliards de dollars de Binance a été exécuté en 20 minutes",
+      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "hn": "https://news.ycombinator.com/item?id=50303172",
+      "points": 352,
+      "comments": 242,
+      "summary": "Wired reconstitue le piratage de Binance survenu le 30 octobre : environ 6,3 milliards de dollars siphonnés en une vingtaine de minutes, le plus gros casse crypto de l'histoire — plus que l'ensemble des vols de 2025 réunis, selon les décomptes de la presse spécialisée. Les comptes rendus évoquent une compromission de l'infrastructure de signature de l'exchange, tandis que plusieurs milliards en stablecoins ont déjà été gelés par Tether et Circle. Le fil prolonge la discussion d'hier sur l'ironie de ces gels centralisés et sur ce qu'il adviendra des fonds et des clients."
+    },
+    {
+      "title": "Northflank compromis : « considérez que tous vos secrets ont été déchiffrés »",
+      "url": "https://status.northflank.com",
+      "hn": "https://news.ycombinator.com/item?id=50305025",
+      "points": 374,
+      "comments": 283,
+      "summary": "La plateforme de déploiement cloud Northflank a annoncé sur sa page de statut un incident de sécurité ; selon les comptes rendus, un worker de build a été compromis — le même vecteur que pour Railway le 21 octobre — et l'entreprise recommande de considérer tous les secrets comme déchiffrés et de faire tourner ses clés. Gergely Orosz rappelle sans ménagement que Northflank avait raillé Railway neuf jours plus tôt en invitant ses clients à migrer chez eux. L'incident alourdit le bilan d'un mois d'octobre noir où une série de plateformes pour développeurs ont été touchées par des attaques similaires."
+    },
+    {
+      "title": "L'IA ne remplace pas les SRE, elle les déqualifie",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "hn": "https://news.ycombinator.com/item?id=50305693",
+      "points": 527,
+      "comments": 393,
+      "summary": "Ce billet de la newsletter de SigNoz soutient que les outils d'IA appliqués aux opérations ne suppriment pas les postes d'ingénieurs de fiabilité, mais érodent progressivement les compétences de diagnostic dont on a précisément besoin quand l'automatisation échoue. L'argument touche une corde sensible : avec 527 points et près de 400 commentaires, c'est l'un des débats techniques les plus nourris du jour, autour de la déqualification des équipes d'astreinte à l'ère des assistants IA."
+    },
+    {
+      "title": "Anthropic pourrait ne pas décrocher une note de crédit « investment grade » après son IPO, selon Blackstone",
+      "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+      "hn": "https://news.ycombinator.com/item?id=50307219",
+      "points": 287,
+      "comments": 239,
+      "summary": "D'après le Financial Times, Blackstone estime qu'Anthropic pourrait rester en catégorie spéculative même après son introduction en bourse. La presse financière rapporte que KBRA avait attribué à l'entreprise un BB+ en juin — haut de la catégorie « junk » — avant un financement de puces de 35 milliards de dollars mené par Apollo, et qu'Anthropic offrirait des rendements à deux chiffres à Blackstone pour un financement de 60 milliards. Le fil s'inscrit dans les interrogations croissantes sur le coût du capital qui finance la course aux infrastructures d'IA."
+    },
+    {
+      "title": "elect.horse : le puzzle quotidien de gerrymandering",
+      "url": "https://elect.horse/",
+      "hn": "https://news.ycombinator.com/item?id=50301462",
+      "points": 535,
+      "comments": 150,
+      "summary": "Se présentant comme « the daily gerrymandering puzzle », elect.horse propose chaque jour de redécouper une carte électorale pour faire gagner son camp — façon ludique de toucher du doigt la mécanique du charcutage électoral américain. Le jeu a conquis la page d'accueil avec 535 points, divertissement du jour au milieu d'une actualité dominée par les brèches de sécurité."
+    },
+    {
+      "title": "Medicare paie 50 000 $ pour votre infarctus ; il devrait payer 100 $ pour le prévenir",
+      "url": "https://www.medpagetoday.com/opinion/second-opinions/123553?trw=no",
+      "hn": "https://news.ycombinator.com/item?id=50304419",
+      "points": 280,
+      "comments": 266,
+      "summary": "Cette tribune publiée sur MedPage Today oppose le coût d'une prise en charge d'infarctus par Medicare — de l'ordre de 50 000 dollars — aux quelques dizaines de dollars que coûterait la prévention, et plaide pour réorienter le financement vers cette dernière. Le sujet a généré 266 commentaires, les incitations perverses du système de santé américain étant un thème récurrent et clivant sur HN."
+    },
+    {
+      "title": "Sleep : un cadre de Google Research pour que les LLM retiennent ce qu'ils apprennent",
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "hn": "https://news.ycombinator.com/item?id=50272479",
+      "points": 170,
+      "comments": 17,
+      "summary": "Google Research présente « Sleep », un cadre d'apprentissage continu visant à ce que les grands modèles de langage conservent les connaissances acquises au fil du temps, par analogie avec la consolidation mémorielle pendant le sommeil. Le billet aborde l'un des problèmes ouverts les plus structurants du domaine : l'oubli catastrophique lors de l'ajout de nouvelles connaissances à un modèle déjà entraîné."
+    },
+    {
+      "title": "Cisco donne des tokens d'IA illimités à un ingénieur pour réécrire du code legacy",
+      "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+      "hn": "https://news.ycombinator.com/item?id=50304122",
+      "points": 107,
+      "comments": 116,
+      "summary": "Selon Fortune, le président de Cisco Jeetu Patel a accordé à un ingénieur de 27 ans un budget illimité de tokens d'IA pour réécrire du code legacy de l'entreprise, illustration de la stratégie très volontariste du groupe en matière de codage assisté. L'article relance la question de l'avenir des postes juniors : Patel répète depuis des mois que l'IA doit libérer les ingénieurs des tâches mécaniques, pendant que les embauches débutantes se raréfient."
+    }
+  ]
+}
