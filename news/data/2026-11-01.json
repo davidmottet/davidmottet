@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-01",
+  "title": "Un parlement de docteurs en Serbie, des comptes ChatGPT détournables et un infostealer qui trie ses victimes au LLM",
+  "intro": "Journée très politique et très IA sur Hacker News. En tête, et de loin : la Serbie élit un parlement rempli de scientifiques après la victoire de la liste étudiante, un sujet repris de Science. Côté sécurité, une équipe affirme avoir pu détourner des comptes ChatGPT via un simple lien, le fork de Signal Molly inquiète faute de mises à jour, et Cisco Talos décrit un infostealer qui utilise des LLM pour classer ses victimes par valeur marchande. En contrepoint, Vitalik Buterin plaide pour un « minimalisme numérique », et les fils techniques (compilation des switch dans GCC, Lean et vérification formelle, circuits neuronaux minimaux) complètent un samedi étonnamment dense.",
+  "items": [
+    {
+      "title": "La Serbie vient d'élire « le parlement le plus brillant du monde »",
+      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+      "hn": "https://news.ycombinator.com/item?id=50314654",
+      "points": 646,
+      "comments": 372,
+      "summary": "Après la victoire de la liste étudiante (Studentska lista) aux législatives anticipées, des dizaines d'universitaires font leur entrée à l'Assemblée nationale serbe : une astrophysicienne spécialiste de l'évolution des galaxies, un ingénieur en robotique, un chimiste organicien ayant travaillé sur des traitements anti-Covid, ainsi que médecins, économistes et sociologues. Selon la presse serbe relayée avec l'article de Science, plus de la moitié des élus de la liste sont titulaires d'un doctorat. C'est le sujet le plus voté et le plus commenté du jour, aboutissement du mouvement étudiant né après la catastrophe de la gare de Novi Sad."
+    },
+    {
+      "title": "« Nous avons pris le contrôle de comptes ChatGPT » : une faille chez OpenAI",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "hn": "https://news.ycombinator.com/item?id=50314699",
+      "points": 218,
+      "comments": 107,
+      "summary": "L'équipe de Parameter raconte avoir trouvé une faille permettant, selon le billet, de prendre le contrôle du compte ChatGPT de n'importe qui en lui envoyant simplement un lien. Dans les commentaires, on débat de l'impossibilité croissante de distinguer les vrais e-mails de connexion (codes à usage unique, boutons « cliquez ici ») des tentatives de phishing, et un participant rappelle une exposition antérieure du système de fichiers via l'application de bureau ChatGPT, signe que la surface d'attaque des assistants IA grandit vite."
+    },
+    {
+      "title": "Vitalik Buterin plaide pour le « minimalisme numérique »",
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "hn": "https://news.ycombinator.com/item?id=50313661",
+      "points": 211,
+      "comments": 153,
+      "summary": "Le cofondateur d'Ethereum décrit ses expériences pour reprendre le contrôle de son attention : abandon de l'interface officielle de X au profit d'agrégateurs multi-comptes, 100 jours avec le téléphone en mode avion par défaut (Wi-Fi uniquement, cartes hors ligne), et remplacement des interfaces web par des outils en ligne de commande, parfois générés par IA. Il défend un retour à la philosophie Unix combinée à de l'IA locale : des outils modulaires que l'on pilote en langage naturel, plutôt que des applications web pleines de dark patterns qui exigent une confiance totale dans le serveur."
+    },
+    {
+      "title": "Molly, fork de Signal, sans mise à jour depuis trois mois et vulnérable",
+      "url": "https://piefed.world/post/1503394",
+      "hn": "https://news.ycombinator.com/item?id=50314666",
+      "points": 200,
+      "comments": 133,
+      "summary": "Le client Android Molly, fork durci de Signal apprécié pour sa compatibilité UnifiedPush et sa version sans services Google, n'a pas été mis à jour depuis environ trois mois, laissant ses utilisateurs en retard sur les correctifs de sécurité de Signal. La discussion dépasse vite le cas Molly : Signal est critiqué pour son service centralisé exigeant un numéro de téléphone et interdisant de fait la fédération des forks, par contraste avec XMPP, Matrix ou SimpleX ; d'autres notent que le support multi-appareils récent de Signal retire à Molly une partie de sa raison d'être."
+    },
+    {
+      "title": "Un malware utilise des LLM pour classer ses victimes selon leur valeur",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "hn": "https://news.ycombinator.com/item?id=50316531",
+      "points": 122,
+      "comments": 55,
+      "summary": "Cisco Talos analyse l'infostealer Volta, qui fait appel à des modèles de langage pour hiérarchiser les machines infectées selon ce qu'elles peuvent rapporter. Les commentaires s'inquiètent surtout de la chaîne d'approvisionnement logicielle (un outil auto-mis à jour ou une dépendance npm compromise suffirait à diffuser ce genre de charge) et échangent des stratégies d'isolation : machines dédiées, VM jetables, Qubes OS, conteneurs de développement. Les sceptiques rappellent qu'un tri par LLM reste plus lent et plus cher que des outils spécialisés, mais beaucoup y voient un aperçu du « triage » automatisé à venir."
+    },
+    {
+      "title": "La compilation des switch dans GCC",
+      "url": "https://xoranth.net/gcc-switch/",
+      "hn": "https://news.ycombinator.com/item?id=50314085",
+      "points": 158,
+      "comments": 29,
+      "summary": "Un billet technique détaille comment GCC transforme les instructions switch en comparaisons, tables de saut ou arbres de décision. Les commentateurs comparent avec LLVM : un patch de hachage parfait pour les switch épars y aurait été rejeté il y a une dizaine d'années, et GCC, faute d'assembleur intégré, ne peut qu'estimer la taille du code, ce qui lui interdit certaines optimisations. Micro-benchmarks à l'appui, on y discute aussi des effets de la prédiction de branchement : une variante gagne un facteur deux sur des entrées imprévisibles mais ralentit sur des entrées prévisibles."
+    },
+    {
+      "title": "Show HN : Marelleo, une boîte à histoires open source à base d'ESP32",
+      "url": "https://zebra.rodeo/en/blog/marelleo/",
+      "hn": "https://news.ycombinator.com/item?id=50260753",
+      "points": 147,
+      "comments": 40,
+      "summary": "Un développeur présente Marelleo, une boîte à histoires audio open source qu'il a construite pour ses enfants autour d'un microcontrôleur ESP32. Le projet, détaillé dans un billet de fabrication sur son blog, a séduit la communauté : près de 150 points pour un Show HN de week-end, dans la grande tradition HN du hardware familial fait maison."
+    },
+    {
+      "title": "IA, Lean et l'avenir de la vérification formelle, avec Leo de Moura",
+      "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+      "hn": "https://news.ycombinator.com/item?id=50290652",
+      "points": 140,
+      "comments": 32,
+      "summary": "Le podcast The Data Exchange reçoit Leo de Moura, créateur de l'assistant de preuve Lean (aujourd'hui chez AWS), pour parler de la rencontre entre grands modèles de langage et vérification formelle. Lean est devenu l'infrastructure de référence des travaux de démonstration mathématique assistée par IA, et la question de fond — des preuves vérifiables par machine comme garde-fou contre les sorties non fiables des LLM — explique l'intérêt soutenu de HN pour le sujet."
+    },
+    {
+      "title": "Prospero : un nouveau harnais de codage « pour une époque plus civilisée »",
+      "url": "https://nullprogram.com/blog/2026/10/31/",
+      "hn": "https://news.ycombinator.com/item?id=50315226",
+      "points": 139,
+      "comments": 83,
+      "summary": "Chris Wellons (nullprogram), connu pour ses billets systèmes très pointus, publie Prospero, son propre harnais de codage pour agents LLM, avec un titre qui cligne de l'œil vers Star Wars. Le billet s'inscrit dans la vague actuelle des harnais d'agents alternatifs ; ses 83 commentaires témoignent d'un vif débat sur la bonne manière d'outiller les agents de code, même si le détail de la discussion nous était inaccessible au moment de la rédaction."
+    },
+    {
+      "title": "Des circuits simples peuvent produire des comportements complexes",
+      "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+      "hn": "https://news.ycombinator.com/item?id=50261253",
+      "points": 117,
+      "comments": 25,
+      "summary": "Une exploration interactive d'Aatish Bhatia (journaliste scientifique, docteur en physique, ex-New York Times) montre comment « quatre neurones et deux connexions » suffisent à produire des comportements apparemment intentionnels, dans la lignée des véhicules de Braitenberg (1984). Les commentateurs remontent la généalogie de l'idée — les robots photosensibles de W. Grey Walter en 1948, la robotique BEAM, les tortues Logo — et débattent de savoir si ces comportements méritent le mot « intelligence » ou si le terme, appliqué à tout ce qui contient un if-else, perd son sens."
+    },
+    {
+      "title": "Les montres Casio des années 1980",
+      "url": "https://www.casio.com/us/watches/50th/Heritage/1980s/",
+      "hn": "https://news.ycombinator.com/item?id=50317363",
+      "points": 69,
+      "comments": 23,
+      "summary": "Pour ses 50 ans, Casio publie une rétrospective de ses montres des années 80, et HN plonge dans la nostalgie : F-91W, montres-calculatrices CFX-400, montres de pêche à marées FT-100. Le fil de tête reproche aux cadrans leurs mentions « Water Resist » et « Chrono Alarm » superflues, que d'autres défendent comme un choix d'époque, et la discussion dérive sur la durabilité légendaire des Casio bon marché face aux alternatives mécaniques abordables comme Seiko 5 ou Orient."
+    },
+    {
+      "title": "Un ex-chercheur de Meta a téléchargé des livres piratés, puis tout supprimé « à cause du procès »",
+      "url": "https://torrentfreak.com/ex-meta-researcher-torrented-pirated-books-dataset-deleted-it-due-to-all-this-litigation/",
+      "hn": "https://news.ycombinator.com/item?id=50316760",
+      "points": 66,
+      "comments": 48,
+      "summary": "Dans le procès californien sur l'entraînement de Llama (plaignants : Sarah Silverman, Ta-Nehisi Coates et d'autres), une déposition révèle que Stephen Roller, chercheur chez Meta de 2017 à 2023, a téléchargé via BitTorrent The Pile — qui contient Books3, près de 200 000 livres issus du tracker privé Bibliotik — avant d'effacer sa copie il y a environ un an, « vu tout ce contentieux ». Meta répond que le téléchargement s'est fait sur sa machine personnelle et pas nécessairement pour l'entreprise ; le tribunal ayant déjà jugé l'entraînement couvert par le fair use, c'est le torrenting lui-même qui reste le nœud du litige, avec un procès prévu au printemps 2027."
+    }
+  ]
+}

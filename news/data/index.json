@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-01",
+      "title": "Un parlement de docteurs en Serbie, des comptes ChatGPT détournables et un infostealer qui trie ses victimes au LLM",
+      "count": 12
+    },
+    {
       "date": "2026-10-31",
       "title": "Backdoor dans l'extension Claude Code, suites du casse Binance et Northflank compromis : l'octobre noir de la chaîne d'approvisionnement",
       "count": 10
