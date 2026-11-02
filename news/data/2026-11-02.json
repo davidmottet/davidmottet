@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-02",
+  "title": "HN se construit son YouTube et sa bibliothèque, pendant que l'économie doute du retour sur investissement de l'IA",
+  "intro": "Dimanche très auto-référentiel sur Hacker News : HackerTube, l'interface façon YouTube d'Andrej Karpathy bâtie sur les vidéos recommandées dans les commentaires HN, écrase le classement, et son clone pour les livres, HackerBooks, suit juste derrière. En contrepoint, le scepticisme économique monte : l'économiste en chef d'Apollo ne voit aucun gain financier de l'IA hors Big Tech, et Nolan Lawson interroge le coût des frameworks JavaScript à l'ère des assistants de code. Entre les deux, un billet du blog de Terence Tao affirme que les mathématiques ont déjà changé, et la méfiance envers le matériel « intelligent » s'exprime deux fois, autour d'une clé USB Lenovo et des téléviseurs espions.",
+  "items": [
+    {
+      "title": "HackerTube : un YouTube construit à partir des vidéos recommandées sur HN",
+      "url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "hn": "https://news.ycombinator.com/item?id=50319510",
+      "points": 2251,
+      "comments": 538,
+      "summary": "Andrej Karpathy a construit hackertube.org, une interface façon YouTube qui rassemble 6 454 vidéos extraites de 39 834 commentaires Hacker News depuis 2007 — les vidéos restent des intégrations YouTube classiques, seule la sélection vient de HN. Le score est énorme (plus de 2 200 points) et la discussion dérive vite vers les algorithmes de recommandation : plusieurs proposent de « désagréger » le classement des flux pour que chacun fasse tourner son propre recommandeur, éventuellement à base de LLM, loin des algorithmes optimisés pour la rétention. Autres fils marquants : la recommandation par ses amis plutôt que par la machine (avec le contre-exemple de Facebook : les amis et les gens qui partagent vos goûts sont rarement les mêmes personnes), et un long débat sur l'acceptabilité des contenus générés par IA."
+    },
+    {
+      "title": "Show HN : HackerBooks — comme HackerTube, mais pour les livres mentionnés sur HN",
+      "url": "https://hackerbooks.org",
+      "hn": "https://news.ycombinator.com/item?id=50326821",
+      "points": 871,
+      "comments": 170,
+      "summary": "Dans la foulée de HackerTube, HackerBooks recense environ 16 500 livres mentionnés par au moins deux commentateurs HN depuis 2007, chaque livre renvoyant vers les commentaires qui le citent ; l'auteur précise que Claude (Opus 5.5) a écrit la quasi-totalité du site et du pipeline de données (JS statique sur Cloudflare, Python et DuckDB). Les commentaires pointent les limites de la méthode : compter les mentions n'est pas recommander (Mein Kampf ressort « mentionné » par 651 personnes, Vanity Fair grimpe à cause du magazine homonyme), et l'auteur a corrigé le libellé en conséquence. On lui rappelle aussi qu'un projet équivalent existait dès 2021, et le style « Claude speak » du texte de présentation fait débat."
+    },
+    {
+      "title": "La clé USB « chiffrée » à empreinte digitale de Lenovo ne serait qu'une carte SD non chiffrée dans un boîtier",
+      "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+      "hn": "https://news.ycombinator.com/item?id=50326099",
+      "points": 386,
+      "comments": 137,
+      "summary": "Selon ce fil Reddit remonté en tête de HN, une clé USB Lenovo vendue comme sécurisée par empreinte digitale et chiffrement ne contiendrait en réalité qu'une carte SD non chiffrée dans un boîtier : il suffirait d'ouvrir celui-ci pour lire les données sans aucune authentification. Ni la source ni le fil HN (137 commentaires) n'ont pu être consultés pendant la rédaction, l'affirmation est donc à prendre au conditionnel — mais le thème, un produit « sécurisé » dont la sécurité tient au plastique, explique sans peine le score."
+    },
+    {
+      "title": "Le coût « IA » des frameworks JavaScript",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "hn": "https://news.ycombinator.com/item?id=50323088",
+      "points": 291,
+      "comments": 226,
+      "summary": "Nolan Lawson, voix connue de la performance web, transpose au monde des assistants de code la vieille question du coût des frameworks JavaScript : après les kilooctets et le temps de chargement, son billet s'intéresse, selon son titre, à ce que les frameworks coûtent à l'ère de l'IA. Le sujet s'inscrit dans une discussion plus large du moment, où plusieurs équipes mesurent la consommation de tokens des agents de code selon le framework choisi. Avec 226 commentaires, c'est l'un des grands débats techniques du jour ; le billet et le fil n'ont toutefois pas pu être consultés en détail pendant la rédaction."
+    },
+    {
+      "title": "« Les mathématiques ont changé. Agissons en conséquence » — sur le blog de Terence Tao",
+      "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+      "hn": "https://news.ycombinator.com/item?id=50328251",
+      "points": 211,
+      "comments": 229,
+      "summary": "Un billet publié le 1er novembre sur le blog de Terence Tao soutient, dès son titre, que la pratique mathématique a déjà changé et que la communauté doit en tirer les conséquences. Il prolonge une série de textes du blog sur l'IA et la formalisation, un mois après le billet invité de Jeremy Avigad (Carnegie Mellon), « The Future of Mathematics », qui posait la question centrale : quand l'IA résout les problèmes, la résolution se découple de la compréhension — que devient alors le métier de mathématicien ? Le billet du jour et ses 229 commentaires n'ont pas pu être consultés en détail pendant la rédaction."
+    },
+    {
+      "title": "Show HN : OmniDiff, un difftool Git rapide et sensible au contenu, en Rust",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "hn": "https://news.ycombinator.com/item?id=50325253",
+      "points": 148,
+      "comments": 38,
+      "summary": "OmniDiff (v0.3.0, AGPLv3) diffe du code dans 25 langages mais aussi des fichiers de configuration, images, PDF, archives et polices, avec moins de 100 ms annoncées sur un fichier C++ de plusieurs dizaines de milliers de lignes ; ses pipelines ont été calibrés sur 2 000 diffs échantillonnés dans les 7 400 dépôts des paquets Gentoo. Face à Difftastic, l'auteur revendique un rendu parfait sur 90 % des diffs contre 64 %, pour un temps médian de 4 ms contre 35 ms. Les commentaires contestent le choix de l'AGPL (avec un détour par le droit d'auteur du code généré par IA), regrettent un packaging éclaté en trois méthodes d'installation — et le créateur de git difftool propose d'intégrer l'outil aux mergetools officiels de Git."
+    },
+    {
+      "title": "Ask HN : quel téléviseur recommandez-vous pour la vie privée ?",
+      "url": "https://news.ycombinator.com/item?id=50328896",
+      "hn": "https://news.ycombinator.com/item?id=50328896",
+      "points": 109,
+      "comments": 192,
+      "summary": "L'auteur cherche un téléviseur 60 à 80 pouces, 4K, qui ne fasse rien d'autre que servir d'écran à une Apple TV, quitte à payer plus cher. Réponse quasi unanime : aucune TV moderne n'est digne de confiance, donc ne jamais la connecter au réseau et tout piloter par une box externe (en vérifiant le support HDMI CEC) — ou se tourner vers les écrans d'affichage professionnels et les projecteurs sans fonctions « smart », au prix d'une qualité d'image moindre. Le point chaud du fil : « déconnecté » suffit-il ? Un témoignage décrit un Samsung représentant 90 % des requêtes bloquées de tout un foyer en une semaine, d'autres évoquent une possible exfiltration via les appareils voisins à la façon d'Amazon Sidewalk, pendant que les sceptiques réclament des cas documentés."
+    },
+    {
+      "title": "Radiaverse : une carte mondiale de la radioactivité",
+      "url": "https://radiaverse.com/",
+      "hn": "https://news.ycombinator.com/item?id=50280131",
+      "points": 125,
+      "comments": 39,
+      "summary": "Radiaverse propose, d'après son titre, une carte interactive mondiale de la radioactivité, dans la lignée des projets de mesure citoyenne nés après Fukushima comme Safecast ou GMC Map. Le site et le fil HN (39 commentaires) n'ont pas pu être consultés pendant la rédaction ; le score honorable confirme en tout cas l'attrait durable de HN pour la cartographie de données environnementales."
+    },
+    {
+      "title": "Copper : un langage bas niveau minimaliste avec objets et généricité",
+      "url": "https://tibleiz.net/copper/",
+      "hn": "https://news.ycombinator.com/item?id=50308754",
+      "points": 121,
+      "comments": 72,
+      "summary": "Copper se présente comme un langage procédural simple, typé statiquement avec une inférence basique et de la généricité : les littéraux prennent leur type du contexte (var a = 5 est une erreur, var b = Int32: 5 compile), les fonctions retournent plusieurs valeurs, les closures de bloc jouent le rôle de macros hygiéniques inlinées, et il n'y a ni énumérations (remplacées par des sous-classes d'entiers à constantes statiques) ni déclarations anticipées. Le fil de 72 commentaires n'a pas pu être lu pendant la rédaction, mais l'appétit de HN pour les petits langages système ne se dément pas."
+    },
+    {
+      "title": "L'IA ne rapporte « aucun gain financier » à la plupart des entreprises, selon l'économiste en chef d'Apollo",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "hn": "https://news.ycombinator.com/item?id=50330456",
+      "points": 119,
+      "comments": 105,
+      "summary": "Dans une note du 24 octobre, Torsten Slok (Apollo Global Management) compare les « Magnificent Seven » aux 493 autres entreprises du S&P 500 : revenu par employé et marges progressent chez les géants de la tech mais restent essentiellement plats partout ailleurs, et les directions commenceraient à voir la dépense en tokens « non comme une source de croissance mais comme un centre de coût qui pèse sur les marges ». Slok ajoute que « l'IA est peut-être une excellente calculatrice, mais en affaires l'intelligence est surtout du jugement ». À noter qu'Apollo a ses propres investissements liés à l'IA, ce qui nuance la portée de la charge."
+    },
+    {
+      "title": "Des perturbations de fréquence à l'échelle de la minute dues à la synchronisation des réseaux électriques",
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "hn": "https://news.ycombinator.com/item?id=50314617",
+      "points": 117,
+      "comments": 39,
+      "summary": "Une étude publiée dans Nature Energy s'intéresse, d'après son titre, à des perturbations de fréquence d'environ une minute qui émergent des mécanismes de synchronisation entre machines dans les grands réseaux électriques — un sujet d'actualité alors que la stabilité en fréquence des réseaux, bousculée par l'électronique de puissance et les renouvelables, revient régulièrement en une de HN depuis le blackout ibérique. L'article et le fil (39 commentaires) n'ont pas pu être consultés en détail pendant la rédaction."
+    },
+    {
+      "title": "Prouver et améliorer l'« hypothèse de la représentation platonicienne » avec des JEPA",
+      "url": "https://arxiv.org/abs/2610.39302",
+      "hn": "https://news.ycombinator.com/item?id=50325454",
+      "points": 105,
+      "comments": 59,
+      "summary": "Cet article arXiv s'attaque, selon son titre, à l'« hypothèse de la représentation platonicienne » — l'idée que les grands modèles, quelles que soient leur architecture et leur modalité, convergent vers une représentation commune de la réalité — et affirme la prouver et l'améliorer à l'aide des JEPA, les architectures prédictives à plongements joints défendues notamment par Yann LeCun. Le papier et le fil (59 commentaires) n'ont pas pu être consultés en détail pendant la rédaction ; le score illustre l'intérêt constant de HN pour les fondements théoriques de l'apprentissage des représentations."
+    }
+  ]
+}

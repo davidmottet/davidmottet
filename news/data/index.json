@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-02",
+      "title": "HN se construit son YouTube et sa bibliothèque, pendant que l'économie doute du retour sur investissement de l'IA",
+      "count": 12
+    },
+    {
       "date": "2026-11-01",
       "title": "Un parlement de docteurs en Serbie, des comptes ChatGPT détournables et un infostealer qui trie ses victimes au LLM",
       "count": 12
