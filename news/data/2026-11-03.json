@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-03",
+  "title": "Une faille critique du noyau laisse Ubuntu sans correctif, pendant que l'IA apprend à réécrire ses propres poids",
+  "intro": "Lundi sous le signe de la colère contre Canonical : le sujet du jour, massivement voté, raconte comment une faille critique du noyau Linux corrigée par Debian depuis la mi-octobre reste sans correctif sur Ubuntu. En arrière-plan, l'IA occupe presque tout le reste du classement : un agent qui lit et modifie directement les poids d'autres modèles, l'usage interne de Claude chez Anthropic qui dépasserait la masse salariale, des agents QA lancés en Launch HN, et Terence Tao qui poursuit sa réflexion sur les mathématiques « sans ego ». À noter aussi, des lunettes qui transcrivent la parole silencieuse et un plaidoyer pour la sauvegarde des sites web qu'on aime.",
+  "items": [
+    {
+      "title": "WTF Ubuntu ? Une faille critique du noyau toujours sans correctif, 18 jours après Debian",
+      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+      "hn": "https://news.ycombinator.com/item?id=50337608",
+      "points": 961,
+      "comments": 477,
+      "summary": "L'auteur de ce billet signale la CVE-2026-98432, une faille critique (CVSS 9.8) du code TCP du noyau Linux, présente depuis 2016 et exploitable à distance — Anthropic aurait même construit un exploit fonctionnel donnant les droits root sur un serveur. Debian a publié son correctif le 16 octobre, mais au moment de la rédaction du billet (2 novembre), toutes les versions supportées d'Ubuntu, LTS comprises, étaient encore listées comme « Vulnerable », en contradiction avec la promesse de Canonical de correctifs rapides pour les vulnérabilités critiques. L'auteur dit avoir mis ses serveurs Ubuntu hors ligne et préparer sa migration vers une autre distribution ; avec près de 1 000 points et 477 commentaires, c'est de loin le sujet du jour (le fil de discussion n'a pas pu être consulté pendant la rédaction)."
+    },
+    {
+      "title": "Astra sait lire et écrire les poids de réseaux de neurones, et améliorer un modèle Qwen",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "hn": "https://news.ycombinator.com/item?id=50341174",
+      "points": 499,
+      "comments": 146,
+      "summary": "Ce billet sur la « programmation dans l'espace des poids » montre, d'après les commentateurs qui le citent, qu'Astra peut déterminer sans outil sur quels jeux de petits réseaux ont été entraînés, modifier directement leurs poids pour améliorer leurs performances, et retoucher un petit modèle Qwen pour renforcer nettement ses capacités en mathématiques. Le fil HN y voit un croisement entre interprétabilité et auto-amélioration récursive, ce qui explique l'ampleur de la discussion. Les sceptiques objectent que générer les poids d'un petit réseau est peut-être moins impressionnant qu'il n'y paraît si le modèle a vu beaucoup d'architectures similaires à l'entraînement, et plusieurs s'inquiètent des implications pour l'alignement ou du contournement possible des garde-fous."
+    },
+    {
+      "title": "Show HN : Subvocal — parler à son ordinateur sans émettre un son",
+      "url": "https://subvocal.company/",
+      "hn": "https://news.ycombinator.com/item?id=50340088",
+      "points": 280,
+      "comments": 194,
+      "summary": "Subvocal (YC F26) développe des lunettes connectées qui transcrivent la parole silencieuse en texte grâce à une détection radiofréquence des mouvements des lèvres et de la langue — le fondateur explique que la lecture labiale par caméra plafonne à environ 17 % de taux d'erreur et que l'équipe a traité la généralisation entre utilisateurs par une collecte massive de données. La société annonce une livraison au premier trimestre 2027 et ouvre les précommandes pour 500 unités. Les commentaires oscillent entre enthousiasme pour l'interface « télépathique » et scepticisme : réticence à porter des lunettes, page d'accueil jugée peu claire, et question de fond sur l'intérêt réel face à un clavier."
+    },
+    {
+      "title": "Si vous aimez un site web, sauvegardez-le",
+      "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+      "hn": "https://news.ycombinator.com/item?id=50336518",
+      "points": 218,
+      "comments": 52,
+      "summary": "D'après son titre, ce billet exhorte à sauvegarder soi-même les sites web auxquels on tient, dans la lignée des réflexions récurrentes de HN sur la disparition silencieuse du web indépendant. Ni l'article ni le fil de discussion n'ont pu être consultés pendant la rédaction, les détails de l'argumentaire restent donc à découvrir à la source. Le score élevé pour un sujet de préservation numérique confirme en tout cas que la fragilité du web touche une corde sensible chez les lecteurs."
+    },
+    {
+      "title": "L'usage interne de l'IA chez Anthropic, valorisé au prix public, dépasserait la paie des employés",
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "hn": "https://news.ycombinator.com/item?id=50339494",
+      "points": 180,
+      "comments": 140,
+      "summary": "Selon ce titre de Business Insider, la consommation interne de Claude par les équipes d'Anthropic, si on la facturait aux tarifs publics de l'API, dépasse désormais ce que l'entreprise verse en salaires — plusieurs reprises de presse évoquent le même ordre de grandeur en comparant valeur des tokens consommés et coûts de personnel. Le chiffre illustre à quel point l'entreprise fait tourner ses propres modèles pour travailler, tout en posant la question de ce que vaut une valorisation « au prix de détail » d'un usage interne quasi gratuit. L'article et le fil HN (140 commentaires) n'ont pas pu être consultés pendant la rédaction, les débats précis restent donc à vérifier à la source."
+    },
+    {
+      "title": "Ces prénoms américains de garçons devenus prénoms de filles, et inversement",
+      "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+      "hn": "https://news.ycombinator.com/item?id=50339397",
+      "points": 138,
+      "comments": 138,
+      "summary": "À partir des données de la Social Security américaine, l'article étudie les prénoms qui ont changé de genre dominant : d'après les passages cités dans les commentaires, sur 42 prénoms passés côté filles, 34 l'ont fait par une hausse chez les filles, tandis que sur 12 prénoms repassés côté garçons, 9 ont basculé surtout parce que moins de filles les recevaient — autrement dit, ce sont les choix faits pour les filles qui mènent la danse. Le fil HN multiplie les explications : poids des prénoms familiaux et bibliques chez les garçons, effets de mode portés par les célébrités et les séries (Arya, Paris, Stevie), et pratiques des suffixes Jr/III liées au statut social selon les régions. Certains regrettent l'absence d'étude rigoureuse derrière ces intuitions."
+    },
+    {
+      "title": "Show HN : Varsovie en voxels, une carte 3D interactive du centre-ville",
+      "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+      "hn": "https://news.ycombinator.com/item?id=50339221",
+      "points": 120,
+      "comments": 24,
+      "summary": "Piotr Migdał présente une carte 3D du centre de Varsovie en voxels, d'inspiration Minecraft et MagicaVoxel : on peut changer la date, l'heure et la météo, se promener dans la ville et même cliquer sur un piéton pour le contrôler. Le rendu s'appuie sur OpenStreetMap, les données LiDAR et images aériennes du géoportail polonais GUGiK, ainsi que la base des arbres de la ville, et le code est open source sur GitHub. La discussion reste légère — on y signale notamment le projet similaire « Streets of Prague » — mais la démo séduit par son mélange de données publiques et de direction artistique."
+    },
+    {
+      "title": "« Let Me Check » : une nouvelle courte qui divise — écrite par une IA ?",
+      "url": "https://blog.alxgsv.com/let-me-check/",
+      "hn": "https://news.ycombinator.com/item?id=50340369",
+      "points": 101,
+      "comments": 20,
+      "summary": "D'après les commentateurs, cette nouvelle courte met en scène un narrateur qui vit une minute suspendue au moment de sa mort, racontée avec des images empruntées au débogage informatique. Le fil HN s'est surtout enflammé sur une autre question : le texte est-il écrit par une IA ? Un commentateur affirme que le détecteur Pangram donne « 100 % IA » sur les premiers paragraphes et liste des tics de style, tandis que d'autres défendent un texte bien écrit porté par des idées humaines — un débat devenu presque rituel pour la fiction publiée en ligne."
+    },
+    {
+      "title": "Cloudflare divise par deux le délai de construction de ses zones DNS et réduit la mémoire de 85 %",
+      "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "hn": "https://news.ycombinator.com/item?id=50337558",
+      "points": 88,
+      "comments": 28,
+      "summary": "D'après son titre, ce billet d'ingénierie de Cloudflare décrit le passage à des constructions « ciblées » de zones DNS, qui divisent par deux le délai de propagation des changements et réduisent de 85 % la consommation mémoire du pipeline. L'article et le fil de discussion n'ont pas pu être consultés pendant la rédaction, les détails d'architecture restent donc à lire à la source. Les billets d'infrastructure de Cloudflare à cette échelle — l'un des plus gros résolveurs DNS du monde — trouvent régulièrement leur public sur HN."
+    },
+    {
+      "title": "Mon ordinateur portable préféré",
+      "url": "https://blog.jsbarretto.com/post/laptop",
+      "hn": "https://news.ycombinator.com/item?id=50339815",
+      "points": 84,
+      "comments": 68,
+      "summary": "Un billet personnel du développeur Joshua Barretto sur l'ordinateur portable qui a sa préférence, dont ni le contenu ni le fil n'ont pu être consultés pendant la rédaction. Le ratio commentaires/points (68 commentaires pour 84 points) suggère le classique débat matériel où chacun défend sa machine — ThinkPad d'occasion, MacBook ou châssis réparable. À lire à la source pour savoir quel camp l'auteur a choisi."
+    },
+    {
+      "title": "Launch HN : Momentic (YC W24) — des agents qui trouvent les bugs en utilisant votre application",
+      "url": "https://momentic.ai/",
+      "hn": "https://news.ycombinator.com/item?id=50339913",
+      "points": 70,
+      "comments": 50,
+      "summary": "Momentic lance des agents de QA autonomes qui explorent des applications web, iOS et Android pour y détecter des bugs, en remplacement des scripts Playwright ou Selenium. Les fondateurs publient un benchmark maison (qa-bench : 1 396 bugs annotés à la main sur Gitea, Metabase, Twenty et Saleor) où leur agent « Mo » trouve 269 bugs en 60 minutes (rappel 19,3 %, précision 84 %) contre 86 pour Codex, 59 pour Claude Code et 27 pour Devin. Les commentaires saluent l'idée mais attaquent le benchmark — soupçon de « benchmaxxing » et de prompts avantageux — et s'interrogent sur le verrouillage propriétaire et sur le risque que les modèles de frontière absorbent cette fonctionnalité ; les fondateurs répondent que leurs tests en langage naturel restent portables."
+    },
+    {
+      "title": "Terence Tao : des mathématiques « sans ego » à l'ère de l'IA",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "hn": "https://news.ycombinator.com/item?id=50341736",
+      "points": 22,
+      "comments": 11,
+      "summary": "Au lendemain de son billet « Mathematics has changed » qui avait dominé HN dimanche, Terence Tao poursuit avec une réflexion sur des mathématiques « sans ego » à l'ère de l'IA (l'essai lui-même n'a pas pu être consulté pendant la rédaction). Le fil, encore jeune, se cristallise déjà sur la place de la reconnaissance en recherche : un commentateur lit l'essai comme affirmant que « seule la vérité compte, pas les gens » et s'en inquiète, d'autres défendent la quête de compréhension et le plaisir de chercher, et l'on rappelle que les carrières académiques — postes et financements — reposent précisément sur le crédit accordé aux personnes."
+    }
+  ]
+}

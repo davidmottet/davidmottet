@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-03",
+      "title": "Une faille critique du noyau laisse Ubuntu sans correctif, pendant que l'IA apprend à réécrire ses propres poids",
+      "count": 12
+    },
+    {
       "date": "2026-11-02",
       "title": "HN se construit son YouTube et sa bibliothèque, pendant que l'économie doute du retour sur investissement de l'IA",
       "count": 12
