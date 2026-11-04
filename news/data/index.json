@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-04",
+      "title": "L'affaire des poids de Qwen se dégonfle, pendant que Postman, OpenAI et Google abîment la confiance de leurs utilisateurs",
+      "count": 12
+    },
+    {
       "date": "2026-11-03",
       "title": "Une faille critique du noyau laisse Ubuntu sans correctif, pendant que l'IA apprend à réécrire ses propres poids",
       "count": 12

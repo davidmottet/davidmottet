@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-04",
+  "title": "L'affaire des poids de Qwen se dégonfle, pendant que Postman, OpenAI et Google abîment la confiance de leurs utilisateurs",
+  "intro": "Le sujet massivement voté du jour est un contre-feu : le billet « Astra lit et écrit les poids de Qwen » qui avait enflammé HN la veille serait trompeur. L'autre fil rouge, c'est la confiance érodée envers les grands éditeurs : Postman installe des plugins IA en douce, OpenAI réactiverait silencieusement l'entraînement sur les conversations Codex, et Google conditionnerait l'accès des écoles à son moteur de recherche à l'acceptation de son IA. Côté matériel, la bande magnétique et les Mac en datacenter profitent à plein de la vague IA.",
+  "items": [
+    {
+      "title": "Le billet « Astra peut lire et écrire les poids pour améliorer Qwen » est trompeur",
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "hn": "https://news.ycombinator.com/item?id=50351111",
+      "points": 724,
+      "comments": 168,
+      "summary": "Retournement après l'emballement de la veille : ce billet publié sur honnibal.dev soutient que la présentation virale d'« Astra », cet agent censé lire et modifier directement les poids de Qwen pour s'améliorer, est trompeuse. Il domine très largement la page d'accueil du jour, signe que la communauté avait besoin de ce recadrage. En parallèle, Simon Willison publie ses propres expériences d'interprétation de poids avec Qwen 3.8 27B sur son portable, également en page d'accueil."
+    },
+    {
+      "title": "Un moteur d'échecs moderne sur un Pentium aurait-il battu Kasparov en 1996 ?",
+      "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+      "hn": "https://news.ycombinator.com/item?id=50349276",
+      "points": 322,
+      "comments": 143,
+      "summary": "Le chercheur en sécurité Nicholas Carlini pose une expérience de pensée devenue classique pour mesurer la part des progrès algorithmiques face aux progrès matériels : un moteur d'échecs d'aujourd'hui, bridé sur le matériel de 1996, aurait-il suffi à battre Kasparov ? La question, qui touche directement au débat sur les origines des progrès de l'IA, a généré une discussion fournie de plus de 140 commentaires."
+    },
+    {
+      "title": "Jailbreaker le système de navigation de sa voiture juste pour changer l'heure",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+      "hn": "https://news.ycombinator.com/item?id=50339288",
+      "points": 304,
+      "comments": 103,
+      "summary": "Un bidouilleur raconte comment il a dû jailbreaker le système de navigation de sa Renault simplement pour pouvoir régler l'horloge. Dans les commentaires, on découvre que bien des autoradios d'origine ne permettent pas de régler l'heure à la main — elle dépend du GPS ou de données de fuseaux horaires figées sur carte SD. Le fil dérive sur l'obsolescence programmée, la piètre qualité logicielle des infodivertissements constructeurs, et les échappatoires que sont CarPlay, Android Auto ou l'autoradio aftermarket."
+    },
+    {
+      "title": "Postman installe silencieusement des plugins IA et tente de partager toutes les données d'API",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "hn": "https://news.ycombinator.com/item?id=50354960",
+      "points": 281,
+      "comments": 92,
+      "summary": "Un ticket GitHub accuse Postman d'auto-installer des plugins IA sans consentement et de chercher à partager les données d'API des utilisateurs — un problème sensible quand ces requêtes contiennent clés et secrets. Les commentaires y voient le symptôme d'une dérive : croissance dopée au capital-risque, connexion forcée, monétisation agressive. Beaucoup recommandent de migrer vers Bruno, Yaak, Insomnia (avant la v8) ou tout simplement curl et des fichiers .http."
+    },
+    {
+      "title": "Les écoles qui bloquent l'IA de Google perdront l'accès de leurs élèves à son moteur de recherche",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "hn": "https://news.ycombinator.com/item?id=50353192",
+      "points": 262,
+      "comments": 215,
+      "summary": "Selon le New York Times, Google prévient les établissements scolaires : ceux qui désactivent ses fonctions d'IA pour leurs élèves perdront aussi l'accès à la recherche Google. Le fil HN, très animé (plus de 200 commentaires), se déchire sur la qualification : abus de position dominante digne du procès Internet Explorer pour les uns, simple décision produit pour pousser Gemini pour les autres. On y débat aussi de la valeur des résumés IA face au spam SEO, et des alternatives comme DuckDuckGo ou Brave."
+    },
+    {
+      "title": "Fujifilm va quintupler sa production de bandes magnétiques, l'IA dopant la demande d'archivage",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "hn": "https://news.ycombinator.com/item?id=50336918",
+      "points": 229,
+      "comments": 86,
+      "summary": "Fujifilm annonce une multiplication par cinq de sa production de bandes LTO pour répondre à la demande d'archivage tirée par l'IA, rapporte Ars Technica. Les commentaires regorgent de retours d'expérience : toujours écrire deux copies et relire pour vérifier, coût des lecteurs LTO-10, compatibilité ascendante limitée. Certains doutent que l'IA explique à elle seule un tel bond et pointent plutôt le stockage hiérarchisé des centres de calcul et les obligations de rétention."
+    },
+    {
+      "title": "OpenAI semble réactiver silencieusement l'entraînement sur les conversations Codex",
+      "url": "https://news.ycombinator.com/item?id=50352757",
+      "hn": "https://news.ycombinator.com/item?id=50352757",
+      "points": 196,
+      "comments": 65,
+      "summary": "Un utilisateur rapporte que, dans son entreprise, l'option « Improve the model for everyone » de Codex s'est retrouvée réactivée alors que le partage de données avait été explicitement désactivé. Le billet renvoie vers privacy.openai.com pour se désinscrire et vers un précédent fil sur le même phénomène. Dans la discussion, d'autres signalent au passage qu'OpenAI a aussi retiré l'affichage des limites d'usage du menu et de la commande /usage."
+    },
+    {
+      "title": "Kalshi et ses cofondateurs visés par des poursuites pénales pour violation des lois sur les jeux d'argent en Utah",
+      "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+      "hn": "https://news.ycombinator.com/item?id=50353229",
+      "points": 189,
+      "comments": 128,
+      "summary": "L'Utah a déposé fin octobre 13 chefs d'accusation criminels contre la plateforme de marchés prédictifs Kalshi et ses cofondateurs, après des paris sportifs passés sous couverture par des enquêteurs — c'est le deuxième État américain à passer au pénal. L'angle de l'article d'Ars Technica : l'administration Trump attaque en justice l'Utah pour protéger Kalshi de cette interdiction totale. Un bras de fer fédéral/États sur la frontière entre marché prédictif et pari sportif."
+    },
+    {
+      "title": "Des Mac à n'importe quelle échelle",
+      "url": "https://namespace.so/blog/mac-at-any-scale",
+      "hn": "https://news.ycombinator.com/item?id=50352758",
+      "points": 163,
+      "comments": 77,
+      "summary": "Namespace détaille comment industrialiser des Mac en datacenter, une pratique contrainte par la licence d'Apple qui limite à deux machines virtuelles macOS par Mac physique et impose 24 heures de facturation minimum en location. Les commentateurs font les comptes : un Mac mini 14 cœurs acheté s'amortit en environ neuf mois face à la location cloud, et les Mac mini M1 d'occasion se trouvent autour de 500 $. Le débat : posséder le matériel ou louer, et jusqu'où l'EULA d'Apple verrouille ce marché."
+    },
+    {
+      "title": "Une étude estime que 75 % des joueurs NFL décédés sur une période de 15 ans souffraient d'ETC",
+      "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+      "hn": "https://news.ycombinator.com/item?id=50353335",
+      "points": 119,
+      "comments": 74,
+      "summary": "Des chercheurs de l'université de Boston estiment que près de 75 % des joueurs de NFL décédés entre 2008 et 2023 étaient atteints d'encéphalopathie traumatique chronique (ETC), cette maladie neurodégénérative liée aux chocs répétés à la tête. Le chiffre, obtenu par extrapolation à partir des cerveaux donnés à la science, relance le débat sur la responsabilité de la ligue et la sécurité du football américain."
+    },
+    {
+      "title": "De l'écriture visible dans le papyrus PHerc. 306B, pour la première fois en 2000 ans",
+      "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+      "hn": "https://news.ycombinator.com/item?id=50342119",
+      "points": 74,
+      "comments": 9,
+      "summary": "Le Vesuvius Challenge annonce que de l'écriture est désormais visible dans le papyrus d'Herculanum PHerc. 306B, carbonisé par l'éruption du Vésuve il y a près de 2000 ans. Le projet poursuit sa série de percées : après la lecture intégrale d'un premier rouleau sans le dérouler, le « déroulement virtuel » par tomographie et apprentissage automatique s'étend à de nouveaux rouleaux de la bibliothèque."
+    },
+    {
+      "title": "Bear fête ses 10 ans, et c'est toujours comme au premier jour",
+      "url": "https://blog.bear.app/2026/11/bear-turns-10-and-it-still-feels-like-day-one/",
+      "hn": "https://news.ycombinator.com/item?id=50353383",
+      "points": 83,
+      "comments": 56,
+      "summary": "L'application de prise de notes Bear, référence de longue date sur Mac et iOS, célèbre ses dix ans dans un billet anniversaire. Une longévité remarquée sur HN pour un éditeur indépendant resté fidèle à son produit, à l'heure où le fil du jour regorge précisément d'exemples d'outils ayant trahi la confiance de leurs utilisateurs."
+    }
+  ]
+}
