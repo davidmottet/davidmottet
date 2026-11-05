@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-05",
+  "title": "Dette technique, confiance et preuves : l'IA audite le vieux code, Anthropic veut prouver ses inférences, Gemini épinglé sur les données",
+  "intro": "Le fil rouge du jour, c'est la confiance à l'ère de l'IA : un billet très discuté soutient que l'IA force l'industrie à rembourser quarante ans de dette technique, Anthropic publie des travaux pour prouver cryptographiquement qu'une réponse vient bien du modèle annoncé, et un Tell HN accuse Gemini de s'entraîner sur les conversations même des abonnés payants. Côté matériel, Nvidia est soupçonné de brider l'inférence sous Linux sur le RTX Spark pendant qu'AMD s'apprête à dépasser Intel en chiffre d'affaires pour la première fois. Et en sécurité, un faux entretien d'embauche nord-coréen aurait conduit au casse à 6,3 milliards de dollars chez Binance.",
+  "items": [
+    {
+      "title": "L'IA nous force à rembourser 40 ans de dette technique",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "hn": "https://news.ycombinator.com/item?id=50364336",
+      "points": 734,
+      "comments": 453,
+      "summary": "IEEE Spectrum revient sur PHP2Shell, une faille critique découverte avec l'aide d'outils d'IA lors d'un audit de PHP, et en tire un constat : l'IA met brutalement en lumière des décennies de dette technique accumulée. Les commentaires opposent ceux qui voient dans l'IA un levier pour résorber cette dette et dénicher les vulnérabilités, à ceux qui redoutent une nouvelle dette faite de code que personne ne comprend — et qui rappellent que les vraies causes sont le C, la compatibilité ascendante et la lenteur de l'adoption des langages memory-safe."
+    },
+    {
+      "title": "Tell HN : Gemini s'entraîne sur l'historique des conversations, même pour les abonnés",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "hn": "https://news.ycombinator.com/item?id=50363461",
+      "points": 489,
+      "comments": 127,
+      "summary": "Un utilisateur rapporte que Google Gemini entraînerait ses modèles sur l'historique des conversations, y compris pour les comptes personnels payants. Le fil, parmi les plus votés du jour, n'a pas pu être consulté en détail au moment de la préparation de ce digest (page de discussion inaccessible), mais son score témoigne d'une sensibilité croissante de la communauté aux pratiques d'entraînement silencieuses des grands éditeurs — un thème déjà très présent ces derniers jours."
+    },
+    {
+      "title": "Le firmware chiffré du Nvidia RTX Spark réduirait la vitesse d'inférence à 35 % sous Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "hn": "https://news.ycombinator.com/item?id=50362905",
+      "points": 475,
+      "comments": 206,
+      "summary": "Un test en double démarrage sur un portable RTX Spark (mémoire unifiée jusqu'à 128 Go) met en évidence un bridage de la fréquence GPU sous Linux, avec une inférence qui tomberait à 35 % de la vitesse obtenue ailleurs. Les commentaires hésitent entre simple bug de throttling et crainte plus sombre d'un verrouillage DRM du firmware et des modèles, certains évoquant un brevet Microsoft publié en juillet ; d'autres questionnent carrément l'intérêt de l'inférence locale sur portable."
+    },
+    {
+      "title": "Un faux entretien d'embauche nord-coréen à l'origine du casse à 6,3 milliards de dollars chez Binance",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "hn": "https://news.ycombinator.com/item?id=50365755",
+      "points": 377,
+      "comments": 231,
+      "summary": "Selon The Register, le vol massif subi par Binance remonterait à un faux entretien d'embauche : un employé aurait exécuté un « exercice technique » piégé sur son ordinateur professionnel, alors qu'il avait accès à du code pouvant atteindre les portefeuilles des clients. Les commentaires débattent de la part de responsabilité de l'employé, racontent leurs propres rencontres avec de faux recruteurs sur LinkedIn, et reprochent à l'article de ne pas citer la communication de Binance du 29 octobre."
+    },
+    {
+      "title": "AMD s'attend à dépasser Intel au quatrième trimestre, une première historique",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+      "hn": "https://news.ycombinator.com/item?id=50367125",
+      "points": 214,
+      "comments": 70,
+      "summary": "Avec une prévision de chiffre d'affaires d'environ 17 milliards de dollars au T4, AMD dépasserait les projections d'Intel pour la première fois de son histoire, portée selon les commentaires par les ventes d'accélérateurs Instinct. La discussion refait le procès d'Intel — échec du 10 nm, hémorragie des équipes de validation sous Krzanich, stagnation des années 2014-2015 — tandis que d'autres relativisent : la vraie bataille, celle des GPU pour l'IA, se joue face à Nvidia."
+    },
+    {
+      "title": "Anthropic : des progrès vers l'inférence prouvable pour les grands modèles de langage",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "hn": "https://news.ycombinator.com/item?id=50368626",
+      "points": 70,
+      "comments": 23,
+      "summary": "Anthropic présente une technique pour prouver qu'une réponse provient bien du modèle annoncé : une version entière exacte des poids est publiée sous forme d'engagement cryptographique, et chaque token vérifié doit être le choix glouton du modèle. Les commentaires citent un engagement d'environ 6,5 Mo couvrant ~16 millions de requêtes, une vérification en ~17 secondes mais un surcoût de calcul de 70 à 100×, et débattent de l'utilité réelle : auditer les routeurs tiers et détecter les modèles dégradés en douce, oui, mais la preuve ne couvre ni le calcul flottant ni l'échantillonnage."
+    },
+    {
+      "title": "Les poids du modèle Kimi K3.1 Pro sont disponibles",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "hn": "https://news.ycombinator.com/item?id=50366999",
+      "points": 162,
+      "comments": 35,
+      "summary": "Moonshot AI publie sur Hugging Face les poids de Kimi K3.1 Pro, nouvelle itération de sa famille de modèles ouverts. Ni la fiche Hugging Face ni la discussion HN n'ont pu être consultées au moment de la préparation de ce digest, mais la sortie s'inscrit dans la course aux poids ouverts des laboratoires chinois qui anime régulièrement la première page de HN."
+    },
+    {
+      "title": "Vérifier n'est pas connaître : la science a besoin de plus que des réponses",
+      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+      "hn": "https://news.ycombinator.com/item?id=50363019",
+      "points": 184,
+      "comments": 104,
+      "summary": "Cet essai du Cosmos Institute soutient que la capacité de l'IA à vérifier des réponses ne constitue pas une connaissance scientifique au sens plein. Les commentaires se divisent : certains estiment que vérifier est déjà une forme de savoir et que les vérificateurs pourraient expliquer les résultats, d'autres répliquent que les LLM expliquent mal ; les mathématiques, où l'IA peut contrôler ses propres réponses, sont citées comme le domaine le plus proche, et plusieurs rappellent qu'un impact pratique peut exister sans compréhension — du béton romain à la pharmacie."
+    },
+    {
+      "title": "Kitty 0.50",
+      "url": "https://sw.kovidgoyal.net/kitty/changelog/",
+      "hn": "https://news.ycombinator.com/item?id=50362980",
+      "points": 313,
+      "comments": 200,
+      "summary": "Nouvelle version 0.50 du terminal GPU Kitty de Kovid Goyal, dont le changelog a attiré un volume de discussion inhabituel pour une mise à jour d'outil (plus de 300 points et 200 commentaires). Le changelog et le fil de discussion n'ont pas pu être consultés au moment de la préparation de ce digest ; l'ampleur des échanges suggère des changements notables ou un débat animé autour du projet."
+    },
+    {
+      "title": "GitHub : incident sur les Pull Requests, les opérations Git et les Issues",
+      "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+      "hn": "https://news.ycombinator.com/item?id=50363378",
+      "points": 216,
+      "comments": 111,
+      "summary": "La page de statut de GitHub signale un incident touchant les Pull Requests, les opérations Git et les Issues — le cœur du service. Le détail de l'incident (durée, cause, résolution) n'a pas pu être consulté au moment de la préparation de ce digest, mais le fil HN très commenté confirme une panne ressentie largement, quelques jours après d'autres incidents d'infrastructure qui avaient déjà fait la une."
+    },
+    {
+      "title": "Jelly Sheet",
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "hn": "https://news.ycombinator.com/item?id=50361268",
+      "points": 407,
+      "comments": 105,
+      "summary": "Une démo interactive publiée par mrdoob, le créateur de three.js, pour l'édition 2026 du Codevember. La page et la discussion n'ont pas pu être consultées au moment de la préparation de ce digest, mais le score élevé (environ 400 points) montre que HN reste friand de ces petites expériences graphiques dans le navigateur signées par des figures de la 3D web."
+    },
+    {
+      "title": "Pistes cyclables guérilla : San Francisco pérennise une infrastructure illicite (2016)",
+      "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+      "hn": "https://news.ycombinator.com/item?id=50366522",
+      "points": 152,
+      "comments": 87,
+      "summary": "Cet article de 99% Invisible raconte comment des militants ont installé illégalement des pistes cyclables à San Francisco, que la ville a ensuite rendues permanentes. La discussion HN, assez courte, rapproche le phénomène des « desire paths » — ces sentiers tracés par l'usage plutôt que par les planificateurs — et s'amuse de voir l'administration entériner après coup l'infrastructure sauvage."
+    }
+  ]
+}

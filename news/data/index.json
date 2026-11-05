@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-05",
+      "title": "Dette technique, confiance et preuves : l'IA audite le vieux code, Anthropic veut prouver ses inférences, Gemini épinglé sur les données",
+      "count": 12
+    },
+    {
       "date": "2026-11-04",
       "title": "L'affaire des poids de Qwen se dégonfle, pendant que Postman, OpenAI et Google abîment la confiance de leurs utilisateurs",
       "count": 12
