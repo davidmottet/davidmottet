@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-07",
+  "title": "Tesla enterre le Cybertruck, une banque bloque GrapheneOS, et la FAA dit adieu aux disquettes",
+  "intro": "Journée très matérielle sur Hacker News : Tesla met fin à la production du Cybertruck après des années de ventes décevantes, pendant que la FAA annonce enfin la retraite des disquettes du contrôle aérien américain. Le contrôle des plateformes fait aussi débat, entre une banque néerlandaise qui bloque les Android non-Google comme GrapheneOS et les déboires judiciaires de Kalshi face aux lois anti-jeux des États. Côté code, les frameworks d'interface en Rust et la programmation UEFI occupent les discussions techniques.",
+  "items": [
+    {
+      "title": "Tesla arrête progressivement la production du Cybertruck",
+      "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+      "hn": "https://news.ycombinator.com/item?id=50391456",
+      "points": 466,
+      "comments": 1114,
+      "summary": "Selon NBC News, Tesla met fin à la production du Cybertruck après des années de ventes très en deçà des attentes. L'énorme discussion (plus de 1100 commentaires) dissèque l'échec : un pickup incapable de tracter ou transporter comme un utilitaire classique, avec une autonomie qui s'effondre en charge, face à ceux qui y voyaient un véhicule « lifestyle ». L'acier inoxydable non peint, plus cher à former et à réparer, et la gouvernance d'Elon Musk accusée d'avoir ignoré les ingénieurs cristallisent le débat."
+    },
+    {
+      "title": "La banque néerlandaise « idéaliste » ASN bloque les Android non-Google, dont GrapheneOS",
+      "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "hn": "https://news.ycombinator.com/item?id=50390124",
+      "points": 574,
+      "comments": 360,
+      "summary": "Un rapport de compatibilité de PrivSec-dev documente que l'application bancaire d'ASN, banque néerlandaise qui se présente comme éthique, refuse désormais de fonctionner sur les Android sans services Google, y compris GrapheneOS, pourtant réputé pour sa sécurité. Le sujet a fortement mobilisé HN (574 points, 360 commentaires), dans la lignée des débats récurrents sur l'attestation d'intégrité de Google qui exclut les systèmes alternatifs de la banque en ligne."
+    },
+    {
+      "title": "Deus Ex, par le Digital Antiquarian",
+      "url": "https://www.filfre.net/2026/11/deus-ex/",
+      "hn": "https://news.ycombinator.com/item?id=50393758",
+      "points": 243,
+      "comments": 121,
+      "summary": "Le Digital Antiquarian, blog de référence sur l'histoire du jeu vidéo, consacre son nouvel article-fleuve à Deus Ex, le classique d'Ion Storm sorti en 2000. Comme souvent avec cette série, le billet a trouvé son public sur HN (243 points, 121 commentaires). Deus Ex reste célébré pour son mélange pionnier de FPS, de RPG et de narration à embranchements."
+    },
+    {
+      "title": "La FAA va retirer les disquettes du contrôle aérien d'ici 2028",
+      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+      "hn": "https://news.ycombinator.com/item?id=50388001",
+      "points": 122,
+      "comments": 119,
+      "summary": "La FAA annonce l'abandon des disquettes encore utilisées dans le contrôle aérien américain d'ici 2028 ; les commentaires évoquent un système de remplacement (E-IDS) chiffré à environ 12 milliards de dollars et un rapport de l'inspection générale des transports de 2024. Le débat oppose ceux pour qui cette lenteur extrême est une garantie de sécurité (« aller vite n'est pas une vertu ») à ceux qui y voient une bureaucratie paralysante, alors que les disquettes elles-mêmes deviennent introuvables."
+    },
+    {
+      "title": "Google présente Gemini Omni 1.2 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "hn": "https://news.ycombinator.com/item?id=50392118",
+      "points": 49,
+      "comments": 20,
+      "summary": "Google annonce Gemini Omni 1.2 Flash, déclinaison rapide de son modèle multimodal orienté vidéo, déployée par étapes entre Google Vids, l'application Gemini et l'API. Les commentateurs trouvent l'accès illisible — quel forfait donne droit à quoi, avec des limites de durée différentes selon le canal — et raillent l'empilement de noms « Gemini Omni Flash ». La possibilité d'étendre une vidéo de 15 secondes impressionne, mais nourrit l'inquiétude de vidéos IA de plus en plus difficiles à repérer."
+    },
+    {
+      "title": "Survivre au-delà des limites : des fourmis des bois piégées dans un gouffre géant (2016)",
+      "url": "https://jhr.pensoft.net/articles.php?id=9096",
+      "hn": "https://news.ycombinator.com/item?id=50390525",
+      "points": 136,
+      "comments": 43,
+      "summary": "Cette étude de 2016 publiée dans le Journal of Hymenoptera Research décrit une colonie de fourmis des bois tombée dans un piège géant dont elle ne pouvait s'échapper, et qui a pourtant survécu dans des conditions extrêmes. Un classique de la biologie qui refait régulièrement surface sur HN, où il a de nouveau séduit (136 points) les amateurs d'histoires naturelles hors normes."
+    },
+    {
+      "title": "Premiers pas en programmation bare-metal avec UEFI",
+      "url": "https://kevinboone.me/efitest_index.html",
+      "hn": "https://news.ycombinator.com/item?id=50394855",
+      "points": 130,
+      "comments": 19,
+      "summary": "Kevin Boone propose un guide pour programmer directement au-dessus du firmware UEFI, sans système d'exploitation. Les commentaires règlent leurs comptes avec la conception d'UEFI — chaînes UTF-16, FAT, conventions héritées de Windows, que certains qualifient d'héritage nuisible — tandis que d'autres partagent des alternatives pratiques comme edk2-libc ou Multiboot2. On y débat aussi de savoir si UEFI mérite vraiment l'étiquette « bare metal », et de la place du code généré par LLM dans les exemples."
+    },
+    {
+      "title": "Rune : un framework d'interface Rust rendu par GPU pour macOS, Windows, Linux et le web",
+      "url": "https://github.com/anomalyco/rune",
+      "hn": "https://news.ycombinator.com/item?id=50394569",
+      "points": 79,
+      "comments": 58,
+      "summary": "Rune se présente comme un framework d'UI « natif » en Rust, rendu par GPU et multiplateforme. Les commentaires contestent d'abord le mot « natif » pour un toolkit qui n'utilise aucun widget système — pour certains, le terme signifie désormais juste « pas Electron ». Le projet intrigue aussi par sa politique de contribution : pas de pull requests acceptées, un agent IA traite les issues, ce que plusieurs jugent risqué pour la sécurité et la maintenance. Restent les comparaisons avec egui, GPUI et iced, et des questions ouvertes sur l'accessibilité."
+    },
+    {
+      "title": "BUI : l'interface de Blender extraite en bibliothèque, « plus rapide que GPUI »",
+      "url": "https://github.com/ppmpreetham/BUI",
+      "hn": "https://news.ycombinator.com/item?id=50389333",
+      "points": 67,
+      "comments": 15,
+      "summary": "Le projet BUI extrait l'interface et le runtime de Blender pour en faire une bibliothèque réutilisable, en revendiquant de meilleures performances que GPUI. Les commentaires se partagent entre ceux qui estiment que l'UI de Blender devrait rester dans Blender et ceux qui saluent la réutilisation d'une interface éprouvée pour des outils maison. La licence GPL de Blender, face à l'Apache de GPUI, est pointée comme un frein à l'adoption, et le débat widgets natifs contre rendu custom pour les applications denses ressurgit."
+    },
+    {
+      "title": "Nous savons que 15 579 sites web sont infectés. Comment les prévenir ?",
+      "url": "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/",
+      "hn": "https://news.ycombinator.com/item?id=50396064",
+      "points": 36,
+      "comments": 22,
+      "summary": "Le chercheur en sécurité Scott Helme a identifié 15 579 sites compromis et pose une question concrète : comment joindre leurs propriétaires ? Les commentaires passent en revue les canaux possibles — Google Safe Browsing et les navigateurs, les adresses abuse@, les hébergeurs, les formulaires officiels type NCSC britannique — en notant que le whois est devenu quasi inutilisable depuis le RGPD. D'autres opposent la publication de la liste (« name and shame ») à un service de consultation à la haveibeenpwned."
+    },
+    {
+      "title": "Les revers judiciaires s'accumulent pour Kalshi face aux lois des États sur les jeux d'argent",
+      "url": "https://arstechnica.com/tech-policy/2026/11/kalshi-court-losses-pile-up-as-judges-refuse-to-block-state-gambling-laws/",
+      "hn": "https://news.ycombinator.com/item?id=50395905",
+      "points": 42,
+      "comments": 13,
+      "summary": "Ars Technica rapporte que les juges refusent les uns après les autres de bloquer l'application des lois anti-jeux des États américains contre Kalshi, la plateforme de marchés prédictifs. L'entreprise soutient que ses contrats d'événements relèvent du régulateur fédéral des marchés à terme (CFTC) et non des régulateurs de jeux d'argent, un argument que plusieurs tribunaux viennent donc d'écarter."
+    },
+    {
+      "title": "MTG-I2 : premières images du nouveau satellite météo européen",
+      "url": "https://www.eumetsat.int/mtg-i2-first-images",
+      "hn": "https://news.ycombinator.com/item?id=50392787",
+      "points": 44,
+      "comments": 8,
+      "summary": "EUMETSAT publie les premières images de MTG-I2, deuxième satellite imageur de la génération Meteosat Third Generation destinée à moderniser l'observation météorologique de l'Europe depuis l'orbite géostationnaire. Une étape de validation avant la mise en service opérationnelle, qui donne un premier aperçu des capacités de l'instrument."
+    }
+  ]
+}
