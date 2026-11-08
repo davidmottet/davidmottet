@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-08",
+  "title": "Libghostty passe en 1.0, l'IA accélère sa propre recherche, et une faille du noyau Linux fait s'évader les VM",
+  "intro": "Grosse journée pour l'infrastructure sur Hacker News : Mitchell Hashimoto publie libghostty 1.0, le moteur de terminal embarquable de Ghostty, pendant que GitHub détaille la refonte de son stockage Git et que la faille PwnEscape, découverte via le bug bounty de Vercel, rappelle la fragilité de l'isolation des sandboxes. Côté IA, un billet d'Ajeya Cotra sur un rapport du METR — la recherche d'Anthropic aurait doublé de vitesse grâce à l'IA elle-même — alimente l'un des fils les plus commentés du jour. L'archéologie s'invite aussi en une, de l'ADN des Goths aux ruines d'Akrotiri, tandis que le fil fleuve sur la fin du Cybertruck, couvert hier, continue de gonfler.",
+  "items": [
+    {
+      "title": "Libghostty 1.0 : le moteur de terminal de Ghostty devient une bibliothèque embarquable",
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "hn": "https://news.ycombinator.com/item?id=50399933",
+      "points": 634,
+      "comments": 98,
+      "summary": "Mitchell Hashimoto annonce la version 1.0 de libghostty, qui expose le moteur du terminal Ghostty derrière une API C pensée pour être embarquée dans d'autres applications — les commentaires citent déjà le terminal intégré de JetBrains et Ghostel pour Emacs comme utilisateurs. La discussion s'attarde sur la conception de l'ABI stable (structs versionnés) et sur Rex, un nouveau terminal macOS bâti sur libghostty, dont on se demande s'il sera payant et s'il concurrencera Ghostty lui-même."
+    },
+    {
+      "title": "Un juge LLM qui peut demander de l'aide à Opus atteint la précision d'Opus pour 4x moins cher",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "hn": "https://news.ycombinator.com/item?id=50397429",
+      "points": 471,
+      "comments": 109,
+      "summary": "Hightouch décrit une architecture de « juge » LLM pour la résolution d'identité : un modèle économique traite les cas courants et n'escalade vers Claude Opus que les cas difficiles, pour une précision équivalente à un quart du coût. Les commentaires débattent du sens de l'orchestration — Opus pilotant des petits modèles locaux, ou l'inverse — et plusieurs regrettent le manque de tests rigoureux derrière les retours anecdotiques sur le mélange de modèles ; d'autres s'inquiètent de voir la résolution d'identité devenir si bon marché."
+    },
+    {
+      "title": "L'IA accélère déjà considérablement la recherche en IA",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "hn": "https://news.ycombinator.com/item?id=50397994",
+      "points": 302,
+      "comments": 249,
+      "summary": "Ajeya Cotra analyse un rapport du METR publié le 5 novembre : les progrès d'Anthropic entre octobre 2025 et octobre 2026 auraient été environ deux fois plus rapides que l'année précédente, l'essentiel de l'accélération étant attribué à l'automatisation de la R&D par l'IA — le seuil que la politique de scaling responsable d'Anthropic dit « peut-être imminent ». Elle estime l'uplift des chercheurs à environ 10x et, si la composition se poursuit, extrapole des temps de doublement qui se raccourcissent dangereusement, tout en déplorant qu'une majorité des preuves du rapport soit caviardée. Le fil, l'un des plus commentés du jour, s'empare de ces projections."
+    },
+    {
+      "title": "PwnEscape : une évasion de VM Firecracker via une faille du noyau Linux",
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "hn": "https://news.ycombinator.com/item?id=50397219",
+      "points": 236,
+      "comments": 105,
+      "summary": "Deuxième volet du récit de PwnEscape (CVE-2026-99999), une faille du code réseau IPv4 du noyau Linux hôte présente depuis 2008 : une VM invitée peut faire fuiter la mémoire du noyau hôte, le faire planter, et en laboratoire obtenir une exécution en root. Découverte par Paulos Yibelo de pwn.ai au troisième jour du bug bounty d'un million de dollars de Vercel sur son produit Sandbox, elle a été confirmée en divulgation de mémoire contre les sandboxes de production de Vercel. Seule parade : patcher le noyau hôte et redémarrer — mettre à jour les invités ne protège pas."
+    },
+    {
+      "title": "Asahi Linux : rapport d'avancement 7.3",
+      "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+      "hn": "https://news.ycombinator.com/item?id=50401867",
+      "points": 169,
+      "comments": 120,
+      "summary": "Le projet qui porte Linux sur les Mac Apple Silicon publie son rapport d'avancement 7.3. La discussion est dominée par un différend de licence — le rapport évoque des tentatives d'exploiter la licence MIT du projet, que les commentateurs relient à Omarchy, certains questionnant le choix d'une licence permissive — ainsi que par la position du projet contre les contributions générées par LLM. Les lacunes matérielles reviennent aussi : prise en charge des M3 et M4/M5, ProMotion 120 Hz et HDR restent attendues."
+    },
+    {
+      "title": "GitHub détaille sa nouvelle architecture de stockage Git",
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "hn": "https://news.ycombinator.com/item?id=50397099",
+      "points": 146,
+      "comments": 28,
+      "summary": "GitHub remplace « Spokes », son architecture où chaque push attendait un quorum de répliques complètes sur disques locaux, par un modèle où chaque commit est écrit une seule fois dans Azure Blob Storage, la réplication étant déléguée au stockage et les lectures servies par des workers légers. Le contexte : un trafic passé de 218 à 473 milliards d'événements mensuels en un an, 7,38 milliards de commits en septembre 2026 (5x sur un an) sous la poussée des agents IA, et des tests internes annonçant des écritures jusqu'à 35 fois plus rapides."
+    },
+    {
+      "title": "L'affaire RealPage sur les prix des loyers se solde par près de 360 M$ pour les locataires",
+      "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+      "hn": "https://news.ycombinator.com/item?id=50399991",
+      "points": 122,
+      "comments": 59,
+      "summary": "Le contentieux américain contre RealPage, accusé d'avoir facilité une entente sur les loyers via son logiciel de tarification algorithmique, se conclut par un accord d'environ 360 millions de dollars reversés aux locataires ; les bailleurs n'admettent aucune faute mais s'engagent à ne plus fournir à RealPage de données non publiques pour ses recommandations de prix. Sur HN, beaucoup jugent la sanction dérisoire (« une tape sur les doigts »), d'autres estiment que la vraie cause des loyers élevés reste la pénurie d'offre, et la discussion dérive vers les registres publics de loyers comme alternative."
+    },
+    {
+      "title": "Le mythe fondateur d'une tribu barbare confirmé par l'ADN ancien",
+      "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+      "hn": "https://news.ycombinator.com/item?id=50401740",
+      "points": 95,
+      "comments": 55,
+      "summary": "Selon Science, des analyses d'ADN ancien confirment le récit d'origine des Goths, dont les sources antiques faisaient venir les ancêtres de Scandinavie — un généticien non impliqué dans l'étude, cité dans le fil, note que le génotypage colle à ce que rapportent les textes. Les commentaires débattent de la nouveauté réelle du résultat et surtout de l'historiographie : pendant des décennies, les migrations ont été minimisées au profit de la « diffusion culturelle », avant que l'ADN ancien ne rouvre le dossier, comme pour les Campaniformes."
+    },
+    {
+      "title": "La Grèce a son propre Pompéi : Théra a enseveli Akrotiri sous les cendres",
+      "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
+      "hn": "https://news.ycombinator.com/item?id=50360810",
+      "points": 100,
+      "comments": 8,
+      "summary": "Le Smithsonian consacre un article à Akrotiri, la ville de l'âge du bronze ensevelie par l'éruption du volcan de Théra (Santorin) aux XVIIe-XVIe siècles avant notre ère, témoignage d'une société maritime sophistiquée. Le fil, plus contemplatif que polémique, échange des conseils de visite, note que la surface fouillée est environ quarante fois plus petite que celle de Pompéi, et ressort les hypothèses classiques — l'éruption comme inspiration possible de l'Atlantide et les tentatives controversées de déchiffrement du linéaire A."
+    },
+    {
+      "title": "Peut-on encore optimiser GROUP BY après toutes ces années ?",
+      "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
+      "hn": "https://news.ycombinator.com/item?id=50354097",
+      "points": 79,
+      "comments": 13,
+      "summary": "Pivotlake présente une optimisation des agrégations top-K : utiliser une structure de type count-min sketch pour borner les éléments qui entrent dans le GROUP BY, avec à la clé un passage de 35,6 à 22,2 ms sur la requête de référence. Les commentateurs pointent un piège de correction — un élément classé 11e dans une partition peut être 10e au global —, chipotent sur la présentation « 1,6x plus rapide », et discutent de l'optimiseur de MySQL et de l'endroit où l'agrégation devrait se faire : près des données ou sur des machines séparées."
+    },
+    {
+      "title": "Notes sur Saint-Marin",
+      "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+      "hn": "https://news.ycombinator.com/item?id=50395183",
+      "points": 64,
+      "comments": 21,
+      "summary": "Matt Lakeman publie de longues notes consacrées à Saint-Marin, la micro-république enclavée dans l'Italie, dans la veine de ses récits de voyage-pays très appréciés de HN. L'article source n'était pas accessible depuis notre session ; le fil HN, modeste mais régulier, confirme en tout cas l'appétit du site pour ces plongées dans les petits États."
+    },
+    {
+      "title": "Anthropic décortique les composants de la mémoire des agents",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "hn": "https://news.ycombinator.com/item?id=50402212",
+      "points": 38,
+      "comments": 20,
+      "summary": "Anthropic publie une analyse des mécanismes de mémoire de ses agents ; un commentateur en retient que Claude ne charge pas toute sa mémoire automatique à chaque session, seulement les 200 premières lignes ou 25 Ko de MEMORY.md. Le fil, encore petit, oppose ceux qui y voient une mise au point utile sur la gestion de la mémoire et ceux qui dénoncent un billet marketing, avec un débat sémantique sur ce qui mérite vraiment le nom de « mémoire » quand il s'agit de fichiers injectés dans le contexte."
+    }
+  ]
+}

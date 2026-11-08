@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-08",
+      "title": "Libghostty passe en 1.0, l'IA accélère sa propre recherche, et une faille du noyau Linux fait s'évader les VM",
+      "count": 12
+    },
+    {
       "date": "2026-11-07",
       "title": "Tesla enterre le Cybertruck, une banque bloque GrapheneOS, et la FAA dit adieu aux disquettes",
       "count": 12
