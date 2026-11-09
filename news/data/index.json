@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-09",
+      "title": "Nvidia dans la tourmente, Goldman Sachs débranche Claude Code, et l'IA locale fait de la résistance",
+      "count": 12
+    },
+    {
       "date": "2026-11-08",
       "title": "Libghostty passe en 1.0, l'IA accélère sa propre recherche, et une faille du noyau Linux fait s'évader les VM",
       "count": 12

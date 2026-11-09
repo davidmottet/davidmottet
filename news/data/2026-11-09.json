@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-09",
+  "title": "Nvidia dans la tourmente, Goldman Sachs débranche Claude Code, et l'IA locale fait de la résistance",
+  "intro": "Ce week-end, Hacker News a été dominé par la gouvernance de l'IA et de ses patrons : le conseil d'administration de Nvidia enquête sur Jensen Huang, pendant que Goldman Sachs retire Claude Code à ses banquiers et qu'un développeur en vue raconte son divorce avec l'outil d'Anthropic. En contrepoint, le courant du fait-maison s'affirme : un homelab à 10 dollars, un gros modèle DeepSeek qui tourne sans GPU, et des débats nourris sur l'autonomie vis-à-vis des labos d'IA. S'y ajoutent des questions de confiance plus classiques : les mots que l'iPhone refuse d'écrire, les emails qu'Outlook rejette en silence et les casques EEG qui aspirent nos ondes cérébrales.",
+  "items": [
+    {
+      "title": "Le conseil d'administration de Nvidia enquête sur Jensen Huang",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "hn": "https://news.ycombinator.com/item?id=50416801",
+      "points": 418,
+      "comments": 309,
+      "summary": "Le conseil d'administration de Nvidia a publié un communiqué annonçant une enquête visant son PDG Jensen Huang. En parallèle, Axios a publié une lettre interne de Huang à ses employés au sujet d'une liaison, qui a généré un second fil massif sur HN (environ 393 points et 420 commentaires). Deux fils brûlants dont les discussions étaient difficilement accessibles dimanche, mais dont l'ampleur dit l'onde de choc pour l'entreprise la plus valorisée du secteur."
+    },
+    {
+      "title": "Goldman Sachs retire Claude Code à ses banquiers et traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "hn": "https://news.ycombinator.com/item?id=50415628",
+      "points": 94,
+      "comments": 37,
+      "summary": "Selon ces informations (attribuées à Bloomberg par les commentateurs), Goldman Sachs réserve désormais Claude Code et GitHub à ses quelque 12 000 ingénieurs, le retirant aux banquiers et traders. Le fil HN débat de la vraie motivation : conformité et accès aux données sensibles, ou peur des outils « vibe-codés » mis en production sans revue par des non-développeurs. Plusieurs y voient moins un rejet de l'IA qu'une exigence de garde-fous co-conçus entre IT et front-office."
+    },
+    {
+      "title": "Adieu Claude, bonjour Pi : un développeur raconte sa migration",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "hn": "https://news.ycombinator.com/item?id=50410107",
+      "points": 720,
+      "comments": 446,
+      "summary": "Un billet de blog très discuté où l'auteur explique pourquoi il quitte Claude Code pour l'outil Pi. Les commentaires s'affrontent sur l'interface graphique contre le terminal (organisation des sessions et SSH d'un côté, sandboxing et usage headless de l'autre) et comparent les outils d'orchestration d'agents parallèles (herdr, Orca, paseo, Switchboard). Le fil revient aussi sur le verrouillage fournisseur : beaucoup veulent pouvoir changer de modèle, tout en admettant rester chez Anthropic pour le prix subventionné de l'abonnement."
+    },
+    {
+      "title": "llama-modchip : un DeepSeek de 284 milliards de paramètres sur 64 Go de RAM, sans GPU",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "hn": "https://news.ycombinator.com/item?id=50411961",
+      "points": 432,
+      "comments": 193,
+      "summary": "Un projet GitHub qui fait tourner un modèle DeepSeek de 284 milliards de paramètres sur une machine à 64 Go de RAM, sans carte graphique. Le fil HN se transforme en grand débat économique : calculs de rentabilité entre une machine à 600 $ et un rig à 20 000 $ face aux abonnements et aux API, contestations sur l'équité des comparaisons une fois la quantisation prise en compte. Les sceptiques pointent l'écart de qualité avec les modèles frontière, les partisans défendent la confidentialité et l'indépendance vis-à-vis des labos."
+    },
+    {
+      "title": "La « liste grise » d'Apple : ces mots que votre iPhone refuse d'aider à écrire",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+      "hn": "https://news.ycombinator.com/item?id=50406111",
+      "points": 524,
+      "comments": 344,
+      "summary": "Le Guardian révèle l'existence d'une liste grise de mots et expressions que le clavier de l'iPhone refuse de suggérer ou de corriger. Le fil HN se divise entre ceux qui y voient une censure douce et ceux qui défendent un choix produit raisonnable pour un clavier grand public. Beaucoup en profitent pour déplorer la dégradation de l'autocorrection iOS depuis des années, et plusieurs réclament un simple réglage pour désactiver le filtre."
+    },
+    {
+      "title": "Ce que je fais tourner sur mon homelab OpenStick à 10 dollars",
+      "url": "https://blog.bosscher.ch/posts/openstick/",
+      "hn": "https://news.ycombinator.com/item?id=50406670",
+      "points": 732,
+      "comments": 129,
+      "summary": "Un billet qui détaille un homelab construit sur un OpenStick, une clé 4G à environ 10 $ sous Linux. Les commentateurs échangent leurs piles auto-hébergées (VictoriaMetrics, VictoriaLogs, FreshRSS, Grafana) et leurs conseils de flashage, entre mode EDL qui peut bricker l'appareil, noyau mainline et achats sur AliExpress. Le fil s'inquiète aussi de la sécurité : un utilisateur décrit un agent IA avec accès root sur ce genre d'appareil, relançant les débats sur l'injection de prompt et la chaîne d'approvisionnement."
+    },
+    {
+      "title": "Outlook.com rejetterait en silence les emails des domaines sans DMARC",
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "hn": "https://news.ycombinator.com/item?id=50416158",
+      "points": 273,
+      "comments": 198,
+      "summary": "Un billet d'un prestataire de sécurité email affirme qu'Outlook.com rejette discrètement les messages provenant de domaines sans enregistrement DMARC, sans annonce claire de Microsoft. Le sujet a fortement mobilisé HN (près de 200 commentaires), signe que la délivrabilité email reste un point de douleur majeur pour quiconque gère son propre domaine. Le fil de discussion était inaccessible au moment de la rédaction, les débats précis n'ont donc pas pu être consultés."
+    },
+    {
+      "title": "Les casques EEG grand public aspirent vos données cérébrales pour entraîner des IA",
+      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users",
+      "hn": "https://news.ycombinator.com/item?id=50409856",
+      "points": 116,
+      "comments": 92,
+      "summary": "Selon ce papier de Science, des fabricants de casques à ondes cérébrales grand public collectent les données EEG de leurs utilisateurs pour entraîner des modèles d'IA, sans les en informer clairement. Le sujet prolonge sur HN les inquiétudes récurrentes autour de la « neuro-vie-privée », un domaine encore largement sans cadre réglementaire. Les détails du débat n'ont pas pu être consultés au moment de la rédaction."
+    },
+    {
+      "title": "Les cubes d'uranium révèlent pourquoi le programme nucléaire allemand a échoué",
+      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "hn": "https://news.ycombinator.com/item?id=50377661",
+      "points": 208,
+      "comments": 162,
+      "summary": "Ars Technica revient sur l'analyse de cubes d'uranium issus du programme nucléaire nazi ; selon des lecteurs citant l'article, la production allemande d'eau lourde était trop faible pour faire fonctionner ne serait-ce qu'un réacteur pendant la guerre. Les commentaires évoquent les premiers réacteurs allemands à eau lourde et poudre d'uranium, sujets aux fuites et aux explosions. Comme souvent, le fil dérive vers un long débat historique : est-ce la bombe atomique ou l'entrée en guerre soviétique qui a fait capituler le Japon ?"
+    },
+    {
+      "title": "L'écriture comme outil de pensée",
+      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+      "hn": "https://news.ycombinator.com/item?id=50412067",
+      "points": 295,
+      "comments": 83,
+      "summary": "Un essai du chercheur en systèmes distribués Murat Demirbas défendant l'écriture comme véritable outil de réflexion, et pas seulement de communication. Le billet a trouvé un large écho sur HN (près de 300 points), dans un contexte où la génération de texte par IA relance la question de ce qu'on perd à ne plus écrire soi-même. Le détail des discussions n'a pas pu être consulté au moment de la rédaction."
+    },
+    {
+      "title": "Porter Android 16 sur le téléphone à touches de ma mère aveugle",
+      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+      "hn": "https://news.ycombinator.com/item?id=50366821",
+      "points": 162,
+      "comments": 49,
+      "summary": "Le récit d'un bidouilleur qui porte Android 16 sur un téléphone à clavier physique pour sa mère aveugle, à partir de matériel considéré comme du déchet électronique. Le billet combine accessibilité, droit à la réparation et hacking matériel, un cocktail qui séduit traditionnellement HN. Les détails techniques et les débats du fil n'ont pas pu être consultés au moment de la rédaction."
+    },
+    {
+      "title": "Declarative Dragging : repenser le glisser-déposer de façon déclarative",
+      "url": "https://declarative-dragging.github.io/",
+      "hn": "https://news.ycombinator.com/item?id=50368481",
+      "points": 382,
+      "comments": 46,
+      "summary": "Une exploration interactive proposant une approche déclarative du glisser-déposer dans les interfaces, plutôt que l'habituel enchevêtrement de gestionnaires d'événements impératifs. Le ratio inhabituel (382 points pour seulement 46 commentaires) suggère un contenu qu'on explore et qu'on admire plus qu'on ne le débat. Un bon exemple du genre « essai interactif » dont HN raffole."
+    }
+  ]
+}
