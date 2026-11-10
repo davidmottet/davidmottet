@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-10",
+  "title": "Fable 5.2 débarque, Gemini lit vos fichiers, et les codes postaux américains deviennent payants",
+  "intro": "Journée dominée par la nouvelle vague de modèles d'IA : Anthropic lance Claude Fable 5.2 et Mythos 5.2, Meta réplique avec Muse Ember et Google avec ses TPU de nouvelle génération, pendant qu'un développeur fait coder à Fable le jeu rêvé de son neveu. En face, la confiance s'effrite : Gemini enverrait des fichiers Drive personnels à des annotateurs humains, et l'USPS fait payer 10 000 dollars les contours de ses codes postaux. On respire avec des avions en papier, des satellites à observer et des panneaux solaires magenta au-dessus des brocolis.",
+  "items": [
+    {
+      "title": "Anthropic lance Claude Fable 5.2 et Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "hn": "https://news.ycombinator.com/item?id=50429068",
+      "points": 306,
+      "comments": 664,
+      "summary": "Anthropic annonce ses nouveaux modèles de la gamme Mythos ; le fait d'armes mis en avant : 1 000 agents Fable 5.2 ont formalisé le théorème de Fermat-Wiles en une trentaine d'heures, là où Opus 5.5 n'en complétait que 26 % en 18 heures. Les premiers testeurs rapportent des tâches bouclées environ 40 % plus vite qu'avec Fable 5.1, mais un écart modeste avec Opus 5.5 sur le code ordinaire — l'avantage se verrait surtout sur l'architecture et les prompts ambitieux. Le fil, massif (664 commentaires), débat de la transparence des benchmarks et surtout de la perte de compréhension du code généré, certains y voyant une complaisance d'automatisation dangereuse, d'autres une simple couche d'abstraction de plus."
+    },
+    {
+      "title": "Gemini enverrait des fichiers Drive et des emails personnels à des annotateurs humains",
+      "url": "https://github.com/thisisme6598/gemini_files/",
+      "hn": "https://news.ycombinator.com/item?id=50429426",
+      "points": 475,
+      "comments": 113,
+      "summary": "Un dépôt GitHub affirme que Gemini grand public, quand les « applications connectées » sont activées, peut puiser de lui-même dans Drive et Gmail et faire remonter des extraits — voire des textes entiers — jusqu'à des relecteurs humains. Le commentaire technique le plus repris précise que Workspace resterait épargné grâce à ses contrats de rétention de données, mais la confusion entre offres inquiète jusqu'aux clients entreprise. Le fil dénonce le dark pattern du plein écran « autoriser les applications connectées » qui réapparaît sans cesse, et les remèdes proposés vont de l'auto-hébergement (Immich, Nextcloud) aux recours collectifs."
+    },
+    {
+      "title": "L'USPS vend désormais les contours officiels des codes postaux… à partir de 10 000 $",
+      "url": "https://postalpro.usps.com/zcb",
+      "hn": "https://news.ycombinator.com/item?id=50431058",
+      "points": 537,
+      "comments": 274,
+      "summary": "La poste américaine propose pour la première fois des polygones officiels de codes postaux (ZIP), mais au prix fort — environ 10 000 $ pour l'offre de base — et sous licence interdisant la redistribution. Les commentateurs rappellent qu'un ZIP n'est pas vraiment un polygone mais un ensemble de tournées de distribution, et que les fichiers ZCTA gratuits du recensement restent l'approximation habituelle. Le gros du débat porte sur le principe : des données fédérales devraient-elles être gratuites, ou l'USPS, sommée de s'autofinancer, est-elle fondée à monétiser son travail ?"
+    },
+    {
+      "title": "Le Canada lance son système de paiement instantané Real-Time Rail",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "hn": "https://news.ycombinator.com/item?id=50427362",
+      "points": 488,
+      "comments": 270,
+      "summary": "Payments Canada met en service le Real-Time Rail, une infrastructure de paiement 24 h/24 dont les premiers participants sont Wealthsimple, KOHO ou Bank of America — les grandes banques canadiennes ne rejoindront le rail que d'ici mi-2027. Le fil compare longuement avec FedNow, RTP et Zelle côté américain, et note qu'Interac e-Transfer couvrait déjà bien le pair-à-pair, le RTR étant d'abord une infrastructure de règlement entre institutions. Les bémols : pas de rétrofacturation (chargeback) contrairement aux cartes, et une digression animée sur la difficulté des startups canadiennes à lever des fonds."
+    },
+    {
+      "title": "Foldable Flight : les meilleurs avions en papier du monde",
+      "url": "https://www.foldableflight.com",
+      "hn": "https://news.ycombinator.com/item?id=50424581",
+      "points": 892,
+      "comments": 141,
+      "summary": "La bibliothèque de modèles d'avions en papier de Kyle Boyer (750 000 abonnés sur YouTube) a conquis HN : tutoriels vidéo gratuits, modèles recordmen du monde, et un plébiscite nostalgique où chacun retrouve le Nakamura Lock de son enfance. Beaucoup racontent plier des avions avec leurs enfants, tout en râlant contre une popup de newsletter récalcitrante et des plantages sur Safari mobile — bugs que le créateur, très présent dans le fil, a promis de corriger. Les régions au format A4 signalent au passage la difficulté de trouver du papier carré."
+    },
+    {
+      "title": "« Fable 5.2 a codé d'une traite le jeu de rêve de mon neveu »",
+      "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+      "hn": "https://news.ycombinator.com/item?id=50433659",
+      "points": 246,
+      "comments": 165,
+      "summary": "Un développeur a fait réaliser par Fable 5.2 un jeu de plateforme à partir des dessins de son neveu Aiden — chaque personnage et boss dessiné par l'enfant, arrière-grand-mère en ange comprise — pour un coût estimé autour de 300 $ d'API. Le fil chipote d'abord sur le terme « one-shot », le projet ayant demandé de nombreux allers-retours, puis s'écharpe sur le fond : cadeau créatif qui donne envie de fabriquer des choses, ou génération élevée au « slop » qui n'apprendra jamais comment le jeu fonctionne ? Les testeurs relèvent des bugs savoureux (ennemis shootables à l'infini, chien qui rétrécit en sautant) et s'inquiètent d'un Steam inondé de jeux IA."
+    },
+    {
+      "title": "Meta dévoile Muse Ember, son modèle le plus petit et le plus efficient",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "hn": "https://news.ycombinator.com/item?id=50429024",
+      "points": 263,
+      "comments": 111,
+      "summary": "Meta lance Muse Ember à 0,10 $ le million de tokens en entrée et 0,50 $ en sortie, taille non divulguée et poids fermés — contrairement au grand frère ouvert Muse Spark Open et ses 816 milliards de paramètres. Simon Willison a fait plancher le modèle sur ses pélicans à vélo en SVG à six niveaux de raisonnement : la qualité ne progresse pas vraiment avec l'effort. Le fil oppose les benchmarks « de niveau frontière » à une utilité réelle jugée décevante, trouve DeepSeek moins cher, et plusieurs avouent une fatigue face au rythme des sorties de modèles."
+    },
+    {
+      "title": "Google annonce ses TPU 8tx et 8i Max",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "hn": "https://news.ycombinator.com/item?id=50432831",
+      "points": 228,
+      "comments": 70,
+      "summary": "Google présente deux nouvelles puces : le TPU 8tx orienté entraînement à grande échelle et inférence confidentielle, et le 8i Max pensé pour les grands contextes et la densité de calcul par rack, avec une performance annoncée d'environ 2,7 fois la génération précédente et « près de 100 clients ». HN regrette l'absence de chiffres comparables — watts par token, dollars par token, débit de pointe — et moque le ton très communiqué de presse et le cadrage « ère agentique ». La vraie frustration reste l'accès : ces puces ne se louent que sur Google Cloud, même si plusieurs notent qu'elles desserrent l'emprise de Nvidia."
+    },
+    {
+      "title": "E-means : battre k-means en dix fois moins d'époques",
+      "url": "https://e-means.github.io/",
+      "hn": "https://news.ycombinator.com/item?id=50429734",
+      "points": 307,
+      "comments": 28,
+      "summary": "E-means est une variante mini-batch de k-means qui met à jour les centroïdes par moyenne pondérée exponentielle, décrite comme une interpolation entre l'algorithme de Lloyd et l'immobilité, très parallélisable. Les retours de terrain impressionnent — un utilisateur rapporte un gain de 146x sur GPU pour un index IVF, un autre des reconstructions d'index 2,5 fois plus rapides — mais un troisième l'a trouvée plus lente et bruitée que Lloyd pour relaxer des maillages sphériques. Les sceptiques relèvent que le mini-batch à pondération exponentielle existait déjà, que le passage à l'échelle n'est pas testé et que les règles d'hyperparamètres semblent ajustées a posteriori."
+    },
+    {
+      "title": "Des panneaux solaires magenta au-dessus des brocolis : le pari de l'agrivoltaïsme",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "hn": "https://news.ycombinator.com/item?id=50426175",
+      "points": 290,
+      "comments": 189,
+      "summary": "Une étude a testé des panneaux photovoltaïques semi-transparents en tellurure de cadmium, teintés magenta, au-dessus de cultures de brocolis : la maturation prend 25 jours de plus mais le rendement reste à peu près identique, l'ombrage réduisant le stress hydrique des plantes. Le fil débat de la cohabitation avec les engins agricoles — moissonneuses et irrigation à pivot central exigent des structures hautes et coûteuses — et certains calculent qu'un tiers du maïs américain partant dans l'éthanol, la même surface produirait bien plus d'énergie en solaire. La contrainte de fond : l'approvisionnement limité en tellure."
+    },
+    {
+      "title": "Show HN : watched.earth, tous les satellites passés au-dessus de chez vous cette semaine",
+      "url": "https://www.watched.earth",
+      "hn": "https://news.ycombinator.com/item?id=50428907",
+      "points": 260,
+      "comments": 45,
+      "summary": "On entre un lieu et le site retrouve les passages de satellites des sept derniers jours — orbites calculées en SGP4 dans le navigateur sur le catalogue CelesTrak, 17 000 objets rendus sur GPU — puis affiche les images réelles correspondantes de Sentinel-2, Landsat et de la NASA. Les commentaires saluent le design et les survols animés, suggèrent d'ajouter le radar Sentinel-1 qui voit à travers les nuages, et rappellent que les satellites espions du NRO n'apparaissent pas dans les catalogues publics. Petit drame méta : des lecteurs soupçonnant un texte écrit par IA, le modérateur dang a demandé à l'auteur de réécrire sa présentation à la main."
+    },
+    {
+      "title": "Infineon présente le premier wafer de carbure de silicium de puissance en 300 mm",
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
+      "hn": "https://news.ycombinator.com/item?id=50429430",
+      "points": 117,
+      "comments": 65,
+      "summary": "Infineon annonce le premier wafer de 300 mm en carbure de silicium (SiC) portant des composants de puissance fonctionnels, qu'il exposera au salon electronica de Munich à partir du 10 novembre. Les commentateurs expliquent pourquoi ce cap a tant tardé : le SiC ne fond pas mais se sublime, interdisant le procédé Czochralski du silicium classique, et reste un matériau impitoyable à usiner. Le fil débat de la portée réelle — jalon de réduction des coûts pour les chargeurs et moteurs de véhicules électriques plutôt que révolution — et dérive sur la souveraineté européenne des semi-conducteurs, entre absence de DRAM et de fabs logiques de pointe."
+    }
+  ]
+}
