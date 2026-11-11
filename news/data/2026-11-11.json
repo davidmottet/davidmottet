@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-11",
+  "title": "Domotique sans cloud, Signal vérifié par des agents IA, et Val Town tire sa révérence",
+  "intro": "Journée placée sous le signe de la méfiance envers les dépendances : HN plébiscite la domotique qui marche sans internet, Verisign renonce in extremis à supprimer des milliers de domaines .name, Val Town ferme et Synaptics attaque un développeur de pilotes Linux. Côté IA et code, DeepMind fait vérifier formellement libsignal par des agents, pendant qu'un essai sur la fragilité du code généré et les rapports de vulnérabilités en masse de Glasswing relancent le débat sur ce que l'IA apporte vraiment aux mainteneurs. Et Toyota ressuscite Scion pour vendre un kei truck en Amérique.",
+  "items": [
+    {
+      "title": "Les objets connectés devraient fonctionner sans internet",
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "hn": "https://news.ycombinator.com/item?id=50441707",
+      "points": 778,
+      "comments": 281,
+      "summary": "Un billet plaide pour une domotique qui continue de fonctionner quand le cloud du fabricant disparaît — un scénario que les commentateurs connaissent bien, citant les services fermés qui transforment le matériel en presse-papier. Le fil compare les protocoles : Zigbee et Z-Wave sont loués pour leur fonctionnement local, tandis que Matter sur Thread inquiète depuis que sa nouvelle version autorise la connexion directe à internet, sauf à cloisonner avec des VLAN et des routeurs de bordure auto-hébergés. Entre Home Assistant, firmwares alternatifs et solutions low-tech (simples alarmes à flotteur), beaucoup concluent que la fiabilité passe par le plus bête possible."
+    },
+    {
+      "title": "Domaines .name : Verisign fait machine arrière",
+      "url": "https://neil.fraser.name/news/2026/11/10/",
+      "hn": "https://news.ycombinator.com/item?id=50442736",
+      "points": 723,
+      "comments": 168,
+      "summary": "Verisign renonce à supprimer environ 22 000 domaines de troisième niveau en .name (du type prenom.nom.name) : les titulaires existants sont finalement « grandfathered », même si les nouveaux enregistrements de ce type restent fermés. Le fil célèbre la victoire mais s'interroge : possède-t-on vraiment un nom de domaine, ou seulement une ligne dans le registre d'un tiers ? L'affaire Kremen v. Cohen est citée, ainsi que les problèmes très concrets de registrars qui refusent de gérer les renouvellements .name."
+    },
+    {
+      "title": "AlphaProof Code : DeepMind fait vérifier formellement libsignal par des agents",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "hn": "https://news.ycombinator.com/item?id=50439193",
+      "points": 592,
+      "comments": 179,
+      "summary": "DeepMind présente un framework agentique multi-LLM (propulsé par Gemini) qui a prouvé en Lean des propriétés de sécurité de libsignal, la bibliothèque de Signal — au niveau du binaire compilé, avec environ 6 millions de lignes de Lean générées, 26 000 lignes de spécifications et quatre semaines de travail. Les humains écrivent et relisent les specs, les agents produisent les preuves ; pour valider l'approche, deux bugs anciennement corrigés ont été réintroduits et le système a bien prouvé que la version buguée était insécure. Le fil tempère : la preuve vaut ce que vaut la spec, la crypto et la concurrence sont hors périmètre, mais beaucoup y voient la vérification formelle devenir abordable grâce à l'IA."
+    },
+    {
+      "title": "« L'usage de l'IA engendre une base de code fragile »",
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "hn": "https://news.ycombinator.com/item?id=50438318",
+      "points": 426,
+      "comments": 433,
+      "summary": "Un essai soutient que le code généré par IA produit des bases fragiles et difficiles à maintenir, et prédit davantage d'incidents et des temps de rétablissement plus longs. Le fil, énorme (433 commentaires), se déchire : pour les uns, modèles récents, tests et specs ont largement réglé le problème ; pour les autres, les modèles sur-ingénièrent, dupliquent et perdent la cohérence architecturale. En toile de fond, un débat plus ancien : la qualité du code a-t-elle jamais pesé face à la vitesse et au coût, et que perd une équipe qui ne comprend plus les systèmes qu'elle n'écrit plus ?"
+    },
+    {
+      "title": "Scion renaît pour vendre un kei truck en Amérique",
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "hn": "https://news.ycombinator.com/item?id=50445401",
+      "points": 378,
+      "comments": 273,
+      "summary": "Toyota ressuscite la marque Scion pour commercialiser aux États-Unis un kei truck — ces mini-utilitaires japonais — attendu vers 2027, avec réservation remboursable à 25 $. Détail qui fâche : il serait bridé à 25 mph (40 km/h) pour entrer dans la catégorie des véhicules basse vitesse, alors que son moteur d'environ 660 cm3 (37 mpg annoncés) peut faire bien plus. Le fil débat de l'utilité réelle (parfait pour fermes et villes, inutilisable sur route), des normes de sécurité américaines qui poussent aux véhicules toujours plus gros, et de la confiance à accorder à une marque relancée."
+    },
+    {
+      "title": "Glasswing : 7 mois après, des mainteneurs submergés par des rapports décevants",
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "hn": "https://news.ycombinator.com/item?id=50447074",
+      "points": 337,
+      "comments": 150,
+      "summary": "VulnCheck dresse un bilan critique de Glasswing, le programme d'Anthropic de découverte de vulnérabilités par IA dans l'open source : environ 38 000 findings en sept mois, dont seulement ~19 % rendus publics et ~217 marqués corrigés, le tri retombant sur les mainteneurs bénévoles. Le fil est partagé : le mainteneur de Fil-C affirme que ses neuf rapports étaient de vrais bugs de qualité, quand d'autres décrivent faux positifs, doublons et broutilles. On débat aussi du conflit d'intérêt de VulnCheck, acteur commercial du secteur, et d'un constat récurrent : l'IA trouve mieux les problèmes qu'elle ne les corrige."
+    },
+    {
+      "title": "Val Town ferme ses portes",
+      "url": "https://blog.val.town/winding-down",
+      "hn": "https://news.ycombinator.com/item?id=50443427",
+      "points": 329,
+      "comments": 88,
+      "summary": "Val Town, la plateforme qui permettait d'écrire et partager des petits scripts TypeScript hébergés (les « vals »), annonce sa fermeture, avec promesse d'open-sourcer le code le 1er février 2027. Mauvais signe de plus pour son écosystème : la plateforme reposait sur Deno, dont l'équipe rejoint Cloudflare et cessera la maintenance du runtime l'an prochain. Le fil, nostalgique et chaleureux envers l'équipe, spécule sur les raisons (marché étroit, virage IA, modèle VC difficile) et s'échange guides de migration et alternatives comme Windmill ou smallweb.run."
+    },
+    {
+      "title": "Les brevets de Synaptics stoppent les pilotes Linux DisplayLink",
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "hn": "https://news.ycombinator.com/item?id=50443824",
+      "points": 326,
+      "comments": 190,
+      "summary": "Synaptics, propriétaire de DisplayLink depuis 2022, a envoyé une mise en demeure au développeur Mike Lothian pour ses travaux open source sur les pilotes Linux DisplayLink, invoquant ses brevets et réclamant 25 000 $ de frais — la lettre l'accusant d'« éviscérer à lui seul l'avantage concurrentiel » de la société. Le fil y voit surtout de l'intimidation et rappelle que la rétro-ingénierie ne protège pas des brevets (seulement du secret commercial et du copyright), tout en jugeant les brevets cités attaquables sur l'art antérieur. Conclusion largement partagée : éviter le matériel DisplayLink au profit d'USB4 et DisplayPort natif."
+    },
+    {
+      "title": "Starlink Mini 2 : batterie intégrée, mais forfaits rabotés",
+      "url": "https://starlink.com/mini-2",
+      "hn": "https://news.ycombinator.com/item?id=50444129",
+      "points": 307,
+      "comments": 317,
+      "summary": "SpaceX lance le Starlink Mini 2, avec batterie amovible d'environ 71 Wh (autour de 4 h 30 d'autonomie) et alimentation USB-C ; un bundle de lancement à 999 $ incluant un an d'abonnement est évoqué, pendant que le Mini 1 était soldé à 149 $. La vraie colère du fil porte sur les forfaits : les plans 100 et 300 Go ne fonctionnent plus à l'international et l'illimité est plafonné à 30 jours hors du pays d'origine. On débat de l'intérêt de l'upgrade, du passage à l'USB-C moins pratique sur batterie de véhicule que l'entrée large tension du Mini 1, et de la soutenabilité financière de Starlink."
+    },
+    {
+      "title": "Chrome, Edge, Firefox et MDN publient un guide du web moderne pour agents de code",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "hn": "https://news.ycombinator.com/item?id=50443812",
+      "points": 301,
+      "comments": 91,
+      "summary": "Le dépôt modern-web-guidance, porté par les équipes de Chrome avec Edge, Firefox et MDN, packe quelque 250 fonctionnalités web modernes et 200 cas d'usage en « skills » pour agents de code : l'idée est de sortir les LLM du JavaScript façon 2019 au profit des primitives natives du navigateur (CSS moderne, formulaires, accessibilité), avec tables de compatibilité Baseline et fallbacks légers. L'installation passe par un assistant npx, et un outil scanne les codebases à la recherche de patterns obsolètes. Le fil salue l'intention mais s'inquiète d'une monoculture Chrome — « le nouveau IE6 » pour certains — et se demande si le filtrage par navigateur cible ne devrait pas être mécanique plutôt que confié au raisonnement (coûteux en tokens) des agents."
+    },
+    {
+      "title": "Ableton Live 13 est là",
+      "url": "https://www.ableton.com/en/live/",
+      "hn": "https://news.ycombinator.com/item?id=50439695",
+      "points": 291,
+      "comments": 305,
+      "summary": "Ableton sort Live 13, « énorme mise à jour » selon le fil, avec notamment le support ARA et un séquenceur pas à pas. La discussion porte beaucoup sur la tarification par éditions (Lite plafonné à 8 pistes, Intro à 16, Max for Live réservé à Suite) et sur la formule rent-to-own, où les mensualités construisent une licence perpétuelle — jugée plus honnête qu'un abonnement par la plupart. Les critiques récurrentes : la collaboration pénible (plugins, chemins de fichiers), l'absence de version Linux, et d'interminables comparaisons avec Bitwig, FL Studio et Logic."
+    },
+    {
+      "title": "Zen 6 : comment AMD compte nourrir la bête",
+      "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+      "hn": "https://news.ycombinator.com/item?id=50443090",
+      "points": 201,
+      "comments": 78,
+      "summary": "Chips and Cheese détaille la famille Zen 6 d'AMD : nouveau die d'entrées-sorties gravé plus finement, CCD standard passé à 12 cœurs et CCD Zen 6c dense à 32 cœurs, au prix d'une latence L3 qui grimpe d'environ 10,7 à 16,4 ns sur la variante dense et d'une unité de multiplication entière en moins. Le fil se focalise sur le talon d'Achille d'AM5 : le contrôleur mémoire, où quatre barrettes peinent à dépasser ~3600 MT/s, et la question de canaux mémoire supplémentaires face aux limites de brochage et de coût. Certains notent que le design de Zen 6c converge avec les E-cores d'Intel."
+    }
+  ]
+}
