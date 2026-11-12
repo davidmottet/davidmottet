@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-12",
+  "title": "Nvidia au bord d'évincer Jensen Huang, adieu Tim Peters, et les agents IA entre archéologie et bannissement",
+  "intro": "Journée dominée par le séisme Nvidia : le Wall Street Journal affirme que le conseil d'administration se prépare à évincer Jensen Huang, rattrapé par deux liaisons embarrassantes, et l'action dévisse. La communauté Python pleure Tim Peters, créateur de Timsort et du Zen of Python. Et les agents IA sont partout : ils auraient repéré un site maya non cartographié, Amazon leur fait écrire un émulateur AWS complet, pendant que United Airlines leur interdit de réserver des billets.",
+  "items": [
+    {
+      "title": "Nvidia se préparerait à évincer Jensen Huang",
+      "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+      "hn": "https://news.ycombinator.com/item?id=50459703",
+      "points": 687,
+      "comments": 962,
+      "summary": "Selon le Wall Street Journal, le conseil d'administration de Nvidia se prépare à écarter son PDG emblématique, avec une réunion qui pourrait se tenir dès mercredi soir ; l'action a perdu plus de 9 % en après-bourse. L'affaire fait suite à la liaison admise par Huang avec Alice Huang, soupçonnée par les autorités américaines d'être un relais du renseignement chinois, et à une enquête interne confiée au cabinet Wachtell Lipton. Le fil HN, énorme, débat de la succession d'un fondateur qui concentre tout le pouvoir, du risque de voir Wall Street installer un gestionnaire à sa place, et de la part de moralisme dans sa chute."
+    },
+    {
+      "title": "Jensen Huang aurait aussi eu une liaison avec une dirigeante sous ses ordres",
+      "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+      "hn": "https://news.ycombinator.com/item?id=50459321",
+      "points": 296,
+      "comments": 330,
+      "summary": "Le New York Times affirme, sur la foi de cinq employés, que Huang entretient une relation avec Kimberly Powell, vice-présidente santé de Nvidia qui lui rapporte directement — les deux auraient été filmés dans un hôtel de San José. Les règles internes de Nvidia découragent les relations hiérarchiques non déclarées, ce qui fournit au conseil un motif de rupture distinct du volet espionnage. Les commentateurs citent le proverbe « ce qui arrive deux fois arrivera une troisième » et s'interrogent sur la frontière entre vie privée et risque de gouvernance."
+    },
+    {
+      "title": "Tim Peters est mort",
+      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+      "hn": "https://news.ycombinator.com/item?id=50450488",
+      "points": 963,
+      "comments": 104,
+      "summary": "La communauté Python rend hommage à Tim Peters (1952-2026), développeur historique de CPython, inventeur de l'algorithme de tri Timsort et auteur du Zen of Python, qu'on affiche encore avec « import this ». Le fil déborde d'anecdotes — ses réponses encyclopédiques sur Stack Overflow, SpamBayes — et de gratitude pour son ton généreux et drôle. Il rouvre aussi la plaie de sa suspension controversée par la Python Software Foundation en 2024, que beaucoup jugent aujourd'hui injustifiable et qui l'aurait profondément affecté."
+    },
+    {
+      "title": "« Mes agents IA ont trouvé un site maya non cartographié ? »",
+      "url": "https://pietromiotti.com/latest/maya-site",
+      "hn": "https://news.ycombinator.com/item?id=50452455",
+      "points": 948,
+      "comments": 343,
+      "summary": "Un développeur raconte avoir lancé des agents IA (à base de Claude) sur des données lidar publiques et la littérature archéologique : ils auraient repéré une structure maya apparemment absente des inventaires existants. Le fil est partagé entre fascination et scepticisme : le lidar révèle des cités perdues depuis dix ans sans IA, la « découverte » doit encore être vérifiée par des archéologues, et certains doutent que les agents aient réellement épluché toute la littérature. Le débat dérive sur l'accès au savoir et l'entraînement des modèles sur des corpus sous droits."
+    },
+    {
+      "title": "AWS publie un émulateur local de ses API, écrit par des agents IA autonomes",
+      "url": "https://github.com/aws/aws-emulator",
+      "hn": "https://news.ycombinator.com/item?id=50456631",
+      "points": 743,
+      "comments": 226,
+      "summary": "Amazon publie aws-emulator, un émulateur local des API AWS en Rust (licence CC0) pour tester sans compte ni frais, en mode serveur ou embarqué dans les tests, avec un taux de fidélité publié à chaque release. Fait marquant : Amazon explique que le code — près de 30 000 commits — a été produit par des agents IA autonomes, et le dépôt n'accepte aucune pull request. Les commentateurs comparent avec moto et LocalStack, et ironisent : « prévoir de le maintenir, c'est prévoir de continuer à demander à Claude de le maintenir »."
+    },
+    {
+      "title": "United Airlines interdit aux agents IA de réserver des vols pour les voyageurs",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "hn": "https://news.ycombinator.com/item?id=50458900",
+      "points": 455,
+      "comments": 437,
+      "summary": "United a modifié le 11 novembre son contrat de transport pour interdire aux agents IA personnels d'acheter, modifier ou gérer des billets, invoquant le partage de identifiants, les achats non désirés et l'usage des miles MileagePlus ; les réservations antérieures sont honorées et les canaux établis comme Kayak ou Google Flights ne sont pas concernés. Delta adopte la position inverse : un agent capable de s'authentifier peut réserver. Le fil y voit surtout une bataille sur la discrimination tarifaire : « ils utilisent des algorithmes pour extraire le prix maximal, je devrais pouvoir en utiliser pour obtenir le minimal »."
+    },
+    {
+      "title": "Une fausse alarme incendie a failli noyer l'unique datacenter new-yorkais de Jane Street",
+      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+      "hn": "https://news.ycombinator.com/item?id=50455394",
+      "points": 439,
+      "comments": 224,
+      "summary": "Un ancien responsable infrastructure de Jane Street raconte comment une fausse détection de fumée a failli déclencher l'arrosage du seul datacenter new-yorkais du fonds, celui-là même qui porte ses systèmes de trading. Le billet et le fil regorgent d'histoires de guerre : systèmes d'extinction « pré-action », générateurs diesel capricieux après l'ouragan Sandy, gasoil hissé à la main vers les étages de Manhattan. Les commentateurs débattent aussi, plus philosophiquement, de ce que « probabilité » veut dire après coup — et du risque de concentrer son trading dans un seul site."
+    },
+    {
+      "title": "Google lance une API Gemini « Decisions » pour des décisions quasi déterministes",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "hn": "https://news.ycombinator.com/item?id=50456791",
+      "points": 314,
+      "comments": 100,
+      "summary": "Google présente une API Gemini dédiée aux décisions structurées — classification, routage, filtrage — pensée pour être beaucoup plus déterministe qu'une génération token par token. Les premiers utilisateurs sur HN s'en servent pour router des tickets de support, classer des dizaines de milliers de dépôts GitHub ou pré-filtrer avant un appel LLM plus coûteux. On y voit un aveu intéressant : pour beaucoup de tâches « IA », on veut un classifieur fiable et bon marché, pas un chatbot créatif."
+    },
+    {
+      "title": "Du glitching de tension pour libérer l'A100 caché dans une carte de minage",
+      "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+      "hn": "https://news.ycombinator.com/item?id=50451903",
+      "points": 277,
+      "comments": 112,
+      "summary": "Une bidouilleuse détaille comment des attaques par injection de fautes sur la tension lui ont permis de contourner les verrous firmware d'une carte de minage Nvidia et de retrouver les capacités du GPU A100 qu'elle embarque, le tout divulgué à l'équipe sécurité de Nvidia avant publication. Le fil rappelle la grande tradition du déblocage matériel — GeForce transformées en Quadro, Athlon tri-cœurs réveillés en quad — et note l'ironie de brider du silicium parfaitement fonctionnel à l'heure de la pénurie de GPU. La divulgation préalable à Nvidia fait grincer quelques dents."
+    },
+    {
+      "title": "Du sable hyper-réaliste en WebGL2",
+      "url": "https://av.github.io/safe-sand/",
+      "hn": "https://news.ycombinator.com/item?id=50453288",
+      "points": 333,
+      "comments": 66,
+      "summary": "Une démo dans le navigateur simule un sable étonnamment réaliste en WebGL2, qu'on peut sculpter et faire couler en temps réel. Le fil se divise entre émerveillement et agacement : certains saluent le rendu, d'autres pointent une utilisation très inefficace du GPU qui fait chauffer les machines. La discussion glisse vers le code généré par IA : plusieurs notent qu'il suffit de demander explicitement l'optimisation aux modèles pour gagner un facteur dix en performance — encore faut-il y penser."
+    },
+    {
+      "title": "Un programme linéaire peut-il programmer directement les poids d'un réseau ?",
+      "url": "https://nathan.rs/posts/weight-space-lp/",
+      "hn": "https://news.ycombinator.com/item?id=50452655",
+      "points": 255,
+      "comments": 38,
+      "summary": "Un billet de recherche explore la « programmation dans l'espace des poids » : utiliser un programme linéaire, résolu sur GPU par la méthode primal-dual hybrid gradient, pour modifier directement les poids d'un modèle au lieu de passer par la descente de gradient. Le fil discute de la portée réelle du résultat — un commentateur pointe que, dans les travaux précédents, c'est un LLM qui écrivait un script Python pour faire le calcul, pas le modèle lui-même. Idée séduisante, mais la généralisation à de grands modèles avec des récompenses multiples reste ouverte."
+    },
+    {
+      "title": "93 % des éclaboussures de peinture sont des programmes Perl valides (2019)",
+      "url": "https://www.mcmillen.dev/sigbovik/",
+      "hn": "https://news.ycombinator.com/item?id=50459745",
+      "points": 240,
+      "comments": 35,
+      "summary": "Retour en grâce d'un classique de SIGBOVIK, la conférence parodique de Carnegie Mellon : en passant des images d'éclaboussures de peinture à l'OCR puis à l'interpréteur Perl, les auteurs constatent que 93 % d'entre elles sont des programmes Perl syntaxiquement valides — un hommage moqueur à la permissivité légendaire du langage. Les commentateurs chipotent avec le même sérieux parodique : tout dépend de l'OCR choisi, et il manque une base de comparaison sur du bruit aléatoire. L'un d'eux repère même un filigrane que l'OCR a raté."
+    }
+  ]
+}
