@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-13",
+  "title": "Jensen Huang démissionne, Anthropic s'offre la Bourse et Microsoft 365 plonge",
+  "intro": "Le feuilleton Nvidia connaît son dénouement : Jensen Huang démissionne, rattrapé par ses liaisons internes et le dossier d'exportations vers la Chine, pendant que ses employés pétitionnent déjà pour son retour. Anthropic choisit ce moment pour annoncer son entrée en Bourse, et Microsoft 365 s'offre une panne mondiale de plusieurs heures. Côté technique, Rust fête sa version 1.100 et Google dégaine Gemini 4 Hydrogen, tandis que les bricoleurs brillent : brodeuse libérée de son abonnement, LLM de 16 milliards de paramètres sur un iPad de 2013 et extension de Quake 4 ressuscitée.",
+  "items": [
+    {
+      "title": "Jensen Huang démissionne de Nvidia",
+      "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+      "hn": "https://news.ycombinator.com/item?id=50467087",
+      "points": 3137,
+      "comments": 2933,
+      "summary": "Au lendemain des révélations sur ses liaisons avec des subordonnées et sur fond d'enquête visant des GPU arrivés en Chine via la société singapourienne Megaspeed, Jensen Huang quitte la direction de Nvidia, après une réunion d'urgence du conseil le 11 novembre. Le fil HN, monumental (près de 3 000 commentaires), dissèque la vraie cause de la chute : pour les uns les liaisons hiérarchiques, motif classique de licenciement, pour les autres le volet espionnage et contrôle des exportations. On y compare aussi son sort à celui de Musk ou Zuckerberg — protégés, eux, par leurs droits de vote — et on s'écharpe sur la présomption d'innocence face à des accusations non prouvées."
+    },
+    {
+      "title": "Anthropic annonce son entrée en Bourse",
+      "url": "https://ipo.anthropic.com/us/",
+      "hn": "https://news.ycombinator.com/item?id=50465829",
+      "points": 853,
+      "comments": 825,
+      "summary": "Anthropic officialise son IPO sur une page dédiée, et le fil HN débat surtout du « pourquoi maintenant » : les commentateurs évoquent une levée d'environ 50 milliards de dollars, à rapporter aux quelque 1 000 milliards d'engagements de datacenters cités dans la discussion. Les sceptiques y voient une fenêtre de sortie pour investisseurs et employés avant la banalisation des modèles ; les autres soulignent qu'il s'agirait surtout d'émission primaire, qui prolonge la piste de trésorerie alors que les capitaux privés s'épuisent. En toile de fond, un débat sur l'auto-amélioration récursive : si elle était proche, pourquoi partager les gains avec le public ?"
+    },
+    {
+      "title": "Panne mondiale de plusieurs heures sur Microsoft 365",
+      "url": "https://status.cloud.microsoft/",
+      "hn": "https://news.ycombinator.com/item?id=50471731",
+      "points": 614,
+      "comments": 575,
+      "summary": "Exchange Online et tout ce qui en dépend — Outlook web et desktop, synchronisation mobile, calendriers Teams, centre d'administration, Copilot, Intune — ont été dégradés pendant une bonne partie de la journée, des États-Unis au Japon : des serveurs échouaient en masse aux contrôles de santé automatiques, reportant la charge sur les survivants, un processus d'établissement des connexions sécurisées étant « submergé ». Microsoft a gelé les déploiements et annulé un changement réseau récent, sans cause racine identifiée dans le fil. Les commentateurs oscillent entre critique des licenciements et de la communication jargonneuse, défense des systèmes distribués qui cassent de façon imprévisible, et appels à un post-mortem public."
+    },
+    {
+      "title": "Rust 1.100 : type never, allocateurs personnalisés et délai de carence pour les dépendances",
+      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "hn": "https://news.ycombinator.com/item?id=50472038",
+      "points": 510,
+      "comments": 210,
+      "summary": "Version jalon pour Rust : stabilisation du type never (!) et des allocateurs personnalisés, DropGuard comparé au defer de Go, avertissements sur les dépendances inutilisées, cargo install qui respecte enfin le lockfile embarqué, et surtout un « âge minimum de publication » qui fait ignorer au résolveur les versions trop récentes, pour parer les attaques sur la chaîne d'approvisionnement. Le fil salue ces ajouts mais relève le paradoxe des cooldowns, qui retardent aussi les correctifs de sécurité. Le débat le plus animé reste celui des temps de compilation et des dossiers target gargantuesques, suivi de l'éternelle question de l'ABI stable, toujours hors de portée à cause des génériques."
+    },
+    {
+      "title": "Google lance Gemini 4 Hydrogen, petit modèle aux ambitions de frontière",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "hn": "https://news.ycombinator.com/item?id=50471431",
+      "points": 486,
+      "comments": 305,
+      "summary": "Google présente Gemini 4 Hydrogen, un modèle rapide que les premiers testeurs du fil trouvent nettement meilleur et plus véloce que Gemini 3.8 Flash ; l'index Artificial Analysis cité le place à 54, au coude-à-coude avec GPT-6.1 Sol et Claude Sonnet 5.5. Le modèle est aussi intégré à Antigravity avec un mode Orchestrator, annoncé séparément (345 points sur HN). La discussion épingle surtout le nommage par éléments chimiques — impossible de savoir si Hydrogen, Argon et Carbon sont ordonnés par taille ou par génération — et le tarif aligné sur le Flash non remisé, qui inquiète les gros consommateurs de l'offre d'entrée de gamme."
+    },
+    {
+      "title": "Show HN : sa brodeuse à 300 $ exigeait un abonnement, il a écrit sa propre application",
+      "url": "https://github.com/simpsoka/zigzag",
+      "hn": "https://news.ycombinator.com/item?id=50470488",
+      "points": 389,
+      "comments": 149,
+      "summary": "ZigZag est une application libre (Rust, egui, licence Apache-2.0) qui convertit des SVG en points de broderie, exporte vers les formats PES, DST ou JEF et pilote la Brother Skitch PP1 en Bluetooth, protocole rétro-ingénié au PacketLogger — le tout construit presque entièrement avec des agents IA, serveur MCP inclus. Le fil y voit l'archétype du « logiciel personnel » qui libère le matériel pris en otage par les abonnements, et dévie sur le droit à la réparation. Deux controverses animent la discussion : des modèles d'IA qui refusent les tâches de rétro-ingénierie, et la question du crédit, le projet s'appuyant sur l'existant open source (Respira, pyembroidery) sans l'afficher clairement au départ."
+    },
+    {
+      "title": "Faire tourner des LLM de 16 milliards de paramètres sur une box TV et un iPad de 2013",
+      "url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "hn": "https://news.ycombinator.com/item?id=50468888",
+      "points": 299,
+      "comments": 102,
+      "summary": "Le projet smolmaxxing patche llama.cpp pour exécuter des modèles jusqu'à 16 milliards de paramètres (MoE) sur environ 1 Go de RAM : kernels 1 et 2 bits sur mesure, élagage du vocabulaire, pagination des experts depuis le stockage flash avec préchargement. Résultats mesurés : 5,1 tokens/s pour Ling-mini-2.0 16B sur une box TV Xiaomi, et jusqu'à 26 tokens/s pour un modèle 1 bit sur un iPad Air de 2013 jailbreaké, avec un cahier de laboratoire de 160 expériences publié. Le fil hésite entre « Can it run Doom? » version LLM et vrais usages — transcription hors ligne, modèles spécialisés — tout en suggérant les prochaines victimes : PS2, Playdate, routeurs."
+    },
+    {
+      "title": "Des employés de Nvidia pétitionnent pour le retour de Jensen Huang",
+      "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "hn": "https://news.ycombinator.com/item?id=50477231",
+      "points": 208,
+      "comments": 155,
+      "summary": "À peine la démission actée, Wired rapporte qu'une pétition interne réclame le retour du PDG déchu. Le fil rappelle le contexte : d'après les commentaires, l'enquête du FBI sur Alice Huang dure depuis au moins un an sans conclusion sur son éventuel lien avec le renseignement chinois, et Reuters évoque une liaison avec une seconde employée. Le débat oppose ceux pour qui le bilan exceptionnel de Huang excuse beaucoup — et dont les stock-options ont souffert — à ceux qui jugent qu'une liaison avec une subordonnée directe et la perte de confiance du conseil rendent le retour impossible."
+    },
+    {
+      "title": "Une candidate planète naine qui boucle son orbite en 280 ans environ",
+      "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+      "hn": "https://news.ycombinator.com/item?id=50472490",
+      "points": 225,
+      "comments": 106,
+      "summary": "L'objet 2026 ED138, repéré au-delà de Pluton, pourrait être une nouvelle planète naine : il met environ 280 ans à faire le tour du Soleil et se trouve actuellement dans la direction du centre galactique, un fond d'étoiles si dense que sa détection — attribuée dans le fil au relevé de l'observatoire Vera Rubin — tient de l'exploit. Un commentateur note qu'il a croisé l'orbite de Pluton vers 1925 et pourrait figurer sur des plaques photographiques des années 1930. Comme toujours, la discussion dégénère joyeusement en procès de la définition de « planète » de l'IAU, citation d'Alan Stern à l'appui : « On va l'appeler une vache, sauf quand elle est dans un troupeau »."
+    },
+    {
+      "title": "Des modèles d'IA chinois porteraient l'empreinte de GPU sous embargo",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "hn": "https://news.ycombinator.com/item?id=50474883",
+      "points": 217,
+      "comments": 56,
+      "summary": "Une analyse « forensique » de checkpoints affirme que des modèles de frontière chinois portent la signature matérielle de GPU Nvidia soumis aux contrôles d'exportation, de la génération Blackwell. Le fil nuance aussitôt : louer des GPU situés hors de Chine, à Singapour ou en Malaisie, n'est pas illégal en soi, DeepSeek a déjà publié des kernels pour Blackwell, et l'étude ne publie pas son code. Le vrai débat porte sur l'efficacité des contrôles d'exportation — simple friction contournable par les revendeurs pour les uns, accélérateur d'un concurrent domestique subventionné pour les autres — avec, en résonance évidente, l'affaire Huang en toile de fond."
+    },
+    {
+      "title": "Une extension abandonnée de Quake 4 achevée par des moddeurs… et par l'IA",
+      "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
+      "hn": "https://news.ycombinator.com/item?id=50467618",
+      "points": 249,
+      "comments": 88,
+      "summary": "OpenQ4 0.141 rend jouable une extension de Quake 4 restée dans les cartons, et le projet se revendique « proudly vibecoded » — fièrement codé à l'IA. C'est d'ailleurs le cœur du fil : certains se réjouissent que l'IA aide à préserver de vieux jeux orphelins de leurs serveurs officiels, d'autres regrettent le soin artisanal des mods d'antan comme Black Mesa et réclament transparence et relecture du code généré. La discussion dérive sur la réputation en demi-teinte de Quake 4, solo d'ambiance signé Raven Software sur le moteur de Doom 3, mal-aimé d'une communauté Quake obsédée par le multijoueur."
+    },
+    {
+      "title": "Jane Street fait évoluer ses entretiens d'ingénierie logicielle",
+      "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "hn": "https://news.ycombinator.com/item?id=50467297",
+      "points": 186,
+      "comments": 197,
+      "summary": "Jane Street annonce ajuster ses entretiens d'ingénieurs, notamment en testant des bases concrètes comme git et les pull requests, à l'heure où les LLM rebattent les cartes de l'évaluation. Le fil en fait un référendum sur le LeetCode — « stupide avant les LLM, encore moins utile comme signal maintenant » pour les uns, filtre grossier mais assumé pour les autres. Les commentateurs échangent leurs recettes : laisser les seniors utiliser l'IA mais exiger qu'ils expliquent chaque ligne, observer qui garde la maîtrise du résultat et qui délègue sa réflexion, tout en doutant qu'aucun processus d'entretien n'ait jamais prédit la performance en poste."
+    }
+  ]
+}
