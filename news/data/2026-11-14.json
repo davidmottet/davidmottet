@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-14",
+  "title": "Les avions américains cloués au sol, Nvidia entre vols et financements circulaires, et ggml passe en 1.0",
+  "intro": "Journée dominée par la panne géante de la FAA : un arrêt national des décollages de 4 heures et demie qui a saturé Hacker News, jusqu'à faire tomber la billetterie d'Amtrak par ricochet. Nvidia cumule les ennuis : 11,4 millions de dollars de matériel volatilisés en transit et des accusations de rareté organisée via le financement de ses propres clients. Côté code, ggml atteint la version 1.0, Haskell se cherche une vision d'avenir et Jonathan Blow demande pourquoi, si l'IA a résolu la programmation, nos logiciels n'ont pas changé.",
+  "items": [
+    {
+      "title": "La FAA ordonne un arrêt national des décollages, levé 4 heures et demie plus tard",
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "hn": "https://news.ycombinator.com/item?id=50489641",
+      "points": 1404,
+      "comments": 1076,
+      "summary": "La FAA a immobilisé tous les décollages aux États-Unis par précaution, un arrêt national levé environ 4 heures et demie plus tard ; la panne a même fait tomber la billetterie d'Amtrak, submergée par les voyageurs en quête d'alternative. Les commentaires pointent une mise à jour réseau déployée un vendredi à 15 h, à deux semaines de Thanksgiving, qui aurait cascadé depuis Chicago Midway, et la Maison-Blanche évoque de nouveaux équipements qui « saturent l'ancien système ». Le fil s'écharpe sur l'absence de redondance et de plan de retour en arrière sur une infrastructure aussi critique, certains incriminant le réseau opéré par L3Harris, d'autres les coupes budgétaires et le sous-effectif de la FAA."
+    },
+    {
+      "title": "Rétro-ingénierie d'un purificateur d'air Coway pour se passer du cloud",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "hn": "https://news.ycombinator.com/item?id=50474959",
+      "points": 700,
+      "comments": 202,
+      "summary": "Un bricoleur a analysé le protocole de son purificateur d'air Coway pour le contrôler en local, sans dépendre des serveurs du fabricant. La discussion s'est enflammée sur un détail : l'appareil télécharge son certificat racine en HTTP non chiffré, symptôme pour beaucoup du niveau logiciel des fabricants de matériel. Les commentateurs saluent aussi les LLM qui abaissent drastiquement le coût de la rétro-ingénierie — une revanche du consommateur sur les objets connectés captifs, en espérant que les fabricants n'utilisent pas les mêmes outils pour mieux verrouiller leurs appareils."
+    },
+    {
+      "title": "11,4 millions de dollars de matériel Nvidia disparaissent entre la Californie et le Texas",
+      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+      "hn": "https://news.ycombinator.com/item?id=50487864",
+      "points": 314,
+      "comments": 173,
+      "summary": "Environ six palettes de matériel Nvidia, soit 11,4 millions de dollars — l'équivalent de deux ou trois systèmes rack complets — se sont volatilisées en transit, et le transporteur reste introuvable ; l'affaire est traitée comme un vol qualifié. Les commentaires rappellent que le vol de fret est monnaie courante : chauffeurs complices, ingénierie sociale pour obtenir les numéros d'enlèvement. Certains spéculent sur un coup de l'intérieur, voire un lien avec les contrôles à l'export, mais la majorité juge les preuves d'un complot bien minces."
+    },
+    {
+      "title": "Nvidia accusé d'avoir organisé la pénurie en finançant des startups IA pour acheter ses GPU",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "hn": "https://news.ycombinator.com/item?id=50493251",
+      "points": 65,
+      "comments": 28,
+      "summary": "Selon un article du Wall Street Journal, Nvidia aurait garanti des milliards de financement à des clouds IA à court de liquidités pour qu'ils achètent ses puces, gonflant artificiellement la demande ; la directrice financière Colette Kress aurait voulu réduire ces montages circulaires, s'attirant les critiques de Jensen Huang. Le fil débat de la nouveauté de l'affaire — beaucoup disent que ce « financement circulaire » était documenté dès 2023 — et se demande si c'est de l'investissement avisé ou le signe d'une bulle. À noter en parallèle : un administrateur de Nvidia aurait vendu près d'un milliard de dollars d'actions quelques semaines avant le scandale Huang."
+    },
+    {
+      "title": "Après 600 expériences, ce que j'ai découvert sur les modèles de monde JEPA",
+      "url": "https://haddyalchaer.com/jepa",
+      "hn": "https://news.ycombinator.com/item?id=50487185",
+      "points": 225,
+      "comments": 37,
+      "summary": "Un chercheur indépendant raconte 600 expériences avec les modèles de monde JEPA (l'architecture défendue par Yann LeCun), notamment sur un banc d'essai Push-T durci où il atteint 85 % de réussite en recombinant des segments de démonstrations. Les commentaires tempèrent l'enthousiasme : les « découvertes » (planification hiérarchique, découpage d'actions) sont des techniques déjà établies, et le billet relève plus du journal d'apprentissage que de la recherche. La comparaison avec le contrôle prédictif (MPC) en espace latent et les alternatives comme TD-MPC animent le reste du fil."
+    },
+    {
+      "title": "FM-1 Workbench : M-Vave ouvre l'outillage de sa groovebox à 50 dollars",
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "hn": "https://news.ycombinator.com/item?id=50488325",
+      "points": 193,
+      "comments": 135,
+      "summary": "M-Vave publie un atelier web pour sa FM-1, une groovebox FM à 50-70 dollars devenue le terrain de jeu d'une communauté de firmwares alternatifs. Les commentateurs saluent cette ouverture, qui pousserait d'autres fabricants de matériel musical à faire de même. Le fil débat de l'intérêt de l'appareil pour les débutants sans théorie musicale, de sa valeur face aux DAW et contrôleurs MIDI, et de sa qualité de fabrication — « un appareil amusant pour le prix » résume l'ambiance générale."
+    },
+    {
+      "title": "Une vision technique pour l'écosystème Haskell",
+      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+      "hn": "https://news.ycombinator.com/item?id=50484235",
+      "points": 185,
+      "comments": 105,
+      "summary": "Une proposition sur le Discourse officiel veut doter l'écosystème Haskell d'une vision centrée sur l'expérience développeur, l'accueil des nouveaux venus et l'outillage. Les commentaires dérivent vers une question d'époque : Haskell est-il adapté au codage assisté par IA ? Sa rigueur et sa concision aideraient, mais les données d'entraînement rares et les boucles de compilation lentes jouent contre lui. L'installation confuse entre Cabal, Stack et Nix et les bibliothèques GUI plus pauvres que celles de Rust reviennent comme des classiques."
+    },
+    {
+      "title": "Jonathan Blow : si l'IA a résolu la programmation, pourquoi mes logiciels sont-ils toujours pareils ?",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "hn": "https://news.ycombinator.com/item?id=50484658",
+      "points": 155,
+      "comments": 136,
+      "summary": "Dans cette conférence, le créateur de jeux Jonathan Blow soutient que le développement logiciel n'a guère progressé depuis le début des années 2000, IA ou pas. Le fil HN se divise : le goulot d'étranglement n'a jamais été l'écriture du code mais la communication et le management, répondent les uns ; l'IA n'est réellement utile que depuis six mois, nuancent les autres. Entre ceux qui jugent Blow arrogant et ceux qui défendent son palmarès, plusieurs notent que ce sont les incitations des organisations, pas les capacités de l'IA, qui expliquent l'immobilisme du logiciel quotidien."
+    },
+    {
+      "title": "Découverte d'une protéine qui fait vieillir sans déclencher d'inflammation",
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "hn": "https://news.ycombinator.com/item?id=50488470",
+      "points": 149,
+      "comments": 23,
+      "summary": "Nature rapporte des travaux publiés dans Immunity sur la granzyme K (GzmK), décrite comme un moteur du vieillissement des tissus qui agit sans passer par l'inflammation systémique — à rebours du paradigme de l'« inflammaging ». Les résultats proviennent de souris, et le fil HN débat classiquement de leur transposition à l'humain, un commentateur rappelant que nous possédons la même protéine. Une piste de plus pour des thérapies ciblant le vieillissement organe par organe."
+    },
+    {
+      "title": "Des bordures de terminal qui ne coûtent pas une cellule",
+      "url": "https://www.joshka.net/cell-borders/",
+      "hn": "https://news.ycombinator.com/item?id=50491423",
+      "points": 138,
+      "comments": 62,
+      "summary": "Le mainteneur de Ratatui propose de dessiner les bordures des interfaces texte sans consommer de cellule de caractère : un état de bordure par cellule, stocké via une table de correspondance et signalé par des séquences DCS. Les commentaires évoquent les alternatives (le mode surimpression de mintty), s'inquiètent de la traversée des multiplexeurs comme tmux, et y voient l'embryon d'un protocole de terminal plus sémantique. Les puristes regrettent, eux, cette tendance à transformer le terminal en navigateur déguisé."
+    },
+    {
+      "title": "Ctrl+C, Ctrl+V, Ctrl+CVE : contourner les protections du presse-papiers d'Android",
+      "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
+      "hn": "https://news.ycombinator.com/item?id=50487605",
+      "points": 71,
+      "comments": 32,
+      "summary": "Un chercheur décrit un contournement des mécanismes censés signaler la lecture du presse-papiers sur Android — plusieurs commentateurs avouent d'ailleurs n'avoir jamais vu la notification en question. Le fil rappelle que le presse-papiers est un héritage risqué par conception : difficile de restreindre l'accès sans casser le collage par menu contextuel ou les scripts. GrapheneOS et son collage sécurisé, ainsi que l'invite de confirmation d'iOS, sont cités en contre-exemples."
+    },
+    {
+      "title": "ggml passe en version 1.0.0",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "hn": "https://news.ycombinator.com/item?id=50493062",
+      "points": 61,
+      "comments": 2,
+      "summary": "La bibliothèque de calcul tensoriel qui propulse llama.cpp atteint la version 1.0.0 : API nettoyée des fonctions dépréciées, support FP8, contrôles de troncature YaRN, protocole RPC mis à jour. La publication s'accompagne d'optimisations sur tous les backends — multiplications matricielles quantifiées plus rapides et fusion MoE sur CUDA et Metal. Une étape symbolique pour la brique de base de l'inférence locale, huit ans après ses débuts."
+    }
+  ]
+}
