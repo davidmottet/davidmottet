@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-15",
+  "title": "Starship attrapé en plein vol, le vibe coding pris la main dans le sac, et la vie privée redéfinie de force",
+  "intro": "Journée historique pour SpaceX : la tour de lancement a rattrapé pour la première fois le vaisseau Starship lui-même, pas seulement son booster. En face, la gueule de bois du vibe coding : des applications construites avec Lovable exposaient passeports et plus de 200 000 messages privés, faute de sécurité côté base de données. Et la vie privée traverse une mauvaise passe : l'EFF accuse les géants de la tech d'en redéfinir le concept à leur avantage, pendant que Google Project Zero durcit son calendrier de divulgation des failles.",
+  "items": [
+    {
+      "title": "SpaceX rattrape le vaisseau Starship et conclut le vol 15",
+      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "hn": "https://news.ycombinator.com/item?id=50500963",
+      "points": 878,
+      "comments": 607,
+      "summary": "Première historique : les bras de la tour ont rattrapé le vaisseau Starship (l'étage supérieur) au retour du vol 15, alors que seul le booster avait été rattrapé jusqu'ici — trois fois. La mission utilisait le Booster 22 et le Ship 42, quatrième paire de véhicules Block 3, et visait un double rattrapage des deux étages. Le commentaire le plus voté parle de « la navette spatiale, bien faite » ; le fil s'écharpe sur le rôle respectif du public et du privé dans le spatial, sur la possibilité de certifier un jour pour équipage un véhicule qui dépend d'un atterrissage de précision, et sur la rentabilité réelle de la réutilisation."
+    },
+    {
+      "title": "Des applications Lovable exposent des passeports et plus de 200 000 messages privés",
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "hn": "https://news.ycombinator.com/item?id=50499017",
+      "points": 701,
+      "comments": 290,
+      "summary": "Des chercheurs en sécurité ont montré que de nombreuses applications « vibe-codées » avec Lovable laissaient leurs données en accès libre : documents d'identité, et plus de 200 000 messages privés. Le responsable sécurité de Lovable, intervenu dans le fil, pointe des règles Row-Level Security insuffisantes sur Supabase et renvoie la correction aux utilisateurs — un cadrage que beaucoup rejettent, puisque Lovable cible précisément des non-développeurs. Le fil débat aussi des limites de la recherche responsable (fallait-il télécharger des données pour prouver l'ampleur ?) et réclame des plateformes sécurisées par défaut pour le code généré par IA."
+    },
+    {
+      "title": "Pourquoi acheter un Raspberry Pi coûteux quand j'ai un vieux téléphone ?",
+      "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+      "hn": "https://news.ycombinator.com/item?id=50440709",
+      "points": 528,
+      "comments": 288,
+      "summary": "Un billet défend le recyclage de vieux smartphones en petits serveurs domestiques, plutôt que d'acheter un Raspberry Pi devenu cher et souvent en rupture. Les commentateurs rappellent que le Pi, conçu pour l'éducation et le GPIO, s'est mué en ordinateur généraliste où laptops d'occasion et mini-PC le surclassent, tout en défendant ses vrais atouts : consommation minime, refroidissement passif, GPIO intégré. Les objections pratiques dominent le débat : batteries qui gonflent et risquent de prendre feu, bootloaders verrouillés, qualité imprévisible du matériel d'occasion — même si les LLM faciliteraient désormais beaucoup la rétro-ingénierie de ces appareils."
+    },
+    {
+      "title": "Les géants de la tech essaient encore de redéfinir la notion de vie privée",
+      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+      "hn": "https://news.ycombinator.com/item?id=50496602",
+      "points": 505,
+      "comments": 182,
+      "summary": "L'EFF accuse les entreprises technologiques de déplacer une nouvelle fois la définition même de la vie privée pour normaliser la collecte permanente. Le fil se cristallise sur les preneurs de notes IA en réunion, que les salariés ne peuvent souvent pas refuser sans risque, et sur les lunettes connectées de Meta qui enregistrent sans consentement des tiers. Le débat de fond oppose régulation et architecture : pour beaucoup, le RGPD ne suffit pas et seule la limitation de la collecte à la source — ne pas enregistrer du tout — protège vraiment, les transcriptions pouvant au passage être citées en justice."
+    },
+    {
+      "title": "KDE : le documentaire",
+      "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+      "hn": "https://news.ycombinator.com/item?id=50496976",
+      "points": 409,
+      "comments": 88,
+      "summary": "Un documentaire retrace l'histoire du bureau libre KDE : ses débuts autour de l'université de Tübingen sous le nom de « Kool Desktop Environment », la crise de licence de Qt et la scission qui a donné naissance à GNOME, avec plusieurs contributeurs historiques à l'écran. Les commentateurs le trouvent plus faible sur les quinze dernières années, notamment sur le financement actuel — contrats de Valve, poids du Qt Group — alors que beaucoup de contributeurs restent bénévoles. Le fil revit le lancement raté de KDE 4 qui a fait fuir une génération d'utilisateurs, salue l'excellence de Plasma 6 aujourd'hui, et plusieurs lecteurs promettent un don."
+    },
+    {
+      "title": "Nvidia aurait délibérément maintenu les prix des GPU élevés via des financements circulaires",
+      "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+      "hn": "https://news.ycombinator.com/item?id=50501631",
+      "points": 312,
+      "comments": 169,
+      "summary": "L'affaire des financements circulaires de Nvidia enfle : selon les éléments du Wall Street Journal cités dans le fil, l'entreprise négociait des milliards de dollars de garanties pour des clients incapables de payer ses puces, certains montages impliquant le gendre de Jensen Huang. La directrice financière Colette Kress s'y serait opposée avant que Huang n'impose le plan — des commentateurs indiquent qu'elle assure désormais la direction par intérim. Le débat oppose ceux pour qui le financement fournisseur est une pratique banale (automobile, équipementiers) à ceux qui y voient un risque systémique et une manœuvre anticoncurrentielle : des participations croisées dans des clients corrélés et non rentables, qui verrouillent le marché face aux puces rivales."
+    },
+    {
+      "title": "Un arbre généalogique des intitulés de postes dans le logiciel",
+      "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "hn": "https://news.ycombinator.com/item?id=50499038",
+      "points": 240,
+      "comments": 117,
+      "summary": "Un billet cartographie la généalogie des intitulés de postes du logiciel : comment les rôles se sont ramifiés et transformés au fil des décennies. Les commentateurs constatent surtout que le même titre recouvre des réalités très différentes selon les entreprises, inflation des titres en startup comprise. Le point chaud : « DevOps » doit-il être un métier ou un principe d'organisation ? Certains y voient une dérive, d'autres rappellent que les développeurs qui ignorent l'exploitation prennent de mauvaises décisions. On relève aussi les absents du schéma — design/UX, « Member of Technical Staff » — et les titres de l'ère IA, « Prompt Engineer » en tête, non sans sarcasmes."
+    },
+    {
+      "title": "LinkedIn et Monster retirent plus de 1 000 fausses offres d'emploi après une enquête de CBC",
+      "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+      "hn": "https://news.ycombinator.com/item?id=50499723",
+      "points": 221,
+      "comments": 125,
+      "summary": "Après une enquête de la chaîne canadienne CBC, LinkedIn et Monster ont supprimé plus d'un millier de fausses offres d'emploi de leurs plateformes. Le fil confirme un ressenti massif : beaucoup d'annonces en ligne seraient périmées ou fictives, servant à constituer des viviers de CV, voire à collecter des données personnelles pour des arnaques. Les commentateurs incriminent les incitations des plateformes, qui gagnent de l'argent sur les annonces et n'ont guère intérêt au ménage, et doutent que les régulateurs suivent le rythme — d'autant que l'IA rendra ces arnaques encore plus difficiles à détecter."
+    },
+    {
+      "title": "Les nouvelles pages projet de PyPI, avec signaux de sécurité clarifiés, sont en ligne",
+      "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+      "hn": "https://news.ycombinator.com/item?id=50497892",
+      "points": 219,
+      "comments": 95,
+      "summary": "Le dépôt officiel de paquets Python a achevé la refonte de ses pages projet : chaque fichier affiche désormais s'il bénéficie d'une attestation de provenance, c'est-à-dire d'une preuve qu'il a bien été construit depuis un dépôt source identifié. Les critiques portent sur la centralisation : seuls quelques gros fournisseurs (GitHub, GitLab, Google) délivrent ces attestations, excluant les mainteneurs qui construisent leurs paquets eux-mêmes — le support de Codeberg est en discussion. Les mainteneurs de PyPI tempèrent aussi l'enthousiasme : une attestation prouve l'origine d'un fichier, pas la sûreté du code, et certains craignent que l'étiquette « sans provenance » soit lue comme un avertissement."
+    },
+    {
+      "title": "Show HN : DeepSeek V3 en environ 200 lignes de Jax pur",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "hn": "https://news.ycombinator.com/item?id=50497589",
+      "points": 201,
+      "comments": 11,
+      "summary": "Un développeur a réimplémenté les idées clés de DeepSeek V3 en environ 190 lignes de JAX pur : attention latente multi-têtes, mixture-of-experts avec équilibrage de charge par biais plutôt que par perte auxiliaire, et prédiction multi-tokens. La démo entraîne un modèle de 36,2 millions de paramètres sur un MacBook Air M5 (24 Go) en 2 h 36, à partir de 207 vieux romans policiers. Les commentaires saluent une excellente ressource pédagogique, à ranger à côté des vidéos de Karpathy ou 3Blue1Brown, et l'un d'eux l'a fait tourner sur une carte AMD via ROCm en partageant sa configuration."
+    },
+    {
+      "title": "Project Zero divulguera les failles 90 jours après leur signalement",
+      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+      "hn": "https://news.ycombinator.com/item?id=50496051",
+      "points": 196,
+      "comments": 58,
+      "summary": "L'équipe de recherche en sécurité de Google durcit sa politique de divulgation : publication complète 90 jours après signalement au fournisseur, délai qui descendra à 60 jours en février 2027 puis à 30 jours en janvier 2028, avec des exceptions négociables pour les cas hors norme comme Spectre. Les commentateurs se divisent : 30 jours, c'est court pour corriger et tester certains bugs complexes, mais sans date butoir beaucoup de fournisseurs s'assoiraient indéfiniment sur les failles. Certains parient que la correction assistée par IA rendra ces délais tenables, d'autres doutent qu'on puisse déployer des correctifs non relus — un commentateur parle même d'extorsion."
+    },
+    {
+      "title": "L'IA générative consomme plus d'énergie pour les textes non anglophones",
+      "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+      "hn": "https://news.ycombinator.com/item?id=50441444",
+      "points": 188,
+      "comments": 102,
+      "summary": "Une étude de l'université du Michigan a mesuré la consommation énergétique de Qwen 3, Gemma 3 et Llama 3.1 selon les langues : l'énergie par token tourne autour de 0,1 joule, mais avec des pointes jusqu'à 4,8 J/token, l'écart venant surtout de la longueur des sorties. En cause, des tokenizers et des données d'entraînement qui favorisent l'anglais : les écritures non latines se découpent en davantage de tokens, donc chaque requête coûte plus cher. Les critiques méthodologiques fusent — modèles vieux de 18 mois, décodage spéculatif ignoré — mais l'angle équité retient l'attention : la facturation au token fait payer plus cher les non-anglophones pour des réponses souvent moins bonnes."
+    }
+  ]
+}
