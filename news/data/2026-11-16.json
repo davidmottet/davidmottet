@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-16",
+  "title": "Quand une panne Microsoft gaze un hôtel, l'OLED du MacBook Pro fait mal aux yeux, et l'IA démonte une Jeep de 1994",
+  "intro": "Journée placée sous le signe de la fragilité de nos infrastructures : une panne de Microsoft 365 a contribué à une intoxication au chlore dans un hôtel allemand, de vieux liens Bitly sont détournés dans d'anciens tweets, et uBlock Origin corrige une faille XSS universelle. Côté matériel, le nouvel écran OLED du MacBook Pro provoque maux de tête et débats sur le PWM. Et l'IA continue de s'infiltrer partout : Claude Code et Codex rétro-ingénient le calculateur d'une Jeep de 1994, pendant qu'Alibaba dégaine Qwen4-Max.",
+  "items": [
+    {
+      "title": "Une panne de Microsoft 365 mène à l'intoxication au chlore de 15 clients d'un hôtel",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "hn": "https://news.ycombinator.com/item?id=50509411",
+      "points": 442,
+      "comments": 192,
+      "summary": "Selon la chaîne allemande WDR, 15 clients de l'hôtel du parc Phantasialand ont été intoxiqués au chlore dans l'espace bien-être : le système de maintenance avait bien émis une alerte… par e-mail, jamais reçue à cause de la panne de Microsoft 365, si bien que personne n'était au courant du problème. Sur HN, presque tout le monde renvoie la faute à l'hôtel plutôt qu'à Microsoft : faire reposer une alerte de sécurité potentiellement vitale sur un simple e-mail, sans redondance ni verrouillage physique de la zone, est jugé indéfendable."
+    },
+    {
+      "title": "Le problème de PWM de l'écran OLED du MacBook Pro",
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "hn": "https://news.ycombinator.com/item?id=50506719",
+      "points": 435,
+      "comments": 245,
+      "summary": "Le nouvel écran OLED du MacBook Pro module sa luminosité par PWM à une fréquence que les commentateurs citent à 240 Hz, bien en dessous des plusieurs kilohertz jugés nécessaires pour éviter fatigue oculaire et maux de tête chez les personnes sensibles au scintillement. La discussion, très fournie, oppose ceux qui n'ont jamais rien remarqué à ceux qui ne peuvent plus utiliser la machine, et s'interroge : à l'échelle d'Apple, même une petite fraction d'utilisateurs sensibles représente des millions de personnes. Conseil récurrent du fil : ne jamais acheter la première génération d'un changement matériel d'Apple."
+    },
+    {
+      "title": "Claude Code et Codex ont rétro-ingénié le calculateur de ma Jeep de 1994 via un Arduino à 3 $",
+      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+      "hn": "https://news.ycombinator.com/item?id=50463399",
+      "points": 372,
+      "comments": 190,
+      "summary": "Une vidéo montre comment des agents de codage (Claude Code et Codex) ont permis de rétro-ingénier l'ECU d'une Jeep de 1994, avec pour seul matériel un Arduino à 3 dollars, jusqu'à comprendre la cartographie moteur liée à un contrôle antipollution raté. Les commentaires y voient une démonstration de l'IA qui redonne du pouvoir aux propriétaires face aux constructeurs — clés de voiture, réparation, diagnostic — tout en prédisant que ces derniers riposteront en verrouillant cryptographiquement leurs calculateurs. Détail savoureux relevé dans le fil : Claude a aussi généré les animations et le script de la vidéo."
+    },
+    {
+      "title": "De vieux liens Bitly sont détournés",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50511395",
+      "points": 212,
+      "comments": 114,
+      "summary": "Des liens Bitly présents dans d'anciennes publications — y compris de vieux tweets de comptes très en vue comme celui de Donald Trump ou de Burger King — se retrouvent détournés vers d'autres destinations, les commentateurs pointant des exemples encore en ligne. Le fil HN y voit la confirmation d'un vieux grief : les raccourcisseurs d'URL masquent la destination réelle, survivent rarement à leurs campagnes marketing, et deviennent des bombes à retardement quand les redirections changent de mains, avec des scénarios d'abus allant du spam au détournement de « curl | bash »."
+    },
+    {
+      "title": "Qwen4-Max : le nouveau modèle phare d'Alibaba",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "hn": "https://news.ycombinator.com/item?id=50513215",
+      "points": 183,
+      "comments": 49,
+      "summary": "Alibaba présente Qwen4-Max, nouveau sommet de sa gamme, qui ne sera apparemment pas diffusé en poids ouverts. L'accueil sur HN est mitigé : un commentateur cite un score de 43 sur Artificial Analysis pour un coût moyen de 3,27 $, là où GPT-6.1 Sol (medium) atteindrait 46 pour 0,36 $, et d'autres notent qu'il ne dépasse pas Kimi 3.1. Beaucoup attendent surtout les déclinaisons « Flash » et 27B pour l'auto-hébergement, et regrettent l'absence d'un mode d'emploi clair pour tester le modèle dès aujourd'hui."
+    },
+    {
+      "title": "XSS universel dans uBlock Origin via le sélecteur d'éléments pilotable par un site",
+      "url": "https://iter.ca/post/ubo-uxss/",
+      "hn": "https://news.ycombinator.com/item?id=50513160",
+      "points": 135,
+      "comments": 26,
+      "summary": "Un chercheur décrit une faille de type XSS universel dans uBlock Origin : un site malveillant pouvait piloter le sélecteur d'éléments de l'extension et, via un hook XHR, extraire l'UUID unique d'installation, exploitable ensuite comme identifiant de pistage. Les commentaires soulignent le paradoxe d'un bloqueur qui, pour fonctionner, doit pouvoir inspecter et modifier toutes les pages — ce qui rend chaque faille d'autant plus dangereuse — et saluent la transparence de l'auteur, qui précise avoir rédigé lui-même l'article mais laissé GPT écrire le code de démonstration."
+    },
+    {
+      "title": "Et maintenant, que fait Nvidia ?",
+      "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "hn": "https://news.ycombinator.com/item?id=50512235",
+      "points": 130,
+      "comments": 149,
+      "summary": "Steve Blank s'interroge sur l'avenir de Nvidia après le départ de Jensen Huang de la direction, une partie des commentateurs réclamant ouvertement son retour. Le fil identifie la menace principale : les plus gros clients deviennent concurrents en concevant leurs propres puces avec des acteurs comme Broadcom, pendant que les agents IA abaissent le coût de création de couches logicielles alternatives, érodant l'avantage de CUDA. Certains jugent le débat sur « l'innovation » secondaire face aux procès qui s'annoncent et au rôle de Nvidia comme banque de fait de la bulle IA."
+    },
+    {
+      "title": "Protomaps : auto-héberger ses tuiles de carte est devenu simple et bon marché",
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "hn": "https://news.ycombinator.com/item?id=50509837",
+      "points": 219,
+      "comments": 47,
+      "summary": "Un billet défend l'auto-hébergement de fonds de carte avec Protomaps et son format PMTiles : un fichier unique suffit désormais pour servir une carte du monde à faible coût, par exemple derrière Cloudflare R2, avec à la clé confidentialité et contrôle d'accès. Les commentaires confirment l'approche — des PRs sur Tilemaker laisseraient entrevoir une génération de la planète en moins de 5 minutes — mais rappellent la limite : l'imagerie satellite haute résolution explose en stockage dès que le niveau de zoom monte, un contributeur ayant dû s'arrêter à z17 pour l'Amérique du Nord."
+    },
+    {
+      "title": "Comprendre les embeddings positionnels dans les LLM modernes",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "hn": "https://news.ycombinator.com/item?id=50506376",
+      "points": 217,
+      "comments": 27,
+      "summary": "Sebastian Raschka publie un nouveau volet pédagogique consacré aux embeddings positionnels, ces mécanismes qui permettent aux transformers de savoir où se trouve chaque token dans la séquence, jusqu'aux variantes utilisées dans les LLM actuels. Article très partagé mais peu commenté ; la principale critique du fil est de fond : l'auteur expliquerait surtout l'implémentation, alors qu'une vraie compréhension passerait par la théorie des représentations de groupes, qui unifie et rend apprenables ces encodages."
+    },
+    {
+      "title": "Ces choses plus grosses que Turbo Pascal (2011)",
+      "url": "https://prog21.dadgum.com/116.html",
+      "hn": "https://news.ycombinator.com/item?id=50506894",
+      "points": 214,
+      "comments": 112,
+      "summary": "Retour en page d'accueil pour ce classique de James Hague, qui liste des choses modernes plus volumineuses que l'intégralité du compilateur et de l'IDE Turbo Pascal — jusqu'au simple en-tête zlib.h du SDK de Mac OS X Lion (80 504 octets). Le fil oscille entre nostalgie de l'ère des disquettes de 360 Ko, hommages à Anders Hejlsberg (Turbo Pascal, Delphi, C#, TypeScript) et contre-arguments sur des comparaisons jugées faciles ; certains rêvent d'un OS minimaliste repensé de zéro maintenant que les outils de développement vont si vite."
+    },
+    {
+      "title": "Les corbeaux prennent des décisions plus vite que nous",
+      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "hn": "https://news.ycombinator.com/item?id=50509023",
+      "points": 189,
+      "comments": 140,
+      "summary": "Le New York Times rapporte des travaux montrant que les corbeaux prennent certaines décisions plus rapidement que les humains, nouvelle pierre dans le jardin de l'expression « cervelle d'oiseau ». Les commentateurs mêlent plaisanteries (« leur réseau de neurones est moins profond ») et observations plus sérieuses : les stéréotypes des contes populaires — corbeaux rusés, poules sottes — recoupent étonnamment bien ce que la recherche révèle de la cognition aviaire."
+    },
+    {
+      "title": "Emacs est mon navigateur",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "hn": "https://news.ycombinator.com/item?id=50507553",
+      "points": 189,
+      "comments": 108,
+      "summary": "Un développeur raconte comment il navigue sur le web depuis Emacs (via eww), au point d'en faire son navigateur principal pour les blogs et le web statique. Le fil est lucide sur les limites : le web commercial moderne ne s'y prête pas, Emacs reste mono-thread et bloquant, et l'ergonomie fait débat ; mais les adeptes vantent la légèreté — on peut même se connecter à Hacker News depuis eww — et rappellent que Richard Stallman lui-même consulte le web depuis Emacs, par idéologie plus que par minimalisme."
+    }
+  ]
+}
