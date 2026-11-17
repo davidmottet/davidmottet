@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-17",
+  "title": "Pannes en cascade des banques US à United Airlines, Windows 11 surveille vos outils de dev, et CMU offre ses cours d'informatique",
+  "intro": "Semaine qui démarre sous tension : après Microsoft 365 et la FAA, ce sont les banques américaines (via un incident chez JPMorgan Chase) puis United Airlines qui tombent en panne, au point que HN oscille entre théories de l'attaque coordonnée et constat d'une dégradation générale de la qualité logicielle. La confiance en prend aussi un coup côté plateformes : Windows 11 est pris à collecter la liste des agents de codage installés, et la compromission d'Optimizely a servi du code malveillant sur des sites majeurs. En contrepoint, Carnegie Mellon met ses cours d'informatique en libre accès sur YouTube, et Rust s'offre une belle journée avec Jiff 1.0.",
+  "items": [
+    {
+      "title": "Carnegie Mellon met ses cours d'informatique en libre accès sur YouTube",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "hn": "https://news.ycombinator.com/item?id=50522980",
+      "points": 938,
+      "comments": 145,
+      "summary": "Avec « CS Learn », lancé ce jour, Carnegie Mellon publie des semestres complets de cours d'informatique actuellement enseignés, à raison d'un cours mis en ligne chaque jour cette semaine et d'autres prévus en janvier. L'enseignant Phillip Compeau, à l'origine du projet, répond lui-même dans le fil et assume la comparaison avec l'OpenCourseWare du MIT, « arrivé 25 ans plus tôt ». La discussion porte sur la valeur des fondamentaux à l'ère de l'IA — « bien appris, l'IA devient votre outil ; mal appris, elle vous remplace » — et sur la licence des contenus, que certains imaginent déjà servir de support aux agents de codage."
+    },
+    {
+      "title": "Un incident technique chez JPMorgan Chase perturbe les services bancaires en ligne aux États-Unis",
+      "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+      "hn": "https://news.ycombinator.com/item?id=50521045",
+      "points": 736,
+      "comments": 612,
+      "summary": "Selon AP, un problème technique chez JPMorgan Chase a provoqué des retards dans les services bancaires en ligne de plusieurs banques américaines, dont Wells Fargo et Truist. Le fil HN, énorme (plus de 600 commentaires), est surtout un révélateur d'anxiété : venant après les pannes de Microsoft 365 et de la FAA, l'incident alimente les spéculations — code de mauvaise qualité produit à la chaîne avec l'IA, ou au contraire attaques assistées par IA — sans qu'aucune preuve n'existe dans un sens ou l'autre. Des commentateurs appellent aussi à la prudence sur les chiffres de Downdetector, dont la méthodologie fait voir des pannes partout."
+    },
+    {
+      "title": "United Airlines touchée par une panne généralisée de ses systèmes",
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "hn": "https://news.ycombinator.com/item?id=50524165",
+      "points": 207,
+      "comments": 107,
+      "summary": "United Airlines a confirmé à CNN une panne étendue de ses systèmes, survenue le même week-end que l'incident bancaire. Les commentaires font le lien avec la série noire du moment — Microsoft, FAA, banques — et réclament « l'explication ennuyeuse » plutôt que la théorie du complot ; d'autres avancent des causes structurelles : équipes expérimentées parties dans les vagues de licenciements et dette technique accumulée. Le réflexe des entreprises à déclarer très vite « ce n'est pas une cyberattaque » nourrit paradoxalement la méfiance d'une partie du fil."
+    },
+    {
+      "title": "Windows 11 collecte des données sur les agents de codage et outils de développement que vous utilisez",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "hn": "https://news.ycombinator.com/item?id=50524736",
+      "points": 352,
+      "comments": 214,
+      "summary": "Un billet de blog affirme, analyse à l'appui, que la télémétrie de Windows 11 recense les agents de codage et outils de développement installés ou exécutés sur la machine. Peu de monde dans le fil semble surpris — « Windows collecte probablement bien plus que ça » — et la discussion tourne vite à l'éloge de la migration vers Linux, jugée indolore en 2026 pour le développement comme pour le jeu vidéo grâce à Proton, les irréductibles ne citant plus que l'anti-cheat multijoueur et les produits Autodesk comme vrais points bloquants."
+    },
+    {
+      "title": "Optimizely compromis : du code malveillant servi sur des sites comme Zoom et GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "hn": "https://news.ycombinator.com/item?id=50524767",
+      "points": 171,
+      "comments": 86,
+      "summary": "Selon le blog de Report URI, la plateforme d'A/B testing Optimizely a été compromise et a servi du code malveillant via ses scripts tiers sur des sites de très grandes marques, dont Zoom et GitLab : « votre origine peut être saine pendant que vos visiteurs se font dépouiller — la compromission est dans la couche de tags ». Le fil y voit l'addition à payer pour des années de scripts marketing injectés sans contrôle des équipes techniques, Google Tag Manager en tête, et discute des parades (CSP, intégrité des sous-ressources) comme de l'absence totale de conséquences juridiques pour les éditeurs négligents."
+    },
+    {
+      "title": "Microsoft attribue sa panne géante d'e-mail à un défaut logiciel introduit par un correctif de juillet",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "hn": "https://news.ycombinator.com/item?id=50517321",
+      "points": 250,
+      "comments": 180,
+      "summary": "Le post-mortem de la grande panne d'e-mail de Microsoft 365 pointe un défaut logiciel introduit dès juillet par un correctif, resté dormant avant de tout emporter ; la remédiation a consisté, en langage diplomatique, à « ramener le chemin de code à l'état antérieur connu comme bon » — un rollback qui ne dit pas son nom, s'amuse le fil. Les commentaires comparent la remise en route de ces systèmes géants au « black start » des réseaux électriques, où redémarrer d'un coup face à la pleine charge est presque impossible, et y lisent un argument de plus contre la concentration de l'e-mail mondial chez un seul acteur."
+    },
+    {
+      "title": "BugMeNot ferme ses portes",
+      "url": "https://www.bugmenot.com/",
+      "hn": "https://news.ycombinator.com/item?id=50523601",
+      "points": 389,
+      "comments": 196,
+      "summary": "BugMeNot, le service qui partageait depuis les années 2000 des identifiants génériques pour contourner les inscriptions obligatoires des sites, annonce sa fermeture. Le fil est une veillée funèbre pleine de nostalgie pour le web d'avant : beaucoup racontent que le service était devenu inutilisable depuis des années, les sites ayant appris à bannir ces comptes partagés, et notent le paradoxe fatal du concept — trop petit, il ne sert à rien ; trop gros, il se fait fermer. Sa disparition est lue comme un symbole de plus de la fin du web ouvert et anonyme."
+    },
+    {
+      "title": "Frame : un écran ePaper couleur de 31,5 pouces",
+      "url": "https://trmnl.com/blog/introducing-frame",
+      "hn": "https://news.ycombinator.com/item?id=50519354",
+      "points": 336,
+      "comments": 237,
+      "summary": "TRMNL, connu pour ses petits tableaux de bord e-ink, présente Frame, un écran ePaper couleur de 31,5 pouces pensé comme un affichage mural (tableau de bord, œuvre d'art, signalétique). Le débat du fil tient en un chiffre : 1 299 dollars, prix jugé rédhibitoire pour la plupart, qui s'interrogent sur ce qui maintient le grand ePaper si cher — brevets, absence de marché de masse ou coût réel de fabrication. Les alternatives bricolées fusent : téléviseur Samsung Frame d'occasion piloté en WebSocket pour faire galerie d'art, ou petit ReTerminal E1001 de 7,5 pouces à 69 dollars pour les tableaux de bord."
+    },
+    {
+      "title": "Jiff 1.0 : une bibliothèque de dates et heures pour Rust",
+      "url": "https://burntsushi.net/jiff/",
+      "hn": "https://news.ycombinator.com/item?id=50519744",
+      "points": 337,
+      "comments": 77,
+      "summary": "Andrew Gallant (burntsushi, l'auteur de ripgrep) publie la version 1.0 de Jiff, sa bibliothèque de gestion du temps pour Rust, inspirée de Temporal (JavaScript) et pensée pour rendre les pièges des fuseaux horaires difficiles à déclencher. Témoignage marquant du fil : un ancien mainteneur de chrono, la bibliothèque dominante, raconte avoir abandonné après des années de résistance de l'écosystème à toute amélioration d'API, et voit en Jiff la suite logique. On y débat aussi de l'éternelle question — une telle bibliothèque devrait-elle vivre dans la bibliothèque standard ? — et, bien sûr, de la prononciation : « comme gif avec un g doux »."
+    },
+    {
+      "title": "Rust m'a changé en tant que développeur",
+      "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+      "hn": "https://news.ycombinator.com/item?id=50522563",
+      "points": 213,
+      "comments": 135,
+      "summary": "Un développeur expérimenté raconte comment Rust a modifié sa façon de programmer, y compris dans d'autres langages : gestion explicite de l'erreur, modélisation par types, refus des états invalides. Le fil élargit au conseil classique — pratiquer un langage de chaque grande famille (Lisp, fonctionnel, Prolog…) pour se transformer durablement — et souligne que Rust a ceci de singulier qu'il « reconnaît la possibilité de l'erreur humaine », ce qui froisse les egos. Note plus mélancolique : certains se demandent si ces récits d'apprentissage profond parleront encore à une génération qui délègue l'écriture du code aux LLM."
+    },
+    {
+      "title": "Faire paître des moutons sous les panneaux solaires",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "hn": "https://news.ycombinator.com/item?id=50520182",
+      "points": 238,
+      "comments": 233,
+      "summary": "Une étude de Cornell décrit les bénéfices économiques et écologiques de l'agrivoltaïsme pastoral : les moutons entretiennent la végétation sous les panneaux, les fermiers encaissent un revenu complémentaire, et le sol comme les bêtes profitent de l'ombre. Le fil répond aux questions évidentes : pourquoi pas dans les déserts (lignes électriques, eau et poussière font vite exploser les coûts face à des terres déjà connectées), et pourquoi des moutons plutôt que chèvres ou bovins — les premières grignotent les câbles, les seconds démolissent les structures en s'y frottant. Certains y voient une forme de géo-ingénierie acceptable, les panneaux jouant le rôle d'arbres artificiels."
+    },
+    {
+      "title": "OpenCode Browse : l'agent de codage pilote votre vrai navigateur",
+      "url": "https://opencode.ai/product/browse",
+      "hn": "https://news.ycombinator.com/item?id=50523459",
+      "points": 160,
+      "comments": 72,
+      "summary": "OpenCode lance Browse, qui permet à son agent de codage de piloter le navigateur réel de l'utilisateur — Chrome, Edge, Brave, Arc, Vivaldi ou Chromium, mais pas Firefox — avec ses sessions déjà ouvertes, plutôt qu'un navigateur isolé. Le fil est partagé : les uns y voient un doublon du serveur MCP de Playwright, les autres s'inquiètent de la « triade fatale » (données privées, contenu non fiable, capacité d'action) quand un agent hérite de vos cookies, et conseillent au minimum des profils séparés. La cadence de sorties d'OpenCode, jugée frénétique, alimente aussi un procès en négligence sécuritaire."
+    }
+  ]
+}
