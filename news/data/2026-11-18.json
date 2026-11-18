@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-18",
+  "title": "GPT-6.2 face à MAI Code 2, pannes en cascade et une RCE dans la JVM",
+  "intro": "La guerre des modèles s'intensifie : OpenAI lance GPT-6.2 Astra et Sol en jouant la carte du coût par tâche, Microsoft réplique avec ses modèles de code maison MAI Code 2, et une grande évaluation montre que le choix du harnais pèse autant que celui du modèle. Côté infrastructure, la semaine noire continue avec une panne majeure des services Apple et celle d'un réseau ultra-classifié de la sécurité nationale américaine, ce qui nourrit toutes les spéculations. La sécurité n'est pas en reste : une RCE dans le décodeur Base64 de la JVM baptisée Java4Shell, un nouveau numéro de Phrack, et le retrait de Quad9 de France qui interroge sur la gouvernance du DNS.",
+  "items": [
+    {
+      "title": "GPT-6.2 : OpenAI lance Astra et Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "hn": "https://news.ycombinator.com/item?id=50535230",
+      "points": 1149,
+      "comments": 727,
+      "summary": "OpenAI annonce deux nouveaux modèles de la gamme GPT-6.2 : Astra, le haut de gamme, et Sol, le modèle « bête de somme », en mettant en avant le coût par tâche accomplie plutôt que la seule performance brute. Le fil HN juge le rapport performance/prix impressionnant « si les benchmarks tiennent », et beaucoup y voient un lancement calculé pour précéder de peu l'introduction en bourse d'Anthropic. Les débats portent sur l'écart réel entre Astra et Sol au quotidien, sur des premiers retours de terrain mitigés malgré les benchmarks, et accessoirement sur la page d'annonce en 3D qui fait ramer les navigateurs."
+    },
+    {
+      "title": "Java4Shell : exécution de code à distance dans OpenJDK lors du traitement de Base64",
+      "url": "https://calif.io/java4shell/",
+      "hn": "https://news.ycombinator.com/item?id=50538240",
+      "points": 633,
+      "comments": 164,
+      "summary": "Des chercheurs dévoilent « Java4Shell », une écriture hors limites sur le tas dans le décodeur Base64 accéléré AVX-512 de la JVM HotSpot, exploitable en RCE ; sont concernés les JDK HotSpot (OpenJDK, Oracle JDK, GraalVM) à partir de la version 17.0.6 sur machines x86-64 avec AVX-512 activé. En attendant les correctifs, les mitigations citées sont les flags -XX:-UseBASE64Intrinsics ou -XX:UseAVX=2, et les proxys qui bufferisent les requêtes (comme nginx) compliquent l'exploitation. Sur HN, on débat de la portée réelle de la faille — les conditions d'exploitation très spécifiques font dire à certains que le nom surjoue la comparaison avec Log4Shell — et de la réactivité inégale des distributions, Debian ayant patché dès la levée d'embargo mais pas Ubuntu."
+    },
+    {
+      "title": "Les services Apple en panne",
+      "url": "https://developer.apple.com/system-status/",
+      "hn": "https://news.ycombinator.com/item?id=50535238",
+      "points": 649,
+      "comments": 360,
+      "summary": "Une panne majeure touche les services Apple, centrée sur iCloud et la connexion aux comptes : impossibilité de se connecter à iCloud ou à account.apple.com, « Sign in with Apple » cassé chez des tiers comme Dropbox, et des Apple Store incapables de traiter achats, activations d'iPhone ou réparations. C'est notable car Apple est réputé épargné par ce genre d'incidents, et la panne s'ajoute à une semaine déjà chargée. Sur HN, le débat oppose ceux qui y voient une coïncidence montée en épingle par biais d'attention et ceux qui spéculent sur une cause commune aux pannes récentes, avec une discussion annexe sur la dépendance d'Apple aux clouds tiers (AWS, Google Cloud) malgré ses propres datacenters."
+    },
+    {
+      "title": "Un réseau de communications ultra-classifié de la sécurité nationale américaine tombe en panne",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "hn": "https://news.ycombinator.com/item?id=50532849",
+      "points": 513,
+      "comments": 588,
+      "summary": "CNN rapporte, sur la foi de six sources, la panne d'un réseau de communications hautement classifié de la sécurité nationale américaine, que les commentateurs HN identifient comme NSANet, le réseau interne de la NSA ; ni la cause ni la durée ne sont établies. L'incident est notable car il survient en pleine série de pannes majeures, ce qui alimente les spéculations. Le fil HN se partage entre scepticisme sur le sourçage anonyme de CNN, soupçons d'une action hostile coordonnée, et rappels au calme : les pannes de réseaux sur mesure sont banales et on n'en parle que parce que tout le monde guette un motif."
+    },
+    {
+      "title": "Nvidia a cessé de publier ses ventes à Singapour alors que son chiffre d'affaires atteint 104 milliards de dollars",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "hn": "https://news.ycombinator.com/item?id=50534631",
+      "points": 430,
+      "comments": 212,
+      "summary": "Nvidia a changé la méthode de sa ventilation géographique (du lieu de facturation vers le lieu du siège social du client), faisant disparaître de ses comptes la ligne « Singapour », qui pesait 10,2 milliards de dollars, soit 22 % du chiffre d'affaires, au dernier trimestre publié. Le changement est intervenu peu après la mise sur liste de blocage de Megaspeed, société singapourienne visée par une enquête américaine pour contournement présumé des contrôles à l'exportation vers la Chine. Sur HN, des commentateurs épluchent les documents déposés à la SEC et y voient un lien avec la contrebande de puces vers la Chine, tandis que d'autres rétorquent qu'il s'agit d'une simple question d'attribution comptable."
+    },
+    {
+      "title": "Le retrait de Quad9 de France : un canari dans la mine de charbon",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "hn": "https://news.ycombinator.com/item?id=50538994",
+      "points": 360,
+      "comments": 114,
+      "summary": "Le résolveur DNS à but non lucratif Quad9 cessera de servir les utilisateurs français le 24 novembre plutôt que de se conformer aux injonctions obtenues notamment par beIN Sports et Canal+, qui exigent le blocage par DNS de sites de streaming sportif pirates. Cloudflare, lui-même condamné à 14,2 millions d'euros en Italie pour avoir refusé d'appliquer le « Piracy Shield » à son résolveur 1.1.1.1, alerte sur un précédent qui fragmente Internet, après le retrait d'OpenDNS de France en 2024. Dans les commentaires, le CTO de Quad9 explique que le DNS est le mauvais niveau pour combattre le piratage et craint que l'UE ne prenne la France comme modèle, tandis que d'autres dénoncent l'hypocrisie de Cloudflare, dont le CDN protège nombre de sites pirates."
+    },
+    {
+      "title": "Microsoft présente MAI Code 2 et MAI Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "hn": "https://news.ycombinator.com/item?id=50535885",
+      "points": 308,
+      "comments": 141,
+      "summary": "Microsoft AI dévoile à Ignite ses modèles de code maison MAI Code 2 et MAI Code 2 Flash : selon ses propres benchmarks, MAI Code 2 atteindrait environ 98 % des performances de GPT-6.1 Sol pour 40 % de son coût, disponible dans GitHub Copilot et en préversion sur Microsoft Foundry. L'annonce est notable car Microsoft attaque frontalement OpenAI et Anthropic sur les prix et réduit sa dépendance à leurs modèles. Les commentateurs HN restent sceptiques face à des benchmarks auto-déclarés, s'interrogent sur l'origine des modèles (entraînement propre ou distillation de GPT via l'accès privilégié à OpenAI ?) et débattent de la fragilité de l'avance des laboratoires de pointe, qui ne tiendrait qu'à quelques mois."
+    },
+    {
+      "title": "Quel est le meilleur harnais pour chaque modèle ?",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "hn": "https://news.ycombinator.com/item?id=50532191",
+      "points": 345,
+      "comments": 120,
+      "summary": "L'évaluation FrontierHarness v1.1 de Runta a comparé 22 configurations de harnais d'agents sur 5 modèles open-weight et 62 tâches en terminal (27 280 exécutions, 83 milliards de tokens) : le harnais optimal dépend du modèle, le coût par tâche réussie varie jusqu'à 4,4x selon le harnais, et 64 % des dépenses d'inférence sont allées à des runs échoués. La conclusion pratique : changer de modèle devrait inciter à reconsidérer son harnais. Dans les commentaires, on souligne le conflit d'intérêts (l'éval tourne sur le runtime de Runta, ce que le fondateur reconnaît d'emblée), on conteste la robustesse statistique des résultats vu la variance entre runs, et on note que les modèles réussissent souvent mieux avec le harnais de leur propre éditeur."
+    },
+    {
+      "title": "Sortie de Phrack n° 73",
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "hn": "https://news.ycombinator.com/item?id=50535992",
+      "points": 308,
+      "comments": 46,
+      "summary": "Le légendaire e-zine de hacking Phrack publie son numéro 73, avec notamment un exploit d'évasion de conteneur Docker, un article sur les attaques par backdoor contre les modèles de machine learning et une rétrospective de l'exploit SSH1 de l'an 2000. La parution reste un événement pour la communauté sécurité, héritière d'une tradition remontant aux classiques comme « Smashing The Stack For Fun And Profit » (n° 49, 1996). Sur HN, on s'interroge sur le statut des exploits publiés (divulgation responsable préalable ou « drop » direct ?), et un commentateur regrette qu'un des articles ressemble à du contenu généré par IA de piètre qualité."
+    },
+    {
+      "title": "jQuery 4.1.0",
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "hn": "https://news.ycombinator.com/item?id=50537156",
+      "points": 270,
+      "comments": 149,
+      "summary": "jQuery publie la version 4.1.0 (aux côtés de la 3.8.0) : une trentaine d'entrées au changelog, dont l'ajout du champ responseURL à l'objet jqXHR, le passage à querySelectorAll en interne, la prise en charge des custom elements associés aux formulaires et la correction d'une vulnérabilité ReDoS. C'est notable car la bibliothèque, souvent considérée comme dépassée, reste activement maintenue alors qu'elle équipe encore une énorme partie du web. Sur HN, les commentaires oscillent entre nostalgie de l'ère IE6, surprise que le projet vive toujours, et débat sur sa pertinence face au JavaScript moderne (« you might not need jQuery »)."
+    },
+    {
+      "title": "Solid 2.0",
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "hn": "https://news.ycombinator.com/item?id=50536387",
+      "points": 253,
+      "comments": 72,
+      "summary": "Après 5 ans de développement, 971 pull requests et 23 release candidates, SolidJS 2.0 « The Long Hold » intègre l'asynchrone directement dans son graphe réactif (un calcul peut renvoyer une Promise, avec gestion des race conditions et rollback de l'état optimiste), supprime des API historiques comme createResource et passe en ESM uniquement. La release met aussi en avant un angle « conçu pour être écrit par des agents », avec un paquet @solidjs/diagnostics et des erreurs réactives à code stable. Sur HN, le graphe async est salué comme élégant face aux hooks « colorés » de React, mais le marketing orienté IA/agents fait tiquer, d'autres notant que ces améliorations profitent tout autant aux développeurs humains."
+    },
+    {
+      "title": "ONNX Runtime de Microsoft a disparu de GitHub",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "hn": "https://news.ycombinator.com/item?id=50539610",
+      "points": 178,
+      "comments": 42,
+      "summary": "Le dépôt GitHub microsoft/onnxruntime (environ 22 000 étoiles), moteur d'inférence ML très utilisé, renvoie désormais une erreur 404 sans aucun préavis, cassant au passage des pipelines CI qui en dépendent ; le site onnxruntime.ai et les paquets PyPI, npm et Maven restent disponibles. La disparition silencieuse d'un projet open source majeur de Microsoft illustre la fragilité des chaînes d'approvisionnement logicielles. Sur HN, les hypothèses vont d'un nettoyage lié à la récente compromission du paquet PyPI agent-framework de Microsoft à un simple incident, pendant que certains recensent les forks disponibles et rappellent l'intérêt de vendorer ses dépendances."
+    }
+  ]
+}

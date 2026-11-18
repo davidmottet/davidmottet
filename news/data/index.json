@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-18",
+      "title": "GPT-6.2 face à MAI Code 2, pannes en cascade et une RCE dans la JVM",
+      "count": 12
+    },
+    {
       "date": "2026-11-17",
       "title": "Pannes en cascade des banques US à United Airlines, Windows 11 surveille vos outils de dev, et CMU offre ses cours d'informatique",
       "count": 12
