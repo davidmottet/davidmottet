@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-19",
+  "title": "RCE critique dans Nginx, Google dégaine Gemini 4 Neon, et Quad9 claque la porte de la France",
+  "intro": "Journée chargée sur deux fronts. Côté sécurité, une exécution de code à distance sans authentification dans Nginx domine largement la page d'accueil et relance le débat sur le C dans les démons réseau, pendant que Ruby corrige ses propres failles. Côté IA, Google riposte à OpenAI et Microsoft avec Gemini 4 Neon et Genie 4, Microsoft aligne sept modèles maison à l'Ignite, et OpenAI raconte comment ses modèles conçoivent ses puces. En toile de fond, des interrogations plus humaines : le retrait de Quad9 de France, une fuite massive chez Deutsche Bank, et « human » élu mot de l'année.",
+  "items": [
+    {
+      "title": "Exécution de code à distance sans authentification dans Nginx",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "hn": "https://news.ycombinator.com/item?id=50547374",
+      "points": 1208,
+      "comments": 536,
+      "summary": "Des chercheurs de Wiz détaillent des vulnérabilités de la pile HTTP/2 de Nginx (CVE-2026-123633 et CVE-2026-123007) permettant une exécution de code à distance sans authentification ; désactiver HTTP/2 suffit comme contournement et des versions corrigées sont sorties dans la demi-heure suivant la divulgation. Les commentateurs relèvent surtout que le correctif était visible dans le dépôt open source une semaine avant l'annonce, avec un message de commit citant le rapporteur — une fenêtre en or pour des attaquants surveillant ce genre de dépôts. L'autre fil du débat : faut-il enfin sortir du C pour les serveurs exposés au réseau, et le rôle croissant de l'IA dans la découverte de failles."
+    },
+    {
+      "title": "Les résolveurs DNS sont le mauvais endroit pour combattre le piratage",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "hn": "https://news.ycombinator.com/item?id=50545958",
+      "points": 627,
+      "comments": 236,
+      "summary": "Le résolveur DNS à but non lucratif Quad9 cessera de servir les utilisateurs français le 24 novembre plutôt que d'appliquer un jugement parisien d'octobre lui imposant de bloquer des sites de streaming sportif pirates (affaire portée par beIN Sports), après le retrait similaire d'OpenDNS en 2024. Quad9 fait appel mais part quand même, arguant que le blocage DNS ne retire aucun contenu et se contourne en changeant de résolveur. Sur HN, on y voit un précédent dangereux de censure par l'infrastructure, et certains demandent comment Quad9 compte « quitter » la France s'il ne sait pas identifier les utilisateurs français de façon fiable."
+    },
+    {
+      "title": "Inside Deutsche Bank : une fuite de 15 millions de documents",
+      "url": "https://www.inside-db.com/",
+      "hn": "https://news.ycombinator.com/item?id=50547620",
+      "points": 583,
+      "comments": 199,
+      "summary": "Un consortium de journalistes d'investigation publie les premières enquêtes tirées d'environ 15 millions de documents internes de Deutsche Bank, essentiellement des exports de boîtes mail Outlook, explorés avec l'outil open source OpenAleph (ElasticSearch + le schéma FollowTheMoney). Les données brutes ne seront pas mises en ligne, ce qui divise : certains y voient la porte ouverte à une narration sélective, d'autres la seule option responsable. Un journaliste du projet est venu dans les commentaires détailler la pile technique, un des fils les plus appréciés de la discussion."
+    },
+    {
+      "title": "Google annonce Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "hn": "https://news.ycombinator.com/item?id=50552424",
+      "points": 565,
+      "comments": 515,
+      "summary": "Google ajoute Neon à la gamme Gemini 4 : un modèle globalement plus capable que Carbon selon les premiers index, mais que Google positionne en complément, Carbon restant le modèle « long horizon » pour les tâches de recherche au long cours — signe d'une frontière de plus en plus en dents de scie. Un billet séparé en page d'accueil le décrit comme un concurrent direct de Claude Opus 5.5. La discussion est dominée par la lassitude face à l'inflation des noms (Neon, Carbon, Sol, Astra, Opus…) et par un débat sur le « secret » d'Anthropic, plusieurs utilisateurs jugeant les benchmarks de moins en moins corrélés à l'expérience réelle."
+    },
+    {
+      "title": "Microsoft Ignite : sept nouveaux modèles maison au rapport prix-performance agressif",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "hn": "https://news.ycombinator.com/item?id=50548021",
+      "points": 479,
+      "comments": 328,
+      "summary": "À l'Ignite 2026, Microsoft présente sept modèles de sa famille MAI en martelant le « price-performance », avec des comparaisons parfois étranges — un commentateur épingle un « Decision 1.1, 50x plus rapide et 79x moins cher que GPT-6.1 Sol » jugé invérifiable. Les commentaires réclament des poids ouverts pour exister face à OpenAI, Anthropic et Google, sous peine de revivre Windows Phone. Le fil le plus voté est pourtant ailleurs : entre ceux qui recalculent la valorisation d'Anthropic avant son IPO et un développeur expliquant qu'il prendrait une baisse de salaire de 75 % pour travailler sans LLM, la discussion dit beaucoup de l'ambiance du moment."
+    },
+    {
+      "title": "Audit : des agents IA posent de meilleures questions que les comptables de KPMG",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "hn": "https://news.ycombinator.com/item?id=50547777",
+      "points": 400,
+      "comments": 172,
+      "summary": "Selon cet article, un essai mené dans le cadre des pilotes d'audit « agentique » de KPMG conclut que des agents IA posent des questions plus pertinentes que les auditeurs humains du cabinet. Les commentateurs, dont plusieurs anciens de la profession, nuancent : les juniors des Big Four sont inexpérimentés, surmenés et mal incités, la barre n'est donc pas très haute. Le débat de fond porte sur les conflits d'intérêts structurels de l'audit (Enron en référence) : de meilleures questions ne servent à rien si le modèle économique pousse à ne pas vouloir entendre les réponses."
+    },
+    {
+      "title": "Il nous faut des gens intelligents qui se soucient du résultat",
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "hn": "https://news.ycombinator.com/item?id=50554045",
+      "points": 317,
+      "comments": 166,
+      "summary": "Un essai qui touche une corde sensible : à l'heure des LLM, la denrée rare n'est pas l'intelligence mais les gens compétents qui se sentent responsables de ce qu'ils livrent. Le commentaire le plus voté renverse le propos : dans beaucoup d'entreprises, ceux qui s'impliquent sont traités comme des ressources corvéables, mieux vaut d'abord prendre soin de soi. Un autre fil distingue trois profils — les indifférents, les carriéristes et les artisans — et note que la « visibilité » est systématiquement mieux récompensée que la compétence réelle."
+    },
+    {
+      "title": "Energy-Based Reasoners : une inférence annoncée 385x plus efficace",
+      "url": "https://energy-based-reasoners.github.io/",
+      "hn": "https://news.ycombinator.com/item?id=50543989",
+      "points": 306,
+      "comments": 52,
+      "summary": "Des chercheurs présentent des « raisonneurs » à base de modèles d'énergie (EBM), qui apprennent une fonction scalaire évaluant des solutions candidates, avec une inférence annoncée 385 fois plus efficace que le raisonnement par chaîne de pensée des LLM. L'approche, défendue notamment par l'écosystème autour de Yann LeCun, brille sur des problèmes logiques où les LLM trébuchent. Mais un commentateur ayant passé un an sur le sujet tempère : les EBM sont d'excellents vérificateurs, très difficiles à entraîner, cantonnés à des niches et qui passent mal à l'échelle — loin de ce que le mot « raisonnement » évoque aujourd'hui."
+    },
+    {
+      "title": "Le dictionnaire Cambridge élit « human » mot de l'année 2026",
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "hn": "https://news.ycombinator.com/item?id=50546914",
+      "points": 248,
+      "comments": 174,
+      "summary": "Après « hallucinate » (2023), « manifest » (2024) et « parasocial » (2025), Cambridge couronne « human », dont l'usage explose à mesure que l'IA brouille la frontière — jusqu'à Bill Gates plaidant pour des « emplois réservés aux humains » comme les métiers du soin. Les commentateurs trouvent le choix mou : « agent » ou « slop » auraient mieux capturé l'année. Le fil le plus intéressant y voit le signe avant-coureur d'un mouvement humaniste comparable aux contre-cultures des années 1960, en réaction cette fois à l'automatisation plutôt qu'à la guerre."
+    },
+    {
+      "title": "Genie 4, le modèle de monde de DeepMind, est disponible",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "hn": "https://news.ycombinator.com/item?id=50550415",
+      "points": 205,
+      "comments": 146,
+      "summary": "Google ouvre l'accès à Genie 4, la nouvelle version de son modèle de monde interactif capable de générer des environnements explorables cohérents — on peut maintenant tourner sur 360° sans que le décor change dans son dos. L'accès réservé aux abonnés « AI Ultra » éligibles déclenche le rituel fil sur l'impossibilité de comprendre ce que Google vend, à qui et dans quels pays. Plus frappant : le commentaire le plus voté est un vétéran de HN avouant ne plus rien vouloir de tout cela, symptôme d'un malaise qui monte dans les fils d'annonces IA."
+    },
+    {
+      "title": "OpenAI fait concevoir ses puces par ses propres modèles",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "hn": "https://news.ycombinator.com/item?id=50549493",
+      "points": 173,
+      "comments": 112,
+      "summary": "OpenAI détaille comment ses modèles ont accéléré la conception de Jalapeño, sa puce d'inférence développée avec Broadcom (tape-out en neuf mois environ), et évoque un partenariat avec AMD sur de la propriété intellectuelle GPU. Les commentateurs s'interrogent sur ce que devient un fournisseur de modèles qui se diversifie dans les métiers de ses propres clients tout en gardant les meilleurs outils pour lui — et sur la protection de l'IP d'AMD dans l'affaire. Beaucoup y voient aussi une opération de communication calée sur le calendrier de l'IPO d'Anthropic."
+    },
+    {
+      "title": "Show HN : ExitPath, des portes de sortie open source pour Slack, Notion et Microsoft 365",
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "hn": "https://news.ycombinator.com/item?id=50547980",
+      "points": 180,
+      "comments": 54,
+      "summary": "Un annuaire open source qui recense, outil par outil, des chemins de migration concrets hors de Slack, Notion et Microsoft 365 vers des alternatives auto-hébergées. Les retours d'expérience sont lucides : ces alternatives restent souvent pénibles à opérer et moins soignées côté expérience utilisateur, au point que certains ont renoncé pour se concentrer sur leur cœur de métier. Le verrou le plus cité n'est ni le chat ni les documents, mais le calendrier — le « free/busy » d'Outlook/Exchange reste l'anneau qui les lie tous."
+    }
+  ]
+}

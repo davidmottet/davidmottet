@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-19",
+      "title": "RCE critique dans Nginx, Google dégaine Gemini 4 Neon, et Quad9 claque la porte de la France",
+      "count": 12
+    },
+    {
       "date": "2026-11-18",
       "title": "GPT-6.2 face à MAI Code 2, pannes en cascade et une RCE dans la JVM",
       "count": 12
