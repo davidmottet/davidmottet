@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-23",
+      "title": "Le Japon standardise ses voitures, OpenAI défend la perplexité, et la saga Riemann se formalise en public",
+      "count": 12
+    },
+    {
       "date": "2026-11-19",
       "title": "RCE critique dans Nginx, Google dégaine Gemini 4 Neon, et Quad9 claque la porte de la France",
       "count": 12

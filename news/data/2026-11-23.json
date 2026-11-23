@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-23",
+  "title": "Le Japon standardise ses voitures, OpenAI défend la perplexité, et la saga Riemann se formalise en public",
+  "intro": "Week-end contrasté sur Hacker News. L'industrie automobile japonaise fait l'événement avec un projet de standardisation des pièces entre Toyota, Nissan et Honda face à la concurrence chinoise, pendant qu'OpenAI relance le débat sur la perplexité comme mesure de l'intelligence des modèles. La saga de l'hypothèse de Riemann continue, désormais sous forme de tableau de bord public suivant la formalisation en Lean du manuscrit de Masullo. En toile de fond, une vague de nostalgie créative : télévision libre bâtie sur Internet Archive, San Francisco miniature en temps réel, et un jeu où l'humain devient le sous-agent d'un LLM.",
+  "items": [
+    {
+      "title": "Toyota, Nissan et Honda vont standardiser leurs pièces pour réduire les coûts",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "hn": "https://news.ycombinator.com/item?id=50596133",
+      "points": 1215,
+      "comments": 686,
+      "summary": "Les trois grands constructeurs japonais s'accordent pour standardiser des composants invisibles pour le client, dans la lignée du plan porté par Koji Sato (Toyota) à la tête de l'association des constructeurs japonais : faisceaux de câblage d'abord, puis potentiellement aciers, plastiques et connecteurs, afin de réduire les coûts de développement face aux véhicules électriques chinois — Honda cherche de son côté 1 500 milliards de yens d'économies sur quatre ans. Sur HN, la discussion massive (686 commentaires) est largement favorable : beaucoup s'étonnent que cela n'ait pas été fait plus tôt et prédisent que les constructeurs américains devront suivre, tandis que d'autres s'inquiètent d'une uniformisation qui rendrait toutes les voitures identiques."
+    },
+    {
+      "title": "« Perplexity and Intelligence » : OpenAI défend la perplexité comme mesure de l'intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "hn": "https://news.ycombinator.com/item?id=50601525",
+      "points": 523,
+      "comments": 357,
+      "summary": "OpenAI publie un billet soutenant que la perplexité — la capacité d'un modèle à prédire le token suivant — reste fortement corrélée aux capacités générales, courbe à l'appui depuis GPT-3.5 jusqu'à un modèle interne récent, mesurée sur des extraits tenus à l'écart de leur base de code interne. Les commentateurs sont sceptiques : le jeu de test privé rend la courbe invérifiable, l'entraînement sur données synthétiques pourrait biaiser la métrique, et un utilisateur montre qu'un petit modèle récent obtient une perplexité « frontier » sur son propre corpus — preuve selon lui que le chiffre ne se compare pas d'un jeu de données à l'autre. D'autres se disent surpris qu'à l'ère du RL, la bonne vieille loss de pré-entraînement reste un si bon prédicteur."
+    },
+    {
+      "title": "Une carte de progression publique pour la formalisation en Lean du manuscrit de Masullo",
+      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+      "hn": "https://news.ycombinator.com/item?id=50605045",
+      "points": 177,
+      "comments": 151,
+      "summary": "Nouvel épisode de la saga Riemann : après la publication le 20 novembre, par le président de l'AMS Ravi Vakil, du manuscrit de 940 pages d'Alessandro Masullo (une preuve « 100 % humaine » de l'hypothèse de Riemann généralisée, sortie le jour même de la preuve assistée par IA de Levent Alpöge), la communauté suit désormais sa formalisation en Lean via un tableau de bord public. John Baez signale toutefois que le chapitre 13, celui qui doit conclure, contient encore des trous, et Masullo lui-même juge son texte impropre à la soumission. Sur HN, on savoure ce moment « Twitch Plays Pokémon » des mathématiques publiques, tout en rappelant qu'une barre de progression ne vaut pas validation : un seul trou suffit à faire tomber l'édifice."
+    },
+    {
+      "title": "Qu'est-il arrivé à la Silicon Valley ?",
+      "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+      "hn": "https://news.ycombinator.com/item?id=50602947",
+      "points": 498,
+      "comments": 282,
+      "summary": "Sur le blog O'Reilly Radar, un essai nostalgique et critique sur la dérive de la Silicon Valley, opposant la croissance organique et patiente d'autrefois à la course actuelle au sommet de la dernière colline à la mode. Les commentaires résument l'affaire en deux mots — « argent et pouvoir » — mais le fil le plus repris défend l'idée que le marché est une machine que nous avons construite et qu'il faudrait reprogrammer pour viser l'épanouissement humain plutôt que le profit. Quelques sceptiques rappellent que ce « aujourd'hui » décadent dure depuis au moins trente-cinq ans."
+    },
+    {
+      "title": "Les oiseaux de GTA 6 : le guide ornithologique d'Audubon pour Vice City",
+      "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+      "hn": "https://news.ycombinator.com/item?id=50602843",
+      "points": 401,
+      "comments": 197,
+      "summary": "Le magazine de la société Audubon, référence de l'ornithologie américaine, publie un guide de terrain des oiseaux de GTA 6, saluant le réalisme de la faune de Vice City tout en relevant des inexactitudes : la grue blanche d'Amérique et le pic à face blanche y sont communs alors qu'ils sont menacés dans la vraie Floride — « le monde de GTA est mieux géré que le nôtre », ironise l'auteur. Les joueurs-naturalistes de HN confirment la présence du geai à gorge blanche de Floride, seule espèce endémique de l'État, et spéculent sur la participation d'ornithologues au développement. Un improbable croisement entre jeu vidéo et conservation qui ravit tout le monde."
+    },
+    {
+      "title": "Guide du débutant pour l'IA locale avec Inkling, Qwen et Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "hn": "https://news.ycombinator.com/item?id=50603845",
+      "points": 329,
+      "comments": 138,
+      "summary": "Un guide pratique pour faire tourner des modèles de langage chez soi, autour des modèles ouverts Inkling et Qwen et de l'outillage Unsloth, dont le support des NPU AMD vient d'être annoncé. La discussion tourne surtout autour du matériel : l'affirmation qu'il faut plus de 32 Go de VRAM pour un Qwen 35B quantisé fait tiquer, et un utilisateur raconte servir un Qwen 9B depuis un ThinkPad Ryzen AI à 12 tokens par seconde — lent mais « étrangement satisfaisant », même si « aucun résultat n'est fiable ». Question récurrente du fil : comment les adeptes du local retrouvent-ils une expérience proche de Claude, harnais et prompts système compris ?"
+    },
+    {
+      "title": "Show HN : un jeu où vous êtes le sous-agent d'un LLM",
+      "url": "https://github.com/gulivan/worker755",
+      "hn": "https://news.ycombinator.com/item?id=50599762",
+      "points": 287,
+      "comments": 67,
+      "summary": "Worker 755 inverse les rôles : un vrai LLM (Claude, GPT, Gemini…) joue l'orchestrateur et croit lancer un sous-agent — qui est vous, devant un terminal, avec 90 secondes pour exécuter chaque instruction. Le manager vérifie votre travail, envoie des corrections, rédige des rapports d'incident et finit par votre évaluation de performance, pendant que les photos de famille et le discours de l'utilisateur fictif Dan ne tiennent qu'à un rm mal placé. Les commentaires oscillent entre le rire jaune (« Butlerian Jihad Now ») et le vertige : plusieurs développeurs avouent que l'ironie serait trop forte après une journée passée à faire exactement l'inverse."
+    },
+    {
+      "title": "Open Social Web Alliance : une alliance pour un web social démocratique",
+      "url": "https://osw-alliance.net/en/",
+      "hn": "https://news.ycombinator.com/item?id=50600511",
+      "points": 231,
+      "comments": 223,
+      "summary": "Une nouvelle alliance se donne pour mission de construire des médias sociaux ouverts qui renforcent le discours démocratique, résilients et attrayants à la fois. L'accueil sur HN est aussi fourni que sceptique : le xkcd 927 sur la prolifération des standards est dégainé d'entrée, et l'argument central des pessimistes est économique — la colère et la peur se monétisent mieux que la bienveillance, et les utilisateurs ne quitteront pas en masse des plateformes précisément conçues pour être addictives. Les plus constructifs estiment que tout commence par l'abandon du modèle publicitaire."
+    },
+    {
+      "title": "Une télévision alternative gratuite bâtie sur les vidéos oubliées d'Internet Archive",
+      "url": "https://spelunkr.tv",
+      "hn": "https://news.ycombinator.com/item?id=50606192",
+      "points": 208,
+      "comments": 35,
+      "summary": "Spelunkr.tv diffuse en continu des chaînes thématiques construites à partir des vidéos méconnues d'Internet Archive : vieux anime, films d'horreur en noir et blanc avec Vincent Price, et autres trouvailles, dans une interface façon télévision d'antan où l'on zappe sans choisir. L'accueil est enthousiaste — « un anachronisme génial », résume un commentateur ravi de retrouver de l'internet vidéo sans Google — avec déjà des demandes de fonctionnalités : afficher le programme à venir et une application pour la télévision du salon."
+    },
+    {
+      "title": "Un San Francisco miniature avec bus, avions et bateaux en temps réel",
+      "url": "https://smallsf.com/",
+      "hn": "https://news.ycombinator.com/item?id=50603589",
+      "points": 184,
+      "comments": 80,
+      "summary": "Small SF affiche une maquette isométrique de San Francisco où circulent les vrais bus (flux GTFS-RT), avions (ADS-B) et bateaux de la ville, en direct. Les questions techniques fusent — comment lisser le mouvement entre deux mises à jour de position, interpolation côté client ou tampon à tick fixe ? — et chacun réclame sa fonctionnalité, du bouton catastrophe façon SimCity aux arbres plantés dans sa rue. Le fil débat aussi du genre lui-même : certains voient dans ces cartes isométriques une mode devenue du « slop » décoratif, loin du pixel art foisonnant de détails des années 2000."
+    },
+    {
+      "title": "GL.iNet publie un avis de sécurité sur son service cloud",
+      "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+      "hn": "https://news.ycombinator.com/item?id=50604988",
+      "points": 127,
+      "comments": 57,
+      "summary": "Le fabricant de routeurs GL.iNet publie un avis de sécurité daté du 20 novembre concernant son service de gestion à distance ; d'après la discussion, seuls les appareils dont le « cloud service » a été activé manuellement seraient concernés, mais le flou du communiqué agace. Les commentateurs en tirent la leçon habituelle — désactiver tout accès cloud sur ce type d'équipement — et rappellent que beaucoup de routeurs GL.iNet acceptent OpenWrt, contrairement aux KVM de la marque, jugés plus inquiétants. Le fil dérive sur l'interdiction FCC du Flint 4 aux États-Unis et sur les alternatives comme pfSense."
+    },
+    {
+      "title": "Au Soudan, le sol d'une cathédrale révèle l'une des plus grandes églises médiévales",
+      "url": "https://apnews.com/article/sudan-antiquities-nubia-cathedral-1b16f67da881ee5592de4481ee55c527",
+      "hn": "https://news.ycombinator.com/item?id=50547698",
+      "points": 148,
+      "comments": 17,
+      "summary": "Des fouilles au Soudan mettent au jour le sol d'une cathédrale nubienne médiévale qui serait l'une des plus grandes églises médiévales connues, comparée par les chercheurs à Sainte-Sophie de Constantinople. Les commentaires enrichissent le contexte : l'archéologie polonaise travaille au Soudan depuis les années 1950 — l'équipe de Kazimierz Michałowski avait exhumé la cathédrale de Faras et ses 150 fresques, aujourd'hui visibles à Varsovie — et un lecteur assyrien rappelle que les Nubiens existent toujours, minorité souvent invisible dans la couverture des « pays arabes »."
+    }
+  ]
+}
