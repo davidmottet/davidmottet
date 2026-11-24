@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-24",
+  "title": "Washington rend son trône à Jensen Huang, Ladybird passe en alpha, et l'IA de guerre des modèles ouverts fait rage",
+  "intro": "Journée dominée par un séisme de gouvernance : onze jours après sa démission, Jensen Huang est réintégré à la tête de Nvidia par un conseil d'administration qui dit avoir reçu « l'avis des plus hauts niveaux du gouvernement américain » — et Hacker News s'interroge sur ce que vaut encore une gouvernance d'entreprise. En parallèle, la bataille des modèles ouverts s'envenime entre Yann LeCun et Dario Amodei, pendant qu'Anthropic publie une preuve formelle générée par IA d'une conjecture majeure de complexité algébrique. Côté logiciel, deux projets indépendants font l'événement : le navigateur Ladybird atteint l'alpha et Stalwart se pose en remplaçant de Microsoft Exchange.",
+  "items": [
+    {
+      "title": "Nvidia réintègre Jensen Huang au poste de PDG",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "hn": "https://news.ycombinator.com/item?id=50611576",
+      "points": 2278,
+      "comments": 3293,
+      "summary": "Onze jours après sa démission surprise du 12 novembre sur fond de scandale (le conseil enquêtait notamment sur un ciblage de Huang par un service de renseignement étranger), et alors que le conseil avait affirmé le 17 novembre qu'il ne reviendrait pas, Nvidia réintègre Jensen Huang comme président-directeur général et administrateur, par un vote unanime ; l'action a fortement rebondi et Donald Trump revendique publiquement la décision. Le passage le plus commenté du communiqué : le conseil dit avoir « reçu l'avis des plus hauts niveaux du gouvernement américain » et se dit confiant que ce retour « ne pose aucun risque de sécurité nationale ». Dans l'énorme fil (3 293 commentaires), on y voit la preuve que la gouvernance nominale des entreprises cède devant les rapports de force réels — parallèle avec l'affaire OpenAI de 2023, et scepticisme sur les garde-fous d'Anthropic —, certains dénonçant un précédent où l'on devient intouchable dès qu'on est assez précieux, et une intervention politique digne d'un capitalisme d'État."
+    },
+    {
+      "title": "« Dario exagère les dangers pour rendre les modèles ouverts illégaux et garder le contrôle »",
+      "url": "https://twitter.com/ylecun/status/2124550037912920090",
+      "hn": "https://news.ycombinator.com/item?id=50615308",
+      "points": 1344,
+      "comments": 746,
+      "summary": "Yann LeCun relance frontalement sa querelle avec Dario Amodei : selon lui, le PDG d'Anthropic gonfle les dangers de l'IA pour obtenir une réglementation qui rendrait les modèles à poids ouverts illégaux et verrouillerait le marché — un procès en capture réglementaire qu'il mène depuis des semaines, après avoir qualifié Amodei de « deluded » dans Fortune ; Amodei, lui, affirme ne pas vouloir interdire les modèles ouverts mais s'inquiéter de ceux qui franchiraient des seuils de capacités dangereuses. Le fil HN est inhabituellement chaud : un commentateur proche des milieux réglementaires décrit des pistes envisagées pour « bannir les armes plutôt que les balles » (microcode des GPU grand public bridé, enregistrement du calcul privé), tandis que d'autres accusent les laboratoires d'avoir bâti leur fortune sur le savoir commun avant de vouloir fermer la porte derrière eux — les plus mesurés réclamant des contre-propositions concrètes de sécurité plutôt que des procès d'intention."
+    },
+    {
+      "title": "Le navigateur Ladybird passe en alpha",
+      "url": "https://ladybird.org/posts/alpha/",
+      "hn": "https://news.ycombinator.com/item?id=50614249",
+      "points": 1571,
+      "comments": 372,
+      "summary": "Le navigateur indépendant Ladybird, né du projet SerenityOS et doté de son propre moteur de rendu, publie sa première alpha (Linux et macOS), destinée aux développeurs et aux curieux. Les testeurs du fil sont impressionnés : la quasi-totalité des sites essayés s'affichent correctement, YouTube et Google Maps fonctionnent, et la consommation mémoire fait pâlir Chrome ; l'équipe assume en revanche une sécurité non garantie et invite explicitement les chercheurs à « pwn » le navigateur, donc pas d'identifiants ni de paiements pour l'instant. La discussion souligne les choix pragmatiques qui ont accéléré le projet : adoption de briques éprouvées comme SQLite et Skia, et migration progressive du C++ vers Rust (environ 60 % du code selon un contributeur), en partie assistée par des LLM."
+    },
+    {
+      "title": "VP ≠ VNP sur tout corps : Anthropic publie une preuve formelle générée par IA",
+      "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
+      "hn": "https://news.ycombinator.com/item?id=50620102",
+      "points": 289,
+      "comments": 251,
+      "summary": "Anthropic publie dans son dépôt formal-math une preuve, générée par Claude et vérifiée formellement, de la conjecture de Valiant : les classes de complexité algébrique VP et VNP sont distinctes sur tout corps — l'analogue algébrique du problème P vs NP, ouvert depuis les années 1970. Les commentateurs y voient un résultat partiel publié en route vers le Graal (P ≠ NP, que ce théorème n'implique toutefois pas), et notent la course aux théorèmes entre laboratoires, OpenAI ayant récemment déversé une centaine d'articles mathématiques. Le fil oscille entre vertige — un étudiant en thèse de mathématiques demande sérieusement s'il doit abandonner — et malaise devant une publication purement générée par IA qu'aucun humain n'a relue avant diffusion, la vérification formelle servant ici de seul arbitre."
+    },
+    {
+      "title": "À la demande d'Arm, le miroir de documentation arm.jonpalmisc.com fermera le 4 décembre",
+      "url": "https://arm.jonpalmisc.com/",
+      "hn": "https://news.ycombinator.com/item?id=50617499",
+      "points": 920,
+      "comments": 213,
+      "summary": "Le site de Jon Palmisc, qui republiait la documentation du jeu d'instructions Arm dans une interface rapide, avec recherche et sans les popups du site officiel, fermera le 4 décembre : Arm invoque ses marques et sa propriété intellectuelle. L'auteur, présent dans le fil, étudie les options (miroirs proposés par des tiers, avocat, publication du générateur du site sans le contenu Arm), pendant que des commentateurs constatent qu'Arm verrouille de plus en plus sa documentation depuis quelques années — certains y voient une réaction à RISC-V, d'autres une simple dérive juridique. Beaucoup rappellent l'époque où Intel envoyait gratuitement ses manuels d'architecture par la poste, et s'étonnent qu'un fabricant de puces complique la vie de ceux qui font vivre son écosystème."
+    },
+    {
+      "title": "Kagi Mail entre en bêta publique",
+      "url": "https://blog.kagi.com/kagi-mail-public-beta",
+      "hn": "https://news.ycombinator.com/item?id=50615481",
+      "points": 377,
+      "comments": 284,
+      "summary": "Le moteur de recherche payant Kagi lance la bêta publique de son service e-mail, construit sur le serveur open source Stalwart, avec suppression des pixels espions, proxy d'images et fonctions d'IA — pour un tarif discuté autour de 10 $ par mois. L'accueil sur HN est étonnamment froid pour une communauté plutôt pro-Kagi : trop cher face à Migadu ou Fastmail, pas de chiffrement de bout en bout, et méfiance viscérale à l'idée de laisser un LLM dans la boîte mail. Le reproche de fond, répété dans tout le fil : Kagi se disperse dans des services annexes au lieu de soigner son cœur de métier, la recherche, que certains abonnés disent envahie de sites générés par IA — sans compter la polémique récurrente sur la part des revenus reversée à Yandex."
+    },
+    {
+      "title": "Stalwart devient un remplaçant direct de Microsoft Exchange",
+      "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+      "hn": "https://news.ycombinator.com/item?id=50620349",
+      "points": 285,
+      "comments": 139,
+      "summary": "Le serveur mail open source Stalwart, écrit en Rust, annonce la compatibilité avec les protocoles propriétaires de Microsoft Exchange (dont MAPI), permettant en théorie de brancher Outlook et les clients existants sans toucher au poste de travail. Les administrateurs du fil saluent une alternative sérieuse, très intégrée (gestion DNS, stockage S3, recherche plein texte, antispam), là où le combo classique Postfix/Dovecot demande un assemblage artisanal ; les prudents rappellent que remplacer Exchange reste un pari risqué pour qui porte la responsabilité des e-mails d'une organisation. Débat plus philosophique en contrepoint : étendre la surface des protocoles Microsoft, est-ce libérer les utilisateurs captifs ou prolonger la vie d'un écosystème fermé au détriment des standards ouverts ?"
+    },
+    {
+      "title": "BepiColombo atteint Mercure, deuxième mission de l'histoire à s'y mettre en orbite",
+      "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+      "hn": "https://news.ycombinator.com/item?id=50587439",
+      "points": 315,
+      "comments": 104,
+      "summary": "Huit ans après son lancement et une longue série d'assistances gravitationnelles, la mission euro-japonaise BepiColombo (ESA/JAXA) arrive à Mercure et devient la deuxième de l'histoire à s'y placer en orbite, après MESSENGER ; ses deux orbiteurs doivent fournir pendant environ trois ans les meilleures images et mesures jamais obtenues de la planète, avant de s'écraser à sa surface, faute de carburant. Dans les commentaires, on s'interroge sur une anomalie évoquée lors de la manœuvre d'insertion, dont les conséquences sur l'orbite finale restent peu documentées par l'ESA. Fil récurrent et un peu amer : même des passionnés d'espace découvrent la mission à son arrivée, preuve pour beaucoup que les missions non-NASA restent invisibles médiatiquement, y compris en Europe."
+    },
+    {
+      "title": "Une télévision alternative gratuite bâtie sur les vidéos oubliées d'Internet Archive",
+      "url": "https://spelunkr.tv",
+      "hn": "https://news.ycombinator.com/item?id=50606192",
+      "points": 962,
+      "comments": 166,
+      "summary": "Spelunkr.tv transforme les vidéos obscures d'Internet Archive en chaînes de télévision linéaires et synchrones : tout le monde voit la même chose au même moment, comme à l'époque du zapping. Le projet touche une corde sensible : le fil regorge de réflexions sur la solitude du streaming à la demande, où personne d'autre ne regarde la même chose que vous au même instant, et sur le plaisir retrouvé de « tomber sur » un programme. Questions pratiques en suspens : des liens M3U et des applications TV sont réclamés, et certains se demandent ce que pense Internet Archive de cette interface tierce qui consomme sa bande passante — la plupart jugeant qu'elle sert plutôt sa mission."
+    },
+    {
+      "title": "Nospeaker : faire parler le trackpad d'un MacBook grâce à son moteur haptique",
+      "url": "https://github.com/os6/nospeaker",
+      "hn": "https://news.ycombinator.com/item?id=50610318",
+      "points": 297,
+      "comments": 168,
+      "summary": "Un bricolage logiciel détourne le moteur haptique du trackpad des MacBook — cette dalle immobile qui simule le clic par vibration — pour en faire un haut-parleur rudimentaire capable de jouer de la parole et de la musique. Le fil savoure ce retour aux hacks à l'ancienne : comparaisons avec le haut-parleur piézo des premiers PC et la musique jouée par les lecteurs de disquettes Commodore 1541, questions sur l'usure du moteur (jugée improbable) et sur un éventuel risque d'écoute (le contrôle haptique semble en écriture seule). Beaucoup notent au passage que l'illusion du clic physique sur une surface fixe reste l'exploit le plus impressionnant de l'affaire."
+    },
+    {
+      "title": "NariQ : un Qwen3.8-27B de niveau BF16 dans un fichier de 10 Go",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "hn": "https://news.ycombinator.com/item?id=50611402",
+      "points": 139,
+      "comments": 29,
+      "summary": "Nari Labs publie des quantisations à 3 bits et moins du modèle Qwen3.8-27B qui conservent, selon leurs benchmarks, une qualité proche du BF16 sur les tâches agentiques longues, les maths et le multilingue — une première revendiquée à ce niveau de compression, qui fait tenir le modèle dans 10 Go et le rend accessible sur du matériel grand public. Les connaisseurs du fil apprécient la rigueur inhabituelle de l'évaluation (jeux de test tenus à l'écart, tâches longues variées), tout en rappelant le risque classique de sur-optimisation des quantisations sur les benchmarks. Bémols pratiques : sur Mac, le décodage reste lent (environ 3,8 tokens/s sur M3 Pro), et un spécialiste des formats de quantisation regrette que la filiation technique avec les codebooks d'exl3 ne soit pas clairement documentée."
+    },
+    {
+      "title": "L'État de New York interdit les abonnements et frais post-achat sur les voitures",
+      "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+      "hn": "https://news.ycombinator.com/item?id=50622774",
+      "points": 60,
+      "comments": 15,
+      "summary": "La gouverneure Kathy Hochul signe une loi interdisant aux constructeurs, concessionnaires et prestataires tiers de facturer par abonnement ou frais ponctuels des fonctions reposant sur du matériel déjà installé dans le véhicule et sans coût récurrent — fini, en principe, les sièges chauffants sur abonnement ; entrée en vigueur le 27 février 2027. Le texte exclut les services à coût réel continu (comme la radio satellite) et ménage une exception pour l'automatisation de la conduite, ce qui fait dire aux commentateurs que le FSD de Tesla y échappera. Le fil débat de l'effet sur les prix : certains prédisent un report sur le tarif d'achat, d'autres y voient surtout un retour à la transparence, le prix affiché redevenant comparable d'une marque à l'autre."
+    }
+  ]
+}
