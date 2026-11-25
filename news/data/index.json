@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-25",
+      "title": "OpenAI clôt l'exposant de la multiplication matricielle, les modèles ternaires locaux montent en gamme, et Math.random() fait tomber Check Point",
+      "count": 12
+    },
+    {
       "date": "2026-11-24",
       "title": "Washington rend son trône à Jensen Huang, Ladybird passe en alpha, et l'IA de guerre des modèles ouverts fait rage",
       "count": 12

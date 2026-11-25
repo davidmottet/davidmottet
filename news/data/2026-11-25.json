@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-25",
+  "title": "OpenAI clôt l'exposant de la multiplication matricielle, les modèles ternaires locaux montent en gamme, et Math.random() fait tomber Check Point",
+  "intro": "Journée où l'IA s'attaque frontalement à la science : OpenAI publie une preuve fixant l'exposant de la multiplication de matrices à 9/4 et annonce des capacités de conception de protéines dans GPT-6, pendant que Hacker News oscille entre fascination et scepticisme méthodologique. Le local prend sa revanche avec le modèle ternaire Bonsai 2.5 27B, qui tient dans 6 Go, et des outils d'auto-entraînement sur machine personnelle. Côté sécurité, une campagne d'intrusion contre les serveurs Check Point rappelle qu'un simple Math.random() peut suffire à forger un cookie admin.",
+  "items": [
+    {
+      "title": "La multiplication de matrices est en Θ(n^2,25)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "hn": "https://news.ycombinator.com/item?id=50637220",
+      "points": 261,
+      "comments": 111,
+      "summary": "Un préprint publié dans le dépôt GitHub « openai/math » établit la borne inférieure Ω(n^2,25) pour la multiplication de matrices, complétant la borne supérieure d'un article d'OpenAI d'octobre : l'exposant serait donc exactement 9/4, refermant des décennies de course depuis Strassen. Les commentateurs précisent la portée réelle du résultat (circuits sans division, hypothèses sur le coût des opérations) et débattent du titre, un doute subsistant entre O(n^2,25) exact et O(n^2,25+ε). Le fil s'inquiète aussi de la place des mathématiciens humains, le résultat étant attribué à un modèle non publié dont la méthode n'est pas divulguée, et juge l'algorithme « galactique », sans application pratique à court terme."
+    },
+    {
+      "title": "Ternary Bonsai 2.5 27B : un modèle ternaire de 6 Go qui vise les ténors",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "hn": "https://news.ycombinator.com/item?id=50633922",
+      "points": 375,
+      "comments": 127,
+      "summary": "Prism ML publie Bonsai 2.5 27B, un modèle à poids ternaires (environ 1,76 bit par poids) qui tient dans quelque 6 Go et tourne sur du matériel grand public — un utilisateur rapporte 22 tokens/s sur un Mac Mini M5 Pro avec 128k de contexte. Les testeurs saluent de vrais progrès en agentique (17 % d'étapes en moins sur des tâches longues) et une recherche d'aiguille réussie sur 256K tokens. Le débat porte sur les benchmarks : le score SWE-bench annoncé au niveau d'Opus 4.6 laisse sceptique, beaucoup invoquant la loi de Goodhart et préférant un Qwen 27B quantifié en Q4, quand d'autres pointent un ton hérité « trop Claude »."
+    },
+    {
+      "title": "OpenAI : les modèles GPT-6 montrent des capacités « intrinsèques » de conception de protéines",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "hn": "https://news.ycombinator.com/item?id=50634658",
+      "points": 206,
+      "comments": 61,
+      "summary": "OpenAI affirme que GPT-6 peut concevoir des protéines, avec des tests en laboratoire montrant des signes de liaison sur cinq cibles. Les biologistes du fil relativisent : le modèle a surtout écrit du code orchestrant des outils spécialisés existants (ESM, SolubleMPNN) et n'a conçu que le squelette des protéines, ce qui fait contester le mot « intrinsèque ». Le scepticisme méthodologique domine — absence de séparation claire entre données d'entraînement et de test, cibles jugées faciles, contrôles biologiques insuffisants — même si un ancien du labo Baker y voit un défi lancé à la recherche académique."
+    },
+    {
+      "title": "Campagne d'intrusion active contre les serveurs d'administration Check Point",
+      "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "hn": "https://news.ycombinator.com/item?id=50630594",
+      "points": 272,
+      "comments": 139,
+      "summary": "GreyNoise documente une campagne en cours depuis début octobre : sur le serveur HFS, chaque requête vers l'endpoint loginSrp1 renvoyait un cookie contenant une valeur issue de Math.random(), ce qui a permis à l'attaquant de reconstruire l'état du PRNG de V8, de déduire la clé de signature et de forger un cookie administrateur sans mot de passe. Un second acteur a ensuite exploité une use-after-free du noyau Linux (CVE-2026-98432) puis bloqué les autres attaquants via nftables. Le fil est unanime sur un point — une interface d'administration n'a rien à faire exposée sur Internet — et se divise sur le rôle des LLM, certains y voyant un avantage asymétrique pour les attaquants, d'autres un discours alarmiste."
+    },
+    {
+      "title": "GTA 6 tourne sur Windows via une couche de traduction",
+      "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+      "hn": "https://news.ycombinator.com/item?id=50627783",
+      "points": 322,
+      "comments": 412,
+      "summary": "La version Xbox de GTA 6, qui a fuité, tourne désormais sur PC grâce à une couche de traduction à la Wine qui convertit à la volée les shaders RDNA 2 et émule la mémoire unifiée de la console — le binaire n'est pas décompilé, et un projet concurrent de recompilation a déjà été retiré de GitHub. Les 400+ commentaires dissèquent les obstacles techniques (formats de textures propriétaires, variantes de DirectX 12) et doutent d'une qualité comparable à un futur portage natif. Le vrai débat est éthique et commercial : sortie PC retardée pour vendre le jeu deux fois, verrouillages par comptes et régions, et la vieille question de savoir si acheter une licence équivaut à posséder un jeu."
+    },
+    {
+      "title": "Le pulvérisateur à gâchette, expliqué en animations",
+      "url": "https://mechanical-pencil.com/products/spray-bottle",
+      "hn": "https://news.ycombinator.com/item?id=50598555",
+      "points": 403,
+      "comments": 105,
+      "summary": "En tête de page depuis trois jours, cette exploration animée du mécanisme d'un vaporisateur — piston, clapets à bille, tube plongeur — modélisée en CAO dans la veine de Bartosz Ciechanowski. Les commentateurs comblent les lacunes de l'explication (pourquoi la bille remonte, pourquoi le liquide ne reflue pas par la buse, brevet US4527741 à l'appui) et partagent leur frustration devant des pulvérisateurs qui cassent trop vite. Un débat plus vif émerge sur la part d'IA dans les illustrations et sur l'éthique de sa divulgation, certains jugeant le modèle 3D incohérent avec les designs réels."
+    },
+    {
+      "title": "Jetty Pro : John Siracusa assume l'abonnement pour son Dock alternatif",
+      "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+      "hn": "https://news.ycombinator.com/item?id=50630462",
+      "points": 287,
+      "comments": 131,
+      "summary": "Jetty, le remplaçant du Dock macOS signé John Siracusa, passe en version Pro à 10 $ par an, déclenchant l'éternel débat abonnement contre achat unique. Les défenseurs rappellent que maintenir des APIs privées d'Apple exige un travail continu ; les critiques résument leur position en une formule : « payer pour les mises à jour, oui ; payer pour utiliser, non », et réclament des licences perpétuelles de repli à la JetBrains. Fil annexe révélateur de l'époque : plusieurs commentateurs disent avoir remplacé leurs utilitaires payants par des outils écrits avec Claude ou Codex, quand d'autres soulignent le coût caché du « dernier 5 % » de finition."
+    },
+    {
+      "title": "Songe : un moteur d'entraînement qui exploite votre machine au repos",
+      "url": "https://github.com/sous-labs/songe",
+      "hn": "https://news.ycombinator.com/item?id=50629231",
+      "points": 197,
+      "comments": 64,
+      "summary": "Songe (Apache-2.0) s'intercale comme proxy entre un agent compatible OpenAI et un serveur de modèle local, enregistre les suites de chaque action (résultats d'outils, erreurs), puis profite des temps morts pour lancer des « Dreams » : enrichissement des instructions ou entraînement d'un adaptateur LoRA, retenu seulement s'il passe ses vérifications. Le fil élargit au calcul distribué communautaire (Pluralis et son 13B entraîné sur Internet) et doute que la puissance inactive des particuliers suffise pour du vrai pré-entraînement. Les motivations du local font consensus : confidentialité, coût marginal nul et crainte d'un « rug pull » des fournisseurs cloud."
+    },
+    {
+      "title": "Infarctus et AVC : un risque détectable des décennies à l'avance",
+      "url": "https://www.ed.ac.uk/news/heart-attack-and-stroke-risk-detectable-decades-in-advance",
+      "hn": "https://news.ycombinator.com/item?id=50635271",
+      "points": 187,
+      "comments": 92,
+      "summary": "Selon cette étude de l'université d'Édimbourg, les marqueurs classiques — tension, cholestérol LDL, CRP, troponine, IMC, tabac — permettent d'estimer le risque cardiovasculaire des décennies avant l'accident, dans la lignée du calculateur PREVENT à 30 ans. La discussion tourne vite au séminaire de cardiologie : rôle causal du LDL versus simple marqueur, supériorité éventuelle de l'ApoB, essais contradictoires (IMPROVE-IT contre l'échec de l'evacetrapib) et effets secondaires des statines largement attribuables au placebo. Beaucoup jugent les conclusions connues de longue date, mais y voient une incitation utile à faire un bilan tôt, score calcique coronarien en tête."
+    },
+    {
+      "title": "Gödel Enigma : déchiffrer les carnets sténographiés de Gödel",
+      "url": "https://www.helsinki.fi/en/researchgroups/godel-enigma/research/project-description",
+      "hn": "https://news.ycombinator.com/item?id=50625265",
+      "points": 104,
+      "comments": 34,
+      "summary": "Ce projet de l'université d'Helsinki s'attaque aux carnets de Kurt Gödel, rédigés pour l'essentiel en sténographie : seuls 15 carnets philosophiques (MaxPhil) ont été transcrits et étudiés, sans publication. Les commentateurs rappellent une discussion antérieure selon laquelle des centaines de théorèmes démontrés dormiraient dans ces pages, et débattent de l'importance réelle de Gödel — d'autres auraient-ils trouvé l'incomplétude quelques années plus tard ? Le fil corrige au passage les vulgarisations approximatives des théorèmes et s'échange une bibliothèque de références, de Nagel et Newman à Hofstadter, Penrose restant le plus controversé."
+    },
+    {
+      "title": "PenGPT : un transformeur génératif pour l'écriture manuscrite et le dessin",
+      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+      "hn": "https://news.ycombinator.com/item?id=50637056",
+      "points": 110,
+      "comments": 16,
+      "summary": "Sam Greydanus présente PenGPT, un transformeur qui génère des tracés de stylo — écriture manuscrite et croquis — à partir de « stroke tokens », le tout tenant en environ 50 Mo, soit un modèle qui tournerait sur un PC de 2006. Les commentateurs y voient une illustration de la « Bitter Lesson » appliquée à petite échelle : des méthodes standards et de bonnes données plutôt que des astuces architecturales. Les limites relevées restent concrètes — arrêts prématurés sur des entrées chaotiques, espagnol mal géré, ignorance du ductus correct de la cursive — et un sous-fil s'amuse à détecter des tournures « typiques de Claude » dans la prose du billet."
+    },
+    {
+      "title": "Un vélo pliant italien de 1963 qui tient dans une valise",
+      "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
+      "hn": "https://news.ycombinator.com/item?id=50610820",
+      "points": 144,
+      "comments": 99,
+      "summary": "Core77 exhume un vélo pliant italien de 1963 dont la profusion de tubes intrigue, conçu pour tenir dans une valise. La discussion se transforme en comparatif général de la mobilité pliable : le Brompton fait l'unanimité sur le comportement routier mais pas sur le prix, le Helix monte à plus de 4 000 $, et le Honda Motocompacto est retoqué comme jouet. Les débats récurrents opposent petites roues et confort, skateboard et vélo pour le dernier kilomètre, et vélo pliant personnel contre vélos en libre-service, pas toujours disponibles près des gares."
+    }
+  ]
+}
