@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-26",
+  "title": "L'IA avale les mathématiques, 1Password encaisse une intrusion majeure",
+  "intro": "Journée dominée par une vague de résultats mathématiques produits par l'IA : Scott Aaronson s'exclame en voyant l'ampleur du phénomène, Anthropic publie une version compacte de sa preuve Lean de l'hypothèse de Riemann généralisée, et Google met en ligne des articles « Cogentic » sur la factorisation d'entiers qui inquiètent les cryptographes. En parallèle, 1Password détaille un incident de sécurité sérieux, et la communauté s'interroge sur la lenteur des correctifs d'Ubuntu. Entre vérification formelle, modèles mystérieux et bidouillage matériel, Hacker News oscille entre vertige et scepticisme.",
+  "items": [
+    {
+      "title": "« Holy shit » : Scott Aaronson mesure l'ampleur de ce qui arrive",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "hn": "https://news.ycombinator.com/item?id=50646108",
+      "points": 1090,
+      "comments": 908,
+      "summary": "Le chercheur en informatique quantique Scott Aaronson réagit à la cascade de résultats mathématiques majeurs produits par l'IA ces derniers jours, dont des preuves vérifiées en Lean et un papier affirmant que l'exposant de la multiplication matricielle vaut 9/4. Les commentaires citent des chiffres vertigineux, comme les quelque 20 milliards de dollars de calcul évoqués côté Anthropic, à comparer au budget annuel de toute la recherche mathématique américaine. Le fil de 900 commentaires débat de tout : sur-réaction ou sous-réaction, généralisation au-delà des maths, fiabilité des énoncés formalisés et impact sur l'emploi des chercheurs."
+    },
+    {
+      "title": "1Password détaille son incident de sécurité de novembre",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "hn": "https://news.ycombinator.com/item?id=50644817",
+      "points": 1255,
+      "comments": 529,
+      "summary": "Le gestionnaire de mots de passe publie un point d'étape sur son incident de novembre : selon les commentaires, l'attaque serait partie d'une compromission de compte GitHub et aurait donné un accès étendu aux systèmes internes, dont le code source et des jetons de réinitialisation, sans qu'une mise à jour malveillante du client n'ait été poussée. L'entreprise notifie ses clients par email et a changé la façon dont ces jetons sont invalidés. La discussion oppose vitesse de développement et revue humaine des changements, pointe le pipeline de mise à jour comme maillon faible d'un gestionnaire de mots de passe, et beaucoup évoquent un repli vers Vaultwarden, KeePass ou des coffres locaux."
+    },
+    {
+      "title": "Anthropic publie une version bien plus courte de sa preuve Lean de GRH",
+      "url": "https://github.com/lsernau/grh-lean",
+      "hn": "https://news.ycombinator.com/item?id=50648050",
+      "points": 337,
+      "comments": 170,
+      "summary": "Après la preuve formelle de l'hypothèse de Riemann généralisée d'environ 17 millions de lignes, un ingénieur d'Anthropic publie une édition compacte d'environ 76 000 lignes de Lean 4 (300 000 en version lisible), soit une réduction de plus de 99 %, reposant uniquement sur les trois axiomes standards et sans aucun « sorry ». La vérification reste purement mécanique : aucun mathématicien ne l'a relue et aucun article ne l'accompagne, mais une vérification communautaire type « riemann-at-home » s'organise. Les commentaires débattent de ce que vaut une preuve que personne ne peut lire, de la critique de Terence Tao sur les preuves obèses et des raisons pour lesquelles Anthropic a d'abord publié la version gonflée."
+    },
+    {
+      "title": "Google publie les articles « Cogentic » : factorisation, logarithmes discrets et plus",
+      "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "hn": "https://news.ycombinator.com/item?id=50642086",
+      "points": 461,
+      "comments": 342,
+      "summary": "Le dépôt google-research s'enrichit de dix articles attribués à « Cogentic », dont six datés du 25 novembre, avec des titres spectaculaires : factorisation inconditionnelle en temps L[1/3], logarithmes discrets en temps sous-quasi-polynomial, ou cassage de la barrière de la racine carrée pour la conjecture log-rank. Seuls les titres et PDF sont disponibles, sans annonce officielle, ce qui alimente une rumeur — très discutée et non vérifiée — d'un résultat encore plus fort sur la factorisation. Les commentaires oscillent entre scepticisme (« en P » ne veut pas dire praticable), inquiétude pour RSA et les courbes elliptiques, et stratégie de divulgation responsable si un tel résultat existait."
+    },
+    {
+      "title": "La lenteur des correctifs de sécurité d'Ubuntu dénoncée sur oss-security",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+      "hn": "https://news.ycombinator.com/item?id=50647181",
+      "points": 181,
+      "comments": 91,
+      "summary": "Un message sur la liste oss-security reproche à Canonical des délais de correction de plusieurs semaines en 2026, avec des CVE corrigées chez Debian bien avant Ubuntu, et des clients payants qui n'obtiendraient pas de meilleurs délais. En cause notamment : le modèle de rétroportage d'Ubuntu, qui maintiendrait une centaine de noyaux différents au lieu de suivre les versions stables, à rebours des recommandations des mainteneurs du noyau. Dans les commentaires, plusieurs administrateurs disent avoir migré leurs serveurs vers Debian, Alpine ou Fedora, tandis que d'autres rappellent que chaque distribution connaît aussi ses régressions."
+    },
+    {
+      "title": "Le New York Times déconseille à ses photographes de mettre à jour Photoshop",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "hn": "https://news.ycombinator.com/item?id=50647673",
+      "points": 259,
+      "comments": 207,
+      "summary": "Selon The Verge, le New York Times demande à ses photographes de ne pas mettre à jour Photoshop, les nouvelles fonctions dopées à l'IA (remplissage génératif, sélection de sujet, débruitage, rééclairage) risquant de compromettre l'intégrité des photos de presse et d'écrire des métadonnées « IA » dans les fichiers. Les commentaires rappellent que Reuters impose déjà des JPEG sortis du boîtier, souvenir des photos de guerre truquées de 2006. Le débat porte sur la frontière entre retouche acceptable et manipulation, et sur l'inutilité d'étiquettes « IA » qui finissent par tout recouvrir, y compris un simple recadrage."
+    },
+    {
+      "title": "GPT-6.2 Astra est le premier modèle à battre les records de code golf des Googlers",
+      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+      "hn": "https://news.ycombinator.com/item?id=50601280",
+      "points": 288,
+      "comments": 81,
+      "summary": "Un ancien ingénieur de Google a transformé les défis internes de code golf de 2015 en benchmark pour modèles de langage : GPT-6.2 Astra est le premier à battre les records humains, avec par exemple un jeu de la vie en Python de 103 octets, 20 de moins que le record Google, et une approche inédite par puissances de 4 pour les nombres (-5)-lisses. Les commentaires relativisent : le code golf reste un exercice récréatif, et d'autres classements placent Fable 5.2 devant Astra dans la marge d'erreur. On y débat aussi de l'équité du protocole, Astra ayant tourné à l'effort de raisonnement maximal contrairement à certains concurrents."
+    },
+    {
+      "title": "« Jev » serait probablement Qwen3.5-35B-A3B déguisé",
+      "url": "https://modaic.dev/blog/latency-doesnt-lie",
+      "hn": "https://news.ycombinator.com/item?id=50648823",
+      "points": 258,
+      "comments": 75,
+      "summary": "La startup Modaic affirme, analyse de latence et tests d'auto-identification à l'appui, que « Jev », le modèle de décision de son concurrent TypeSafe présenté comme « ni petit, ni un LLM » et entraîné sur des données 100 % synthétiques, serait en réalité Qwen3.5-35B-A3B : interrogé « es-tu Qwen ? », Jev répond oui dans environ 60 % des cas. Les commentaires jugent les preuves fragiles — la latence ne distingue pas deux architectures proches et l'auto-identification des modèles est notoirement peu fiable — et soulignent le conflit d'intérêts entre les deux sociétés. Reste la question de fond : pourquoi une entreprise bâtie sur un modèle ouvert ne le dirait-elle pas simplement ?"
+    },
+    {
+      "title": "Il vérifie le cœur de Clojure avec Lean et trouve des bugs non signalés",
+      "url": "https://s.conao3.com/blog/2026/e4f733",
+      "hn": "https://news.ycombinator.com/item?id=50642939",
+      "points": 198,
+      "comments": 70,
+      "summary": "Un développeur a modélisé des fonctions du cœur de Clojure en Lean et découvert plusieurs comportements problématiques, dont une boucle infinie de reduce sur les vecteurs typés d'au moins 65 505 éléments, chaque constat étant validé par un contre-exemple exécutable. Les commentaires discutent de ce qui relève du vrai bug ou du comportement assumé d'un langage dynamique, un intervenant signalant qu'au moins un des bugs rapportés serait erroné. Le fil élargit au rôle croissant de Lean hors des mathématiques, aux environnements RL des laboratoires d'IA qui l'ont popularisé, et à la loi de Hyrum qui dissuade de corriger des comportements anciens."
+    },
+    {
+      "title": "L'égalisation de sonie de Windows rétro-conçue et portée sur PipeWire",
+      "url": "https://github.com/xoxorwr/pw-loudness-eq",
+      "hn": "https://news.ycombinator.com/item?id=50641171",
+      "points": 324,
+      "comments": 182,
+      "summary": "Un développeur a rétro-conçu la fonction « Loudness Equalization » de Windows — en réalité un contrôle automatique de gain large bande avec limiteur, logé dans audiodg.exe — et l'a portée en plugin PipeWire pour Linux, avec une pondération spectrale proche de la norme ITU BS.1770. Les commentaires apprécient de pouvoir enfin écouter films et musique en fond sans jouer du volume, tout en débattant du nom trompeur de la fonction et de la bonne chaîne de gain entre mixeur logiciel et DAC. La méthode fait aussi discuter : une réimplémentation assistée par LLM compte-t-elle encore comme du clean-room ?"
+    },
+    {
+      "title": "Porter Rockbox sur un baladeur AliExpress à 9 $ non documenté, avec des LLM",
+      "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+      "hn": "https://news.ycombinator.com/item?id=50624446",
+      "points": 238,
+      "comments": 95,
+      "summary": "Un bidouilleur a porté le firmware libre Rockbox sur le « YP3 », un lecteur MP3 AliExpress à 9 dollars au SoC SL6801 totalement non documenté, en faisant désosser le firmware d'origine par Ghidra et Claude, avec une webcam pointée sur l'écran pour que l'agent lise l'affichage. Il a même fait tourner « RockGPT », un modèle d'un million de paramètres streamé depuis la carte SD. Les commentaires célèbrent l'esprit hacker tout en s'interrogeant : les 25 ans de finitions de Rockbox sont-ils reproductibles par un LLM, et que devient le plaisir de bricoler quand on délègue tout à l'agent ?"
+    },
+    {
+      "title": "Quelques questions au type qui a fait du snorkeling dans un bassin de rétention de Home Depot",
+      "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
+      "hn": "https://news.ycombinator.com/item?id=50643129",
+      "points": 453,
+      "comments": 111,
+      "summary": "Vox interviewe Joseph Ricketts, vidéaste nature qui a plongé de nuit dans le bassin de rétention d'un Home Depot de Gainesville, en Floride, et y a filmé poissons, serpent d'eau et tout un écosystème insoupçonné au bord de l'autoroute. Les commentaires, conquis par ses images et sa sincérité, y voient un antidote à la « cécité à la nature » urbaine. On y débat aussi des risques sanitaires bien réels (bactéries, amibe Naegleria fowleri) et du mystère de l'arrivée des poissons dans ces bassins isolés — les œufs survivraient à la digestion des canards."
+    }
+  ]
+}

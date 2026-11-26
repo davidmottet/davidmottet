@@ -1,6 +1,11 @@
 {
   "days": [
     {
+      "date": "2026-11-26",
+      "title": "L'IA avale les mathématiques, 1Password encaisse une intrusion majeure",
+      "count": 12
+    },
+    {
       "date": "2026-11-25",
       "title": "OpenAI clôt l'exposant de la multiplication matricielle, les modèles ternaires locaux montent en gamme, et Math.random() fait tomber Check Point",
       "count": 12
