@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-27",
+  "title": "1Password piraté via GitHub, l'IA relance le self-hosting et l'Europe se forge une suite Office",
+  "intro": "Journée dominée par la sécurité : 1Password confirme qu'un attaquant a poussé du code malveillant dans ses systèmes via le compte GitHub d'un employé, pendant que le patron technique d'une société de « récupération ransomware » est inculpé pour fraude. En parallèle, l'IA reste le fil rouge : elle rend le self-hosting amusant, accélère llama.cpp sur GPU AMD, fait flamber le prix des disques durs et pousse Google à verrouiller l'accès de ses agents à Gmail. L'Europe, elle, s'offre une suite bureautique de bureau avec Nextcloud Office.",
+  "items": [
+    {
+      "title": "Incident de sécurité chez 1Password : du code malveillant poussé via le GitHub d'un employé",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "hn": "https://news.ycombinator.com/item?id=50644817",
+      "points": 1639,
+      "comments": 707,
+      "summary": "1Password confirme qu'un attaquant a compromis le compte GitHub d'entreprise d'un employé, poussé du code malveillant dans des services backend et copié des données de compte (noms, e-mails, métadonnées) d'une partie des clients, ainsi que du code source privé et un accès CI/CD ; l'entreprise affirme que les coffres chiffrés n'ont jamais été accessibles, les secrets restant côté client. Détection le 19 novembre, confirmation le 25, rotation des identifiants d'infrastructure engagée. Les commentaires débattent du rythme de livraison assisté par IA chez 1Password, de la revue humaine du code sensible, et beaucoup citent l'abandon des coffres locaux comme raison de migrer vers KeePass, Vaultwarden ou Apple Passwords."
+    },
+    {
+      "title": "L'IA a rendu le self-hosting à nouveau amusant",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "hn": "https://news.ycombinator.com/item?id=50660180",
+      "points": 422,
+      "comments": 227,
+      "summary": "Un billet de blog défend l'idée que les agents IA ont fait chuter le coût d'entrée du self-hosting : mises à jour, sauvegardes et déploiement de nouveaux services (Jellyfin, Immich, Home Assistant…) se règlent désormais en une soirée ou un prompt, et chacun se met à « vibe-coder » ses propres outils maison. La discussion oppose ceux qui savourent de déléguer les corvées et ceux qui estiment que le plaisir résidait justement dans l'artisanat ; on y débat aussi de la charge sécurité (tout passer derrière un VPN), de la tendance des LLM à sur-architecturer, et de l'inondation de l'open source par des projets de faible qualité."
+    },
+    {
+      "title": "Google imposera ses serveurs MCP aux agents IA — celui de Gmail ne peut pas envoyer d'e-mail",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "hn": "https://news.ycombinator.com/item?id=50653477",
+      "points": 279,
+      "comments": 234,
+      "summary": "Google va obliger les agents IA à accéder aux données Workspace via ses serveurs MCP officiels : celui de Gmail offre une dizaine d'outils (lecture, labels, brouillons) mais interdit l'envoi, la réponse, le transfert et les pièces jointes, réservés à des partenaires. Les commentateurs y voient pour certains de la prévention anti-spam, pour d'autres une décision commerciale favorisant Gemini, d'autant que le contournement par SMTP, automatisation du navigateur ou rejeu des appels HTTP reste techniquement possible. Beaucoup en profitent pour annoncer leur départ vers Fastmail, Proton ou l'auto-hébergement, malgré les problèmes de délivrabilité."
+    },
+    {
+      "title": "Nextcloud Office débarque sur le bureau, portée par la souveraineté européenne",
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "hn": "https://news.ycombinator.com/item?id=50654289",
+      "points": 410,
+      "comments": 209,
+      "summary": "Nextcloud publie une application de bureau signée basée sur Euro-Office, un fork AGPL d'ONLYOFFICE né de la volonté européenne de s'affranchir d'un éditeur aux attaches russes ; l'app (cœur C++ sous Chromium embarqué) cible nativement les formats .docx/.xlsx/.pptx et doit remplacer Collabora dans Nextcloud. Le fil s'écharpe sur la légitimité du fork — ONLYOFFICE exigeait de garder sa marque, ce que l'AGPL permettrait de retirer selon la FSF —, sur des correctifs de sécurité amont qui manqueraient au changelog, et sur les performances jugées lourdes sur les vieilles machines face à LibreOffice."
+    },
+    {
+      "title": "YouTube Ad Punisher : une extension qui recharge la page dès qu'une pub se lance",
+      "url": "https://github.com/antonpictures/youtube-punisher",
+      "hn": "https://news.ycombinator.com/item?id=50657530",
+      "points": 307,
+      "comments": 382,
+      "summary": "Cette extension open source « punit » YouTube en rechargeant automatiquement la page dès qu'une publicité démarre, une approche volontairement brutale du blocage de pub. La discussion, très fournie, tourne vite au débat général : efficacité comparée d'uBlock Origin et SponsorBlock, mesures anti-adblock de YouTube (tests A/B, faux temps de chargement, Manifest V3 sur Chrome), éthique du blocage vis-à-vis des créateurs contre valeur de YouTube Premium, et méfiance envers des extensions populaires susceptibles d'être revendues puis transformées en trackers."
+    },
+    {
+      "title": "Un fork de llama.cpp spécifique aux GPU AMD",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "hn": "https://news.ycombinator.com/item?id=50657265",
+      "points": 306,
+      "comments": 74,
+      "summary": "Un billet présente un fork de llama.cpp optimisé pour les GPU AMD, dans la lignée des projets qui tirent parti des cartes datacenter d'occasion très bon marché (une MI50 32 Go se trouve autour de 200-300 $) : un contributeur rapporte par exemple un passage de 250 à 600 tokens/s en prompt processing et de 25 à 40 tokens/s en génération sur un modèle 27B quantifié Q8. Le fil débat du prix de ces optimisations agressives — fast-math et choix d'experts pouvant altérer la qualité des sorties de façon difficile à mesurer — et de l'intérêt de contribuer en amont plutôt que de multiplier les forks « vibe-codés », le mainteneur de llama.cpp répondant que les patchs de qualité sont bienvenus."
+    },
+    {
+      "title": "Moat se présente comme un remplaçant d'OpenRouter, HN doute du modèle",
+      "url": "https://commandcode.ai/moat",
+      "hn": "https://news.ycombinator.com/item?id=50652184",
+      "points": 261,
+      "comments": 149,
+      "summary": "Moat propose, contre un abonnement d'environ 5 à 10 $ par mois, des tarifs au token fortement réduits (jusqu'à -70 % sur DeepSeek et d'autres modèles hébergés en Chine), se présentant comme le « Costco de l'IA » face à OpenRouter. Les commentaires pointent l'opacité totale sur qui sert réellement les requêtes et sur la rétention des prompts, soupçonnent des prix trop beaux pour être honnêtes (identifiants volés, « LLMjacking » ou simples deals de gros), et rappellent qu'un routeur malveillant pourrait injecter des appels d'outils dans des agents ayant accès à une machine."
+    },
+    {
+      "title": "Le CTO de « RansomwareHelp » inculpé pour fraude électronique",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "hn": "https://news.ycombinator.com/item?id=50657645",
+      "points": 240,
+      "comments": 102,
+      "summary": "Juan Ricardo Palacio Escobar, cofondateur et CTO de RansomwareHelp, est inculpé après un coup monté du FBI : sa société, qui jurait ne jamais payer les rançongiciels et facturait un déchiffrement « brute force sur 510 serveurs forensiques », a en réalité négocié la rançon d'un faux groupe de 13 000 $ à environ 6 000 $… tout en facturant 16 010 $ à la victime, certificat signé de non-paiement à l'appui. Les commentaires jugent la qualification de fraude solide — les clients payaient précisément pour ne pas financer des criminels — tout en débattant de la frontière entre marge commerciale et tromperie, et du secret de polichinelle des paiements de rançons."
+    },
+    {
+      "title": "Le prix des disques durs a vraiment dérapé",
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "hn": "https://news.ycombinator.com/item?id=50661646",
+      "points": 144,
+      "comments": 70,
+      "summary": "À l'heure du Black Friday, un blogueur constate que les « promos » stockage n'en sont plus : les commentaires citent un Seagate EXOS 18 To recertifié passé de 375 à 1 120 dollars australiens en deux ans, ou un SSD NVMe 4 To passé de 280 à 729 $. En cause selon le fil : les datacenters IA qui préemptent la production par contrats annuels, un marché consolidé autour de quelques fabricants peu pressés d'augmenter l'offre, et le report des acheteurs de SSD vers les disques mécaniques. Beaucoup espèrent le retournement classique du cycle, d'autres craignent qu'il dure et y voient un recul de l'informatique personnelle au profit du cloud loué."
+    },
+    {
+      "title": "Intel One Mono, la police à chasse fixe pensée pour les malvoyants (2023)",
+      "url": "https://github.com/intel/intel-one-mono",
+      "hn": "https://news.ycombinator.com/item?id=50653667",
+      "points": 487,
+      "comments": 245,
+      "summary": "Retour en page d'accueil pour cette police monospace libre d'Intel, conçue avec un panel de développeurs malvoyants et appréciée pour sa lisibilité. Le fil dissèque ses choix typographiques (le « e » à la queue courte façon logo Intel, le « @ » maigre, la faible hauteur d'x) et dégaine les alternatives habituelles : Atkinson Hyperlegible Mono, Iosevka, JetBrains Mono ou Berkeley Mono. On y débat aussi de savoir si le choix d'une police relève du confort réel ou du « bikeshedding », et on note qu'Intel avait archivé le dépôt en septembre avant de faire machine arrière quelques jours plus tard."
+    },
+    {
+      "title": "Une quantification algébrique de la gravité depuis le cône de lumière",
+      "url": "https://arxiv.org/abs/2611.34924",
+      "hn": "https://news.ycombinator.com/item?id=50651863",
+      "points": 225,
+      "comments": 84,
+      "summary": "Ven Chandrasekaran, ancien postdoc de l'IAS et co-auteur d'un article avec Edward Witten, propose une quantification de la relativité générale sans fond fixe, construite sur des cônes de lumière, qui retrouve notamment l'entropie de Bekenstein-Hawking avec la correction logarithmique attendue. Le fil est aussi fasciné que divisé : les remerciements du papier créditent une collaboration poussée avec un modèle d'OpenAI, ce qui nourrit un débat houleux sur la confiance à accorder aux papiers de physique théorique assistés par IA, en plus des critiques techniques (sommes divergentes, absence de prédictions testables, pas de matière dans le modèle)."
+    },
+    {
+      "title": "Kamil Khan Mumtaz, architecte pakistanais admiré chez lui, invisible ailleurs",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "hn": "https://news.ycombinator.com/item?id=50659841",
+      "points": 290,
+      "comments": 62,
+      "summary": "Works in Progress consacre un portrait à Kamil Khan Mumtaz, formé à l'Architectural Association de Londres dans les années 1960, passé du modernisme à un artisanat traditionnel qu'il pratique encore : dômes de brique montés à la main, décors métalliques ciselés, héritage moghol aux racines iraniennes. Les commentaires saluent des réalisations comme la mosquée de Chale Sharif et discutent de ce que révèle son anonymat international : le génie serait courant, la reconnaissance rare ; le faible coût de la main-d'œuvre rendrait cet artisanat viable au Pakistan ; et l'Occident regarderait peu ce que l'Orient a à lui apprendre."
+    }
+  ]
+}
