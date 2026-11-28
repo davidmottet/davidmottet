@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-28",
+  "title": "Skimmers WebRTC du Black Friday, l'IA historienne qui divise et les procureurs s'attaquent à Grok",
+  "intro": "Journée chargée en sécurité et en questions de confiance : des scripts de vol de cartes bancaires exploitant WebRTC sont découverts sur des sites marchands en plein Black Friday, Convex est épinglé pour avoir envoyé les idées d'apps de ses utilisateurs vers un serveur distant, et des procureurs généraux américains attaquent SpaceX en justice à cause des images générées par Grok. Côté IA, un récit d'enquête historique résolue par un modèle relance le débat « vraie découverte ou recherche à grande échelle », pendant que Google détaille DeepCrossAttention et que djb rappelle que même les preuves vérifiées par ordinateur peuvent être fausses.",
+  "items": [
+    {
+      "title": "Des scripts de skimming bancaire via WebRTC découverts sur des sites marchands populaires",
+      "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+      "hn": "https://news.ycombinator.com/item?id=50668145",
+      "points": 466,
+      "comments": 238,
+      "summary": "En plein Black Friday, des scripts malveillants volant les données de cartes bancaires ont été repérés sur des sites d'e-commerce populaires ; ils exfiltrent les données via WebRTC, un canal que les DevTools de Chrome inspectent mal et que les règles CSP classiques (connect-src) ne couvrent pas toujours. La discussion HN débat surtout de la responsabilité : plusieurs proposent que les opérateurs de sites répondent juridiquement des scripts tiers qu'ils embarquent, comme s'ils avaient agi eux-mêmes. Autres fils marquants : les bloqueurs de pub comme mesure de sécurité (recommandés par le FBI selon un commentateur) et la comparaison entre l'authentification forte imposée par la DSP2 en Europe et la quasi-absence de vérification aux États-Unis."
+    },
+    {
+      "title": "« GPT 6.2 Astra résout un mystère historique » : vraie découverte ou recherche brute ?",
+      "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+      "hn": "https://news.ycombinator.com/item?id=50643158",
+      "points": 369,
+      "comments": 234,
+      "summary": "Un professeur d'histoire raconte comment un modèle d'IA a dénoué une énigme historique en croisant des sources qu'un humain aurait eu peu de chances de relier. Les 230+ commentaires se divisent : pour les sceptiques, le modèle n'a fait que fouiller des sources humaines par force brute, voire retracer un chemin déjà encodé dans son entraînement ; pour les autres, synthétiser des sources est précisément le métier d'historien et « trouver » reste le point décisif. Le fil aborde aussi la charge de vérification (comment faire confiance à une analyse qu'on ne peut pas contrôler soi-même) et la question de savoir si les LLM ont le discernement nécessaire pour choisir les bonnes questions, pas seulement y répondre."
+    },
+    {
+      "title": "Show HN : bouncemarket, un marché prédictif en direct sur une balle qui rebondit",
+      "url": "https://bouncemarket.minhanhday.com/",
+      "hn": "https://news.ycombinator.com/item?id=50667726",
+      "points": 341,
+      "comments": 115,
+      "summary": "Un jeu où l'on trade des parts « gauche/droite » pendant qu'une balle tombe dans un plateau type Galton : la simulation tourne côté serveur, est diffusée aux clients en Server-Sent Events, et le prix bouge à chaque rebond. En quelques heures, des joueurs ont écrit des bots (souvent avec l'aide d'un LLM) qui résolvent la physique et gagnent presque chaque manche, transformant le jeu en terrain de chasse pour quants — ce que plusieurs trouvent très réaliste. Le débat le plus nourri porte sur la frontière entre marchés prédictifs et jeu d'argent pur, certains y voyant la démonstration d'une faille réglementaire exploitée par les plateformes de prédiction."
+    },
+    {
+      "title": "Des États américains poursuivent SpaceX pour les images pédocriminelles et le revenge porn générés par Grok",
+      "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "hn": "https://news.ycombinator.com/item?id=50670855",
+      "points": 310,
+      "comments": 169,
+      "summary": "Les procureurs généraux de Virginie et de l'Oregon déposent une plainte civile contre SpaceX (maison mère de X et xAI) : Grok aurait servi à générer des images pédocriminelles et des images intimes non consenties, alors que l'entreprise vantait une politique de « tolérance zéro » — le cœur juridique est la tromperie du consommateur, pas l'interdiction du contenu en soi. Sur HN, on débat de savoir si Grok est injustement ciblé (modèle le moins restreint du marché, marketing « spicy mode » assumé par Musk) alors que d'autres modèles ont des capacités proches, et de la solidité d'une défense fondée sur le Premier Amendement. Plusieurs rapprochent l'affaire des poursuites du Nouveau-Mexique contre Meta."
+    },
+    {
+      "title": "Les « skills » de Convex envoyaient l'idée d'app de l'utilisateur à un serveur distant sans le dire",
+      "url": "https://github.com/convex/convex-backend-skill/issues/64",
+      "hn": "https://news.ycombinator.com/item?id=50669765",
+      "points": 252,
+      "comments": 79,
+      "summary": "Une issue GitHub révèle que les skills d'agent de Convex transmettaient la description d'app de l'utilisateur à un endpoint distant, avec un extrait de code commenté « telemetry 1/3 » et une instruction demandant à l'agent de découper une commande pour contourner les classificateurs de sécurité. Le CEO de Convex répond que c'est une fonctionnalité de « quickstart » (le prompt serait supprimé sous 30 secondes) et impute le commentaire trompeur à du code généré par IA. Les commentaires portent sur le consentement par défaut (opt-in ou opt-out), le risque supply-chain des scripts shell distants non épinglés, et le fait que le plugin figurait sur la marketplace officielle d'Anthropic."
+    },
+    {
+      "title": "DeepCrossAttention : Google revisite les connexions résiduelles des transformers, qualité égale jusqu'à 3x plus vite",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "hn": "https://news.ycombinator.com/item?id=50672565",
+      "points": 202,
+      "comments": 67,
+      "summary": "Google Research détaille DeepCrossAttention (papier ICML 2025) : au lieu de propager les sorties des couches précédentes avec un poids uniforme, un petit module apprend, pour chaque token, comment combiner ces représentations — même qualité de modèle atteinte jusqu'à 3x plus vite à l'entraînement, pour un surcoût en paramètres négligeable. Les commentateurs précisent que le gain concerne l'entraînement et non l'inférence, et s'interrogent sur la publication tardive d'un papier de début 2025, que le récent modèle Inkling 2 de Thinking Machines utiliserait déjà. Le fil débat aussi de la vieille question : Google publie-t-il ce qu'il utilise vraiment, ou avec des années de retard ?"
+    },
+    {
+      "title": "Les fausses preuves vérifiées par ordinateur, par Daniel J. Bernstein",
+      "url": "https://cr.yp.to/proofs/falseccp.html",
+      "hn": "https://news.ycombinator.com/item?id=50667989",
+      "points": 198,
+      "comments": 76,
+      "summary": "djb recense les bugs de solidité des vérificateurs de preuves (Lean, Metamath, ACL2...) qui peuvent faire accepter une preuve de « Faux » : une « preuve » de la conjecture de Collatz a ainsi exploité un bug de Lean. Le débat central : ces bugs rarissimes et vite corrigés sont-ils anecdotiques, ou deviennent-ils critiques à l'heure où des LLM génèrent des preuves en masse et savent précisément dénicher ce genre de failles ? Les commentateurs discutent la défense multi-vérificateurs (Metamath exige cinq vérificateurs indépendants) et rappellent qu'au-delà du noyau, c'est l'énoncé du théorème lui-même que les humains doivent contrôler — un agent a déjà prouvé la « correction » d'un programme contre une spécification erronée."
+    },
+    {
+      "title": "Premières images du site d'impact de DART : la mission Hera retrouve une scène chaotique",
+      "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+      "hn": "https://news.ycombinator.com/item?id=50657392",
+      "points": 195,
+      "comments": 58,
+      "summary": "La sonde européenne Hera renvoie les premières images de Dimorphos quatre ans après l'impact volontaire de DART : l'astéroïde montre une face aplatie, le cratère couvrant une large partie du côté visible selon les lecteurs, et Hera temporise son approche le temps d'évaluer le danger du nuage de débris. Les commentaires soulignent le comportement contre-intuitif de ces « tas de gravats » à faible gravité, bien plus durs à simuler que des corps solides. Le fil le plus long porte sur le dilemme dual-use de la déflexion d'astéroïdes (le « dilemme Sagan-Ostro ») : arme potentielle ou capacité bien moins pratique que l'arsenal nucléaire existant ?"
+    },
+    {
+      "title": "Les Atari Homebrew Awards annulés, faute de pouvoir trancher la question de l'IA",
+      "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+      "hn": "https://news.ycombinator.com/item?id=50673688",
+      "points": 115,
+      "comments": 99,
+      "summary": "L'organisateur des Atari Homebrew Awards annonce sur AtariAge qu'il n'y aura pas d'édition cette année : exclure totalement l'IA, l'accepter totalement ou fixer un seuil — aucune option ne lui a paru tenable, l'usage d'IA étant impossible à détecter et à faire respecter. Les commentateurs saluent souvent l'honnêteté de la décision et citent le précédent du leaderboard d'Advent of Code, lui aussi abandonné. Le débat de fond divise deux camps : ceux pour qui le rétrocomputing assisté par IA enrichit la scène, et ceux qui y voient la dilution d'un artisanat, comparant cela à une machine-outil dans un concours de forgerons."
+    },
+    {
+      "title": "Le système hydraulique Citroën, ou le génie de la suspension hydropneumatique",
+      "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+      "hn": "https://news.ycombinator.com/item?id=50662313",
+      "points": 148,
+      "comments": 50,
+      "summary": "Un classique de l'ingénierie française revisité : la suspension hydropneumatique auto-niveleuse des DS, SM, CX et Xantia, où le même circuit haute pression alimente aussi freins et direction — avec une garde au sol réglable qui permettait de changer une roue sans cric. Le fil déborde de nostalgie (la voiture qui « se lève » au démarrage, la Xantia Activa V6 qui colle à la route) mais aussi de réalisme : sphères et membranes à remplacer, mécaniciens qui détestaient le système, et une fuite pouvant coûter d'un coup suspension, direction et freinage. Les commentateurs tracent la filiation vers les suspensions actives modernes de Porsche, Audi, Mercedes ou GM."
+    },
+    {
+      "title": "La chronologie de Balatro, racontée par son créateur localthunk",
+      "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+      "hn": "https://news.ycombinator.com/item?id=50657346",
+      "points": 144,
+      "comments": 31,
+      "summary": "Le créateur de Balatro retrace la trajectoire de son jeu de poker roguelike, du moment déclencheur — un stream du créateur Dan Gheesling qui fait « exploser la wishlist » Steam — jusqu'à la sortie publique environ huit mois plus tard. Les commentaires louent le billet et la réactivité du développeur aux retours des joueurs, mais relancent le débat sur la part de chance dans le succès indé : être remarqué par le bon streamer, dans un marché Steam saturé où peu de jeux dépassent les 100 ventes. Une partie du fil dérive sur une polémique autour de la participation de Gheesling à un livestream de recrutement de l'armée américaine."
+    },
+    {
+      "title": "Show HN : DragDropMath, apprendre l'algèbre en manipulant les symboles",
+      "url": "https://dragdropmath.com/",
+      "hn": "https://news.ycombinator.com/item?id=50669673",
+      "points": 114,
+      "comments": 33,
+      "summary": "Un physicien a construit un site gratuit, sans pub ni compte, où l'on apprend l'algèbre en déplaçant les symboles d'une équation — seuls les mouvements mathématiquement valides sont autorisés, partant de l'idée que « les symboles ont leur propre physique ». Les enseignants peuvent créer des séries d'exercices partageables, et le projet (sous licence MIT) doit s'étendre à la trigonométrie et aux complexes. Le débat pédagogique est le plus intéressant : empêcher les mouvements faux prive-t-il l'élève du retour d'erreur nécessaire pour corriger son modèle mental ? L'auteur a répondu en ajoutant un mode « Mind's eye » qui exige de donner la réponse avant de manipuler."
+    }
+  ]
+}
